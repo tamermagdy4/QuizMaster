@@ -51,9 +51,12 @@ export function GameSetupForm({
       initial={{ opacity: 0, x: 20 }}
       animate={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.4 }}
-      className={cn('glass-panel-strong sticky top-28 space-y-6 rounded-2xl p-6', className)}
+      className={cn(
+        'glass-panel-strong sticky top-28 space-y-5 rounded-3xl p-5 md:p-6',
+        className,
+      )}
     >
-      <div>
+      <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
         <h1 className="text-2xl font-bold text-white">إنشاء لعبة</h1>
         <p className="mt-1 text-sm text-white/60">أعدّ تفاصيل المسابقة واختر الفئات</p>
       </div>
@@ -65,7 +68,7 @@ export function GameSetupForm({
         onChange={(e) => onGameNameChange(e.target.value)}
       />
 
-      <div className="space-y-4 rounded-xl border border-white/10 bg-white/5 p-4">
+      <div className="space-y-4 rounded-2xl border border-white/10 bg-white/5 p-4 transition duration-200 hover:border-white/20">
         <GlassInput
           label="اسم الفريق الأول"
           placeholder="مثال: النمور"
@@ -80,7 +83,7 @@ export function GameSetupForm({
         />
       </div>
 
-      <div className="space-y-4 rounded-xl border border-white/10 bg-white/5 p-4">
+      <div className="space-y-4 rounded-2xl border border-white/10 bg-white/5 p-4 transition duration-200 hover:border-white/20">
         <GlassInput
           label="اسم الفريق الثاني"
           placeholder="مثال: الصقور"
@@ -106,11 +109,11 @@ export function GameSetupForm({
       <motion.button
         type="button"
         disabled={!canStart}
-        whileHover={canStart ? { scale: 1.02 } : undefined}
-        whileTap={canStart ? { scale: 0.98 } : undefined}
+        whileHover={canStart ? { scale: 1.01, y: -1 } : undefined}
+        whileTap={canStart ? { scale: 0.99 } : undefined}
         onClick={onStartGame}
         className={cn(
-          'w-full rounded-xl py-3.5 text-base font-bold transition',
+          'w-full rounded-2xl py-3.5 text-base font-bold transition duration-200',
           canStart
             ? 'glass-button text-white'
             : 'cursor-not-allowed border border-white/10 bg-white/5 text-white/35',

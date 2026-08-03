@@ -1,100 +1,62 @@
 import type { GameCategory } from '../types/game'
 
-export const gameCategories: GameCategory[] = [
+type SectionDefinition = {
+  id: string
+  title: string
+  icon: string
+}
+
+type SectionModule = {
+  sectionMeta?: SectionDefinition
+  [key: string]: unknown
+}
+
+const sectionModules = import.meta.glob('./sections/*.ts', {
+  eager: true,
+}) as Record<string, SectionModule>
+
+const sectionMap = new Map<string, SectionDefinition>()
+const discoveredCategories: GameCategory[] = []
+
+for (const module of Object.values(sectionModules)) {
+  const sectionMeta = module.sectionMeta
+
+  if (sectionMeta?.id) {
+    sectionMap.set(sectionMeta.id, sectionMeta)
+  }
+
+  for (const value of Object.values(module)) {
+    if (!Array.isArray(value)) {
+      continue
+    }
+
+    discoveredCategories.push(
+      ...value.filter((item): item is GameCategory => Boolean(item && typeof item === 'object' && 'id' in item)),
+    )
+  }
+}
+
+const orderedSectionDefinitions = Array.from(sectionMap.values())
+const sectionOrder = new Map(orderedSectionDefinitions.map((section, index) => [section.id, index]))
+
+const orderedCategories = [...discoveredCategories].sort((left, right) => {
+  const leftIndex = sectionOrder.get(left.sectionId) ?? Number.MAX_SAFE_INTEGER
+  const rightIndex = sectionOrder.get(right.sectionId) ?? Number.MAX_SAFE_INTEGER
+
+  if (leftIndex !== rightIndex) {
+    return leftIndex - rightIndex
+  }
+
+  return left.title.localeCompare(right.title)
+})
+
+export const categorySections = [
   {
-    id: 'history',
-    title: 'تاريخ',
-    description: 'حضارات، أحداث، وشخصيات أثرت العالم العربي',
-    gradient: 'from-amber-600/80 via-orange-700/60 to-red-900/70',
-    accent: '#f5c842',
-    icon: '📜',
+    id: 'all',
+    title: 'الكل',
+    icon: '✨',
   },
-  {
-    id: 'geography',
-    title: 'جغرافيا',
-    description: 'دول، عواصم، ومعالم طبيعية حول العالم',
-    gradient: 'from-teal-500/70 via-emerald-600/50 to-cyan-900/70',
-    accent: '#3dd9c9',
-    icon: '🌍',
-  },
-  {
-    id: 'science',
-    title: 'علوم',
-    description: 'فيزياء، كيمياء، أحياء، واكتشافات علمية',
-    gradient: 'from-blue-500/70 via-indigo-600/50 to-violet-900/70',
-    accent: '#8b6fff',
-    icon: '🔬',
-  },
-  {
-    id: 'sports',
-    title: 'رياضة',
-    description: 'بطولات، أبطال، وأرقام قياسية عربية وعالمية',
-    gradient: 'from-green-500/70 via-lime-600/40 to-emerald-900/70',
-    accent: '#84cc16',
-    icon: '⚽',
-  },
-  {
-    id: 'literature',
-    title: 'أدب',
-    description: 'شعر، روايات، وكتاب عرب وعالميين',
-    gradient: 'from-purple-500/70 via-fuchsia-600/50 to-purple-900/70',
-    accent: '#d946ef',
-    icon: '📚',
-  },
-  {
-    id: 'art',
-    title: 'فن',
-    description: 'رسم، نحت، عمارة، وتحف فنية',
-    gradient: 'from-rose-500/70 via-pink-600/50 to-rose-900/70',
-    accent: '#fb7185',
-    icon: '🎨',
-  },
-  {
-    id: 'technology',
-    title: 'تقنية',
-    description: 'ابتكارات، إنترنت، وذكاء اصطناعي',
-    gradient: 'from-cyan-500/70 via-sky-600/50 to-blue-900/70',
-    accent: '#38bdf8',
-    icon: '💡',
-  },
-  {
-    id: 'culture',
-    title: 'ثقافة عامة',
-    description: 'معلومات متنوعة من كل المجالات',
-    gradient: 'from-yellow-500/70 via-amber-600/50 to-orange-900/70',
-    accent: '#fbbf24',
-    icon: '🧠',
-  },
-  {
-    id: 'cinema',
-    title: 'سينما',
-    description: 'أفلام، ممثلون، ومهرجانات سينمائية',
-    gradient: 'from-red-500/70 via-rose-600/50 to-red-900/70',
-    accent: '#f87171',
-    icon: '🎬',
-  },
-  {
-    id: 'music',
-    title: 'موسيقى',
-    description: 'أنغام، آلات، ومطربون عرب وعالميون',
-    gradient: 'from-violet-500/70 via-purple-600/50 to-indigo-900/70',
-    accent: '#a78bfa',
-    icon: '🎵',
-  },
-  {
-    id: 'food',
-    title: 'طبخ',
-    description: 'أطباق، مكونات، وتراث طهي عربي',
-    gradient: 'from-orange-500/70 via-amber-600/50 to-yellow-900/70',
-    accent: '#fb923c',
-    icon: '🍽️',
-  },
-  {
-    id: 'islamic',
-    title: 'معرفة إسلامية',
-    description: 'قرآن، حديث، سيرة، وتاريخ إسلامي',
-    gradient: 'from-emerald-500/70 via-teal-600/50 to-green-900/70',
-    accent: '#34d399',
-    icon: '🕌',
-  },
-]
+  ...orderedSectionDefinitions,
+] as const
+
+export const gameCategories: GameCategory[] = orderedCategories

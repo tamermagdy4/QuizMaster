@@ -1,0 +1,22 @@
+﻿{
+  "categoryId": "marvel",
+  "questions": [
+    {
+      "question": "من هو بطل فيلم Iron Man؟",
+      "answer": "طوني ستارك."
+    },
+    {
+      "question": "ما اسم السلاح الذي يستخدمه Captain America؟",
+      "answer": "درع ستيف روجرز."
+    },
+    {
+      "question": "في أي فيلم ظهر Thanos لأول مرة كخصم رئيسي؟",
+      "answer": "في Avengers: Infinity War."
+    }
+  ],
+  "metadata": {
+    "sectionId": "movies",
+    "updatedAt": "2026-08-03",
+    "status": "ready"
+  }
+}

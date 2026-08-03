@@ -1,0 +1,22 @@
+﻿{
+  "categoryId": "egyptian-history",
+  "questions": [
+    {
+      "question": "ما هو اسم أقدم هرم في مصر؟",
+      "answer": "هرم زوسر."
+    },
+    {
+      "question": "من هو الفرعون الذي اشتهر ببناء الهرم الأكبر؟",
+      "answer": "الفرعون خوفو."
+    },
+    {
+      "question": "ما اسم النهر الذي ساهم في ازدهار الحضارة المصرية القديمة؟",
+      "answer": "نهر النيل."
+    }
+  ],
+  "metadata": {
+    "sectionId": "history",
+    "updatedAt": "2026-08-03",
+    "status": "ready"
+  }
+}

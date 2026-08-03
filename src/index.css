@@ -102,4 +102,13 @@
       radial-gradient(ellipse 60% 40% at 50% 90%, rgba(61, 217, 201, 0.12), transparent),
       linear-gradient(180deg, var(--color-midnight-900) 0%, var(--color-midnight-950) 100%);
   }
+
+  .page-surface {
+    background:
+      linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.02)),
+      radial-gradient(circle at top right, rgba(107, 77, 255, 0.18), transparent 40%),
+      radial-gradient(circle at bottom left, rgba(245, 200, 66, 0.14), transparent 35%);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 18px 48px rgba(0, 0, 0, 0.22);
+  }
 }

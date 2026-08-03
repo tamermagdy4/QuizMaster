@@ -1,0 +1,22 @@
+﻿{
+  "categoryId": "countries",
+  "questions": [
+    {
+      "question": "ما عاصمة المملكة المغربية؟",
+      "answer": "الرباط."
+    },
+    {
+      "question": "ما الدولة العربية التي تقع في قارة آسيا وتصدّر النفط؟",
+      "answer": "السعودية."
+    },
+    {
+      "question": "ما اسم الدولة التي تقع فيها العاصمة طوكيو؟",
+      "answer": "اليابان."
+    }
+  ],
+  "metadata": {
+    "sectionId": "geography",
+    "updatedAt": "2026-08-03",
+    "status": "ready"
+  }
+}

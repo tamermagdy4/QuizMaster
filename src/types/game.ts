@@ -7,6 +7,10 @@ export interface GameCategory {
   gradient: string
   accent: string
   icon: string
+  image?: string
+  questionCount: number
+  difficulty: 'easy' | 'medium' | 'hard'
+  sectionId: string
 }
 
 export interface GameSetup {

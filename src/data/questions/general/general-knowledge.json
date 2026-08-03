@@ -1,0 +1,22 @@
+﻿{
+  "categoryId": "general-knowledge",
+  "questions": [
+    {
+      "question": "ما الوحدة الأساسية للطاقة في النظام الدولي؟",
+      "answer": "الجول."
+    },
+    {
+      "question": "ما اسم القمر الذي يدور حول كوكب الأرض؟",
+      "answer": "القمر."
+    },
+    {
+      "question": "ما اسم الجهاز الذي يستخدم لقياس الضغط الجوي؟",
+      "answer": "البارومتر."
+    }
+  ],
+  "metadata": {
+    "sectionId": "general",
+    "updatedAt": "2026-08-03",
+    "status": "ready"
+  }
+}

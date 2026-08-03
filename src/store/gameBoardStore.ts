@@ -1,73 +1,11 @@
 import { create } from 'zustand'
 import { persist } from 'zustand/middleware'
 import { defaultLifelines } from '../data/lifelines'
+import { getQuestionEntriesByPoints } from '../data/questionLoader'
 import type { ActiveQuestion, BoardCell, Lifeline, PointValue } from '../types/board'
 import { POINT_SLOTS, TOTAL_CATEGORIES } from '../types/board'
 import type { TeamId } from '../types/game'
 import { useGameSetupStore } from './gameSetupStore'
-
-const QUESTION_BANK: Record<string, { question: string; answer: string }[]> = {
-  history: [
-    {
-      question: 'في أي سنة انطلقت الثورة العربية الكبرى؟',
-      answer: 'انطلقت الثورة العربية الكبرى في عام 1916م.',
-    },
-    {
-      question: 'من هو المؤسس الحفيد للدولة السعودية؟',
-      answer: 'الملك عبد العزيز بن عبد الرحمن آل سعود.',
-    },
-  ],
-  geography: [
-    {
-      question: 'ما عاصمة المغرب؟',
-      answer: 'عاصمة المغرب هي الرباط.',
-    },
-    {
-      question: 'ما أكبر دولة عربية من حيث المساحة؟',
-      answer: 'السعودية هي أكبر دولة عربية من حيث المساحة.',
-    },
-  ],
-  science: [
-    {
-      question: 'ما الوحدة الأساسية للطاقة في النظام الدولي؟',
-      answer: 'الوحدة الأساسية للطاقة هي الجول.',
-    },
-    {
-      question: 'أي جسم يحيط بالأرض ويكون سبب الليل والنهار؟',
-      answer: 'الشمس هي مصدر الضوء وسبب النهار، والأرض تدور حول نفسها.',
-    },
-  ],
-  sports: [
-    {
-      question: 'كم عدد لاعبي كرة القدم في الملعب في وقت واحد؟',
-      answer: '11 لاعباً من كل فريق.',
-    },
-    {
-      question: 'في أي رياضة يطلق على البطولة العالمية الكبرى اسم مونديال؟',
-      answer: 'كرة القدم.',
-    },
-  ],
-  literature: [
-    {
-      question: 'من مؤلف كتاب ألف ليلة وليلة؟',
-      answer: 'الكتاب جمعه مؤلفون متعددون عبر العصور وليس له مؤلف واحد محدد.',
-    },
-    {
-      question: 'أي شاعر عربي اشتهر بقصيدة المعلقات؟',
-      answer: 'المعلقات من أشهر قصائد الجاهلية، ولا يعزى لاسم واحد محدد.',
-    },
-  ],
-  art: [
-    {
-      question: 'ما اللون الأساسي الذي يميز الفن الإسلامي في الزخارف؟',
-      answer: 'الأزرق والذهبي من أكثر الألوان شيوعاً في الزخارف الإسلامية.',
-    },
-    {
-      question: 'ما اسم أشهر ميدان في باريس يرتاده الفنانون؟',
-      answer: 'ميدان ليوناردو دا فينشي أو ميدان دو تيه؟',
-    },
-  ],
-}
 
 interface GameBoardState {
   isInitialized: boolean
@@ -82,6 +20,7 @@ interface GameBoardState {
   team1Lifelines: Lifeline[]
   team2Lifelines: Lifeline[]
   activeQuestion: ActiveQuestion | null
+  usedQuestionKeys: string[]
 
   initializeBoard: () => void
   isCellPlayable: (categoryId: string, slotIndex: number) => boolean
@@ -108,14 +47,36 @@ function cloneLifelines(): Lifeline[] {
   return defaultLifelines().map((lifeline) => ({ ...lifeline }))
 }
 
-function getQuestionContent(categoryId: string, slotIndex: number) {
-  const items = QUESTION_BANK[categoryId] ?? []
-  const fallback = items[slotIndex % Math.max(items.length, 1)] ?? {
-    question: `سؤال في ${categoryId}`,
-    answer: 'الإجابة ستظهر هنا عند التحقق.',
+function getQuestionContent(categoryId: string, points: PointValue, usedQuestionKeys: string[]) {
+  const items = getQuestionEntriesByPoints(categoryId, points)
+
+  if (items.length === 0) {
+    return {
+      question: 'لا توجد أسئلة متاحة لهذه الفئة حالياً.',
+      answer: 'لا توجد أسئلة متاحة لهذه الفئة حالياً.',
+      questionKey: '',
+      found: false,
+    }
   }
 
-  return fallback
+  const unusedItems = items.filter((item) => !usedQuestionKeys.includes(item.id ?? ''))
+
+  if (unusedItems.length === 0) {
+    return {
+      question: 'لا توجد أسئلة متاحة لهذه الفئة حالياً.',
+      answer: 'لا توجد أسئلة متاحة لهذه الفئة حالياً.',
+      questionKey: '',
+      found: false,
+    }
+  }
+
+  const randomItem = unusedItems[Math.floor(Math.random() * unusedItems.length)]
+
+  return {
+    ...randomItem,
+    questionKey: randomItem.id ?? `${categoryId}-${points}-${randomItem.question}`,
+    found: true,
+  }
 }
 
 export const useGameBoardStore = create<GameBoardState>()(
@@ -133,6 +94,7 @@ export const useGameBoardStore = create<GameBoardState>()(
       team1Lifelines: cloneLifelines(),
       team2Lifelines: cloneLifelines(),
       activeQuestion: null,
+      usedQuestionKeys: [],
 
       initializeBoard: () => {
         const setup = useGameSetupStore.getState()
@@ -155,6 +117,7 @@ export const useGameBoardStore = create<GameBoardState>()(
           team1Lifelines: cloneLifelines(),
           team2Lifelines: cloneLifelines(),
           activeQuestion: null,
+          usedQuestionKeys: [],
         })
       },
 
@@ -176,17 +139,22 @@ export const useGameBoardStore = create<GameBoardState>()(
         const cell = get().getCell(categoryId, slotIndex)
         if (!cell) return null
 
-        const { question, answer } = getQuestionContent(categoryId, slotIndex)
+        const questionContent = getQuestionContent(categoryId, cell.points, get().usedQuestionKeys)
         const questionState: ActiveQuestion = {
           categoryId,
           slotIndex,
           points: cell.points as PointValue,
           team: get().currentTurn,
-          questionText: question,
-          answerText: answer,
+          questionText: questionContent.question,
+          answerText: questionContent.answer,
         }
 
-        set({ activeQuestion: questionState })
+        set((state) => ({
+          activeQuestion: questionState,
+          usedQuestionKeys: questionContent.found && questionContent.questionKey
+            ? [...state.usedQuestionKeys, questionContent.questionKey]
+            : state.usedQuestionKeys,
+        }))
         return questionState
       },
 
@@ -249,6 +217,7 @@ export const useGameBoardStore = create<GameBoardState>()(
         team1Lifelines: state.team1Lifelines,
         team2Lifelines: state.team2Lifelines,
         activeQuestion: state.activeQuestion,
+        usedQuestionKeys: state.usedQuestionKeys,
       }),
     },
   ),
