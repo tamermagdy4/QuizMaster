@@ -32,7 +32,10 @@ await signIn({
   password,
 })
 
-      navigate('/', { replace: true })
+const from =
+  (location.state as { from?: string } | null)?.from ?? '/'
+
+navigate(from, { replace: true })
     } catch (submitError) {
       setError(getAuthErrorMessage(submitError, english))
     } finally {

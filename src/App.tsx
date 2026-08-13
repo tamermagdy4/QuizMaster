@@ -1,4 +1,13 @@
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { useEffect, useState, type ReactNode } from 'react'
+import {
+  createBrowserRouter,
+  Navigate,
+  RouterProvider,
+  useLocation,
+} from 'react-router-dom'
+
+import { getSupabaseClient } from './lib/supabaseClient'
+
 import { MainLayout } from './layouts/MainLayout'
 import { Home } from './pages/Home'
 import { About } from './pages/About'
@@ -25,6 +34,57 @@ import { AdminStatistics } from './pages/admin/AdminStatistics'
 import { Profile } from './pages/Profile'
 import { ForgotPassword } from './pages/auth/ForgotPassword'
 
+function ProtectedRoute({
+  children,
+}: {
+  children: ReactNode
+}) {
+  const location = useLocation()
+  const [isChecking, setIsChecking] = useState(true)
+  const [isAuthenticated, setIsAuthenticated] =
+    useState(false)
+
+  useEffect(() => {
+    const supabase = getSupabaseClient()
+
+    supabase.auth.getSession().then(({ data }) => {
+      setIsAuthenticated(!!data.session)
+      setIsChecking(false)
+    })
+
+    const {
+      data: { subscription },
+    } = supabase.auth.onAuthStateChange(
+      (_event, session) => {
+        setIsAuthenticated(!!session)
+        setIsChecking(false)
+      },
+    )
+
+    return () => {
+      subscription.unsubscribe()
+    }
+  }, [])
+
+  if (isChecking) {
+    return null
+  }
+
+  if (!isAuthenticated) {
+    return (
+      <Navigate
+        to="/login"
+        replace
+        state={{
+          from: location.pathname,
+        }}
+      />
+    )
+  }
+
+  return children
+}
+
 const router = createBrowserRouter([
   {
     path: '/',
@@ -32,7 +92,16 @@ const router = createBrowserRouter([
     children: [
       { index: true, element: <Home /> },
       { path: 'about', element: <About /> },
-      { path: 'create', element: <CreateGame /> },
+
+      {
+        path: 'create',
+        element: (
+          <ProtectedRoute>
+            <CreateGame />
+          </ProtectedRoute>
+        ),
+      },
+
       { path: 'board', element: <GameBoard /> },
       { path: 'question', element: <QuestionScreen /> },
       { path: 'results', element: <Results /> },
@@ -69,8 +138,14 @@ const router = createBrowserRouter([
       { path: 'questions', element: <AdminQuestions /> },
       { path: 'questions/add', element: <AdminQuestionForm /> },
       { path: 'questions/new', element: <AdminQuestionForm /> },
-      { path: 'questions/:id/edit', element: <AdminQuestionForm /> },
-      { path: 'questions/:id', element: <AdminQuestionDetails /> },
+      {
+        path: 'questions/:id/edit',
+        element: <AdminQuestionForm />,
+      },
+      {
+        path: 'questions/:id',
+        element: <AdminQuestionDetails />,
+      },
       { path: 'categories', element: <AdminCategories /> },
       { path: 'import', element: <AdminImport /> },
       { path: 'export', element: <AdminExport /> },
