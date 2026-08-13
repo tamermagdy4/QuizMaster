@@ -1,4 +1,5 @@
-import { Outlet, useLocation } from 'react-router-dom'
+import { Link, Outlet, useLocation, useNavigate } from 'react-router-dom'
+import { useAuth } from '../auth/AuthProvider'
 import { useEffect } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import { useDirectionSync } from '../hooks/useDirectionSync'
@@ -21,6 +22,8 @@ const navItems: NavItem[] = [
 export function MainLayout() {
   useDirectionSync()
   const location = useLocation()
+  const navigate = useNavigate()
+  const { user, isAuthenticated, signOut } = useAuth()
   const { direction, setDirection, musicEnabled, musicVolume, theme, animationsEnabled } = useAppStore()
   const language = direction === 'rtl' ? 'ar' : 'en'
   const navLabels = language === 'ar'
@@ -71,6 +74,49 @@ export function MainLayout() {
               />
             ))}
           </nav>
+          {isAuthenticated ? (
+            <div className="flex items-center gap-2">
+              <Link
+                to="/profile"
+                className="rounded-xl border border-sky-200 bg-sky-50 px-4 py-2 text-sm font-bold text-sky-700 transition hover:bg-sky-100"
+              >
+                {language === 'ar'
+                  ? `حسابي${user?.user_metadata?.display_name ? ` (${user.user_metadata.display_name})` : ''}`
+                  : `Profile${user?.user_metadata?.display_name ? ` (${user.user_metadata.display_name})` : ''}`}
+              </Link>
+
+              <button
+                type="button"
+                onClick={async () => {
+                  try {
+                    await signOut()
+                    navigate('/')
+                  } catch {
+                    // Keep the current page if logout fails.
+                  }
+                }}
+                className="rounded-xl border border-rose-200 bg-rose-50 px-4 py-2 text-sm font-bold text-rose-600 transition hover:bg-rose-100"
+              >
+                {language === 'ar' ? 'تسجيل الخروج' : 'Sign out'}
+              </button>
+            </div>
+          ) : (
+            <div className="flex items-center gap-2">
+              <Link
+                to="/login"
+                className="rounded-xl border border-sky-200 bg-sky-50 px-4 py-2 text-sm font-bold text-sky-700 transition hover:bg-sky-100"
+              >
+                {language === 'ar' ? 'تسجيل الدخول' : 'Sign in'}
+              </Link>
+
+              <Link
+                to="/signup"
+                className="rounded-xl bg-sky-600 px-4 py-2 text-sm font-bold text-white transition hover:bg-sky-700"
+              >
+                {language === 'ar' ? 'إنشاء حساب' : 'Create account'}
+              </Link>
+            </div>
+          )}
 
           <button
             type="button"

@@ -4,10 +4,13 @@ import { Home } from './pages/Home'
 import { About } from './pages/About'
 import { CreateGame } from './pages/CreateGame'
 import { GameBoard } from './pages/GameBoard'
-
 import { QuestionScreen } from './pages/QuestionScreen'
 import { Results } from './pages/Results'
 import { Settings } from './pages/Settings'
+
+import { Login } from './pages/auth/Login'
+import { Signup } from './pages/auth/Signup'
+
 import { AdminGuard } from './components/admin/AdminGuard'
 import { AdminLogin } from './pages/admin/AdminLogin'
 import { AdminLayout } from './components/admin/AdminLayout'
@@ -19,6 +22,8 @@ import { AdminCategories } from './pages/admin/AdminCategories'
 import { AdminImport } from './pages/admin/AdminImport'
 import { AdminExport } from './pages/admin/AdminExport'
 import { AdminStatistics } from './pages/admin/AdminStatistics'
+import { Profile } from './pages/Profile'
+import { ForgotPassword } from './pages/auth/ForgotPassword'
 
 const router = createBrowserRouter([
   {
@@ -29,20 +34,36 @@ const router = createBrowserRouter([
       { path: 'about', element: <About /> },
       { path: 'create', element: <CreateGame /> },
       { path: 'board', element: <GameBoard /> },
-
       { path: 'question', element: <QuestionScreen /> },
       { path: 'results', element: <Results /> },
       { path: 'settings', element: <Settings /> },
-
+      { path: 'profile', element: <Profile /> },
+      { path: 'forgot-password', element: <ForgotPassword /> },
     ],
   },
+
+  {
+    path: '/login',
+    element: <Login />,
+  },
+
+  {
+    path: '/signup',
+    element: <Signup />,
+  },
+
   {
     path: '/admin/login',
     element: <AdminLogin />,
   },
+
   {
     path: '/admin',
-    element: <AdminGuard><AdminLayout /></AdminGuard>,
+    element: (
+      <AdminGuard>
+        <AdminLayout />
+      </AdminGuard>
+    ),
     children: [
       { index: true, element: <AdminDashboard /> },
       { path: 'questions', element: <AdminQuestions /> },
