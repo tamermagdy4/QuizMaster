@@ -1,11 +1,1060 @@
-﻿{
-    "categoryId":  "capitals",
-    "questions":  [
-
-                  ],
-    "metadata":  {
-                     "sectionId":  "geography",
-                     "updatedAt":  "2026-08-03",
-                     "status":  "pending"
-                 }
+{
+  "categoryId": "capitals",
+  "questions": [
+    {
+      "id": "capitals-100-1",
+      "points": 100,
+      "question": "ما عاصمة مصر؟",
+      "answer": "القاهرة",
+      "image": ""
+    },
+    {
+      "id": "capitals-100-2",
+      "points": 100,
+      "question": "ما عاصمة السعودية؟",
+      "answer": "الرياض",
+      "image": ""
+    },
+    {
+      "id": "capitals-100-3",
+      "points": 100,
+      "question": "ما عاصمة الإمارات العربية المتحدة؟",
+      "answer": "أبوظبي",
+      "image": ""
+    },
+    {
+      "id": "capitals-100-4",
+      "points": 100,
+      "question": "ما عاصمة الكويت؟",
+      "answer": "مدينة الكويت",
+      "image": ""
+    },
+    {
+      "id": "capitals-100-5",
+      "points": 100,
+      "question": "ما عاصمة قطر؟",
+      "answer": "الدوحة",
+      "image": ""
+    },
+    {
+      "id": "capitals-100-6",
+      "points": 100,
+      "question": "ما عاصمة البحرين؟",
+      "answer": "المنامة",
+      "image": ""
+    },
+    {
+      "id": "capitals-100-7",
+      "points": 100,
+      "question": "ما عاصمة سلطنة عمان؟",
+      "answer": "مسقط",
+      "image": ""
+    },
+    {
+      "id": "capitals-100-8",
+      "points": 100,
+      "question": "ما عاصمة الأردن؟",
+      "answer": "عمان",
+      "image": ""
+    },
+    {
+      "id": "capitals-100-9",
+      "points": 100,
+      "question": "ما عاصمة لبنان؟",
+      "answer": "بيروت",
+      "image": ""
+    },
+    {
+      "id": "capitals-100-10",
+      "points": 100,
+      "question": "ما عاصمة سوريا؟",
+      "answer": "دمشق",
+      "image": ""
+    },
+    {
+      "id": "capitals-100-11",
+      "points": 100,
+      "question": "ما عاصمة العراق؟",
+      "answer": "بغداد",
+      "image": ""
+    },
+    {
+      "id": "capitals-100-12",
+      "points": 100,
+      "question": "ما عاصمة فلسطين؟",
+      "answer": "القدس",
+      "image": ""
+    },
+    {
+      "id": "capitals-100-13",
+      "points": 100,
+      "question": "ما عاصمة الجزائر؟",
+      "answer": "الجزائر",
+      "image": ""
+    },
+    {
+      "id": "capitals-100-14",
+      "points": 100,
+      "question": "ما عاصمة المغرب؟",
+      "answer": "الرباط",
+      "image": ""
+    },
+    {
+      "id": "capitals-100-15",
+      "points": 100,
+      "question": "ما عاصمة تونس؟",
+      "answer": "تونس",
+      "image": ""
+    },
+    {
+      "id": "capitals-100-16",
+      "points": 100,
+      "question": "ما عاصمة ليبيا؟",
+      "answer": "طرابلس",
+      "image": ""
+    },
+    {
+      "id": "capitals-100-17",
+      "points": 100,
+      "question": "ما عاصمة السودان؟",
+      "answer": "الخرطوم",
+      "image": ""
+    },
+    {
+      "id": "capitals-100-18",
+      "points": 100,
+      "question": "ما عاصمة فرنسا؟",
+      "answer": "باريس",
+      "image": ""
+    },
+    {
+      "id": "capitals-100-19",
+      "points": 100,
+      "question": "ما عاصمة ألمانيا؟",
+      "answer": "برلين",
+      "image": ""
+    },
+    {
+      "id": "capitals-100-20",
+      "points": 100,
+      "question": "ما عاصمة إيطاليا؟",
+      "answer": "روما",
+      "image": ""
+    },
+    {
+      "id": "capitals-100-21",
+      "points": 100,
+      "question": "ما عاصمة إسبانيا؟",
+      "answer": "مدريد",
+      "image": ""
+    },
+    {
+      "id": "capitals-100-22",
+      "points": 100,
+      "question": "ما عاصمة البرتغال؟",
+      "answer": "لشبونة",
+      "image": ""
+    },
+    {
+      "id": "capitals-100-23",
+      "points": 100,
+      "question": "ما عاصمة المملكة المتحدة؟",
+      "answer": "لندن",
+      "image": ""
+    },
+    {
+      "id": "capitals-100-24",
+      "points": 100,
+      "question": "ما عاصمة تركيا؟",
+      "answer": "أنقرة",
+      "image": ""
+    },
+    {
+      "id": "capitals-100-25",
+      "points": 100,
+      "question": "ما عاصمة روسيا؟",
+      "answer": "موسكو",
+      "image": ""
+    },
+    {
+      "id": "capitals-100-26",
+      "points": 100,
+      "question": "ما عاصمة اليابان؟",
+      "answer": "طوكيو",
+      "image": ""
+    },
+    {
+      "id": "capitals-100-27",
+      "points": 100,
+      "question": "ما عاصمة الصين؟",
+      "answer": "بكين",
+      "image": ""
+    },
+    {
+      "id": "capitals-100-28",
+      "points": 100,
+      "question": "ما عاصمة الهند؟",
+      "answer": "نيودلهي",
+      "image": ""
+    },
+    {
+      "id": "capitals-100-29",
+      "points": 100,
+      "question": "ما عاصمة باكستان؟",
+      "answer": "إسلام آباد",
+      "image": ""
+    },
+    {
+      "id": "capitals-100-30",
+      "points": 100,
+      "question": "ما عاصمة أفغانستان؟",
+      "answer": "كابول",
+      "image": ""
+    },
+    {
+      "id": "capitals-100-31",
+      "points": 100,
+      "question": "ما عاصمة إيران؟",
+      "answer": "طهران",
+      "image": ""
+    },
+    {
+      "id": "capitals-100-32",
+      "points": 100,
+      "question": "ما عاصمة كوريا الجنوبية؟",
+      "answer": "سيول",
+      "image": ""
+    },
+    {
+      "id": "capitals-100-33",
+      "points": 100,
+      "question": "ما عاصمة كوريا الشمالية؟",
+      "answer": "بيونغ يانغ",
+      "image": ""
+    },
+    {
+      "id": "capitals-100-34",
+      "points": 100,
+      "question": "ما عاصمة تايلاند؟",
+      "answer": "بانكوك",
+      "image": ""
+    },
+    {
+      "id": "capitals-100-35",
+      "points": 100,
+      "question": "ما عاصمة ماليزيا؟",
+      "answer": "كوالالمبور",
+      "image": ""
+    },
+    {
+      "id": "capitals-100-36",
+      "points": 100,
+      "question": "ما عاصمة إندونيسيا؟",
+      "answer": "جاكرتا",
+      "image": ""
+    },
+    {
+      "id": "capitals-100-37",
+      "points": 100,
+      "question": "ما عاصمة أستراليا؟",
+      "answer": "كانبيرا",
+      "image": ""
+    },
+    {
+      "id": "capitals-100-38",
+      "points": 100,
+      "question": "ما عاصمة نيوزيلندا؟",
+      "answer": "ويلينغتون",
+      "image": ""
+    },
+    {
+      "id": "capitals-100-39",
+      "points": 100,
+      "question": "ما عاصمة كندا؟",
+      "answer": "أوتاوا",
+      "image": ""
+    },
+    {
+      "id": "capitals-100-40",
+      "points": 100,
+      "question": "ما عاصمة الولايات المتحدة الأمريكية؟",
+      "answer": "واشنطن العاصمة",
+      "image": ""
+    },
+    {
+      "id": "capitals-100-41",
+      "points": 100,
+      "question": "ما عاصمة المكسيك؟",
+      "answer": "مكسيكو سيتي",
+      "image": ""
+    },
+    {
+      "id": "capitals-100-42",
+      "points": 100,
+      "question": "ما عاصمة البرازيل؟",
+      "answer": "برازيليا",
+      "image": ""
+    },
+    {
+      "id": "capitals-100-43",
+      "points": 100,
+      "question": "ما عاصمة الأرجنتين؟",
+      "answer": "بوينس آيرس",
+      "image": ""
+    },
+    {
+      "id": "capitals-100-44",
+      "points": 100,
+      "question": "ما عاصمة تشيلي؟",
+      "answer": "سانتياغو",
+      "image": ""
+    },
+    {
+      "id": "capitals-100-45",
+      "points": 100,
+      "question": "ما عاصمة بيرو؟",
+      "answer": "ليما",
+      "image": ""
+    },
+    {
+      "id": "capitals-100-46",
+      "points": 100,
+      "question": "ما عاصمة جنوب أفريقيا؟",
+      "answer": "بريتوريا",
+      "image": ""
+    },
+    {
+      "id": "capitals-100-47",
+      "points": 100,
+      "question": "ما عاصمة نيجيريا؟",
+      "answer": "أبوجا",
+      "image": ""
+    },
+    {
+      "id": "capitals-100-48",
+      "points": 100,
+      "question": "ما عاصمة كينيا؟",
+      "answer": "نيروبي",
+      "image": ""
+    },
+    {
+      "id": "capitals-100-49",
+      "points": 100,
+      "question": "ما عاصمة إثيوبيا؟",
+      "answer": "أديس أبابا",
+      "image": ""
+    },
+    {
+      "id": "capitals-100-50",
+      "points": 100,
+      "question": "ما عاصمة السنغال؟",
+      "answer": "داكار",
+      "image": ""
+    },
+    {
+      "id": "capitals-300-1",
+      "points": 300,
+      "question": "ما عاصمة كازاخستان؟",
+      "answer": "أستانا",
+      "image": ""
+    },
+    {
+      "id": "capitals-300-2",
+      "points": 300,
+      "question": "ما عاصمة أذربيجان؟",
+      "answer": "باكو",
+      "image": ""
+    },
+    {
+      "id": "capitals-300-3",
+      "points": 300,
+      "question": "ما عاصمة أرمينيا؟",
+      "answer": "يريفان",
+      "image": ""
+    },
+    {
+      "id": "capitals-300-4",
+      "points": 300,
+      "question": "ما عاصمة جورجيا؟",
+      "answer": "تبليسي",
+      "image": ""
+    },
+    {
+      "id": "capitals-300-5",
+      "points": 300,
+      "question": "ما عاصمة أوزبكستان؟",
+      "answer": "طشقند",
+      "image": ""
+    },
+    {
+      "id": "capitals-300-6",
+      "points": 300,
+      "question": "ما عاصمة تركمانستان؟",
+      "answer": "عشق آباد",
+      "image": ""
+    },
+    {
+      "id": "capitals-300-7",
+      "points": 300,
+      "question": "ما عاصمة قيرغيزستان؟",
+      "answer": "بيشكك",
+      "image": ""
+    },
+    {
+      "id": "capitals-300-8",
+      "points": 300,
+      "question": "ما عاصمة طاجيكستان؟",
+      "answer": "دوشنبه",
+      "image": ""
+    },
+    {
+      "id": "capitals-300-9",
+      "points": 300,
+      "question": "ما عاصمة منغوليا؟",
+      "answer": "أولان باتور",
+      "image": ""
+    },
+    {
+      "id": "capitals-300-10",
+      "points": 300,
+      "question": "ما عاصمة ميانمار؟",
+      "answer": "نايبيداو",
+      "image": ""
+    },
+    {
+      "id": "capitals-300-11",
+      "points": 300,
+      "question": "ما عاصمة كمبوديا؟",
+      "answer": "بنوم بنه",
+      "image": ""
+    },
+    {
+      "id": "capitals-300-12",
+      "points": 300,
+      "question": "ما عاصمة لاوس؟",
+      "answer": "فينتيان",
+      "image": ""
+    },
+    {
+      "id": "capitals-300-13",
+      "points": 300,
+      "question": "ما عاصمة فيتنام؟",
+      "answer": "هانوي",
+      "image": ""
+    },
+    {
+      "id": "capitals-300-14",
+      "points": 300,
+      "question": "ما عاصمة الفلبين؟",
+      "answer": "مانيلا",
+      "image": ""
+    },
+    {
+      "id": "capitals-300-15",
+      "points": 300,
+      "question": "ما عاصمة سريلانكا؟",
+      "answer": "سري جاياواردنابورا كوتي",
+      "image": ""
+    },
+    {
+      "id": "capitals-300-16",
+      "points": 300,
+      "question": "ما عاصمة نيبال؟",
+      "answer": "كاتماندو",
+      "image": ""
+    },
+    {
+      "id": "capitals-300-17",
+      "points": 300,
+      "question": "ما عاصمة بوتان؟",
+      "answer": "تيمفو",
+      "image": ""
+    },
+    {
+      "id": "capitals-300-18",
+      "points": 300,
+      "question": "ما عاصمة بنجلاديش؟",
+      "answer": "دكا",
+      "image": ""
+    },
+    {
+      "id": "capitals-300-19",
+      "points": 300,
+      "question": "ما عاصمة مولدوفا؟",
+      "answer": "كيشيناو",
+      "image": ""
+    },
+    {
+      "id": "capitals-300-20",
+      "points": 300,
+      "question": "ما عاصمة بيلاروسيا؟",
+      "answer": "مينسك",
+      "image": ""
+    },
+    {
+      "id": "capitals-300-21",
+      "points": 300,
+      "question": "ما عاصمة رومانيا؟",
+      "answer": "بوخارست",
+      "image": ""
+    },
+    {
+      "id": "capitals-300-22",
+      "points": 300,
+      "question": "ما عاصمة بلغاريا؟",
+      "answer": "صوفيا",
+      "image": ""
+    },
+    {
+      "id": "capitals-300-23",
+      "points": 300,
+      "question": "ما عاصمة صربيا؟",
+      "answer": "بلغراد",
+      "image": ""
+    },
+    {
+      "id": "capitals-300-24",
+      "points": 300,
+      "question": "ما عاصمة كرواتيا؟",
+      "answer": "زغرب",
+      "image": ""
+    },
+    {
+      "id": "capitals-300-25",
+      "points": 300,
+      "question": "ما عاصمة سلوفينيا؟",
+      "answer": "ليوبليانا",
+      "image": ""
+    },
+    {
+      "id": "capitals-300-26",
+      "points": 300,
+      "question": "ما عاصمة سلوفاكيا؟",
+      "answer": "براتيسلافا",
+      "image": ""
+    },
+    {
+      "id": "capitals-300-27",
+      "points": 300,
+      "question": "ما عاصمة التشيك؟",
+      "answer": "براغ",
+      "image": ""
+    },
+    {
+      "id": "capitals-300-28",
+      "points": 300,
+      "question": "ما عاصمة المجر؟",
+      "answer": "بودابست",
+      "image": ""
+    },
+    {
+      "id": "capitals-300-29",
+      "points": 300,
+      "question": "ما عاصمة النمسا؟",
+      "answer": "فيينا",
+      "image": ""
+    },
+    {
+      "id": "capitals-300-30",
+      "points": 300,
+      "question": "ما عاصمة سويسرا؟",
+      "answer": "برن",
+      "image": ""
+    },
+    {
+      "id": "capitals-300-31",
+      "points": 300,
+      "question": "ما عاصمة بلجيكا؟",
+      "answer": "بروكسل",
+      "image": ""
+    },
+    {
+      "id": "capitals-300-32",
+      "points": 300,
+      "question": "ما عاصمة هولندا؟",
+      "answer": "أمستردام",
+      "image": ""
+    },
+    {
+      "id": "capitals-300-33",
+      "points": 300,
+      "question": "ما عاصمة الدنمارك؟",
+      "answer": "كوبنهاغن",
+      "image": ""
+    },
+    {
+      "id": "capitals-300-34",
+      "points": 300,
+      "question": "ما عاصمة النرويج؟",
+      "answer": "أوسلو",
+      "image": ""
+    },
+    {
+      "id": "capitals-300-35",
+      "points": 300,
+      "question": "ما عاصمة السويد؟",
+      "answer": "ستوكهولم",
+      "image": ""
+    },
+    {
+      "id": "capitals-300-36",
+      "points": 300,
+      "question": "ما عاصمة فنلندا؟",
+      "answer": "هلسنكي",
+      "image": ""
+    },
+    {
+      "id": "capitals-300-37",
+      "points": 300,
+      "question": "ما عاصمة أيرلندا؟",
+      "answer": "دبلن",
+      "image": ""
+    },
+    {
+      "id": "capitals-300-38",
+      "points": 300,
+      "question": "ما عاصمة لوكسمبورغ؟",
+      "answer": "لوكسمبورغ",
+      "image": ""
+    },
+    {
+      "id": "capitals-300-39",
+      "points": 300,
+      "question": "ما عاصمة ألبانيا؟",
+      "answer": "تيرانا",
+      "image": ""
+    },
+    {
+      "id": "capitals-300-40",
+      "points": 300,
+      "question": "ما عاصمة مقدونيا الشمالية؟",
+      "answer": "سكوبيه",
+      "image": ""
+    },
+    {
+      "id": "capitals-300-41",
+      "points": 300,
+      "question": "ما عاصمة البوسنة والهرسك؟",
+      "answer": "سراييفو",
+      "image": ""
+    },
+    {
+      "id": "capitals-300-42",
+      "points": 300,
+      "question": "ما عاصمة الجبل الأسود؟",
+      "answer": "بودغوريتسا",
+      "image": ""
+    },
+    {
+      "id": "capitals-300-43",
+      "points": 300,
+      "question": "ما عاصمة كوسوفو؟",
+      "answer": "بريشتينا",
+      "image": ""
+    },
+    {
+      "id": "capitals-300-44",
+      "points": 300,
+      "question": "ما عاصمة أوكرانيا؟",
+      "answer": "كييف",
+      "image": ""
+    },
+    {
+      "id": "capitals-300-45",
+      "points": 300,
+      "question": "ما عاصمة ليتوانيا؟",
+      "answer": "فيلنيوس",
+      "image": ""
+    },
+    {
+      "id": "capitals-300-46",
+      "points": 300,
+      "question": "ما عاصمة لاتفيا؟",
+      "answer": "ريغا",
+      "image": ""
+    },
+    {
+      "id": "capitals-300-47",
+      "points": 300,
+      "question": "ما عاصمة إستونيا؟",
+      "answer": "تالين",
+      "image": ""
+    },
+    {
+      "id": "capitals-300-48",
+      "points": 300,
+      "question": "ما عاصمة آيسلندا؟",
+      "answer": "ريكيافيك",
+      "image": ""
+    },
+    {
+      "id": "capitals-300-49",
+      "points": 300,
+      "question": "ما عاصمة مالطا؟",
+      "answer": "فاليتا",
+      "image": ""
+    },
+    {
+      "id": "capitals-300-50",
+      "points": 300,
+      "question": "ما عاصمة قبرص؟",
+      "answer": "نيقوسيا",
+      "image": ""
+    },
+    {
+      "id": "capitals-500-1",
+      "points": 500,
+      "question": "ما عاصمة سورينام؟",
+      "answer": "باراماريبو",
+      "image": ""
+    },
+    {
+      "id": "capitals-500-2",
+      "points": 500,
+      "question": "ما عاصمة غيانا؟",
+      "answer": "جورج تاون",
+      "image": ""
+    },
+    {
+      "id": "capitals-500-3",
+      "points": 500,
+      "question": "ما عاصمة غيانا الفرنسية؟",
+      "answer": "كايين",
+      "image": ""
+    },
+    {
+      "id": "capitals-500-4",
+      "points": 500,
+      "question": "ما عاصمة بليز؟",
+      "answer": "بلموبان",
+      "image": ""
+    },
+    {
+      "id": "capitals-500-5",
+      "points": 500,
+      "question": "ما عاصمة غواتيمالا؟",
+      "answer": "مدينة غواتيمالا",
+      "image": ""
+    },
+    {
+      "id": "capitals-500-6",
+      "points": 500,
+      "question": "ما عاصمة هندوراس؟",
+      "answer": "تيغوسيغالبا",
+      "image": ""
+    },
+    {
+      "id": "capitals-500-7",
+      "points": 500,
+      "question": "ما عاصمة السلفادور؟",
+      "answer": "سان سلفادور",
+      "image": ""
+    },
+    {
+      "id": "capitals-500-8",
+      "points": 500,
+      "question": "ما عاصمة نيكاراغوا؟",
+      "answer": "ماناغوا",
+      "image": ""
+    },
+    {
+      "id": "capitals-500-9",
+      "points": 500,
+      "question": "ما عاصمة كوستاريكا؟",
+      "answer": "سان خوسيه",
+      "image": ""
+    },
+    {
+      "id": "capitals-500-10",
+      "points": 500,
+      "question": "ما عاصمة بنما؟",
+      "answer": "مدينة بنما",
+      "image": ""
+    },
+    {
+      "id": "capitals-500-11",
+      "points": 500,
+      "question": "ما عاصمة باراغواي؟",
+      "answer": "أسونسيون",
+      "image": ""
+    },
+    {
+      "id": "capitals-500-12",
+      "points": 500,
+      "question": "ما عاصمة أوروغواي؟",
+      "answer": "مونتفيديو",
+      "image": ""
+    },
+    {
+      "id": "capitals-500-13",
+      "points": 500,
+      "question": "ما عاصمة بوليفيا الرسمية؟",
+      "answer": "سوكري",
+      "image": ""
+    },
+    {
+      "id": "capitals-500-14",
+      "points": 500,
+      "question": "ما عاصمة الإكوادور؟",
+      "answer": "كيتو",
+      "image": ""
+    },
+    {
+      "id": "capitals-500-15",
+      "points": 500,
+      "question": "ما عاصمة فنزويلا؟",
+      "answer": "كاراكاس",
+      "image": ""
+    },
+    {
+      "id": "capitals-500-16",
+      "points": 500,
+      "question": "ما عاصمة ناميبيا؟",
+      "answer": "ويندهوك",
+      "image": ""
+    },
+    {
+      "id": "capitals-500-17",
+      "points": 500,
+      "question": "ما عاصمة بوتسوانا؟",
+      "answer": "غابورون",
+      "image": ""
+    },
+    {
+      "id": "capitals-500-18",
+      "points": 500,
+      "question": "ما عاصمة زامبيا؟",
+      "answer": "لوساكا",
+      "image": ""
+    },
+    {
+      "id": "capitals-500-19",
+      "points": 500,
+      "question": "ما عاصمة زيمبابوي؟",
+      "answer": "هراري",
+      "image": ""
+    },
+    {
+      "id": "capitals-500-20",
+      "points": 500,
+      "question": "ما عاصمة موزمبيق؟",
+      "answer": "مابوتو",
+      "image": ""
+    },
+    {
+      "id": "capitals-500-21",
+      "points": 500,
+      "question": "ما عاصمة مدغشقر؟",
+      "answer": "أنتاناناريفو",
+      "image": ""
+    },
+    {
+      "id": "capitals-500-22",
+      "points": 500,
+      "question": "ما عاصمة موريشيوس؟",
+      "answer": "بورت لويس",
+      "image": ""
+    },
+    {
+      "id": "capitals-500-23",
+      "points": 500,
+      "question": "ما عاصمة جزر القمر؟",
+      "answer": "موروني",
+      "image": ""
+    },
+    {
+      "id": "capitals-500-24",
+      "points": 500,
+      "question": "ما عاصمة سيشل؟",
+      "answer": "فيكتوريا",
+      "image": ""
+    },
+    {
+      "id": "capitals-500-25",
+      "points": 500,
+      "question": "ما عاصمة إسواتيني؟",
+      "answer": "مبابان",
+      "image": ""
+    },
+    {
+      "id": "capitals-500-26",
+      "points": 500,
+      "question": "ما عاصمة تشاد؟",
+      "answer": "إنجامينا",
+      "image": ""
+    },
+    {
+      "id": "capitals-500-27",
+      "points": 500,
+      "question": "ما عاصمة النيجر؟",
+      "answer": "نيامي",
+      "image": ""
+    },
+    {
+      "id": "capitals-500-28",
+      "points": 500,
+      "question": "ما عاصمة مالي؟",
+      "answer": "باماكو",
+      "image": ""
+    },
+    {
+      "id": "capitals-500-29",
+      "points": 500,
+      "question": "ما عاصمة بوركينا فاسو؟",
+      "answer": "واغادوغو",
+      "image": ""
+    },
+    {
+      "id": "capitals-500-30",
+      "points": 500,
+      "question": "ما عاصمة توغو؟",
+      "answer": "لومي",
+      "image": ""
+    },
+    {
+      "id": "capitals-500-31",
+      "points": 500,
+      "question": "ما عاصمة بنين؟",
+      "answer": "بورتو نوفو",
+      "image": ""
+    },
+    {
+      "id": "capitals-500-32",
+      "points": 500,
+      "question": "ما عاصمة ساحل العاج؟",
+      "answer": "ياموسوكرو",
+      "image": ""
+    },
+    {
+      "id": "capitals-500-33",
+      "points": 500,
+      "question": "ما عاصمة غينيا؟",
+      "answer": "كوناكري",
+      "image": ""
+    },
+    {
+      "id": "capitals-500-34",
+      "points": 500,
+      "question": "ما عاصمة غينيا بيساو؟",
+      "answer": "بيساو",
+      "image": ""
+    },
+    {
+      "id": "capitals-500-35",
+      "points": 500,
+      "question": "ما عاصمة سيراليون؟",
+      "answer": "فريتاون",
+      "image": ""
+    },
+    {
+      "id": "capitals-500-36",
+      "points": 500,
+      "question": "ما عاصمة ليبيريا؟",
+      "answer": "مونروفيا",
+      "image": ""
+    },
+    {
+      "id": "capitals-500-37",
+      "points": 500,
+      "question": "ما عاصمة الكاميرون؟",
+      "answer": "ياوندي",
+      "image": ""
+    },
+    {
+      "id": "capitals-500-38",
+      "points": 500,
+      "question": "ما عاصمة جمهورية أفريقيا الوسطى؟",
+      "answer": "بانغي",
+      "image": ""
+    },
+    {
+      "id": "capitals-500-39",
+      "points": 500,
+      "question": "ما عاصمة جمهورية الكونغو؟",
+      "answer": "برازافيل",
+      "image": ""
+    },
+    {
+      "id": "capitals-500-40",
+      "points": 500,
+      "question": "ما عاصمة جمهورية الكونغو الديمقراطية؟",
+      "answer": "كينشاسا",
+      "image": ""
+    },
+    {
+      "id": "capitals-500-41",
+      "points": 500,
+      "question": "ما عاصمة الغابون؟",
+      "answer": "ليبرفيل",
+      "image": ""
+    },
+    {
+      "id": "capitals-500-42",
+      "points": 500,
+      "question": "ما عاصمة غينيا الاستوائية؟",
+      "answer": "مالابو",
+      "image": ""
+    },
+    {
+      "id": "capitals-500-43",
+      "points": 500,
+      "question": "ما عاصمة أنغولا؟",
+      "answer": "لواندا",
+      "image": ""
+    },
+    {
+      "id": "capitals-500-44",
+      "points": 500,
+      "question": "ما عاصمة رواندا؟",
+      "answer": "كيغالي",
+      "image": ""
+    },
+    {
+      "id": "capitals-500-45",
+      "points": 500,
+      "question": "ما عاصمة بوروندي؟",
+      "answer": "غيتيغا",
+      "image": ""
+    },
+    {
+      "id": "capitals-500-46",
+      "points": 500,
+      "question": "ما عاصمة تنزانيا؟",
+      "answer": "دودوما",
+      "image": ""
+    },
+    {
+      "id": "capitals-500-47",
+      "points": 500,
+      "question": "ما عاصمة أوغندا؟",
+      "answer": "كمبالا",
+      "image": ""
+    },
+    {
+      "id": "capitals-500-48",
+      "points": 500,
+      "question": "ما عاصمة جيبوتي؟",
+      "answer": "جيبوتي",
+      "image": ""
+    },
+    {
+      "id": "capitals-500-49",
+      "points": 500,
+      "question": "ما عاصمة إريتريا؟",
+      "answer": "أسمرة",
+      "image": ""
+    },
+    {
+      "id": "capitals-500-50",
+      "points": 500,
+      "question": "ما عاصمة جنوب السودان؟",
+      "answer": "جوبا",
+      "image": ""
+    }
+  ],
+  "metadata": {
+    "sectionId": "geography",
+    "updatedAt": "2026-08-03",
+    "status": "pending"
+  }
 }

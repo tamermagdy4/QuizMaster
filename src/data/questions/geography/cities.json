@@ -1,11 +1,1235 @@
-﻿{
-    "categoryId":  "cities",
-    "questions":  [
-
-                  ],
-    "metadata":  {
-                     "sectionId":  "geography",
-                     "updatedAt":  "2026-08-03",
-                     "status":  "pending"
-                 }
+{
+  "categoryId": "cities",
+  "questions": [
+    {
+      "id": "cities-100-1",
+      "points": 100,
+      "question": "في أي دولة تقع مدينة دبي؟",
+      "answer": "الإمارات العربية المتحدة",
+      "image": ""
+    },
+    {
+      "id": "cities-100-2",
+      "points": 100,
+      "question": "في أي دولة تقع مدينة مكة المكرمة؟",
+      "answer": "المملكة العربية السعودية",
+      "image": ""
+    },
+    {
+      "id": "cities-100-3",
+      "points": 100,
+      "question": "في أي دولة تقع مدينة الإسكندرية؟",
+      "answer": "مصر",
+      "image": ""
+    },
+    {
+      "id": "cities-100-4",
+      "points": 100,
+      "question": "في أي دولة تقع مدينة إسطنبول؟",
+      "answer": "تركيا",
+      "image": ""
+    },
+    {
+      "id": "cities-100-5",
+      "points": 100,
+      "question": "في أي دولة تقع مدينة باريس؟",
+      "answer": "فرنسا",
+      "image": ""
+    },
+    {
+      "id": "cities-100-6",
+      "points": 100,
+      "question": "في أي دولة تقع مدينة لندن؟",
+      "answer": "المملكة المتحدة",
+      "image": ""
+    },
+    {
+      "id": "cities-100-7",
+      "points": 100,
+      "question": "في أي دولة تقع مدينة مدريد؟",
+      "answer": "إسبانيا",
+      "image": ""
+    },
+    {
+      "id": "cities-100-8",
+      "points": 100,
+      "question": "في أي دولة تقع مدينة روما؟",
+      "answer": "إيطاليا",
+      "image": ""
+    },
+    {
+      "id": "cities-100-9",
+      "points": 100,
+      "question": "في أي دولة تقع مدينة برلين؟",
+      "answer": "ألمانيا",
+      "image": ""
+    },
+    {
+      "id": "cities-100-10",
+      "points": 100,
+      "question": "في أي دولة تقع مدينة موسكو؟",
+      "answer": "روسيا",
+      "image": ""
+    },
+    {
+      "id": "cities-100-11",
+      "points": 100,
+      "question": "في أي دولة تقع مدينة طوكيو؟",
+      "answer": "اليابان",
+      "image": ""
+    },
+    {
+      "id": "cities-100-12",
+      "points": 100,
+      "question": "في أي دولة تقع مدينة سيدني؟",
+      "answer": "أستراليا",
+      "image": ""
+    },
+    {
+      "id": "cities-100-13",
+      "points": 100,
+      "question": "في أي دولة تقع مدينة نيويورك؟",
+      "answer": "الولايات المتحدة الأمريكية",
+      "image": ""
+    },
+    {
+      "id": "cities-100-14",
+      "points": 100,
+      "question": "في أي دولة تقع مدينة تورونتو؟",
+      "answer": "كندا",
+      "image": ""
+    },
+    {
+      "id": "cities-100-15",
+      "points": 100,
+      "question": "في أي دولة تقع مدينة ريو دي جانيرو؟",
+      "answer": "البرازيل",
+      "image": ""
+    },
+    {
+      "id": "cities-100-16",
+      "points": 100,
+      "question": "في أي دولة تقع مدينة بوينس آيرس؟",
+      "answer": "الأرجنتين",
+      "image": ""
+    },
+    {
+      "id": "cities-100-17",
+      "points": 100,
+      "question": "في أي دولة تقع مدينة الدار البيضاء؟",
+      "answer": "المغرب",
+      "image": ""
+    },
+    {
+      "id": "cities-100-18",
+      "points": 100,
+      "question": "في أي دولة تقع مدينة الجزائر؟",
+      "answer": "الجزائر",
+      "image": ""
+    },
+    {
+      "id": "cities-100-19",
+      "points": 100,
+      "question": "في أي دولة تقع مدينة تونس؟",
+      "answer": "تونس",
+      "image": ""
+    },
+    {
+      "id": "cities-100-20",
+      "points": 100,
+      "question": "في أي دولة تقع مدينة الخرطوم؟",
+      "answer": "السودان",
+      "image": ""
+    },
+    {
+      "id": "cities-100-21",
+      "points": 100,
+      "question": "في أي دولة تقع مدينة عمان؟",
+      "answer": "الأردن",
+      "image": ""
+    },
+    {
+      "id": "cities-100-22",
+      "points": 100,
+      "question": "في أي دولة تقع مدينة بيروت؟",
+      "answer": "لبنان",
+      "image": ""
+    },
+    {
+      "id": "cities-100-23",
+      "points": 100,
+      "question": "في أي دولة تقع مدينة بغداد؟",
+      "answer": "العراق",
+      "image": ""
+    },
+    {
+      "id": "cities-100-24",
+      "points": 100,
+      "question": "في أي دولة تقع مدينة دمشق؟",
+      "answer": "سوريا",
+      "image": ""
+    },
+    {
+      "id": "cities-100-25",
+      "points": 100,
+      "question": "في أي دولة تقع مدينة الدوحة؟",
+      "answer": "قطر",
+      "image": ""
+    },
+    {
+      "id": "cities-100-26",
+      "points": 100,
+      "question": "في أي دولة تقع مدينة المنامة؟",
+      "answer": "البحرين",
+      "image": ""
+    },
+    {
+      "id": "cities-100-27",
+      "points": 100,
+      "question": "في أي دولة تقع مدينة الكويت؟",
+      "answer": "الكويت",
+      "image": ""
+    },
+    {
+      "id": "cities-100-28",
+      "points": 100,
+      "question": "في أي دولة تقع مدينة مسقط؟",
+      "answer": "سلطنة عمان",
+      "image": ""
+    },
+    {
+      "id": "cities-100-29",
+      "points": 100,
+      "question": "في أي دولة تقع مدينة صنعاء؟",
+      "answer": "اليمن",
+      "image": ""
+    },
+    {
+      "id": "cities-100-30",
+      "points": 100,
+      "question": "في أي دولة تقع مدينة القدس؟",
+      "answer": "فلسطين",
+      "image": ""
+    },
+    {
+      "id": "cities-100-31",
+      "points": 100,
+      "question": "في أي دولة تقع مدينة هانوي؟",
+      "answer": "فيتنام",
+      "image": ""
+    },
+    {
+      "id": "cities-100-32",
+      "points": 100,
+      "question": "في أي دولة تقع مدينة سيول؟",
+      "answer": "كوريا الجنوبية",
+      "image": ""
+    },
+    {
+      "id": "cities-100-33",
+      "points": 100,
+      "question": "في أي دولة تقع مدينة بكين؟",
+      "answer": "الصين",
+      "image": ""
+    },
+    {
+      "id": "cities-100-34",
+      "points": 100,
+      "question": "في أي دولة تقع مدينة نيودلهي؟",
+      "answer": "الهند",
+      "image": ""
+    },
+    {
+      "id": "cities-100-35",
+      "points": 100,
+      "question": "في أي دولة تقع مدينة كراتشي؟",
+      "answer": "باكستان",
+      "image": ""
+    },
+    {
+      "id": "cities-100-36",
+      "points": 100,
+      "question": "في أي دولة تقع مدينة سنغافورة؟",
+      "answer": "سنغافورة",
+      "image": ""
+    },
+    {
+      "id": "cities-100-37",
+      "points": 100,
+      "question": "في أي دولة تقع مدينة بانكوك؟",
+      "answer": "تايلاند",
+      "image": ""
+    },
+    {
+      "id": "cities-100-38",
+      "points": 100,
+      "question": "في أي دولة تقع مدينة جاكرتا؟",
+      "answer": "إندونيسيا",
+      "image": ""
+    },
+    {
+      "id": "cities-100-39",
+      "points": 100,
+      "question": "في أي دولة تقع مدينة مانيلا؟",
+      "answer": "الفلبين",
+      "image": ""
+    },
+    {
+      "id": "cities-100-40",
+      "points": 100,
+      "question": "في أي دولة تقع مدينة كيب تاون؟",
+      "answer": "جنوب أفريقيا",
+      "image": ""
+    },
+    {
+      "id": "cities-100-41",
+      "points": 100,
+      "question": "في أي دولة تقع مدينة نيروبي؟",
+      "answer": "كينيا",
+      "image": ""
+    },
+    {
+      "id": "cities-100-42",
+      "points": 100,
+      "question": "في أي دولة تقع مدينة أبوجا؟",
+      "answer": "نيجيريا",
+      "image": ""
+    },
+    {
+      "id": "cities-100-43",
+      "points": 100,
+      "question": "في أي دولة تقع مدينة أديس أبابا؟",
+      "answer": "إثيوبيا",
+      "image": ""
+    },
+    {
+      "id": "cities-100-44",
+      "points": 100,
+      "question": "في أي دولة تقع مدينة لشبونة؟",
+      "answer": "البرتغال",
+      "image": ""
+    },
+    {
+      "id": "cities-100-45",
+      "points": 100,
+      "question": "في أي دولة تقع مدينة أثينا؟",
+      "answer": "اليونان",
+      "image": ""
+    },
+    {
+      "id": "cities-100-46",
+      "points": 100,
+      "question": "في أي دولة تقع مدينة بروكسل؟",
+      "answer": "بلجيكا",
+      "image": ""
+    },
+    {
+      "id": "cities-100-47",
+      "points": 100,
+      "question": "في أي دولة تقع مدينة أمستردام؟",
+      "answer": "هولندا",
+      "image": ""
+    },
+    {
+      "id": "cities-100-48",
+      "points": 100,
+      "question": "في أي دولة تقع مدينة فيينا؟",
+      "answer": "النمسا",
+      "image": ""
+    },
+    {
+      "id": "cities-100-49",
+      "points": 100,
+      "question": "في أي دولة تقع مدينة براغ؟",
+      "answer": "التشيك",
+      "image": ""
+    },
+    {
+      "id": "cities-100-50",
+      "points": 100,
+      "question": "في أي دولة تقع مدينة بودابست؟",
+      "answer": "المجر",
+      "image": ""
+    },
+    {
+      "id": "cities-300-1",
+      "points": 300,
+      "question": "في أي دولة تقع مدينة برشلونة؟",
+      "answer": "إسبانيا",
+      "image": ""
+    },
+    {
+      "id": "cities-300-2",
+      "points": 300,
+      "question": "في أي دولة تقع مدينة ميلانو؟",
+      "answer": "إيطاليا",
+      "image": ""
+    },
+    {
+      "id": "cities-300-3",
+      "points": 300,
+      "question": "في أي دولة تقع مدينة ميونيخ؟",
+      "answer": "ألمانيا",
+      "image": ""
+    },
+    {
+      "id": "cities-300-4",
+      "points": 300,
+      "question": "في أي دولة تقع مدينة سانت بطرسبرغ؟",
+      "answer": "روسيا",
+      "image": ""
+    },
+    {
+      "id": "cities-300-5",
+      "points": 300,
+      "question": "في أي دولة تقع مدينة أوساكا؟",
+      "answer": "اليابان",
+      "image": ""
+    },
+    {
+      "id": "cities-300-6",
+      "points": 300,
+      "question": "في أي دولة تقع مدينة شنغهاي؟",
+      "answer": "الصين",
+      "image": ""
+    },
+    {
+      "id": "cities-300-7",
+      "points": 300,
+      "question": "في أي دولة تقع مدينة مومباي؟",
+      "answer": "الهند",
+      "image": ""
+    },
+    {
+      "id": "cities-300-8",
+      "points": 300,
+      "question": "في أي دولة تقع مدينة لاهور؟",
+      "answer": "باكستان",
+      "image": ""
+    },
+    {
+      "id": "cities-300-9",
+      "points": 300,
+      "question": "في أي دولة تقع مدينة هو تشي منه؟",
+      "answer": "فيتنام",
+      "image": ""
+    },
+    {
+      "id": "cities-300-10",
+      "points": 300,
+      "question": "في أي دولة تقع مدينة شيان؟",
+      "answer": "الصين",
+      "image": ""
+    },
+    {
+      "id": "cities-300-11",
+      "points": 300,
+      "question": "في أي دولة تقع مدينة مونتريال؟",
+      "answer": "كندا",
+      "image": ""
+    },
+    {
+      "id": "cities-300-12",
+      "points": 300,
+      "question": "في أي دولة تقع مدينة شيكاغو؟",
+      "answer": "الولايات المتحدة الأمريكية",
+      "image": ""
+    },
+    {
+      "id": "cities-300-13",
+      "points": 300,
+      "question": "في أي دولة تقع مدينة لوس أنجلوس؟",
+      "answer": "الولايات المتحدة الأمريكية",
+      "image": ""
+    },
+    {
+      "id": "cities-300-14",
+      "points": 300,
+      "question": "في أي دولة تقع مدينة فانكوفر؟",
+      "answer": "كندا",
+      "image": ""
+    },
+    {
+      "id": "cities-300-15",
+      "points": 300,
+      "question": "في أي دولة تقع مدينة كيبك؟",
+      "answer": "كندا",
+      "image": ""
+    },
+    {
+      "id": "cities-300-16",
+      "points": 300,
+      "question": "في أي دولة تقع مدينة جوهانسبرغ؟",
+      "answer": "جنوب أفريقيا",
+      "image": ""
+    },
+    {
+      "id": "cities-300-17",
+      "points": 300,
+      "question": "في أي دولة تقع مدينة الدار البيضاء؟",
+      "answer": "المغرب",
+      "image": ""
+    },
+    {
+      "id": "cities-300-18",
+      "points": 300,
+      "question": "في أي دولة تقع مدينة وهران؟",
+      "answer": "الجزائر",
+      "image": ""
+    },
+    {
+      "id": "cities-300-19",
+      "points": 300,
+      "question": "في أي دولة تقع مدينة صفاقس؟",
+      "answer": "تونس",
+      "image": ""
+    },
+    {
+      "id": "cities-300-20",
+      "points": 300,
+      "question": "في أي دولة تقع مدينة البصرة؟",
+      "answer": "العراق",
+      "image": ""
+    },
+    {
+      "id": "cities-300-21",
+      "points": 300,
+      "question": "في أي دولة تقع مدينة حلب؟",
+      "answer": "سوريا",
+      "image": ""
+    },
+    {
+      "id": "cities-300-22",
+      "points": 300,
+      "question": "في أي دولة تقع مدينة العقبة؟",
+      "answer": "الأردن",
+      "image": ""
+    },
+    {
+      "id": "cities-300-23",
+      "points": 300,
+      "question": "في أي دولة تقع مدينة جدة؟",
+      "answer": "المملكة العربية السعودية",
+      "image": ""
+    },
+    {
+      "id": "cities-300-24",
+      "points": 300,
+      "question": "في أي دولة تقع مدينة الشارقة؟",
+      "answer": "الإمارات العربية المتحدة",
+      "image": ""
+    },
+    {
+      "id": "cities-300-25",
+      "points": 300,
+      "question": "في أي دولة تقع مدينة الإسكندرية؟",
+      "answer": "مصر",
+      "image": ""
+    },
+    {
+      "id": "cities-300-26",
+      "points": 300,
+      "question": "في أي دولة تقع مدينة تبريز؟",
+      "answer": "إيران",
+      "image": ""
+    },
+    {
+      "id": "cities-300-27",
+      "points": 300,
+      "question": "في أي دولة تقع مدينة إزمير؟",
+      "answer": "تركيا",
+      "image": ""
+    },
+    {
+      "id": "cities-300-28",
+      "points": 300,
+      "question": "في أي دولة تقع مدينة مرسيليا؟",
+      "answer": "فرنسا",
+      "image": ""
+    },
+    {
+      "id": "cities-300-29",
+      "points": 300,
+      "question": "في أي دولة تقع مدينة هامبورغ؟",
+      "answer": "ألمانيا",
+      "image": ""
+    },
+    {
+      "id": "cities-300-30",
+      "points": 300,
+      "question": "في أي دولة تقع مدينة ليفربول؟",
+      "answer": "المملكة المتحدة",
+      "image": ""
+    },
+    {
+      "id": "cities-300-31",
+      "points": 300,
+      "question": "في أي دولة تقع مدينة فلورنسا؟",
+      "answer": "إيطاليا",
+      "image": ""
+    },
+    {
+      "id": "cities-300-32",
+      "points": 300,
+      "question": "في أي دولة تقع مدينة فالنسيا؟",
+      "answer": "إسبانيا",
+      "image": ""
+    },
+    {
+      "id": "cities-300-33",
+      "points": 300,
+      "question": "في أي دولة تقع مدينة كراكاو؟",
+      "answer": "بولندا",
+      "image": ""
+    },
+    {
+      "id": "cities-300-34",
+      "points": 300,
+      "question": "في أي دولة تقع مدينة جنيف؟",
+      "answer": "سويسرا",
+      "image": ""
+    },
+    {
+      "id": "cities-300-35",
+      "points": 300,
+      "question": "في أي دولة تقع مدينة زيورخ؟",
+      "answer": "سويسرا",
+      "image": ""
+    },
+    {
+      "id": "cities-300-36",
+      "points": 300,
+      "question": "في أي دولة تقع مدينة روتردام؟",
+      "answer": "هولندا",
+      "image": ""
+    },
+    {
+      "id": "cities-300-37",
+      "points": 300,
+      "question": "في أي دولة تقع مدينة أنتويرب؟",
+      "answer": "بلجيكا",
+      "image": ""
+    },
+    {
+      "id": "cities-300-38",
+      "points": 300,
+      "question": "في أي دولة تقع مدينة غوتنبرغ؟",
+      "answer": "السويد",
+      "image": ""
+    },
+    {
+      "id": "cities-300-39",
+      "points": 300,
+      "question": "في أي دولة تقع مدينة بيرغن؟",
+      "answer": "النرويج",
+      "image": ""
+    },
+    {
+      "id": "cities-300-40",
+      "points": 300,
+      "question": "في أي دولة تقع مدينة توركو؟",
+      "answer": "فنلندا",
+      "image": ""
+    },
+    {
+      "id": "cities-300-41",
+      "points": 300,
+      "question": "في أي دولة تقع مدينة ريكيافيك؟",
+      "answer": "آيسلندا",
+      "image": ""
+    },
+    {
+      "id": "cities-300-42",
+      "points": 300,
+      "question": "في أي دولة تقع مدينة دوبروفنيك؟",
+      "answer": "كرواتيا",
+      "image": ""
+    },
+    {
+      "id": "cities-300-43",
+      "points": 300,
+      "question": "في أي دولة تقع مدينة سبليت؟",
+      "answer": "كرواتيا",
+      "image": ""
+    },
+    {
+      "id": "cities-300-44",
+      "points": 300,
+      "question": "في أي دولة تقع مدينة سراييفو؟",
+      "answer": "البوسنة والهرسك",
+      "image": ""
+    },
+    {
+      "id": "cities-300-45",
+      "points": 300,
+      "question": "في أي دولة تقع مدينة بلغراد؟",
+      "answer": "صربيا",
+      "image": ""
+    },
+    {
+      "id": "cities-300-46",
+      "points": 300,
+      "question": "في أي دولة تقع مدينة ليوبليانا؟",
+      "answer": "سلوفينيا",
+      "image": ""
+    },
+    {
+      "id": "cities-300-47",
+      "points": 300,
+      "question": "في أي دولة تقع مدينة براتيسلافا؟",
+      "answer": "سلوفاكيا",
+      "image": ""
+    },
+    {
+      "id": "cities-300-48",
+      "points": 300,
+      "question": "في أي دولة تقع مدينة بوخارست؟",
+      "answer": "رومانيا",
+      "image": ""
+    },
+    {
+      "id": "cities-300-49",
+      "points": 300,
+      "question": "في أي دولة تقع مدينة صوفيا؟",
+      "answer": "بلغاريا",
+      "image": ""
+    },
+    {
+      "id": "cities-300-50",
+      "points": 300,
+      "question": "في أي دولة تقع مدينة كييف؟",
+      "answer": "أوكرانيا",
+      "image": ""
+    },
+    {
+      "id": "cities-500-1",
+      "points": 500,
+      "question": "في أي دولة تقع مدينة سمرقند؟",
+      "answer": "أوزبكستان",
+      "image": ""
+    },
+    {
+      "id": "cities-500-2",
+      "points": 500,
+      "question": "في أي دولة تقع مدينة بخارى؟",
+      "answer": "أوزبكستان",
+      "image": ""
+    },
+    {
+      "id": "cities-500-3",
+      "points": 500,
+      "question": "في أي دولة تقع مدينة ألماتي؟",
+      "answer": "كازاخستان",
+      "image": ""
+    },
+    {
+      "id": "cities-500-4",
+      "points": 500,
+      "question": "في أي دولة تقع مدينة عشق آباد؟",
+      "answer": "تركمانستان",
+      "image": ""
+    },
+    {
+      "id": "cities-500-5",
+      "points": 500,
+      "question": "في أي دولة تقع مدينة دوشنبه؟",
+      "answer": "طاجيكستان",
+      "image": ""
+    },
+    {
+      "id": "cities-500-6",
+      "points": 500,
+      "question": "في أي دولة تقع مدينة بيشكك؟",
+      "answer": "قيرغيزستان",
+      "image": ""
+    },
+    {
+      "id": "cities-500-7",
+      "points": 500,
+      "question": "في أي دولة تقع مدينة أولان باتور؟",
+      "answer": "منغوليا",
+      "image": ""
+    },
+    {
+      "id": "cities-500-8",
+      "points": 500,
+      "question": "في أي دولة تقع مدينة ماندالاي؟",
+      "answer": "ميانمار",
+      "image": ""
+    },
+    {
+      "id": "cities-500-9",
+      "points": 500,
+      "question": "في أي دولة تقع مدينة شيانغ ماي؟",
+      "answer": "تايلاند",
+      "image": ""
+    },
+    {
+      "id": "cities-500-10",
+      "points": 500,
+      "question": "في أي دولة تقع مدينة سييم ريب؟",
+      "answer": "كمبوديا",
+      "image": ""
+    },
+    {
+      "id": "cities-500-11",
+      "points": 500,
+      "question": "في أي دولة تقع مدينة لوانغ برابانغ؟",
+      "answer": "لاوس",
+      "image": ""
+    },
+    {
+      "id": "cities-500-12",
+      "points": 500,
+      "question": "في أي دولة تقع مدينة دافاو؟",
+      "answer": "الفلبين",
+      "image": ""
+    },
+    {
+      "id": "cities-500-13",
+      "points": 500,
+      "question": "في أي دولة تقع مدينة سورابايا؟",
+      "answer": "إندونيسيا",
+      "image": ""
+    },
+    {
+      "id": "cities-500-14",
+      "points": 500,
+      "question": "في أي دولة تقع مدينة ملبورن؟",
+      "answer": "أستراليا",
+      "image": ""
+    },
+    {
+      "id": "cities-500-15",
+      "points": 500,
+      "question": "في أي دولة تقع مدينة أوكلاند؟",
+      "answer": "نيوزيلندا",
+      "image": ""
+    },
+    {
+      "id": "cities-500-16",
+      "points": 500,
+      "question": "في أي دولة تقع مدينة كوسكو؟",
+      "answer": "بيرو",
+      "image": ""
+    },
+    {
+      "id": "cities-500-17",
+      "points": 500,
+      "question": "في أي دولة تقع مدينة ميديلين؟",
+      "answer": "كولومبيا",
+      "image": ""
+    },
+    {
+      "id": "cities-500-18",
+      "points": 500,
+      "question": "في أي دولة تقع مدينة فالبارايسو؟",
+      "answer": "تشيلي",
+      "image": ""
+    },
+    {
+      "id": "cities-500-19",
+      "points": 500,
+      "question": "في أي دولة تقع مدينة قرطاجنة؟",
+      "answer": "كولومبيا",
+      "image": ""
+    },
+    {
+      "id": "cities-500-20",
+      "points": 500,
+      "question": "في أي دولة تقع مدينة بونتا دل إستي؟",
+      "answer": "أوروغواي",
+      "image": ""
+    },
+    {
+      "id": "cities-500-21",
+      "points": 500,
+      "question": "في أي دولة تقع مدينة هراري؟",
+      "answer": "زيمبابوي",
+      "image": ""
+    },
+    {
+      "id": "cities-500-22",
+      "points": 500,
+      "question": "في أي دولة تقع مدينة لوساكا؟",
+      "answer": "زامبيا",
+      "image": ""
+    },
+    {
+      "id": "cities-500-23",
+      "points": 500,
+      "question": "في أي دولة تقع مدينة غابورون؟",
+      "answer": "بوتسوانا",
+      "image": ""
+    },
+    {
+      "id": "cities-500-24",
+      "points": 500,
+      "question": "في أي دولة تقع مدينة ويندهوك؟",
+      "answer": "ناميبيا",
+      "image": ""
+    },
+    {
+      "id": "cities-500-25",
+      "points": 500,
+      "question": "في أي دولة تقع مدينة أنتاناناريفو؟",
+      "answer": "مدغشقر",
+      "image": ""
+    },
+    {
+      "id": "cities-500-1",
+      "points": 500,
+      "question": "في أي دولة تقع مدينة سمرقند؟",
+      "answer": "أوزبكستان",
+      "image": ""
+    },
+    {
+      "id": "cities-500-2",
+      "points": 500,
+      "question": "في أي دولة تقع مدينة بخارى؟",
+      "answer": "أوزبكستان",
+      "image": ""
+    },
+    {
+      "id": "cities-500-3",
+      "points": 500,
+      "question": "في أي دولة تقع مدينة ألماتي؟",
+      "answer": "كازاخستان",
+      "image": ""
+    },
+    {
+      "id": "cities-500-4",
+      "points": 500,
+      "question": "في أي دولة تقع مدينة عشق آباد؟",
+      "answer": "تركمانستان",
+      "image": ""
+    },
+    {
+      "id": "cities-500-5",
+      "points": 500,
+      "question": "في أي دولة تقع مدينة دوشنبه؟",
+      "answer": "طاجيكستان",
+      "image": ""
+    },
+    {
+      "id": "cities-500-6",
+      "points": 500,
+      "question": "في أي دولة تقع مدينة بيشكك؟",
+      "answer": "قيرغيزستان",
+      "image": ""
+    },
+    {
+      "id": "cities-500-7",
+      "points": 500,
+      "question": "في أي دولة تقع مدينة أولان باتور؟",
+      "answer": "منغوليا",
+      "image": ""
+    },
+    {
+      "id": "cities-500-8",
+      "points": 500,
+      "question": "في أي دولة تقع مدينة ماندالاي؟",
+      "answer": "ميانمار",
+      "image": ""
+    },
+    {
+      "id": "cities-500-9",
+      "points": 500,
+      "question": "في أي دولة تقع مدينة شيانغ ماي؟",
+      "answer": "تايلاند",
+      "image": ""
+    },
+    {
+      "id": "cities-500-10",
+      "points": 500,
+      "question": "في أي دولة تقع مدينة سييم ريب؟",
+      "answer": "كمبوديا",
+      "image": ""
+    },
+    {
+      "id": "cities-500-11",
+      "points": 500,
+      "question": "في أي دولة تقع مدينة لوانغ برابانغ؟",
+      "answer": "لاوس",
+      "image": ""
+    },
+    {
+      "id": "cities-500-12",
+      "points": 500,
+      "question": "في أي دولة تقع مدينة دافاو؟",
+      "answer": "الفلبين",
+      "image": ""
+    },
+    {
+      "id": "cities-500-13",
+      "points": 500,
+      "question": "في أي دولة تقع مدينة سورابايا؟",
+      "answer": "إندونيسيا",
+      "image": ""
+    },
+    {
+      "id": "cities-500-14",
+      "points": 500,
+      "question": "في أي دولة تقع مدينة ملبورن؟",
+      "answer": "أستراليا",
+      "image": ""
+    },
+    {
+      "id": "cities-500-15",
+      "points": 500,
+      "question": "في أي دولة تقع مدينة أوكلاند؟",
+      "answer": "نيوزيلندا",
+      "image": ""
+    },
+    {
+      "id": "cities-500-16",
+      "points": 500,
+      "question": "في أي دولة تقع مدينة كوسكو؟",
+      "answer": "بيرو",
+      "image": ""
+    },
+    {
+      "id": "cities-500-17",
+      "points": 500,
+      "question": "في أي دولة تقع مدينة ميديلين؟",
+      "answer": "كولومبيا",
+      "image": ""
+    },
+    {
+      "id": "cities-500-18",
+      "points": 500,
+      "question": "في أي دولة تقع مدينة فالبارايسو؟",
+      "answer": "تشيلي",
+      "image": ""
+    },
+    {
+      "id": "cities-500-19",
+      "points": 500,
+      "question": "في أي دولة تقع مدينة قرطاجنة؟",
+      "answer": "كولومبيا",
+      "image": ""
+    },
+    {
+      "id": "cities-500-20",
+      "points": 500,
+      "question": "في أي دولة تقع مدينة بونتا دل إستي؟",
+      "answer": "أوروغواي",
+      "image": ""
+    },
+    {
+      "id": "cities-500-21",
+      "points": 500,
+      "question": "في أي دولة تقع مدينة هراري؟",
+      "answer": "زيمبابوي",
+      "image": ""
+    },
+    {
+      "id": "cities-500-22",
+      "points": 500,
+      "question": "في أي دولة تقع مدينة لوساكا؟",
+      "answer": "زامبيا",
+      "image": ""
+    },
+    {
+      "id": "cities-500-23",
+      "points": 500,
+      "question": "في أي دولة تقع مدينة غابورون؟",
+      "answer": "بوتسوانا",
+      "image": ""
+    },
+    {
+      "id": "cities-500-24",
+      "points": 500,
+      "question": "في أي دولة تقع مدينة ويندهوك؟",
+      "answer": "ناميبيا",
+      "image": ""
+    },
+    {
+      "id": "cities-500-25",
+      "points": 500,
+      "question": "في أي دولة تقع مدينة أنتاناناريفو؟",
+      "answer": "مدغشقر",
+      "image": ""
+    },
+    {
+      "id": "cities-500-26",
+      "points": 500,
+      "question": "في أي دولة تقع مدينة مابوتو؟",
+      "answer": "موزمبيق",
+      "image": ""
+    },
+    {
+      "id": "cities-500-27",
+      "points": 500,
+      "question": "في أي دولة تقع مدينة موروني؟",
+      "answer": "جزر القمر",
+      "image": ""
+    },
+    {
+      "id": "cities-500-28",
+      "points": 500,
+      "question": "في أي دولة تقع مدينة فيكتوريا؟",
+      "answer": "سيشل",
+      "image": ""
+    },
+    {
+      "id": "cities-500-29",
+      "points": 500,
+      "question": "في أي دولة تقع مدينة بورت لويس؟",
+      "answer": "موريشيوس",
+      "image": ""
+    },
+    {
+      "id": "cities-500-30",
+      "points": 500,
+      "question": "في أي دولة تقع مدينة بانغي؟",
+      "answer": "جمهورية أفريقيا الوسطى",
+      "image": ""
+    },
+    {
+      "id": "cities-500-31",
+      "points": 500,
+      "question": "في أي دولة تقع مدينة برازافيل؟",
+      "answer": "جمهورية الكونغو",
+      "image": ""
+    },
+    {
+      "id": "cities-500-32",
+      "points": 500,
+      "question": "في أي دولة تقع مدينة كينشاسا؟",
+      "answer": "جمهورية الكونغو الديمقراطية",
+      "image": ""
+    },
+    {
+      "id": "cities-500-33",
+      "points": 500,
+      "question": "في أي دولة تقع مدينة مالابو؟",
+      "answer": "غينيا الاستوائية",
+      "image": ""
+    },
+    {
+      "id": "cities-500-34",
+      "points": 500,
+      "question": "في أي دولة تقع مدينة ليبرفيل؟",
+      "answer": "الغابون",
+      "image": ""
+    },
+    {
+      "id": "cities-500-35",
+      "points": 500,
+      "question": "في أي دولة تقع مدينة كوناكري؟",
+      "answer": "غينيا",
+      "image": ""
+    },
+    {
+      "id": "cities-500-36",
+      "points": 500,
+      "question": "في أي دولة تقع مدينة فريتاون؟",
+      "answer": "سيراليون",
+      "image": ""
+    },
+    {
+      "id": "cities-500-37",
+      "points": 500,
+      "question": "في أي دولة تقع مدينة مونروفيا؟",
+      "answer": "ليبيريا",
+      "image": ""
+    },
+    {
+      "id": "cities-500-38",
+      "points": 500,
+      "question": "في أي دولة تقع مدينة بيساو؟",
+      "answer": "غينيا بيساو",
+      "image": ""
+    },
+    {
+      "id": "cities-500-39",
+      "points": 500,
+      "question": "في أي دولة تقع مدينة لومي؟",
+      "answer": "توغو",
+      "image": ""
+    },
+    {
+      "id": "cities-500-40",
+      "points": 500,
+      "question": "في أي دولة تقع مدينة بورتو نوفو؟",
+      "answer": "بنين",
+      "image": ""
+    },
+    {
+      "id": "cities-500-41",
+      "points": 500,
+      "question": "في أي دولة تقع مدينة ياموسوكرو؟",
+      "answer": "ساحل العاج",
+      "image": ""
+    },
+    {
+      "id": "cities-500-42",
+      "points": 500,
+      "question": "في أي دولة تقع مدينة واغادوغو؟",
+      "answer": "بوركينا فاسو",
+      "image": ""
+    },
+    {
+      "id": "cities-500-43",
+      "points": 500,
+      "question": "في أي دولة تقع مدينة باماكو؟",
+      "answer": "مالي",
+      "image": ""
+    },
+    {
+      "id": "cities-500-44",
+      "points": 500,
+      "question": "في أي دولة تقع مدينة نيامي؟",
+      "answer": "النيجر",
+      "image": ""
+    },
+    {
+      "id": "cities-500-45",
+      "points": 500,
+      "question": "في أي دولة تقع مدينة إنجامينا؟",
+      "answer": "تشاد",
+      "image": ""
+    },
+    {
+      "id": "cities-500-46",
+      "points": 500,
+      "question": "في أي دولة تقع مدينة جيبوتي؟",
+      "answer": "جيبوتي",
+      "image": ""
+    },
+    {
+      "id": "cities-500-47",
+      "points": 500,
+      "question": "في أي دولة تقع مدينة أسمرة؟",
+      "answer": "إريتريا",
+      "image": ""
+    },
+    {
+      "id": "cities-500-48",
+      "points": 500,
+      "question": "في أي دولة تقع مدينة جوبا؟",
+      "answer": "جنوب السودان",
+      "image": ""
+    },
+    {
+      "id": "cities-500-49",
+      "points": 500,
+      "question": "في أي دولة تقع مدينة دودوما؟",
+      "answer": "تنزانيا",
+      "image": ""
+    },
+    {
+      "id": "cities-500-50",
+      "points": 500,
+      "question": "في أي دولة تقع مدينة كيغالي؟",
+      "answer": "رواندا",
+      "image": ""
+    }
+  ],
+  "metadata": {
+    "sectionId": "geography",
+    "updatedAt": "2026-08-03",
+    "status": "pending"
+  }
 }

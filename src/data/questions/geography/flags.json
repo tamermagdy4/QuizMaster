@@ -1,11 +1,562 @@
-﻿{
-    "categoryId":  "flags",
-    "questions":  [
-
-                  ],
-    "metadata":  {
-                     "sectionId":  "geography",
-                     "updatedAt":  "2026-08-03",
-                     "status":  "pending"
-                 }
+{
+  "categoryId": "flags",
+  "questions": [
+    {
+      "id": "flags-100-1",
+      "points": 100,
+      "question": "علم دوله ايه؟",
+      "answer": "ألمانيا",
+      "media": "/media/flags/flags/ألمانيا.webp",
+      "mediaType": "image"
+    },
+    {
+      "id": "flags-100-2",
+      "points": 100,
+      "question": "علم دوله ايه؟",
+      "answer": "أوروغواي",
+      "media": "/media/flags/flags/أوروغواي.webp",
+      "mediaType": "image"
+    },
+    {
+      "id": "flags-100-3",
+      "points": 100,
+      "question": "علم دوله ايه؟",
+      "answer": "هولندا",
+      "media": "/media/flags/flags/هولندا.webp",
+      "mediaType": "image"
+    },
+    {
+      "id": "flags-100-4",
+      "points": 100,
+      "question": "علم دوله ايه؟",
+      "answer": "إستونيا",
+      "media": "/media/flags/flags/إستونيا.webp",
+      "mediaType": "image"
+    },
+    {
+      "id": "flags-100-5",
+      "points": 100,
+      "question": "علم دوله ايه؟",
+      "answer": "إيطاليا",
+      "media": "/media/flags/flags/إيطاليا.webp",
+      "mediaType": "image"
+    },
+    {
+      "id": "flags-100-6",
+      "points": 100,
+      "question": "علم دوله ايه؟",
+      "answer": "افغانستان",
+      "media": "/media/flags/flags/افغانستان.png",
+      "mediaType": "image"
+    },
+    {
+      "id": "flags-100-7",
+      "points": 100,
+      "question": "علم دوله ايه؟",
+      "answer": "الأرجنتين",
+      "media": "/media/flags/flags/الأرجنتين.webp",
+      "mediaType": "image"
+    },
+    {
+      "id": "flags-100-8",
+      "points": 100,
+      "question": "علم دوله ايه؟",
+      "answer": "الأردن",
+      "media": "/media/flags/flags/الأردن.webp",
+      "mediaType": "image"
+    },
+    {
+      "id": "flags-100-9",
+      "points": 100,
+      "question": "علم دوله ايه؟",
+      "answer": "الامارات",
+      "media": "/media/flags/flags/الامارات.png",
+      "mediaType": "image"
+    },
+    {
+      "id": "flags-100-10",
+      "points": 100,
+      "question": "علم دوله ايه؟",
+      "answer": "البانيا",
+      "media": "/media/flags/flags/البانيا.png",
+      "mediaType": "image"
+    },
+    {
+      "id": "flags-100-11",
+      "points": 100,
+      "question": "علم دوله ايه؟",
+      "answer": "البرازيل",
+      "media": "/media/flags/flags/البرازيل.webp",
+      "mediaType": "image"
+    },
+    {
+      "id": "flags-100-12",
+      "points": 100,
+      "question": "علم دوله ايه؟",
+      "answer": "البرتغال",
+      "media": "/media/flags/flags/البرتغال.webp",
+      "mediaType": "image"
+    },
+    {
+      "id": "flags-100-13",
+      "points": 100,
+      "question": "علم دوله ايه؟",
+      "answer": "التشيك",
+      "media": "/media/flags/flags/التشيك.webp",
+      "mediaType": "image"
+    },
+    {
+      "id": "flags-100-14",
+      "points": 100,
+      "question": "علم دوله ايه؟",
+      "answer": "السويد",
+      "media": "/media/flags/flags/السويد.webp",
+      "mediaType": "image"
+    },
+    {
+      "id": "flags-100-15",
+      "points": 100,
+      "question": "علم دوله ايه؟",
+      "answer": "الفلبين",
+      "media": "/media/flags/flags/الفلبين.png",
+      "mediaType": "image"
+    },
+    {
+      "id": "flags-100-16",
+      "points": 100,
+      "question": "علم دوله ايه؟",
+      "answer": "الكاميرون",
+      "media": "/media/flags/flags/الكاميرون.webp",
+      "mediaType": "image"
+    },
+    {
+      "id": "flags-100-17",
+      "points": 100,
+      "question": "علم دوله ايه؟",
+      "answer": "المملكه المتحده",
+      "media": "/media/flags/flags/المملكه المتحده.png",
+      "mediaType": "image"
+    },
+    {
+      "id": "flags-100-18",
+      "points": 100,
+      "question": "علم دوله ايه؟",
+      "answer": "اليونان",
+      "media": "/media/flags/flags/اليونان.png",
+      "mediaType": "image"
+    },
+    {
+      "id": "flags-100-19",
+      "points": 100,
+      "question": "علم دوله ايه؟",
+      "answer": "بلجيكا",
+      "media": "/media/flags/flags/بلجيكا.webp",
+      "mediaType": "image"
+    },
+    {
+      "id": "flags-100-20",
+      "points": 100,
+      "question": "علم دوله ايه؟",
+      "answer": "غانا",
+      "media": "/media/flags/flags/غانا.webp",
+      "mediaType": "image"
+    },
+    {
+      "id": "flags-100-21",
+      "points": 100,
+      "question": "علم دوله ايه؟",
+      "answer": "كرواتيا",
+      "media": "/media/flags/flags/كرواتيا.webp",
+      "mediaType": "image"
+    },
+    {
+      "id": "flags-100-22",
+      "points": 100,
+      "question": "علم دوله ايه؟",
+      "answer": "بولندا",
+      "media": "/media/flags/flags/بولندا.webp",
+      "mediaType": "image"
+    },
+    {
+      "id": "flags-100-23",
+      "points": 100,
+      "question": "علم دوله ايه؟",
+      "answer": "جمهورية الكونغو",
+      "media": "/media/flags/flags/جمهورية الكونغو.webp",
+      "mediaType": "image"
+    },
+    {
+      "id": "flags-100-24",
+      "points": 100,
+      "question": "علم دوله ايه؟",
+      "answer": "تاينلد",
+      "media": "/media/flags/flags/تاينلد.png",
+      "mediaType": "image"
+    },
+    {
+      "id": "flags-100-25",
+      "points": 100,
+      "question": "علم دوله ايه؟",
+      "answer": "تشاد",
+      "media": "/media/flags/flags/تشاد.png",
+      "mediaType": "image"
+    },
+    {
+      "id": "flags-300-1",
+      "points": 300,
+      "question": "علم دوله ايه؟",
+      "answer": "توغو",
+      "media": "/media/flags/flags/توغو.webp",
+      "mediaType": "image"
+    },
+    {
+      "id": "flags-300-2",
+      "points": 300,
+      "question": "علم دوله ايه؟",
+      "answer": "تيمور الشرقيه",
+      "media": "/media/flags/flags/تيمور الشرقيه.png",
+      "mediaType": "image"
+    },
+    {
+      "id": "flags-300-3",
+      "points": 300,
+      "question": "علم دوله ايه؟",
+      "answer": "جامايكا",
+      "media": "/media/flags/flags/جامايكا.webp",
+      "mediaType": "image"
+    },
+    {
+      "id": "flags-300-4",
+      "points": 300,
+      "question": "علم دوله ايه؟",
+      "answer": "جزر القمر",
+      "media": "/media/flags/flags/جزر القمر.webp",
+      "mediaType": "image"
+    },
+    {
+      "id": "flags-300-5",
+      "points": 300,
+      "question": "علم دوله ايه؟",
+      "answer": "بيرو",
+      "media": "/media/flags/flags/بيرو.webp",
+      "mediaType": "image"
+    },
+    {
+      "id": "flags-300-6",
+      "points": 300,
+      "question": "علم دوله ايه؟",
+      "answer": "رواندا",
+      "media": "/media/flags/flags/رواندا.webp",
+      "mediaType": "image"
+    },
+    {
+      "id": "flags-300-7",
+      "points": 300,
+      "question": "علم دوله ايه؟",
+      "answer": "زامبيا",
+      "media": "/media/flags/flags/زامبيا.webp",
+      "mediaType": "image"
+    },
+    {
+      "id": "flags-300-8",
+      "points": 300,
+      "question": "علم دوله ايه؟",
+      "answer": "ساموا",
+      "media": "/media/flags/flags/ساموا.webp",
+      "mediaType": "image"
+    },
+    {
+      "id": "flags-300-9",
+      "points": 300,
+      "question": "علم دوله ايه؟",
+      "answer": "سريلانكا",
+      "media": "/media/flags/flags/سريلانكا.webp",
+      "mediaType": "image"
+    },
+    {
+      "id": "flags-300-10",
+      "points": 300,
+      "question": "علم دوله ايه؟",
+      "answer": "سلوفينيا",
+      "media": "/media/flags/flags/سلوفينيا.webp",
+      "mediaType": "image"
+    },
+    {
+      "id": "flags-300-11",
+      "points": 300,
+      "question": "علم دوله ايه؟",
+      "answer": "سنغافوره",
+      "media": "/media/flags/flags/سنغافوره.png",
+      "mediaType": "image"
+    },
+    {
+      "id": "flags-300-12",
+      "points": 300,
+      "question": "علم دوله ايه؟",
+      "answer": "سورينام",
+      "media": "/media/flags/flags/سورينام.webp",
+      "mediaType": "image"
+    },
+    {
+      "id": "flags-300-13",
+      "points": 300,
+      "question": "علم دوله ايه؟",
+      "answer": "سيراليون",
+      "media": "/media/flags/flags/سيراليون.webp",
+      "mediaType": "image"
+    },
+    {
+      "id": "flags-300-14",
+      "points": 300,
+      "question": "علم دوله ايه؟",
+      "answer": "شمال قبرص",
+      "media": "/media/flags/flags/شمال قبرص.png",
+      "mediaType": "image"
+    },
+    {
+      "id": "flags-300-15",
+      "points": 300,
+      "question": "علم دوله ايه؟",
+      "answer": "صربيا",
+      "media": "/media/flags/flags/صربيا.webp",
+      "mediaType": "image"
+    },
+    {
+      "id": "flags-300-16",
+      "points": 300,
+      "question": "علم دوله ايه؟",
+      "answer": "علم ساو توميه وبرينسيب",
+      "media": "/media/flags/flags/علم ساو توميه وبرينسيب.png",
+      "mediaType": "image"
+    },
+    {
+      "id": "flags-300-17",
+      "points": 300,
+      "question": "علم دوله ايه؟",
+      "answer": "بورما",
+      "media": "/media/flags/flags/بورما.png",
+      "mediaType": "image"
+    },
+    {
+      "id": "flags-300-18",
+      "points": 300,
+      "question": "علم دوله ايه؟",
+      "answer": "بوتان",
+      "media": "/media/flags/flags/بوتان.png",
+      "mediaType": "image"
+    },
+    {
+      "id": "flags-300-19",
+      "points": 300,
+      "question": "علم دوله ايه؟",
+      "answer": "غينيا الاستوائية",
+      "media": "/media/flags/flags/غينيا الاستوائية.webp",
+      "mediaType": "image"
+    },
+    {
+      "id": "flags-300-20",
+      "points": 300,
+      "question": "علم دوله ايه؟",
+      "answer": "فرنسا",
+      "media": "/media/flags/flags/فرنسا.webp",
+      "mediaType": "image"
+    },
+    {
+      "id": "flags-300-21",
+      "points": 300,
+      "question": "علم دوله ايه؟",
+      "answer": "فلسطين",
+      "media": "/media/flags/flags/فلسطين.webp",
+      "mediaType": "image"
+    },
+    {
+      "id": "flags-300-22",
+      "points": 300,
+      "question": "علم دوله ايه؟",
+      "answer": "فنزويلا",
+      "media": "/media/flags/flags/فنزويلا.png",
+      "mediaType": "image"
+    },
+    {
+      "id": "flags-300-23",
+      "points": 300,
+      "question": "علم دوله ايه؟",
+      "answer": "فنلندا",
+      "media": "/media/flags/flags/فنلندا.png",
+      "mediaType": "image"
+    },
+    {
+      "id": "flags-300-24",
+      "points": 300,
+      "question": "علم دوله ايه؟",
+      "answer": "موريتانيا",
+      "media": "/media/flags/flags/موريتانيا.png",
+      "mediaType": "image"
+    },
+    {
+      "id": "flags-300-25",
+      "points": 300,
+      "question": "علم دوله ايه؟",
+      "answer": "قيرغستان",
+      "media": "/media/flags/flags/قيرغستان.png",
+      "mediaType": "image"
+    },
+    {
+      "id": "flags-500-1",
+      "points": 500,
+      "question": "علم دوله ايه؟",
+      "answer": "كازاخستان",
+      "media": "/media/flags/flags/كازاخستان.webp",
+      "mediaType": "image"
+    },
+    {
+      "id": "flags-500-2",
+      "points": 500,
+      "question": "علم دوله ايه؟",
+      "answer": "علم ليختنشتاين",
+      "media": "/media/flags/flags/علم ليختنشتاين.png",
+      "mediaType": "image"
+    },
+    {
+      "id": "flags-500-3",
+      "points": 500,
+      "question": "علم دوله ايه؟",
+      "answer": "كمبوديا",
+      "media": "/media/flags/flags/كمبوديا.png",
+      "mediaType": "image"
+    },
+    {
+      "id": "flags-500-4",
+      "points": 500,
+      "question": "علم دوله ايه؟",
+      "answer": "لاتفيا",
+      "media": "/media/flags/flags/لاتفيا.png",
+      "mediaType": "image"
+    },
+    {
+      "id": "flags-500-5",
+      "points": 500,
+      "question": "علم دوله ايه؟",
+      "answer": "لاوس",
+      "media": "/media/flags/flags/لاوس.webp",
+      "mediaType": "image"
+    },
+    {
+      "id": "flags-500-6",
+      "points": 500,
+      "question": "علم دوله ايه؟",
+      "answer": "لوكسمبرج",
+      "media": "/media/flags/flags/لوكسمبرج.png",
+      "mediaType": "image"
+    },
+    {
+      "id": "flags-500-7",
+      "points": 500,
+      "question": "علم دوله ايه؟",
+      "answer": "ليبريا",
+      "media": "/media/flags/flags/ليبريا.png",
+      "mediaType": "image"
+    },
+    {
+      "id": "flags-500-8",
+      "points": 500,
+      "question": "علم دوله ايه؟",
+      "answer": "مالاوي",
+      "media": "/media/flags/flags/مالاوي.png",
+      "mediaType": "image"
+    },
+    {
+      "id": "flags-500-9",
+      "points": 500,
+      "question": "علم دوله ايه؟",
+      "answer": "مالديف",
+      "media": "/media/flags/flags/مالديف.png",
+      "mediaType": "image"
+    },
+    {
+      "id": "flags-500-10",
+      "points": 500,
+      "question": "علم دوله ايه؟",
+      "answer": "مالطا",
+      "media": "/media/flags/flags/مالطا.png",
+      "mediaType": "image"
+    },
+    {
+      "id": "flags-500-11",
+      "points": 500,
+      "question": "علم دوله ايه؟",
+      "answer": "منغوليا",
+      "media": "/media/flags/flags/منغوليا.png",
+      "mediaType": "image"
+    },
+    {
+      "id": "flags-500-12",
+      "points": 500,
+      "question": "علم دوله ايه؟",
+      "answer": "فيجي",
+      "media": "/media/flags/flags/فيجي.webp",
+      "mediaType": "image"
+    },
+    {
+      "id": "flags-500-13",
+      "points": 500,
+      "question": "علم دوله ايه؟",
+      "answer": "موريشيوس",
+      "media": "/media/flags/flags/موريشيوس.png",
+      "mediaType": "image"
+    },
+    {
+      "id": "flags-500-14",
+      "points": 500,
+      "question": "علم دوله ايه؟",
+      "answer": "نيبال",
+      "media": "/media/flags/flags/نيبال.png",
+      "mediaType": "image"
+    },
+    {
+      "id": "flags-500-15",
+      "points": 500,
+      "question": "علم دوله ايه؟",
+      "answer": "نيكاراغوا",
+      "media": "/media/flags/flags/نيكاراغوا.webp",
+      "mediaType": "image"
+    },
+    {
+      "id": "flags-500-16",
+      "points": 500,
+      "question": "علم دوله ايه؟",
+      "answer": "هندوراس",
+      "media": "/media/flags/flags/هندوراس.webp",
+      "mediaType": "image"
+    },
+    {
+      "id": "flags-500-17",
+      "points": 500,
+      "question": "علم دوله ايه؟",
+      "answer": "إريتريا",
+      "media": "/media/flags/flags/إريتريا.webp",
+      "mediaType": "image"
+    },
+    {
+      "id": "flags-500-18",
+      "points": 500,
+      "question": "علم دوله ايه؟",
+      "answer": "",
+      "media": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "flags-500-19",
+      "points": 500,
+      "question": "علم دوله ايه؟",
+      "answer": "",
+      "media": "",
+      "mediaType": "image"
+    }
+  ],
+  "metadata": {
+    "sectionId": "geography",
+    "updatedAt": "2026-08-05",
+    "status": "pending"
+  }
 }

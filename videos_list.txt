@@ -1,0 +1,116 @@
+﻿
+
+    Directory: D:\QuizMaster\public\media\who-scored-goal\anwsers\100
+
+
+Mode                 LastWriteTime         Length Name                                                                 
+----                 -------------         ------ ----                                                                 
+-a----          8/8/2026   4:43 AM         857431 Benjamin Pavard — France vs Argentina — 2018.mp4                     
+-a----          8/8/2026   4:43 AM         580327 Cristiano Ronaldo — Manchester United vs Arsnal — 2009.mp4           
+-a----          8/8/2026   4:44 AM         874346 Gareth Bale — Real Madrid vs Liverpool — 2018.mp4                    
+-a----          8/8/2026   4:42 AM        1168183 Iniesta Goal vs Chelsea.mp4                                          
+-a----          8/8/2026   4:44 AM         753246 Lionel Messi — Barcelona vs Getafe — 2007.mp4                        
+-a----          8/8/2026   9:29 AM         759537 Mario Götze — Germany Vs Argentina — 2014 World Cup Final.mp4        
+-a----          8/8/2026   2:38 AM        1601371 Pelé — Brazil vs Sweden — 1958.mp4                                   
+-a----          8/8/2026   9:29 AM         945032 Ricardo Quaresma — Portugal Vs Iran.mp4                              
+-a----          8/8/2026   9:29 AM        1158253 Roberto Carlos — Brazil Vs France — 1997.mp4                         
+-a----          8/8/2026   4:45 AM        1000300 Robin Van Persie — Header.mp4                                        
+-a----          8/8/2026   4:36 AM         651724 Ronaldinho — Brazil vs England — 2002.mp4                            
+-a----          8/8/2026   4:30 AM         423953 Zlatan Ibrahimović — Sweden vs England — 2012.mp4                    
+
+
+    Directory: D:\QuizMaster\public\media\who-scored-goal\anwsers\300
+
+
+Mode                 LastWriteTime         Length Name                                                                 
+----                 -------------         ------ ----                                                                 
+-a----          8/8/2026   9:08 AM        1698543 Alejandro Garnacho  Everton Vs Manchester United.mp4                 
+-a----          8/8/2026   4:38 AM         992848 Arjen Robben — World Record Speed — 2014.mp4                         
+-a----          8/8/2026   4:43 AM         574884 David Beckham — Manchester United vs Wimbledon — 1996.mp4            
+-a----          8/8/2026   4:42 AM         672620 David Villa Goal For Barcelona Vs Manchester United.mp4              
+-a----          8/8/2026   4:43 AM         728789 Dennis Bergkamp — Arsenal vs Newcastle — 2002.mp4                    
+-a----          8/8/2026   4:44 AM        1011111 Eric Cantona — Manchester United vs Sunderland — 1996.mp4            
+-a----          8/8/2026   9:09 AM        1284545 Mario Balotelli Goal Vs Goztepe.mp4                                  
+-a----          8/8/2026   9:29 AM         629487 Michael Owen — England Vs Argentina — 1998.mp4                       
+-a----          8/8/2026   4:35 AM        1037014 Ronaldo Nazário — Brazil Vs Ghana — 2006.mp4                         
+-a----          8/8/2026   4:34 AM        1271543 Sergio Agüero — Manchester City vs QPR — 2012.mp4                    
+-a----          8/8/2026   4:31 AM         732696 Wayne Rooney — Manchester United vs Manchester City — 2011.mp4       
+-a----          8/8/2026   5:41 AM        1470283 Zidane — Real Madrid Vs Bayer Leverkusen — 2002.mp4                  
+
+
+    Directory: D:\QuizMaster\public\media\who-scored-goal\anwsers\500
+
+
+Mode                 LastWriteTime         Length Name                                                                 
+----                 -------------         ------ ----                                                                 
+-a----          8/8/2026   9:32 AM        1775066 Amr Nasser - Al Ahly Vs Pharco -.mp4                                 
+-a----          8/8/2026   4:44 AM         775577 Dennis Bergkamp — Netherlands vs Argentina — 1998.mp4                
+-a----          8/8/2026   4:44 AM         775807 Esteban Cambiasso — Argentina vs Serbia and Montenegro — 2006.mp4    
+-a----          8/8/2026   9:09 AM        1018749 Federico Dimarco - Inter Milan Vs Frosinone.mp4                      
+-a----          8/8/2026   4:44 AM        1026839 George Weah — AC Milan vs Verona — 1996.mp4                          
+-a----          8/8/2026   9:06 AM        1748818 Grosso Goal Vs Germany - World Cup 2006.mp4                          
+-a----          8/8/2026   9:08 AM         946465 Jaden Philogene - Rotherham United Vs Hull City.mp4                  
+-a----          8/8/2026   4:38 AM        1150459 Maxi Rodríguez — Argentina vs Mexico — 2006.mp4                      
+-a----          8/8/2026   9:31 AM        1222155 Paul Scholes — Manchester United Vs Barcelona — 2008.mp4             
+-a----          8/8/2026   4:45 AM         951351 Robin Van Persie — Arsenal Vs Charlton.mp4                           
+-a----          8/8/2026   4:32 AM         696518 Tim Cahill — Australia vs Netherlands — 2014.mp4                     
+-a----          8/8/2026   9:08 AM        1127560 Van Basten Goal Vs Soviet Union  Euro 1988.mp4                       
+
+
+    Directory: D:\QuizMaster\public\media\who-scored-goal\questions\100
+
+
+Mode                 LastWriteTime         Length Name                                                                 
+----                 -------------         ------ ----                                                                 
+-a----          8/8/2026   9:38 AM         616713 Benjamin Pavard — France Vs Argentina — 2018.mp4                     
+-a----          8/8/2026   9:40 AM         298421 Cristiano Ronaldo — Manchester United vs Arsnal — 2009.mp4           
+-a----          8/8/2026   9:44 AM        1526735 Gareth Bale — Real Madrid Vs Liverpool — 2018.mp4                    
+-a----          8/8/2026   9:39 AM         308113 Iniesta Goal Vs Chelsea.mp4                                          
+-a----          8/8/2026   9:37 AM        1802621 Lionel Messi — Barcelona Vs Getafe — 2007.mp4                        
+-a----          8/8/2026   9:36 AM         752371 Mario Götze — Germany Vs Argentina — 2014 World Cu.mp4               
+-a----          8/8/2026   9:39 AM         373076 Pelé — Brazil Vs Sweden — 1958.mp4                                   
+-a----          8/8/2026   9:37 AM        1085713 Ricardo Quaresma — Portugal Vs Iran.mp4                              
+-a----          8/8/2026   9:35 AM        1401143 Roberto Carlos — Brazil Vs France — 1997.mp4                         
+-a----          8/8/2026   9:36 AM         751583 Robin Van Persie — Header.mp4                                        
+-a----          8/8/2026   9:38 AM        1128253 Ronaldinho — Brazil Vs England — 2002.mp4                            
+-a----          8/8/2026   9:37 AM        1176021 Zlatan Ibrahimović — Sweden Vs England — 2012.mp4                    
+
+
+    Directory: D:\QuizMaster\public\media\who-scored-goal\questions\300
+
+
+Mode                 LastWriteTime         Length Name                                                                 
+----                 -------------         ------ ----                                                                 
+-a----          8/8/2026   9:38 AM        1144129 Alejandro Garnacho  Everton Vs Manchester United.mp4                 
+-a----          8/8/2026   9:35 AM        2310131 Arjen Robben — World Record Speed — 2014.mp4                         
+-a----          8/8/2026   9:40 AM         288273 Cristiano Ronaldo — Manchester United vs Arsnal — 2009.mp4           
+-a----          8/8/2026   9:37 AM         588571 David Villa Goal For Barcelona Vs Manchester Unite.mp4               
+-a----          8/8/2026   9:38 AM         459199 Dennis Bergkamp — Arsenal Vs Newcastle — 2002.mp4                    
+-a----          8/8/2026   9:37 AM         568485 Eric Cantona — Manchester United vs Sunderland — 1996.mp4            
+-a----          8/8/2026   9:36 AM        1535507 Mario Balotelli Goal Vs Goztepe.mp4                                  
+-a----          8/8/2026   9:42 AM         571643 Michael Owen — England Vs Argentina — 1998.mp4                       
+-a----          8/8/2026   9:44 AM        1447098 Ronaldo Nazário — Brazil Vs Ghana — 2006.mp4                         
+-a----          8/8/2026   9:36 AM         735432 Sergio Agüero — Manchester City Vs Qpr — 2012.mp4                    
+-a----          8/8/2026   9:39 AM        1646052 Wayne Rooney — Manchester United vs Manchester City — 2011.mp4       
+-a----          8/8/2026   9:35 AM        1011262 Zidane — Real Madrid Vs Bayer Leverkusen — 2002.mp4                  
+
+
+    Directory: D:\QuizMaster\public\media\who-scored-goal\questions\500
+
+
+Mode                 LastWriteTime         Length Name                                                                 
+----                 -------------         ------ ----                                                                 
+-a----          8/8/2026   9:39 AM         971206 Amr Nasser - Al Ahly Vs Pharco -.mp4                                 
+-a----          8/8/2026   9:38 AM         587985 Dennis Bergkamp — Netherlands Vs Argentina — 1998.mp4                
+-a----          8/8/2026   9:36 AM         641245 Esteban Cambiasso — Argentina vs Serbia and Montenegro — 2006.mp4    
+-a----          8/8/2026   9:38 AM        1338348 Federico Dimarco - Inter Milan Vs Frosinone.mp4                      
+-a----          8/8/2026   9:36 AM         913494 George Weah — Ac Milan Vs Verona — 1996.mp4                          
+-a----          8/8/2026   9:38 AM        1356967 Grosso Goal Vs Germany - World Cup 2006.mp4                          
+-a----          8/8/2026   9:35 AM         800785 Jaden Philogene - Rotherham United Vs Hull City.mp4                  
+-a----          8/8/2026   9:36 AM         843668 Maxi Rodríguez — Argentina vs Mexico — 2006.mp4                      
+-a----          8/8/2026   9:35 AM        1050594 Paul Scholes — Manchester United Vs Barcelona — 2008.mp4             
+-a----          8/8/2026   9:37 AM         607770 Robin Van Persie — Arsenal Vs Charlton.mp4                           
+-a----          8/8/2026   9:39 AM         432514 Tim Cahill — Australia Vs Netherlands — 2014.mp4                     
+-a----          8/8/2026   9:39 AM         962877 Van Basten Goal Vs Soviet Union  Euro 1988.mp4                       
+
+

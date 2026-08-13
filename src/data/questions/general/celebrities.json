@@ -1,11 +1,1060 @@
 ﻿{
-    "categoryId":  "celebrities",
-    "questions":  [
-
-                  ],
-    "metadata":  {
-                     "sectionId":  "general",
-                     "updatedAt":  "2026-08-03",
-                     "status":  "pending"
-                 }
+  "categoryId": "celebrities",
+  "questions": [
+    {
+      "id": "celebrities-100-1",
+      "points": 100,
+      "question": "من هو أشهر ممثل هوليودي؟",
+      "answer": "توم هانكس",
+      "image": ""
+    },
+    {
+      "id": "celebrities-100-2",
+      "points": 100,
+      "question": "من هي أشهر ممثلة هوليودية؟",
+      "answer": "ميريل ستريب",
+      "image": ""
+    },
+    {
+      "id": "celebrities-100-3",
+      "points": 100,
+      "question": "من هو أشهر مغني عربي؟",
+      "answer": "أم كلثوم",
+      "image": ""
+    },
+    {
+      "id": "celebrities-100-4",
+      "points": 100,
+      "question": "من هي أشهر مغنية عربية؟",
+      "answer": "فيروز",
+      "image": ""
+    },
+    {
+      "id": "celebrities-100-5",
+      "points": 100,
+      "question": "من هو أشهر لاعب كرة قدم؟",
+      "answer": "ليونيل ميسي",
+      "image": ""
+    },
+    {
+      "id": "celebrities-100-6",
+      "points": 100,
+      "question": "من هو أشهر لاعب تنس؟",
+      "answer": "ليبرون جيمس",
+      "image": ""
+    },
+    {
+      "id": "celebrities-100-7",
+      "points": 100,
+      "question": "من هو أشهر رجل أعمال؟",
+      "answer": "إيلون ماسك",
+      "image": ""
+    },
+    {
+      "id": "celebrities-100-8",
+      "points": 100,
+      "question": "من هي أشهر سيدة أعمال؟",
+      "answer": "أوبرا وينفري",
+      "image": ""
+    },
+    {
+      "id": "celebrities-100-9",
+      "points": 100,
+      "question": "من هو أشهر شخصية سياسية؟",
+      "answer": "باراك أوباما",
+      "image": ""
+    },
+    {
+      "id": "celebrities-100-10",
+      "points": 100,
+      "question": "من هي أشهر شخصية سياسية؟",
+      "answer": "أنجيلا ميركل",
+      "image": ""
+    },
+    {
+      "id": "celebrities-100-11",
+      "points": 100,
+      "question": "من هو أشهر عالم؟",
+      "answer": "ألبرت أينشتاين",
+      "image": ""
+    },
+    {
+      "id": "celebrities-100-12",
+      "points": 100,
+      "question": "من هو أشهر ملك؟",
+      "answer": "الملك سلمان بن عبد العزيز",
+      "image": ""
+    },
+    {
+      "id": "celebrities-100-13",
+      "points": 100,
+      "question": "من هو أشهر رئيس؟",
+      "answer": "جورج واشنطن",
+      "image": ""
+    },
+    {
+      "id": "celebrities-100-14",
+      "points": 100,
+      "question": "من هو أشهر زعيم؟",
+      "answer": "نيلسون مانديلا",
+      "image": ""
+    },
+    {
+      "id": "celebrities-100-15",
+      "points": 100,
+      "question": "من هو أشهر فنان؟",
+      "answer": "ليوناردو دافنشي",
+      "image": ""
+    },
+    {
+      "id": "celebrities-100-16",
+      "points": 100,
+      "question": "من هو أشهر كاتب؟",
+      "answer": "ويليام شكسبير",
+      "image": ""
+    },
+    {
+      "id": "celebrities-100-17",
+      "points": 100,
+      "question": "من هو أشهر شاعر؟",
+      "answer": "ميخائيل نعيمة",
+      "image": ""
+    },
+    {
+      "id": "celebrities-100-18",
+      "points": 100,
+      "question": "من هو أشهر ملحن؟",
+      "answer": "بيتهوفن",
+      "image": ""
+    },
+    {
+      "id": "celebrities-100-19",
+      "points": 100,
+      "question": "من هو أشهر مغني بوب؟",
+      "answer": "مايكل جاكسون",
+      "image": ""
+    },
+    {
+      "id": "celebrities-100-20",
+      "points": 100,
+      "question": "من هو أشهر مغني روك؟",
+      "answer": "إلفيس بريسلي",
+      "image": ""
+    },
+    {
+      "id": "celebrities-100-21",
+      "points": 100,
+      "question": "من هو أشهر ممثل أمر؟",
+      "answer": "محمد عادل",
+      "image": ""
+    },
+    {
+      "id": "celebrities-100-22",
+      "points": 100,
+      "question": "من هي أشهر ممثلة مصرية؟",
+      "answer": "يوسف شعبان",
+      "image": ""
+    },
+    {
+      "id": "celebrities-100-23",
+      "points": 100,
+      "question": "من هو أشهر لاعب كرة قدم عربي؟",
+      "answer": "محمد صلاح",
+      "image": ""
+    },
+    {
+      "id": "celebrities-100-24",
+      "points": 100,
+      "question": "من هو أشهر مذيع عربي؟",
+      "answer": "أحمد شكير",
+      "image": ""
+    },
+    {
+      "id": "celebrities-100-25",
+      "points": 100,
+      "question": "من هي أشهر مقدمة عربية؟",
+      "answer": "راميا مجدي",
+      "image": ""
+    },
+    {
+      "id": "celebrities-100-26",
+      "points": 100,
+      "question": "من هو أشهر مؤثر عربي؟",
+      "answer": "محمد علي",
+      "image": ""
+    },
+    {
+      "id": "celebrities-100-27",
+      "points": 100,
+      "question": "من هي أشبر مؤثرة عربية؟",
+      "answer": "نورا العلي",
+      "image": ""
+    },
+    {
+      "id": "celebrities-100-28",
+      "points": 100,
+      "question": "من هو أشهر مدرب كرة قدم؟",
+      "answer": "خوسيب غوارديولا",
+      "image": ""
+    },
+    {
+      "id": "celebrities-100-29",
+      "points": 100,
+      "question": "من هو أشهر حكم كرة قدم؟",
+      "answer": "بيروندو بريرا",
+      "image": ""
+    },
+    {
+      "id": "celebrities-100-30",
+      "points": 100,
+      "question": "من هو أشهر مصارع؟",
+      "answer": "محمد علي كلاي",
+      "image": ""
+    },
+    {
+      "id": "celebrities-100-31",
+      "points": 100,
+      "question": "من هو أشهر لاعب غولف؟",
+      "answer": "تايغر وودز",
+      "image": ""
+    },
+    {
+      "id": "celebrities-100-32",
+      "points": 100,
+      "question": "من هو أشهر لاعب تنس الطاولة؟",
+      "answer": "روجر فيدرير",
+      "image": ""
+    },
+    {
+      "id": "celebrities-100-33",
+      "points": 100,
+      "question": "من هو أشهر لاعب سباقات؟",
+      "answer": "لويس هاميلتون",
+      "image": ""
+    },
+    {
+      "id": "celebrities-100-34",
+      "points": 100,
+      "question": "من هو أشهر رائد فضاء؟",
+      "answer": "نيل أرمسترونج",
+      "image": ""
+    },
+    {
+      "id": "celebrities-100-35",
+      "points": 100,
+      "question": "من هو أشبر مبرمج؟",
+      "answer": "بيل غيتس",
+      "image": ""
+    },
+    {
+      "id": "celebrities-100-36",
+      "points": 100,
+      "question": "من هو أشهر مصمم أزياء؟",
+      "answer": "جورجيو أرماني",
+      "image": ""
+    },
+    {
+      "id": "celebrities-100-37",
+      "points": 100,
+      "question": "من هو أشهر موديل؟",
+      "answer": "جيجي حديد",
+      "image": ""
+    },
+    {
+      "id": "celebrities-100-38",
+      "points": 100,
+      "question": "من هو أشهر طاهي؟",
+      "answer": "غوردون رامزي",
+      "image": ""
+    },
+    {
+      "id": "celebrities-100-39",
+      "points": 100,
+      "question": "من هو أشهر مغني راب؟",
+      "answer": "إيمينم",
+      "image": ""
+    },
+    {
+      "id": "celebrities-100-40",
+      "points": 100,
+      "question": "من هو أشهر يوتيوبر؟",
+      "answer": "بيو دي باي",
+      "image": ""
+    },
+    {
+      "id": "celebrities-100-41",
+      "points": 100,
+      "question": "من هو أشبر تيك توكر؟",
+      "answer": "شارلي دميليو",
+      "image": ""
+    },
+    {
+      "id": "celebrities-100-42",
+      "points": 100,
+      "question": "من هو أشبر أنستغرامر؟",
+      "answer": "كريستيانو رونالدو",
+      "image": ""
+    },
+    {
+      "id": "celebrities-100-43",
+      "points": 100,
+      "question": "من هو أشبر فيسبوكر؟",
+      "answer": "مارك زوكربيرغ",
+      "image": ""
+    },
+    {
+      "id": "celebrities-100-44",
+      "points": 100,
+      "question": "من هو أشبر سناب شات؟",
+      "answer": "إيفان سبغل",
+      "image": ""
+    },
+    {
+      "id": "celebrities-100-45",
+      "points": 100,
+      "question": "من هو أشبر منتج محتوى؟",
+      "answer": "بيو دي باي",
+      "image": ""
+    },
+    {
+      "id": "celebrities-100-46",
+      "points": 100,
+      "question": "من هو أشبر شخصية على الإنترنت؟",
+      "answer": "بيو دي باي",
+      "image": ""
+    },
+    {
+      "id": "celebrities-100-47",
+      "points": 100,
+      "question": "من هو أشبر نجم فيلم؟",
+      "answer": "توم كروز",
+      "image": ""
+    },
+    {
+      "id": "celebrities-100-48",
+      "points": 100,
+      "question": "من هو أشبر نجمة مسلسل؟",
+      "answer": "صبا مبارك",
+      "image": ""
+    },
+    {
+      "id": "celebrities-100-49",
+      "points": 100,
+      "question": "من هو أشبر مذيع رياضي؟",
+      "answer": "عصام الشوالي",
+      "image": ""
+    },
+    {
+      "id": "celebrities-100-50",
+      "points": 100,
+      "question": "من هو أشبر كاتب روايات؟",
+      "answer": "أغاثا كريستي",
+      "image": ""
+    },
+    {
+      "id": "celebrities-300-1",
+      "points": 300,
+      "question": "من هو الممثل الذي فاز بأكثر جوائز أوسكار؟",
+      "answer": "دانيل داي لويس",
+      "image": ""
+    },
+    {
+      "id": "celebrities-300-2",
+      "points": 300,
+      "question": "من هي الممثلة التي فازت بأكثر جوائز أوسكار؟",
+      "answer": "كاثرين هيبورن",
+      "image": ""
+    },
+    {
+      "id": "celebrities-300-3",
+      "points": 300,
+      "question": "من هو المغني الذي باع أكثر الألبومات؟",
+      "answer": "مايكل جاكسون",
+      "image": ""
+    },
+    {
+      "id": "celebrities-300-4",
+      "points": 300,
+      "question": "من هي المغنية التي باعت أكثر الألبومات؟",
+      "answer": "مادونا",
+      "image": ""
+    },
+    {
+      "id": "celebrities-300-5",
+      "points": 300,
+      "question": "من هو اللاعب الذي سجل أكثر الأهداف؟",
+      "answer": "كريستيانو رونالدو",
+      "image": ""
+    },
+    {
+      "id": "celebrities-300-6",
+      "points": 300,
+      "question": "من هو اللاعب الذي صنع أكثر التمريرات؟",
+      "answer": "ليونيل ميسي",
+      "image": ""
+    },
+    {
+      "id": "celebrities-300-7",
+      "points": 300,
+      "question": "من هو الفائز بأكثر جوائز نوبل للسلام؟",
+      "answer": "الهلال الأحمر",
+      "image": ""
+    },
+    {
+      "id": "celebrities-300-8",
+      "points": 300,
+      "question": "من هو الفائز بأكثر جوائز نوبل للأدب؟",
+      "answer": "بوب ديلان",
+      "image": ""
+    },
+    {
+      "id": "celebrities-300-9",
+      "points": 300,
+      "question": "من هو الفائز بأكثر جوائز غرامي؟",
+      "answer": "بيونسي",
+      "image": ""
+    },
+    {
+      "id": "celebrities-300-10",
+      "points": 300,
+      "question": "من هو الفائز بأكثر جوائز إيمي؟",
+      "answer": "آليكس بورستين",
+      "image": ""
+    },
+    {
+      "id": "celebrities-300-11",
+      "points": 300,
+      "question": "من هو الممثل الذي حصل على أعلى راتب في فيلم؟",
+      "answer": "روبرت داوني جونيور",
+      "image": ""
+    },
+    {
+      "id": "celebrities-300-12",
+      "points": 300,
+      "question": "من هي الممثلة التي حصلت على أعلى راتب في فيلم؟",
+      "answer": "ساكاري لاو",
+      "image": ""
+    },
+    {
+      "id": "celebrities-300-13",
+      "points": 300,
+      "question": "من هو اللاعب الذي حقق أعلى راتب سنوي؟",
+      "answer": "ليونيل ميسي",
+      "image": ""
+    },
+    {
+      "id": "celebrities-300-14",
+      "points": 300,
+      "question": "من هو اللاعب الذي حقق أعلى راتب انتقالي؟",
+      "answer": "نيمار",
+      "image": ""
+    },
+    {
+      "id": "celebrities-300-15",
+      "points": 300,
+      "question": "من هو الشخص الذي يمتلك أكبر ثروة؟",
+      "answer": "إيلون ماسك",
+      "image": ""
+    },
+    {
+      "id": "celebrities-300-16",
+      "points": 300,
+      "question": "من هي الشخصية التي تمتلك أكبر ثروة؟",
+      "answer": "فرانسواز بيتو ميرس",
+      "image": ""
+    },
+    {
+      "id": "celebrities-300-17",
+      "points": 300,
+      "question": "من هو الشخص الذي تبرع بأكبر مبلغ؟",
+      "answer": "بيل غيتس",
+      "image": ""
+    },
+    {
+      "id": "celebrities-300-18",
+      "points": 300,
+      "question": "من هي الشخصية التي تبرعت بأكبر مبلغ؟",
+      "answer": "ماكنزي سكوت",
+      "image": ""
+    },
+    {
+      "id": "celebrities-300-19",
+      "points": 300,
+      "question": "من هو الشخص الذي لقي أكبر عدد من المعجبين؟",
+      "answer": "بيو دي باي",
+      "image": ""
+    },
+    {
+      "id": "celebrities-300-20",
+      "points": 300,
+      "question": "من هي الشخصية التي لقيت أكبر عدد من المعجبين؟",
+      "answer": "كylie jenner",
+      "image": ""
+    },
+    {
+      "id": "celebrities-300-21",
+      "points": 300,
+      "question": "من هو الشخص الذي حقق أكبر عدد من المشاهدات؟",
+      "answer": "بيو دي باي",
+      "image": ""
+    },
+    {
+      "id": "celebrities-300-22",
+      "points": 300,
+      "question": "من هي الشخصية التي حققت أكبر عدد من المشاهدات؟",
+      "answer": "كylie jenner",
+      "image": ""
+    },
+    {
+      "id": "celebrities-300-23",
+      "points": 300,
+      "question": "من هو الشخص الذي حقق أكبر عدد من المتابعين؟",
+      "answer": "كريستيانو رونالدو",
+      "image": ""
+    },
+    {
+      "id": "celebrities-300-24",
+      "points": 300,
+      "question": "من هي الشخصية التي حققت أكبر عدد من المتابعين؟",
+      "answer": "كylie jenner",
+      "image": ""
+    },
+    {
+      "id": "celebrities-300-25",
+      "points": 300,
+      "question": "من هو الشخص الذي حقق أكبر عدد من الإعجابات؟",
+      "answer": "كريستيانو رونالدو",
+      "image": ""
+    },
+    {
+      "id": "celebrities-300-26",
+      "points": 300,
+      "question": "من هي الشخصية التي حققت أكبر عدد من الإعجابات؟",
+      "answer": "كylie jenner",
+      "image": ""
+    },
+    {
+      "id": "celebrities-300-27",
+      "points": 300,
+      "question": "من هو الشخص الذي حقق أكبر عدد من المشاركات؟",
+      "answer": "بيو دي باي",
+      "image": ""
+    },
+    {
+      "id": "celebrities-300-28",
+      "points": 300,
+      "question": "من هي الشخصية التي حققت أكبر عدد من المشاركات؟",
+      "answer": "كylie jenner",
+      "image": ""
+    },
+    {
+      "id": "celebrities-300-29",
+      "points": 300,
+      "question": "من هو الشخص الذي حقق أكبر عدد من الحفلات؟",
+      "answer": "تايلور سويفت",
+      "image": ""
+    },
+    {
+      "id": "celebrities-300-30",
+      "points": 300,
+      "question": "من هو الشخص الذي حقق أكبر عدد من الألبومات؟",
+      "answer": "تايلور سويفت",
+      "image": ""
+    },
+    {
+      "id": "celebrities-300-31",
+      "points": 300,
+      "question": "من هو الشخص الذي حقق أكبر عدد من الأغاني؟",
+      "answer": "دريدريك",
+      "image": ""
+    },
+    {
+      "id": "celebrities-300-32",
+      "points": 300,
+      "question": "من هي الشخصية التي حققت أكبر عدد من الأغاني؟",
+      "answer": "ريانا",
+      "image": ""
+    },
+    {
+      "id": "celebrities-300-33",
+      "points": 300,
+      "question": "من هو الشخص الذي حقق أكبر عدد من الأفلام؟",
+      "answer": "مورغان فريمان",
+      "image": ""
+    },
+    {
+      "id": "celebrities-300-34",
+      "points": 300,
+      "question": "من هي الشخصية التي حققت أكبر عدد من الأفلام؟",
+      "answer": "ميريل ستريب",
+      "image": ""
+    },
+    {
+      "id": "celebrities-300-35",
+      "points": 300,
+      "question": "من هو الشخص الذي حقق أكبر عدد من المسلسلات؟",
+      "answer": "جيمس كوردين",
+      "image": ""
+    },
+    {
+      "id": "celebrities-300-36",
+      "points": 300,
+      "question": "من هي الشخصية التي حققت أكبر عدد من المسلسلات؟",
+      "answer": "جوليا روبرتس",
+      "image": ""
+    },
+    {
+      "id": "celebrities-300-37",
+      "points": 300,
+      "question": "من هو الشخص الذي حقق أكبر عدد من البرامج التلفزيونية؟",
+      "answer": "أوبرا وينفري",
+      "image": ""
+    },
+    {
+      "id": "celebrities-300-38",
+      "points": 300,
+      "question": "من هي الشخصية التي حققت أكبر عدد من البرامج التلفزيونية؟",
+      "answer": "إلين ديجينيريس",
+      "image": ""
+    },
+    {
+      "id": "celebrities-300-39",
+      "points": 300,
+      "question": "من هو الشخص الذي حقق أكبر عدد من الكتب؟",
+      "answer": "جي كي رولينغ",
+      "image": ""
+    },
+    {
+      "id": "celebrities-300-40",
+      "points": 300,
+      "question": "من هي الشخصية التي حققت أكبر عدد من الكتب؟",
+      "answer": "أغاثا كريستي",
+      "image": ""
+    },
+    {
+      "id": "celebrities-300-41",
+      "points": 300,
+      "question": "من هو الشخص الذي حقق أكبر عدد من الشركات؟",
+      "answer": "إيلون ماسك",
+      "image": ""
+    },
+    {
+      "id": "celebrities-300-42",
+      "points": 300,
+      "question": "من هي الشخصية التي حققت أكبر عدد من الشركات؟",
+      "answer": "أوبرا وينفري",
+      "image": ""
+    },
+    {
+      "id": "celebrities-300-43",
+      "points": 300,
+      "question": "من هو الشخص الذي حقق أكبر عدد من الاستثمارات؟",
+      "answer": "وارن بافيت",
+      "image": ""
+    },
+    {
+      "id": "celebrities-300-44",
+      "points": 300,
+      "question": "من هي الشخصية التي حققت أكبر عدد من الاستثمارات؟",
+      "answer": "أوبرا وينفري",
+      "image": ""
+    },
+    {
+      "id": "celebrities-300-45",
+      "points": 300,
+      "question": "من هو الشخص الذي حقق أكبر عدد من الاختراعات؟",
+      "answer": "توماس إديسون",
+      "image": ""
+    },
+    {
+      "id": "celebrities-300-46",
+      "points": 300,
+      "question": "من هي الشخصية التي حققت أكبر عدد من الاختراعات؟",
+      "answer": "ماري كوري",
+      "image": ""
+    },
+    {
+      "id": "celebrities-300-47",
+      "points": 300,
+      "question": "من هو الشخص الذي حقق أكبر عدد من الاكتشافات؟",
+      "answer": "ألبرت أينشتاين",
+      "image": ""
+    },
+    {
+      "id": "celebrities-300-48",
+      "points": 300,
+      "question": "من هي الشخصية التي حققت أكبر عدد من الاكتشافات؟",
+      "answer": "ماري كوري",
+      "image": ""
+    },
+    {
+      "id": "celebrities-300-49",
+      "points": 300,
+      "question": "من هو الشخص الذي حقق أكبر عدد من النظريات؟",
+      "answer": "ألبرت أينشتاين",
+      "image": ""
+    },
+    {
+      "id": "celebrities-300-50",
+      "points": 300,
+      "question": "من هي الشخصية التي حققت أكبر عدد من النظريات؟",
+      "answer": "ماري كوري",
+      "image": ""
+    },
+    {
+      "id": "celebrities-500-1",
+      "points": 500,
+      "question": "من هو الشخص الذي غير العالم بالتكنولوجيا؟",
+      "answer": "ستيف جوبز",
+      "image": ""
+    },
+    {
+      "id": "celebrities-500-2",
+      "points": 500,
+      "question": "من هو الشخص الذي غير العالم بالسياسة؟",
+      "answer": "نيلسون مانديلا",
+      "image": ""
+    },
+    {
+      "id": "celebrities-500-3",
+      "points": 500,
+      "question": "من هو الشخص الذي غير العالم بالرياضة؟",
+      "answer": "محمد علي كلاي",
+      "image": ""
+    },
+    {
+      "id": "celebrities-500-4",
+      "points": 500,
+      "question": "من هو الشخص الذي غير العالم بالموسيقى؟",
+      "answer": "مايكل جاكسون",
+      "image": ""
+    },
+    {
+      "id": "celebrities-500-5",
+      "points": 500,
+      "question": "من هو الشخص الذي غير العالم بالسينما؟",
+      "answer": "تشارلي شابلن",
+      "image": ""
+    },
+    {
+      "id": "celebrities-500-6",
+      "points": 500,
+      "question": "من هو الشخص الذي غير العالم بالأدب؟",
+      "answer": "ويليام شكسبير",
+      "image": ""
+    },
+    {
+      "id": "celebrities-500-7",
+      "points": 500,
+      "question": "من هو الشخص الذي غير العالم بالفن؟",
+      "answer": "ليوناردو دافنشي",
+      "image": ""
+    },
+    {
+      "id": "celebrities-500-8",
+      "points": 500,
+      "question": "من هو الشخص الذي غير العالم بالعلم؟",
+      "answer": "ألبرت أينشتاين",
+      "image": ""
+    },
+    {
+      "id": "celebrities-500-9",
+      "points": 500,
+      "question": "من هو الشخص الذي غير العالم بالطب؟",
+      "answer": "لويس باستور",
+      "image": ""
+    },
+    {
+      "id": "celebrities-500-10",
+      "points": 500,
+      "question": "من هو الشخص الذي غير العالم بالتجارة؟",
+      "answer": "جون د. روكفلر",
+      "image": ""
+    },
+    {
+      "id": "celebrities-500-11",
+      "points": 500,
+      "question": "من هو الشخص الذي غير العالم بالصناعة؟",
+      "answer": "هنري فورد",
+      "image": ""
+    },
+    {
+      "id": "celebrities-500-12",
+      "points": 500,
+      "question": "من هو الشخص الذي غير العالم بالبناء؟",
+      "answer": "فرانك لويد رايت",
+      "image": ""
+    },
+    {
+      "id": "celebrities-500-13",
+      "points": 500,
+      "question": "من هو الشخص الذي غير العالم بالتصميم؟",
+      "answer": "كوكو شانيل",
+      "image": ""
+    },
+    {
+      "id": "celebrities-500-14",
+      "points": 500,
+      "question": "من هو الشخص الذي غير العالم بالموضة؟",
+      "answer": "فيرساتشي",
+      "image": ""
+    },
+    {
+      "id": "celebrities-500-15",
+      "points": 500,
+      "question": "من هو الشخص الذي غير العالم بالأزياء؟",
+      "answer": "جورجيو أرماني",
+      "image": ""
+    },
+    {
+      "id": "celebrities-500-16",
+      "points": 500,
+      "question": "من هو الشخص الذي غير العالم بالأطعمة؟",
+      "answer": "غوردون رامزي",
+      "image": ""
+    },
+    {
+      "id": "celebrities-500-17",
+      "points": 500,
+      "question": "من هو الشخص الذي غير العالم بالمشروبات؟",
+      "answer": "جون بيمبرتون",
+      "image": ""
+    },
+    {
+      "id": "celebrities-500-18",
+      "points": 500,
+      "question": "من هو الشخص الذي غير العالم بالحلويات؟",
+      "answer": "مارس",
+      "image": ""
+    },
+    {
+      "id": "celebrities-500-19",
+      "points": 500,
+      "question": "من هو الشخص الذي غير العالم بالخبز؟",
+      "answer": "تشارلز ويتستون",
+      "image": ""
+    },
+    {
+      "id": "celebrities-500-20",
+      "points": 500,
+      "question": "من هو الشخص الذي غير العالم بالقهوة؟",
+      "answer": "هيلاري كلينتون",
+      "image": ""
+    },
+    {
+      "id": "celebrities-500-21",
+      "points": 500,
+      "question": "من هو الشخص الذي غير العالم بالتعليم؟",
+      "answer": "مالالا يوسفزاي",
+      "image": ""
+    },
+    {
+      "id": "celebrities-500-22",
+      "points": 500,
+      "question": "من هو الشخص الذي غير العالم بالصحة؟",
+      "answer": "بي غاتس",
+      "image": ""
+    },
+    {
+      "id": "celebrities-500-23",
+      "points": 500,
+      "question": "من هو الشخص الذي غير العالم بالبيئة؟",
+      "answer": "غريتا تونبرغ",
+      "image": ""
+    },
+    {
+      "id": "celebrities-500-24",
+      "points": 500,
+      "question": "من هو الشخص الذي غير العالم بالسلام؟",
+      "answer": "ماهاتما غاندي",
+      "image": ""
+    },
+    {
+      "id": "celebrities-500-25",
+      "points": 500,
+      "question": "من هو الشخص الذي غير العالم بالعدالة؟",
+      "answer": "مارتن لوثر كينج",
+      "image": ""
+    },
+    {
+      "id": "celebrities-500-26",
+      "points": 500,
+      "question": "من هو الشخص الذي غير العالم بالحرية؟",
+      "answer": "نيلسون مانديلا",
+      "image": ""
+    },
+    {
+      "id": "celebrities-500-27",
+      "points": 500,
+      "question": "من هو الشخص الذي غير العالم بالتسامح؟",
+      "answer": "البابا فرانسيس",
+      "image": ""
+    },
+    {
+      "id": "celebrities-500-28",
+      "points": 500,
+      "question": "من هو الشخص الذي غير العالم بالحب؟",
+      "answer": "أم تيريزا تيريزا",
+      "image": ""
+    },
+    {
+      "id": "celebrities-500-29",
+      "points": 500,
+      "question": "من هو الشخص الذي غير العالم بالأمل؟",
+      "answer": "باراك أوباما",
+      "image": ""
+    },
+    {
+      "id": "celebrities-500-30",
+      "points": 500,
+      "question": "من هو الشخص الذي غير العالم بالإلهام؟",
+      "answer": "ستيف جوبز",
+      "image": ""
+    },
+    {
+      "id": "celebrities-500-31",
+      "points": 500,
+      "question": "من هو الشخص الذي غير العالم بالإنجازات؟",
+      "answer": "إيلون ماسك",
+      "image": ""
+    },
+    {
+      "id": "celebrities-500-32",
+      "points": 500,
+      "question": "من هو الشخص الذي غير العالم بالأحلام؟",
+      "answer": "والت ديزني",
+      "image": ""
+    },
+    {
+      "id": "celebrities-500-33",
+      "points": 500,
+      "question": "من هو الشخص الذي غير العالم بالخيال؟",
+      "answer": "جي آر آر تولكين",
+      "image": ""
+    },
+    {
+      "id": "celebrities-500-34",
+      "points": 500,
+      "question": "من هو الشخص الذي غير العالم بالمغامرة؟",
+      "answer": "جي كي رولينغ",
+      "image": ""
+    },
+    {
+      "id": "celebrities-500-35",
+      "points": 500,
+      "question": "من هو الشخص الذي غير العالم بالحقيقة؟",
+      "answer": "إدوارد سنودن",
+      "image": ""
+    },
+    {
+      "id": "celebrities-500-36",
+      "points": 500,
+      "question": "من هو الشخص الذي غير العالم بالفكاهة؟",
+      "answer": "تشارلي شابلن",
+      "image": ""
+    },
+    {
+      "id": "celebrities-500-37",
+      "points": 500,
+      "question": "من هو الشخص الذي غير العالم بالرعب؟",
+      "answer": "ستيفن كينغ",
+      "image": ""
+    },
+    {
+      "id": "celebrities-500-38",
+      "points": 500,
+      "question": "من هو الشخص الذي غير العالم بالخيال العلمي؟",
+      "answer": "جورج أورويل",
+      "image": ""
+    },
+    {
+      "id": "celebrities-500-39",
+      "points": 500,
+      "question": "من هو الشخص الذي غير العالم بالدراما؟",
+      "answer": "ويليام شكسبير",
+      "image": ""
+    },
+    {
+      "id": "celebrities-500-40",
+      "points": 500,
+      "question": "من هو الشخص الذي غير العالم بالكوميديا؟",
+      "answer": "تشارلي شابلن",
+      "image": ""
+    },
+    {
+      "id": "celebrities-500-41",
+      "points": 500,
+      "question": "من هو الشخص الذي غير العالم بالرومانسية؟",
+      "answer": "جين أوستن",
+      "image": ""
+    },
+    {
+      "id": "celebrities-500-42",
+      "points": 500,
+      "question": "من هو الشخص الذي غير العالم بالغموض؟",
+      "answer": "أغاثا كريستي",
+      "image": ""
+    },
+    {
+      "id": "celebrities-500-43",
+      "points": 500,
+      "question": "من هو الشخص الذي غير العالم بالتاريخ؟",
+      "answer": "وينستون تشرشل",
+      "image": ""
+    },
+    {
+      "id": "celebrities-500-44",
+      "points": 500,
+      "question": "من هو الشخص الذي غير العالم بالمستقبل؟",
+      "answer": "إيلون ماسك",
+      "image": ""
+    },
+    {
+      "id": "celebrities-500-45",
+      "points": 500,
+      "question": "من هو الشخص الذي غير العالم بالحاضر؟",
+      "answer": "باراك أوباما",
+      "image": ""
+    },
+    {
+      "id": "celebrities-500-46",
+      "points": 500,
+      "question": "من هو الشخص الذي غير العالم بالماضي؟",
+      "answer": "نيلسون مانديلا",
+      "image": ""
+    },
+    {
+      "id": "celebrities-500-47",
+      "points": 500,
+      "question": "من هو الشخص الذي غير العالم بالأبدياً؟",
+      "answer": "ألبرت أينشتاين",
+      "image": ""
+    },
+    {
+      "id": "celebrities-500-48",
+      "points": 500,
+      "question": "من هو الشخص الذي غير العالم بالإنسانية؟",
+      "answer": "نيلسون مانديلا",
+      "image": ""
+    },
+    {
+      "id": "celebrities-500-49",
+      "points": 500,
+      "question": "من هو الشخص الذي غير العالم بالحياة؟",
+      "answer": "لويس باستور",
+      "image": ""
+    },
+    {
+      "id": "celebrities-500-50",
+      "points": 500,
+      "question": "من هو الشخص الذي غير العالم بالموت؟",
+      "answer": "ماهاتما غاندي",
+      "image": ""
+    }
+  ],
+  "metadata": {
+    "sectionId": "general",
+    "updatedAt": "2026-08-03",
+    "status": "ready"
+  }
 }

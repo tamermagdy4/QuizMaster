@@ -1,11 +1,1060 @@
 ﻿{
-    "categoryId":  "islamic-history",
-    "questions":  [
-
-                  ],
-    "metadata":  {
-                     "sectionId":  "history",
-                     "updatedAt":  "2026-08-03",
-                     "status":  "pending"
-                 }
+  "categoryId": "islamic-history",
+  "questions": [
+    {
+      "id": "islamic-history-100-1",
+      "points": 100,
+      "question": "متى بدأ الهجرة النبوية؟",
+      "answer": "622 م",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-100-2",
+      "points": 100,
+      "question": "إلى أين هاجر النبي محمد؟",
+      "answer": "المدينة المنورة",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-100-3",
+      "points": 100,
+      "question": "من هو أول خليفة راشد؟",
+      "answer": "أبو بكر الصديق",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-100-4",
+      "points": 100,
+      "question": "من هو ثاني الخلفاء الراشدين؟",
+      "answer": "عمر بن الخطاب",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-100-5",
+      "points": 100,
+      "question": "من هو ثالث الخلفاء الراشدين؟",
+      "answer": "عثمان بن عفان",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-100-6",
+      "points": 100,
+      "question": "من هو رابع الخلفاء الراشدين؟",
+      "answer": "علي بن أبي طالب",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-100-7",
+      "points": 100,
+      "question": "متى غزوة بدر؟",
+      "answer": "2 هـ",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-100-8",
+      "points": 100,
+      "question": "متى غزوة أحد؟",
+      "answer": "3 هـ",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-100-9",
+      "points": 100,
+      "question": "متى غزوة الخندق؟",
+      "answer": "5 هـ",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-100-10",
+      "points": 100,
+      "question": "متى فتح مكة؟",
+      "answer": "8 هـ",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-100-11",
+      "points": 100,
+      "question": "متى حجة الوداع؟",
+      "answer": "10 هـ",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-100-12",
+      "points": 100,
+      "question": "متى توفي النبي محمد؟",
+      "answer": "11 هـ",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-100-13",
+      "points": 100,
+      "question": "من هو مؤسس الدولة الأموية؟",
+      "answer": "معاوية بن أبي سفيان",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-100-14",
+      "points": 100,
+      "question": "من هو مؤسس الدولة العباسية؟",
+      "answer": "أبو العباس السفاح",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-100-15",
+      "points": 100,
+      "question": "ما هي عاصمة الدولة الأموية؟",
+      "answer": "دمشق",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-100-16",
+      "points": 100,
+      "question": "ما هي عاصمة الدولة العباسية؟",
+      "answer": "بغداد",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-100-17",
+      "points": 100,
+      "question": "من هو أول الخلفاء الأمويين؟",
+      "answer": "معاوية بن أبي سفيان",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-100-18",
+      "points": 100,
+      "question": "من هو آخر الخلفاء الأمويين؟",
+      "answer": "مروان بن محمد",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-100-19",
+      "points": 100,
+      "question": "من هو أول الخلفاء العباسيين؟",
+      "answer": "أبو العباس السفاح",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-100-20",
+      "points": 100,
+      "question": "من هو آخر الخلفاء العباسيين؟",
+      "answer": "المستعصم بالله",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-100-21",
+      "points": 100,
+      "question": "متى فتحت الأندلس؟",
+      "answer": "92 هـ",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-100-22",
+      "points": 100,
+      "question": "من فتح الأندلس؟",
+      "answer": "طارق بن زياد",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-100-23",
+      "points": 100,
+      "question": "متى سقطت الأندلس؟",
+      "answer": "897 هـ",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-100-24",
+      "points": 100,
+      "question": "ما هي آخر مملكة إسلامية في الأندلس؟",
+      "answer": "غرناطة",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-100-25",
+      "points": 100,
+      "question": "متى فتحت القسطنطينية؟",
+      "answer": "857 هـ",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-100-26",
+      "points": 100,
+      "question": "من فتح القسطنطينية؟",
+      "answer": "محمد الفاتح",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-100-27",
+      "points": 100,
+      "question": "ما هي الدولة العثمانية؟",
+      "answer": "الدولة الإسلامية الثالثة",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-100-28",
+      "points": 100,
+      "question": "من هو مؤسس الدولة العثمانية؟",
+      "answer": "عثمان بن أرطغرل",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-100-29",
+      "points": 100,
+      "question": "متى تأسست الدولة العثمانية؟",
+      "answer": "699 هـ",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-100-30",
+      "points": 100,
+      "question": "متى سقطت الدولة العثمانية؟",
+      "answer": "1342 هـ",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-100-31",
+      "points": 100,
+      "question": "من هو آخر السلاطين العثمانيين؟",
+      "answer": "محمد السادس",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-100-32",
+      "points": 100,
+      "question": "ما هي عاصمة الدولة العثمانية؟",
+      "answer": "إسطنبول",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-100-33",
+      "points": 100,
+      "question": "ما هو العصر الذهبي الإسلامي؟",
+      "answer": "العصر العباسي",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-100-34",
+      "points": 100,
+      "question": "ما هو بيت الحكمة؟",
+      "answer": "المكتبة العباسية",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-100-35",
+      "points": 100,
+      "question": "من بنى بيت الحكمة؟",
+      "answer": "المأمون",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-100-36",
+      "points": 100,
+      "question": "متى بنى بيت الحكمة؟",
+      "answer": "830 م",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-100-37",
+      "points": 100,
+      "question": "ما هو المذهب السني؟",
+      "answer": "المذهب الأكثر انتشاراً",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-100-38",
+      "points": 100,
+      "question": "ما هو المذهب الشيعي؟",
+      "answer": "المذهب الثاني",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-100-39",
+      "points": 100,
+      "question": "ما هي المذاهب السنية الأربعة؟",
+      "answer": "الحنفي، المالكي، الشافعي، الحنبلي",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-100-40",
+      "points": 100,
+      "question": "من هو إمام المذهب الحنفي؟",
+      "answer": "أبو حنيفة",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-100-41",
+      "points": 100,
+      "question": "من هو إمام المذهب المالكي؟",
+      "answer": "مالك بن أنس",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-100-42",
+      "points": 100,
+      "question": "من هو إمام المذهب الشافعي؟",
+      "answer": "محمد بن إدريس الشافعي",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-100-43",
+      "points": 100,
+      "question": "من هو إمام المذهب الحنبلي؟",
+      "answer": "أحمد بن حنبل",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-100-44",
+      "points": 100,
+      "question": "ما هو القرآن؟",
+      "answer": "كتاب الله",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-100-45",
+      "points": 100,
+      "question": "ما هو الحديث النبوي؟",
+      "answer": "أقوال النبي محمد",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-100-46",
+      "points": 100,
+      "question": "ما هو السيرة النبوية؟",
+      "answer": "حياة النبي محمد",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-100-47",
+      "points": 100,
+      "question": "ما هو التاريخ الإسلامي؟",
+      "answer": "تاريخ المسلمين",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-100-48",
+      "points": 100,
+      "question": "ما هو التقويم الهجري؟",
+      "answer": "التقويم الإسلامي",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-100-49",
+      "points": 100,
+      "question": "متى بدأ التقويم الهجري؟",
+      "answer": "1 هـ",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-100-50",
+      "points": 100,
+      "question": "ما هو رمضان؟",
+      "answer": "شهر الصيام",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-300-1",
+      "points": 300,
+      "question": "ما هي غزوة بدر الكبرى؟",
+      "answer": "أول غزوة إسلامية كبرى",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-300-2",
+      "points": 300,
+      "question": "ما هي غزوة أحد؟",
+      "answer": "غزوة استشهد فيها حمزة",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-300-3",
+      "points": 300,
+      "question": "ما هي غزوة الخندق؟",
+      "answer": "غزوة حفر فيها الخندق",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-300-4",
+      "points": 300,
+      "question": "ما هو فتح مكة؟",
+      "answer": "فتح مكة المكرمة",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-300-5",
+      "points": 300,
+      "question": "ما هو صلح الحديبية؟",
+      "answer": "صلح بين المسلمين وقريش",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-300-6",
+      "points": 300,
+      "question": "ما هو غزوة تبوك؟",
+      "answer": "آخر غزوة للنبي محمد",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-300-7",
+      "points": 300,
+      "question": "ما هو حجة الوداع؟",
+      "answer": "حجة النبي محمد الأخيرة",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-300-8",
+      "points": 300,
+      "question": "ما هو وفاة النبي محمد؟",
+      "answer": "وفاة النبي محمد",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-300-9",
+      "points": 300,
+      "question": "ما هو حروب الردة؟",
+      "answer": "حروب ضد المرتدين",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-300-10",
+      "points": 300,
+      "question": "ما هو فتح العراق؟",
+      "answer": "فتح العراق",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-300-11",
+      "points": 300,
+      "question": "ما هو فتح الشام؟",
+      "answer": "فتح الشام",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-300-12",
+      "points": 300,
+      "question": "ما هو فتح مصر؟",
+      "answer": "فتح مصر",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-300-13",
+      "points": 300,
+      "question": "ما هو فتح فارس؟",
+      "answer": "فتح فارس",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-300-14",
+      "points": 300,
+      "question": "ما هو فتح الأندلس؟",
+      "answer": "فتح الأندلس",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-300-15",
+      "points": 300,
+      "question": "ما هو فتح إفريقيا؟",
+      "answer": "فتح شمال أفريقيا",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-300-16",
+      "points": 300,
+      "question": "ما هو فتح آسيا الوسطى؟",
+      "answer": "فتح آسيا الوسطى",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-300-17",
+      "points": 300,
+      "question": "ما هو فتح القسطنطينية؟",
+      "answer": "فتح القسطنطينية",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-300-18",
+      "points": 300,
+      "question": "ما هو فتح القسطنطينية الثاني؟",
+      "answer": "فتح القسطنطينية",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-300-19",
+      "points": 300,
+      "question": "ما هو فتح بلاد الروم؟",
+      "answer": "فتح بلاد الروم",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-300-20",
+      "points": 300,
+      "question": "ما هو فتح بلاد الهند؟",
+      "answer": "فتح بلاد الهند",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-300-21",
+      "points": 300,
+      "question": "ما هو فتح بلاد الصين؟",
+      "answer": "فتح بلاد الصين",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-300-22",
+      "points": 300,
+      "question": "ما هو فتح بلاد الترك؟",
+      "answer": "فتح بلاد الترك",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-300-23",
+      "points": 300,
+      "question": "ما هو فتح بلاد المغرب؟",
+      "answer": "فتح بلاد المغرب",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-300-24",
+      "points": 300,
+      "question": "ما هو فتح بلاد السودان؟",
+      "answer": "فتح بلاد السودان",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-300-25",
+      "points": 300,
+      "question": "ما هو فتح بلاد الصومال؟",
+      "answer": "فتح بلاد الصومال",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-300-26",
+      "points": 300,
+      "question": "ما هو فتح بلاد إثيوبيا؟",
+      "answer": "فتح بلاد إثيوبيا",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-300-27",
+      "points": 300,
+      "question": "ما هو فتح بلاد اليمن؟",
+      "answer": "فتح بلاد اليمن",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-300-28",
+      "points": 300,
+      "question": "ما هو فتح بلاد عمان؟",
+      "answer": "فتح بلاد عمان",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-300-29",
+      "points": 300,
+      "question": "ما هو فتح بلاد البحرين؟",
+      "answer": "فتح بلاد البحرين",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-300-30",
+      "points": 300,
+      "question": "ما هو فتح بلاد الكويت؟",
+      "answer": "فتح بلاد الكويت",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-300-31",
+      "points": 300,
+      "question": "ما هو فتح بلاد قطر؟",
+      "answer": "فتح بلاد قطر",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-300-32",
+      "points": 300,
+      "question": "ما هو فتح بلاد الإمارات؟",
+      "answer": "فتح بلاد الإمارات",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-300-33",
+      "points": 300,
+      "question": "ما هو فتح بلاد السعودية؟",
+      "answer": "فتح بلاد السعودية",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-300-34",
+      "points": 300,
+      "question": "ما هو فتح بلاد الأردن؟",
+      "answer": "فتح بلاد الأردن",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-300-35",
+      "points": 300,
+      "question": "ما هو فتح بلاد سوريا؟",
+      "answer": "فتح بلاد سوريا",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-300-36",
+      "points": 300,
+      "question": "ما هو فتح بلاد لبنان؟",
+      "answer": "فتح بلاد لبنان",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-300-37",
+      "points": 300,
+      "question": "ما هو فتح بلاد فلسطين؟",
+      "answer": "فتح بلاد فلسطين",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-300-38",
+      "points": 300,
+      "question": "ما هو فتح بلاد العراق؟",
+      "answer": "فتح بلاد العراق",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-300-39",
+      "points": 300,
+      "question": "ما هو فتح بلاد إيران؟",
+      "answer": "فتح بلاد إيران",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-300-40",
+      "points": 300,
+      "question": "ما هو فتح بلاد أفغانستان؟",
+      "answer": "فتح بلاد أفغانستان",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-300-41",
+      "points": 300,
+      "question": "ما هو فتح بلاد باكستان؟",
+      "answer": "فتح بلاد باكستان",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-300-42",
+      "points": 300,
+      "question": "ما هو فتح بلاد الهند؟",
+      "answer": "فتح بلاد الهند",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-300-43",
+      "points": 300,
+      "question": "ما هو فتح بلاد بنغلاديش؟",
+      "answer": "فتح بلاد بنغلاديش",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-300-44",
+      "points": 300,
+      "question": "ما هو فتح بلاد ميانمار؟",
+      "answer": "فتح بلاد ميانمار",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-300-45",
+      "points": 300,
+      "question": "ما هو فتح بلاد تايلاند؟",
+      "answer": "فتح بلاد تايلاند",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-300-46",
+      "points": 300,
+      "question": "ما هو فتح بلاد ماليزيا؟",
+      "answer": "فتح بلاد ماليزيا",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-300-47",
+      "points": 300,
+      "question": "ما هو فتح بلاد إندونيسيا؟",
+      "answer": "فتح بلاد إندونيسيا",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-300-48",
+      "points": 300,
+      "question": "ما هو فتح بلاد الفلبين؟",
+      "answer": "فتح بلاد الفلبين",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-300-49",
+      "points": 300,
+      "question": "ما هو فتح بلاد بروناي؟",
+      "answer": "فتح بلاد بروناي",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-300-50",
+      "points": 300,
+      "question": "ما هو فتح بلاد سنغافورة؟",
+      "answer": "فتح بلاد سنغافورة",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-500-1",
+      "points": 500,
+      "question": "ما هو السبب الرئيسي لنجاح الفتوحات الإسلامية؟",
+      "answer": "الوحدة الدينية",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-500-2",
+      "points": 500,
+      "question": "ما هو السبب الرئيسي لنجاح الفتوحات الإسلامية؟",
+      "answer": "القيادة القوية",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-500-3",
+      "points": 500,
+      "question": "ما هو السبب الرئيسي لنجاح الفتوحات الإسلامية؟",
+      "answer": "الإيمان بالله",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-500-4",
+      "points": 500,
+      "question": "ما هو السبب الرئيسي لنجاح الفتوحات الإسلامية؟",
+      "answer": "العدالة الاجتماعية",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-500-5",
+      "points": 500,
+      "question": "ما هو السبب الرئيسي لنجاح الفتوحات الإسلامية؟",
+      "answer": "التسامح الديني",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-500-6",
+      "points": 500,
+      "question": "ما هو السبب الرئيسي لنجاح الفتوحات الإسلامية؟",
+      "answer": "الحكمة الإدارية",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-500-7",
+      "points": 500,
+      "question": "ما هو السبب الرئيسي لنجاح الفتوحات الإسلامية؟",
+      "answer": "القوة العسكرية",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-500-8",
+      "points": 500,
+      "question": "ما هو السبب الرئيسي لنجاح الفتوحات الإسلامية؟",
+      "answer": "الاستراتيجية العسكرية",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-500-9",
+      "points": 500,
+      "question": "ما هو السبب الرئيسي لنجاح الفتوحات الإسلامية؟",
+      "answer": "التدريب العسكري",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-500-10",
+      "points": 500,
+      "question": "ما هو السبب الرئيسي لنجاح الفتوحات الإسلامية؟",
+      "answer": "الإمدادات العسكرية",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-500-11",
+      "points": 500,
+      "question": "ما هو السبب الرئيسي لسقوط الدولة الأموية؟",
+      "answer": "الصراع الداخلي",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-500-12",
+      "points": 500,
+      "question": "ما هو السبب الرئيسي لسقوط الدولة الأموية؟",
+      "answer": "التمرد العباسي",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-500-13",
+      "points": 500,
+      "question": "ما هو السبب الرئيسي لسقوط الدولة الأموية؟",
+      "answer": "الضعف الاقتصادي",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-500-14",
+      "points": 500,
+      "question": "ما هو السبب الرئيسي لسقوط الدولة الأموية؟",
+      "answer": "الفساد الإداري",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-500-15",
+      "points": 500,
+      "question": "ما هو السبب الرئيسي لسقوط الدولة العباسية؟",
+      "answer": "الغزو المغولي",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-500-16",
+      "points": 500,
+      "question": "ما هو السبب الرئيسي لسقوط الدولة العباسية؟",
+      "answer": "الصراع الداخلي",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-500-17",
+      "points": 500,
+      "question": "ما هو السبب الرئيسي لسقوط الدولة العباسية؟",
+      "answer": "الضعف الاقتصادي",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-500-18",
+      "points": 500,
+      "question": "ما هو السبب الرئيسي لسقوط الدولة العباسية؟",
+      "answer": "الفساد الإداري",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-500-19",
+      "points": 500,
+      "question": "ما هو السبب الرئيسي لسقوط الدولة العثمانية؟",
+      "answer": "الحرب العالمية الأولى",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-500-20",
+      "points": 500,
+      "question": "ما هو السبب الرئيسي لسقوط الدولة العثمانية؟",
+      "answer": "الضعف العسكري",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-500-21",
+      "points": 500,
+      "question": "ما هو السبب الرئيسي لسقوط الدولة العثمانية؟",
+      "answer": "الصراع الداخلي",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-500-22",
+      "points": 500,
+      "question": "ما هو السبب الرئيسي لسقوط الدولة العثمانية؟",
+      "answer": "الضعف الاقتصادي",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-500-23",
+      "points": 500,
+      "question": "ما هو السبب الرئيسي لسقوط الدولة العثمانية؟",
+      "answer": "الفساد الإداري",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-500-24",
+      "points": 500,
+      "question": "ما هو الإرث الأهم للدولة الأموية؟",
+      "answer": "الفتوحات",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-500-25",
+      "points": 500,
+      "question": "ما هو الإرث الأهم للدولة العباسية؟",
+      "answer": "العصر الذهبي",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-500-26",
+      "points": 500,
+      "question": "ما هو الإرث الأهم للدولة العثمانية؟",
+      "answer": "الفتوحات",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-500-27",
+      "points": 500,
+      "question": "ما هو الإرث الأهم للعصر الذهبي الإسلامي؟",
+      "answer": "العلم",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-500-28",
+      "points": 500,
+      "question": "ما هو الإرث الأهم للعصر الذهبي الإسلامي؟",
+      "answer": "الفلسفة",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-500-29",
+      "points": 500,
+      "question": "ما هو الإرث الأهم للعصر الذهبي الإسلامي؟",
+      "answer": "الأدب",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-500-30",
+      "points": 500,
+      "question": "ما هو الإرث الأهم للعصر الذهبي الإسلامي؟",
+      "answer": "الفن",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-500-31",
+      "points": 500,
+      "question": "ما هو الإرث الأهم للعصر الذهبي الإسلامي؟",
+      "answer": "العمارة",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-500-32",
+      "points": 500,
+      "question": "ما هو الإرث الأهم للعصر الذهبي الإسلامي؟",
+      "answer": "الطب",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-500-33",
+      "points": 500,
+      "question": "ما هو الإرث الأهم للعصر الذهبي الإسلامي؟",
+      "answer": "الفلك",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-500-34",
+      "points": 500,
+      "question": "ما هو الإرث الأهم للعصر الذهبي الإسلامي؟",
+      "answer": "الرياضيات",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-500-35",
+      "points": 500,
+      "question": "ما هو الإرث الأهم للعصر الذهبي الإسلامي؟",
+      "answer": "الكيمياء",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-500-36",
+      "points": 500,
+      "question": "ما هو الإرث الأهم للعصر الذهبي الإسلامي؟",
+      "answer": "الفيزياء",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-500-37",
+      "points": 500,
+      "question": "ما هو الإرث الأهم للعصر الذهبي الإسلامي؟",
+      "answer": "البيولوجيا",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-500-38",
+      "points": 500,
+      "question": "ما هو الإرث الأهم للعصر الذهبي الإسلامي؟",
+      "answer": "الجغرافيا",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-500-39",
+      "points": 500,
+      "question": "ما هو الإرث الأهم للعصر الذهبي الإسلامي؟",
+      "answer": "التاريخ",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-500-40",
+      "points": 500,
+      "question": "ما هو الإرث الأهم للعصر الذهبي الإسلامي؟",
+      "answer": "القانون",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-500-41",
+      "points": 500,
+      "question": "ما هو الإرث الأهم للعصر الذهبي الإسلامي؟",
+      "answer": "الاقتصاد",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-500-42",
+      "points": 500,
+      "question": "ما هو الإرث الأهم للعصر الذهبي الإسلامي؟",
+      "answer": "السياسة",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-500-43",
+      "points": 500,
+      "question": "ما هو الإرث الأهم للعصر الذهبي الإسلامي؟",
+      "answer": "الاجتماع",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-500-44",
+      "points": 500,
+      "question": "ما هو الإرث الأهم للعصر الذهبي الإسلامي؟",
+      "answer": "الثقافة",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-500-45",
+      "points": 500,
+      "question": "ما هو الإرث الأهم للعصر الذهبي الإسلامي؟",
+      "answer": "الحضارة",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-500-46",
+      "points": 500,
+      "question": "ما هو الإرث الأهم للعصر الذهبي الإسلامي؟",
+      "answer": "الإنسانية",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-500-47",
+      "points": 500,
+      "question": "ما هو الإرث الأهم للعصر الذهبي الإسلامي؟",
+      "answer": "العالم",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-500-48",
+      "points": 500,
+      "question": "ما هو الإرث الأهم للعصر الذهبي الإسلامي؟",
+      "answer": "التاريخ",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-500-49",
+      "points": 500,
+      "question": "ما هو الإرث الأهم للعصر الذهبي الإسلامي؟",
+      "answer": "المستقبل",
+      "image": ""
+    },
+    {
+      "id": "islamic-history-500-50",
+      "points": 500,
+      "question": "ما هو الإرث الأهم للعصر الذهبي الإسلامي؟",
+      "answer": "الأمل",
+      "image": ""
+    }
+  ],
+  "metadata": {
+    "sectionId": "history",
+    "updatedAt": "2026-08-03",
+    "status": "ready"
+  }
 }

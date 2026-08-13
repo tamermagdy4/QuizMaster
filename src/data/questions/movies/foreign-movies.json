@@ -1,11 +1,761 @@
-﻿{
-    "categoryId":  "foreign-movies",
-    "questions":  [
-
-                  ],
-    "metadata":  {
-                     "sectionId":  "movies",
-                     "updatedAt":  "2026-08-03",
-                     "status":  "pending"
-                 }
+{
+  "categoryId": "foreign-movies",
+  "questions": [
+    {
+      "id": "foreign-movies-100-1",
+      "points": 100,
+      "question": "في أي عام صدر فيلم تيتانيك؟",
+      "answer": "1997",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "foreign-movies-100-2",
+      "points": 100,
+      "question": "عن أي فيلم فاز آل باتشينو بجائزة الأوسكار؟",
+      "answer": "Scent of a Woman",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "foreign-movies-100-3",
+      "points": 100,
+      "question": "ما هو الفيلم الذي جمع روبرت دي نيرو وآل باتشينو من إخراج مايكل مان؟",
+      "answer": "Heat",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "foreign-movies-100-4",
+      "points": 100,
+      "question": "من هما بطلا فيلم Shawshank Redemption؟",
+      "answer": "تيم روبينز ومورجان فريمان",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "foreign-movies-100-5",
+      "points": 100,
+      "question": "في أي عام بدأت سلسلة أفلام The Godfather؟",
+      "answer": "1972",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "foreign-movies-100-6",
+      "points": 100,
+      "question": "ما هو اسم فيلم الرعب الكلاسيكي الذي يحكي عن فتاة تعاني من مس شيطاني؟",
+      "answer": "The Exorcist",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "foreign-movies-100-7",
+      "points": 100,
+      "question": "من قام ببطولة فيلم Pretty Woman؟",
+      "answer": "جوليا روبرتس وريتشارد جير",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "foreign-movies-100-8",
+      "points": 100,
+      "question": "ما الفيلم الشهير من عام 1955 بطولة جيمس دين؟",
+      "answer": "Rebel Without a Cause",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "foreign-movies-100-9",
+      "points": 100,
+      "question": "من لعب دور البطولة في فيلم The Silence of the Lambs؟",
+      "answer": "جودي فوستر وآنتوني هوبكنز",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "foreign-movies-100-10",
+      "points": 100,
+      "question": "ما الفيلم الموسيقي الشهير الصادر عام 1939 بطولة جودي جارلاند؟",
+      "answer": "The Wizard of Oz",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "foreign-movies-100-11",
+      "points": 100,
+      "question": "من كان مخرج فيلم Schindler's List عام 1993؟",
+      "answer": "ستيفن سبيلبرغ",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "foreign-movies-100-12",
+      "points": 100,
+      "question": "أي ممثل لعب دور زورو في فيلم The Mask of Zorro عام 1998؟",
+      "answer": "أنتونيو بانديراس",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "foreign-movies-100-13",
+      "points": 100,
+      "question": "من الممثل الذي لعب دور الجوكر في فيلم The Dark Knight عام 2008؟",
+      "answer": "هيث ليدجر",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "foreign-movies-100-14",
+      "points": 100,
+      "question": "ما الفيلم الكلاسيكي من عام 1942 بطولة همفري بوجارت وإنغريد بيرغمان؟",
+      "answer": "Casablanca",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "foreign-movies-100-15",
+      "points": 100,
+      "question": "عن أي فيلم فاز ليوناردو دي كابريو بأول أوسكار؟",
+      "answer": "The Revenant",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "foreign-movies-100-16",
+      "points": 100,
+      "question": "ما هو أول فيلم طويل من إنتاج ديزني؟",
+      "answer": "Snow White and the Seven Dwarfs",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "foreign-movies-100-17",
+      "points": 100,
+      "question": "كم عدد أفلام سلسلة Harry Potter؟",
+      "answer": "8",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "foreign-movies-100-18",
+      "points": 100,
+      "question": "من لعب دور البطولة في ملحمة Indiana Jones؟",
+      "answer": "هاريسون فورد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "foreign-movies-100-19",
+      "points": 100,
+      "question": "من هو الممثل الذي فاز بأكبر عدد من جوائز الأوسكار لأفضل ممثل؟",
+      "answer": "دانيال داي لويس",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "foreign-movies-100-20",
+      "points": 100,
+      "question": "أي ممثلة فازت بأكبر عدد من جوائز الأوسكار لأفضل ممثلة؟",
+      "answer": "كاثرين هيبورن",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "foreign-movies-100-21",
+      "points": 100,
+      "question": "أي فيلم فاز بأوسكار أفضل فيلم عام 1997؟",
+      "answer": "Titanic",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "foreign-movies-100-22",
+      "points": 100,
+      "question": "أي فيلم فاز بأوسكار أفضل فيلم عام 1994؟",
+      "answer": "Forrest Gump",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "foreign-movies-100-23",
+      "points": 100,
+      "question": "أي فيلم فاز بأوسكار أفضل فيلم عام 2003؟",
+      "answer": "The Lord of the Rings: The Return of the King",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "foreign-movies-100-24",
+      "points": 100,
+      "question": "ما اسم جائزة الأوسكار الرسمية؟",
+      "answer": "Academy Award of Merit",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "foreign-movies-100-25",
+      "points": 100,
+      "question": "من فازت بأوسكار أفضل ممثلة عن فيلم Black Swan؟",
+      "answer": "ناتالي بورتمان",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "foreign-movies-100-26",
+      "points": 100,
+      "question": "من فاز بأوسكار أفضل ممثل عن فيلم The King's Speech؟",
+      "answer": "كولين فيرث",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "foreign-movies-100-27",
+      "points": 100,
+      "question": "من فازت بأوسكار أفضل ممثلة عن فيلم La Vie en Rose؟",
+      "answer": "ماريون كوتيار",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "foreign-movies-100-28",
+      "points": 100,
+      "question": "من فاز بأوسكار أفضل مخرج عن فيلم Schindler's List؟",
+      "answer": "ستيفن سبيلبرغ",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "foreign-movies-100-29",
+      "points": 100,
+      "question": "أي فيلم فاز بأوسكار أفضل فيلم عام 2010؟",
+      "answer": "The King's Speech",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "foreign-movies-100-30",
+      "points": 100,
+      "question": "من فاز بأوسكار أفضل ممثل عن فيلم The Pianist؟",
+      "answer": "أدريان برودي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "foreign-movies-300-1",
+      "points": 300,
+      "question": "من أخرج فيلم Reservoir Dogs؟",
+      "answer": "كوينتن تارانتينو",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "foreign-movies-300-2",
+      "points": 300,
+      "question": "ما الفيلم الذي فاز بجائزة الأوسكار لأفضل فيلم عام 2020؟",
+      "answer": "Parasite",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "foreign-movies-300-3",
+      "points": 300,
+      "question": "من هو مخرج فيلم The Big Lebowski؟",
+      "answer": "الأخوان كوين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "foreign-movies-300-4",
+      "points": 300,
+      "question": "أي فيلم من عام 1941 يعتبر من أعظم الأفلام في التاريخ؟",
+      "answer": "Citizen Kane",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "foreign-movies-300-5",
+      "points": 300,
+      "question": "في أي فيلم يلعب روبن ويليامز لعبة لوحية سحرية؟",
+      "answer": "Jumanji",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "foreign-movies-300-6",
+      "points": 300,
+      "question": "من كتب القصة التي استند عليها فيلم The Shawshank Redemption؟",
+      "answer": "ستيفن كينغ",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "foreign-movies-300-7",
+      "points": 300,
+      "question": "ما اسم الفيلم الذي فاز بأوسكار أفضل فيلم عام 1994 من بطولة توم هانكس؟",
+      "answer": "Forrest Gump",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "foreign-movies-300-8",
+      "points": 300,
+      "question": "أي ممثل فاز بأوسكار أفضل ممثل عن فيلم Philadelphia؟",
+      "answer": "توم هانكس",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "foreign-movies-300-9",
+      "points": 300,
+      "question": "ما اسم شخصية روبرت دي نيرو في فيلم Taxi Driver؟",
+      "answer": "Travis Bickle",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "foreign-movies-300-10",
+      "points": 300,
+      "question": "أي ممثلة فازت بجائزة الأوسكار أفضل ممثلة عن فيلم The Favourite؟",
+      "answer": "أوليفيا كولمان",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "foreign-movies-300-11",
+      "points": 300,
+      "question": "ما هي الأفلام الثلاثة التي فازت بـ 11 جائزة أوسكار؟",
+      "answer": "Ben-Hur و Titanic و The Lord of the Rings: The Return of the King",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "foreign-movies-300-12",
+      "points": 300,
+      "question": "أي ممثل فاز بأوسكار أفضل ممثل عام 2020 عن Joker؟",
+      "answer": "خواكين فينيكس",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "foreign-movies-300-13",
+      "points": 300,
+      "question": "ما الفيلم الذي فاز بأوسكار أفضل فيلم أجنبي عام 2020؟",
+      "answer": "Parasite",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "foreign-movies-300-14",
+      "points": 300,
+      "question": "من هي أول ممثلة سوداء تفوز بجائزة الأوسكار؟",
+      "answer": "هالي بيري",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "foreign-movies-300-15",
+      "points": 300,
+      "question": "ما هو الألبوم السينمائي الأكثر شهرة الذي فاز بجائزة الأوسكار لأفضل موسيقى تصويرية عن فيلم Titanic؟",
+      "answer": "My Heart Will Go On",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "foreign-movies-300-16",
+      "points": 300,
+      "question": "من فازت بأوسكار أفضل ممثلة مساعدة عن Million Dollar Baby؟",
+      "answer": "ميليائنت فينسي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "foreign-movies-300-17",
+      "points": 300,
+      "question": "من فاز بأوسكار أفضل ممثل عن فيلم Dallas Buyers Club؟",
+      "answer": "ماثيو ماكونهي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "foreign-movies-300-18",
+      "points": 300,
+      "question": "من فازت بأوسكار أفضل ممثلة عن فيلم Monster؟",
+      "answer": "شارليز ثيرون",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "foreign-movies-300-19",
+      "points": 300,
+      "question": "أي فيلم فاز بأوسكار أفضل فيلم عام 2019؟",
+      "answer": "Green Book",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "foreign-movies-300-20",
+      "points": 300,
+      "question": "من فاز بأوسكار أفضل ممثل عن فيلم Training Day؟",
+      "answer": "دينزل واشنطن",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "foreign-movies-300-21",
+      "points": 300,
+      "question": "من فاز بأوسكار أفضل ممثل عن فيلم Gladiator؟",
+      "answer": "راسل كرو",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "foreign-movies-300-22",
+      "points": 300,
+      "question": "ما الفيلم الذي فاز بأوسكار أفضل فيلم عام 2022؟",
+      "answer": "CODA",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "foreign-movies-300-23",
+      "points": 300,
+      "question": "في أي عام تم إصدار فيلم A Clockwork Orange؟",
+      "answer": "1971",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "foreign-movies-300-24",
+      "points": 300,
+      "question": "من أخرج فيلم Inception (2010)؟",
+      "answer": "كريستوفر نولان",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "foreign-movies-300-25",
+      "points": 300,
+      "question": "ما اسم الفيلم الذي تدور أحداثه في عالم الأحلام والطبقات الذهنية؟",
+      "answer": "Inception",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "foreign-movies-300-26",
+      "points": 300,
+      "question": "ما الفيلم الذي لعب فيه توم هانكس دور رجل عالق على جزيرة؟",
+      "answer": "Cast Away",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "foreign-movies-300-27",
+      "points": 300,
+      "question": "من لعب دور البطولة في فيلم The Matrix؟",
+      "answer": "كيانو ريفز",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "foreign-movies-300-28",
+      "points": 300,
+      "question": "في أي عام صدر فيلم The Matrix؟",
+      "answer": "1999",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "foreign-movies-300-29",
+      "points": 300,
+      "question": "ما اسم الفيلم الذي يدور حول نادي قتال سري وشخصية تايلر ديردن؟",
+      "answer": "Fight Club",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "foreign-movies-300-30",
+      "points": 300,
+      "question": "من قام ببطولة فيلم Fight Club؟",
+      "answer": "براد بيت وإدوارد نورتون",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "foreign-movies-300-31",
+      "points": 300,
+      "question": "ما اسم الفيلم الذي أخرجه ديفيد فينشر عن قاتل متسلسل وسبع خطايا؟",
+      "answer": "Se7en",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "foreign-movies-300-32",
+      "points": 300,
+      "question": "من قام ببطولة فيلم The Wolf of Wall Street؟",
+      "answer": "ليوناردو دي كابريو",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "foreign-movies-300-33",
+      "points": 300,
+      "question": "من أخرج فيلم The Wolf of Wall Street؟",
+      "answer": "مارتن سكورسيزي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "foreign-movies-300-34",
+      "points": 300,
+      "question": "من فازت بأوسكار أفضل ممثلة عن فيلم The Favourite؟",
+      "answer": "أوليفيا كولمان",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "foreign-movies-300-35",
+      "points": 300,
+      "question": "من فاز بأوسكار أفضل ممثل عن فيلم Training Day؟",
+      "answer": "دينزل واشنطن",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "foreign-movies-500-1",
+      "points": 500,
+      "question": "كم جائزة أوسكار حصل عليها الممثل مارلون براندو؟",
+      "answer": "جائزتين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "foreign-movies-500-2",
+      "points": 500,
+      "question": "ما هو اسم الفيلم الذي حصل على أعلى إيرادات ضمن شباك التذاكر حتى اللحظة في العالم؟",
+      "answer": "Avatar",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "foreign-movies-500-3",
+      "points": 500,
+      "question": "أي ممثل حصل على جائزة الأوسكار عن فيلم واحد فقط؟",
+      "answer": "براد بيت",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "foreign-movies-500-4",
+      "points": 500,
+      "question": "اسم فيلم من الأفلام التي قام بإخراجها المخرج الشهير كوينتن تارانتينو؟",
+      "answer": "Pulp Fiction",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "foreign-movies-500-5",
+      "points": 500,
+      "question": "خمن اسم الفيلم",
+      "answer": "The Lincoln Lawyer",
+      "image": "/media/foreign-movies/questions/The Lincoln Lawyer.png",
+      "media": "/media/foreign-movies/questions/The Lincoln Lawyer.png",
+      "answerMedia": "/media/foreign-movies/answers/The Lincoln Lawyer.webp",
+      "mediaType": "image"
+    },
+    {
+      "id": "foreign-movies-500-6",
+      "points": 500,
+      "question": "خمن اسم الفيلم",
+      "answer": "The Odyssey",
+      "image": "/media/foreign-movies/questions/The Odyssey.png",
+      "media": "/media/foreign-movies/questions/The Odyssey.png",
+      "answerMedia": "/media/foreign-movies/answers/The Odyssey.webp",
+      "mediaType": "image"
+    },
+    {
+      "id": "foreign-movies-500-7",
+      "points": 500,
+      "question": "خمن اسم الفيلم",
+      "answer": "Snowfall",
+      "image": "/media/foreign-movies/questions/Snowfall.png",
+      "media": "/media/foreign-movies/questions/Snowfall.png",
+      "answerMedia": "/media/foreign-movies/answers/Snowfall.webp",
+      "mediaType": "image"
+    },
+    {
+      "id": "foreign-movies-500-8",
+      "points": 500,
+      "question": "خمن اسم الفيلم",
+      "answer": "House of the Dragon",
+      "image": "/media/foreign-movies/questions/House of the Dragon.png",
+      "media": "/media/foreign-movies/questions/House of the Dragon.png",
+      "answerMedia": "/media/foreign-movies/answers/House of the Dragon.webp",
+      "mediaType": "image"
+    },
+    {
+      "id": "foreign-movies-500-9",
+      "points": 500,
+      "question": "من بطل الفيلم",
+      "answer": "Matthew McConaughey",
+      "image": "/media/foreign-movies/questions/Interstellar.jpeg",
+      "media": "/media/foreign-movies/questions/Interstellar.jpeg",
+      "mediaType": "image"
+    },
+    {
+      "id": "foreign-movies-500-11",
+      "points": 500,
+      "question": "من بطل المسلسل",
+      "answer": "Matthew McConaughey",
+      "image": "/media/foreign-movies/questions/True Detective.webp",
+      "media": "/media/foreign-movies/questions/True Detective.webp",
+      "mediaType": "image"
+    },
+    {
+      "id": "foreign-movies-500-12",
+      "points": 500,
+      "question": "من بطل المسلسل",
+      "answer": "Michael C. Hall",
+      "image": "/media/foreign-movies/questions/Dexter.jpg",
+      "media": "/media/foreign-movies/questions/Dexter.jpg",
+      "mediaType": "image"
+    },
+    {
+      "id": "foreign-movies-500-13",
+      "points": 500,
+      "question": "من هو المؤلف الموسيقي الذي وضع الموسيقى التصويرية لفيلم المومياء؟",
+      "answer": "مario nishim",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "foreign-movies-500-14",
+      "points": 500,
+      "question": "من بطل المسلسل",
+      "answer": "Bryan Cranston",
+      "image": "/media/foreign-movies/questions/Breaking Bad.webp",
+      "media": "/media/foreign-movies/questions/Breaking Bad.webp",
+      "mediaType": "image"
+    },
+    {
+      "id": "foreign-movies-500-22",
+      "points": 500,
+      "question": "ما اسم الفيلم الفلسطيني الذي فاز بجائزة الأوسكار لأفضل فيلم وثائقي طويل؟",
+      "answer": "Paradise Now",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "foreign-movies-500-23",
+      "points": 500,
+      "question": "ما هو أول فيلم عربي تم ترشيحه لجائزة الأوسكار لأفضل فيلم أجنبي؟",
+      "answer": "ابن الهيثم",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "foreign-movies-500-27",
+      "points": 500,
+      "question": "ما اسم الفيلم اللبناني الذي فاز بجائزة الأوسكار لأفضل فيلم أجنبي؟",
+      "answer": "Capernaum",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "foreign-movies-500-28",
+      "points": 500,
+      "question": "من هو الممثل التونسي الذي ترشح لجائزة الأوسكار عن فيلم The Man Who Sold His Skin؟",
+      "answer": "يوسف الكمال",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "foreign-movies-500-29",
+      "points": 500,
+      "question": "ما اسم الفيلم المغربي الذي فاز بجائزة الأوسكار لأفضل فيلم أجنبي؟",
+      "answer": "The Unknown Saint",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    }
+  ],
+  "metadata": {
+    "sectionId": "movies",
+    "updatedAt": "2026-08-05",
+    "status": "ready"
+  }
 }

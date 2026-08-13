@@ -1,4 +1,5 @@
 import type { GameCategory } from '../types/game'
+import { hasQuestionEntries } from './questionLoader'
 
 type SectionDefinition = {
   id: string
@@ -39,16 +40,20 @@ for (const module of Object.values(sectionModules)) {
 const orderedSectionDefinitions = Array.from(sectionMap.values())
 const sectionOrder = new Map(orderedSectionDefinitions.map((section, index) => [section.id, index]))
 
-const orderedCategories = [...discoveredCategories].sort((left, right) => {
-  const leftIndex = sectionOrder.get(left.sectionId) ?? Number.MAX_SAFE_INTEGER
-  const rightIndex = sectionOrder.get(right.sectionId) ?? Number.MAX_SAFE_INTEGER
+const hiddenCategoryIds = new Set(['who-am-i-general', 'cars', 'currency-country', 'who-is-character', 'mohamed-salah'])
 
-  if (leftIndex !== rightIndex) {
-    return leftIndex - rightIndex
-  }
+const orderedCategories = [...discoveredCategories]
+  .filter((category) => hasQuestionEntries(category.id) && !hiddenCategoryIds.has(category.id))
+  .sort((left, right) => {
+    const leftIndex = sectionOrder.get(left.sectionId) ?? Number.MAX_SAFE_INTEGER
+    const rightIndex = sectionOrder.get(right.sectionId) ?? Number.MAX_SAFE_INTEGER
 
-  return left.title.localeCompare(right.title)
-})
+    if (leftIndex !== rightIndex) {
+      return leftIndex - rightIndex
+    }
+
+    return left.title.localeCompare(right.title)
+  })
 
 export const categorySections = [
   {

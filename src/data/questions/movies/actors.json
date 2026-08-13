@@ -1,11 +1,685 @@
-﻿{
-    "categoryId":  "actors",
-    "questions":  [
-
-                  ],
-    "metadata":  {
-                     "sectionId":  "movies",
-                     "updatedAt":  "2026-08-03",
-                     "status":  "pending"
-                 }
+{
+  "categoryId": "actors",
+  "questions": [
+    {
+      "id": "actors-100-1",
+      "points": 100,
+      "question": "من هو الممثل الذي لعب دور توني ستارك في أفلام مارفل؟",
+      "answer": "روبرت داوني جونيور",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "actors-100-2",
+      "points": 100,
+      "question": "من هي الممثلة التي لعبت دور كاتنيص إيفربدن في أفلام هاري بوتر؟",
+      "answer": "إيما واتسون",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "actors-100-3",
+      "points": 100,
+      "question": "من هو الممثل الذي لعب دور هاري بوتر في الأفلام؟",
+      "answer": "دانيال رادكليف",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "actors-100-4",
+      "points": 100,
+      "question": "من هو الممثل الذي لعب دور سبايدرمان في أفلام سوني؟",
+      "answer": "توم هولاند",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "actors-100-5",
+      "points": 100,
+      "question": "من هي الممثلة التي لعبت دور بلاك ويدو في أفلام مارفل؟",
+      "answer": "سكرليت جوهانسون",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "actors-100-6",
+      "points": 100,
+      "question": "من هو الممثل الذي لعب دور كابتن أمريكا في أفلام مارفل؟",
+      "answer": "كريس إيفانز",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "actors-100-7",
+      "points": 100,
+      "question": "من هو الممثل الذي لعب دور ثور في أفلام مارفل؟",
+      "answer": "كريس هيمسورث",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "actors-100-8",
+      "points": 100,
+      "question": "من هو الممثل الذي لعب دور هوك في أفلام مارفل؟",
+      "answer": "مارك روفالو",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "actors-100-9",
+      "points": 100,
+      "question": "من هو الممثل الذي لعب دور أرين آيرونمان في الأفلام؟",
+      "answer": "روبرت داوني جونيور",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "actors-100-10",
+      "points": 100,
+      "question": "من هي الممثلة التي لعبت دور واندر وومان في أفلام مارفل؟",
+      "answer": "غال غادوت",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "actors-100-11",
+      "points": 100,
+      "question": "من هو الممثل الذي لعب دور ستيف روجرز في أفلام مارفل؟",
+      "answer": "كريس إيفانز",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "actors-100-12",
+      "points": 100,
+      "question": "من هو الممثل الذي لعب دور فيليكس في أفلام ديزني؟",
+      "answer": "بافلو بيلي برادلي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "actors-100-13",
+      "points": 100,
+      "question": "من هو الممثل الذي لعب دور لوك سكايووكر في أفلام ستار وورز؟",
+      "answer": "مارك هاميل",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "actors-100-14",
+      "points": 100,
+      "question": "من هو الممثل الذي لعب دور هان سولو في أفلام ستار وورز؟",
+      "answer": "هاريسون فورد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "actors-100-15",
+      "points": 100,
+      "question": "من هي الممثلة التي لعبت دور الأميرة لييا في أفلام ستار وورز؟",
+      "answer": "كاري فيشر",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "actors-100-16",
+      "points": 100,
+      "question": "من هو الممثل الذي لعب دور دراكو مالفوي في أفلام هاري بوتر؟",
+      "answer": "توم فيلتون",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "actors-100-17",
+      "points": 100,
+      "question": "من هو الممثل الذي لعب دور رون ويزلي في أفلام هاري بوتر؟",
+      "answer": "روبرت جرينت",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "actors-100-18",
+      "points": 100,
+      "question": "من هي الممثلة التي لعبت دور هيرميوني جرينجر في أفلام هاري بوتر؟",
+      "answer": "إيما واتسون",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "actors-100-19",
+      "points": 100,
+      "question": "من هو الممثل الذي لعب دور جيمس بوند في أفلام كاسينو رويال؟",
+      "answer": "دانيال كريغ",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "actors-100-20",
+      "points": 100,
+      "question": "من هو الممثل الذي لعب دور جوكر في فيلم Dark Knight؟",
+      "answer": "هيث ليدجر",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "actors-100-21",
+      "points": 100,
+      "question": "من هو الممثل الذي لعب دور باتمان في أفلام كريستوفر نولان؟",
+      "answer": "كريستيان بيل",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "actors-100-22",
+      "points": 100,
+      "question": "من هو الممثل الذي لعب دور سوبرمان في فيلم Man of Steel؟",
+      "answer": "هنري كافيل",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "actors-100-23",
+      "points": 100,
+      "question": "من هي الممثلة التي لعبت دور ووندر وومان في أفلام ديسني؟",
+      "answer": "غال غادوت",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "actors-100-24",
+      "points": 100,
+      "question": "من هو الممثل الذي لعب دور أقوى رجل في العالم في فيلم؟",
+      "answer": "دوين جونسون",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "actors-100-25",
+      "points": 100,
+      "question": "من هو الممثل الذي لعب دور جاك سبارو في أفلام قراصنة الكاريبي؟",
+      "answer": "جوني ديب",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "actors-300-1",
+      "points": 300,
+      "question": "من هو الممثل الذي فاز بجائزة الأوسكار عن دوره في فيلم The Revenant؟",
+      "answer": "ليوناردو دي كابريو",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "actors-300-2",
+      "points": 300,
+      "question": "من هي الممثلة التي فازت بجائزة الأوسكار عن دورها في فيلم La La Land؟",
+      "answer": "إيما ستون",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "actors-300-3",
+      "points": 300,
+      "question": "من هو الممثل الذي فاز بجائزة الأوسكار عن دوره في فيلم Dallas Buyers Club؟",
+      "answer": "ماثيو ماكونهي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "actors-300-4",
+      "points": 300,
+      "question": "من هي الممثلة التي فازت بجائزة الأوسكار عن دورها في فيلم The Silence of the Lambs؟",
+      "answer": "جودي فوستر",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "actors-300-5",
+      "points": 300,
+      "question": "من هو الممثل الذي فاز بجائزة الأوسكار عن دوره في فيلم Forrest Gump؟",
+      "answer": "توم هانكس",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "actors-300-6",
+      "points": 300,
+      "question": "من هي الممثلة التي فازت بجائزة الأوسكار عن دورها في فيلم Black Swan؟",
+      "answer": "ناتالي بورتمان",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "actors-300-7",
+      "points": 300,
+      "question": "من هو الممثل الذي فاز بجائزة الأوسكار عن دوره في فيلم The Godfather Part II؟",
+      "answer": "روبرت دي نيرو",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "actors-300-8",
+      "points": 300,
+      "question": "من هي الممثلة التي فازت بجائزة الأوسكار عن دورها في فيلم The Iron Lady؟",
+      "answer": "ميريل ستريب",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "actors-300-9",
+      "points": 300,
+      "question": "من هو الممثل الذي فاز بجائزة الأوسكار عن دوره في فيلم Rain Man؟",
+      "answer": " dustin Hoffman",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "actors-300-10",
+      "points": 300,
+      "question": "من هي الممثلة التي فازت بجائزة الأوسكار عن دورها في فيلم The Blind Side؟",
+      "answer": "ساندرا بولوك",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "actors-300-11",
+      "points": 300,
+      "question": "من هو الممثل الذي فاز بجائزة الأوسكار عن دوره في فيلم No Country for Old Men؟",
+      "answer": "خافيير بارديم",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "actors-300-12",
+      "points": 300,
+      "question": "من هي الممثلة التي فازت بجائزة الأوسكار عن دورها في فيلم Monster's Ball؟",
+      "answer": "هالي بيري",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "actors-300-13",
+      "points": 300,
+      "question": "من هو الممثل الذي فاز بجائزة الأوسكار عن دوره في فيلم The Pianist؟",
+      "answer": "أدريان برودي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "actors-300-14",
+      "points": 300,
+      "question": "من هي الممثلة التي فازت بجائزة الأوسكار عن دورها في فيلم Juno؟",
+      "answer": "إلين بيج",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "actors-300-15",
+      "points": 300,
+      "question": "من هو الممثل الذي فاز بجائزة الأوسكار عن دوره في فيلم The Departed؟",
+      "answer": "دوين جونسون",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "actors-300-16",
+      "points": 300,
+      "question": "من هي الممثلة التي فازت بجائزة الأوسكار عن دورها في فيلم Shakespeare in Love؟",
+      "answer": "غوينيث بالترو",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "actors-300-17",
+      "points": 300,
+      "question": "من هو الممثل الذي فاز بجائزة الأوسكار عن دوره في فيلم Crash؟",
+      "answer": "فيليب سيمور هوفمان",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "actors-300-18",
+      "points": 300,
+      "question": "من هي الممثلة التي فازت بجائزة الأوسكار عن دورها في فيلم The Help؟",
+      "answer": "فيولا ديفيس",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "actors-300-19",
+      "points": 300,
+      "question": "من هو الممثل الذي فاز بجائزة الأوسكار عن دوره في فيلم Les Misérables؟",
+      "answer": "هيو جاكمان",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "actors-300-20",
+      "points": 300,
+      "question": "من هي الممثلة التي فازت بجائزة الأوسكار عن دورها في فيلم Silver Linings Playbook؟",
+      "answer": "جنيفر لورنس",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "actors-300-21",
+      "points": 300,
+      "question": "من هو الممثل الذي فاز بجائزة الأوسكار عن دوره في فيلم The Fighter؟",
+      "answer": "كريستيان بيل",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "actors-300-22",
+      "points": 300,
+      "question": "من هي الممثلة التي فازت بجائزة الأوسكار عن دورها في فيلم Chicago؟",
+      "answer": "كاثرين زيتا جونز",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "actors-300-23",
+      "points": 300,
+      "question": "من هو الممثل الذي فاز بجائزة الأوسكار عن دوره في فيلم Ray؟",
+      "answer": "جيمي فوكس",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "actors-300-24",
+      "points": 300,
+      "question": "من هي الممثلة التي فازت بجائزة الأوسكار عن دورها في فيلم Million Dollar Baby؟",
+      "answer": "هيلاري سوانك",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "actors-300-25",
+      "points": 300,
+      "question": "من هو الممثل الذي فاز بجائزة الأوسكار عن دوره في فيلم The King's Speech؟",
+      "answer": "كولين فيرث",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "actors-500-1",
+      "points": 500,
+      "question": "من هو الممثل الذي فاز بأكبر عدد من جوائز الأوسكار؟",
+      "answer": "دانيال داي لويس وكاثرين هيبورن",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "actors-500-2",
+      "points": 500,
+      "question": "كم عدد جوائز الأوسكار التي فاز بها كاثرين هيبورن؟",
+      "answer": "4 جوائز",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "actors-500-3",
+      "points": 500,
+      "question": "من هو الممثل الذي فاز بجائزة الأوسكار عن دوره في فيلم Network؟",
+      "answer": "بيتر فينش",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "actors-500-4",
+      "points": 500,
+      "question": "من هي الممثلة التي فازت بجائزة الأوسكار عن دورها في فيلم The Hours؟",
+      "answer": "نيكول كيدمان",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "actors-500-5",
+      "points": 500,
+      "question": "من هو الممثل الذي فاز بجائزة الأوسكار عن دوره في فيلم My Left Foot؟",
+      "answer": "دانيال داي لويس",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "actors-500-6",
+      "points": 500,
+      "question": "من هي الممثلة التي فازت بجائزة الأوسكار عن دورها في فيلم The Blind Side؟",
+      "answer": "ساندرا بولوك",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "actors-500-7",
+      "points": 500,
+      "question": "من هو الممثل الذي فاز بجائزة الأوسكار عن دوره في فيلم Amadeus؟",
+      "answer": "إف. موراي أبراهام",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "actors-500-8",
+      "points": 500,
+      "question": "من هي الممثلة التي فازت بجائزة الأوسكار عن دورها في فيلم The Reader؟",
+      "answer": "كيت وينسليت",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "actors-500-9",
+      "points": 500,
+      "question": "من هو الممثل الذي فاز بجائزة الأوسكار عن دوره في فيلم There Will Be Blood؟",
+      "answer": "دانيال داي لويس",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "actors-500-10",
+      "points": 500,
+      "question": "من هي الممثلة التي فازت بجائزة الأوسكار عن دورها في فيلم Blue Jasmine؟",
+      "answer": "كيت بلانشيت",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "actors-500-11",
+      "points": 500,
+      "question": "من هو الممثل الذي فاز بجائزة الأوسكار عن دوره في فيلم Lincoln؟",
+      "answer": "دانيال داي لويس",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "actors-500-12",
+      "points": 500,
+      "question": "من هي الممثلة التي فازت بجائزة الأوسكار عن دورها في فيلم La Vie en Rose؟",
+      "answer": "ماريون كوتيار",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "actors-500-13",
+      "points": 500,
+      "question": "من هو الممثل الذي فاز بجائزة الأوسكار عن دوره في فيلم The Shape of Water؟",
+      "answer": "غويليرمو ديل تورو",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "actors-500-14",
+      "points": 500,
+      "question": "من هي الممثلة التي فازت بجائزة الأوسكار عن دورها في inception inception؟",
+      "answer": "لم تفز",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "actors-500-15",
+      "points": 500,
+      "question": "من هو الممثل الذي فاز بجائزة الأوسكار عن دوره في فيلم Capote؟",
+      "answer": "فيليب سيمور هوفمان",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "actors-500-16",
+      "points": 500,
+      "question": "من هي الممثلة التي فازت بجائزة الأوسكار عن دورها في فيلم The Piano؟",
+      "answer": "هولي هانتر",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "actors-500-17",
+      "points": 500,
+      "question": "من هو الممثل الذي فاز بجائزة الأوسكار عن دوره في فيلم The Bridge on the River Kwai؟",
+      "answer": "أليك غينيس",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "actors-500-18",
+      "points": 500,
+      "question": "من هي الممثلة التي فازت بجائزة الأوسكار عن دورها في فيلم Boys Don't Cry؟",
+      "answer": "هيلاري سوانك",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "actors-500-19",
+      "points": 500,
+      "question": "من هو الممثل الذي فاز بجائزة الأوسكار عن دوره في فيلم Gandhi؟",
+      "answer": "بن كينغسلي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "actors-500-20",
+      "points": 500,
+      "question": "من هي الممثلة التي فازت بجائزة الأوسكار عن دورها في فيلم Erin Brockovich؟",
+      "answer": "جوليا روبرتس",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "actors-500-21",
+      "points": 500,
+      "question": "من هو الممثل الذي فاز بجائزة الأوسكار عن دوره في فيلم The French Connection؟",
+      "answer": "جين هاكمان",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "actors-500-22",
+      "points": 500,
+      "question": "من هي الممثلة التي فازت بجائزة الأوسكار عن دورها في فيلم Kramer vs. Kramer؟",
+      "answer": "ميريل ستريب",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "actors-500-23",
+      "points": 500,
+      "question": "من هو الممثل الذي فاز بجائزة الأوسكار عن دوره في فيلم Taxi Driver؟",
+      "answer": "روبرت دي نيرو",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "actors-500-24",
+      "points": 500,
+      "question": "من هي الممثلة التي فازت بجائزة الأوسكار عن دورها في فيلم The Iron Lady؟",
+      "answer": "ميريل ستريب",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "actors-500-25",
+      "points": 500,
+      "question": "من هو الممثل الذي فاز بجائزة الأوسكار عن دوره في فيلم The Artist؟",
+      "answer": "جان دوجاردين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    }
+  ],
+  "metadata": {
+    "sectionId": "movies",
+    "updatedAt": "2026-08-05",
+    "status": "ready"
+  }
 }

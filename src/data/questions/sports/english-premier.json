@@ -1,11 +1,910 @@
-﻿{
-    "categoryId":  "english-premier",
-    "questions":  [
-
-                  ],
-    "metadata":  {
-                     "sectionId":  "sports",
-                     "updatedAt":  "2026-08-03",
-                     "status":  "pending"
-                 }
+{
+  "categoryId": "english-premier",
+  "questions": [
+    {
+      "id": "english-premier-100-1",
+      "points": 100,
+      "question": "في أي عام انطلق الدوري الإنجليزي الممتاز؟",
+      "answer": "1992",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "english-premier-100-2",
+      "points": 100,
+      "question": "من كان أول بطل للدوري الإنجليزي الممتاز؟",
+      "answer": "مانشستر يونايتد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "english-premier-100-3",
+      "points": 100,
+      "question": "من هو أكثر نادٍ فاز بالدوري الإنجليزي الممتاز؟",
+      "answer": "مانشستر يونايتد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "english-premier-100-4",
+      "points": 100,
+      "question": "كم مرة فاز مانشستر يونايتد بالدوري الإنجليزي الممتاز؟",
+      "answer": "13 مرة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "english-premier-100-5",
+      "points": 100,
+      "question": "من هو أكثر مدرب فاز بالدوري الإنجليزي الممتاز؟",
+      "answer": "أليكس فيرغسون",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "english-premier-100-6",
+      "points": 100,
+      "question": "كم لقبًا حقق أليكس فيرغسون في البريميرليغ؟",
+      "answer": "13 لقبًا",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "english-premier-100-7",
+      "points": 100,
+      "question": "ما النادي الذي حقق أول لقب له في البريميرليغ عام 2016؟",
+      "answer": "ليستر سيتي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "english-premier-100-8",
+      "points": 100,
+      "question": "من كان مدرب ليستر سيتي عندما فاز بالدوري عام 2016؟",
+      "answer": "كلاوديو رانييري",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "english-premier-100-9",
+      "points": 100,
+      "question": "ما النادي الذي حقق موسمًا كاملًا في البريميرليغ دون هزيمة؟",
+      "answer": "أرسنال",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "english-premier-100-10",
+      "points": 100,
+      "question": "في أي موسم أنهى أرسنال الدوري دون هزيمة؟",
+      "answer": "2003–04",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "english-premier-100-11",
+      "points": 100,
+      "question": "ما اللقب الذي أُطلق على فريق أرسنال في موسم 2003–04؟",
+      "answer": "The Invincibles",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "english-premier-100-12",
+      "points": 100,
+      "question": "من كان قائد أرسنال في موسم اللاهزيمة؟",
+      "answer": "باتريك فييرا",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "english-premier-100-13",
+      "points": 100,
+      "question": "من كان هداف أرسنال في موسم 2003–04؟",
+      "answer": "تييري هنري",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "english-premier-100-14",
+      "points": 100,
+      "question": "من هو الهداف التاريخي للدوري الإنجليزي الممتاز؟",
+      "answer": "آلان شيرر",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "english-premier-100-15",
+      "points": 100,
+      "question": "كم هدفًا سجل آلان شيرر في البريميرليغ؟",
+      "answer": "260 هدفًا",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "english-premier-100-16",
+      "points": 100,
+      "question": "مع أي أندية سجل آلان شيرر أهدافه في البريميرليغ؟",
+      "answer": "بلاكبيرن روفرز ونيوكاسل يونايتد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "english-premier-100-17",
+      "points": 100,
+      "question": "من هو اللاعب صاحب أكبر عدد من الأهداف في موسم واحد بنظام 38 مباراة؟",
+      "answer": "إيرلينغ هالاند",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "english-premier-100-18",
+      "points": 100,
+      "question": "كم هدفًا سجل هالاند في موسم 2022–23؟",
+      "answer": "36 هدفًا",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "english-premier-100-19",
+      "points": 100,
+      "question": "مع أي نادٍ حقق هالاند هذا الرقم؟",
+      "answer": "مانشستر سيتي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "english-premier-100-20",
+      "points": 100,
+      "question": "من هو أول لاعب أفريقي يفوز بالحذاء الذهبي للبريميرليغ؟",
+      "answer": "ديدييه دروغبا",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "english-premier-100-21",
+      "points": 100,
+      "question": "من هو أكثر لاعب فاز بالحذاء الذهبي في تاريخ البريميرليغ؟",
+      "answer": "تييري هنري",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "english-premier-100-22",
+      "points": 100,
+      "question": "كم مرة فاز تييري هنري بالحذاء الذهبي؟",
+      "answer": "4 مرات",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "english-premier-100-23",
+      "points": 100,
+      "question": "من هو اللاعب الذي فاز بالحذاء الذهبي ثلاث مرات متتالية؟",
+      "answer": "تييري هنري",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "english-premier-100-24",
+      "points": 100,
+      "question": "من هو الهداف التاريخي لمانشستر يونايتد في البريميرليغ؟",
+      "answer": "واين روني",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "english-premier-100-25",
+      "points": 100,
+      "question": "من هو الهداف التاريخي لليفربول في البريميرليغ؟",
+      "answer": "محمد صلاح",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "english-premier-100-26",
+      "points": 100,
+      "question": "من هو الهداف التاريخي لأرسنال في البريميرليغ؟",
+      "answer": "تييري هنري",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "english-premier-100-27",
+      "points": 100,
+      "question": "من هو الهداف التاريخي لتوتنهام في البريميرليغ؟",
+      "answer": "هاري كين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "english-premier-100-28",
+      "points": 100,
+      "question": "من هو الهداف التاريخي لتشيلسي في البريميرليغ؟",
+      "answer": "فرانك لامبارد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "english-premier-100-29",
+      "points": 100,
+      "question": "من هو الهداف التاريخي لمانشستر سيتي في البريميرليغ؟",
+      "answer": "سيرخيو أغويرو",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "english-premier-100-30",
+      "points": 100,
+      "question": "من هو الهداف التاريخي لنيوكاسل في البريميرليغ؟",
+      "answer": "آلان شيرر",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "english-premier-100-31",
+      "points": 100,
+      "question": "من هو اللاعب الأكثر صناعة للأهداف في تاريخ البريميرليغ؟",
+      "answer": "ريان غيغز",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "english-premier-100-32",
+      "points": 100,
+      "question": "من هو صاحب الرقم القياسي لأكبر عدد من التمريرات الحاسمة في موسم واحد؟",
+      "answer": "تييري هنري وكيفن دي بروين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "english-premier-100-33",
+      "points": 100,
+      "question": "كم تمريرة حاسمة سجلا في موسم واحد؟",
+      "answer": "20",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "english-premier-100-34",
+      "points": 100,
+      "question": "من هو اللاعب الذي سجل أكبر عدد من الأهداف في مباراة واحدة بالبريميرليغ؟",
+      "answer": "إيرلينغ هالاند",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "english-premier-300-1",
+      "points": 300,
+      "question": "كم هدفًا سجل هالاند في تلك المباراة؟",
+      "answer": "5 أهداف",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "english-premier-300-2",
+      "points": 300,
+      "question": "ضد أي فريق سجل هالاند خمسة أهداف في مباراة بالبريميرليغ؟",
+      "answer": "إيبسويتش تاون",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "english-premier-300-3",
+      "points": 300,
+      "question": "من هو أصغر لاعب يسجل في تاريخ البريميرليغ؟",
+      "answer": "جيمس فوغان",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "english-premier-300-4",
+      "points": 300,
+      "question": "مع أي فريق سجل جيمس فوغان وهو في سن 16 عامًا؟",
+      "answer": "إيفرتون",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "english-premier-300-5",
+      "points": 300,
+      "question": "من هو أكبر لاعب سجل هدفًا في البريميرليغ؟",
+      "answer": "تيدي شيرينغهام",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "english-premier-300-6",
+      "points": 300,
+      "question": "مع أي فريق كان شيرينغهام عندما سجل وهو في سن متقدمة؟",
+      "answer": "وست هام يونايتد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "english-premier-300-7",
+      "points": 300,
+      "question": "ما النادي الذي حقق أكبر عدد من النقاط في موسم واحد؟",
+      "answer": "مانشستر سيتي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "english-premier-300-8",
+      "points": 300,
+      "question": "كم نقطة جمع مانشستر سيتي في موسم 2017–18؟",
+      "answer": "100 نقطة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "english-premier-300-9",
+      "points": 300,
+      "question": "ما لقب مانشستر سيتي بعد تحقيق 100 نقطة؟",
+      "answer": "Centurions",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "english-premier-300-10",
+      "points": 300,
+      "question": "من كان مدرب مانشستر سيتي في موسم الـ100 نقطة؟",
+      "answer": "بيب غوارديولا",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "english-premier-300-11",
+      "points": 300,
+      "question": "ما النادي الذي حقق أقل عدد من النقاط في موسم البريميرليغ؟",
+      "answer": "ديربي كاونتي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "english-premier-300-12",
+      "points": 300,
+      "question": "كم نقطة حقق ديربي كاونتي في موسم 2007–08؟",
+      "answer": "11 نقطة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "english-premier-300-13",
+      "points": 300,
+      "question": "ما الفريق الذي تلقى أقل عدد من الهزائم في موسم كامل؟",
+      "answer": "أرسنال",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "english-premier-300-14",
+      "points": 300,
+      "question": "كم مباراة خسر أرسنال في موسم 2003–04؟",
+      "answer": "0",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "english-premier-300-15",
+      "points": 300,
+      "question": "ما الفريق الذي سجل أكبر عدد من الأهداف في موسم واحد؟",
+      "answer": "مانشستر سيتي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "english-premier-300-16",
+      "points": 300,
+      "question": "كم هدفًا سجل مانشستر سيتي في موسم 2017–18؟",
+      "answer": "106 أهداف",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "english-premier-300-17",
+      "points": 300,
+      "question": "ما أكبر فارق نقاط بين بطل ووصيف في موسم البريميرليغ؟",
+      "answer": "19 نقطة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "english-premier-300-18",
+      "points": 300,
+      "question": "في أي موسم حقق مانشستر سيتي هذا الفارق؟",
+      "answer": "2017–18",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "english-premier-300-19",
+      "points": 300,
+      "question": "من كان وصيف مانشستر سيتي في موسم 2017–18؟",
+      "answer": "مانشستر يونايتد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "english-premier-300-20",
+      "points": 300,
+      "question": "ما أول فريق هبط من البريميرليغ؟",
+      "answer": "نوتنغهام فورست",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "english-premier-300-21",
+      "points": 300,
+      "question": "ما النادي الذي هبط من البريميرليغ أكثر من أي فريق آخر؟",
+      "answer": "نورويتش سيتي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "english-premier-300-22",
+      "points": 300,
+      "question": "ما النادي الذي فاز بالدوري بعد صعوده مباشرة من الدرجة الأولى عام 1994؟",
+      "answer": "بلاكبيرن روفرز",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "english-premier-300-23",
+      "points": 300,
+      "question": "من كان مدرب بلاكبيرن عندما فاز بالدوري عام 1995؟",
+      "answer": "كينيدي دالغليش",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "english-premier-300-24",
+      "points": 300,
+      "question": "من كان هداف بلاكبيرن في موسم التتويج عام 1994–95؟",
+      "answer": "آلان شيرر",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "english-premier-300-25",
+      "points": 300,
+      "question": "من هو أول لاعب سجل 100 هدف في البريميرليغ؟",
+      "answer": "آلان شيرر",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "english-premier-300-26",
+      "points": 300,
+      "question": "من هو أول لاعب يصل إلى 200 هدف في البريميرليغ؟",
+      "answer": "آلان شيرر",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "english-premier-300-27",
+      "points": 300,
+      "question": "ما النادي الذي حقق أطول سلسلة انتصارات متتالية في البريميرليغ؟",
+      "answer": "مانشستر سيتي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "english-premier-300-28",
+      "points": 300,
+      "question": "كم انتصارًا متتاليًا حقق مانشستر سيتي في أطول سلسلة له؟",
+      "answer": "18 انتصارًا",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "english-premier-300-29",
+      "points": 300,
+      "question": "ما النادي الذي حقق أطول سلسلة مباريات دون هزيمة في عصر البريميرليغ؟",
+      "answer": "أرسنال",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "english-premier-300-30",
+      "points": 300,
+      "question": "كم مباراة متتالية دون هزيمة حقق أرسنال؟",
+      "answer": "49 مباراة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "english-premier-300-31",
+      "points": 300,
+      "question": "من أنهى سلسلة أرسنال التاريخية؟",
+      "answer": "مانشستر يونايتد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "english-premier-300-32",
+      "points": 300,
+      "question": "في أي ملعب انتهت سلسلة أرسنال؟",
+      "answer": "أولد ترافورد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "english-premier-300-33",
+      "points": 300,
+      "question": "من سجل ركلة الجزاء التي حسمت مباراة مانشستر يونايتد وأرسنال الشهيرة عام 2004؟",
+      "answer": "رود فان نيستلروي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "english-premier-500-1",
+      "points": 500,
+      "question": "من هو النادي الذي حقق أطول سلسلة انتصارات في بداية موسم البريميرليغ؟",
+      "answer": "ليفربول",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "english-premier-500-2",
+      "points": 500,
+      "question": "من هو المدرب الذي قاد ليفربول إلى لقب البريميرليغ عام 2020؟",
+      "answer": "يورغن كلوب",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "english-premier-500-3",
+      "points": 500,
+      "question": "كم سنة انتظر ليفربول للفوز بالدوري الإنجليزي الممتاز؟",
+      "answer": "30 عامًا",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "english-premier-500-4",
+      "points": 500,
+      "question": "في أي عام فاز ليفربول بأول لقب له في عصر البريميرليغ؟",
+      "answer": "2020",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "english-premier-500-5",
+      "points": 500,
+      "question": "من كان قائد ليفربول عند التتويج عام 2020؟",
+      "answer": "جوردان هندرسون",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "english-premier-500-6",
+      "points": 500,
+      "question": "من كان هداف ليفربول في موسم التتويج 2019–20؟",
+      "answer": "محمد صلاح",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "english-premier-500-7",
+      "points": 500,
+      "question": "كم هدفًا سجل محمد صلاح في موسم 2017–18؟",
+      "answer": "32 هدفًا",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "english-premier-500-8",
+      "points": 500,
+      "question": "لماذا يُعد موسم 2017–18 مميزًا لمحمد صلاح؟",
+      "answer": "حطم الرقم القياسي للأهداف في موسم من 38 مباراة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "english-premier-500-9",
+      "points": 500,
+      "question": "من كان منافس محمد صلاح على الحذاء الذهبي في موسم 2017–18؟",
+      "answer": "هاري كين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "english-premier-500-10",
+      "points": 500,
+      "question": "من هو أول لاعب مصري يفوز بالدوري الإنجليزي الممتاز؟",
+      "answer": "محمد صلاح",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "english-premier-500-11",
+      "points": 500,
+      "question": "مع أي نادٍ فاز محمد صلاح بالدوري الإنجليزي؟",
+      "answer": "ليفربول",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "english-premier-500-12",
+      "points": 500,
+      "question": "من هو أول لاعب عربي يفوز بالحذاء الذهبي للبريميرليغ؟",
+      "answer": "محمد صلاح",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "english-premier-500-13",
+      "points": 500,
+      "question": "كم مرة فاز محمد صلاح بالحذاء الذهبي في البريميرليغ حتى نهاية موسم 2024–25؟",
+      "answer": "4 مرات",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "english-premier-500-14",
+      "points": 500,
+      "question": "من هو الحارس صاحب أكبر عدد من الشباك النظيفة في تاريخ البريميرليغ؟",
+      "answer": "بيتر تشيك",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "english-premier-500-15",
+      "points": 500,
+      "question": "كم شباك نظيفة حقق بيتر تشيك؟",
+      "answer": "202",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "english-premier-500-16",
+      "points": 500,
+      "question": "مع أي فريق حقق بيتر تشيك معظم شباكه النظيفة؟",
+      "answer": "تشيلسي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "english-premier-500-17",
+      "points": 500,
+      "question": "من هو أول حارس يسجل هدفًا في البريميرليغ؟",
+      "answer": "بيتر شمايكل",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "english-premier-500-18",
+      "points": 500,
+      "question": "مع أي فريق سجل بيتر شمايكل هدفه الشهير؟",
+      "answer": "أستون فيلا",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "english-premier-500-19",
+      "points": 500,
+      "question": "من هو المدرب الذي حقق أكبر عدد من الانتصارات في تاريخ البريميرليغ؟",
+      "answer": "أليكس فيرغسون",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "english-premier-500-20",
+      "points": 500,
+      "question": "من هو أول مدرب غير بريطاني يفوز بالدوري الإنجليزي الممتاز؟",
+      "answer": "أرسين فينغر",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "english-premier-500-21",
+      "points": 500,
+      "question": "مع أي فريق حقق أرسين فينغر ألقابه في البريميرليغ؟",
+      "answer": "أرسنال",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "english-premier-500-22",
+      "points": 500,
+      "question": "من هو المدرب الذي قاد تشيلسي لأول لقب بريميرليغ في تاريخه؟",
+      "answer": "جوزيه مورينيو",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "english-premier-500-23",
+      "points": 500,
+      "question": "في أي موسم فاز تشيلسي بأول لقب بريميرليغ؟",
+      "answer": "2004–05",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "english-premier-500-24",
+      "points": 500,
+      "question": "من هو المدرب الذي قاد ليستر سيتي لتحقيق معجزة الفوز بالدوري عام 2016؟",
+      "answer": "كلاوديو رانييري",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "english-premier-500-25",
+      "points": 500,
+      "question": "من هو اللاعب الذي سجل هدف الفوز الشهير لمانشستر سيتي على كوينز بارك رينجرز عام 2012؟",
+      "answer": "سيرخيو أغويرو",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "english-premier-500-26",
+      "points": 500,
+      "question": "في أي دقيقة تقريبًا جاء هدف أغويرو الشهير؟",
+      "answer": "93:20",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "english-premier-500-27",
+      "points": 500,
+      "question": "ماذا حسم هدف أغويرو الشهير؟",
+      "answer": "لقب الدوري لمانشستر سيتي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "english-premier-500-28",
+      "points": 500,
+      "question": "من كان وصيف مانشستر سيتي في موسم 2011–12؟",
+      "answer": "مانشستر يونايتد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "english-premier-500-29",
+      "points": 500,
+      "question": "ما أول فريق من خارج إنجلترا شارك في البريميرليغ؟",
+      "answer": "سوانزي سيتي؟",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "english-premier-500-30",
+      "points": 500,
+      "question": "ما النادي الذي يُعرف بلقب \"الشياطين الحمر\"؟",
+      "answer": "مانشستر يونايتد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "english-premier-500-31",
+      "points": 500,
+      "question": "ما النادي الذي يُعرف بلقب \"الريدز\"؟",
+      "answer": "ليفربول",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "english-premier-500-32",
+      "points": 500,
+      "question": "ما النادي الذي يُعرف بلقب \"البلوز\"؟",
+      "answer": "تشيلسي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "english-premier-500-33",
+      "points": 500,
+      "question": "ما النادي الذي يُعرف بلقب \"الغانرز\"؟",
+      "answer": "أرسنال",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    }
+  ],
+  "metadata": {
+    "sectionId": "sports",
+    "updatedAt": "2026-08-04",
+    "status": "ready"
+  }
 }

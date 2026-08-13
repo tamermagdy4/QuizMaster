@@ -1,0 +1,280 @@
+{
+  "categoryId": "city-country",
+  "questions": [
+    {
+      "id": "city-country-100-1",
+      "points": 100,
+      "question": "في أي دولة يقع هذا المعلم؟",
+      "answer": "الإمارات → برج خليفة – دبي",
+      "media": "/media/Landmarks of countries/questions/الامارات.jpg",
+      "answerMedia": "/media/Landmarks of countries/answers/الامارات.jpg",
+      "mediaType": "image"
+    },
+    {
+      "id": "city-country-100-2",
+      "points": 100,
+      "question": "في أي دولة يقع هذا المعلم؟",
+      "answer": "جزر المالديف → جزر المالديف",
+      "media": "/media/Landmarks of countries/questions/جزر المالديف.jpg",
+      "answerMedia": "/media/Landmarks of countries/answers/جزر المالديف.jpg",
+      "mediaType": "image"
+    },
+    {
+      "id": "city-country-100-3",
+      "points": 100,
+      "question": "في أي دولة يقع هذا المعلم؟",
+      "answer": "الإكوادور → جزر غالاباغوس",
+      "media": "/media/Landmarks of countries/questions/الاكوادور.jpg",
+      "answerMedia": "/media/Landmarks of countries/answers/الاكوادور.jpg",
+      "mediaType": "image"
+    },
+    {
+      "id": "city-country-100-4",
+      "points": 100,
+      "question": "في أي دولة يقع هذا المعلم؟",
+      "answer": "كمبوديا → معبد تا بروهم – أنغكور",
+      "media": "/media/Landmarks of countries/questions/كمبوديا.jpg",
+      "answerMedia": "/media/Landmarks of countries/answers/كمبوديا.jpg",
+      "mediaType": "image"
+    },
+    {
+      "id": "city-country-100-5",
+      "points": 100,
+      "question": "في أي دولة يقع هذا المعلم؟",
+      "answer": "جنوب أفريقيا → كيب تاون – جبل تيبل",
+      "media": "/media/Landmarks of countries/questions/جنوب افريقيا.jpg",
+      "answerMedia": "/media/Landmarks of countries/answers/جنوب افريقيا.jpg",
+      "mediaType": "image"
+    },
+    {
+      "id": "city-country-100-6",
+      "points": 100,
+      "question": "في أي دولة يقع هذا المعلم؟",
+      "answer": "الهند → تاج محل – أغرا",
+      "media": "/media/Landmarks of countries/questions/الهند.jpg",
+      "answerMedia": "/media/Landmarks of countries/answers/الهند.jpg",
+      "mediaType": "image"
+    },
+    {
+      "id": "city-country-100-7",
+      "points": 100,
+      "question": "في أي دولة يقع هذا المعلم؟",
+      "answer": "روسيا → كاتدرائية القديس باسيل – موسكو",
+      "media": "/media/Landmarks of countries/questions/روسيا.jpg",
+      "answerMedia": "/media/Landmarks of countries/answers/روسيا.jpg",
+      "mediaType": "image"
+    },
+    {
+      "id": "city-country-100-8",
+      "points": 100,
+      "question": "في أي دولة يقع هذا المعلم؟",
+      "answer": "الأردن → البتراء",
+      "media": "/media/Landmarks of countries/questions/الاردن.jpg",
+      "answerMedia": "/media/Landmarks of countries/answers/الاردن.jpg",
+      "mediaType": "image"
+    },
+    {
+      "id": "city-country-100-9",
+      "points": 100,
+      "question": "في أي دولة يقع هذا المعلم؟",
+      "answer": "الفاتيكان → مدينة الفاتيكان – ساحة القديس بطرس",
+      "media": "/media/Landmarks of countries/questions/الفاتيكان.jpg",
+      "answerMedia": "/media/Landmarks of countries/answers/الفاتيكان.jpg",
+      "mediaType": "image"
+    },
+    {
+      "id": "city-country-100-10",
+      "points": 100,
+      "question": "في أي دولة يقع هذا المعلم؟",
+      "answer": "المكسيك → تولوم",
+      "media": "/media/Landmarks of countries/questions/المكسيك.jpg",
+      "answerMedia": "/media/Landmarks of countries/answers/المكسيك.jpg",
+      "mediaType": "image"
+    },
+    {
+      "id": "city-country-300-1",
+      "points": 300,
+      "question": "في أي دولة يقع هذا المعلم؟",
+      "answer": "تركيا → المسجد الأزرق – إسطنبول",
+      "media": "/media/Landmarks of countries/questions/تركيا.jpg",
+      "answerMedia": "/media/Landmarks of countries/answers/تركيا.jpg",
+      "mediaType": "image"
+    },
+    {
+      "id": "city-country-300-2",
+      "points": 300,
+      "question": "في أي دولة يقع هذا المعلم؟",
+      "answer": "سويسرا → زيرمات – ماترهورن",
+      "media": "/media/Landmarks of countries/questions/سويسرا.jpg",
+      "answerMedia": "/media/Landmarks of countries/answers/سويسرا.jpg",
+      "mediaType": "image"
+    },
+    {
+      "id": "city-country-300-3",
+      "points": 300,
+      "question": "في أي دولة يقع هذا المعلم؟",
+      "answer": "إندونيسيا → بالي",
+      "media": "/media/Landmarks of countries/questions/اندونيسيا.jpg",
+      "answerMedia": "/media/Landmarks of countries/answers/اندونيسيا.jpg",
+      "mediaType": "image"
+    },
+    {
+      "id": "city-country-300-4",
+      "points": 300,
+      "question": "في أي دولة يقع هذا المعلم؟",
+      "answer": "مصر → أهرامات الجيزة",
+      "media": "/media/Landmarks of countries/questions/مصر.jpg",
+      "answerMedia": "/media/Landmarks of countries/answers/مصر.jpg",
+      "mediaType": "image"
+    },
+    {
+      "id": "city-country-300-5",
+      "points": 300,
+      "question": "في أي دولة يقع هذا المعلم؟",
+      "answer": "ألمانيا → قلعة نويشفانشتاين",
+      "media": "/media/Landmarks of countries/questions/المانيا.jpg",
+      "answerMedia": "/media/Landmarks of countries/answers/المانيا.jpg",
+      "mediaType": "image"
+    },
+    {
+      "id": "city-country-300-6",
+      "points": 300,
+      "question": "في أي دولة يقع هذا المعلم؟",
+      "answer": "أستراليا → دار أوبرا سيدني",
+      "media": "/media/Landmarks of countries/questions/استراليا.webp",
+      "answerMedia": "/media/Landmarks of countries/answers/استراليا.webp",
+      "mediaType": "image"
+    },
+    {
+      "id": "city-country-300-7",
+      "points": 300,
+      "question": "في أي دولة يقع هذا المعلم؟",
+      "answer": "البرازيل → تمثال المسيح الفادي – ريو دي جانيرو",
+      "media": "/media/Landmarks of countries/questions/البرازيل.webp",
+      "answerMedia": "/media/Landmarks of countries/answers/البرازيل.webp",
+      "mediaType": "image"
+    },
+    {
+      "id": "city-country-300-8",
+      "points": 300,
+      "question": "في أي دولة يقع هذا المعلم؟",
+      "answer": "إنجلترا → بيغ بن – لندن",
+      "media": "/media/Landmarks of countries/questions/انجلترا.webp",
+      "answerMedia": "/media/Landmarks of countries/answers/انجلترا.webp",
+      "mediaType": "image"
+    },
+    {
+      "id": "city-country-300-9",
+      "points": 300,
+      "question": "في أي دولة يقع هذا المعلم؟",
+      "answer": "الصين → سور الصين العظيم",
+      "media": "/media/Landmarks of countries/questions/الصين.webp",
+      "answerMedia": "/media/Landmarks of countries/answers/الصين.webp",
+      "mediaType": "image"
+    },
+    {
+      "id": "city-country-300-10",
+      "points": 300,
+      "question": "في أي دولة يقع هذا المعلم؟",
+      "answer": "المغرب → جامع الكتبية – مراكش",
+      "media": "/media/Landmarks of countries/questions/المغرب.webp",
+      "answerMedia": "/media/Landmarks of countries/answers/المغرب.webp",
+      "mediaType": "image"
+    },
+    {
+      "id": "city-country-500-1",
+      "points": 500,
+      "question": "في أي دولة يقع هذا المعلم؟",
+      "answer": "باكستان → مقابر ماكلي – تهتا",
+      "media": "/media/Landmarks of countries/questions/باكستان.jpeg",
+      "answerMedia": "/media/Landmarks of countries/answers/باكستان.jpeg",
+      "mediaType": "image"
+    },
+    {
+      "id": "city-country-500-2",
+      "points": 500,
+      "question": "في أي دولة يقع هذا المعلم؟",
+      "answer": "الأردن → جرش – المدينة الأثرية",
+      "media": "/media/Landmarks of countries/questions/الاردن.jpeg",
+      "answerMedia": "/media/Landmarks of countries/answers/الاردن.jpeg",
+      "mediaType": "image"
+    },
+    {
+      "id": "city-country-500-3",
+      "points": 500,
+      "question": "في أي دولة يقع هذا المعلم؟",
+      "answer": "اليابان → كيوتو",
+      "media": "/media/Landmarks of countries/questions/اليابان.jpg",
+      "answerMedia": "/media/Landmarks of countries/answers/اليابان.jpg",
+      "mediaType": "image"
+    },
+    {
+      "id": "city-country-500-4",
+      "points": 500,
+      "question": "في أي دولة يقع هذا المعلم؟",
+      "answer": "البحرين → بيت سيادي – المحرق",
+      "media": "/media/Landmarks of countries/questions/البحرين.jpg",
+      "answerMedia": "/media/Landmarks of countries/answers/البحرين.jpg",
+      "mediaType": "image"
+    },
+    {
+      "id": "city-country-500-5",
+      "points": 500,
+      "question": "في أي دولة يقع هذا المعلم؟",
+      "answer": "فرنسا → متحف اللوفر – باريس",
+      "media": "/media/Landmarks of countries/questions/فرنسا.jpg",
+      "answerMedia": "/media/Landmarks of countries/answers/فرنسا.jpg",
+      "mediaType": "image"
+    },
+    {
+      "id": "city-country-500-6",
+      "points": 500,
+      "question": "في أي دولة يقع هذا المعلم؟",
+      "answer": "زيمبابوي → شلالات فيكتوريا",
+      "media": "/media/Landmarks of countries/questions/زيمبابوي.jpg",
+      "answerMedia": "/media/Landmarks of countries/answers/زيمبابوي.jpg",
+      "mediaType": "image"
+    },
+    {
+      "id": "city-country-500-7",
+      "points": 500,
+      "question": "في أي دولة يقع هذا المعلم؟",
+      "answer": "لبنان → ساحة النجمة – بيروت",
+      "media": "/media/Landmarks of countries/questions/لبنان.jpg",
+      "answerMedia": "/media/Landmarks of countries/answers/لبنان.jpg",
+      "mediaType": "image"
+    },
+    {
+      "id": "city-country-500-8",
+      "points": 500,
+      "question": "في أي دولة يقع هذا المعلم؟",
+      "answer": " كولومبيا – ساحل/جزيرة كولومبيه",
+      "media": "/media/Landmarks of countries/questions/كولومبيا.jpg",
+      "answerMedia": "/media/Landmarks of countries/answers/كولومبيا.jpg",
+      "mediaType": "image"
+    },
+    {
+      "id": "city-country-500-9",
+      "points": 500,
+      "question": "في أي دولة يقع هذا المعلم؟",
+      "answer": "الولايات المتحدة → نيويورك – مانهاتن",
+      "media": "/media/Landmarks of countries/questions/الولايات المتحده الامريكيه.jpg",
+      "answerMedia": "/media/Landmarks of countries/answers/الولايات المتحده الامريكيه.jpg",
+      "mediaType": "image"
+    },
+    {
+      "id": "city-country-500-10",
+      "points": 500,
+      "question": "في أي دولة يقع هذا المعلم؟",
+      "answer": "اليونان → سانتوريني",
+      "media": "/media/Landmarks of countries/questions/اليونان.jpg",
+      "answerMedia": "/media/Landmarks of countries/answers/اليونان.jpg",
+      "mediaType": "image"
+    }
+  ],
+  "metadata": {
+    "sectionId": "geography",
+    "updatedAt": "2026-08-05",
+    "status": "pending"
+  }
+}

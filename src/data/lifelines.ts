@@ -9,6 +9,13 @@ export const defaultLifelines = (): Lifeline[] => [
     used: false,
   },
   {
+    id: 'two-answers',
+    label: 'اختيار أربع إجابات',
+    description: 'اعرض حتى أربع إجابات متاحة',
+    icon: '➗',
+    used: false,
+  },
+  {
     id: 'block',
     label: 'حظر الخصم',
     description: 'امنع الفريق الآخر من الإجابة',

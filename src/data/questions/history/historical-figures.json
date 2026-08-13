@@ -1,11 +1,220 @@
-﻿{
-    "categoryId":  "historical-figures",
-    "questions":  [
-
-                  ],
-    "metadata":  {
-                     "sectionId":  "history",
-                     "updatedAt":  "2026-08-03",
-                     "status":  "pending"
-                 }
+{
+  "categoryId": "historical-figures",
+  "questions": [
+    {
+      "id": "historical-figures-100-1",
+      "points": 100,
+      "question": "من هو أول رئيس للولايات المتحدة الأمريكية؟",
+      "answer": "جورج واشنطن",
+      "image": ""
+    },
+    {
+      "id": "historical-figures-100-2",
+      "points": 100,
+      "question": "من هو القائد المصري الذي هزم الهكسوس وأسس الأسرة الثامنة عشرة؟",
+      "answer": "أحمس الأول",
+      "image": ""
+    },
+    {
+      "id": "historical-figures-100-3",
+      "points": 100,
+      "question": "من هو مؤسس الدولة الأيوبية؟",
+      "answer": "صلاح الدين الأيوبي",
+      "image": ""
+    },
+    {
+      "id": "historical-figures-100-4",
+      "points": 100,
+      "question": "من هو القائد المقدوني الذي أسس إمبراطورية امتدت إلى مصر وفارس والهند؟",
+      "answer": "الإسكندر الأكبر",
+      "image": ""
+    },
+    {
+      "id": "historical-figures-100-5",
+      "points": 100,
+      "question": "من هو أول خليفة في الدولة الأموية؟",
+      "answer": "معاوية بن أبي سفيان",
+      "image": ""
+    },
+    {
+      "id": "historical-figures-100-6",
+      "points": 100,
+      "question": "من هو الرحالة المغربي الشهير الذي جاب مناطق واسعة من العالم؟",
+      "answer": "ابن بطوطة",
+      "image": ""
+    },
+    {
+      "id": "historical-figures-100-7",
+      "points": 100,
+      "question": "من هو القائد الفرنسي الذي أصبح إمبراطورًا لفرنسا؟",
+      "answer": "نابليون بونابرت",
+      "image": ""
+    },
+    {
+      "id": "historical-figures-100-8",
+      "points": 100,
+      "question": "من هو الزعيم الهندي الذي اشتهر بالمقاومة السلمية ضد الاستعمار البريطاني؟",
+      "answer": "المهاتما غاندي",
+      "image": ""
+    },
+    {
+      "id": "historical-figures-100-9",
+      "points": 100,
+      "question": "من هو العالم الذي وضع قوانين الحركة والجاذبية؟",
+      "answer": "إسحاق نيوتن",
+      "image": ""
+    },
+    {
+      "id": "historical-figures-100-10",
+      "points": 100,
+      "question": "من هي الملكة المصرية الشهيرة التي ارتبط اسمها بيوليوس قيصر ومارك أنطوني؟",
+      "answer": "كليوباترا السابعة",
+      "image": ""
+    },
+    {
+      "id": "historical-figures-300-1",
+      "points": 300,
+      "question": "من هو السلطان العثماني الذي فتح القسطنطينية عام 1453؟",
+      "answer": "محمد الفاتح",
+      "image": ""
+    },
+    {
+      "id": "historical-figures-300-2",
+      "points": 300,
+      "question": "من هو القائد القرطاجي الذي عبر جبال الألب لمحاربة روما؟",
+      "answer": "هانيبال",
+      "image": ""
+    },
+    {
+      "id": "historical-figures-300-3",
+      "points": 300,
+      "question": "من هو مؤسس الإمبراطورية المغولية؟",
+      "answer": "جنكيز خان",
+      "image": ""
+    },
+    {
+      "id": "historical-figures-300-4",
+      "points": 300,
+      "question": "من هو الخليفة العباسي الذي ارتبط عهده بازدهار بيت الحكمة في بغداد؟",
+      "answer": "المأمون",
+      "image": ""
+    },
+    {
+      "id": "historical-figures-300-5",
+      "points": 300,
+      "question": "من هو مؤسس الدولة السعودية الأولى؟",
+      "answer": "محمد بن سعود",
+      "image": ""
+    },
+    {
+      "id": "historical-figures-300-6",
+      "points": 300,
+      "question": "من هو الزعيم الذي قاد الثورة البلشفية في روسيا عام 1917؟",
+      "answer": "فلاديمير لينين",
+      "image": ""
+    },
+    {
+      "id": "historical-figures-300-7",
+      "points": 300,
+      "question": "من هو الرئيس الأمريكي الذي قاد بلاده خلال الحرب الأهلية الأمريكية؟",
+      "answer": "أبراهام لينكولن",
+      "image": ""
+    },
+    {
+      "id": "historical-figures-300-8",
+      "points": 300,
+      "question": "من هو القائد المسلم الذي انتصر في معركة حطين؟",
+      "answer": "صلاح الدين الأيوبي",
+      "image": ""
+    },
+    {
+      "id": "historical-figures-300-9",
+      "points": 300,
+      "question": "من هو الرحالة الأوروبي الذي وصل إلى الأمريكتين عام 1492؟",
+      "answer": "كريستوفر كولومبوس",
+      "image": ""
+    },
+    {
+      "id": "historical-figures-300-10",
+      "points": 300,
+      "question": "من هو مؤسس علم الاجتماع الحديث وصاحب كتاب المقدمة؟",
+      "answer": "ابن خلدون",
+      "image": ""
+    },
+    {
+      "id": "historical-figures-500-1",
+      "points": 500,
+      "question": "من هو الإمبراطور الروماني الذي أصدر مرسوم ميلانو عام 313م؟",
+      "answer": "قسطنطين الكبير",
+      "image": ""
+    },
+    {
+      "id": "historical-figures-500-2",
+      "points": 500,
+      "question": "من هو آخر ملوك مصر من الأسرة البطلمية؟",
+      "answer": "كليوباترا السابعة",
+      "image": ""
+    },
+    {
+      "id": "historical-figures-500-3",
+      "points": 500,
+      "question": "من هو القائد الذي أسس الإمبراطورية الفارسية الأخمينية؟",
+      "answer": "كورش الكبير",
+      "image": ""
+    },
+    {
+      "id": "historical-figures-500-4",
+      "points": 500,
+      "question": "من هو السلطان المملوكي الذي ارتبط اسمه بانتصار المسلمين على المغول في عين جالوت؟",
+      "answer": "سيف الدين قطز",
+      "image": ""
+    },
+    {
+      "id": "historical-figures-500-5",
+      "points": 500,
+      "question": "من هو القائد القرطاجي الذي خاض الحرب البونيقية الثانية ضد روما؟",
+      "answer": "هانيبال",
+      "image": ""
+    },
+    {
+      "id": "historical-figures-500-6",
+      "points": 500,
+      "question": "من هو الإمبراطور الروماني الذي جعل المسيحية دينًا مسموحًا في الإمبراطورية بعد مرسوم ميلانو؟",
+      "answer": "قسطنطين الكبير",
+      "image": ""
+    },
+    {
+      "id": "historical-figures-500-7",
+      "points": 500,
+      "question": "من هو مؤسس الدولة الصفوية في إيران؟",
+      "answer": "إسماعيل الصفوي",
+      "image": ""
+    },
+    {
+      "id": "historical-figures-500-8",
+      "points": 500,
+      "question": "من هو القائد الذي قاد الثورة الهايتية وأصبح من أبرز رموز مقاومة الاستعمار والعبودية؟",
+      "answer": "توسان لوفرتور",
+      "image": ""
+    },
+    {
+      "id": "historical-figures-500-9",
+      "points": 500,
+      "question": "من هو الزعيم الجنوب أفريقي الذي قضى 27 عامًا في السجن قبل أن يصبح رئيسًا لبلاده؟",
+      "answer": "نيلسون مانديلا",
+      "image": ""
+    },
+    {
+      "id": "historical-figures-500-10",
+      "points": 500,
+      "question": "من هو السياسي البريطاني الذي قاد بريطانيا خلال معظم سنوات الحرب العالمية الثانية؟",
+      "answer": "ونستون تشرشل",
+      "image": ""
+    }
+  ],
+  "metadata": {
+    "sectionId": "history",
+    "updatedAt": "2026-08-10",
+    "status": "active"
+  }
 }

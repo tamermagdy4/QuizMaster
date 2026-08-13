@@ -1,11 +1,1359 @@
-﻿{
-    "categoryId":  "egyptian-league",
-    "questions":  [
-
-                  ],
-    "metadata":  {
-                     "sectionId":  "sports",
-                     "updatedAt":  "2026-08-03",
-                     "status":  "pending"
-                 }
+{
+  "categoryId": "egyptian-league",
+  "questions": [
+    {
+      "id": "egyptian-league-100-1",
+      "points": 100,
+      "question": "متى بدأ الدوري المصري الممتاز؟",
+      "answer": "1948",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-100-2",
+      "points": 100,
+      "question": "من هو أول فريق فاز ببطولة الدوري المصري؟",
+      "answer": "النادي الأهلي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-100-3",
+      "points": 100,
+      "question": "متى تأسست بطولة كأس مصر؟",
+      "answer": "1922",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-100-4",
+      "points": 100,
+      "question": "من هو أول نادي فاز بكأس مصر؟",
+      "answer": "نادي الزمالك",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-100-5",
+      "points": 100,
+      "question": "من هو أول نادي مصري يفوز بدوري أبطال أفريقيا؟",
+      "answer": "النادي الإسماعيلي عام 1969",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-300-1",
+      "points": 300,
+      "question": "من النادي الأكثر تتويجاً بالبطولات في الدوري المصري الممتاز وكم عددها؟",
+      "answer": "الأهلي - 45 مرة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-300-2",
+      "points": 300,
+      "question": "كم بطولة في الدوري المصري حصل عليها الزمالك؟",
+      "answer": "12 بطولة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-300-3",
+      "points": 300,
+      "question": "من هو الفريق الأكثر فوزاً ببطولة الأفروأسيوي؟",
+      "answer": "الزمالك",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-500-1",
+      "points": 500,
+      "question": "من هو أول رئيس للاتحاد المصري؟",
+      "answer": "جعفر والي باشا",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-500-2",
+      "points": 500,
+      "question": "متى انضم الاتحاد المصري للفيفا؟",
+      "answer": "1923",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-500-3",
+      "points": 500,
+      "question": "من هو مؤسس كأس الأمم الأفريقية؟",
+      "answer": "جمهورية مصر العربية",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-100-6",
+      "points": 100,
+      "question": "كم عدد الأندية المشاركة في الدوري المصري الممتاز؟",
+      "answer": "18 نادي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-100-7",
+      "points": 100,
+      "question": "من هو هداف الدوري المصري الممتاز في موسم 2022-2023؟",
+      "answer": "محمد شريف",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-100-8",
+      "points": 100,
+      "question": "من هو الفريق الذي فاز بالدوري المصري 2022-2023؟",
+      "answer": "الأهلي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-100-9",
+      "points": 100,
+      "question": "متى تأسس النادي الأهلي؟",
+      "answer": "1907",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-100-10",
+      "points": 100,
+      "question": "متى تأسس نادي الزمالك؟",
+      "answer": "1911",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-100-11",
+      "points": 100,
+      "question": "من هو الفريق الذي يلعب في ستاد القاهرة الدولي؟",
+      "answer": "الأهلي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-100-12",
+      "points": 100,
+      "question": "من هو الفريق الذي يلعب في ستاد 30 يونيو؟",
+      "answer": "الزمالك",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-100-13",
+      "points": 100,
+      "question": "كم سعة ستاد القاهرة الدولي؟",
+      "answer": "75 ألف متفرج",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-100-14",
+      "points": 100,
+      "question": "من هو المدرب الذي قاد الأهلي للفوز بالدوري 2022-2023؟",
+      "answer": "مارسيل كولر",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-100-15",
+      "points": 100,
+      "question": "من هو المدرب الذي قاد الزمالك للفوز بالدوري 2020-2021؟",
+      "answer": "جمال السيد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-100-16",
+      "points": 100,
+      "question": "كم مرة فاز الأهلي بالدوري المصري الممتاز؟",
+      "answer": "45 مرة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-100-17",
+      "points": 100,
+      "question": "كم مرة فاز الزمالك بالدوري المصري الممتاز؟",
+      "answer": "15 مرة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-100-18",
+      "points": 100,
+      "question": "من هو أكثر لاعب سجل في الدوري المصري؟",
+      "answer": "محمود الخطيب",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-100-19",
+      "points": 100,
+      "question": "من هو اللاعب المصري الذي لعب في تشيلسي؟",
+      "answer": "محمد صلاح",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-100-20",
+      "points": 100,
+      "question": "من هو اللاعب المصري الذي لعب في روما؟",
+      "answer": "محمد صلاح",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-100-21",
+      "points": 100,
+      "question": "من هو اللاعب المصري الذي لعب في فيورنتينا؟",
+      "answer": "محمد صلاح",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-100-22",
+      "points": 100,
+      "question": "من هو اللاعب المصري الذي لعب في ليفربول؟",
+      "answer": "محمد صلاح",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-100-23",
+      "points": 100,
+      "question": "من هو هداف الأهلي التاريخي؟",
+      "answer": "محمود الخطيب",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-100-24",
+      "points": 100,
+      "question": "من هو هداف الزمالك التاريخي؟",
+      "answer": "حسن حمدي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-100-25",
+      "points": 100,
+      "question": "متى فاز الأهلي بأول بطولة دوري؟",
+      "answer": "1948-1949",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-100-26",
+      "points": 100,
+      "question": "متى فاز الزمالك بأول بطولة دوري؟",
+      "answer": "1959-1960",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-100-27",
+      "points": 100,
+      "question": "من هو الفريق الذي فاز بالدوري 2018-2019؟",
+      "answer": "الأهلي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-100-28",
+      "points": 100,
+      "question": "من هو هداف الدوري 2018-2019؟",
+      "answer": "محمد شريف",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-100-29",
+      "points": 100,
+      "question": "كم مرة فاز الإسماعيلي بالدوري؟",
+      "answer": "3 مرات",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-100-30",
+      "points": 100,
+      "question": "متى فاز الإسماعيلي بالدوري آخر مرة؟",
+      "answer": "1990-1991",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-100-31",
+      "points": 100,
+      "question": "من هو الفريق الذي فاز بالدوري 1966-1967؟",
+      "answer": "الأهلي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-100-32",
+      "points": 100,
+      "question": "من هو الفريق الذي فاز بالدوري 1975-1976؟",
+      "answer": "الأهلي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-100-33",
+      "points": 100,
+      "question": "من هو الفريق الذي فاز بالدوري 1980-1981؟",
+      "answer": "الأهلي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-100-34",
+      "points": 100,
+      "question": "من هو الفريق الذي فاز بالدوري 1984-1985؟",
+      "answer": "الأهلي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-100-35",
+      "points": 100,
+      "question": "من هو الفريق الذي فاز بالدوري 1986-1987؟",
+      "answer": "الأهلي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-100-36",
+      "points": 100,
+      "question": "من هو الفريق الذي فاز بالدوري 1989-1990؟",
+      "answer": "الأهلي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-100-37",
+      "points": 100,
+      "question": "من هو الفريق الذي فاز بالدوري 1994-1995؟",
+      "answer": "الأهلي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-100-38",
+      "points": 100,
+      "question": "من هو الفريق الذي فاز بالدوري 1996-1997؟",
+      "answer": "الأهلي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-100-39",
+      "points": 100,
+      "question": "من هو الفريق الذي فاز بالدوري 1997-1998؟",
+      "answer": "الأهلي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-100-40",
+      "points": 100,
+      "question": "من هو الفريق الذي فاز بالدوري 1998-1999؟",
+      "answer": "الأهلي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-100-41",
+      "points": 100,
+      "question": "من هو الفريق الذي فاز بالدوري 2003-2004؟",
+      "answer": "الأهلي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-100-42",
+      "points": 100,
+      "question": "من هو الفريق الذي فاز بالدوري 2004-2005؟",
+      "answer": "الأهلي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-100-43",
+      "points": 100,
+      "question": "من هو الفريق الذي فاز بالدوري 2006-2007؟",
+      "answer": "الأهلي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-100-44",
+      "points": 100,
+      "question": "من هو الفريق الذي فاز بالدوري 2007-2008؟",
+      "answer": "الأهلي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-100-45",
+      "points": 100,
+      "question": "من هو الفريق الذي فاز بالدوري 2008-2009؟",
+      "answer": "الأهلي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-100-46",
+      "points": 100,
+      "question": "من هو الفريق الذي فاز بالدوري 2009-2010؟",
+      "answer": "الأهلي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-100-47",
+      "points": 100,
+      "question": "من هو الفريق الذي فاز بالدوري 2010-2011؟",
+      "answer": "لم يكمل",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-100-48",
+      "points": 100,
+      "question": "من هو الفريق الذي فاز بالدوري 2013-2014؟",
+      "answer": "الأهلي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-100-49",
+      "points": 100,
+      "question": "من هو الفريق الذي فاز بالدوري 2014-2015؟",
+      "answer": "الأهلي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-100-50",
+      "points": 100,
+      "question": "من هو الفريق الذي فاز بالدوري 2015-2016؟",
+      "answer": "الأهلي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-300-4",
+      "points": 300,
+      "question": "من هو أكثر لاعب سجل هاتريك في الدوري المصري؟",
+      "answer": "محمود حمدي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-300-5",
+      "points": 300,
+      "question": "كم مرة فاز الأهلي بالدوري المصري بشكل متتالي؟",
+      "answer": "6 مرات (2018-2023)",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-300-6",
+      "points": 300,
+      "question": "من هو المدرب الذي قاد الإسماعيلي للفوز بالدوري؟",
+      "answer": "محمود الجوهري",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-300-7",
+      "points": 300,
+      "question": "كم مرة فاز الإسماعيلي بالدوري المصري؟",
+      "answer": "3 مرات",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-300-8",
+      "points": 300,
+      "question": "من هو الفريق الذي فاز بالدوري المصري 2019-2020؟",
+      "answer": "الأهلي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-300-9",
+      "points": 300,
+      "question": "من هو هداف الدوري المصري 2019-2020؟",
+      "answer": "محمد شريف",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-300-10",
+      "points": 300,
+      "question": "كم مرة فاز المقاولون العرب بالدوري المصري؟",
+      "answer": "مرة واحدة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-300-11",
+      "points": 300,
+      "question": "من هو الفريق الذي فاز بالدوري المصري 1995-1996؟",
+      "answer": "الأهلي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-300-12",
+      "points": 300,
+      "question": "من هو هداف الدوري المصري 1995-1996؟",
+      "answer": "حسام حسن",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-300-13",
+      "points": 300,
+      "question": "كم مرة فاز الأهلي بالدوري في التسعينيات؟",
+      "answer": "3 مرات",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-300-14",
+      "points": 300,
+      "question": "من هو الفريق الذي فاز بالدوري المصري 2000-2001؟",
+      "answer": "الأهلي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-300-15",
+      "points": 300,
+      "question": "من هو هداف الدوري المصري 2000-2001؟",
+      "answer": "محمد أبوتريكة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-300-16",
+      "points": 300,
+      "question": "كم مرة فاز الزمالك بالدوري في التسعينيات؟",
+      "answer": "4 مرات",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-300-17",
+      "points": 300,
+      "question": "من هو الفريق الذي فاز بالدوري المصري 2005-2006؟",
+      "answer": "الأهلي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-300-18",
+      "points": 300,
+      "question": "من هو هداف الدوري المصري 2005-2006؟",
+      "answer": "محمد أبوتريكة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-300-19",
+      "points": 300,
+      "question": "كم مرة فاز الزمالك بالدوري في الألفينيات؟",
+      "answer": "5 مرات",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-300-20",
+      "points": 300,
+      "question": "من هو الفريق الذي فاز بالدوري المصري 2010-2011؟",
+      "answer": "لم يكمل",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-300-21",
+      "points": 300,
+      "question": "من هو هداف الدوري المصري 2010-2011؟",
+      "answer": "لم يكمل",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-300-22",
+      "points": 300,
+      "question": "كم مرة فاز الأهلي بالدوري في الألفينيات؟",
+      "answer": "10 مرات",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-300-23",
+      "points": 300,
+      "question": "من هو الفريق الذي فاز بالدوري المصري 2015-2016؟",
+      "answer": "الأهلي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-300-24",
+      "points": 300,
+      "question": "من هو هداف الدوري المصري 2015-2016؟",
+      "answer": "محمد شريف",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-300-25",
+      "points": 300,
+      "question": "كم مرة فاز الزمالك بالدوري في العقد الثاني من الألفينيات؟",
+      "answer": "3 مرات",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-300-26",
+      "points": 300,
+      "question": "من هو الفريق الذي فاز بالدوري المصري 2017-2018؟",
+      "answer": "الأهلي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-300-27",
+      "points": 300,
+      "question": "من هو هداف الدوري المصري 2017-2018؟",
+      "answer": "محمد شريف",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-300-28",
+      "points": 300,
+      "question": "كم مرة فاز الأهلي بالدوري في العقد الثاني من الألفينيات؟",
+      "answer": "9 مرات",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-300-29",
+      "points": 300,
+      "question": "من هو الفريق الذي فاز بالدوري المصري 2020-2021؟",
+      "answer": "الزمالك",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-300-30",
+      "points": 300,
+      "question": "من هو هداف الدوري المصري 2020-2021؟",
+      "answer": "أحمد ياسر",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-300-31",
+      "points": 300,
+      "question": "كم مرة فاز الزمالك بالدوري في العقد الثالث من الألفينيات؟",
+      "answer": "مرة واحدة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-300-32",
+      "points": 300,
+      "question": "من هو الفريق الذي فاز بالدوري المصري 2021-2022؟",
+      "answer": "الزمالك",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-300-33",
+      "points": 300,
+      "question": "من هو هداف الدوري المصري 2021-2022؟",
+      "answer": "أحمد ياسر",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-300-34",
+      "points": 300,
+      "question": "كم مرة فاز الأهلي بالدوري في العقد الثالث من الألفينيات؟",
+      "answer": "مرتين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-300-35",
+      "points": 300,
+      "question": "من هو الفريق الذي فاز بالدوري المصري 2023-2024؟",
+      "answer": "الأهلي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-300-36",
+      "points": 300,
+      "question": "من هو هداف الدوري المصري 2023-2024؟",
+      "answer": "محمد شريف",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-300-37",
+      "points": 300,
+      "question": "كم مرة فاز بيراميدز بالدوري المصري؟",
+      "answer": "0 مرة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-300-38",
+      "points": 300,
+      "question": "من هو الفريق الذي فاز بالدوري المصري 1999-2000؟",
+      "answer": "الأهلي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-300-39",
+      "points": 300,
+      "question": "من هو هداف الدوري المصري 1999-2000؟",
+      "answer": "حسام حسن",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-300-40",
+      "points": 300,
+      "question": "كم مرة فاز الاتحاد السكندري بالدوري المصري؟",
+      "answer": "مرة واحدة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-300-41",
+      "points": 300,
+      "question": "من هو الفريق الذي فاز بالدوري المصري 1961-1962؟",
+      "answer": "الأهلي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-300-42",
+      "points": 300,
+      "question": "من هو هداف الدوري المصري 1961-1962؟",
+      "answer": "محمود الجوهري",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-300-43",
+      "points": 300,
+      "question": "كم مرة فاز الترسانة بالدوري المصري؟",
+      "answer": "مرة واحدة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-300-44",
+      "points": 300,
+      "question": "من هو الفريق الذي فاز بالدوري المصري 1977-1978؟",
+      "answer": "الأهلي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-300-45",
+      "points": 300,
+      "question": "من هو هداف الدوري المصري 1977-1978؟",
+      "answer": "محمود الخطيب",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-300-46",
+      "points": 300,
+      "question": "كم مرة فاز غزل المحلة بالدوري المصري؟",
+      "answer": "مرة واحدة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-300-47",
+      "points": 300,
+      "question": "من هو الفريق الذي فاز بالدوري المصري 1948-1949؟",
+      "answer": "الأهلي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-300-48",
+      "points": 300,
+      "question": "من هو هداف الدوري المصري 1948-1949؟",
+      "answer": "محمود الجوهري",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-300-49",
+      "points": 300,
+      "question": "كم مرة فاز حرس الحدود بالدوري المصري؟",
+      "answer": "0 مرة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-300-50",
+      "points": 300,
+      "question": "من هو الفريق الذي فاز بالدوري المصري 1949-1950؟",
+      "answer": "الأهلي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-500-4",
+      "points": 500,
+      "question": "من هو أول لاعب مصري يفوز بجائزة أفضل لاعب في أفريقيا؟",
+      "answer": "محمود الخطيب في 1983",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-500-5",
+      "points": 500,
+      "question": "من هو أول لاعب مصري يلعب في الدوري الإنجليزي؟",
+      "answer": "ميروسلاف",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-500-6",
+      "points": 500,
+      "question": "من هو أول لاعب مصري يلعب في الدوري الإسباني؟",
+      "answer": "محمد صلاح",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-500-7",
+      "points": 500,
+      "question": "من هو أول لاعب مصري يلعب في الدوري الإيطالي؟",
+      "answer": "محمد صلاح",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-500-8",
+      "points": 500,
+      "question": "من هو أول لاعب مصري يلعب في الدوري الألماني؟",
+      "answer": "لا يوجد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-500-9",
+      "points": 500,
+      "question": "من هو أول لاعب مصري يلعب في الدوري الفرنسي؟",
+      "answer": "لا يوجد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-500-10",
+      "points": 500,
+      "question": "من هو أول لاعب مصري يلعب في الدوري الهولندي؟",
+      "answer": "لا يوجد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-500-11",
+      "points": 500,
+      "question": "من هو أول لاعب مصري يلعب في الدوري البرتغالي؟",
+      "answer": "لا يوجد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-500-12",
+      "points": 500,
+      "question": "من هو أول لاعب مصري يلعب في الدوري التركي؟",
+      "answer": "لا يوجد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-500-13",
+      "points": 500,
+      "question": "من هو أول لاعب مصري يلعب في الدوري اليوناني؟",
+      "answer": "لا يوجد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-500-14",
+      "points": 500,
+      "question": "من هو أول لاعب مصري يلعب في الدوري الروسي؟",
+      "answer": "لا يوجد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-500-15",
+      "points": 500,
+      "question": "من هو أول لاعب مصري يلعب في الدوري الأوكراني؟",
+      "answer": "لا يوجد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-500-16",
+      "points": 500,
+      "question": "من هو أول لاعب مصري يلعب في الدوري البلجيكي؟",
+      "answer": "لا يوجد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-500-17",
+      "points": 500,
+      "question": "من هو أول لاعب مصري يلعب في الدوري السويسري؟",
+      "answer": "لا يوجد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-500-18",
+      "points": 500,
+      "question": "من هو أول لاعب مصري يلعب في الدوري النمساوي؟",
+      "answer": "لا يوجد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-500-19",
+      "points": 500,
+      "question": "من هو أول لاعب مصري يلعب في الدوري التشيكي؟",
+      "answer": "لا يوجد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-500-20",
+      "points": 500,
+      "question": "من هو أول لاعب مصري يلعب في الدوري البولندي؟",
+      "answer": "لا يوجد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-500-21",
+      "points": 500,
+      "question": "من هو أول لاعب مصري يلعب في الدوري الروماني؟",
+      "answer": "لا يوجد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-500-22",
+      "points": 500,
+      "question": "من هو أول لاعب مصري يلعب في الدوري الصربي؟",
+      "answer": "لا يوجد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-500-23",
+      "points": 500,
+      "question": "من هو أول لاعب مصري يلعب في الدوري الكرواتي؟",
+      "answer": "لا يوجد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-500-24",
+      "points": 500,
+      "question": "من هو أول لاعب مصري يلعب في الدوري السلوفيني؟",
+      "answer": "لا يوجد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-500-25",
+      "points": 500,
+      "question": "من هو أول لاعب مصري يلعب في الدوري السلوفاكي؟",
+      "answer": "لا يوجد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-500-26",
+      "points": 500,
+      "question": "من هو أول لاعب مصري يلعب في الدوري الهنغاري؟",
+      "answer": "لا يوجد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-500-27",
+      "points": 500,
+      "question": "من هو أول لاعب مصري يلعب في الدوري البلغاري؟",
+      "answer": "لا يوجد",
+      "image": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-500-28",
+      "points": 500,
+      "question": "من هو أول لاعب مصري يلعب في الدوري السويدي؟",
+      "answer": "لا يوجد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-500-29",
+      "points": 500,
+      "question": "من هو أول لاعب مصري يلعب في الدوري النرويجي؟",
+      "answer": "لا يوجد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-500-30",
+      "points": 500,
+      "question": "من هو أول لاعب مصري يلعب في الدوري الدنماركي؟",
+      "answer": "لا يوجد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-500-31",
+      "points": 500,
+      "question": "من هو أول لاعب مصري يلعب في الدوري الفنلندي؟",
+      "answer": "لا يوجد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-500-32",
+      "points": 500,
+      "question": "من هو أول لاعب مصري يلعب في الدوري الآيسلندي؟",
+      "answer": "لا يوجد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-500-33",
+      "points": 500,
+      "question": "من هو أول لاعب مصري يلعب في الدوري الأيرلندي؟",
+      "answer": "لا يوجد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-500-34",
+      "points": 500,
+      "question": "من هو أول لاعب مصري يلعب في الدوري الاسكتلندي؟",
+      "answer": "لا يوجد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-500-35",
+      "points": 500,
+      "question": "من هو أول لاعب مصري يلعب في الدوري الويلزي؟",
+      "answer": "لا يوجد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-500-36",
+      "points": 500,
+      "question": "من هو أول لاعب مصري يلعب في الدوري الإنجليزي؟",
+      "answer": "ميروسلاف",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-500-37",
+      "points": 500,
+      "question": "من هو أول لاعب مصري يلعب في الدوري الأسترالي؟",
+      "answer": "لا يوجد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-500-38",
+      "points": 500,
+      "question": "من هو أول لاعب مصري يلعب في الدوري النيوزيلندي؟",
+      "answer": "لا يوجد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-500-39",
+      "points": 500,
+      "question": "من هو أول لاعب مصري يلعب في الدوري الجنوب أفريقي؟",
+      "answer": "لا يوجد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-500-40",
+      "points": 500,
+      "question": "من هو أول لاعب مصري يلعب في الدوري المغربي؟",
+      "answer": "لا يوجد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-500-41",
+      "points": 500,
+      "question": "من هو أول لاعب مصري يلعب في الدوري التونسي؟",
+      "answer": "لا يوجد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-500-42",
+      "points": 500,
+      "question": "من هو أول لاعب مصري يلعب في الدوري الجزائري؟",
+      "answer": "لا يوجد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-500-43",
+      "points": 500,
+      "question": "من هو أول لاعب مصري يلعب في الدوري الليبي؟",
+      "answer": "لا يوجد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-500-44",
+      "points": 500,
+      "question": "من هو أول لاعب مصري يلعب في الدوري السعودي؟",
+      "answer": "لا يوجد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-500-45",
+      "points": 500,
+      "question": "من هو أول لاعب مصري يلعب في الدوري الإماراتي؟",
+      "answer": "لا يوجد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-500-46",
+      "points": 500,
+      "question": "من هو أول لاعب مصري يلعب في الدوري القطري؟",
+      "answer": "لا يوجد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-500-47",
+      "points": 500,
+      "question": "من هو أول لاعب مصري يلعب في الدوري البحريني؟",
+      "answer": "لا يوجد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-500-48",
+      "points": 500,
+      "question": "من هو أول لاعب مصري يلعب في الدوري الكويتي؟",
+      "answer": "لا يوجد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-500-49",
+      "points": 500,
+      "question": "من هو أول لاعب مصري يلعب في الدوري العماني؟",
+      "answer": "لا يوجد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-league-500-50",
+      "points": 500,
+      "question": "من هو أول لاعب مصري يلعب في الدوري اليمني؟",
+      "answer": "لا يوجد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    }
+  ],
+  "metadata": {
+    "sectionId": "sports",
+    "updatedAt": "2026-08-04",
+    "status": "ready"
+  }
 }

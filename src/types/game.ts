@@ -21,10 +21,13 @@ export interface GameSetup {
   team2Players: number
   team1CategoryIds: string[]
   team2CategoryIds: string[]
+  team1LifelineIds: string[]
+  team2LifelineIds: string[]
 }
 
 export type CategoryOwner = TeamId | null
 
 export const CATEGORIES_PER_TEAM = 3
+export const LIFELINES_PER_TEAM = 3
 export const MIN_PLAYERS = 1
 export const MAX_PLAYERS = 12

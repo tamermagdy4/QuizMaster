@@ -1,11 +1,910 @@
-﻿{
-    "categoryId":  "arabic-movies",
-    "questions":  [
-
-                  ],
-    "metadata":  {
-                     "sectionId":  "movies",
-                     "updatedAt":  "2026-08-03",
-                     "status":  "pending"
-                 }
+{
+  "categoryId": "arabic-movies",
+  "questions": [
+    {
+      "id": "arabic-movies-100-1",
+      "points": 100,
+      "question": "من هو الفنان الذي قال طب وربنا وربنا كمان مره لنيمك من المغرب يا صين؟",
+      "answer": "محمد هنيدي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-movies-100-2",
+      "points": 100,
+      "question": "في أي فيلم قيل عبارة طب وربنا وربنا كمان مره لنيمك من المغرب يا صين؟",
+      "answer": "فول الصين العظيم",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-movies-100-3",
+      "points": 100,
+      "question": "من هو الفنان الذي قال أنت مُشكلتك يا حازم انك عاوز تمسك العصاية من النص؟",
+      "answer": "أحمد حلمي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-movies-100-4",
+      "points": 100,
+      "question": "في أي فيلم قيل عبارة أنت مُشكلتك يا حازم انك عاوز تمسك العصاية من النص؟",
+      "answer": "السلم والتعبان",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-movies-100-5",
+      "points": 100,
+      "question": "من هي الفنانة التي قالت البيت ده طاهر وهيفضل طول عمره طاهر؟",
+      "answer": "حنان الطويل",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-movies-100-6",
+      "points": 100,
+      "question": "في أي فيلم قيل عبارة البيت ده طاهر وهيفضل طول عمره طاهر؟",
+      "answer": "عسكر في المعسكر",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-movies-100-7",
+      "points": 100,
+      "question": "من هو الفنان الذي قال ست أنا مش شايف ايوتها ست؟",
+      "answer": "عبدالفتاح القصرى",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-movies-100-8",
+      "points": 100,
+      "question": "في أي فيلم قيل عبارة ست أنا مش شايف ايوتها ست؟",
+      "answer": "سكر هانم",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-movies-100-9",
+      "points": 100,
+      "question": "من هو الفنان الذي قال كلنا فاسدون. كلنا فاسدون. لا أستثني أحدًا؟",
+      "answer": "أحمد زكي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-movies-100-10",
+      "points": 100,
+      "question": "في أي فيلم قيل عبارة كلنا فاسدون. كلنا فاسدون. لا أستثني أحدًا؟",
+      "answer": "ضد الحكومة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-movies-100-11",
+      "points": 100,
+      "question": "من هي بطلة فيلم من 30 سنة؟",
+      "answer": "منى زكي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-movies-100-12",
+      "points": 100,
+      "question": "من هي بطلة فيلم عبود على الحدود؟",
+      "answer": "غادة عادل",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-movies-100-13",
+      "points": 100,
+      "question": "من هي بطلة فيلم طير أنت؟",
+      "answer": "دنيا سمير غانم",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-movies-100-14",
+      "points": 100,
+      "question": "من هي بطلة فيلم كده رضا؟",
+      "answer": "منة شلبي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-movies-100-15",
+      "points": 100,
+      "question": "من هي بطلة فيلم حرامية في تايلاند؟",
+      "answer": "حنان ترك",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-movies-100-16",
+      "points": 100,
+      "question": "من هو مخرج فيلم نادي الرجال السري؟",
+      "answer": "خالد الحلفاوي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-movies-100-17",
+      "points": 100,
+      "question": "من هو مخرج فيلم الفيل الأزرق؟",
+      "answer": "مروان حامد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-movies-100-18",
+      "points": 100,
+      "question": "من هو مخرج فيلم قلب أمه؟",
+      "answer": "عمرو صلاح",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-movies-100-19",
+      "points": 100,
+      "question": "من هو مخرج فيلم القرد بيتكلم؟",
+      "answer": "بيتر ميمي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-movies-100-20",
+      "points": 100,
+      "question": "من هو مخرج فيلم صعيدي في الجامعة الامريكية؟",
+      "answer": "سعيد حامد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-movies-100-21",
+      "points": 100,
+      "question": "في أي فيلم اتقال عبارة على اساس انك مطقم؟",
+      "answer": "فيلم ابو علي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-movies-100-22",
+      "points": 100,
+      "question": "في أي فيلم اتقال عبارة ده لفظ يقوله دكتور محترم عيب على المتحف إلى انت لابسه؟",
+      "answer": "فيلم طير انت",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-movies-100-23",
+      "points": 100,
+      "question": "في أي فيلم اتقال عبارة ميس ريم ده اسم مركب؟ ولا الوالد كان اسمه ريم؟",
+      "answer": "فيلم حرامية فى كى جى ٢",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-movies-100-24",
+      "points": 100,
+      "question": "في أي فيلم قال عادل إمام بلدى طنطا و احب اعيش اونطه؟",
+      "answer": "فيلم لصوص لكن ظرفاء",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-movies-100-25",
+      "points": 100,
+      "question": "في أي فيلم اتقال عبارة مين وبره الفوطة؟",
+      "answer": "فيلم ظرف طارق",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-movies-100-26",
+      "points": 100,
+      "question": "في أي فيلم اتقال عبارة واحد بيرة للمرحومة؟",
+      "answer": "فيلم الباشا تلميذ",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-movies-100-27",
+      "points": 100,
+      "question": "في أي فيلم اتقال عبارة الله يكون في عونك يا سامية؟",
+      "answer": "فيلم غبي منه فيه",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-movies-100-28",
+      "points": 100,
+      "question": "ما هو الفيلم إلى اتقال فيه عبارة مش انا عيد ميلادي النهاردة؟",
+      "answer": "فيلم السفارة في العمارة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-movies-100-29",
+      "points": 100,
+      "question": "في أي فيلم اتقال عبارة tomorrow يا خسارة كان نفسي يبقي بكرة؟",
+      "answer": "فيلم تمن دستة اشرار",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-movies-100-30",
+      "points": 100,
+      "question": "ما هو الفيلم إلى اتقال فيه عبارة احنا بقينا بنتعلق اكتر ما بنستحمى؟",
+      "answer": "فيلم وش إجرام",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-movies-300-1",
+      "points": 300,
+      "question": "في أي فيلم اتقال عبارة انت جاي تعزي ولا حتى تهرج؟… أنا جاي أهرج؟",
+      "answer": "فيلم الكيف",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-movies-300-2",
+      "points": 300,
+      "question": "في أي فيلم اتقال عبارة عاجى معلمو كدة؟",
+      "answer": "الناظر",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-movies-300-3",
+      "points": 300,
+      "question": "في أي فيلم اتقال عبارة امضى يا اشول؟",
+      "answer": "فيلم سلام يا صاحبي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-movies-300-4",
+      "points": 300,
+      "question": "ما هو الفيلم إلى قال فيه عبارة كنت محتاج يومين كمان؟",
+      "answer": "فيلم زكي شان",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-movies-300-5",
+      "points": 300,
+      "question": "ما اسم أول فيلم مصري عرض في الخارج؟",
+      "answer": "فيلم وداد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-movies-300-6",
+      "points": 300,
+      "question": "ما اسم أول فيلم عربي ناطق؟",
+      "answer": "فيلم أولاد الذوات",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-movies-300-7",
+      "points": 300,
+      "question": "في أي بلد عرض أول فيلم في العالم العربي كله؟",
+      "answer": "في محافظة الإسكندرية",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-movies-300-8",
+      "points": 300,
+      "question": "ما أسماء أبطال أول فيلم عربي ناطق؟",
+      "answer": "الفنان يوسف وهبي والفنانة القديرة أمينة رزق",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-movies-300-9",
+      "points": 300,
+      "question": "ما اسم اول فيلم عربي يعرض بالألوان؟",
+      "answer": "فيلم لست ملاكا بطولة محمد عبد الوهاب",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-movies-300-10",
+      "points": 300,
+      "question": "من هم الأبطال في فيلم شباب امرأة؟",
+      "answer": "الفنان شكري سرحان الفنانة شادية وتحية كاريوكا",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-movies-300-11",
+      "points": 300,
+      "question": "ما اسم بطل فيلم الفيل الأزرق؟",
+      "answer": "الفنان كريم عبد العزيز",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-movies-300-12",
+      "points": 300,
+      "question": "من هم ابطال فيلم الافوكاتو؟",
+      "answer": "الفنان عادل إمام والفنانة يسرا",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-movies-300-13",
+      "points": 300,
+      "question": "من هي بطلة فيلم الباب المفتوح؟",
+      "answer": "الفنانة فاتن حمامة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-movies-300-14",
+      "points": 300,
+      "question": "ما هي اسماء ابطال فيلم غزل البنات؟",
+      "answer": "الفنان نجيب الريحاني وأنور وجدي والفنانة ليلى مراد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-movies-300-15",
+      "points": 300,
+      "question": "من هو الفنان الذي قال طب وربنا وربنا كمان مره لنيمك من المغرب يا صين؟",
+      "answer": "محمد هنيدي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-movies-300-16",
+      "points": 300,
+      "question": "من هو الفنان الذي قال أنت مُشكلتك يا حازم انك عاوز تمسك العصاية من النص؟",
+      "answer": "أحمد حلمي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-movies-300-17",
+      "points": 300,
+      "question": "من هي الفنانة التي قالت البيت ده طاهر وهيفضل طول عمره طاهر؟",
+      "answer": "حنان الطويل",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-movies-300-18",
+      "points": 300,
+      "question": "من هو الفنان الذي قال ست أنا مش شايف ايوتها ست؟",
+      "answer": "عبدالفتاح القصرى",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-movies-300-19",
+      "points": 300,
+      "question": "من هو الفنان الذي قال كلنا فاسدون. كلنا فاسدون. لا أستثني أحدًا؟",
+      "answer": "أحمد زكي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-movies-300-20",
+      "points": 300,
+      "question": "من هي بطلة فيلم من 30 سنة؟",
+      "answer": "منى زكي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-movies-300-21",
+      "points": 300,
+      "question": "من هي بطلة فيلم عبود على الحدود؟",
+      "answer": "غادة عادل",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-movies-300-22",
+      "points": 300,
+      "question": "من هي بطلة فيلم طير أنت؟",
+      "answer": "دنيا سمير غانم",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-movies-300-23",
+      "points": 300,
+      "question": "من هي بطلة فيلم كده رضا؟",
+      "answer": "منة شلبي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-movies-300-24",
+      "points": 300,
+      "question": "من هي بطلة فيلم حرامية في تايلاند؟",
+      "answer": "حنان ترك",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-movies-300-25",
+      "points": 300,
+      "question": "من هو مخرج فيلم نادي الرجال السري؟",
+      "answer": "خالد الحلفاوي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-movies-300-26",
+      "points": 300,
+      "question": "من هو مخرج فيلم الفيل الأزرق؟",
+      "answer": "مروان حامد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-movies-300-27",
+      "points": 300,
+      "question": "من هو مخرج فيلم قلب أمه؟",
+      "answer": "عمرو صلاح",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-movies-300-28",
+      "points": 300,
+      "question": "من هو مخرج فيلم القرد بيتكلم؟",
+      "answer": "بيتر ميمي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-movies-300-29",
+      "points": 300,
+      "question": "من هو مخرج فيلم صعيدي في الجامعة الامريكية؟",
+      "answer": "سعيد حامد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-movies-300-30",
+      "points": 300,
+      "question": "في أي فيلم اتقال عبارة على اساس انك مطقم؟",
+      "answer": "فيلم ابو علي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-movies-300-31",
+      "points": 300,
+      "question": "في أي فيلم اتقال عبارة ده لفظ يقوله دكتور محترم عيب على المتحف إلى انت لابسه؟",
+      "answer": "فيلم طير انت",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-movies-300-32",
+      "points": 300,
+      "question": "في أي فيلم اتقال عبارة ميس ريم ده اسم مركب؟ ولا الوالد كان اسمه ريم؟",
+      "answer": "فيلم حرامية فى كى جى ٢",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-movies-300-33",
+      "points": 300,
+      "question": "في أي فيلم قال عادل إمام بلدى طنطا و احب اعيش اونطه؟",
+      "answer": "فيلم لصوص لكن ظرفاء",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-movies-300-34",
+      "points": 300,
+      "question": "في أي فيلم اتقال عبارة مين وبره الفوطة؟",
+      "answer": "فيلم ظرف طارق",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-movies-300-35",
+      "points": 300,
+      "question": "في أي فيلم اتقال عبارة واحد بيرة للمرحومة؟",
+      "answer": "فيلم الباشا تلميذ",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-movies-500-1",
+      "points": 500,
+      "question": "في أي فيلم اتقال عبارة الله يكون في عونك يا سامية؟",
+      "answer": "فيلم غبي منه فيه",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-movies-500-2",
+      "points": 500,
+      "question": "ما هو الفيلم إلى اتقال فيه عبارة مش انا عيد ميلادي النهاردة؟",
+      "answer": "فيلم السفارة في العمارة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-movies-500-3",
+      "points": 500,
+      "question": "في أي فيلم اتقال عبارة tomorrow يا خسارة كان نفسي يبقي بكرة؟",
+      "answer": "فيلم تمن دستة اشرار",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-movies-500-4",
+      "points": 500,
+      "question": "ما هو الفيلم إلى اتقال فيه عبارة احنا بقينا بنتعلق اكتر ما بنستحمى؟",
+      "answer": "فيلم وش إجرام",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-movies-500-5",
+      "points": 500,
+      "question": "في أي فيلم اتقال عبارة انت جاي تعزي ولا حتى تهرج؟… أنا جاي أهرج؟",
+      "answer": "فيلم الكيف",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-movies-500-6",
+      "points": 500,
+      "question": "في أي فيلم اتقال عبارة عاجى معلمو كدة؟",
+      "answer": "الناظر",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-movies-500-7",
+      "points": 500,
+      "question": "في أي فيلم اتقال عبارة امضى يا اشول؟",
+      "answer": "فيلم سلام يا صاحبي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-movies-500-8",
+      "points": 500,
+      "question": "ما هو الفيلم إلى قال فيه عبارة كنت محتاج يومين كمان؟",
+      "answer": "فيلم زكي شان",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-movies-500-9",
+      "points": 500,
+      "question": "ما اسم أول فيلم مصري عرض في الخارج؟",
+      "answer": "فيلم وداد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-movies-500-10",
+      "points": 500,
+      "question": "ما اسم أول فيلم عربي ناطق؟",
+      "answer": "فيلم أولاد الذوات",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-movies-500-11",
+      "points": 500,
+      "question": "في أي بلد عرض أول فيلم في العالم العربي كله؟",
+      "answer": "في محافظة الإسكندرية",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-movies-500-12",
+      "points": 500,
+      "question": "ما أسماء أبطال أول فيلم عربي ناطق؟",
+      "answer": "الفنان يوسف وهبي والفنانة القديرة أمينة رزق",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-movies-500-13",
+      "points": 500,
+      "question": "ما اسم اول فيلم عربي يعرض بالألوان؟",
+      "answer": "فيلم لست ملاكا بطولة محمد عبد الوهاب",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-movies-500-14",
+      "points": 500,
+      "question": "من هم الأبطال في فيلم شباب امرأة؟",
+      "answer": "الفنان شكري سرحان الفنانة شادية وتحية كاريوكا",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-movies-500-15",
+      "points": 500,
+      "question": "ما اسم بطل فيلم الفيل الأزرق؟",
+      "answer": "الفنان كريم عبد العزيز",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-movies-500-16",
+      "points": 500,
+      "question": "من هم ابطال فيلم الافوكاتو؟",
+      "answer": "الفنان عادل إمام والفنانة يسرا",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-movies-500-17",
+      "points": 500,
+      "question": "من هي بطلة فيلم الباب المفتوح؟",
+      "answer": "الفنانة فاتن حمامة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-movies-500-18",
+      "points": 500,
+      "question": "ما هي اسماء ابطال فيلم غزل البنات؟",
+      "answer": "الفنان نجيب الريحاني وأنور وجدي والفنانة ليلى مراد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-movies-500-19",
+      "points": 500,
+      "question": "من هو الفنان الذي قال طب وربنا وربنا كمان مره لنيمك من المغرب يا صين؟",
+      "answer": "محمد هنيدي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-movies-500-20",
+      "points": 500,
+      "question": "من هو الفنان الذي قال أنت مُشكلتك يا حازم انك عاوز تمسك العصاية من النص؟",
+      "answer": "أحمد حلمي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-movies-500-21",
+      "points": 500,
+      "question": "من هي الفنانة التي قالت البيت ده طاهر وهيفضل طول عمره طاهر؟",
+      "answer": "حنان الطويل",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-movies-500-22",
+      "points": 500,
+      "question": "من هو الفنان الذي قال ست أنا مش شايف ايوتها ست؟",
+      "answer": "عبدالفتاح القصرى",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-movies-500-23",
+      "points": 500,
+      "question": "من هو الفنان الذي قال كلنا فاسدون. كلنا فاسدون. لا أستثني أحدًا؟",
+      "answer": "أحمد زكي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-movies-500-24",
+      "points": 500,
+      "question": "من هي بطلة فيلم من 30 سنة؟",
+      "answer": "منى زكي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-movies-500-25",
+      "points": 500,
+      "question": "من هي بطلة فيلم عبود على الحدود؟",
+      "answer": "غادة عادل",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-movies-500-26",
+      "points": 500,
+      "question": "من هي بطلة فيلم طير أنت؟",
+      "answer": "دنيا سمير غانم",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-movies-500-27",
+      "points": 500,
+      "question": "من هي بطلة فيلم كده رضا؟",
+      "answer": "منة شلبي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-movies-500-28",
+      "points": 500,
+      "question": "من هي بطلة فيلم حرامية في تايلاند؟",
+      "answer": "حنان ترك",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-movies-500-29",
+      "points": 500,
+      "question": "من هو مخرج فيلم نادي الرجال السري؟",
+      "answer": "خالد الحلفاوي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-movies-500-30",
+      "points": 500,
+      "question": "من هو مخرج فيلم الفيل الأزرق؟",
+      "answer": "مروان حامد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-movies-500-31",
+      "points": 500,
+      "question": "من هو مخرج فيلم قلب أمه؟",
+      "answer": "عمرو صلاح",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-movies-500-32",
+      "points": 500,
+      "question": "من هو مخرج فيلم القرد بيتكلم؟",
+      "answer": "بيتر ميمي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-movies-500-33",
+      "points": 500,
+      "question": "من هو مخرج فيلم صعيدي في الجامعة الامريكية؟",
+      "answer": "سعيد حامد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-movies-500-34",
+      "points": 500,
+      "question": "في أي فيلم اتقال عبارة على اساس انك مطقم؟",
+      "answer": "فيلم ابو علي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-movies-500-35",
+      "points": 500,
+      "question": "في أي فيلم اتقال عبارة ده لفظ يقوله دكتور محترم عيب على المتحف إلى انت لابسه؟",
+      "answer": "فيلم طير انت",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    }
+  ],
+  "metadata": {
+    "sectionId": "movies",
+    "updatedAt": "2026-08-05",
+    "status": "ready"
+  }
 }

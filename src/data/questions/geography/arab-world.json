@@ -1,11 +1,1360 @@
-﻿{
-    "categoryId":  "arab-world",
-    "questions":  [
-
-                  ],
-    "metadata":  {
-                     "sectionId":  "geography",
-                     "updatedAt":  "2026-08-03",
-                     "status":  "pending"
-                 }
+{
+  "categoryId": "arab-world",
+  "questions": [
+    {
+      "id": "arab-world-100-1",
+      "points": 100,
+      "question": "ما هي عاصمة المملكة العربية السعودية؟",
+      "answer": "الرياض",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-100-2",
+      "points": 100,
+      "question": "ما هي عاصمة الإمارات العربية المتحدة؟",
+      "answer": "أبوظبي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-100-3",
+      "points": 100,
+      "question": "ما هي عاصمة الكويت؟",
+      "answer": "مدينة الكويت",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-100-4",
+      "points": 100,
+      "question": "ما هي عاصمة قطر؟",
+      "answer": "الدوحة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-100-5",
+      "points": 100,
+      "question": "ما هي عاصمة البحرين؟",
+      "answer": "المنامة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-100-6",
+      "points": 100,
+      "question": "ما هي عاصمة سلطنة عمان؟",
+      "answer": "مسقط",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-100-7",
+      "points": 100,
+      "question": "ما هي عاصمة الأردن؟",
+      "answer": "عمان",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-100-8",
+      "points": 100,
+      "question": "ما هي عاصمة لبنان؟",
+      "answer": "بيروت",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-100-9",
+      "points": 100,
+      "question": "ما هي عاصمة سوريا؟",
+      "answer": "دمشق",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-100-10",
+      "points": 100,
+      "question": "ما هي عاصمة العراق؟",
+      "answer": "بغداد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-100-11",
+      "points": 100,
+      "question": "ما هي عاصمة فلسطين؟",
+      "answer": "القدس",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-100-12",
+      "points": 100,
+      "question": "ما هي عاصمة اليمن؟",
+      "answer": "صنعاء",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-100-13",
+      "points": 100,
+      "question": "ما هي عاصمة الجزائر؟",
+      "answer": "الجزائر",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-100-14",
+      "points": 100,
+      "question": "ما هي عاصمة المغرب؟",
+      "answer": "الرباط",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-100-15",
+      "points": 100,
+      "question": "ما هي عاصمة تونس؟",
+      "answer": "تونس",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-100-16",
+      "points": 100,
+      "question": "ما هي عاصمة ليبيا؟",
+      "answer": "طرابلس",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-100-17",
+      "points": 100,
+      "question": "ما هي عاصمة السودان؟",
+      "answer": "الخرطوم",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-100-18",
+      "points": 100,
+      "question": "ما هي عاصمة موريتانيا؟",
+      "answer": "نواكشوط",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-100-19",
+      "points": 100,
+      "question": "ما هي عاصمة الصومال؟",
+      "answer": "مقديشيو",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-100-20",
+      "points": 100,
+      "question": "ما هي عاصمة جيبوتي؟",
+      "answer": "جيبوتي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-100-21",
+      "points": 100,
+      "question": "ما هي عاصمة جزر القمر؟",
+      "answer": "موروني",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-100-22",
+      "points": 100,
+      "question": "كم عدد الدول العربية؟",
+      "answer": "22 دولة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-100-23",
+      "points": 100,
+      "question": "ما هي أكبر دولة عربية من حيث المساحة؟",
+      "answer": "الجزائر",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-100-24",
+      "points": 100,
+      "question": "ما هي أصغر دولة عربية من حيث المساحة؟",
+      "answer": "جزر القمر",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-100-25",
+      "points": 100,
+      "question": "ما هي أكبر دولة عربية من حيث السكان؟",
+      "answer": "مصر",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-100-26",
+      "points": 100,
+      "question": "ما هي الدولة العربية التي تقع في آسيا؟",
+      "answer": "المملكة العربية السعودية",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-100-27",
+      "points": 100,
+      "question": "ما هي الدولة العربية التي تقع في أفريقيا؟",
+      "answer": "مصر",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-100-28",
+      "points": 100,
+      "question": "ما هي الدولة العربية التي تطل على البحر الأحمر؟",
+      "answer": "المملكة العربية السعودية",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-100-29",
+      "points": 100,
+      "question": "ما هي الدولة العربية التي تطل على البحر المتوسط؟",
+      "answer": "سوريا",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-100-30",
+      "points": 100,
+      "question": "ما هي الدولة العربية التي تطل على الخليج العربي؟",
+      "answer": "الكويت",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-100-31",
+      "points": 100,
+      "question": "ما هي الدولة العربية التي تطل على المحيط الأطلسي؟",
+      "answer": "المغرب",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-100-32",
+      "points": 100,
+      "question": "ما هي الدولة العربية التي تطل على المحيط الهندي؟",
+      "answer": "الصومال",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-100-33",
+      "points": 100,
+      "question": "ما هي الدولة العربية التي تضم مكة المكرمة؟",
+      "answer": "المملكة العربية السعودية",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-100-34",
+      "points": 100,
+      "question": "ما هي الدولة العربية التي تضم المدينة المنورة؟",
+      "answer": "المملكة العربية السعودية",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-100-35",
+      "points": 100,
+      "question": "ما هي الدولة العربية التي تضم الأقصى؟",
+      "answer": "فلسطين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-100-36",
+      "points": 100,
+      "question": "ما هي الدولة العربية التي تضم الأهرامات؟",
+      "answer": "مصر",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-100-37",
+      "points": 100,
+      "question": "ما هي الدولة العربية التي تضم برج خليفة؟",
+      "answer": "الإمارات العربية المتحدة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-100-38",
+      "points": 100,
+      "question": "ما هي الدولة العربية التي تضم الحرم المكي؟",
+      "answer": "المملكة العربية السعودية",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-100-39",
+      "points": 100,
+      "question": "ما هي الدولة العربية التي تضم الحرم المدني؟",
+      "answer": "المملكة العربية السعودية",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-100-40",
+      "points": 100,
+      "question": "ما هي الدولة العربية التي تضم مدينة دبي؟",
+      "answer": "الإمارات العربية المتحدة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-100-41",
+      "points": 100,
+      "question": "ما هي الدولة العربية التي تضم مدينة الدوحة؟",
+      "answer": "قطر",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-100-42",
+      "points": 100,
+      "question": "ما هي الدولة العربية التي تضم مدينة الكويت؟",
+      "answer": "الكويت",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-100-43",
+      "points": 100,
+      "question": "ما هي الدولة العربية التي تضم مدينة مسقط؟",
+      "answer": "سلطنة عمان",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-100-44",
+      "points": 100,
+      "question": "ما هي الدولة العربية التي تضم مدينة بيروت؟",
+      "answer": "لبنان",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-100-45",
+      "points": 100,
+      "question": "ما هي الدولة العربية التي تضم مدينة دمشق؟",
+      "answer": "سوريا",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-100-46",
+      "points": 100,
+      "question": "ما هي الدولة العربية التي تضم مدينة بغداد؟",
+      "answer": "العراق",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-100-47",
+      "points": 100,
+      "question": "ما هي الدولة العربية التي تضم مدينة عمّان؟",
+      "answer": "الأردن",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-100-48",
+      "points": 100,
+      "question": "ما هي الدولة العربية التي تضم مدينة القاهرة؟",
+      "answer": "مصر",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-100-49",
+      "points": 100,
+      "question": "ما هي الدولة العربية التي تضم مدينة الرباط؟",
+      "answer": "المغرب",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-100-50",
+      "points": 100,
+      "question": "ما هي الدولة العربية التي تضم مدينة تونس؟",
+      "answer": "تونس",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-300-1",
+      "points": 300,
+      "question": "ما هي أكبر دولة عربية من حيث المساحة؟",
+      "answer": "الجزائر",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-300-2",
+      "points": 300,
+      "question": "ما هي أصغر دولة عربية من حيث المساحة؟",
+      "answer": "جزر القمر",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-300-3",
+      "points": 300,
+      "question": "ما هي أكبر دولة عربية من حيث السكان؟",
+      "answer": "مصر",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-300-4",
+      "points": 300,
+      "question": "ما هي أصغر دولة عربية من حيث السكان؟",
+      "answer": "جزر القمر",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-300-5",
+      "points": 300,
+      "question": "ما هي الدولة العربية التي تقع في شبه الجزيرة العربية؟",
+      "answer": "المملكة العربية السعودية",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-300-6",
+      "points": 300,
+      "question": "ما هي الدولة العربية التي تقع في شمال أفريقيا؟",
+      "answer": "المغرب",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-300-7",
+      "points": 300,
+      "question": "ما هي الدولة العربية التي تقع في شرق أفريقيا؟",
+      "answer": "مصر",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-300-8",
+      "points": 300,
+      "question": "ما هي الدولة العربية التي تقع في غرب أفريقيا؟",
+      "answer": "موريتانيا",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-300-9",
+      "points": 300,
+      "question": "ما هي الدولة العربية التي تقع في جنوب أفريقيا؟",
+      "answer": "الصومال",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-300-10",
+      "points": 300,
+      "question": "ما هي الدولة العربية التي تقع في القرن الأفريقي؟",
+      "answer": "جيبوتي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-300-11",
+      "points": 300,
+      "question": "ما هي الدولة العربية التي تطل على البحر الأحمر؟",
+      "answer": "السودان",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-300-12",
+      "points": 300,
+      "question": "ما هي الدولة العربية التي تطل على البحر المتوسط؟",
+      "answer": "سوريا",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-300-13",
+      "points": 300,
+      "question": "ما هي الدولة العربية التي تطل على الخليج العربي؟",
+      "answer": "الكويت",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-300-14",
+      "points": 300,
+      "question": "ما هي الدولة العربية التي تطل على بحر العرب؟",
+      "answer": "الإمارات العربية المتحدة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-300-15",
+      "points": 300,
+      "question": "ما هي الدولة العربية التي تطل على المحيط الهندي؟",
+      "answer": "عمان",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-300-16",
+      "points": 300,
+      "question": "ما هي الدولة العربية التي تطل على المحيط الأطلسي؟",
+      "answer": "المغرب",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-300-17",
+      "points": 300,
+      "question": "ما هي الدولة العربية التي تضم نهر النيل؟",
+      "answer": "مصر",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-300-18",
+      "points": 300,
+      "question": "ما هي الدولة العربية التي تضم نهر دجلة والفرات؟",
+      "answer": "العراق",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-300-19",
+      "points": 300,
+      "question": "ما هي الدولة العربية التي تضم نهر الأردن؟",
+      "answer": "الأردن",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-300-20",
+      "points": 300,
+      "question": "ما هي الدولة العربية التي تضم نهر الليطاني؟",
+      "answer": "لبنان",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-300-21",
+      "points": 300,
+      "question": "ما هي الدولة العربية التي تضم الربع الخالي؟",
+      "answer": "المملكة العربية السعودية",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-300-22",
+      "points": 300,
+      "question": "ما هي الدولة العربية التي تضم الصحراء الكبرى؟",
+      "answer": "الجزائر",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-300-23",
+      "points": 300,
+      "question": "ما هي الدولة العربية التي تضم جبل طوبقال؟",
+      "answer": "المغرب",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-300-24",
+      "points": 300,
+      "question": "ما هي الدولة العربية التي تضم جبل تاهات؟",
+      "answer": "الجزائر",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-300-25",
+      "points": 300,
+      "question": "ما هي الدولة العربية التي تضم جبل شمبي؟",
+      "answer": "تونس",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-300-26",
+      "points": 300,
+      "question": "ما هي الدولة العربية التي تضم جبل بيكو؟",
+      "answer": "ليبيا",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-300-27",
+      "points": 300,
+      "question": "ما هي الدولة العربية التي تضم جبل في اليمن؟",
+      "answer": "اليمن",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-300-28",
+      "points": 300,
+      "question": "ما هي الدولة العربية التي تضم البحر الميت؟",
+      "answer": "الأردن",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-300-29",
+      "points": 300,
+      "question": "ما هي الدولة العربية التي تضم البحر الأحمر؟",
+      "answer": "السودان",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-300-30",
+      "points": 300,
+      "question": "ما هي الدولة العربية التي تضم بحر العرب؟",
+      "answer": "عمان",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-300-31",
+      "points": 300,
+      "question": "ما هي الدولة العربية التي تضم الخليج العربي؟",
+      "answer": "الكويت",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-300-32",
+      "points": 300,
+      "question": "ما هي الدولة العربية التي تضم المحيط الأطلسي؟",
+      "answer": "المغرب",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-300-33",
+      "points": 300,
+      "question": "ما هي الدولة العربية التي تضم المحيط الهندي؟",
+      "answer": "الصومال",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-300-34",
+      "points": 300,
+      "question": "ما هي الدولة العربية التي تضم القرن الأفريقي؟",
+      "answer": "جيبوتي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-300-35",
+      "points": 300,
+      "question": "ما هي الدولة العربية التي تضم جزر القمر؟",
+      "answer": "جزر القمر",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-300-36",
+      "points": 300,
+      "question": "ما هي الدولة العربية التي تضم موريتانيا؟",
+      "answer": "موريتانيا",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-300-37",
+      "points": 300,
+      "question": "ما هي الدولة العربية التي تضم الصومال؟",
+      "answer": "الصومال",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-300-38",
+      "points": 300,
+      "question": "ما هي الدولة العربية التي تضم جيبوتي؟",
+      "answer": "جيبوتي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-300-39",
+      "points": 300,
+      "question": "ما هي الدولة العربية التي تضم السودان؟",
+      "answer": "السودان",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-300-40",
+      "points": 300,
+      "question": "ما هي الدولة العربية التي تضم ليبيا؟",
+      "answer": "ليبيا",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-300-41",
+      "points": 300,
+      "question": "ما هي الدولة العربية التي تضم تونس؟",
+      "answer": "تونس",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-300-42",
+      "points": 300,
+      "question": "ما هي الدولة العربية التي تضم الجزائر؟",
+      "answer": "الجزائر",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-300-43",
+      "points": 300,
+      "question": "ما هي الدولة العربية التي تضم المغرب؟",
+      "answer": "المغرب",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-300-44",
+      "points": 300,
+      "question": "ما هي الدولة العربية التي تضم مصر؟",
+      "answer": "مصر",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-300-45",
+      "points": 300,
+      "question": "ما هي الدولة العربية التي تضم فلسطين؟",
+      "answer": "فلسطين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-300-46",
+      "points": 300,
+      "question": "ما هي الدولة العربية التي تضم العراق؟",
+      "answer": "العراق",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-300-47",
+      "points": 300,
+      "question": "ما هي الدولة العربية التي تضم سوريا؟",
+      "answer": "سوريا",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-300-48",
+      "points": 300,
+      "question": "ما هي الدولة العربية التي تضم لبنان؟",
+      "answer": "لبنان",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-300-49",
+      "points": 300,
+      "question": "ما هي الدولة العربية التي تضم الأردن؟",
+      "answer": "الأردن",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-300-50",
+      "points": 300,
+      "question": "ما هي الدولة العربية التي تضم اليمن؟",
+      "answer": "اليمن",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-500-1",
+      "points": 500,
+      "question": "ما هو النهر الذي يمر في مصر؟",
+      "answer": "نهر النيل",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-500-2",
+      "points": 500,
+      "question": "ما هو النهر الذي يمر في العراق؟",
+      "answer": "نهر دجلة والفرات",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-500-3",
+      "points": 500,
+      "question": "ما هو النهر الذي يمر في سوريا؟",
+      "answer": "نهر الفرات",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-500-4",
+      "points": 500,
+      "question": "ما هو النهر الذي يمر في الأردن؟",
+      "answer": "نهر الأردن",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-500-5",
+      "points": 500,
+      "question": "ما هو النهر الذي يمر في لبنان؟",
+      "answer": "نهر الليطاني",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-500-6",
+      "points": 500,
+      "question": "ما هو البحر الذي يغسل السعودية؟",
+      "answer": "الخليج العربي والبحر الأحمر",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-500-7",
+      "points": 500,
+      "question": "ما هو البحر الذي يغسل الإمارات؟",
+      "answer": "الخليج العربي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-500-8",
+      "points": 500,
+      "question": "ما هو البحر الذي يغسل قطر؟",
+      "answer": "الخليج العربي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-500-9",
+      "points": 500,
+      "question": "ما هو البحر الذي يغسل البحرين؟",
+      "answer": "الخليج العربي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-500-10",
+      "points": 500,
+      "question": "ما هو البحر الذي يغسل الكويت؟",
+      "answer": "الخليج العربي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-500-11",
+      "points": 500,
+      "question": "ما هو البحر الذي يغسل عمان؟",
+      "answer": "بحر العرب",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-500-12",
+      "points": 500,
+      "question": "ما هو البحر الذي يغسل اليمن؟",
+      "answer": "بحر العرب والبحر الأحمر",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-500-13",
+      "points": 500,
+      "question": "ما هو البحر الذي يغسل الأردن؟",
+      "answer": "البحر الميت",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-500-14",
+      "points": 500,
+      "question": "ما هو البحر الذي يغسل لبنان؟",
+      "answer": "البحر المتوسط",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-500-15",
+      "points": 500,
+      "question": "ما هو البحر الذي يغسل سوريا؟",
+      "answer": "البحر المتوسط",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-500-16",
+      "points": 500,
+      "question": "ما هو البحر الذي يغسل العراق؟",
+      "answer": "الخليج العربي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-500-17",
+      "points": 500,
+      "question": "ما هو البحر الذي يغسل فلسطين؟",
+      "answer": "البحر المتوسط",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-500-18",
+      "points": 500,
+      "question": "ما هو البحر الذي يغسل الجزائر؟",
+      "answer": "البحر المتوسط",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-500-19",
+      "points": 500,
+      "question": "ما هو البحر الذي يغسل المغرب؟",
+      "answer": "المحيط الأطلسي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-500-20",
+      "points": 500,
+      "question": "ما هو البحر الذي يغسل تونس؟",
+      "answer": "البحر المتوسط",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-500-21",
+      "points": 500,
+      "question": "ما هو البحر الذي يغسل ليبيا؟",
+      "answer": "البحر المتوسط",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-500-22",
+      "points": 500,
+      "question": "ما هو البحر الذي يغسل السودان؟",
+      "answer": "البحر الأحمر",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-500-23",
+      "points": 500,
+      "question": "ما هو البحر الذي يغسل موريتانيا؟",
+      "answer": "المحيط الأطلسي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-500-24",
+      "points": 500,
+      "question": "ما هو البحر الذي يغسل الصومال؟",
+      "answer": "المحيط الهندي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-500-25",
+      "points": 500,
+      "question": "ما هو البحر الذي يغسل جيبوتي؟",
+      "answer": "بحر العرب",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-500-26",
+      "points": 500,
+      "question": "ما هو البحر الذي يغسل جزر القمر؟",
+      "answer": "المحيط الهندي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-500-27",
+      "points": 500,
+      "question": "ما هو الصحراء في المملكة العربية السعودية؟",
+      "answer": "الربع الخالي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-500-28",
+      "points": 500,
+      "question": "ما هو الصحراء في الجزائر؟",
+      "answer": "الصحراء الجزائرية",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-500-29",
+      "points": 500,
+      "question": "ما هو الصحراء في المغرب؟",
+      "answer": "الصحراء المغربية",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-500-30",
+      "points": 500,
+      "question": "ما هو الصحراء في ليبيا؟",
+      "answer": "الصحراء الليبية",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-500-31",
+      "points": 500,
+      "question": "ما هو الصحراء في مصر؟",
+      "answer": "الصحراء المصرية",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-500-32",
+      "points": 500,
+      "question": "ما هو الصحراء في تونس؟",
+      "answer": "الصحراء التونسية",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-500-33",
+      "points": 500,
+      "question": "ما هو الصحراء في السودان؟",
+      "answer": "الصحراء السودانية",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-500-34",
+      "points": 500,
+      "question": "ما هو الصحراء في موريتانيا؟",
+      "answer": "الصحراء الموريتانية",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-500-35",
+      "points": 500,
+      "question": "ما هو الجبل الأعلى في العالم العربي؟",
+      "answer": "جبل في اليمن",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-500-36",
+      "points": 500,
+      "question": "ما هو الجبل الأعلى في الجزائر؟",
+      "answer": "جبل تاهات",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-500-37",
+      "points": 500,
+      "question": "ما هو الجبل الأعلى في المغرب؟",
+      "answer": "جبل طوبقال",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-500-38",
+      "points": 500,
+      "question": "ما هو الجبل الأعلى في ليبيا؟",
+      "answer": "جبل بيكو",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-500-39",
+      "points": 500,
+      "question": "ما هو الجبل الأعلى في تونس؟",
+      "answer": "جبل شمبي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-500-40",
+      "points": 500,
+      "question": "ما هو الجبل الأعلى في اليمن؟",
+      "answer": "جبل النبي شعيب",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-500-41",
+      "points": 500,
+      "question": "ما هو الجبل الأعلى في لبنان؟",
+      "answer": "جبل الأرز",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-500-42",
+      "points": 500,
+      "question": "ما هو الجبل الأعلى في سوريا؟",
+      "answer": "جبل الشيخ",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-500-43",
+      "points": 500,
+      "question": "ما هو الجبل الأعلى في الأردن؟",
+      "answer": "جبل رم",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-500-44",
+      "points": 500,
+      "question": "ما هو الجبل الأعلى في العراق؟",
+      "answer": "جبل الحصين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-500-45",
+      "points": 500,
+      "question": "ما هو الجبل الأعلى في فلسطين؟",
+      "answer": "جبل التل",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-500-46",
+      "points": 500,
+      "question": "ما هو الواحة الأشهر في العالم العربي؟",
+      "answer": "واحة سيوة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-500-47",
+      "points": 500,
+      "question": "ما هو الموقع الأثري الأشهر في العالم العربي؟",
+      "answer": "البتراء",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-500-48",
+      "points": 500,
+      "question": "ما هو الموقع الأثري الأشهر في مصر؟",
+      "answer": "الأهرامات",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-500-49",
+      "points": 500,
+      "question": "ما هو الموقع الأثري الأشهر في السعودية؟",
+      "answer": "مدائن صالح",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arab-world-500-50",
+      "points": 500,
+      "question": "ما هو الموقع الأثري الأشهر في لبنان؟",
+      "answer": "بعلبك",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    }
+  ],
+  "metadata": {
+    "sectionId": "geography",
+    "updatedAt": "2026-08-03",
+    "status": "ready"
+  }
 }

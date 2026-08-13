@@ -1,11 +1,1360 @@
-﻿{
-    "categoryId":  "clubs",
-    "questions":  [
-
-                  ],
-    "metadata":  {
-                     "sectionId":  "sports",
-                     "updatedAt":  "2026-08-03",
-                     "status":  "pending"
-                 }
+{
+  "categoryId": "clubs",
+  "questions": [
+    {
+      "id": "clubs-100-1",
+      "points": 100,
+      "question": "ما هو النادي الأكثر تتويجاً بدوري أبطال أوروبا؟",
+      "answer": "ريال مدريد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-100-2",
+      "points": 100,
+      "question": "ما هو النادي الذي يلعب في ملعب سانتياغو برنابيو؟",
+      "answer": "ريال مدريد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-100-3",
+      "points": 100,
+      "question": "ما هو النادي الذي يلعب في ملعب كامب نو؟",
+      "answer": "برشلونة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-100-4",
+      "points": 100,
+      "question": "ما هو النادي الذي يلعب في ملعب أنفيلد؟",
+      "answer": "ليفربول",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-100-5",
+      "points": 100,
+      "question": "ما هو النادي الذي يلعب في ملعب أولد ترافورد؟",
+      "answer": "مانشستر يونايتد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-100-6",
+      "points": 100,
+      "question": "ما هو النادي الأكثر تتويجاً بالدوري الإنجليزي؟",
+      "answer": "مانشستر يونايتد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-100-7",
+      "points": 100,
+      "question": "ما هو النادي الأكثر تتويجاً بالدوري الإسباني؟",
+      "answer": "ريال مدريد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-100-8",
+      "points": 100,
+      "question": "ما هو النادي الأكثر تتويجاً بالدوري الألماني؟",
+      "answer": "بايرن ميونخ",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-100-9",
+      "points": 100,
+      "question": "ما هو النادي الأكثر تتويجاً بالدوري الإيطالي؟",
+      "answer": "يوفنتوس",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-100-10",
+      "points": 100,
+      "question": "ما هو النادي الذي يلعب في ملعب سان سيرو؟",
+      "answer": "ميلان",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-100-11",
+      "points": 100,
+      "question": "ما هو النادي الذي يلعب في ملعب بروكج رود؟",
+      "answer": "ليدز يونايتد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-100-12",
+      "points": 100,
+      "question": "ما هو النادي الذي يلعب في ملعب إيميريتس؟",
+      "answer": "أرسنال",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-100-13",
+      "points": 100,
+      "question": "ما هو النادي الذي يلعب في ملعب ستامفورد بريدج؟",
+      "answer": "تشيلسي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-100-14",
+      "points": 100,
+      "question": "ما هو النادي الذي يلعب في ملعب سيتي أوف مانشستر؟",
+      "answer": "مانشستر سيتي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-100-15",
+      "points": 100,
+      "question": "ما هو النادي الذي يلعب في ملعب توتنهام هوتسبير؟",
+      "answer": "توتنهام",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-100-16",
+      "points": 100,
+      "question": "ما هو النادي الذي يلعب في ملعب دي غوبي؟",
+      "answer": "يوفنتوس",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-100-17",
+      "points": 100,
+      "question": "ما هو النادي الذي يلعب في ملعب سان سيرو؟",
+      "answer": "إنتر ميلان",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-100-18",
+      "points": 100,
+      "question": "ما هو النادي الذي يلعب في ملعب لويس فيراري؟",
+      "answer": "بولونيا",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-100-19",
+      "points": 100,
+      "question": "ما هو النادي الذي يلعب في ملعب ماكسيموريان؟",
+      "answer": "روما",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-100-20",
+      "points": 100,
+      "question": "ما هو النادي الذي يلعب في ملعب أليانز ستاديوم؟",
+      "answer": "تورينو",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-100-21",
+      "points": 100,
+      "question": "ما هو النادي الذي يلعب في ملعب مارسيليسا؟",
+      "answer": "فالنسيا",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-100-22",
+      "points": 100,
+      "question": "ما هو النادي الذي يلعب في ملعب سان ماميس؟",
+      "answer": "أتلتيك بيلباو",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-100-23",
+      "points": 100,
+      "question": "ما هو النادي الذي يلعب في ملعب فيسنتي كالديرون؟",
+      "answer": "أتلتيكو مدريد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-100-24",
+      "points": 100,
+      "question": "ما هو النادي الذي يلعب في ملعب ريانز أرينا؟",
+      "answer": "ليدز يونايتد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-100-25",
+      "points": 100,
+      "question": "ما هو النادي الذي يلعب في ملعب كينغ باور؟",
+      "answer": "توتنهام",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-100-26",
+      "points": 100,
+      "question": "ما هو النادي الذي يلعب في ملعب موكبارا؟",
+      "answer": "ليفربول",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-100-27",
+      "points": 100,
+      "question": "ما هو النادي الذي يلعب في ملعب كومليبانك؟",
+      "answer": "مانشستر سيتي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-100-28",
+      "points": 100,
+      "question": "ما هو النادي الذي يلعب في ملعب سانت جيمس بارك؟",
+      "answer": "نيوكاسل",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-100-29",
+      "points": 100,
+      "question": "ما هو النادي الذي يلعب في ملعب فيلا بارك؟",
+      "answer": "أستون فيلا",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-100-30",
+      "points": 100,
+      "question": "ما هو النادي الذي يلعب في ملعب كرافان كوت؟",
+      "answer": "فولهام",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-100-31",
+      "points": 100,
+      "question": "ما هو النادي الذي يلعب في ملعب أمكس؟",
+      "answer": "برايتون",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-100-32",
+      "points": 100,
+      "question": "ما هو النادي الذي يلعب في ملعب طاقة ستاديوم؟",
+      "answer": "برينتفورد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-100-33",
+      "points": 100,
+      "question": "ما هو النادي الذي يلعب في ملعب لندن ستاديوم؟",
+      "answer": "تشيلسي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-100-34",
+      "points": 100,
+      "question": "ما هو النادي الذي يلعب في ملعب أولمبيا هاينز؟",
+      "answer": "برمنغهام",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-100-35",
+      "points": 100,
+      "question": "ما هو النادي الذي يلعب في ملعب لوفوس بارك؟",
+      "answer": "نوتنغهام فوريست",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-100-36",
+      "points": 100,
+      "question": "ما هو النادي الذي يلعب في ملعب سيتي غراوند؟",
+      "answer": "مانشستر سيتي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-100-37",
+      "points": 100,
+      "question": "ما هو النادي الذي يلعب في ملعب أنفيلد؟",
+      "answer": "ليفربول",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-100-38",
+      "points": 100,
+      "question": "ما هو النادي الذي يلعب في ملعب سانتياغو برنابيو؟",
+      "answer": "ريال مدريد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-100-39",
+      "points": 100,
+      "question": "ما هو النادي الذي يلعب في ملعب كامب نو؟",
+      "answer": "برشلونة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-100-40",
+      "points": 100,
+      "question": "ما هو النادي الذي يلعب في ملعب أليانز أرينا؟",
+      "answer": "بايرن ميونخ",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-100-41",
+      "points": 100,
+      "question": "ما هو النادي الذي يلعب في ملعب سيغنال إيدونا بارك؟",
+      "answer": "بوروسيا دورتموند",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-100-42",
+      "points": 100,
+      "question": "ما هو النادي الذي يلعب في ملعب فوكس بارك؟",
+      "answer": "لايبزيغ",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-100-43",
+      "points": 100,
+      "question": "ما هو النادي الذي يلعب في ملعب أوروبا بارك؟",
+      "answer": "فرايبورغ",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-100-44",
+      "points": 100,
+      "question": "ما هو النادي الذي يلعب في ملعب فوكس موبيل بارك؟",
+      "answer": "هوفنهايم",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-100-45",
+      "points": 100,
+      "question": "ما هو النادي الذي يلعب في ملعب كاريكا إيرينا؟",
+      "answer": "أوجسبورغ",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-100-46",
+      "points": 100,
+      "question": "ما هو النادي الذي يلعب في ملعب روهر شتاديون؟",
+      "answer": "ماينتس",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-100-47",
+      "points": 100,
+      "question": "ما هو النادي الذي يلعب في ملعب فونتايربارك؟",
+      "answer": "بوخوم",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-100-48",
+      "points": 100,
+      "question": "ما هو النادي الذي يلعب في ملعب فيلزر إيرينا؟",
+      "answer": "كولنيا",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-100-49",
+      "points": 100,
+      "question": "ما هو النادي الذي يلعب في ملعب بورو بارك؟",
+      "answer": "مونشينغلادباخ",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-100-50",
+      "points": 100,
+      "question": "ما هو النادي الذي يلعب في ملعب غرونبارك؟",
+      "answer": "فولفسبورغ",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-300-1",
+      "points": 300,
+      "question": "ما هو لقب ريال مدريد؟",
+      "answer": "الملكي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-300-2",
+      "points": 300,
+      "question": "ما هو لقب برشلونة؟",
+      "answer": "البرغا",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-300-3",
+      "points": 300,
+      "question": "ما هو لقب مانشستر يونايتد؟",
+      "answer": "الشياطين الحمر",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-300-4",
+      "points": 300,
+      "question": "ما هو لقب ليفربول؟",
+      "answer": "الخضر",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-300-5",
+      "points": 300,
+      "question": "ما هو لقب تشيلسي؟",
+      "answer": "الأسود",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-300-6",
+      "points": 300,
+      "question": "ما هو لقب أرسنال؟",
+      "answer": "المدفعجية",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-300-7",
+      "points": 300,
+      "question": "ما هو لقب مانشستر سيتي؟",
+      "answer": "السيتيزنز",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-300-8",
+      "points": 300,
+      "question": "ما هو لقب توتنهام؟",
+      "answer": "الديوك",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-300-9",
+      "points": 300,
+      "question": "ما هو لقب يوفنتوس؟",
+      "answer": "السيدة العجوز",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-300-10",
+      "points": 300,
+      "question": "ما هو لقب ميلان؟",
+      "answer": "الروسونيري",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-300-11",
+      "points": 300,
+      "question": "ما هو لقب إنتر ميلان؟",
+      "answer": "النيراتزوري",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-300-12",
+      "points": 300,
+      "question": "ما هو لقب روما؟",
+      "answer": "الذئاب",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-300-13",
+      "points": 300,
+      "question": "ما هو لقب نابولي؟",
+      "answer": "البارتنوبي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-300-14",
+      "points": 300,
+      "question": "ما هو لقب لاتسيو؟",
+      "answer": "النسور البيضاء",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-300-15",
+      "points": 300,
+      "question": "ما هو لقب أتلتيكو مدريد؟",
+      "answer": "النمور",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-300-16",
+      "points": 300,
+      "question": "ما هو لقب إشبيلية؟",
+      "answer": "البالوميروس",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-300-17",
+      "points": 300,
+      "question": "ما هو لقب فالنسيا؟",
+      "answer": "الخفافيش",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-300-18",
+      "points": 300,
+      "question": "ما هو لقب ريال سوسيداد؟",
+      "answer": "الحمر والبيض",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-300-19",
+      "points": 300,
+      "question": "ما هو لقب أتلتيك بيلباو؟",
+      "answer": "الأسود والصقور",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-300-20",
+      "points": 300,
+      "question": "ما هو لقب فياريال؟",
+      "answer": "الصفراء البحرية",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-300-21",
+      "points": 300,
+      "question": "ما هو لقب بايرن ميونخ؟",
+      "answer": "البافاريا",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-300-22",
+      "points": 300,
+      "question": "ما هو لقب بوروسيا دورتموند؟",
+      "answer": "النمور الصفراء",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-300-23",
+      "points": 300,
+      "question": "ما هو لقب لايبزيغ؟",
+      "answer": "الثور الأحمر",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-300-24",
+      "points": 300,
+      "question": "ما هو لقب باير ليفركوزن؟",
+      "answer": "الصيدليات",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-300-25",
+      "points": 300,
+      "question": "ما هو لقب فرايبورغ؟",
+      "answer": "الألعاب النارية",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-300-26",
+      "points": 300,
+      "question": "ما هو لقب هوفنهايم؟",
+      "answer": "الروبيان",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-300-27",
+      "points": 300,
+      "question": "ما هو لقب أوجسبورغ؟",
+      "answer": "الفوجر",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-300-28",
+      "points": 300,
+      "question": "ما هو لقب ماينتس؟",
+      "answer": "الخمسينيات",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-300-29",
+      "points": 300,
+      "question": "ما هو لقب بوخوم؟",
+      "answer": "الصاعقة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-300-30",
+      "points": 300,
+      "question": "ما هو لقب كولنيا؟",
+      "answer": "الماعز",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-300-31",
+      "points": 300,
+      "question": "ما هو لقب مونشينغلادباخ؟",
+      "answer": "الحمير",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-300-32",
+      "points": 300,
+      "question": "ما هو لقب فولفسبورغ؟",
+      "answer": "الذئاب",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-300-33",
+      "points": 300,
+      "question": "ما هو لقب فيردر بريمن؟",
+      "answer": "الخضر والبيض",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-300-34",
+      "points": 300,
+      "question": "ما هو لقب آينتراخت فرانكفورت؟",
+      "answer": "النسر",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-300-35",
+      "points": 300,
+      "question": "ما هو لقب هيرتا برلين؟",
+      "answer": "القدم القديمة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-300-36",
+      "points": 300,
+      "question": "ما هو لقب شتوتغارت؟",
+      "answer": "السوابر",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-300-37",
+      "points": 300,
+      "question": "ما هو لقب مونستر؟",
+      "answer": "الساهونيون",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-300-38",
+      "points": 300,
+      "question": "ما هو لقب فورتونا دوسلدورف؟",
+      "answer": "الشياطين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-300-39",
+      "points": 300,
+      "question": "ما هو لقب هانوفر؟",
+      "answer": "الحمراء",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-300-40",
+      "points": 300,
+      "question": "ما هو لقب نورنبرغ؟",
+      "answer": "الساهونيون",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-300-41",
+      "points": 300,
+      "question": "ما هو لقب آخن؟",
+      "answer": "البديل",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-300-42",
+      "points": 300,
+      "question": "ما هو لقب كارلسروه؟",
+      "answer": "الساهونيون",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-300-43",
+      "points": 300,
+      "question": "ما هو لقب كاسل؟",
+      "answer": "الساهونيون",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-300-44",
+      "points": 300,
+      "question": "ما هو لقب براونشفايغ؟",
+      "answer": "الساهونيون",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-300-45",
+      "points": 300,
+      "question": "ما هو لقب دوسلدورف؟",
+      "answer": "الساهونيون",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-300-46",
+      "points": 300,
+      "question": "ما هو لقب هامبورغ؟",
+      "answer": "الساهونيون",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-300-47",
+      "points": 300,
+      "question": "ما هو لقب هانوفر؟",
+      "answer": "الساهونيون",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-300-48",
+      "points": 300,
+      "question": "ما هو لقب نورنبرغ؟",
+      "answer": "الساهونيون",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-300-49",
+      "points": 300,
+      "question": "ما هو لقب آخن؟",
+      "answer": "الساهونيون",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-300-50",
+      "points": 300,
+      "question": "ما هو لقب كارلسروه؟",
+      "answer": "الساهونيون",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-500-1",
+      "points": 500,
+      "question": "ما هو أكبر تنافس في كرة القدم الإنجليزية؟",
+      "answer": "مانشستر يونايتد ضد ليفربول",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-500-2",
+      "points": 500,
+      "question": "ما هو أكبر تنافس في كرة القدم الإسبانية؟",
+      "answer": "ال كلاسيكو",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-500-3",
+      "points": 500,
+      "question": "ما هو أكبر تنافس في كرة القدم الإيطالية؟",
+      "answer": "ديربي مدريد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-500-4",
+      "points": 500,
+      "question": "ما هو أكبر تنافس في كرة القدم الألمانية؟",
+      "answer": "ديربي دي كولونيا",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-500-5",
+      "points": 500,
+      "question": "ما هو أكبر تنافس في كرة القدم البرازيلية؟",
+      "answer": "ديربي باوليستا",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-500-6",
+      "points": 500,
+      "question": "ما هو أكبر تنافس في كرة القدم الأرجنتينية؟",
+      "answer": "سوبر كلاسيكو",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-500-7",
+      "points": 500,
+      "question": "ما هو أكبر تنافس في كرة القدم المصرية؟",
+      "answer": "ديربي القاهرة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-500-8",
+      "points": 500,
+      "question": "ما هو أكبر تنافس في كرة القدم السعودية؟",
+      "answer": "ديربي جدة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-500-9",
+      "points": 500,
+      "question": "ما هو أكبر تنافس في كرة القدم التركية؟",
+      "answer": "ديربي إسطنبول",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-500-10",
+      "points": 500,
+      "question": "ما هو أكبر تنافس في كرة القدم الفرنسية؟",
+      "answer": "لو كلاسيكو",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-500-11",
+      "points": 500,
+      "question": "ما هو النادي الأكثر شعبية في العالم؟",
+      "answer": "ريال مدريد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-500-12",
+      "points": 500,
+      "question": "ما هو النادي الأكثر قيمة في العالم؟",
+      "answer": "ريال مدريد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-500-13",
+      "points": 500,
+      "question": "ما هو النادي الأكثر إنفاقاً على اللاعبين؟",
+      "answer": "باريس سان جيرمان",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-500-14",
+      "points": 500,
+      "question": "ما هو النادي الأكثر دخلًا في العالم؟",
+      "answer": "ريال مدريد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-500-15",
+      "points": 500,
+      "question": "ما هو النادي الأكثر فوزًا بالبطولات الدولية؟",
+      "answer": "ريال مدريد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-500-16",
+      "points": 500,
+      "question": "ما هو النادي الأكثر فوزًا بكأس أمم أوروبا؟",
+      "answer": "بايرن ميونخ",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-500-17",
+      "points": 500,
+      "question": "ما هو النادي الأكثر فوزًا بالدوري الأوروبي؟",
+      "answer": "ريال مدريد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-500-18",
+      "points": 500,
+      "question": "ما هو النادي الأكثر فوزًا بالدوري الأوروبي الألماني؟",
+      "answer": "بايرن ميونخ",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-500-19",
+      "points": 500,
+      "question": "ما هو النادي الأكثر فوزًا بالدوري الأوروبي الإنجليزي؟",
+      "answer": "ليفربول",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-500-20",
+      "points": 500,
+      "question": "ما هو النادي الأكثر فوزًا بالدوري الأوروبي الإسباني؟",
+      "answer": "ريال مدريد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-500-21",
+      "points": 500,
+      "question": "ما هو النادي الأكثر فوزًا بالدوري الأوروبي الإيطالي؟",
+      "answer": "ميلان",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-500-22",
+      "points": 500,
+      "question": "ما هو النادي الأكثر فوزًا بالدوري الأوروبي الفرنسي؟",
+      "answer": "باريس سان جيرمان",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-500-23",
+      "points": 500,
+      "question": "ما هو النادي الأكثر فوزًا بالدوري الأوروبي الهولندي؟",
+      "answer": "أياكس",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-500-24",
+      "points": 500,
+      "question": "ما هو النادي الأكثر فوزًا بالدوري الأوروبي البرتغالي؟",
+      "answer": "بنفيكا",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-500-25",
+      "points": 500,
+      "question": "ما هو النادي الأكثر فوزًا بالدوري الأوروبي البلجيكي؟",
+      "answer": "أندرليخت",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-500-26",
+      "points": 500,
+      "question": "ما هو النادي الأكثر فوزًا بالدوري الأوروبي اليوناني؟",
+      "answer": "باناثينايكوس",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-500-27",
+      "points": 500,
+      "question": "ما هو النادي الأكثر فوزًا بالدوري الأوروبي الروسي؟",
+      "answer": "سسكا موسكو",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-500-28",
+      "points": 500,
+      "question": "ما هو النادي الأكثر فوزًا بالدوري الأوروبي الأوكراني؟",
+      "answer": "دينامو كييف",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-500-29",
+      "points": 500,
+      "question": "ما هو النادي الأكثر فوزًا بالدوري الأوروبي التركي؟",
+      "answer": "غلطة سراي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-500-30",
+      "points": 500,
+      "question": "ما هو النادي الأكثر فوزًا بالدوري الأوروبي المصري؟",
+      "answer": "الأهلي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-500-31",
+      "points": 500,
+      "question": "ما هو النادي الأكثر فوزًا بالدوري الأوروبي السعودي؟",
+      "answer": "الهلال",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-500-32",
+      "points": 500,
+      "question": "ما هو النادي الأكثر فوزًا بالدوري الأوروبي المغربي؟",
+      "answer": "الوداد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-500-33",
+      "points": 500,
+      "question": "ما هو النادي الأكثر فوزًا بالدوري الأوروبي التونسي؟",
+      "answer": "الترجي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-500-34",
+      "points": 500,
+      "question": "ما هو النادي الأكثر فوزًا بالدوري الأوروبي الجزائري؟",
+      "answer": "مولودية وهران",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-500-35",
+      "points": 500,
+      "question": "ما هو النادي الأكثر فوزًا بالدوري الأوروبي الليبي؟",
+      "answer": "الأهلي طرابلس",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-500-36",
+      "points": 500,
+      "question": "ما هو النادي الأكثر فوزًا بالدوري الأوروبي السوداني؟",
+      "answer": "المريخ",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-500-37",
+      "points": 500,
+      "question": "ما هو النادي الأكثر فوزًا بالدوري الأوروبي الموريتاني؟",
+      "answer": "نواذيبو",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-500-38",
+      "points": 500,
+      "question": "ما هو النادي الأكثر فوزًا بالدوري الأوروبي الصومالي؟",
+      "answer": "جيدال",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-500-39",
+      "points": 500,
+      "question": "ما هو النادي الأكثر فوزًا بالدوري الأوروبي الجيبوتي؟",
+      "answer": "جيبوتي كاب",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-500-40",
+      "points": 500,
+      "question": "ما هو النادي الأكثر فوزًا بالدوري الأوروبي الكوموري؟",
+      "answer": "فوكار",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-500-41",
+      "points": 500,
+      "question": "ما هو النادي الأكثر فوزًا بالدوري الأوروبي اللبناني؟",
+      "answer": "النجم",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-500-42",
+      "points": 500,
+      "question": "ما هو النادي الأكثر فوزًا بالدوري الأوروبي السوري؟",
+      "answer": "الجيش",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-500-43",
+      "points": 500,
+      "question": "ما هو النادي الأكثر فوزًا بالدوري الأوروبي الأردني؟",
+      "answer": "الفيصلي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-500-44",
+      "points": 500,
+      "question": "ما هو النادي الأكثر فوزًا بالدوري الأوروبي العراقي؟",
+      "answer": "القوة الجوية",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-500-45",
+      "points": 500,
+      "question": "ما هو النادي الأكثر فوزًا بالدوري الأوروبي الفلسطيني؟",
+      "answer": "شباب جوال",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-500-46",
+      "points": 500,
+      "question": "ما هو النادي الأكثر فوزًا بالدوري الأوروبي اليمني؟",
+      "answer": "أهلي صنعاء",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-500-47",
+      "points": 500,
+      "question": "ما هو النادي الأكثر فوزًا بالدوري الأوروبي الجزائري؟",
+      "answer": "شبيبة القبائل",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-500-48",
+      "points": 500,
+      "question": "ما هو النادي الأكثر فوزًا بالدوري الأوروبي المغربي؟",
+      "answer": "الرجاء",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-500-49",
+      "points": 500,
+      "question": "ما هو النادي الأكثر فوزًا بالدوري الأوروبي التونسي؟",
+      "answer": "الصحافة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "clubs-500-50",
+      "points": 500,
+      "question": "ما هو النادي الأكثر فوزًا بالدوري الأوروبي الليبي؟",
+      "answer": "الأهلي بنغازي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    }
+  ],
+  "metadata": {
+    "sectionId": "sports",
+    "updatedAt": "2026-08-03",
+    "status": "ready"
+  }
 }

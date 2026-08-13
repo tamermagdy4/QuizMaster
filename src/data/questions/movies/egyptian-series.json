@@ -1,11 +1,910 @@
-﻿{
-    "categoryId":  "egyptian-series",
-    "questions":  [
-
-                  ],
-    "metadata":  {
-                     "sectionId":  "movies",
-                     "updatedAt":  "2026-08-03",
-                     "status":  "pending"
-                 }
+{
+  "categoryId": "egyptian-series",
+  "questions": [
+    {
+      "id": "egyptian-series-100-1",
+      "points": 100,
+      "question": "من قام بدور رفعت إسماعيل في مسلسل ما وراء الطبيعة؟",
+      "answer": "أحمد أمين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-series-100-2",
+      "points": 100,
+      "question": "ما اسم المسلسل الذي جسد فيه أحمد أمين شخصية رفعت إسماعيل؟",
+      "answer": "ما وراء الطبيعة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-series-100-3",
+      "points": 100,
+      "question": "من قامت بدور ماجي في مسلسل ما وراء الطبيعة؟",
+      "answer": "رزان جمال",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-series-100-4",
+      "points": 100,
+      "question": "ما اسم المسلسل الذي تدور أحداثه حول عالم الطب الشرعي يحيى؟",
+      "answer": "أهو ده اللي صار",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-series-100-5",
+      "points": 100,
+      "question": "من قام ببطولة مسلسل الاختيار في الجزء الأول بدور أحمد المنسي؟",
+      "answer": "أمير كرارة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-series-100-6",
+      "points": 100,
+      "question": "ما اسم الشخصية التي جسدها أمير كرارة في الاختيار؟",
+      "answer": "أحمد المنسي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-series-100-7",
+      "points": 100,
+      "question": "ما اسم المسلسل الذي تناول قصة حياة أحمد المنسي؟",
+      "answer": "الاختيار",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-series-100-8",
+      "points": 100,
+      "question": "من قام بدور هشام عشماوي في مسلسل الاختيار؟",
+      "answer": "أحمد العوضي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-series-100-9",
+      "points": 100,
+      "question": "من قام ببطولة مسلسل الاختيار 2؟",
+      "answer": "كريم عبد العزيز وأحمد مكي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-series-100-10",
+      "points": 100,
+      "question": "ما اسم المسلسل الذي جمع بين كريم عبد العزيز وأحمد مكي في رمضان 2021؟",
+      "answer": "الاختيار 2",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-series-100-11",
+      "points": 100,
+      "question": "من قام بدور الكبير أوي؟",
+      "answer": "أحمد مكي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-series-100-12",
+      "points": 100,
+      "question": "ما اسم القرية التي تدور فيها أحداث مسلسل الكبير أوي؟",
+      "answer": "المزاريطة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-series-100-13",
+      "points": 100,
+      "question": "ما اسم شخصية زوجة الكبير في الأجزاء الأولى؟",
+      "answer": "هدية",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-series-100-14",
+      "points": 100,
+      "question": "من قامت بدور هدية في الكبير أوي؟",
+      "answer": "دنيا سمير غانم",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-series-100-15",
+      "points": 100,
+      "question": "ما اسم شخصية شقيق الكبير؟",
+      "answer": "جوني",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-series-100-16",
+      "points": 100,
+      "question": "من قام بدور جوني؟",
+      "answer": "أحمد مكي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-series-100-17",
+      "points": 100,
+      "question": "ما اسم شخصية شقيق الكبير التوأم؟",
+      "answer": "حزلقوم",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-series-100-18",
+      "points": 100,
+      "question": "من قام أيضًا بدور حزلقوم؟",
+      "answer": "أحمد مكي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-series-100-19",
+      "points": 100,
+      "question": "ما اسم المسلسل الذي ظهر فيه فزاع وهدرس وحزلقوم؟",
+      "answer": "الكبير أوي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-series-100-20",
+      "points": 100,
+      "question": "من قام بدور هدرس؟",
+      "answer": "محمد سلام",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-series-100-21",
+      "points": 100,
+      "question": "من قام ببطولة مسلسل الأسطورة؟",
+      "answer": "محمد رمضان",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-series-100-22",
+      "points": 100,
+      "question": "ما اسم الشخصية التي جسدها محمد رمضان في الأسطورة؟",
+      "answer": "ناصر الدسوقي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-series-100-23",
+      "points": 100,
+      "question": "ما اسم شقيق ناصر في مسلسل الأسطورة؟",
+      "answer": "رفاعي الدسوقي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-series-100-24",
+      "points": 100,
+      "question": "من قامت بدور حنان في الأسطورة؟",
+      "answer": "روجينا",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-series-100-25",
+      "points": 100,
+      "question": "من قامت بدور شهد في مسلسل الأسطورة؟",
+      "answer": "مي عمر",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-series-100-26",
+      "points": 100,
+      "question": "ما اسم المسلسل الذي جسد فيه محمد رمضان شخصية رضوان البرنس؟",
+      "answer": "البرنس",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-series-100-27",
+      "points": 100,
+      "question": "من قامت بدور علا في مسلسل البرنس؟",
+      "answer": "نور اللبنانية",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-series-100-28",
+      "points": 100,
+      "question": "ما اسم شخصية شقيق رضوان التي خانته؟",
+      "answer": "فتحي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-series-100-29",
+      "points": 100,
+      "question": "من قام بدور فتحي في البرنس؟",
+      "answer": "أحمد زاهر",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-series-100-30",
+      "points": 100,
+      "question": "ما اسم المسلسل الذي جسد فيه محمد رمضان شخصية جعفر العمدة؟",
+      "answer": "جعفر العمدة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-series-100-31",
+      "points": 100,
+      "question": "ما اسم الحي الذي تدور فيه معظم أحداث جعفر العمدة؟",
+      "answer": "السيدة زينب",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-series-100-32",
+      "points": 100,
+      "question": "من قامت بدور دلال في جعفر العمدة؟",
+      "answer": "إيمان العاصي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-series-100-33",
+      "points": 100,
+      "question": "من قام بدور سيف في جعفر العمدة؟",
+      "answer": "أحمد داش",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-series-100-34",
+      "points": 100,
+      "question": "ما علاقة سيف بجعفر في أحداث المسلسل؟",
+      "answer": "ابنه",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-series-300-1",
+      "points": 300,
+      "question": "من قامت بدور عايدة في جعفر العمدة؟",
+      "answer": "زينة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-series-300-2",
+      "points": 300,
+      "question": "من قامت بدور نرجس في جعفر العمدة؟",
+      "answer": "منذر رياحنة؟",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-series-300-3",
+      "points": 300,
+      "question": "من قام بدور وداد في جعفر العمدة؟",
+      "answer": "جوري بكر",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-series-300-4",
+      "points": 300,
+      "question": "من قام بدور كارم فتح الله؟",
+      "answer": "خالد سرحان",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-series-300-5",
+      "points": 300,
+      "question": "من قام بدور حمادة فتح الله؟",
+      "answer": "طارق النهري",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-series-300-6",
+      "points": 300,
+      "question": "في أي عام عُرض مسلسل جعفر العمدة لأول مرة؟",
+      "answer": "2023",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-series-300-7",
+      "points": 300,
+      "question": "من قام ببطولة مسلسل تحت الوصاية؟",
+      "answer": "منى زكي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-series-300-8",
+      "points": 300,
+      "question": "ما اسم الشخصية التي جسدتها منى زكي في تحت الوصاية؟",
+      "answer": "حنان",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-series-300-9",
+      "points": 300,
+      "question": "ما المهنة التي اضطرت حنان لممارستها في المسلسل؟",
+      "answer": "بيع السمك",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-series-300-10",
+      "points": 300,
+      "question": "ما القضية الرئيسية التي يناقشها مسلسل تحت الوصاية؟",
+      "answer": "الوصاية على الأطفال وحقوق الأم",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-series-300-11",
+      "points": 300,
+      "question": "من قام ببطولة مسلسل بـ100 وش؟",
+      "answer": "نيللي كريم وآسر ياسين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-series-300-12",
+      "points": 300,
+      "question": "ما اسم الشخصية التي جسدتها نيللي كريم في بـ100 وش؟",
+      "answer": "سكر",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-series-300-13",
+      "points": 300,
+      "question": "ما اسم الشخصية التي جسدها آسر ياسين؟",
+      "answer": "عمر",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-series-300-14",
+      "points": 300,
+      "question": "ما نوع المجموعة التي تدور حولها أحداث بـ100 وش؟",
+      "answer": "عصابة نصب",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-series-300-15",
+      "points": 300,
+      "question": "من قامت بدور ماجي في بـ100 وش؟",
+      "answer": "علا رشدي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-series-300-16",
+      "points": 300,
+      "question": "من قام بدور حمادة في بـ100 وش؟",
+      "answer": "إسلام إبراهيم",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-series-300-17",
+      "points": 300,
+      "question": "من قام ببطولة مسلسل رجالة البيت؟",
+      "answer": "أحمد فهمي وأكرم حسني",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-series-300-18",
+      "points": 300,
+      "question": "ما اسم المسلسل الذي جمع أحمد فهمي وأكرم حسني في رمضان 2020؟",
+      "answer": "رجالة البيت",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-series-300-19",
+      "points": 300,
+      "question": "من قام ببطولة مسلسل مكتوب عليا؟",
+      "answer": "أكرم حسني",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-series-300-20",
+      "points": 300,
+      "question": "ما اسم الشخصية التي جسدها أكرم حسني في مكتوب عليا؟",
+      "answer": "جلجل",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-series-300-21",
+      "points": 300,
+      "question": "ما الشيء الغريب الذي ظهر على يد جلجل في مكتوب عليا؟",
+      "answer": "كتابات تتنبأ بما سيحدث",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-series-300-22",
+      "points": 300,
+      "question": "من قامت بدور سلمى في مكتوب عليا؟",
+      "answer": "هنادي مهنا",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-series-300-23",
+      "points": 300,
+      "question": "من قام ببطولة مسلسل الوصية؟",
+      "answer": "أكرم حسني وأحمد أمين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-series-300-24",
+      "points": 300,
+      "question": "ما اسم الشخصية التي جسدها أكرم حسني في الوصية؟",
+      "answer": "إبراهيم",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-series-300-25",
+      "points": 300,
+      "question": "ما اسم الشخصية التي جسدها أحمد أمين في الوصية؟",
+      "answer": "إيبو",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-series-300-26",
+      "points": 300,
+      "question": "ما نوع مسلسل الوصية؟",
+      "answer": "كوميديا",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-series-300-27",
+      "points": 300,
+      "question": "من قام ببطولة مسلسل راجل وست ستات؟",
+      "answer": "أشرف عبد الباقي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-series-300-28",
+      "points": 300,
+      "question": "ما اسم الشخصية الرئيسية في راجل وست ستات؟",
+      "answer": "عادل",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-series-300-29",
+      "points": 300,
+      "question": "كم زوجة كانت لدى عادل في المسلسل؟",
+      "answer": "واحدة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-series-300-30",
+      "points": 300,
+      "question": "ما العلاقة التي تجمع عادل برمزي في المسلسل؟",
+      "answer": "رمزي شقيق زوجته",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-series-300-31",
+      "points": 300,
+      "question": "من قام بدور رمزي؟",
+      "answer": "سامح حسين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-series-300-32",
+      "points": 300,
+      "question": "ما اسم المسلسل الكوميدي الذي اشتهر بشخصية رمزي؟",
+      "answer": "راجل وست ستات",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-series-300-33",
+      "points": 300,
+      "question": "من قام ببطولة مسلسل يوميات ونيس؟",
+      "answer": "محمد صبحي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-series-500-1",
+      "points": 500,
+      "question": "ما اسم الشخصية الرئيسية التي جسدها محمد صبحي؟",
+      "answer": "ونيس",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-series-500-2",
+      "points": 500,
+      "question": "ما اسم زوجة ونيس؟",
+      "answer": "مايسة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-series-500-3",
+      "points": 500,
+      "question": "من قامت بدور مايسة؟",
+      "answer": "سعاد نصر",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-series-500-4",
+      "points": 500,
+      "question": "ما اسم المسلسل الشهير الذي تدور أحداثه حول عائلة ونيس؟",
+      "answer": "يوميات ونيس",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-series-500-5",
+      "points": 500,
+      "question": "من قام ببطولة مسلسل لن أعيش في جلباب أبي؟",
+      "answer": "نور الشريف",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-series-500-6",
+      "points": 500,
+      "question": "ما اسم الشخصية التي جسدها نور الشريف؟",
+      "answer": "عبد الغفور البرعي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-series-500-7",
+      "points": 500,
+      "question": "من قامت بدور فاطمة زوجة عبد الغفور البرعي؟",
+      "answer": "عبلة كامل",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-series-500-8",
+      "points": 500,
+      "question": "ما اسم ابن عبد الغفور البرعي؟",
+      "answer": "عبد الوهاب",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-series-500-9",
+      "points": 500,
+      "question": "من قام بدور عبد الوهاب؟",
+      "answer": "محمد رياض",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-series-500-10",
+      "points": 500,
+      "question": "ما المهنة التي بدأ بها عبد الغفور البرعي حياته؟",
+      "answer": "تاجر في وكالة البلح",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-series-500-11",
+      "points": 500,
+      "question": "ما اسم المسلسل الذي اشتهر بشخصية عبد الغفور البرعي؟",
+      "answer": "لن أعيش في جلباب أبي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-series-500-12",
+      "points": 500,
+      "question": "من قام ببطولة مسلسل المال والبنون؟",
+      "answer": "يوسف شعبان وحسين فهمي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-series-500-13",
+      "points": 500,
+      "question": "ما القضية الأساسية التي يدور حولها مسلسل المال والبنون؟",
+      "answer": "المال والصراع بين العائلات",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-series-500-14",
+      "points": 500,
+      "question": "من قام ببطولة مسلسل الحاج متولي؟",
+      "answer": "نور الشريف",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-series-500-15",
+      "points": 500,
+      "question": "ما اسم الشخصية الرئيسية في مسلسل عائلة الحاج متولي؟",
+      "answer": "متولي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-series-500-16",
+      "points": 500,
+      "question": "ما الفكرة الأساسية التي اشتهر بها مسلسل عائلة الحاج متولي؟",
+      "answer": "تعدد الزوجات وحياة الحاج متولي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-series-500-17",
+      "points": 500,
+      "question": "من قامت بدور نعمة الله؟",
+      "answer": "غادة عبد الرازق",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-series-500-18",
+      "points": 500,
+      "question": "من قام ببطولة مسلسل الليل وآخره؟",
+      "answer": "يحيى الفخراني",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-series-500-19",
+      "points": 500,
+      "question": "ما اسم الشخصية التي جسدها يحيى الفخراني في الليل وآخره؟",
+      "answer": "فاضل",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-series-500-20",
+      "points": 500,
+      "question": "من قام ببطولة مسلسل شيخ العرب همام؟",
+      "answer": "يحيى الفخراني",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-series-500-21",
+      "points": 500,
+      "question": "من قام ببطولة مسلسل الخواجة عبد القادر؟",
+      "answer": "يحيى الفخراني",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-series-500-22",
+      "points": 500,
+      "question": "ما اسم الشخصية الرئيسية في مسلسل الخواجة عبد القادر؟",
+      "answer": "عبد القادر",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-series-500-23",
+      "points": 500,
+      "question": "من قام ببطولة مسلسل ونوس؟",
+      "answer": "يحيى الفخراني",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-series-500-24",
+      "points": 500,
+      "question": "ما اسم الشخصية الغامضة التي جسدها يحيى الفخراني في ونوس؟",
+      "answer": "ونوس",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-series-500-25",
+      "points": 500,
+      "question": "من قام ببطولة مسلسل الراية البيضا؟",
+      "answer": "سناء جميل وأحمد زكي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-series-500-26",
+      "points": 500,
+      "question": "ما اسم الشخصية الشهيرة التي جسدتها سناء جميل في الراية البيضا؟",
+      "answer": "فضة المعداوي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-series-500-27",
+      "points": 500,
+      "question": "من قام ببطولة مسلسل ليالي الحلمية؟",
+      "answer": "يحيى الفخراني وصفية العمري",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-series-500-28",
+      "points": 500,
+      "question": "ما اسم الشخصية التي جسدها يحيى الفخراني في ليالي الحلمية؟",
+      "answer": "سليم البدري",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-series-500-29",
+      "points": 500,
+      "question": "ما اسم الشخصية التي جسدتها صفية العمري؟",
+      "answer": "نازك السلحدار",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-series-500-30",
+      "points": 500,
+      "question": "من قام ببطولة مسلسل أرابيسك؟",
+      "answer": "صلاح السعدني",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-series-500-31",
+      "points": 500,
+      "question": "ما اسم الشخصية التي جسدها صلاح السعدني في أرابيسك؟",
+      "answer": "حسن أرابيسك",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-series-500-32",
+      "points": 500,
+      "question": "من قام ببطولة مسلسل الضوء الشارد؟",
+      "answer": "ممدوح عبد العليم",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egyptian-series-500-33",
+      "points": 500,
+      "question": "ما اسم الشخصية التي جسدها ممدوح عبد العليم في الضوء الشارد؟",
+      "answer": "رفيع بيه العزايزي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    }
+  ],
+  "metadata": {
+    "sectionId": "movies",
+    "updatedAt": "2026-08-05",
+    "status": "ready"
+  }
 }

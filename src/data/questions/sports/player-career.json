@@ -1,0 +1,620 @@
+{
+  "categoryId": "player-career",
+  "questions": [
+    {
+      "id": "player-career-100-1",
+      "points": 100,
+      "question": "من هو اللاعب صاحب هذه المسيرة؟",
+      "answer": "Thierry Henry",
+      "media": "",
+      "mediaType": "career",
+      "careerImage": "/media/player-careers/Thierry Henry.jpeg",
+      "hint": ""
+    },
+    {
+      "id": "player-career-100-2",
+      "points": 100,
+      "question": "من هو اللاعب صاحب هذه المسيرة؟",
+      "answer": "Mohamed Salah",
+      "media": "",
+      "mediaType": "career",
+      "careerImage": "/media/player-careers/Mohamed Salah.jpeg",
+      "hint": ""
+    },
+    {
+      "id": "player-career-100-3",
+      "points": 100,
+      "question": "من هو اللاعب صاحب هذه المسيرة؟",
+      "answer": "Kylian Mbappé",
+      "media": "",
+      "mediaType": "career",
+      "careerImage": "/media/player-careers/Kylian Mbappé.jpeg",
+      "hint": ""
+    },
+    {
+      "id": "player-career-100-4",
+      "points": 100,
+      "question": "من هو اللاعب صاحب هذه المسيرة؟",
+      "answer": "Neymar",
+      "media": "",
+      "mediaType": "career",
+      "careerImage": "/media/player-careers/Neymar.jpeg",
+      "hint": ""
+    },
+    {
+      "id": "player-career-100-5",
+      "points": 100,
+      "question": "من هو اللاعب صاحب هذه المسيرة؟",
+      "answer": "Cristiano Ronaldo",
+      "media": "",
+      "mediaType": "career",
+      "careerImage": "/media/player-careers/Cristiano Ronaldo.jpeg",
+      "hint": ""
+    },
+    {
+      "id": "player-career-100-6",
+      "points": 100,
+      "question": "من هو اللاعب صاحب هذه المسيرة؟",
+      "answer": "Lionel Messi",
+      "media": "",
+      "mediaType": "career",
+      "careerImage": "/media/player-careers/Lionel Messi.jpeg",
+      "hint": ""
+    },
+    {
+      "id": "player-career-100-7",
+      "points": 100,
+      "question": "من هو اللاعب صاحب هذه المسيرة؟",
+      "answer": "Kevin De Bruyne",
+      "media": "",
+      "mediaType": "career",
+      "careerImage": "/media/player-careers/Kevin De Bruyne.jpeg",
+      "hint": ""
+    },
+    {
+      "id": "player-career-100-8",
+      "points": 100,
+      "question": "من هو اللاعب صاحب هذه المسيرة؟",
+      "answer": "Luka Modrić",
+      "media": "",
+      "mediaType": "career",
+      "careerImage": "/media/player-careers/Luka Modrić.jpeg",
+      "hint": ""
+    },
+    {
+      "id": "player-career-100-9",
+      "points": 100,
+      "question": "من هو اللاعب صاحب هذه المسيرة؟",
+      "answer": "Sergio Ramos",
+      "media": "",
+      "mediaType": "career",
+      "careerImage": "/media/player-careers/Sergio Ramos.jpeg",
+      "hint": ""
+    },
+    {
+      "id": "player-career-100-10",
+      "points": 100,
+      "question": "من هو اللاعب صاحب هذه المسيرة؟",
+      "answer": "Joshua Kimmich",
+      "media": "",
+      "mediaType": "career",
+      "careerImage": "/media/player-careers/Joshua Kimmich.jpeg",
+      "hint": ""
+    },
+    {
+      "id": "player-career-100-11",
+      "points": 100,
+      "question": "من هو اللاعب صاحب هذه المسيرة؟",
+      "answer": "Virgil van Dijk",
+      "media": "",
+      "mediaType": "career",
+      "careerImage": "/media/player-careers/Virgil van Dijk.jpeg",
+      "hint": ""
+    },
+    {
+      "id": "player-career-100-12",
+      "points": 100,
+      "question": "من هو اللاعب صاحب هذه المسيرة؟",
+      "answer": "Erling Haaland",
+      "media": "",
+      "mediaType": "career",
+      "careerImage": "/media/player-careers/Erling Haaland.jpeg",
+      "hint": ""
+    },
+    {
+      "id": "player-career-100-13",
+      "points": 100,
+      "question": "من هو اللاعب صاحب هذه المسيرة؟",
+      "answer": "Toni Kroos",
+      "media": "",
+      "mediaType": "career",
+      "careerImage": "/media/player-careers/Toni Kroos.jpeg",
+      "hint": ""
+    },
+    {
+      "id": "player-career-100-14",
+      "points": 100,
+      "question": "من هو اللاعب صاحب هذه المسيرة؟",
+      "answer": "Karim Benzema",
+      "media": "",
+      "mediaType": "career",
+      "careerImage": "/media/player-careers/Karim Benzema.jpeg",
+      "hint": ""
+    },
+    {
+      "id": "player-career-100-15",
+      "points": 100,
+      "question": "من هو اللاعب صاحب هذه المسيرة؟",
+      "answer": "Arjen Robben",
+      "media": "",
+      "mediaType": "career",
+      "careerImage": "/media/player-careers/Arjen Robben.jpeg",
+      "hint": ""
+    },
+    {
+      "id": "player-career-100-16",
+      "points": 100,
+      "question": "من هو اللاعب صاحب هذه المسيرة؟",
+      "answer": "Romelu Lukaku",
+      "media": "",
+      "mediaType": "career",
+      "careerImage": "/media/player-careers/Romelu Lukaku.jpeg",
+      "hint": ""
+    },
+    {
+      "id": "player-career-100-17",
+      "points": 100,
+      "question": "من هو اللاعب صاحب هذه المسيرة؟",
+      "answer": "Edinson Cavani",
+      "media": "",
+      "mediaType": "career",
+      "careerImage": "/media/player-careers/Edinson Cavani.jpeg",
+      "hint": ""
+    },
+    {
+      "id": "player-career-100-18",
+      "points": 100,
+      "question": "من هو اللاعب صاحب هذه المسيرة؟",
+      "answer": "Jude Bellingham",
+      "media": "",
+      "mediaType": "career",
+      "careerImage": "/media/player-careers/Jude Bellingham.jpeg",
+      "hint": ""
+    },
+    {
+      "id": "player-career-300-3",
+      "points": 300,
+      "question": "من هو اللاعب صاحب هذه المسيرة؟",
+      "answer": "Nicolas Anelka",
+      "media": "",
+      "mediaType": "career",
+      "careerImage": "/media/player-careers/Nicolas Anelka.jpeg",
+      "hint": ""
+    },
+    {
+      "id": "player-career-300-4",
+      "points": 300,
+      "question": "من هو اللاعب صاحب هذه المسيرة؟",
+      "answer": "Andrea Pirlo",
+      "media": "",
+      "mediaType": "career",
+      "careerImage": "/media/player-careers/Andrea Pirlo.jpeg",
+      "hint": ""
+    },
+    {
+      "id": "player-career-300-5",
+      "points": 300,
+      "question": "من هو اللاعب صاحب هذه المسيرة؟",
+      "answer": "Cesc Fàbregas",
+      "media": "",
+      "mediaType": "career",
+      "careerImage": "/media/player-careers/Cesc Fàbregas.jpeg",
+      "hint": ""
+    },
+    {
+      "id": "player-career-300-6",
+      "points": 300,
+      "question": "من هو اللاعب صاحب هذه المسيرة؟",
+      "answer": "Ángel Di María",
+      "media": "",
+      "mediaType": "career",
+      "careerImage": "/media/player-careers/Ángel Di María.jpeg",
+      "hint": ""
+    },
+    {
+      "id": "player-career-300-7",
+      "points": 300,
+      "question": "من هو اللاعب صاحب هذه المسيرة؟",
+      "answer": "Zlatan Ibrahimović",
+      "media": "",
+      "mediaType": "career",
+      "careerImage": "/media/player-careers/Zlatan Ibrahimović.jpeg",
+      "hint": ""
+    },
+    {
+      "id": "player-career-300-8",
+      "points": 300,
+      "question": "من هو اللاعب صاحب هذه المسيرة؟",
+      "answer": "Álvaro Morata",
+      "media": "",
+      "mediaType": "career",
+      "careerImage": "/media/player-careers/Álvaro Morata.jpeg",
+      "hint": ""
+    },
+    {
+      "id": "player-career-300-9",
+      "points": 300,
+      "question": "من هو اللاعب صاحب هذه المسيرة؟",
+      "answer": "Carlos Tevez",
+      "media": "",
+      "mediaType": "career",
+      "careerImage": "/media/player-careers/Carlos Tevez.jpeg",
+      "hint": ""
+    },
+    {
+      "id": "player-career-300-10",
+      "points": 300,
+      "question": "من هو اللاعب صاحب هذه المسيرة؟",
+      "answer": "Mesut Özil",
+      "media": "",
+      "mediaType": "career",
+      "careerImage": "/media/player-careers/Mesut Özil.jpeg",
+      "hint": ""
+    },
+    {
+      "id": "player-career-300-11",
+      "points": 300,
+      "question": "من هو اللاعب صاحب هذه المسيرة؟",
+      "answer": "Pierre-Emerick Aubameyang",
+      "media": "",
+      "mediaType": "career",
+      "careerImage": "/media/player-careers/Pierre-Emerick Aubameyang.jpeg",
+      "hint": ""
+    },
+    {
+      "id": "player-career-300-12",
+      "points": 300,
+      "question": "من هو اللاعب صاحب هذه المسيرة؟",
+      "answer": "Fernando Torres",
+      "media": "",
+      "mediaType": "career",
+      "careerImage": "/media/player-careers/Fernando Torres.jpeg",
+      "hint": ""
+    },
+    {
+      "id": "player-career-300-13",
+      "points": 300,
+      "question": "من هو اللاعب صاحب هذه المسيرة؟",
+      "answer": "Michael Ballack",
+      "media": "",
+      "mediaType": "career",
+      "careerImage": "/media/player-careers/Michael Ballack.jpeg",
+      "hint": ""
+    },
+    {
+      "id": "player-career-300-14",
+      "points": 300,
+      "question": "من هو اللاعب صاحب هذه المسيرة؟",
+      "answer": "Bastian Schweinsteiger",
+      "media": "",
+      "mediaType": "career",
+      "careerImage": "/media/player-careers/Bastian Schweinsteiger.jpeg",
+      "hint": ""
+    },
+    {
+      "id": "player-career-300-15",
+      "points": 300,
+      "question": "من هو اللاعب صاحب هذه المسيرة؟",
+      "answer": "Christian Eriksen",
+      "media": "",
+      "mediaType": "career",
+      "careerImage": "/media/player-careers/Christian Eriksen.jpeg",
+      "hint": ""
+    },
+    {
+      "id": "player-career-300-16",
+      "points": 300,
+      "question": "من هو اللاعب صاحب هذه المسيرة؟",
+      "answer": "João Cancelo",
+      "media": "",
+      "mediaType": "career",
+      "careerImage": "/media/player-careers/João Cancelo.jpeg",
+      "hint": ""
+    },
+    {
+      "id": "player-career-300-17",
+      "points": 300,
+      "question": "من هو اللاعب صاحب هذه المسيرة؟",
+      "answer": "Khvicha Kvaratskhelia",
+      "media": "",
+      "mediaType": "career",
+      "careerImage": "/media/player-careers/Khvicha Kvaratskhelia.jpeg",
+      "hint": ""
+    },
+    {
+      "id": "player-career-300-18",
+      "points": 300,
+      "question": "من هو اللاعب صاحب هذه المسيرة؟",
+      "answer": "Sébastien Haller",
+      "media": "",
+      "mediaType": "career",
+      "careerImage": "/media/player-careers/Sébastien Haller.jpeg",
+      "hint": ""
+    },
+    {
+      "id": "player-career-300-19",
+      "points": 300,
+      "question": "من هو اللاعب صاحب هذه المسيرة؟",
+      "answer": "James Rodríguez",
+      "media": "",
+      "mediaType": "career",
+      "careerImage": "/media/player-careers/James Rodríguez.jpeg",
+      "hint": ""
+    },
+    {
+      "id": "player-career-300-20",
+      "points": 300,
+      "question": "من هو اللاعب صاحب هذه المسيرة؟",
+      "answer": "Javier Mascherano",
+      "media": "",
+      "mediaType": "career",
+      "careerImage": "/media/player-careers/Javier Mascherano.jpeg",
+      "hint": ""
+    },
+    {
+      "id": "player-career-300-21",
+      "points": 300,
+      "question": "من هو اللاعب صاحب هذه المسيرة؟",
+      "answer": "David Beckham",
+      "media": "",
+      "mediaType": "career",
+      "careerImage": "/media/player-careers/David Beckham.jpeg",
+      "hint": ""
+    },
+    {
+      "id": "player-career-300-22",
+      "points": 300,
+      "question": "من هو اللاعب صاحب هذه المسيرة؟",
+      "answer": "Thomas Müller",
+      "media": "",
+      "mediaType": "career",
+      "careerImage": "/media/player-careers/Thomas Müller.jpeg",
+      "hint": ""
+    },
+    {
+      "id": "player-career-300-23",
+      "points": 300,
+      "question": "من هو اللاعب صاحب هذه المسيرة؟",
+      "answer": "Alisson Becker",
+      "media": "",
+      "mediaType": "career",
+      "careerImage": "/media/player-careers/Alisson Becker.jpeg",
+      "hint": ""
+    },
+    {
+      "id": "player-career-300-24",
+      "points": 300,
+      "question": "من هو اللاعب صاحب هذه المسيرة؟",
+      "answer": "Casemiro",
+      "media": "",
+      "mediaType": "career",
+      "careerImage": "/media/player-careers/Casemiro.jpeg",
+      "hint": ""
+    },
+    {
+      "id": "player-career-300-25",
+      "points": 300,
+      "question": "من هو اللاعب صاحب هذه المسيرة؟",
+      "answer": "Marcelo",
+      "media": "",
+      "mediaType": "career",
+      "careerImage": "/media/player-careers/Marcelo.jpeg",
+      "hint": ""
+    },
+    {
+      "id": "player-career-500-1",
+      "points": 500,
+      "question": "من هو اللاعب صاحب هذه المسيرة؟",
+      "answer": "Gonzalo Higuaín",
+      "media": "",
+      "mediaType": "career",
+      "careerImage": "/media/player-careers/Gonzalo Higuaín.jpeg",
+      "hint": ""
+    },
+    {
+      "id": "player-career-500-2",
+      "points": 500,
+      "question": "من هو اللاعب صاحب هذه المسيرة؟",
+      "answer": "Didier Drogba",
+      "media": "",
+      "mediaType": "career",
+      "careerImage": "/media/player-careers/Didier Drogba.jpeg",
+      "hint": ""
+    },
+    {
+      "id": "player-career-500-3",
+      "points": 500,
+      "question": "من هو اللاعب صاحب هذه المسيرة؟",
+      "answer": "Robin van Persie",
+      "media": "",
+      "mediaType": "career",
+      "careerImage": "/media/player-careers/Robin van Persie.jpeg",
+      "hint": ""
+    },
+    {
+      "id": "player-career-500-4",
+      "points": 500,
+      "question": "من هو اللاعب صاحب هذه المسيرة؟",
+      "answer": "Dirk Kuyt",
+      "media": "",
+      "mediaType": "career",
+      "careerImage": "/media/player-careers/Dirk Kuyt.jpeg",
+      "hint": ""
+    },
+    {
+      "id": "player-career-500-5",
+      "points": 500,
+      "question": "من هو اللاعب صاحب هذه المسيرة؟",
+      "answer": "Arturo Vidal",
+      "media": "",
+      "mediaType": "career",
+      "careerImage": "/media/player-careers/Arturo Vidal.jpeg",
+      "hint": ""
+    },
+    {
+      "id": "player-career-500-6",
+      "points": 500,
+      "question": "من هو اللاعب صاحب هذه المسيرة؟",
+      "answer": "Christian Pulisic",
+      "media": "",
+      "mediaType": "career",
+      "careerImage": "/media/player-careers/Christian Pulisic.jpeg",
+      "hint": ""
+    },
+    {
+      "id": "player-career-500-7",
+      "points": 500,
+      "question": "من هو اللاعب صاحب هذه المسيرة؟",
+      "answer": "Franck Ribéry",
+      "media": "",
+      "mediaType": "career",
+      "careerImage": "/media/player-careers/Franck Ribéry.jpeg",
+      "hint": ""
+    },
+    {
+      "id": "player-career-500-8",
+      "points": 500,
+      "question": "من هو اللاعب صاحب هذه المسيرة؟",
+      "answer": "Wesley Sneijder",
+      "media": "",
+      "mediaType": "career",
+      "careerImage": "/media/player-careers/Wesley Sneijder.jpeg",
+      "hint": ""
+    },
+    {
+      "id": "player-career-500-9",
+      "points": 500,
+      "question": "من هو اللاعب صاحب هذه المسيرة؟",
+      "answer": "Radamel Falcao",
+      "media": "",
+      "mediaType": "career",
+      "careerImage": "/media/player-careers/Radamel Falcao.jpeg",
+      "hint": ""
+    },
+    {
+      "id": "player-career-500-10",
+      "points": 500,
+      "question": "من هو اللاعب صاحب هذه المسيرة؟",
+      "answer": "Olivier Giroud",
+      "media": "",
+      "mediaType": "career",
+      "careerImage": "/media/player-careers/Olivier Giroud.jpeg",
+      "hint": ""
+    },
+    {
+      "id": "player-career-500-11",
+      "points": 500,
+      "question": "من هو اللاعب صاحب هذه المسيرة؟",
+      "answer": "Bruno Fernandes",
+      "media": "",
+      "mediaType": "career",
+      "careerImage": "/media/player-careers/Bruno Fernandes.jpeg",
+      "hint": ""
+    },
+    {
+      "id": "player-career-500-12",
+      "points": 500,
+      "question": "من هو اللاعب صاحب هذه المسيرة؟",
+      "answer": "Joško Gvardiol",
+      "media": "",
+      "mediaType": "career",
+      "careerImage": "/media/player-careers/Joško Gvardiol.jpeg",
+      "hint": ""
+    },
+    {
+      "id": "player-career-500-13",
+      "points": 500,
+      "question": "من هو اللاعب صاحب هذه المسيرة؟",
+      "answer": "Nani",
+      "media": "",
+      "mediaType": "career",
+      "careerImage": "/media/player-careers/Nani.jpeg",
+      "hint": ""
+    },
+    {
+      "id": "player-career-500-14",
+      "points": 500,
+      "question": "من هو اللاعب صاحب هذه المسيرة؟",
+      "answer": "Ricardo Quaresma",
+      "media": "",
+      "mediaType": "career",
+      "careerImage": "/media/player-careers/Ricardo Quaresma.jpeg",
+      "hint": ""
+    },
+    {
+      "id": "player-career-500-15",
+      "points": 500,
+      "question": "من هو اللاعب صاحب هذه المسيرة؟",
+      "answer": "Jordi Alba",
+      "media": "",
+      "mediaType": "career",
+      "careerImage": "/media/player-careers/Jordi Alba.jpeg",
+      "hint": ""
+    },
+    {
+      "id": "player-career-500-16",
+      "points": 500,
+      "question": "من هو اللاعب صاحب هذه المسيرة؟",
+      "answer": "Gerard Piqué",
+      "media": "",
+      "mediaType": "career",
+      "careerImage": "/media/player-careers/Gerard Piqué.jpeg",
+      "hint": ""
+    },
+    {
+      "id": "player-career-500-17",
+      "points": 500,
+      "question": "من هو اللاعب صاحب هذه المسيرة؟",
+      "answer": "Kim Min-jae",
+      "media": "",
+      "mediaType": "career",
+      "careerImage": "/media/player-careers/Kim Min-jae.jpeg",
+      "hint": ""
+    },
+    {
+      "id": "player-career-500-18",
+      "points": 500,
+      "question": "من هو اللاعب صاحب هذه المسيرة؟",
+      "answer": "Juan Cuadrado",
+      "media": "",
+      "mediaType": "career",
+      "careerImage": "/media/player-careers/Juan Cuadrado.jpeg",
+      "hint": ""
+    },
+    {
+      "id": "player-career-500-19",
+      "points": 500,
+      "question": "من هو اللاعب صاحب هذه المسيرة؟",
+      "answer": "Kaká",
+      "media": "",
+      "mediaType": "career",
+      "careerImage": "/media/player-careers/Kaká.jpeg",
+      "hint": ""
+    },
+    {
+      "id": "player-career-500-21",
+      "points": 500,
+      "question": "من هو اللاعب صاحب هذه المسيرة؟",
+      "answer": "Juan Román Riquelme",
+      "media": "",
+      "mediaType": "career",
+      "careerImage": "/media/player-careers/Juan Román Riquelme.jpeg",
+      "hint": ""
+    }
+  ],
+  "metadata": {
+    "sectionId": "sports",
+    "updatedAt": "2026-08-05",
+    "status": "pending"
+  }
+}

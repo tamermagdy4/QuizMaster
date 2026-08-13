@@ -1,79 +1,18 @@
+import { useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { CategoryGrid } from '../components/create-game/CategoryGrid'
 import { GameSetupForm } from '../components/create-game/GameSetupForm'
+import { LifelineSelector } from '../components/create-game/LifelineSelector'
 import { useGameBoardStore } from '../store/gameBoardStore'
 import { useGameSetupStore } from '../store/gameSetupStore'
+import { useTranslation } from '../i18n/translations'
 
 export function CreateGame() {
-  const navigate = useNavigate()
-
-  const {
-    gameName,
-    team1Name,
-    team2Name,
-    team1Players,
-    team2Players,
-    team1CategoryIds,
-    team2CategoryIds,
-    activeTeam,
-    setGameName,
-    setTeam1Name,
-    setTeam2Name,
-    adjustTeam1Players,
-    adjustTeam2Players,
-    toggleCategory,
-    getCategoryOwner,
-    canStartGame,
-  } = useGameSetupStore()
-
+  const navigate = useNavigate(); const { t, language } = useTranslation()
+  const { gameName, team1Name, team2Name, team1Players, team2Players, team1CategoryIds, team2CategoryIds, team1LifelineIds, team2LifelineIds, activeTeam, setGameName, setTeam1Name, setTeam2Name, adjustTeam1Players, adjustTeam2Players, toggleCategory, getCategoryOwner, toggleLifeline, canStartGame, resetCategories } = useGameSetupStore()
+  useEffect(() => { resetCategories() }, [resetCategories])
   const initializeBoard = useGameBoardStore((state) => state.initializeBoard)
-
-  const handleStartGame = () => {
-    if (!canStartGame()) return
-    initializeBoard()
-    navigate('/board')
-  }
-
-  return (
-    <div className="space-y-6">
-      <div className="flex flex-col gap-2 rounded-3xl border border-white/10 bg-white/5 px-5 py-4 backdrop-blur-sm">
-        <h1 className="text-2xl font-black text-white">إنشاء لعبة جديدة</h1>
-        <p className="text-sm text-white/60">
-          اختر الفئات من الأقسام المخصصة لكل فريق، ثم ابدأ الجولة مع التفاعل نفسه الموجود الآن.
-        </p>
-      </div>
-
-      <div className="grid grid-cols-1 gap-8 lg:grid-cols-[1fr_minmax(280px,360px)]">
-        <CategoryGrid
-          className="order-2 lg:order-1"
-          activeTeam={activeTeam}
-          team1Count={team1CategoryIds.length}
-          team2Count={team2CategoryIds.length}
-          getCategoryOwner={getCategoryOwner}
-          onToggleCategory={toggleCategory}
-        />
-
-        <GameSetupForm
-          className="order-1 lg:order-2"
-          gameName={gameName}
-          team1Name={team1Name}
-          team2Name={team2Name}
-          team1Players={team1Players}
-          team2Players={team2Players}
-          team1Count={team1CategoryIds.length}
-          team2Count={team2CategoryIds.length}
-          activeTeam={activeTeam}
-          canStart={canStartGame()}
-          onGameNameChange={setGameName}
-          onTeam1NameChange={setTeam1Name}
-          onTeam2NameChange={setTeam2Name}
-          onTeam1PlayersDecrease={() => adjustTeam1Players(-1)}
-          onTeam1PlayersIncrease={() => adjustTeam1Players(1)}
-          onTeam2PlayersDecrease={() => adjustTeam2Players(-1)}
-          onTeam2PlayersIncrease={() => adjustTeam2Players(1)}
-          onStartGame={handleStartGame}
-        />
-      </div>
-    </div>
-  )
+  const handleStartGame = async () => { if (!canStartGame()) return; useGameBoardStore.setState({ isInitialized: false, team1Lifelines: [], team2Lifelines: [], activeQuestion: null, pendingDoublePoints: null, blockActive: null, callFriendActive: null, callFriendTimeLeft: 0 }); await initializeBoard(); navigate('/board') }
+  const steps = [{ number: 1, label: t('stepsTeams'), icon: '♟' }, { number: 2, label: t('stepsCategories'), icon: '▦' }, { number: 3, label: t('stepsSettings'), icon: '⚙' }, { number: 4, label: t('stepsReview'), icon: '✓' }]
+  return <div dir={language === 'ar' ? 'rtl' : 'ltr'} className="mx-auto w-full max-w-[1400px] space-y-5"><div className="rounded-[18px] border border-cyan-300/10 bg-[#07172e]/80 px-4 py-4 shadow-xl shadow-black/20 sm:px-6"><div className="mb-4 flex items-center justify-between"><div><p className="text-[10px] font-black uppercase tracking-[.24em] text-cyan-300">{t('arena')}</p><h1 className="mt-1 text-xl font-black text-white">{t('createTitle')}</h1></div><span className="hidden text-sm text-slate-500 sm:block">{t('createDesc')}</span></div><div className="grid grid-cols-4 gap-2 sm:gap-4">{steps.map((step, index) => <div key={step.number} className="relative flex min-w-0 items-center gap-2"><div className={`relative z-10 flex h-9 w-9 shrink-0 items-center justify-center rounded-full border text-sm font-black transition ${step.number === 2 ? 'border-cyan-300 bg-cyan-400/20 text-cyan-100 shadow-[0_0_20px_rgba(34,211,238,.25)]' : step.number < 2 ? 'border-blue-400/60 bg-blue-500/15 text-blue-200' : 'border-white/15 bg-white/[.04] text-slate-500'}`}>{step.icon}</div><span className={`hidden truncate text-xs font-bold sm:block ${step.number === 2 ? 'text-cyan-200' : 'text-slate-500'}`}>{step.number} · {step.label}</span>{index < steps.length - 1 && <span className="absolute start-9 end-[-.75rem] top-4 hidden h-px bg-gradient-to-r from-cyan-400/50 to-white/10 sm:block" />}</div>)}</div></div><div className="grid min-w-0 items-start gap-5 lg:grid-cols-[minmax(280px,320px)_minmax(0,1fr)]"><GameSetupForm gameName={gameName} team1Name={team1Name} team2Name={team2Name} team1Players={team1Players} team2Players={team2Players} team1Count={team1CategoryIds.length} team2Count={team2CategoryIds.length} activeTeam={activeTeam} canStart={canStartGame()} onGameNameChange={setGameName} onTeam1NameChange={setTeam1Name} onTeam2NameChange={setTeam2Name} onTeam1PlayersDecrease={() => adjustTeam1Players(-1)} onTeam1PlayersIncrease={() => adjustTeam1Players(1)} onTeam2PlayersDecrease={() => adjustTeam2Players(-1)} onTeam2PlayersIncrease={() => adjustTeam2Players(1)} onStartGame={handleStartGame}><LifelineSelector teamId={1} teamName={team1Name || t('teamOne')} selectedIds={team1LifelineIds} onToggle={toggleLifeline} /><LifelineSelector teamId={2} teamName={team2Name || t('teamTwo')} selectedIds={team2LifelineIds} onToggle={toggleLifeline} /></GameSetupForm><CategoryGrid activeTeam={activeTeam} team1Count={team1CategoryIds.length} team2Count={team2CategoryIds.length} getCategoryOwner={getCategoryOwner} onToggleCategory={toggleCategory} /></div></div>
 }

@@ -1,11 +1,206 @@
-﻿{
-    "categoryId":  "intelligence",
-    "questions":  [
-
-                  ],
-    "metadata":  {
-                     "sectionId":  "general",
-                     "updatedAt":  "2026-08-03",
-                     "status":  "pending"
-                 }
+{
+  "categoryId": "intelligence",
+  "questions": [
+    {
+      "id": "intelligence-100-1",
+      "points": 100,
+      "question": "ما الحيوان الذي يلبس الحذاء طوال الوقت؟",
+      "answer": "الحصان",
+      "image": ""
+    },
+    {
+      "id": "intelligence-100-2",
+      "points": 100,
+      "question": "ما الشيء الذي تأكل منه ولا تأكله؟",
+      "answer": "الطبق",
+      "image": ""
+    },
+    {
+      "id": "intelligence-100-3",
+      "points": 100,
+      "question": "ما الطائر الذي يصنع عشه بشكل فنجان؟",
+      "answer": "طائر الرخ",
+      "image": ""
+    },
+    {
+      "id": "intelligence-100-4",
+      "points": 100,
+      "question": "ما الذي يقع على رأس الإنسان ولا يضره؟",
+      "answer": "المطر",
+      "image": ""
+    },
+    {
+      "id": "intelligence-100-5",
+      "points": 100,
+      "question": "حيوان يسبب الخوف للجن؟",
+      "answer": "الذئب",
+      "image": ""
+    },
+    {
+      "id": "intelligence-100-6",
+      "points": 100,
+      "question": "كم عدد بيض الحوت في العام الواحد؟",
+      "answer": "صفر؛ لأن الحوت يلد ولا يبيض",
+      "image": ""
+    },
+    {
+      "id": "intelligence-100-7",
+      "points": 100,
+      "question": "ما هو الحيوان الذي لا يمكنه إخراج لسانه؟",
+      "answer": "التمساح",
+      "image": ""
+    },
+    {
+      "id": "intelligence-100-8",
+      "points": 100,
+      "question": "طعام نأكله ويمنع بيعه؛ فما هو؟",
+      "answer": "الأضحية",
+      "image": ""
+    },
+    {
+      "id": "intelligence-100-9",
+      "points": 100,
+      "question": "ما هو الشيء الذي كلما أخذت منه كبر؟",
+      "answer": "الحفرة",
+      "image": ""
+    },
+    {
+      "id": "intelligence-100-10",
+      "points": 100,
+      "question": "ما هو الشيء الذي يأكل ولا يشبع؟",
+      "answer": "النار",
+      "image": ""
+    },
+    {
+      "id": "intelligence-300-1",
+      "points": 300,
+      "question": "متى تستطيع وضع الماء في الغربال دون أن يتسرب؟",
+      "answer": "في حالة تجمد الماء وتحوله إلى ثلج",
+      "image": ""
+    },
+    {
+      "id": "intelligence-300-2",
+      "points": 300,
+      "question": "ما هو الطعام الذي يتسبب في موتك إذا أكلت نصفه، ومفيد لك عند أكله كله؟",
+      "answer": "السمسم",
+      "image": ""
+    },
+    {
+      "id": "intelligence-300-3",
+      "points": 300,
+      "question": "ما هو الحيوان الذي لا يلد ولا يبيض؟",
+      "answer": "ذكور الحيوانات",
+      "image": ""
+    },
+    {
+      "id": "intelligence-300-4",
+      "points": 300,
+      "question": "ما هو الشيء الذي تستطيع كسره دون أن تلمسه؟",
+      "answer": "الوعد",
+      "image": ""
+    },
+    {
+      "id": "intelligence-300-5",
+      "points": 300,
+      "question": "ما هو الشيء الموجود في منتصف باريس؟",
+      "answer": "الراء",
+      "image": ""
+    },
+    {
+      "id": "intelligence-300-6",
+      "points": 300,
+      "question": "بيت لا أبواب له ولا نوافذ؟",
+      "answer": "بيت الشعر",
+      "image": ""
+    },
+    {
+      "id": "intelligence-300-7",
+      "points": 300,
+      "question": "ما هو القبر الذي سار بصاحبه؟",
+      "answer": "حوت يونس عليه السلام",
+      "image": ""
+    },
+    {
+      "id": "intelligence-300-8",
+      "points": 300,
+      "question": "ما هو العقرب المسالم الذي لا يلدغ أحد؟",
+      "answer": "عقرب الساعة",
+      "image": ""
+    },
+    {
+      "id": "intelligence-300-9",
+      "points": 300,
+      "question": "ما هو الشيء الذي قلبه أبيض وجسمه أسود ويرتدي قبعة خضراء؟",
+      "answer": "الباذنجان",
+      "image": ""
+    },
+    {
+      "id": "intelligence-300-10",
+      "points": 300,
+      "question": "ما هو الشيء الذي يمشي دون رجلين ويبكي دون عينين؟",
+      "answer": "السحابة",
+      "image": ""
+    },
+    {
+      "id": "intelligence-500-1",
+      "points": 500,
+      "question": "ما هو الشيء الذي لا يعتبر إنسان ولا حيوان ولا جماد؟",
+      "answer": "النبات",
+      "image": ""
+    },
+    {
+      "id": "intelligence-500-2",
+      "points": 500,
+      "question": "ما هو الشيء الذي يمشي على الأرض ورأسه فوق النجوم؟",
+      "answer": "الضابط",
+      "image": ""
+    },
+    {
+      "id": "intelligence-500-3",
+      "points": 500,
+      "question": "ما هو الحيوان الذي إذا قلبته رأيت العجب؟",
+      "answer": "البجع",
+      "image": ""
+    },
+    {
+      "id": "intelligence-500-4",
+      "points": 500,
+      "question": "ما هو الشيء الذي يقرصنا ولا نراه؟",
+      "answer": "الجوع",
+      "image": ""
+    },
+    {
+      "id": "intelligence-500-5",
+      "points": 500,
+      "question": "ما هو الشيء الذي إذا أزلنا منه الحرف الأول طار؟",
+      "answer": "مطار",
+      "image": ""
+    },
+    {
+      "id": "intelligence-500-6",
+      "points": 500,
+      "question": "من هو الحيوان الذي ينام مُرتديًا حذائه؟",
+      "answer": "الحصان",
+      "image": ""
+    },
+    {
+      "id": "intelligence-500-7",
+      "points": 500,
+      "question": "ما هو الشيء الذي لا تنخفض حرارته مهما وضع في الثلاجة؟",
+      "answer": "الفلفل الحار",
+      "image": ""
+    },
+    {
+      "id": "intelligence-500-8",
+      "points": 500,
+      "question": "أين تنمو شجرة الأركان؟",
+      "answer": "في بلاد المغرب",
+      "image": ""
+    }
+  ],
+  "metadata": {
+    "sectionId": "general",
+    "updatedAt": "2026-08-10",
+    "status": "active"
+  }
 }

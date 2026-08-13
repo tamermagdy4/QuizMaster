@@ -1,9 +1,11 @@
 import { Outlet, useLocation } from 'react-router-dom'
+import { useEffect } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import { useDirectionSync } from '../hooks/useDirectionSync'
 import { useAppStore } from '../store/appStore'
 import { NavLinkItem } from '../components/NavLinkItem'
 import type { NavItem } from '../types'
+import { startBackgroundMusic, stopBackgroundMusic, setMusicVolume } from '../utils/audioManager'
 
 const navItems: NavItem[] = [
   { path: '/', label: 'الرئيسية' },
@@ -12,34 +14,50 @@ const navItems: NavItem[] = [
   { path: '/question', label: 'السؤال' },
   { path: '/results', label: 'النتائج' },
   { path: '/settings', label: 'الإعدادات' },
+  { path: '/about', label: 'عن المطور' },
   { path: '/admin', label: 'الإدارة' },
 ]
 
 export function MainLayout() {
   useDirectionSync()
   const location = useLocation()
-  const { direction, toggleDirection } = useAppStore()
+  const { direction, setDirection, musicEnabled, musicVolume, theme, animationsEnabled } = useAppStore()
+  const language = direction === 'rtl' ? 'ar' : 'en'
+  const navLabels = language === 'ar'
+    ? { '/': 'الرئيسية', '/create': 'إنشاء لعبة', '/about': 'عن المطور', '/board': 'لوحة اللعب', '/question': 'السؤال', '/results': 'النتائج', '/settings': 'الإعدادات', '/admin': 'الإدارة' }
+    : { '/': 'Home', '/create': 'Create Game', '/about': 'About', '/board': 'Game Board', '/question': 'Question', '/results': 'Results', '/settings': 'Settings', '/admin': 'Admin' }
+
+  useEffect(() => {
+    if (musicEnabled) startBackgroundMusic(musicVolume)
+    else stopBackgroundMusic()
+    setMusicVolume(musicVolume)
+    return () => stopBackgroundMusic()
+  }, [musicEnabled, musicVolume])
 
   return (
-    <div className="ambient-bg relative min-h-dvh overflow-hidden">
+    <div className={`app-shell theme-${theme} ${animationsEnabled ? 'motion-enabled' : 'motion-reduced'} relative min-h-dvh overflow-hidden transition-colors duration-300 ${theme === 'light' ? 'bg-slate-50 text-slate-800' : 'ambient-bg'}`}>
       <div
         aria-hidden
-        className="pointer-events-none absolute -start-24 top-20 h-72 w-72 rounded-full bg-royal-500/20 blur-3xl"
+        className="pointer-events-none absolute -start-24 top-20 h-96 w-96 rounded-full bg-sky-200/20 blur-3xl"
       />
       <div
         aria-hidden
-        className="pointer-events-none absolute -end-16 bottom-16 h-64 w-64 rounded-full bg-gold-400/15 blur-3xl"
+        className="pointer-events-none absolute -end-20 bottom-20 h-80 w-80 rounded-full bg-teal-200/20 blur-3xl"
+      />
+      <div
+        aria-hidden
+        className="pointer-events-none absolute left-1/2 top-1/2 h-64 w-64 -translate-x-1/2 -translate-y-1/2 rounded-full bg-slate-200/20 blur-3xl"
       />
 
-      <header className="glass-panel sticky top-0 z-50 mx-auto w-full max-w-6xl rounded-none border-x-0 border-t-0 px-4 py-4 sm:px-6">
+      <header className={`sticky top-0 z-50 mx-auto w-full max-w-7xl border-b px-4 py-4 shadow-[0_2px_20px_rgba(23,107,135,0.06)] backdrop-blur-xl transition-colors duration-300 sm:px-6 ${theme === 'light' ? 'border-slate-200/80 bg-white/90' : 'border-slate-700/60 bg-slate-950/85'}`}>
         <div className="flex flex-wrap items-center justify-between gap-4">
           <div className="flex items-center gap-3">
-            <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-gradient-to-br from-royal-500 to-gold-400 text-lg font-bold text-midnight-950 shadow-glow-gold">
+            <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-sky-500 to-teal-600 text-xl font-bold text-white shadow-[0_8px_20px_rgba(23,107,135,0.3)]">
               س
             </div>
             <div>
-              <p className="text-lg font-semibold text-white">ساحة الأسئلة</p>
-              <p className="text-xs text-white/60">مسابقة معرفية عربية</p>
+              <p className="text-xl font-bold text-slate-800">{language === 'ar' ? 'فهلوي' : 'Fahloy'}</p>
+              <p className="text-xs text-slate-500">{language === 'ar' ? 'مسابقة معرفية عربية' : 'Arabic Quiz Game'}</p>
             </div>
           </div>
 
@@ -48,7 +66,7 @@ export function MainLayout() {
               <NavLinkItem
                 key={item.path}
                 to={item.path}
-                label={item.label}
+                label={navLabels[item.path as keyof typeof navLabels]}
                 end={item.path === '/'}
               />
             ))}
@@ -56,21 +74,21 @@ export function MainLayout() {
 
           <button
             type="button"
-            onClick={toggleDirection}
-            className="glass-button rounded-xl px-4 py-2 text-sm font-medium text-white"
+            onClick={() => setDirection(language === 'ar' ? 'ltr' : 'rtl')}
+            className="rounded-xl border border-slate-200 bg-white/70 px-4 py-2 text-sm font-medium text-slate-600 transition hover:bg-slate-50"
           >
-            {direction === 'rtl' ? 'EN' : 'عربي'}
+            {language === 'ar' ? 'EN' : 'عربي'}
           </button>
         </div>
       </header>
 
-      <main className="mx-auto w-full max-w-6xl px-4 py-8 sm:px-6">
+      <main className="mx-auto w-full max-w-7xl px-4 py-8 sm:px-6">
         <AnimatePresence mode="wait">
           <motion.div
             key={location.pathname}
-            initial={{ opacity: 0, y: 16 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -12 }}
+            initial={animationsEnabled ? { opacity: 0, y: 16 } : false}
+            animate={animationsEnabled ? { opacity: 1, y: 0 } : undefined}
+            exit={animationsEnabled ? { opacity: 0, y: -12 } : undefined}
             transition={{ duration: 0.3, ease: 'easeOut' }}
           >
             <Outlet />
@@ -78,8 +96,8 @@ export function MainLayout() {
         </AnimatePresence>
       </main>
 
-      <footer className="mx-auto w-full max-w-6xl px-4 pb-8 text-center text-sm text-white/45 sm:px-6">
-        © {new Date().getFullYear()} ساحة الأسئلة — تجربة أصلية بالكامل
+      <footer className="mx-auto w-full max-w-6xl px-4 pb-8 text-center text-sm text-slate-400 sm:px-6">
+        © {new Date().getFullYear()} {language === 'ar' ? 'فهلوي' : 'Fahloy'} — {language === 'ar' ? 'تجربة أصلية بالكامل' : 'An original experience'}
       </footer>
     </div>
   )

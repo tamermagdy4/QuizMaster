@@ -1,17 +1,705 @@
-﻿{
+{
   "categoryId": "egyptian-history",
   "questions": [
     {
-      "question": "ما هو اسم أقدم هرم في مصر؟",
-      "answer": "هرم زوسر."
+      "id": "egyptian-history-100-1",
+      "points": 100,
+      "question": "من هو أول ملوك الأسرة الأولى في مصر القديمة؟",
+      "answer": "نارمر (مينا)",
+      "image": ""
     },
     {
-      "question": "من هو الفرعون الذي اشتهر ببناء الهرم الأكبر؟",
-      "answer": "الفرعون خوفو."
+      "id": "egyptian-history-100-2",
+      "points": 100,
+      "question": "ما اسم المدينة التي أصبحت عاصمة مصر في عصر الدولة القديمة؟",
+      "answer": "منف",
+      "image": ""
     },
     {
-      "question": "ما اسم النهر الذي ساهم في ازدهار الحضارة المصرية القديمة؟",
-      "answer": "نهر النيل."
+      "id": "egyptian-history-100-3",
+      "points": 100,
+      "question": "من بنى الهرم الأكبر؟",
+      "answer": "الملك خوفو",
+      "image": ""
+    },
+    {
+      "id": "egyptian-history-100-4",
+      "points": 100,
+      "question": "أين يقع الهرم الأكبر؟",
+      "answer": "الجيزة",
+      "image": ""
+    },
+    {
+      "id": "egyptian-history-100-5",
+      "points": 100,
+      "question": "من بنى هرم خفرع؟",
+      "answer": "الملك خفرع",
+      "image": ""
+    },
+    {
+      "id": "egyptian-history-100-6",
+      "points": 100,
+      "question": "من بنى الهرم الأصغر في أهرامات الجيزة؟",
+      "answer": "الملك منقرع",
+      "image": ""
+    },
+    {
+      "id": "egyptian-history-100-7",
+      "points": 100,
+      "question": "ما اسم التمثال الشهير الموجود بجوار أهرامات الجيزة؟",
+      "answer": "أبو الهول",
+      "image": ""
+    },
+    {
+      "id": "egyptian-history-100-8",
+      "points": 100,
+      "question": "من هو الفرعون الذي ارتبط ببناء معابد أبو سمبل؟",
+      "answer": "رمسيس الثاني",
+      "image": ""
+    },
+    {
+      "id": "egyptian-history-100-9",
+      "points": 100,
+      "question": "أين توجد معابد أبو سمبل؟",
+      "answer": "أسوان",
+      "image": ""
+    },
+    {
+      "id": "egyptian-history-100-10",
+      "points": 100,
+      "question": "من هي الملكة التي حكمت مصر خلال الأسرة الثامنة عشرة واشتهرت بمعبدها في الدير البحري؟",
+      "answer": "حتشبسوت",
+      "image": ""
+    },
+    {
+      "id": "egyptian-history-100-11",
+      "points": 100,
+      "question": "ما اسم المعبد الشهير الذي بنته حتشبسوت؟",
+      "answer": "معبد الدير البحري",
+      "image": ""
+    },
+    {
+      "id": "egyptian-history-100-12",
+      "points": 100,
+      "question": "من هو الفرعون الذي حاول توحيد عبادة الإله آتون؟",
+      "answer": "أخناتون",
+      "image": ""
+    },
+    {
+      "id": "egyptian-history-100-13",
+      "points": 100,
+      "question": "ما الاسم الذي اتخذه أخناتون لعاصمته الجديدة؟",
+      "answer": "أخيتاتون",
+      "image": ""
+    },
+    {
+      "id": "egyptian-history-100-14",
+      "points": 100,
+      "question": "ما الاسم الحديث لمدينة أخيتاتون؟",
+      "answer": "تل العمارنة",
+      "image": ""
+    },
+    {
+      "id": "egyptian-history-100-15",
+      "points": 100,
+      "question": "من هي زوجة أخناتون الشهيرة؟",
+      "answer": "نفرتيتي",
+      "image": ""
+    },
+    {
+      "id": "egyptian-history-100-16",
+      "points": 100,
+      "question": "من هو الفرعون الذي اكتُشفت مقبرته شبه كاملة في وادي الملوك عام 1922؟",
+      "answer": "توت عنخ آمون",
+      "image": ""
+    },
+    {
+      "id": "egyptian-history-100-17",
+      "points": 100,
+      "question": "من اكتشف مقبرة توت عنخ آمون؟",
+      "answer": "هوارد كارتر",
+      "image": ""
+    },
+    {
+      "id": "egyptian-history-100-18",
+      "points": 100,
+      "question": "أين يقع وادي الملوك؟",
+      "answer": "الأقصر",
+      "image": ""
+    },
+    {
+      "id": "egyptian-history-100-19",
+      "points": 100,
+      "question": "ما المدينة التي كانت مركزًا دينيًا مهمًا لعبادة آمون؟",
+      "answer": "طيبة",
+      "image": ""
+    },
+    {
+      "id": "egyptian-history-100-20",
+      "points": 100,
+      "question": "ما الاسم الحديث لمدينة طيبة؟",
+      "answer": "الأقصر",
+      "image": ""
+    },
+    {
+      "id": "egyptian-history-100-21",
+      "points": 100,
+      "question": "من هو الفرعون الذي اشتهر بمعركة قادش؟",
+      "answer": "رمسيس الثاني",
+      "image": ""
+    },
+    {
+      "id": "egyptian-history-100-22",
+      "points": 100,
+      "question": "مع من خاض رمسيس الثاني معركة قادش؟",
+      "answer": "الحيثيين",
+      "image": ""
+    },
+    {
+      "id": "egyptian-history-100-23",
+      "points": 100,
+      "question": "ما اسم الكتاب الجنائزي الشهير عند المصريين القدماء؟",
+      "answer": "كتاب الموتى",
+      "image": ""
+    },
+    {
+      "id": "egyptian-history-100-24",
+      "points": 100,
+      "question": "ما المادة التي كان المصريون القدماء يكتبون عليها بكثرة؟",
+      "answer": "البردي",
+      "image": ""
+    },
+    {
+      "id": "egyptian-history-100-25",
+      "points": 100,
+      "question": "ما اسم الكتابة التي استخدمها المصريون القدماء على المعابد والمقابر؟",
+      "answer": "الهيروغليفية",
+      "image": ""
+    },
+    {
+      "id": "egyptian-history-100-26",
+      "points": 100,
+      "question": "ما اسم الحجر الذي ساعد في فك رموز الكتابة الهيروغليفية؟",
+      "answer": "حجر رشيد",
+      "image": ""
+    },
+    {
+      "id": "egyptian-history-100-27",
+      "points": 100,
+      "question": "أين اكتُشف حجر رشيد؟",
+      "answer": "رشيد",
+      "image": ""
+    },
+    {
+      "id": "egyptian-history-100-28",
+      "points": 100,
+      "question": "من تمكن من فك رموز الهيروغليفية اعتمادًا على حجر رشيد؟",
+      "answer": "جان فرانسوا شامبليون",
+      "image": ""
+    },
+    {
+      "id": "egyptian-history-100-29",
+      "points": 100,
+      "question": "ما اسم النهر الذي قامت عليه الحضارة المصرية القديمة؟",
+      "answer": "نهر النيل",
+      "image": ""
+    },
+    {
+      "id": "egyptian-history-100-30",
+      "points": 100,
+      "question": "ما اسم التقويم الذي ارتبط بالحضارة المصرية القديمة ويُعد من أقدم التقويمات المعروفة؟",
+      "answer": "التقويم المصري القديم",
+      "image": ""
+    },
+    {
+      "id": "egyptian-history-100-31",
+      "points": 100,
+      "question": "ما اسم الإله المرتبط بالعالم الآخر عند المصريين القدماء؟",
+      "answer": "أوزيريس",
+      "image": ""
+    },
+    {
+      "id": "egyptian-history-100-32",
+      "points": 100,
+      "question": "من هي الإلهة المرتبطة بالأمومة والسحر في مصر القديمة؟",
+      "answer": "إيزيس",
+      "image": ""
+    },
+    {
+      "id": "egyptian-history-100-33",
+      "points": 100,
+      "question": "من هو الإله الذي ارتبط بالشمس في الديانة المصرية القديمة؟",
+      "answer": "رع",
+      "image": ""
+    },
+    {
+      "id": "egyptian-history-100-34",
+      "points": 100,
+      "question": "ما اسم الإله الذي صُوّر غالبًا برأس ابن آوى؟",
+      "answer": "أنوبيس",
+      "image": ""
+    },
+    {
+      "id": "egyptian-history-300-1",
+      "points": 300,
+      "question": "ما الوظيفة الأساسية للمقابر الملكية في مصر القديمة؟",
+      "answer": "دفن الملوك",
+      "image": ""
+    },
+    {
+      "id": "egyptian-history-300-2",
+      "points": 300,
+      "question": "ما اسم المقبرة الشهيرة التي تضم العديد من ملوك الدولة الحديثة؟",
+      "answer": "وادي الملوك",
+      "image": ""
+    },
+    {
+      "id": "egyptian-history-300-3",
+      "points": 300,
+      "question": "ما اسم المنطقة التي دُفنت فيها العديد من الملكات في الأقصر؟",
+      "answer": "وادي الملكات",
+      "image": ""
+    },
+    {
+      "id": "egyptian-history-300-4",
+      "points": 300,
+      "question": "ما اسم المعركة البحرية الشهيرة التي وقعت في عهد رمسيس الثالث؟",
+      "answer": "معركة الدلتا ضد شعوب البحر",
+      "image": ""
+    },
+    {
+      "id": "egyptian-history-300-5",
+      "points": 300,
+      "question": "ما الحضارة التي حكمت مصر خلال الأسرة الخامسة والعشرين؟",
+      "answer": "الحضارة النوبية/الكوشية",
+      "image": ""
+    },
+    {
+      "id": "egyptian-history-300-6",
+      "points": 300,
+      "question": "ما المدينة التي كانت عاصمة مملكة كوش؟",
+      "answer": "نبتة ثم مروي",
+      "image": ""
+    },
+    {
+      "id": "egyptian-history-300-7",
+      "points": 300,
+      "question": "من أسس الدولة البطلمية في مصر؟",
+      "answer": "بطليموس الأول",
+      "image": ""
+    },
+    {
+      "id": "egyptian-history-300-8",
+      "points": 300,
+      "question": "بعد وفاة أي قائد مقدوني بدأت الدولة البطلمية في مصر؟",
+      "answer": "الإسكندر الأكبر",
+      "image": ""
+    },
+    {
+      "id": "egyptian-history-300-9",
+      "points": 300,
+      "question": "من أشهر ملكات العصر البطلمي؟",
+      "answer": "كليوباترا السابعة",
+      "image": ""
+    },
+    {
+      "id": "egyptian-history-300-10",
+      "points": 300,
+      "question": "ما اسم المكتبة الشهيرة التي ارتبطت بمدينة الإسكندرية القديمة؟",
+      "answer": "مكتبة الإسكندرية",
+      "image": ""
+    },
+    {
+      "id": "egyptian-history-300-11",
+      "points": 300,
+      "question": "من بنى منارة الإسكندرية؟",
+      "answer": "سوستراتوس من كنيدوس",
+      "image": ""
+    },
+    {
+      "id": "egyptian-history-300-12",
+      "points": 300,
+      "question": "أين كانت تقع منارة الإسكندرية؟",
+      "answer": "جزيرة فاروس",
+      "image": ""
+    },
+    {
+      "id": "egyptian-history-300-13",
+      "points": 300,
+      "question": "من هو آخر حكام الأسرة البطلمية في مصر؟",
+      "answer": "كليوباترا السابعة",
+      "image": ""
+    },
+    {
+      "id": "egyptian-history-300-14",
+      "points": 300,
+      "question": "مع أي قائد روماني ارتبطت كليوباترا سياسيًا وعسكريًا؟",
+      "answer": "يوليوس قيصر",
+      "image": ""
+    },
+    {
+      "id": "egyptian-history-300-15",
+      "points": 300,
+      "question": "من هو القائد الروماني الذي ارتبط بكليوباترا بعد يوليوس قيصر؟",
+      "answer": "مارك أنطونيوس",
+      "image": ""
+    },
+    {
+      "id": "egyptian-history-300-16",
+      "points": 300,
+      "question": "من هزم مارك أنطونيوس وكليوباترا في معركة أكتيوم؟",
+      "answer": "أوكتافيان",
+      "image": ""
+    },
+    {
+      "id": "egyptian-history-300-17",
+      "points": 300,
+      "question": "في أي عام أصبحت مصر ولاية رومانية؟",
+      "answer": "30 ق.م.",
+      "image": ""
+    },
+    {
+      "id": "egyptian-history-300-18",
+      "points": 300,
+      "question": "ما اسم الإمبراطور الروماني الذي أصبحت مصر ولاية رومانية في عهده؟",
+      "answer": "أوكتافيان أغسطس",
+      "image": ""
+    },
+    {
+      "id": "egyptian-history-300-19",
+      "points": 300,
+      "question": "من القائد الذي فتح مصر في عهد الخليفة عمر بن الخطاب؟",
+      "answer": "عمرو بن العاص",
+      "image": ""
+    },
+    {
+      "id": "egyptian-history-300-20",
+      "points": 300,
+      "question": "في عهد أي خليفة تم فتح مصر؟",
+      "answer": "عمر بن الخطاب",
+      "image": ""
+    },
+    {
+      "id": "egyptian-history-300-21",
+      "points": 300,
+      "question": "ما المدينة التي أسسها عمرو بن العاص بعد فتح مصر؟",
+      "answer": "الفسطاط",
+      "image": ""
+    },
+    {
+      "id": "egyptian-history-300-22",
+      "points": 300,
+      "question": "ما اسم المسجد الشهير الذي أسسه عمرو بن العاص في الفسطاط؟",
+      "answer": "مسجد عمرو بن العاص",
+      "image": ""
+    },
+    {
+      "id": "egyptian-history-300-23",
+      "points": 300,
+      "question": "ما المدينة التي أسسها الفاطميون لتكون عاصمتهم في مصر؟",
+      "answer": "القاهرة",
+      "image": ""
+    },
+    {
+      "id": "egyptian-history-300-24",
+      "points": 300,
+      "question": "من أسس مدينة القاهرة الفاطمية؟",
+      "answer": "جوهر الصقلي",
+      "image": ""
+    },
+    {
+      "id": "egyptian-history-300-25",
+      "points": 300,
+      "question": "في عهد أي دولة بُني الجامع الأزهر؟",
+      "answer": "الدولة الفاطمية",
+      "image": ""
+    },
+    {
+      "id": "egyptian-history-300-26",
+      "points": 300,
+      "question": "ما اسم القائد الذي أنهى الحكم الفاطمي في مصر؟",
+      "answer": "صلاح الدين الأيوبي",
+      "image": ""
+    },
+    {
+      "id": "egyptian-history-300-27",
+      "points": 300,
+      "question": "إلى أي أسرة/سلالة ينتمي صلاح الدين؟",
+      "answer": "الأيوبيون",
+      "image": ""
+    },
+    {
+      "id": "egyptian-history-300-28",
+      "points": 300,
+      "question": "ما القلعة الشهيرة التي بدأ صلاح الدين بناءها في القاهرة؟",
+      "answer": "قلعة صلاح الدين",
+      "image": ""
+    },
+    {
+      "id": "egyptian-history-300-29",
+      "points": 300,
+      "question": "من السلطان الذي هزم المغول في معركة عين جالوت؟",
+      "answer": "سيف الدين قطز",
+      "image": ""
+    },
+    {
+      "id": "egyptian-history-300-30",
+      "points": 300,
+      "question": "في أي عام وقعت معركة عين جالوت؟",
+      "answer": "1260م",
+      "image": ""
+    },
+    {
+      "id": "egyptian-history-300-31",
+      "points": 300,
+      "question": "من القائد المملوكي الذي ارتبط بالنصر في عين جالوت؟",
+      "answer": "سيف الدين قطز",
+      "image": ""
+    },
+    {
+      "id": "egyptian-history-300-32",
+      "points": 300,
+      "question": "من أبرز القادة المماليك الذين حكموا مصر بعد قطز؟",
+      "answer": "الظاهر بيبرس",
+      "image": ""
+    },
+    {
+      "id": "egyptian-history-300-33",
+      "points": 300,
+      "question": "ما الدولة التي حكمت مصر قبل الدولة المملوكية؟",
+      "answer": "الدولة الأيوبية",
+      "image": ""
+    },
+    {
+      "id": "egyptian-history-500-1",
+      "points": 500,
+      "question": "ما اسم آخر دولة إسلامية حكمت مصر قبل العثمانيين؟",
+      "answer": "دولة المماليك",
+      "image": ""
+    },
+    {
+      "id": "egyptian-history-500-2",
+      "points": 500,
+      "question": "في أي عام دخل العثمانيون مصر؟",
+      "answer": "1517م",
+      "image": ""
+    },
+    {
+      "id": "egyptian-history-500-3",
+      "points": 500,
+      "question": "من السلطان العثماني الذي فتح مصر؟",
+      "answer": "سليم الأول",
+      "image": ""
+    },
+    {
+      "id": "egyptian-history-500-4",
+      "points": 500,
+      "question": "من هو القائد المملوكي الذي هُزم أمام العثمانيين في معركة الريدانية؟",
+      "answer": "طومان باي",
+      "image": ""
+    },
+    {
+      "id": "egyptian-history-500-5",
+      "points": 500,
+      "question": "في أي عام بدأت الحملة الفرنسية على مصر؟",
+      "answer": "1798م",
+      "image": ""
+    },
+    {
+      "id": "egyptian-history-500-6",
+      "points": 500,
+      "question": "من قاد الحملة الفرنسية على مصر؟",
+      "answer": "نابليون بونابرت",
+      "image": ""
+    },
+    {
+      "id": "egyptian-history-500-7",
+      "points": 500,
+      "question": "ما المعركة البحرية التي دمرت فيها البحرية البريطانية الأسطول الفرنسي؟",
+      "answer": "معركة أبي قير البحرية",
+      "image": ""
+    },
+    {
+      "id": "egyptian-history-500-8",
+      "points": 500,
+      "question": "من القائد البريطاني الذي قاد الأسطول في معركة أبي قير البحرية؟",
+      "answer": "هوراشيو نيلسون",
+      "image": ""
+    },
+    {
+      "id": "egyptian-history-500-9",
+      "points": 500,
+      "question": "ما الحجر الذي اكتشفه الفرنسيون أثناء حملتهم على مصر؟",
+      "answer": "حجر رشيد",
+      "image": ""
+    },
+    {
+      "id": "egyptian-history-500-10",
+      "points": 500,
+      "question": "ما اسم الكتاب/الموسوعة التي أصدرها علماء الحملة الفرنسية عن مصر؟",
+      "answer": "وصف مصر",
+      "image": ""
+    },
+    {
+      "id": "egyptian-history-500-11",
+      "points": 500,
+      "question": "من يُعد مؤسس مصر الحديثة؟",
+      "answer": "محمد علي باشا",
+      "image": ""
+    },
+    {
+      "id": "egyptian-history-500-12",
+      "points": 500,
+      "question": "في أي عام تولى محمد علي حكم مصر؟",
+      "answer": "1805م",
+      "image": ""
+    },
+    {
+      "id": "egyptian-history-500-13",
+      "points": 500,
+      "question": "ما اسم الوالي الذي أسس جيشًا حديثًا في مصر؟",
+      "answer": "محمد علي باشا",
+      "image": ""
+    },
+    {
+      "id": "egyptian-history-500-14",
+      "points": 500,
+      "question": "ما المدينة التي أنشأ فيها محمد علي العديد من المصانع والمؤسسات الحديثة؟",
+      "answer": "القاهرة",
+      "image": ""
+    },
+    {
+      "id": "egyptian-history-500-15",
+      "points": 500,
+      "question": "من هو المهندس الذي ارتبط بحفر قناة المحمودية؟",
+      "answer": "محمد علي باشا",
+      "image": ""
+    },
+    {
+      "id": "egyptian-history-500-16",
+      "points": 500,
+      "question": "ما المحصول الذي توسعت زراعته بشكل كبير في عهد محمد علي؟",
+      "answer": "القطن",
+      "image": ""
+    },
+    {
+      "id": "egyptian-history-500-17",
+      "points": 500,
+      "question": "ما اسم المدرسة التي أسسها محمد علي لتدريب الأطباء؟",
+      "answer": "مدرسة الطب",
+      "image": ""
+    },
+    {
+      "id": "egyptian-history-500-18",
+      "points": 500,
+      "question": "من أشهر أبناء محمد علي الذين حكموا مصر بعده؟",
+      "answer": "إبراهيم باشا",
+      "image": ""
+    },
+    {
+      "id": "egyptian-history-500-19",
+      "points": 500,
+      "question": "ما اسم الجيش الذي شاركت فيه مصر في حروب محمد علي؟",
+      "answer": "الجيش المصري",
+      "image": ""
+    },
+    {
+      "id": "egyptian-history-500-20",
+      "points": 500,
+      "question": "من هو الخديوي الذي ارتبط بافتتاح قناة السويس؟",
+      "answer": "الخديوي إسماعيل",
+      "image": ""
+    },
+    {
+      "id": "egyptian-history-500-21",
+      "points": 500,
+      "question": "في أي عام افتُتحت قناة السويس؟",
+      "answer": "1869م",
+      "image": ""
+    },
+    {
+      "id": "egyptian-history-500-22",
+      "points": 500,
+      "question": "أين تقع قناة السويس؟",
+      "answer": "في مصر وتربط البحر المتوسط بالبحر الأحمر",
+      "image": ""
+    },
+    {
+      "id": "egyptian-history-500-23",
+      "points": 500,
+      "question": "من هو مؤسس قناة السويس الحديثة؟",
+      "answer": "فرديناند دي لسبس",
+      "image": ""
+    },
+    {
+      "id": "egyptian-history-500-24",
+      "points": 500,
+      "question": "في أي عام بدأت الثورة العرابية؟",
+      "answer": "1881م",
+      "image": ""
+    },
+    {
+      "id": "egyptian-history-500-25",
+      "points": 500,
+      "question": "من قاد الثورة العرابية؟",
+      "answer": "أحمد عرابي",
+      "image": ""
+    },
+    {
+      "id": "egyptian-history-500-26",
+      "points": 500,
+      "question": "ما العبارة الشهيرة المرتبطة بأحمد عرابي أمام الخديوي توفيق؟",
+      "answer": "لقد خلقنا الله أحرارًا ولم يخلقنا تراثًا أو عقارًا",
+      "image": ""
+    },
+    {
+      "id": "egyptian-history-500-27",
+      "points": 500,
+      "question": "في أي عام احتلت بريطانيا مصر؟",
+      "answer": "1882م",
+      "image": ""
+    },
+    {
+      "id": "egyptian-history-500-28",
+      "points": 500,
+      "question": "من قاد المقاومة في معركة التل الكبير؟",
+      "answer": "أحمد عرابي",
+      "image": ""
+    },
+    {
+      "id": "egyptian-history-500-29",
+      "points": 500,
+      "question": "من هو الزعيم المصري الذي قاد ثورة 1919؟",
+      "answer": "سعد زغلول",
+      "image": ""
+    },
+    {
+      "id": "egyptian-history-500-30",
+      "points": 500,
+      "question": "في أي عام قامت ثورة 1919؟",
+      "answer": "1919م",
+      "image": ""
+    },
+    {
+      "id": "egyptian-history-500-31",
+      "points": 500,
+      "question": "في أي عام أُعلن استقلال مصر اسميًا عن بريطانيا مع بقاء نفوذ بريطاني؟",
+      "answer": "1922م",
+      "image": ""
+    },
+    {
+      "id": "egyptian-history-500-32",
+      "points": 500,
+      "question": "في أي عام قامت ثورة 23 يوليو في مصر؟",
+      "answer": "1952م",
+      "image": ""
+    },
+    {
+      "id": "egyptian-history-500-33",
+      "points": 500,
+      "question": "من أصبح رئيسًا لمصر بعد ثورة يوليو وأصبح أول رئيس مصري من خارج الأسرة الملكية في العصر الحديث؟",
+      "answer": "محمد نجيب",
+      "image": ""
     }
   ],
   "metadata": {

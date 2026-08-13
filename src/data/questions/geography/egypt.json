@@ -1,11 +1,460 @@
-﻿{
-    "categoryId":  "egypt",
-    "questions":  [
-
-                  ],
-    "metadata":  {
-                     "sectionId":  "geography",
-                     "updatedAt":  "2026-08-03",
-                     "status":  "pending"
-                 }
+{
+  "categoryId": "egypt",
+  "questions": [
+    {
+      "id": "egypt-100-1",
+      "points": 100,
+      "question": "متى تأسست مصر؟",
+      "answer": "3200 سنة قبل الميلاد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egypt-100-2",
+      "points": 100,
+      "question": "كم تبلغ مساحة مصر؟",
+      "answer": "1.01 مليون كيلومتر مربع",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egypt-100-3",
+      "points": 100,
+      "question": "ما هي عاصمة مصر؟",
+      "answer": "القاهرة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egypt-100-4",
+      "points": 100,
+      "question": "في أي قارة تقع مصر؟",
+      "answer": "قارة آفريقيا",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egypt-100-5",
+      "points": 100,
+      "question": "ما هي اللغة الرسمية لدولة مصر؟",
+      "answer": "اللغة العربية",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egypt-100-6",
+      "points": 100,
+      "question": "ما هو النهر الشهير الذي يقطع مصر من جنوبها إلى شمالها؟",
+      "answer": "نهر النيل",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egypt-100-7",
+      "points": 100,
+      "question": "ما البحر الذي تطل عليه مصر من الشمال؟",
+      "answer": "البحر الأبيض المتوسط",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egypt-100-8",
+      "points": 100,
+      "question": "ما هو البحر الذي يحد مصر من الشرق؟",
+      "answer": "البحر الأحمر",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egypt-100-9",
+      "points": 100,
+      "question": "ما هي أعلى النقاط الجبلية في مصر؟",
+      "answer": "جبل كاترين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egypt-100-10",
+      "points": 100,
+      "question": "ما الذي يحد مصر من الشرق بالإضافة للبحر الأحمر؟",
+      "answer": "الأراضي الفلسطينية المحتلة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egypt-100-11",
+      "points": 100,
+      "question": "ماذا يحد مصر من الغرب؟",
+      "answer": "ليبيا",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egypt-100-12",
+      "points": 100,
+      "question": "ماذا يحد مصر من الجنوب؟",
+      "answer": "السودان",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egypt-100-13",
+      "points": 100,
+      "question": "كم عدد المحافظات المصرية؟",
+      "answer": "27 محافظة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egypt-100-14",
+      "points": 100,
+      "question": "ما هي المدينة التي تسمى العاصمة الثانية لمصر؟",
+      "answer": "مدينة الإسكندرية",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egypt-100-15",
+      "points": 100,
+      "question": "ما هو نظام الحكم الحالي في مصر؟",
+      "answer": "نظام جمهوري",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egypt-300-1",
+      "points": 300,
+      "question": "من هو القائد المسلم الذي فتح مصر للإسلام؟",
+      "answer": "عمرو بن العاص",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egypt-300-2",
+      "points": 300,
+      "question": "من الذي أسس الجامع الأزهر في مصر؟",
+      "answer": "الفاطميون",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egypt-300-3",
+      "points": 300,
+      "question": "من الملك الذي كان يحكم مصر قبل الثورة؟",
+      "answer": "الملك فاروق",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egypt-300-4",
+      "points": 300,
+      "question": "أحد ملوك مصر القديمة وقام ببناء تمثال أبو الهول؟",
+      "answer": "الملك خفرع",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egypt-300-5",
+      "points": 300,
+      "question": "عالم مصري حاصل عن جائزة نوبل في الكيمياء؟",
+      "answer": "أحمد زويل",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egypt-300-6",
+      "points": 300,
+      "question": "أشهر جراح قلب مصر وصل للعالمية؟",
+      "answer": "د. مجدي يعقوب",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egypt-300-7",
+      "points": 300,
+      "question": "شاعر مصري لقب بـ \"أمير الشعراء\"، من هو؟",
+      "answer": "أحمد شوقي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egypt-300-8",
+      "points": 300,
+      "question": "رئيس مصر الذي حصل في عهده انتصار 6 أكتوبر عام 1973؟",
+      "answer": "محمد أنور السادات",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egypt-300-9",
+      "points": 300,
+      "question": "أديب مصري كبير فاقد للبصر، من هو؟",
+      "answer": "طه حسين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egypt-300-10",
+      "points": 300,
+      "question": "أحد أشهر علماء المسلمين العرب الأزهريين والذي كان أيضاً وزيراً للأوقاف؟",
+      "answer": "الإمام الشعراوي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egypt-300-11",
+      "points": 300,
+      "question": "ما هو أول مسجد أقيم في مصر؟",
+      "answer": "مسجد عمرو بن العاص في مدينة الفسطاط",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egypt-300-12",
+      "points": 300,
+      "question": "استخدم المصريين القدماء لغة لتدوين ما يقومون به فما هذه اللغة؟",
+      "answer": "اللغة الهيروغليفية",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egypt-300-13",
+      "points": 300,
+      "question": "كم مرة ذكرت مصر في القرآن الكريم؟",
+      "answer": "خمس مرات",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egypt-300-14",
+      "points": 300,
+      "question": "متى قام النظام الجمهوري في مصر؟",
+      "answer": "ثورة يوليو: قامت في 23 يوليو 1952",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egypt-300-15",
+      "points": 300,
+      "question": "من الذي قاد ثورة يوليو؟",
+      "answer": "تنظيم الضباط الأحرار",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egypt-500-1",
+      "points": 500,
+      "question": "من هو أول رئيس جمهورية فعلي لمصر؟",
+      "answer": "بعد حدوث ثورة 23 يوليو تم تحويل مصر من ملكية إلي جمهورية وتم تعيين محمد نجيب الضابط المشهور إلي أول رئيس جمهورية فعلي لمصر",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egypt-500-2",
+      "points": 500,
+      "question": "ما هي أشهر ثورة قامت في تاريخ مصر الحديث؟",
+      "answer": "ثورة 25 يناير قامت عام 2011 ضد نظام حكم الرئيس \"محمد حسني مبارك\" وأدت إلى خلعه من الحكم",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egypt-500-3",
+      "points": 500,
+      "question": "قناة بحرية مصرية يعبر منها نسبة ضخمة من السفن التجارية؟",
+      "answer": "قناة السويس",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egypt-500-4",
+      "points": 500,
+      "question": "ما هي جذور أشهر الفراعنة المصريين كليوباترا وهي لم تكن مصرية بالولادة؟",
+      "answer": "مقدونية يونانية",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egypt-500-5",
+      "points": 500,
+      "question": "كيف ماتت كليوباترا؟",
+      "answer": "انتحار",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egypt-500-6",
+      "points": 500,
+      "question": "ما هو أشهر موطن لمدافن العديد من الفراعنة في مصر؟",
+      "answer": "وادي الملوك",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egypt-500-7",
+      "points": 500,
+      "question": "لماذا قام قدماء المصريين بتحنيط موتاهم؟",
+      "answer": "للحصول على مومياواتهم",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egypt-500-8",
+      "points": 500,
+      "question": "لماذا كان يتم تبجيل القطط في مصر القديمة؟",
+      "answer": "لأنه كان يعتقد أن لديهم طاقة إلهية",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egypt-500-9",
+      "points": 500,
+      "question": "من هو الفرعون الذي اشتهر باكتشافه هوارد كارتر في أوائل القرن العشرين؟",
+      "answer": "توت عنخ آمون",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egypt-500-10",
+      "points": 500,
+      "question": "كم عدد السلالات الحاكمة في مصر القديمة؟",
+      "answer": "31 سلالة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egypt-500-11",
+      "points": 500,
+      "question": "من هو الفرعون الذي يعرف باسم \"نابليون مصر\"؟",
+      "answer": "تحتمس الثالث",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egypt-500-12",
+      "points": 500,
+      "question": "ما هو المسطح المائي الذي لعب دورًا رئيسيًا في تطور الحضارة المصرية القديمة؟",
+      "answer": "نهر النيل",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egypt-500-13",
+      "points": 500,
+      "question": "كم سنة عاشت حضارة مصر القديمة؟",
+      "answer": "3000 سنة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egypt-500-14",
+      "points": 500,
+      "question": "ما هي الممالك الـ 3 الكبرى التي يتكون منها تاريخ مصر القديمة؟",
+      "answer": "الممالك القديمة والوسطى والحديثة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egypt-500-15",
+      "points": 500,
+      "question": "ما هو أكثر جزء من الثقافة المصرية القديمة لعب دوراً هاماً في الحكومة؟",
+      "answer": "الدين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egypt-500-16",
+      "points": 500,
+      "question": "ما هي الحضارات الأخرى التي غزت مصر القديمة؟",
+      "answer": "روما اليونان بلاد فارس آشورية",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egypt-500-17",
+      "points": 500,
+      "question": "ماذا كان منصب فرعون؟",
+      "answer": "ملك مصر القديمة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egypt-500-18",
+      "points": 500,
+      "question": "ما معنى كلمة الهيروغليفية؟",
+      "answer": "كتابة مقدسة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egypt-500-19",
+      "points": 500,
+      "question": "ما هو أول هرم تم بناؤه؟",
+      "answer": "هرم زوسر",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "egypt-500-20",
+      "points": 500,
+      "question": "عالم مصري عظيم عمل في وكالة ناسا وحصل على العديد من الجوائز؟",
+      "answer": "Dr. Farouk El-Baz",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    }
+  ],
+  "metadata": {
+    "sectionId": "geography",
+    "updatedAt": "2026-08-10",
+    "status": "active"
+  }
 }

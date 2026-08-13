@@ -1,0 +1,541 @@
+{
+  "categoryId": "who-am-i-sports",
+  "questions": [
+    {
+      "id": "who-am-i-sports-100-1",
+      "points": 100,
+      "question": "من هو هذا اللاعب؟",
+      "answer": "Alessandro Del Piero",
+      "media": "/media/who-am-i-sports/Alessandro Del Piero.jpg",
+      "mediaType": "image",
+      "hint": "اعتزل كرة القدم عام 2014"
+    },
+    {
+      "id": "who-am-i-sports-100-2",
+      "points": 100,
+      "question": "من هو هذا اللاعب؟",
+      "answer": "Andrea Pirlo",
+      "media": "/media/who-am-i-sports/Andrea Pirlo.jpg",
+      "mediaType": "image",
+      "hint": "اعتزل كرة القدم عام 2017"
+    },
+    {
+      "id": "who-am-i-sports-100-3",
+      "points": 100,
+      "question": "من هو هذا اللاعب؟",
+      "answer": "Andrés Iniesta",
+      "media": "/media/who-am-i-sports/Andrés Iniesta.jpg",
+      "mediaType": "image",
+      "hint": "اعتزل كرة القدم عام 2023"
+    },
+    {
+      "id": "who-am-i-sports-100-4",
+      "points": 100,
+      "question": "من هو هذا اللاعب؟",
+      "answer": "Arjen Robben",
+      "media": "/media/who-am-i-sports/Arjen Robben.jpg",
+      "mediaType": "image",
+      "hint": "اعتزل كرة القدم عام 2021"
+    },
+    {
+      "id": "who-am-i-sports-100-5",
+      "points": 100,
+      "question": "من هو هذا اللاعب؟",
+      "answer": "Bastian Schweinsteiger",
+      "media": "/media/who-am-i-sports/Bastian Schweinsteiger.jpg",
+      "mediaType": "image",
+      "hint": "اعتزل كرة القدم عام 2019"
+    },
+    {
+      "id": "who-am-i-sports-100-6",
+      "points": 100,
+      "question": "من هو هذا اللاعب؟",
+      "answer": "Cafu",
+      "media": "/media/who-am-i-sports/Cafu.jpg",
+      "mediaType": "image",
+      "hint": "اعتزل كرة القدم عام 2008"
+    },
+    {
+      "id": "who-am-i-sports-100-7",
+      "points": 100,
+      "question": "من هو هذا اللاعب؟",
+      "answer": "Carlos Tévez",
+      "media": "/media/who-am-i-sports/Carlos Tévez.jpg",
+      "mediaType": "image",
+      "hint": "اعتزل كرة القدم عام 2022"
+    },
+    {
+      "id": "who-am-i-sports-100-8",
+      "points": 100,
+      "question": "من هو هذا اللاعب؟",
+      "answer": "Clarence Seedorf",
+      "media": "/media/who-am-i-sports/Clarence Seedorf.jpg",
+      "mediaType": "image",
+      "hint": "اعتزل كرة القدم عام 2014"
+    },
+    {
+      "id": "who-am-i-sports-100-9",
+      "points": 100,
+      "question": "من هو هذا اللاعب؟",
+      "answer": "Cristiano Ronaldo",
+      "media": "/media/who-am-i-sports/Cristiano Ronaldo.jpg",
+      "mediaType": "image",
+      "hint": "ما زال مع النصر السعودي"
+    },
+    {
+      "id": "who-am-i-sports-100-10",
+      "points": 100,
+      "question": "من هو هذا اللاعب؟",
+      "answer": "David Beckham",
+      "media": "/media/who-am-i-sports/David Beckham.jpg",
+      "mediaType": "image",
+      "hint": "اعتزل كرة القدم عام 2013"
+    },
+    {
+      "id": "who-am-i-sports-100-11",
+      "points": 100,
+      "question": "من هو هذا اللاعب؟",
+      "answer": "Deco",
+      "media": "/media/who-am-i-sports/Deco.jpg",
+      "mediaType": "image",
+      "hint": "اعتزل كرة القدم عام 2013"
+    },
+    {
+      "id": "who-am-i-sports-100-12",
+      "points": 100,
+      "question": "من هو هذا اللاعب؟",
+      "answer": "Dennis Bergkamp",
+      "media": "/media/who-am-i-sports/Dennis Bergkamp.jpg",
+      "mediaType": "image",
+      "hint": "اعتزل كرة القدم عام 2006"
+    },
+    {
+      "id": "who-am-i-sports-100-13",
+      "points": 100,
+      "question": "من هو هذا اللاعب؟",
+      "answer": "Didier Drogba",
+      "media": "/media/who-am-i-sports/Didier Drogba.jpg",
+      "mediaType": "image",
+      "hint": "اعتزل كرة القدم عام 2018"
+    },
+    {
+      "id": "who-am-i-sports-100-14",
+      "points": 100,
+      "question": "من هو هذا اللاعب؟",
+      "answer": "Diego Forlán",
+      "media": "/media/who-am-i-sports/Diego Forlán.jpg",
+      "mediaType": "image",
+      "hint": "اعتزل كرة القدم عام 2019"
+    },
+    {
+      "id": "who-am-i-sports-100-15",
+      "points": 100,
+      "question": "من هو هذا اللاعب؟",
+      "answer": "Eden Hazard",
+      "media": "/media/who-am-i-sports/Eden Hazard.jpg",
+      "mediaType": "image",
+      "hint": "اعتزل كرة القدم عام 2023"
+    },
+    {
+      "id": "who-am-i-sports-100-16",
+      "points": 100,
+      "question": "من هو هذا اللاعب؟",
+      "answer": "Francesco Totti",
+      "media": "/media/who-am-i-sports/Francesco Totti.jpg",
+      "mediaType": "image",
+      "hint": "اعتزل كرة القدم عام 2017"
+    },
+    {
+      "id": "who-am-i-sports-100-17",
+      "points": 100,
+      "question": "من هو هذا اللاعب؟",
+      "answer": "Franck Ribéry",
+      "media": "/media/who-am-i-sports/Franck Ribéry.jpg",
+      "mediaType": "image",
+      "hint": "اعتزل كرة القدم عام 2021"
+    },
+    {
+      "id": "who-am-i-sports-100-18",
+      "points": 100,
+      "question": "من هو هذا اللاعب؟",
+      "answer": "Frank Lampard",
+      "media": "/media/who-am-i-sports/Frank Lampard.jpg",
+      "mediaType": "image",
+      "hint": "اعتزل كرة القدم عام 2017"
+    },
+    {
+      "id": "who-am-i-sports-100-19",
+      "points": 100,
+      "question": "من هو هذا اللاعب؟",
+      "answer": "Gareth Bale",
+      "media": "/media/who-am-i-sports/Gareth Bale.jpg",
+      "mediaType": "image",
+      "hint": "اعتزل كرة القدم عام 2023"
+    },
+    {
+      "id": "who-am-i-sports-100-20",
+      "points": 100,
+      "question": "من هو هذا اللاعب؟",
+      "answer": "Gianluigi Buffon",
+      "media": "/media/who-am-i-sports/Gianluigi Buffon.jpg",
+      "mediaType": "image",
+      "hint": "اعتزل كرة القدم عام 2023"
+    },
+    {
+      "id": "who-am-i-sports-300-1",
+      "points": 300,
+      "question": "من هو هذا اللاعب؟",
+      "answer": "Hernán Crespo",
+      "media": "/media/who-am-i-sports/Hernán Crespo.jpg",
+      "mediaType": "image",
+      "hint": "اعتزل كرة القدم عام 2012"
+    },
+    {
+      "id": "who-am-i-sports-300-2",
+      "points": 300,
+      "question": "من هو هذا اللاعب؟",
+      "answer": "Javier Zanetti",
+      "media": "/media/who-am-i-sports/Javier Zanetti.jpg",
+      "mediaType": "image",
+      "hint": "اعتزل كرة القدم عام 2014"
+    },
+    {
+      "id": "who-am-i-sports-300-3",
+      "points": 300,
+      "question": "من هو هذا اللاعب؟",
+      "answer": "Juan Román Riquelme",
+      "media": "/media/who-am-i-sports/Juan Román Riquelme.jpg",
+      "mediaType": "image",
+      "hint": "اعتزل كرة القدم عام 2014"
+    },
+    {
+      "id": "who-am-i-sports-300-4",
+      "points": 300,
+      "question": "من هو هذا اللاعب؟",
+      "answer": "Kaká",
+      "media": "/media/who-am-i-sports/Kaká.jpg",
+      "mediaType": "image",
+      "hint": "اعتزل كرة القدم عام 2017"
+    },
+    {
+      "id": "who-am-i-sports-300-5",
+      "points": 300,
+      "question": "من هو هذا اللاعب؟",
+      "answer": "Karim Benzema",
+      "media": "/media/who-am-i-sports/Karim Benzema.jpg",
+      "mediaType": "image",
+      "hint": "ما زال مع الاتحاد السعودي"
+    },
+    {
+      "id": "who-am-i-sports-300-6",
+      "points": 300,
+      "question": "من هو هذا اللاعب؟",
+      "answer": "Kevin De Bruyne",
+      "media": "/media/who-am-i-sports/Kevin De Bruyne.jpg",
+      "mediaType": "image",
+      "hint": "ما زال مع مانشستر سيتي"
+    },
+    {
+      "id": "who-am-i-sports-300-7",
+      "points": 300,
+      "question": "من هو هذا اللاعب؟",
+      "answer": "Kylian Mbappé",
+      "media": "/media/who-am-i-sports/Kylian Mbappé.jpg",
+      "mediaType": "image",
+      "hint": "انتقل من باريس سان جيرمان إلى ريال مدريد عام 2024"
+    },
+    {
+      "id": "who-am-i-sports-300-8",
+      "points": 300,
+      "question": "من هو هذا اللاعب؟",
+      "answer": "Lionel Messi",
+      "media": "/media/who-am-i-sports/Lionel Messi.jpg",
+      "mediaType": "image",
+      "hint": "ما زال مع إنتر ميامي"
+    },
+    {
+      "id": "who-am-i-sports-300-9",
+      "points": 300,
+      "question": "من هو هذا اللاعب؟",
+      "answer": "Luis Suárez",
+      "media": "/media/who-am-i-sports/Luis Suárez.jpg",
+      "mediaType": "image",
+      "hint": "ما زال مع إنتر ميامي"
+    },
+    {
+      "id": "who-am-i-sports-300-10",
+      "points": 300,
+      "question": "من هو هذا اللاعب؟",
+      "answer": "Luis figo",
+      "media": "/media/who-am-i-sports/Luis figo.jpg",
+      "mediaType": "image",
+      "hint": "اعتزل كرة القدم عام 2009"
+    },
+    {
+      "id": "who-am-i-sports-300-11",
+      "points": 300,
+      "question": "من هو هذا اللاعب؟",
+      "answer": "Luka Modrić",
+      "media": "/media/who-am-i-sports/Luka Modrić.jpg",
+      "mediaType": "image",
+      "hint": "ما زال مع ريال مدريد"
+    },
+    {
+      "id": "who-am-i-sports-300-12",
+      "points": 300,
+      "question": "من هو هذا اللاعب؟",
+      "answer": "Manuel Neuer",
+      "media": "/media/who-am-i-sports/Manuel Neuer.jpg",
+      "mediaType": "image",
+      "hint": "ما زال مع بايرن ميونخ"
+    },
+    {
+      "id": "who-am-i-sports-300-13",
+      "points": 300,
+      "question": "من هو هذا اللاعب؟",
+      "answer": "Mesut Özil",
+      "media": "/media/who-am-i-sports/Mesut Özil.jpg",
+      "mediaType": "image",
+      "hint": "اعتزل كرة القدم عام 2023"
+    },
+    {
+      "id": "who-am-i-sports-300-14",
+      "points": 300,
+      "question": "من هو هذا اللاعب؟",
+      "answer": "Michael Ballack",
+      "media": "/media/who-am-i-sports/Michael Ballack.jpg",
+      "mediaType": "image",
+      "hint": "اعتزل كرة القدم عام 2012"
+    },
+    {
+      "id": "who-am-i-sports-300-15",
+      "points": 300,
+      "question": "من هو هذا اللاعب؟",
+      "answer": "Michael Essien",
+      "media": "/media/who-am-i-sports/Michael Essien.jpg",
+      "mediaType": "image",
+      "hint": "اعتزل كرة القدم عام 2018"
+    },
+    {
+      "id": "who-am-i-sports-300-16",
+      "points": 300,
+      "question": "من هو هذا اللاعب؟",
+      "answer": "Mohamed Salah",
+      "media": "/media/who-am-i-sports/Mohamed Salah.jpg",
+      "mediaType": "image",
+      "hint": "ما زال مع ليفربول"
+    },
+    {
+      "id": "who-am-i-sports-300-17",
+      "points": 300,
+      "question": "من هو هذا اللاعب؟",
+      "answer": "Neymar Jr",
+      "media": "/media/who-am-i-sports/Neymar Jr.jpg",
+      "mediaType": "image",
+      "hint": "ما زال مع الهلال السعودي"
+    },
+    {
+      "id": "who-am-i-sports-300-18",
+      "points": 300,
+      "question": "من هو هذا اللاعب؟",
+      "answer": "Paolo Maldini",
+      "media": "/media/who-am-i-sports/Paolo Maldini.jpg",
+      "mediaType": "image",
+      "hint": "اعتزل كرة القدم عام 2009"
+    },
+    {
+      "id": "who-am-i-sports-300-19",
+      "points": 300,
+      "question": "من هو هذا اللاعب؟",
+      "answer": "Pavel Nedvěd",
+      "media": "/media/who-am-i-sports/Pavel Nedvěd.jpg",
+      "mediaType": "image",
+      "hint": "اعتزل كرة القدم عام 2009"
+    },
+    {
+      "id": "who-am-i-sports-300-20",
+      "points": 300,
+      "question": "من هو هذا اللاعب؟",
+      "answer": "Rivaldo",
+      "media": "/media/who-am-i-sports/Rivaldo.jpg",
+      "mediaType": "image",
+      "hint": "اعتزل كرة القدم عام 2015"
+    },
+    {
+      "id": "who-am-i-sports-500-1",
+      "points": 500,
+      "question": "من هو هذا اللاعب؟",
+      "answer": "Robert Lewandowski",
+      "media": "/media/who-am-i-sports/Robert Lewandowski.jpg",
+      "mediaType": "image",
+      "hint": "انتقل من بايرن ميونخ إلى برشلونة عام 2022"
+    },
+    {
+      "id": "who-am-i-sports-500-2",
+      "points": 500,
+      "question": "من هو هذا اللاعب؟",
+      "answer": "Roberto Carlos",
+      "media": "/media/who-am-i-sports/Roberto Carlos.jpg",
+      "mediaType": "image",
+      "hint": "اعتزل كرة القدم عام 2012"
+    },
+    {
+      "id": "who-am-i-sports-500-3",
+      "points": 500,
+      "question": "من هو هذا اللاعب؟",
+      "answer": "Robin van Persie",
+      "media": "/media/who-am-i-sports/Robin van Persie.jpg",
+      "mediaType": "image",
+      "hint": "اعتزل كرة القدم عام 2019"
+    },
+    {
+      "id": "who-am-i-sports-500-4",
+      "points": 500,
+      "question": "من هو هذا اللاعب؟",
+      "answer": "Romário",
+      "media": "/media/who-am-i-sports/Romário.jpg",
+      "mediaType": "image",
+      "hint": "اعتزل كرة القدم عام 2009"
+    },
+    {
+      "id": "who-am-i-sports-500-5",
+      "points": 500,
+      "question": "من هو هذا اللاعب؟",
+      "answer": "Ronaldinho",
+      "media": "/media/who-am-i-sports/Ronaldinho.jpg",
+      "mediaType": "image",
+      "hint": "اعتزل كرة القدم عام 2018"
+    },
+    {
+      "id": "who-am-i-sports-500-6",
+      "points": 500,
+      "question": "من هو هذا اللاعب؟",
+      "answer": "Ronaldo Nazário",
+      "media": "/media/who-am-i-sports/Ronaldo Nazário.jpg",
+      "mediaType": "image",
+      "hint": "اعتزل كرة القدم عام 2011"
+    },
+    {
+      "id": "who-am-i-sports-500-7",
+      "points": 500,
+      "question": "من هو هذا اللاعب؟",
+      "answer": "Ruud van Nistelrooy",
+      "media": "/media/who-am-i-sports/Ruud van Nistelrooy.jpg",
+      "mediaType": "image",
+      "hint": "اعتزل كرة القدم عام 2012"
+    },
+    {
+      "id": "who-am-i-sports-500-8",
+      "points": 500,
+      "question": "من هو هذا اللاعب؟",
+      "answer": "Samuel Eto'o",
+      "media": "/media/who-am-i-sports/Samuel Eto'o.jpg",
+      "mediaType": "image",
+      "hint": "اعتزل كرة القدم عام 2019"
+    },
+    {
+      "id": "who-am-i-sports-500-9",
+      "points": 500,
+      "question": "من هو هذا اللاعب؟",
+      "answer": "Sergio Ramos",
+      "media": "/media/who-am-i-sports/Sergio Ramos.jpg",
+      "mediaType": "image",
+      "hint": "انتقل من ريال مدريد إلى باريس سان جيرمان عام 2021"
+    },
+    {
+      "id": "who-am-i-sports-500-10",
+      "points": 500,
+      "question": "من هو هذا اللاعب؟",
+      "answer": "Steven Gerrard",
+      "media": "/media/who-am-i-sports/Steven Gerrard.jpg",
+      "mediaType": "image",
+      "hint": "اعتزل كرة القدم عام 2016"
+    },
+    {
+      "id": "who-am-i-sports-500-11",
+      "points": 500,
+      "question": "من هو هذا اللاعب؟",
+      "answer": "Thierry Henry",
+      "media": "/media/who-am-i-sports/Thierry Henry.jpg",
+      "mediaType": "image",
+      "hint": "اعتزل كرة القدم عام 2014"
+    },
+    {
+      "id": "who-am-i-sports-500-12",
+      "points": 500,
+      "question": "من هو هذا اللاعب؟",
+      "answer": "Thomas Müller",
+      "media": "/media/who-am-i-sports/Thomas Müller.jpg",
+      "mediaType": "image",
+      "hint": "ما زال مع بايرن ميونخ"
+    },
+    {
+      "id": "who-am-i-sports-500-13",
+      "points": 500,
+      "question": "من هو هذا اللاعب؟",
+      "answer": "Toni Kroos",
+      "media": "/media/who-am-i-sports/Toni Kroos.jpg",
+      "mediaType": "image",
+      "hint": "اعتزل كرة القدم عام 2024"
+    },
+    {
+      "id": "who-am-i-sports-500-14",
+      "points": 500,
+      "question": "من هو هذا اللاعب؟",
+      "answer": "Virgil van Dijk",
+      "media": "/media/who-am-i-sports/Virgil van Dijk.jpg",
+      "mediaType": "image",
+      "hint": "ما زال مع ليفربول"
+    },
+    {
+      "id": "who-am-i-sports-500-15",
+      "points": 500,
+      "question": "من هو هذا اللاعب؟",
+      "answer": "Wayne Rooney",
+      "media": "/media/who-am-i-sports/Wayne Rooney.jpg",
+      "mediaType": "image",
+      "hint": "اعتزل كرة القدم عام 2021"
+    },
+    {
+      "id": "who-am-i-sports-500-16",
+      "points": 500,
+      "question": "من هو هذا اللاعب؟",
+      "answer": "Wesley Sneijder",
+      "media": "/media/who-am-i-sports/Wesley Sneijder.jpg",
+      "mediaType": "image",
+      "hint": "اعتزل كرة القدم عام 2019"
+    },
+    {
+      "id": "who-am-i-sports-500-17",
+      "points": 500,
+      "question": "من هو هذا اللاعب؟",
+      "answer": "Xavi Hernández",
+      "media": "/media/who-am-i-sports/Xavi Hernández.jpg",
+      "mediaType": "image",
+      "hint": "ما زال مع برشلونة كمدرب"
+    },
+    {
+      "id": "who-am-i-sports-500-18",
+      "points": 500,
+      "question": "من هو هذا اللاعب؟",
+      "answer": "Zinedine Zidane",
+      "media": "/media/who-am-i-sports/Zinedine Zidane.jpg",
+      "mediaType": "image",
+      "hint": "اعتزل كرة القدم عام 2006"
+    },
+    {
+      "id": "who-am-i-sports-500-19",
+      "points": 500,
+      "question": "من هو هذا اللاعب؟",
+      "answer": "Ángel Di María",
+      "media": "/media/who-am-i-sports/Ángel Di María.jpg",
+      "mediaType": "image",
+      "hint": "اعتزل كرة القدم عام 2024"
+    }
+  ],
+  "metadata": {
+    "sectionId": "sports",
+    "updatedAt": "2026-08-05",
+    "status": "pending"
+  }
+}

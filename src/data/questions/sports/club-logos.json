@@ -1,11 +1,685 @@
-﻿{
-    "categoryId":  "club-logos",
-    "questions":  [
-
-                  ],
-    "metadata":  {
-                     "sectionId":  "sports",
-                     "updatedAt":  "2026-08-03",
-                     "status":  "pending"
-                 }
+{
+  "categoryId": "club-logos",
+  "questions": [
+    {
+      "id": "club-logos-100-1",
+      "points": 100,
+      "question": "لاي نادي هذا الشعار؟",
+      "answer": "مانشستر سيتي",
+      "hint": "نادي إنجليزي مشهور",
+      "media": "/media/club-logos/clubs/100/manchester-city-en.png",
+      "mediaType": "image"
+    },
+    {
+      "id": "club-logos-100-2",
+      "points": 100,
+      "question": "لاي نادي هذا الشعار؟",
+      "answer": "يوفنتوس",
+      "hint": "نادي إيطالي مشهور",
+      "media": "/media/club-logos/clubs/100/italy_juventus_128x128.football-logos.cc.png",
+      "mediaType": "image"
+    },
+    {
+      "id": "club-logos-100-3",
+      "points": 100,
+      "question": "لاي نادي هذا الشعار؟",
+      "answer": "ميلان",
+      "hint": "نادي إيطالي مشهور",
+      "media": "/media/club-logos/clubs/100/italy_milan_128x128.football-logos.cc.png",
+      "mediaType": "image"
+    },
+    {
+      "id": "club-logos-100-4",
+      "points": 100,
+      "question": "لاي نادي هذا الشعار؟",
+      "answer": "الهلال",
+      "hint": "نادي سعودي مشهور",
+      "media": "/media/club-logos/clubs/100/saudi-arabia_al-hilal_128x128.football-logos.cc.png",
+      "mediaType": "image"
+    },
+    {
+      "id": "club-logos-100-5",
+      "points": 100,
+      "question": "لاي نادي هذا الشعار؟",
+      "answer": "إشبيلية",
+      "hint": "نادي إسباني مشهور",
+      "media": "/media/club-logos/clubs/100/spain_sevilla_128x128.football-logos.cc.png",
+      "mediaType": "image"
+    },
+    {
+      "id": "club-logos-100-6",
+      "points": 100,
+      "question": "لاي نادي هذا الشعار؟",
+      "answer": "غلطة سراي",
+      "hint": "نادي تركي مشهور",
+      "media": "/media/club-logos/clubs/100/turkey_galatasaray_128x128.football-logos.cc.png",
+      "mediaType": "image"
+    },
+    {
+      "id": "club-logos-100-7",
+      "points": 100,
+      "question": "لاي نادي هذا الشعار؟",
+      "answer": "فولهام",
+      "hint": "نادي إنجليزي",
+      "media": "/media/club-logos/clubs/100/fulham.png",
+      "mediaType": "image"
+    },
+    {
+      "id": "club-logos-100-8",
+      "points": 100,
+      "question": "لاي نادي هذا الشعار؟",
+      "answer": "ليدز يونايتد",
+      "hint": "نادي إنجليزي",
+      "media": "/media/club-logos/clubs/100/leedsunitd.png",
+      "mediaType": "image"
+    },
+    {
+      "id": "club-logos-100-9",
+      "points": 100,
+      "question": "لاي نادي هذا الشعار؟",
+      "answer": "روما",
+      "hint": "نادي إيطالي",
+      "media": "/media/club-logos/clubs/100/italy_roma_128x128.football-logos.cc.png",
+      "mediaType": "image"
+    },
+    {
+      "id": "club-logos-100-10",
+      "points": 100,
+      "question": "لاي نادي هذا الشعار؟",
+      "answer": "ريال بيتيس",
+      "hint": "نادي إسباني",
+      "media": "/media/club-logos/clubs/100/spain_real-betis_128x128.football-logos.cc.png",
+      "mediaType": "image"
+    },
+    {
+      "id": "club-logos-100-11",
+      "points": 100,
+      "question": "لاي نادي هذا الشعار؟",
+      "answer": "ريال سوسيداد",
+      "hint": "نادي إسباني",
+      "media": "/media/club-logos/clubs/100/spain_real-sociedad_128x128.football-logos.cc.png",
+      "mediaType": "image"
+    },
+    {
+      "id": "club-logos-100-12",
+      "points": 100,
+      "question": "لاي نادي هذا الشعار؟",
+      "answer": "طرابزون سبور",
+      "hint": "نادي تركي",
+      "media": "/media/club-logos/clubs/100/turkey_trabzonspor_128x128.football-logos.cc.png",
+      "mediaType": "image"
+    },
+    {
+      "id": "club-logos-100-13",
+      "points": 100,
+      "question": "لاي نادي هذا الشعار؟",
+      "answer": "برنلي",
+      "hint": "نادي إنجليزي",
+      "media": "/media/club-logos/clubs/100/england_burnley_128x128.football-logos.cc.png",
+      "mediaType": "image"
+    },
+    {
+      "id": "club-logos-100-14",
+      "points": 100,
+      "question": "لاي نادي هذا الشعار؟",
+      "answer": "أوجسبورغ",
+      "hint": "نادي ألماني",
+      "media": "/media/club-logos/clubs/100/germany_augsburg_128x128.football-logos.cc.png",
+      "mediaType": "image"
+    },
+    {
+      "id": "club-logos-100-15",
+      "points": 100,
+      "question": "لاي نادي هذا الشعار؟",
+      "answer": "آينتراخت فرانكفورت",
+      "hint": "نادي ألماني",
+      "media": "/media/club-logos/clubs/100/germany_eintracht-frankfurt_128x128.football-logos.cc.png",
+      "mediaType": "image"
+    },
+    {
+      "id": "club-logos-100-16",
+      "points": 100,
+      "question": "لاي نادي هذا الشعار؟",
+      "answer": "هامبورغ",
+      "hint": "نادي ألماني",
+      "media": "/media/club-logos/clubs/100/germany_hamburger-sv_128x128.football-logos.cc.png",
+      "mediaType": "image"
+    },
+    {
+      "id": "club-logos-100-17",
+      "points": 100,
+      "question": "لاي نادي هذا الشعار؟",
+      "answer": "هانوفر 96",
+      "hint": "نادي ألماني",
+      "media": "/media/club-logos/clubs/100/germany_hannover-96_128x128.football-logos.cc.png",
+      "mediaType": "image"
+    },
+    {
+      "id": "club-logos-100-18",
+      "points": 100,
+      "question": "لاي منتخب هذا الشعار؟",
+      "answer": "الأرجنتين",
+      "hint": "منتخب أمريكي جنوبي مشهور",
+      "media": "/media/club-logos/national- teams/100/argentina_argentina-national-team_128x128.football-logos.cc.png",
+      "mediaType": "image"
+    },
+    {
+      "id": "club-logos-100-19",
+      "points": 100,
+      "question": "لاي منتخب هذا الشعار؟",
+      "answer": "إنجلترا",
+      "hint": "منتخب أوروبي مشهور",
+      "media": "/media/club-logos/national- teams/100/england_england-national-team_128x128.football-logos.cc.png",
+      "mediaType": "image"
+    },
+    {
+      "id": "club-logos-100-20",
+      "points": 100,
+      "question": "لاي منتخب هذا الشعار؟",
+      "answer": "ألمانيا",
+      "hint": "منتخب أوروبي مشهور",
+      "media": "/media/club-logos/national- teams/100/germany_germany-national-team_128x128.football-logos.cc.png",
+      "mediaType": "image"
+    },
+    {
+      "id": "club-logos-100-21",
+      "points": 100,
+      "question": "لاي منتخب هذا الشعار؟",
+      "answer": "إسبانيا",
+      "hint": "منتخب أوروبي مشهور",
+      "media": "/media/club-logos/national- teams/100/spain_spain-national-team_128x128.football-logos.cc.png",
+      "mediaType": "image"
+    },
+    {
+      "id": "club-logos-100-22",
+      "points": 100,
+      "question": "لاي منتخب هذا الشعار؟",
+      "answer": "البرتغال",
+      "hint": "منتخب أوروبي مشهور",
+      "media": "/media/club-logos/national- teams/100/portugal_portuguese-football-federation_128x128.football-logos.cc.png",
+      "mediaType": "image"
+    },
+    {
+      "id": "club-logos-100-23",
+      "points": 100,
+      "question": "لاي منتخب هذا الشعار؟",
+      "answer": "المغرب",
+      "hint": "منتخب أفريقي مشهور",
+      "media": "/media/club-logos/national- teams/100/morocco_as-far_128x128.football-logos.cc.png",
+      "mediaType": "image"
+    },
+    {
+      "id": "club-logos-100-24",
+      "points": 100,
+      "question": "لاي منتخب هذا الشعار؟",
+      "answer": "هولندا",
+      "hint": "منتخب أوروبي مشهور",
+      "media": "/media/club-logos/national- teams/100/netherlands_dutch-national-team_128x128.football-logos.cc.png",
+      "mediaType": "image"
+    },
+    {
+      "id": "club-logos-100-25",
+      "points": 100,
+      "question": "لاي منتخب هذا الشعار؟",
+      "answer": "السويد",
+      "hint": "منتخب أوروبي",
+      "media": "/media/club-logos/national- teams/100/sweden_sweden-national-team_128x128.football-logos.cc.png",
+      "mediaType": "image"
+    },
+    {
+      "id": "club-logos-300-1",
+      "points": 300,
+      "question": "لاي نادي هذا الشعار؟",
+      "answer": "شالكة 04",
+      "hint": "نادي ألماني",
+      "media": "/media/club-logos/clubs/100/germany_schalke-04_128x128.football-logos.cc.png",
+      "mediaType": "image"
+    },
+    {
+      "id": "club-logos-300-2",
+      "points": 300,
+      "question": "لاي نادي هذا الشعار؟",
+      "answer": "فب شتوتغارت",
+      "hint": "نادي ألماني",
+      "media": "/media/club-logos/clubs/100/germany_vfb-stuttgart_128x128.football-logos.cc.png",
+      "mediaType": "image"
+    },
+    {
+      "id": "club-logos-300-3",
+      "points": 300,
+      "question": "لاي نادي هذا الشعار؟",
+      "answer": "باوك",
+      "hint": "نادي يوناني",
+      "media": "/media/club-logos/clubs/100/greece_paok_128x128.football-logos.cc.png",
+      "mediaType": "image"
+    },
+    {
+      "id": "club-logos-300-4",
+      "points": 300,
+      "question": "لاي نادي هذا الشعار؟",
+      "answer": "مارسيليا",
+      "hint": "نادي فرنسي",
+      "media": "/media/club-logos/clubs/300/france_marseille_128x128.football-logos.cc.png",
+      "mediaType": "image"
+    },
+    {
+      "id": "club-logos-300-5",
+      "points": 300,
+      "question": "لاي نادي هذا الشعار؟",
+      "answer": "رين",
+      "hint": "نادي فرنسي",
+      "media": "/media/club-logos/clubs/300/france_rennes_128x128.football-logos.cc.png",
+      "mediaType": "image"
+    },
+    {
+      "id": "club-logos-300-6",
+      "points": 300,
+      "question": "لاي نادي هذا الشعار؟",
+      "answer": "ستراسبورغ",
+      "hint": "نادي فرنسي",
+      "media": "/media/club-logos/clubs/300/france_rc-strasbourg-alsace_128x128.football-logos.cc.png",
+      "mediaType": "image"
+    },
+    {
+      "id": "club-logos-300-7",
+      "points": 300,
+      "question": "لاي نادي هذا الشعار؟",
+      "answer": "أتالانتا",
+      "hint": "نادي إيطالي",
+      "media": "/media/club-logos/clubs/300/italy_atalanta_128x128.football-logos.cc.png",
+      "mediaType": "image"
+    },
+    {
+      "id": "club-logos-300-8",
+      "points": 300,
+      "question": "لاي نادي هذا الشعار؟",
+      "answer": "بولونيا",
+      "hint": "نادي إيطالي",
+      "media": "/media/club-logos/clubs/300/italy_bologna_128x128.football-logos.cc.png",
+      "mediaType": "image"
+    },
+    {
+      "id": "club-logos-300-9",
+      "points": 300,
+      "question": "لاي نادي هذا الشعار؟",
+      "answer": "جينوا",
+      "hint": "نادي إيطالي",
+      "media": "/media/club-logos/clubs/300/italy_genoa_128x128.football-logos.cc.png",
+      "mediaType": "image"
+    },
+    {
+      "id": "club-logos-300-10",
+      "points": 300,
+      "question": "لاي نادي هذا الشعار؟",
+      "answer": "فينيسيا",
+      "hint": "نادي إيطالي",
+      "media": "/media/club-logos/clubs/300/italy_venezia_128x128.football-logos.cc.png",
+      "mediaType": "image"
+    },
+    {
+      "id": "club-logos-300-11",
+      "points": 300,
+      "question": "لاي نادي هذا الشعار؟",
+      "answer": "ألفيركا",
+      "hint": "نادي برتغالي",
+      "media": "/media/club-logos/clubs/300/portugal_alverca_128x128.football-logos.cc.png",
+      "mediaType": "image"
+    },
+    {
+      "id": "club-logos-300-12",
+      "points": 300,
+      "question": "لاي نادي هذا الشعار؟",
+      "answer": "فاماليكاو",
+      "hint": "نادي برتغالي",
+      "media": "/media/club-logos/clubs/300/portugal_famalicao_128x128.football-logos.cc.png",
+      "mediaType": "image"
+    },
+    {
+      "id": "club-logos-300-13",
+      "points": 300,
+      "question": "لاي نادي هذا الشعار؟",
+      "answer": "سبورتينغ براغا",
+      "hint": "نادي برتغالي",
+      "media": "/media/club-logos/clubs/300/portugal_sc-braga_128x128.football-logos.cc.png",
+      "mediaType": "image"
+    },
+    {
+      "id": "club-logos-300-14",
+      "points": 300,
+      "question": "لاي نادي هذا الشعار؟",
+      "answer": "ألباسيتي",
+      "hint": "نادي إسباني",
+      "media": "/media/club-logos/clubs/300/spain_albacete_128x128.football-logos.cc.png",
+      "mediaType": "image"
+    },
+    {
+      "id": "club-logos-300-15",
+      "points": 300,
+      "question": "لاي نادي هذا الشعار؟",
+      "answer": "إيبار",
+      "hint": "نادي إسباني",
+      "media": "/media/club-logos/clubs/300/spain_eibar_128x128.football-logos.cc.png",
+      "mediaType": "image"
+    },
+    {
+      "id": "club-logos-300-16",
+      "points": 300,
+      "question": "لاي نادي هذا الشعار؟",
+      "answer": "مايوركا",
+      "hint": "نادي إسباني",
+      "media": "/media/club-logos/clubs/300/spain_mallorca_128x128.football-logos.cc.png",
+      "mediaType": "image"
+    },
+    {
+      "id": "club-logos-300-17",
+      "points": 300,
+      "question": "لاي نادي هذا الشعار؟",
+      "answer": "أوساسونا",
+      "hint": "نادي إسباني",
+      "media": "/media/club-logos/clubs/300/spain_osasuna_128x128.football-logos.cc.png",
+      "mediaType": "image"
+    },
+    {
+      "id": "club-logos-300-18",
+      "points": 300,
+      "question": "لاي منتخب هذا الشعار؟",
+      "answer": "بلجيكا",
+      "hint": "منتخب أوروبي",
+      "media": "/media/club-logos/national- teams/100/belgium_belgium-national-team_128x128.football-logos.cc.png",
+      "mediaType": "image"
+    },
+    {
+      "id": "club-logos-300-19",
+      "points": 300,
+      "question": "لاي منتخب هذا الشعار؟",
+      "answer": "النرويج",
+      "hint": "منتخب أوروبي",
+      "media": "/media/club-logos/national- teams/100/norway_norway-national-team_128x128.football-logos.cc.png",
+      "mediaType": "image"
+    },
+    {
+      "id": "club-logos-300-20",
+      "points": 300,
+      "question": "لاي منتخب هذا الشعار؟",
+      "answer": "بولندا",
+      "hint": "منتخب أوروبي",
+      "media": "/media/club-logos/national- teams/100/poland_poland-national-team_128x128.football-logos.cc.png",
+      "mediaType": "image"
+    },
+    {
+      "id": "club-logos-300-21",
+      "points": 300,
+      "question": "لاي منتخب هذا الشعار؟",
+      "answer": "الأوروغواي",
+      "hint": "منتخب أمريكي جنوبي",
+      "media": "/media/club-logos/national- teams/100/uruguay_uruguay-national-team_128x128.football-logos.cc.png",
+      "mediaType": "image"
+    },
+    {
+      "id": "club-logos-300-22",
+      "points": 300,
+      "question": "لاي منتخب هذا الشعار؟",
+      "answer": "البحرين",
+      "hint": "منتخب آسيوي",
+      "media": "/media/club-logos/national- teams/300/bahrain_bahrain-national-team_128x128.football-logos.cc.png",
+      "mediaType": "image"
+    },
+    {
+      "id": "club-logos-300-23",
+      "points": 300,
+      "question": "لاي منتخب هذا الشعار؟",
+      "answer": "الإكوادور",
+      "hint": "منتخب أمريكي جنوبي",
+      "media": "/media/club-logos/national- teams/300/ecuador_ecuador-national-team_128x128.football-logos.cc.png",
+      "mediaType": "image"
+    },
+    {
+      "id": "club-logos-300-24",
+      "points": 300,
+      "question": "لاي منتخب هذا الشعار؟",
+      "answer": "السلفادور",
+      "hint": "منتخب أمريكي جنوبي",
+      "media": "/media/club-logos/national- teams/300/el-salvador_el-salvador-national-team_128x128.football-logos.cc.png",
+      "mediaType": "image"
+    },
+    {
+      "id": "club-logos-300-25",
+      "points": 300,
+      "question": "لاي منتخب هذا الشعار؟",
+      "answer": "جورجيا",
+      "hint": "منتخب أوروبي",
+      "media": "/media/club-logos/national- teams/300/georgia_georgia-national-team_128x128.football-logos.cc.png",
+      "mediaType": "image"
+    },
+    {
+      "id": "club-logos-500-1",
+      "points": 500,
+      "question": "لاي نادي هذا الشعار؟",
+      "answer": "ويستيرلو",
+      "hint": "نادي بلجيكي",
+      "media": "/media/club-logos/clubs/300/belgium_westerlo_128x128.football-logos.cc.png",
+      "mediaType": "image"
+    },
+    {
+      "id": "club-logos-500-2",
+      "points": 500,
+      "question": "لاي نادي هذا الشعار؟",
+      "answer": "أتلتيكو مينيرو",
+      "hint": "نادي برازيلي",
+      "media": "/media/club-logos/clubs/300/brazil_atletico-mineiro_128x128.football-logos.cc.png",
+      "mediaType": "image"
+    },
+    {
+      "id": "club-logos-500-3",
+      "points": 500,
+      "question": "لاي نادي هذا الشعار؟",
+      "answer": "رويمو",
+      "hint": "نادي برازيلي",
+      "media": "/media/club-logos/clubs/300/brazil_clube-do-remo_128x128.football-logos.cc.png",
+      "mediaType": "image"
+    },
+    {
+      "id": "club-logos-500-4",
+      "points": 500,
+      "question": "لاي نادي هذا الشعار؟",
+      "answer": "فيكتوريا",
+      "hint": "نادي برازيلي",
+      "media": "/media/club-logos/clubs/300/brazil_vitoria_128x128.football-logos.cc.png",
+      "mediaType": "image"
+    },
+    {
+      "id": "club-logos-500-5",
+      "points": 500,
+      "question": "لاي نادي هذا الشعار؟",
+      "answer": "بتروجيت",
+      "hint": "نادي مصري",
+      "media": "/media/club-logos/clubs/300/egypt_petrojet_128x128.football-logos.cc.png",
+      "mediaType": "image"
+    },
+    {
+      "id": "club-logos-500-6",
+      "points": 500,
+      "question": "لاي نادي هذا الشعار؟",
+      "answer": "ديربي كاونتي",
+      "hint": "نادي إنجليزي",
+      "media": "/media/club-logos/clubs/300/england_derby-county_128x128.football-logos.cc.png",
+      "mediaType": "image"
+    },
+    {
+      "id": "club-logos-500-7",
+      "points": 500,
+      "question": "لاي نادي هذا الشعار؟",
+      "answer": "لينكولن سيتي",
+      "hint": "نادي إنجليزي",
+      "media": "/media/club-logos/clubs/300/england_lincoln-city_128x128.football-logos.cc.png",
+      "mediaType": "image"
+    },
+    {
+      "id": "club-logos-500-8",
+      "points": 500,
+      "question": "لاي نادي هذا الشعار؟",
+      "answer": "أكرون",
+      "hint": "نادي روسي",
+      "media": "/media/club-logos/clubs/300/russia_akron_128x128.football-logos.cc.png",
+      "mediaType": "image"
+    },
+    {
+      "id": "club-logos-500-9",
+      "points": 500,
+      "question": "لاي نادي هذا الشعار؟",
+      "answer": "الفاتح",
+      "hint": "نادي سعودي",
+      "media": "/media/club-logos/clubs/300/saudi-arabia_al-fateh_128x128.football-logos.cc.png",
+      "mediaType": "image"
+    },
+    {
+      "id": "club-logos-500-10",
+      "points": 500,
+      "question": "لاي نادي هذا الشعار؟",
+      "answer": "القادسية",
+      "hint": "نادي سعودي",
+      "media": "/media/club-logos/clubs/300/saudi-arabia_al-qadsiah_128x128.football-logos.cc.png",
+      "mediaType": "image"
+    },
+    {
+      "id": "club-logos-500-11",
+      "points": 500,
+      "question": "لاي نادي هذا الشعار؟",
+      "answer": "رايو فايكانو",
+      "hint": "نادي إسباني",
+      "media": "/media/club-logos/clubs/300/spain_rayo-vallecano_128x128.football-logos.cc.png",
+      "mediaType": "image"
+    },
+    {
+      "id": "club-logos-500-12",
+      "points": 500,
+      "question": "لاي نادي هذا الشعار؟",
+      "answer": "كوكيمبو يونيدو",
+      "hint": "نادي تشيلي",
+      "media": "/media/club-logos/clubs/500/chile_coquimbo-unido_128x128.football-logos.cc.png",
+      "mediaType": "image"
+    },
+    {
+      "id": "club-logos-500-13",
+      "points": 500,
+      "question": "لاي نادي هذا الشعار؟",
+      "answer": "إيفرتون تشيلي",
+      "hint": "نادي تشيلي",
+      "media": "/media/club-logos/clubs/500/chile_everton_128x128.football-logos.cc.png",
+      "mediaType": "image"
+    },
+    {
+      "id": "club-logos-500-14",
+      "points": 500,
+      "question": "لاي نادي هذا الشعار؟",
+      "answer": "هواتشيباتو",
+      "hint": "نادي تشيلي",
+      "media": "/media/club-logos/clubs/500/chile_huachipato_128x128.football-logos.cc.png",
+      "mediaType": "image"
+    },
+    {
+      "id": "club-logos-500-15",
+      "points": 500,
+      "question": "لاي نادي هذا الشعار؟",
+      "answer": "أكاديميا دي تشيلي",
+      "hint": "نادي تشيلي",
+      "media": "/media/club-logos/clubs/500/chile_universidad-catolica_128x128.football-logos.cc.png",
+      "mediaType": "image"
+    },
+    {
+      "id": "club-logos-500-16",
+      "points": 500,
+      "question": "لاي نادي هذا الشعار؟",
+      "answer": "أونيفرسيداد دي تشيلي",
+      "hint": "نادي تشيلي",
+      "media": "/media/club-logos/clubs/500/chile_universidad-de-chile_128x128.football-logos.cc.png",
+      "mediaType": "image"
+    },
+    {
+      "id": "club-logos-500-17",
+      "points": 500,
+      "question": "لاي نادي هذا الشعار؟",
+      "answer": "آي جي إف",
+      "hint": "نادي دنماركي",
+      "media": "/media/club-logos/clubs/500/denmark_agf_128x128.football-logos.cc.png",
+      "mediaType": "image"
+    },
+    {
+      "id": "club-logos-500-18",
+      "points": 500,
+      "question": "لاي نادي هذا الشعار؟",
+      "answer": "برونديبي",
+      "hint": "نادي دنماركي",
+      "media": "/media/club-logos/clubs/500/denmark_brondby_128x128.football-logos.cc.png",
+      "mediaType": "image"
+    },
+    {
+      "id": "club-logos-500-19",
+      "points": 500,
+      "question": "لاي نادي هذا الشعار؟",
+      "answer": "كوبنهاجن",
+      "hint": "نادي دنماركي",
+      "media": "/media/club-logos/clubs/500/denmark_copenhagen_128x128.football-logos.cc.png",
+      "mediaType": "image"
+    },
+    {
+      "id": "club-logos-500-20",
+      "points": 500,
+      "question": "لاي نادي هذا الشعار؟",
+      "answer": "نوردسيلاند",
+      "hint": "نادي دنماركي",
+      "media": "/media/club-logos/clubs/500/denmark_nordsjaelland_128x128.football-logos.cc.png",
+      "mediaType": "image"
+    },
+    {
+      "id": "club-logos-500-21",
+      "points": 500,
+      "question": "لاي منتخب هذا الشعار؟",
+      "answer": "آيسلندا",
+      "hint": "منتخب أوروبي",
+      "media": "/media/club-logos/national- teams/300/iceland_iceland-national-team_128x128.football-logos.cc.png",
+      "mediaType": "image"
+    },
+    {
+      "id": "club-logos-500-22",
+      "points": 500,
+      "question": "لاي منتخب هذا الشعار؟",
+      "answer": "كوسوفو",
+      "hint": "منتخب أوروبي",
+      "media": "/media/club-logos/national- teams/300/kosovo_kosovo-national-team_128x128.football-logos.cc.png",
+      "mediaType": "image"
+    },
+    {
+      "id": "club-logos-500-23",
+      "points": 500,
+      "question": "لاي منتخب هذا الشعار؟",
+      "answer": "مالي",
+      "hint": "منتخب أفريقي",
+      "media": "/media/club-logos/national- teams/300/mali_mali-national-team_128x128.football-logos.cc.png",
+      "mediaType": "image"
+    },
+    {
+      "id": "club-logos-500-24",
+      "points": 500,
+      "question": "لاي منتخب هذا الشعار؟",
+      "answer": "نيكاراغوا",
+      "hint": "منتخب أمريكي جنوبي",
+      "media": "/media/club-logos/national- teams/300/nicaragua_nicaragua-national-team_128x128.football-logos.cc.png",
+      "mediaType": "image"
+    },
+    {
+      "id": "club-logos-500-25",
+      "points": 500,
+      "question": "لاي منتخب هذا الشعار؟",
+      "answer": "بيرو",
+      "hint": "منتخب أمريكي جنوبي",
+      "media": "/media/club-logos/national- teams/300/peru_peru-national-team_128x128.football-logos.cc.png",
+      "mediaType": "image"
+    }
+  ],
+  "metadata": {
+    "sectionId": "sports",
+    "updatedAt": "2026-08-06",
+    "status": "pending"
+  }
 }

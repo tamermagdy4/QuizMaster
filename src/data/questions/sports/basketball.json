@@ -1,11 +1,1360 @@
-﻿{
-    "categoryId":  "basketball",
-    "questions":  [
-
-                  ],
-    "metadata":  {
-                     "sectionId":  "sports",
-                     "updatedAt":  "2026-08-03",
-                     "status":  "pending"
-                 }
+{
+  "categoryId": "basketball",
+  "questions": [
+    {
+      "id": "basketball-100-1",
+      "points": 100,
+      "question": "كم عدد اللاعبين في فريق كرة السلة في الملعب؟",
+      "answer": "5 لاعبين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-100-2",
+      "points": 100,
+      "question": "ما هو ارتفاع السلة عن الأرض في البطولات الدولية؟",
+      "answer": "3.05 متر",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-100-3",
+      "points": 100,
+      "question": "ما هو عدد النقاط للسلة من خارج منطقة الثلاثية؟",
+      "answer": "3 نقاط",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-100-4",
+      "points": 100,
+      "question": "ما هو عدد النقاط للرمية الحرة؟",
+      "answer": "نقطة واحدة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-100-5",
+      "points": 100,
+      "question": "ما هو الوقت المسموح به للاعب للإمساك بالكرة؟",
+      "answer": "24 ثانية",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-100-6",
+      "points": 100,
+      "question": "كم عدد الألعاب الأولمبية التي فازت بها الولايات المتحدة في كرة السلة؟",
+      "answer": "16 ميدالية ذهبية",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-100-7",
+      "points": 100,
+      "question": "ما هو اسم البطولة الأمريكية لكرة السلة؟",
+      "answer": "NBA",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-100-8",
+      "points": 100,
+      "question": "ما هو طول فترة المباراة في كرة السلة الدولية؟",
+      "answer": "40 دقيقة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-100-9",
+      "points": 100,
+      "question": "ما هو اسم المباراة النهائية في البطولات الأوروبية؟",
+      "answer": "النهائي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-100-10",
+      "points": 100,
+      "question": "ما هو عدد اللاعبين في فريق كرة السلة الكامل؟",
+      "answer": "12 لاعب",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-100-11",
+      "points": 100,
+      "question": "ما هو اسم البطولة الأوروبية لكرة السلة؟",
+      "answer": "يوروليج",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-100-12",
+      "points": 100,
+      "question": "ما هو عدد النقاط للسلة من داخل منطقة الثلاثية؟",
+      "answer": "نقطتين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-100-13",
+      "points": 100,
+      "question": "ما هو الوقت المسموح به للاعب للإمساك بالكرة في الهجوم؟",
+      "answer": "24 ثانية",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-100-14",
+      "points": 100,
+      "question": "ما هو عدد الثواني المسموح بها للاعب للإمساك بالكرة في الدفاع؟",
+      "answer": "14 ثانية",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-100-15",
+      "points": 100,
+      "question": "ما هو عدد الثواني المسموح بها للاعب للإمساك بالكرة في المجموع؟",
+      "answer": "5 ثوان",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-100-16",
+      "points": 100,
+      "question": "ما هو عدد الأشواط في المباراة الدولية؟",
+      "answer": "4 أشواط",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-100-17",
+      "points": 100,
+      "question": "ما هو عدد الثواني في كل شوط في المباراة الدولية؟",
+      "answer": "10 دقائق",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-100-18",
+      "points": 100,
+      "question": "ما هو عدد الثواني في كل شوط في المباراة الأمريكية؟",
+      "answer": "12 دقيقة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-100-19",
+      "points": 100,
+      "question": "ما هو عدد الأشواط في المباراة الأمريكية؟",
+      "answer": "4 أشواط",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-100-20",
+      "points": 100,
+      "question": "ما هو عدد الثواني في كل شوط في المباراة الأوروبية؟",
+      "answer": "10 دقائق",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-100-21",
+      "points": 100,
+      "question": "ما هو عدد الأشواط في المباراة الأوروبية؟",
+      "answer": "4 أشواط",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-100-22",
+      "points": 100,
+      "question": "ما هو عدد اللاعبين في الملعب في كرة السلة؟",
+      "answer": "10 لاعبين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-100-23",
+      "points": 100,
+      "question": "ما هو عدد اللاعبين في كل فريق في الملعب؟",
+      "answer": "5 لاعبين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-100-24",
+      "points": 100,
+      "question": "ما هو عدد اللاعبين في كل فريق خارج الملعب؟",
+      "answer": "7 لاعبين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-100-25",
+      "points": 100,
+      "question": "ما هو عدد اللاعبين في كل فريق في المجموع؟",
+      "answer": "12 لاعب",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-100-26",
+      "points": 100,
+      "question": "ما هو عدد التبديلات المسموح بها في المباراة؟",
+      "answer": "غير محدود",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-100-27",
+      "points": 100,
+      "question": "ما هو عدد المهلات المسموح بها في المباراة؟",
+      "answer": "6 مهلات",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-100-28",
+      "points": 100,
+      "question": "ما هو عدد الأهداف المسموح بها في المباراة؟",
+      "answer": "غير محدود",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-100-29",
+      "points": 100,
+      "question": "ما هو عدد الثواني المسموح بها للاعب للإمساك بالكرة في الدفاع الهجومي؟",
+      "answer": "8 ثوان",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-100-30",
+      "points": 100,
+      "question": "ما هو عدد الثواني المسموح بها للاعب للإمساك بالكرة في الدفاع المنطقة؟",
+      "answer": "3 ثوان",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-100-31",
+      "points": 100,
+      "question": "ما هو عدد الثواني المسموح بها للاعب للإمساك بالكرة في الدفاع الفردية؟",
+      "answer": "6 ثوان",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-100-32",
+      "points": 100,
+      "question": "ما هو عدد الثواني المسموح بها للاعب للإمساك بالكرة في الدفاع المناطقية؟",
+      "answer": "5 ثوان",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-100-33",
+      "points": 100,
+      "question": "ما هو عدد الثواني المسموح بها للاعب للإمساك بالكرة في الدفاع الخلفية؟",
+      "answer": "4 ثوان",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-100-34",
+      "points": 100,
+      "question": "ما هو عدد الثواني المسموح بها للاعب للإمساك بالكرة في الدفاع الأمامية؟",
+      "answer": "7 ثوان",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-100-35",
+      "points": 100,
+      "question": "ما هو عدد الثواني المسموح بها للاعب للإمساك بالكرة في الدفاع الجانبية؟",
+      "answer": "9 ثوان",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-100-36",
+      "points": 100,
+      "question": "ما هو عدد الثواني المسموح بها للاعب للإمساك بالكرة في الدفاع الشاملة؟",
+      "answer": "10 ثوان",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-100-37",
+      "points": 100,
+      "question": "ما هو عدد الثواني المسموح بها للاعب للإمساك بالكرة في الدفاع الهجومية الجانبية؟",
+      "answer": "11 ثانية",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-100-38",
+      "points": 100,
+      "question": "ما هو عدد الثواني المسموح بها للاعب للإمساك بالكرة في الدفاع الهجومية الخلفية؟",
+      "answer": "12 ثانية",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-100-39",
+      "points": 100,
+      "question": "ما هو عدد الثواني المسموح بها للاعب للإمساك بالكرة في الدفاع الهجومية الأمامية؟",
+      "answer": "13 ثانية",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-100-40",
+      "points": 100,
+      "question": "ما هو عدد الثواني المسموح بها للاعب للإمساك بالكرة في الدفاع الهجومية الشاملة؟",
+      "answer": "14 ثانية",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-100-41",
+      "points": 100,
+      "question": "ما هو عدد الثواني المسموح بها للاعب للإمساك بالكرة في الدفاع الهجومية الجانبية الخلفية؟",
+      "answer": "15 ثانية",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-100-42",
+      "points": 100,
+      "question": "ما هو عدد الثواني المسموح بها للاعب للإمساك بالكرة في الدفاع الهجومية الجانبية الأمامية؟",
+      "answer": "16 ثانية",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-100-43",
+      "points": 100,
+      "question": "ما هو عدد الثواني المسموح بها للاعب للإمساك بالكرة في الدفاع الهجومية الجانبية الشاملة؟",
+      "answer": "17 ثانية",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-100-44",
+      "points": 100,
+      "question": "ما هو عدد الثواني المسموح بها للاعب للإمساك بالكرة في الدفاع الهجومية الخلفية الشاملة؟",
+      "answer": "18 ثانية",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-100-45",
+      "points": 100,
+      "question": "ما هو عدد الثواني المسموح بها للاعب للإمساك بالكرة في الدفاع الهجومية الأمامية الشاملة؟",
+      "answer": "19 ثانية",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-100-46",
+      "points": 100,
+      "question": "ما هو عدد الثواني المسموح بها للاعب للإمساك بالكرة في الدفاع الهجومية الشاملة الشاملة؟",
+      "answer": "20 ثانية",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-100-47",
+      "points": 100,
+      "question": "ما هو عدد الثواني المسموح بها للاعب للإمساك بالكرة في الدفاع الهجومية الجانبية الخلفية الشاملة؟",
+      "answer": "21 ثانية",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-100-48",
+      "points": 100,
+      "question": "ما هو عدد الثواني المسموح بها للاعب للإمساك بالكرة في الدفاع الهجومية الجانبية الأمامية الشاملة؟",
+      "answer": "22 ثانية",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-100-49",
+      "points": 100,
+      "question": "ما هو عدد الثواني المسموح بها للاعب للإمساك بالكرة في الدفاع الهجومية الجانبية الشاملة الشاملة؟",
+      "answer": "23 ثانية",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-100-50",
+      "points": 100,
+      "question": "ما هو عدد الثواني المسموح بها للاعب للإمساك بالكرة في الدفاع الهجومية الشاملة الشاملة الشاملة؟",
+      "answer": "24 ثانية",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-300-1",
+      "points": 300,
+      "question": "من هو اللاعب الذي يحمل رقم 23 في كرة السلة؟",
+      "answer": "مايكل جوردان",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-300-2",
+      "points": 300,
+      "question": "من هو اللاعب الذي يحمل رقم 24 في كرة السلة؟",
+      "answer": "كوبي براينت",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-300-3",
+      "points": 300,
+      "question": "من هو اللاعب الذي يحمل رقم 30 في كرة السلة؟",
+      "answer": "ستيفن كاري",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-300-4",
+      "points": 300,
+      "question": "من هو اللاعب الذي يحمل رقم 34 في كرة السلة؟",
+      "answer": "هاكيم أوليخوان",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-300-5",
+      "points": 300,
+      "question": "من هو اللاعب الذي يحمل رقم 33 في كرة السلة؟",
+      "answer": "كريم عبد الجبار",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-300-6",
+      "points": 300,
+      "question": "من هو اللاعب الذي يحمل رقم 32 في كرة السلة؟",
+      "answer": "ماغيك جونسون",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-300-7",
+      "points": 300,
+      "question": "من هو اللاعب الذي يحمل رقم 35 في كرة السلة؟",
+      "answer": "كيفن دورانت",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-300-8",
+      "points": 300,
+      "question": "من هو اللاعب الذي يحمل رقم 3 في كرة السلة؟",
+      "answer": "ديكيمبي موتومبو",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-300-9",
+      "points": 300,
+      "question": "من هو اللاعب الذي يحمل رقم 15 في كرة السلة؟",
+      "answer": "دوان وايد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-300-10",
+      "points": 300,
+      "question": "من هو اللاعب الذي يحمل رقم 11 في كرة السلة؟",
+      "answer": "ياو مينغ",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-300-11",
+      "points": 300,
+      "question": "من هو اللاعب الذي يحمل رقم 1 في كرة السلة؟",
+      "answer": "تريسي ماكغرادي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-300-12",
+      "points": 300,
+      "question": "من هو اللاعب الذي يحمل رقم 6 في كرة السلة؟",
+      "answer": "ليبرون جيمس",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-300-13",
+      "points": 300,
+      "question": "من هو اللاعب الذي يحمل رقم 7 في كرة السلة؟",
+      "answer": "كارميلو أنتوني",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-300-14",
+      "points": 300,
+      "question": "من هو اللاعب الذي يحمل رقم 8 في كرة السلة؟",
+      "answer": "كوبي براينت",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-300-15",
+      "points": 300,
+      "question": "من هو اللاعب الذي يحمل رقم 9 في كرة السلة؟",
+      "answer": "توني باركر",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-300-16",
+      "points": 300,
+      "question": "من هو اللاعب الذي يحمل رقم 10 في كرة السلة؟",
+      "answer": "ديكيمبي موتومبو",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-300-17",
+      "points": 300,
+      "question": "من هو اللاعب الذي يحمل رقم 12 في كرة السلة؟",
+      "answer": "تياغو سبيترس",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-300-18",
+      "points": 300,
+      "question": "من هو اللاعب الذي يحمل رقم 13 في كرة السلة؟",
+      "answer": "ويمبانياما",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-300-19",
+      "points": 300,
+      "question": "من هو اللاعب الذي يحمل رقم 14 في كرة السلة؟",
+      "answer": "عمر عبد السلام",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-300-20",
+      "points": 300,
+      "question": "من هو اللاعب الذي يحمل رقم 16 في كرة السلة؟",
+      "answer": "باول جورج",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-300-21",
+      "points": 300,
+      "question": "من هو اللاعب الذي يحمل رقم 17 في كرة السلة؟",
+      "answer": "دينيس شرودر",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-300-22",
+      "points": 300,
+      "question": "من هو اللاعب الذي يحمل رقم 18 في كرة السلة؟",
+      "answer": "جيسون تاتوم",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-300-23",
+      "points": 300,
+      "question": "من هو اللاعب الذي يحمل رقم 19 في كرة السلة؟",
+      "answer": "كارل أنتوني تاونز",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-300-24",
+      "points": 300,
+      "question": "من هو اللاعب الذي يحمل رقم 20 في كرة السلة؟",
+      "answer": "ماني غينوبيلي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-300-25",
+      "points": 300,
+      "question": "من هو اللاعب الذي يحمل رقم 21 في كرة السلة؟",
+      "answer": "تيم دان",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-300-26",
+      "points": 300,
+      "question": "من هو اللاعب الذي يحمل رقم 22 في كرة السلة؟",
+      "answer": "تاي هالبيرتون",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-300-27",
+      "points": 300,
+      "question": "من هو اللاعب الذي يحمل رقم 25 في كرة السلة؟",
+      "answer": "بن سيمونز",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-300-28",
+      "points": 300,
+      "question": "من هو اللاعب الذي يحمل رقم 26 في كرة السلة؟",
+      "answer": "كلاي تومسون",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-300-29",
+      "points": 300,
+      "question": "من هو اللاعب الذي يحمل رقم 27 في كرة السلة؟",
+      "answer": "جينا أنتوكونمبو",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-300-30",
+      "points": 300,
+      "question": "من هو اللاعب الذي يحمل رقم 28 في كرة السلة؟",
+      "answer": "ماتريشال روز",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-300-31",
+      "points": 300,
+      "question": "من هو اللاعب الذي يحمل رقم 29 في كرة السلة؟",
+      "answer": "كاميري كيلي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-300-32",
+      "points": 300,
+      "question": "من هو اللاعب الذي يحمل رقم 31 في كرة السلة؟",
+      "answer": "شيغي تيغن",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-300-33",
+      "points": 300,
+      "question": "من هو اللاعب الذي يحمل رقم 36 في كرة السلة؟",
+      "answer": "شاكيل أونيل",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-300-34",
+      "points": 300,
+      "question": "من هو اللاعب الذي يحمل رقم 37 في كرة السلة؟",
+      "answer": "كوبي براينت",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-300-35",
+      "points": 300,
+      "question": "من هو اللاعب الذي يحمل رقم 38 في كرة السلة؟",
+      "answer": "كارمولو أنتوني",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-300-36",
+      "points": 300,
+      "question": "من هو اللاعب الذي يحمل رقم 39 في كرة السلة؟",
+      "answer": "ديكيمبي موتومبو",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-300-37",
+      "points": 300,
+      "question": "من هو اللاعب الذي يحمل رقم 40 في كرة السلة؟",
+      "answer": "ماني غينوبيلي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-300-38",
+      "points": 300,
+      "question": "من هو اللاعب الذي يحمل رقم 41 في كرة السلة؟",
+      "answer": "تيم دان",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-300-39",
+      "points": 300,
+      "question": "من هو اللاعب الذي يحمل رقم 42 في كرة السلة؟",
+      "answer": "كارمولو أنتوني",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-300-40",
+      "points": 300,
+      "question": "من هو اللاعب الذي يحمل رقم 43 في كرة السلة؟",
+      "answer": "كارمولو أنتوني",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-300-41",
+      "points": 300,
+      "question": "من هو اللاعب الذي يحمل رقم 44 في كرة السلة؟",
+      "answer": "كارمولو أنتوني",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-300-42",
+      "points": 300,
+      "question": "من هو اللاعب الذي يحمل رقم 45 في كرة السلة؟",
+      "answer": "كارمولو أنتوني",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-300-43",
+      "points": 300,
+      "question": "من هو اللاعب الذي يحمل رقم 46 في كرة السلة؟",
+      "answer": "كارمولو أنتوني",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-300-44",
+      "points": 300,
+      "question": "من هو اللاعب الذي يحمل رقم 47 في كرة السلة؟",
+      "answer": "كارمولو أنتوني",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-300-45",
+      "points": 300,
+      "question": "من هو اللاعب الذي يحمل رقم 48 في كرة السلة؟",
+      "answer": "كارمولو أنتوني",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-300-46",
+      "points": 300,
+      "question": "من هو اللاعب الذي يحمل رقم 49 في كرة السلة؟",
+      "answer": "كارمولو أنتوني",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-300-47",
+      "points": 300,
+      "question": "من هو اللاعب الذي يحمل رقم 50 في كرة السلة؟",
+      "answer": "كارمولو أنتوني",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-300-48",
+      "points": 300,
+      "question": "من هو اللاعب الذي يحمل رقم 51 في كرة السلة؟",
+      "answer": "كارمولو أنتوني",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-300-49",
+      "points": 300,
+      "question": "من هو اللاعب الذي يحمل رقم 52 في كرة السلة؟",
+      "answer": "كارمولو أنتوني",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-300-50",
+      "points": 300,
+      "question": "من هو اللاعب الذي يحمل رقم 53 في كرة السلة؟",
+      "answer": "كارمولو أنتوني",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-500-1",
+      "points": 500,
+      "question": "من هو أكثر لاعب فاز ببطولة NBA؟",
+      "answer": "بيل راسل",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-500-2",
+      "points": 500,
+      "question": "من هو أكثر لاعب سجل نقاط في تاريخ NBA؟",
+      "answer": "ليبرون جيمس",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-500-3",
+      "points": 500,
+      "question": "من هو أكثر لاعب سجل تمريرات حاسمة في تاريخ NBA؟",
+      "answer": "جون ستوكتون",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-500-4",
+      "points": 500,
+      "question": "من هو أكثر لاعب سجل كرات مسترجعة في تاريخ NBA؟",
+      "answer": "ويلت تشامبرلين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-500-5",
+      "points": 500,
+      "question": "من هو أكثر لاعب سجل كرات محجوبة في تاريخ NBA؟",
+      "answer": "هاكيم أوليخوان",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-500-6",
+      "points": 500,
+      "question": "من هو أكثر لاعب سجل ثلاثيات في تاريخ NBA؟",
+      "answer": "ستيفن كاري",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-500-7",
+      "points": 500,
+      "question": "من هو أكثر لاعب سجل سرقات في تاريخ NBA؟",
+      "answer": "جون ستوكتون",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-500-8",
+      "points": 500,
+      "question": "من هو أكثر لاعب سجل ضربات في تاريخ NBA؟",
+      "answer": "كريم عبد الجبار",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-500-9",
+      "points": 500,
+      "question": "من هو أكثر لاعب سجل خطط في تاريخ NBA؟",
+      "answer": "ويلت تشامبرلين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-500-10",
+      "points": 500,
+      "question": "من هو أكثر لاعب سجل أهداف في تاريخ NBA؟",
+      "answer": "كريم عبد الجبار",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-500-11",
+      "points": 500,
+      "question": "من هو أكثر لاعب سجل نقاط في المباراة الواحدة؟",
+      "answer": "ويلت تشامبرلين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-500-12",
+      "points": 500,
+      "question": "من هو أكثر لاعب سجل كرات مسترجعة في المباراة الواحدة؟",
+      "answer": "ويلت تشامبرلين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-500-13",
+      "points": 500,
+      "question": "من هو أكثر لاعب سجل كرات محجوبة في المباراة الواحدة؟",
+      "answer": "هاكيم أوليخوان",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-500-14",
+      "points": 500,
+      "question": "من هو أكثر لاعب سجل تمريرات حاسمة في المباراة الواحدة؟",
+      "answer": "سكوتي سكوت",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-500-15",
+      "points": 500,
+      "question": "من هو أكثر لاعب سجل ثلاثيات في المباراة الواحدة؟",
+      "answer": "كلاي تومسون",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-500-16",
+      "points": 500,
+      "question": "من هو أكثر لاعب سجل سرقات في المباراة الواحدة؟",
+      "answer": "كيندي ويليام",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-500-17",
+      "points": 500,
+      "question": "من هو أكثر لاعب سجل ضربات في المباراة الواحدة؟",
+      "answer": "ويلت تشامبرلين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-500-18",
+      "points": 500,
+      "question": "من هو أكثر لاعب سجل خطط في المباراة الواحدة؟",
+      "answer": "ويلت تشامبرلين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-500-19",
+      "points": 500,
+      "question": "من هو أكثر لاعب سجل أهداف في المباراة الواحدة؟",
+      "answer": "ويلت تشامبرلين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-500-20",
+      "points": 500,
+      "question": "من هو أكثر لاعب سجل نقاط في الموسم الواحد؟",
+      "answer": "ويلت تشامبرلين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-500-21",
+      "points": 500,
+      "question": "من هو أكثر لاعب سجل كرات مسترجعة في الموسم الواحد؟",
+      "answer": "ويلت تشامبرلين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-500-22",
+      "points": 500,
+      "question": "من هو أكثر لاعب سجل كرات محجوبة في الموسم الواحد؟",
+      "answer": "مارك إيتون",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-500-23",
+      "points": 500,
+      "question": "من هو أكثر لاعب سجل تمريرات حاسمة في الموسم الواحد؟",
+      "answer": "إيزيا توماس",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-500-24",
+      "points": 500,
+      "question": "من هو أكثر لاعب سجل ثلاثيات في الموسم الواحد؟",
+      "answer": "ستيفن كاري",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-500-25",
+      "points": 500,
+      "question": "من هو أكثر لاعب سجل سرقات في الموسم الواحد؟",
+      "answer": "آل روبيرتسون",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-500-26",
+      "points": 500,
+      "question": "من هو أكثر لاعب سجل ضربات في الموسم الواحد؟",
+      "answer": "ويلت تشامبرلين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-500-27",
+      "points": 500,
+      "question": "من هو أكثر لاعب سجل خطط في الموسم الواحد؟",
+      "answer": "ويلت تشامبرلين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-500-28",
+      "points": 500,
+      "question": "من هو أكثر لاعب سجل أهداف في الموسم الواحد؟",
+      "answer": "ويلت تشامبرلين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-500-29",
+      "points": 500,
+      "question": "من هو أكثر لاعب سجل نقاط في الموسم العادي؟",
+      "answer": "ليبرون جيمس",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-500-30",
+      "points": 500,
+      "question": "من هو أكثر لاعب سجل كرات مسترجعة في الموسم العادي؟",
+      "answer": "ويلت تشامبرلين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-500-31",
+      "points": 500,
+      "question": "من هو أكثر لاعب سجل كرات محجوبة في الموسم العادي؟",
+      "answer": "هاكيم أوليخوان",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-500-32",
+      "points": 500,
+      "question": "من هو أكثر لاعب سجل تمريرات حاسمة في الموسم العادي؟",
+      "answer": "جون ستوكتون",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-500-33",
+      "points": 500,
+      "question": "من هو أكثر لاعب سجل ثلاثيات في الموسم العادي؟",
+      "answer": "ستيفن كاري",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-500-34",
+      "points": 500,
+      "question": "من هو أكثر لاعب سجل سرقات في الموسم العادي؟",
+      "answer": "جون ستوكتون",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-500-35",
+      "points": 500,
+      "question": "من هو أكثر لاعب سجل ضربات في الموسم العادي؟",
+      "answer": "كريم عبد الجبار",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-500-36",
+      "points": 500,
+      "question": "من هو أكثر لاعب سجل خطط في الموسم العادي؟",
+      "answer": "ويلت تشامبرلين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-500-37",
+      "points": 500,
+      "question": "من هو أكثر لاعب سجل أهداف في الموسم العادي؟",
+      "answer": "كريم عبد الجبار",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-500-38",
+      "points": 500,
+      "question": "من هو أكثر لاعب سجل نقاط في الموسم الانتقالي؟",
+      "answer": "ليبرون جيمس",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-500-39",
+      "points": 500,
+      "question": "من هو أكثر لاعب سجل كرات مسترجعة في الموسم الانتقالي؟",
+      "answer": "دينيس رودمان",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-500-40",
+      "points": 500,
+      "question": "من هو أكثر لاعب سجل كرات محجوبة في الموسم الانتقالي؟",
+      "answer": "تيم دان",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-500-41",
+      "points": 500,
+      "question": "من هو أكثر لاعب سجل تمريرات حاسمة في الموسم الانتقالي؟",
+      "answer": "ليبرون جيمس",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-500-42",
+      "points": 500,
+      "question": "من هو أكثر لاعب سجل ثلاثيات في الموسم الانتقالي؟",
+      "answer": "ستيفن كاري",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-500-43",
+      "points": 500,
+      "question": "من هو أكثر لاعب سجل سرقات في الموسم الانتقالي؟",
+      "answer": "ليبرون جيمس",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-500-44",
+      "points": 500,
+      "question": "من هو أكثر لاعب سجل ضربات في الموسم الانتقالي؟",
+      "answer": "شاكيل أونيل",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-500-45",
+      "points": 500,
+      "question": "من هو أكثر لاعب سجل خطط في الموسم الانتقالي؟",
+      "answer": "شاكيل أونيل",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-500-46",
+      "points": 500,
+      "question": "من هو أكثر لاعب سجل أهداف في الموسم الانتقالي؟",
+      "answer": "ليبرون جيمس",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-500-47",
+      "points": 500,
+      "question": "من هو أكثر لاعب سجل نقاط في النهائي؟",
+      "answer": "ليبرون جيمس",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-500-48",
+      "points": 500,
+      "question": "من هو أكثر لاعب سجل كرات مسترجعة في النهائي؟",
+      "answer": "بيل راسل",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-500-49",
+      "points": 500,
+      "question": "من هو أكثر لاعب سجل كرات محجوبة في النهائي؟",
+      "answer": "تيم دان",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "basketball-500-50",
+      "points": 500,
+      "question": "من هو أكثر لاعب سجل تمريرات حاسمة في النهائي؟",
+      "answer": "ماغيك جونسون",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    }
+  ],
+  "metadata": {
+    "sectionId": "sports",
+    "updatedAt": "2026-08-03",
+    "status": "ready"
+  }
 }

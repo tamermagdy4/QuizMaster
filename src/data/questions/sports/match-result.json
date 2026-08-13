@@ -1,0 +1,750 @@
+{
+  "categoryId": "match-result",
+  "questions": [
+    {
+      "id": "match-result-100-1",
+      "points": 100,
+      "question": "ما النتيجه النهائيه لهذه المباراه؟",
+      "answer": "Spain 2–1 England",
+      "hint": "UEFA Euro 2024 Final",
+      "media": "/media/match-results/spain-vs-england-2024/question-11.webp",
+      "answerMedia": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "match-result-100-2",
+      "points": 100,
+      "question": "ما النتيجه النهائيه لهذه المباراه؟",
+      "answer": "Ajax 2–3 Tottenham",
+      "hint": "UEFA Champions League Semi-Final 2019",
+      "media": "/media/match-results/ajax-vs-tottenham-2019/question-9.webp",
+      "answerMedia": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "match-result-100-3",
+      "points": 100,
+      "question": "ما النتيجه النهائيه لهذه المباراه؟",
+      "answer": "Argentina 3–3 France (Argentina won 4–2 on penalties)",
+      "hint": "FIFA World Cup Final 2022",
+      "media": "/media/match-results/argentina-vs-france-2022/question-15.webp",
+      "answerMedia": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "match-result-100-4",
+      "points": 100,
+      "question": "ما النتيجه النهائيه لهذه المباراه؟",
+      "answer": "Germany 7–1 Brazil",
+      "hint": "FIFA World Cup Semi-Final 2014",
+      "media": "/media/match-results/germany-vs-brazil-2014/question-8.webp",
+      "answerMedia": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "match-result-100-5",
+      "points": 100,
+      "question": "ما النتيجه النهائيه لهذه المباراه؟",
+      "answer": "Spain 2–1 Germany",
+      "hint": "UEFA Euro 2024 Quarter-Final",
+      "media": "/media/match-results/spain-vs-germany-2024/question-10.webp",
+      "answerMedia": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "match-result-100-6",
+      "points": 100,
+      "question": "ما النتيجه النهائيه لهذه المباراه؟",
+      "answer": "France 4–2 Croatia",
+      "hint": "FIFA World Cup Final 2018",
+      "media": "/media/match-results/france-vs-croatia-2018/question-28.webp",
+      "answerMedia": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "match-result-100-7",
+      "points": 100,
+      "question": "ما النتيجه النهائيه لهذه المباراه؟",
+      "answer": "Italy 1–1 France (Italy won 5–3 on penalties)",
+      "hint": "FIFA World Cup Final 2006",
+      "media": "/media/match-results/italy-vs-france-2006/question-14.webp",
+      "answerMedia": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "match-result-100-8",
+      "points": 100,
+      "question": "ما النتيجه النهائيه لهذه المباراه؟",
+      "answer": "Portugal 1–0 France",
+      "hint": "UEFA Euro 2016 Final",
+      "media": "/media/match-results/france-vs-portugal-2016/question-17.webp",
+      "answerMedia": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "match-result-100-9",
+      "points": 100,
+      "question": "ما النتيجه النهائيه لهذه المباراه؟",
+      "answer": "Netherlands 0–1 Spain",
+      "hint": "FIFA World Cup Final 2010",
+      "media": "/media/match-results/netherlands-vs-spain-2010/question-12.webp",
+      "answerMedia": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "match-result-100-10",
+      "points": 100,
+      "question": "ما النتيجه النهائيه لهذه المباراه؟",
+      "answer": "Belgium 3–2 Japan",
+      "hint": "FIFA World Cup Round of 16 2018",
+      "media": "/media/match-results/belgium-vs-japan-2018/question-21.webp",
+      "answerMedia": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "match-result-100-11",
+      "points": 100,
+      "question": "ما النتيجه النهائيه لهذه المباراه؟",
+      "answer": "AC Milan 2–1 Liverpool",
+      "hint": "UEFA Champions League Final 2007",
+      "media": "/media/match-results/AC-Milan-2-1-Liverpool/question-36.jpeg",
+      "answerMedia": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "match-result-100-12",
+      "points": 100,
+      "question": "ما النتيجه النهائيه لهذه المباراه؟",
+      "answer": "Borussia Dortmund 1–2 Bayern Munich",
+      "hint": "UEFA Champions League Final 2013",
+      "media": "/media/match-results/Borussia-Dortmund-1-2-Bayern-Munich/question-35.jpeg",
+      "answerMedia": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "match-result-100-13",
+      "points": 100,
+      "question": "ما النتيجه النهائيه لهذه المباراه؟",
+      "answer": "Manchester City 1–0 Inter Milan",
+      "hint": "UEFA Champions League Final 2023",
+      "media": "/media/match-results/Manchester-City-1-0-Inter-Milan/question-37.jpeg",
+      "answerMedia": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "match-result-100-14",
+      "points": 100,
+      "question": "ما النتيجه النهائيه لهذه المباراه؟",
+      "answer": "Croatia 2–1 England",
+      "hint": "FIFA World Cup Semi-Final 2018",
+      "media": "/media/match-results/Croatia-2-1-England/question-46.jpeg",
+      "answerMedia": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "match-result-100-15",
+      "points": 100,
+      "question": "ما النتيجه النهائيه لهذه المباراه؟",
+      "answer": "Brazil 2–0 Germany",
+      "hint": "FIFA World Cup Final 2002",
+      "media": "/media/match-results/Brazil-2-0-Germany/question-48.jpeg",
+      "answerMedia": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "match-result-100-16",
+      "points": 100,
+      "question": "ما النتيجه النهائيه لهذه المباراه؟",
+      "answer": "France 4–3 Argentina",
+      "hint": "FIFA World Cup Round of 16 2018",
+      "media": "/media/match-results/France-4-3-Argentina/question-49.jpeg",
+      "answerMedia": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "match-result-100-17",
+      "points": 100,
+      "question": "ما النتيجه النهائيه لهذه المباراه؟",
+      "answer": "Barcelona 3–1 Manchester United",
+      "hint": "UEFA Champions League Final 2011",
+      "media": "/media/match-results/Barcelona-3-1-Manchester-United/question-44.jpeg",
+      "answerMedia": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "match-result-100-18",
+      "points": 100,
+      "question": "ما النتيجه النهائيه لهذه المباراه؟",
+      "answer": "Portugal 1–0 Greece",
+      "hint": "UEFA Euro 2004 Final",
+      "media": "/media/match-results/Portugal-1-0-Greece/question-40.jpeg",
+      "answerMedia": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "match-result-100-19",
+      "points": 100,
+      "question": "ما النتيجه النهائيه لهذه المباراه؟",
+      "answer": "Germany 1–0 Argentina",
+      "hint": "FIFA World Cup Final 2014",
+      "media": "/media/match-results/Germany-1-0-Argentina/question-42.jpeg",
+      "answerMedia": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "match-result-100-20",
+      "points": 100,
+      "question": "ما النتيجه النهائيه لهذه المباراه؟",
+      "answer": "Italy 1–2 England",
+      "hint": "UEFA Euro 2020 Final 2021",
+      "media": "/media/match-results/Italy-1-2-England/question-38.jpeg",
+      "answerMedia": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "match-result-100-21",
+      "points": 100,
+      "question": "ما النتيجه النهائيه لهذه المباراه؟",
+      "answer": "Manchester United 2–1 Bayern Munich",
+      "hint": "UEFA Champions League Final 1999",
+      "media": "/media/match-results/manchester-united-vs-bayern-1999/question-32.webp",
+      "answerMedia": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "match-result-100-22",
+      "points": 100,
+      "question": "ما النتيجه النهائيه لهذه المباراه؟",
+      "answer": "Monaco 3–1 Manchester City",
+      "hint": "UEFA Champions League Round of 16 First Leg 2017",
+      "media": "/media/match-results/monaco-vs-manchester-city-2017/question-33.webp",
+      "answerMedia": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "match-result-100-23",
+      "points": 100,
+      "question": "ما النتيجه النهائيه لهذه المباراه؟",
+      "answer": "Barcelona 2–1 Manchester United",
+      "hint": "UEFA Champions League Final 2009",
+      "media": "/media/match-results/barcelona-vs-manchester-united-2011/question-20.webp",
+      "answerMedia": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "match-result-100-24",
+      "points": 100,
+      "question": "ما النتيجه النهائيه لهذه المباراه؟",
+      "answer": "Barcelona 6–1 PSG",
+      "hint": "UEFA Champions League Round of 16 Second Leg 2017",
+      "media": "/media/match-results/barcelona-vs-psg-2017/question-18.webp",
+      "answerMedia": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "match-result-100-25",
+      "points": 100,
+      "question": "ما النتيجه النهائيه لهذه المباراه؟",
+      "answer": "Barcelona 2–3 Real Madrid",
+      "hint": "El Clásico – LaLiga 2017",
+      "media": "/media/match-results/barcelona-vs-real-madrid-2017/question-19.webp",
+      "answerMedia": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "match-result-300-1",
+      "points": 300,
+      "question": "ما النتيجه النهائيه لهذه المباراه؟",
+      "answer": "Real Madrid 2–6 Barcelona",
+      "hint": "El Clásico – LaLiga 2009",
+      "media": "/media/match-results/real-madrid-vs-barcelona-2009/question-25.webp",
+      "answerMedia": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "match-result-300-2",
+      "points": 300,
+      "question": "ما النتيجه النهائيه لهذه المباراه؟",
+      "answer": "Juventus 1–4 Real Madrid",
+      "hint": "UEFA Champions League Final 2017",
+      "media": "/media/match-results/Juventus-1-4-Real-Madrid/question-39.jpeg",
+      "answerMedia": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "match-result-300-3",
+      "points": 300,
+      "question": "ما النتيجه النهائيه لهذه المباراه؟",
+      "answer": "Real Madrid 1–0 Liverpool",
+      "hint": "UEFA Champions League Final 2022",
+      "media": "/media/match-results/real-madrid-vs-liverpool-2022/question-5.jpg",
+      "answerMedia": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "match-result-300-4",
+      "points": 300,
+      "question": "ما النتيجه النهائيه لهذه المباراه؟",
+      "answer": "Real Madrid 3–0 Wolfsburg",
+      "hint": "UEFA Champions League Quarter-Final Second Leg 2016",
+      "media": "/media/match-results/real-madrid-vs-wolfsburg-2016/question-4.jpg",
+      "answerMedia": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "match-result-300-5",
+      "points": 300,
+      "question": "ما النتيجه النهائيه لهذه المباراه؟",
+      "answer": "Roma 3–0 Barcelona",
+      "hint": "UEFA Champions League Quarter-Final Second Leg 2018",
+      "media": "/media/match-results/roma-vs-barcelona-2018/question-7.jpeg",
+      "answerMedia": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "match-result-300-6",
+      "points": 300,
+      "question": "ما النتيجه النهائيه لهذه المباراه؟",
+      "answer": "Spain 2–1 Germany",
+      "hint": "UEFA Euro 2024 Quarter-Final",
+      "media": "/media/match-results/spain-vs-germany-2024/question-10.webp",
+      "answerMedia": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "match-result-300-7",
+      "points": 300,
+      "question": "ما النتيجه النهائيه لهذه المباراه؟",
+      "answer": "Barcelona 6–1 PSG",
+      "hint": "UEFA Champions League Round of 16 Second Leg 2017",
+      "media": "/media/match-results/barcelona-vs-psg-2017/question-18.webp",
+      "answerMedia": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "match-result-300-8",
+      "points": 300,
+      "question": "ما النتيجه النهائيه لهذه المباراه؟",
+      "answer": "Deportivo La Coruña 4–0 AC Milan",
+      "hint": "UEFA Champions League Quarter-Final Second Leg 2004",
+      "media": "/media/match-results/deportivo-vs-milan-2004/question-24.webp",
+      "answerMedia": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "match-result-300-9",
+      "points": 300,
+      "question": "ما النتيجه النهائيه لهذه المباراه؟",
+      "answer": "Liverpool 4–0 Barcelona",
+      "hint": "UEFA Champions League Semi-Final Second Leg 2019",
+      "media": "/media/match-results/liverpool-vs-barcelona-2019/question-31.webp",
+      "answerMedia": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "match-result-300-10",
+      "points": 300,
+      "question": "ما النتيجه النهائيه لهذه المباراه؟",
+      "answer": "Real Madrid 2–3 Barcelona",
+      "hint": "El Clásico – LaLiga 2017",
+      "media": "/media/match-results/barcelona-vs-real-madrid-2017/question-19.webp",
+      "answerMedia": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "match-result-300-11",
+      "points": 300,
+      "question": "ما النتيجه النهائيه لهذه المباراه؟",
+      "answer": "Juventus 1–4 Real Madrid",
+      "hint": "UEFA Champions League Final 2017",
+      "media": "/media/match-results/Juventus-1-4-Real-Madrid/question-39.jpeg",
+      "answerMedia": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "match-result-300-12",
+      "points": 300,
+      "question": "ما النتيجه النهائيه لهذه المباراه؟",
+      "answer": "Chelsea 1–1 Bayern Munich (Chelsea won 4–3 on penalties)",
+      "hint": "UEFA Champions League Final 2012",
+      "media": "/media/match-results/Chelsea-1-1-Bayern-Munich/question-45.jpeg",
+      "answerMedia": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "match-result-300-13",
+      "points": 300,
+      "question": "ما النتيجه النهائيه لهذه المباراه؟",
+      "answer": "Barcelona 3–1 Manchester United",
+      "hint": "UEFA Champions League Final 2011",
+      "media": "/media/match-results/Barcelona-3-1-Manchester-United/question-44.jpeg",
+      "answerMedia": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "match-result-300-14",
+      "points": 300,
+      "question": "ما النتيجه النهائيه لهذه المباراه؟",
+      "answer": "Barcelona 2–1 Arsenal",
+      "hint": "UEFA Champions League Final 2006",
+      "media": "/media/match-results/barcelona-vs-arsenal-2006/question-2.jpg",
+      "answerMedia": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "match-result-300-15",
+      "points": 300,
+      "question": "ما النتيجه النهائيه لهذه المباراه؟",
+      "answer": "Inter Milan 3–1 Barcelona",
+      "hint": "UEFA Champions League Semi-Final First Leg 2010",
+      "media": "/media/match-results/inter-vs-barcelona-2010/question-13.webp",
+      "answerMedia": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "match-result-300-16",
+      "points": 300,
+      "question": "ما النتيجه النهائيه لهذه المباراه؟",
+      "answer": "Manchester City 5–3 Monaco",
+      "hint": "UEFA Champions League Round of 16 Second Leg 2017",
+      "media": "/media/match-results/Manchester-City-5-3-Monaco/question-52.jpeg",
+      "answerMedia": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "match-result-300-17",
+      "points": 300,
+      "question": "ما النتيجه النهائيه لهذه المباراه؟",
+      "answer": "Barcelona 3–1 Manchester United",
+      "hint": "UEFA Champions League Final 2011",
+      "media": "/media/match-results/barcelona-vs-manchester-united-2011/question-20.webp",
+      "answerMedia": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "match-result-300-18",
+      "points": 300,
+      "question": "ما النتيجه النهائيه لهذه المباراه؟",
+      "answer": "Barcelona 6–1 PSG",
+      "hint": "UEFA Champions League Round of 16 Second Leg 2017",
+      "media": "/media/match-results/barcelona-vs-psg-2017/question-18.webp",
+      "answerMedia": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "match-result-300-19",
+      "points": 300,
+      "question": "ما النتيجه النهائيه لهذه المباراه؟",
+      "answer": "Barcelona 2–3 Real Madrid",
+      "hint": "El Clásico – LaLiga 2017",
+      "media": "/media/match-results/barcelona-vs-real-madrid-2017/question-19.webp",
+      "answerMedia": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "match-result-300-20",
+      "points": 300,
+      "question": "ما النتيجه النهائيه لهذه المباراه؟",
+      "answer": "Monaco 3–1 Manchester City",
+      "hint": "UEFA Champions League Round of 16 First Leg 2017",
+      "media": "/media/match-results/monaco-vs-manchester-city-2017/question-33.webp",
+      "answerMedia": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "match-result-300-21",
+      "points": 300,
+      "question": "ما النتيجه النهائيه لهذه المباراه؟",
+      "answer": "Manchester United 2–1 Bayern Munich",
+      "hint": "UEFA Champions League Final 1999",
+      "media": "/media/match-results/manchester-united-vs-bayern-1999/question-32.webp",
+      "answerMedia": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "match-result-300-22",
+      "points": 300,
+      "question": "ما النتيجه النهائيه لهذه المباراه؟",
+      "answer": "Deportivo La Coruña 4–0 AC Milan",
+      "hint": "UEFA Champions League Quarter-Final Second Leg 2004",
+      "media": "/media/match-results/deportivo-vs-milan-2004/question-24.webp",
+      "answerMedia": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "match-result-300-23",
+      "points": 300,
+      "question": "ما النتيجه النهائيه لهذه المباراه؟",
+      "answer": "Liverpool 4–0 Barcelona",
+      "hint": "UEFA Champions League Semi-Final Second Leg 2019",
+      "media": "/media/match-results/liverpool-vs-barcelona-2019/question-31.webp",
+      "answerMedia": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "match-result-300-24",
+      "points": 300,
+      "question": "ما النتيجه النهائيه لهذه المباراه؟",
+      "answer": "Leicester City 2–0 Sevilla",
+      "hint": "UEFA Champions League Round of 16 Second Leg 2017",
+      "media": "/media/match-results/leicester-vs-sevilla-2017/question-30.webp",
+      "answerMedia": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "match-result-300-25",
+      "points": 300,
+      "question": "ما النتيجه النهائيه لهذه المباراه؟",
+      "answer": "Chelsea 0–0 Liverpool (Liverpool won 6–5 on penalties)",
+      "hint": "FA Cup Final 2022",
+      "media": "/media/match-results/liverpool-vs-chelsea-2022/question-6.jpg",
+      "answerMedia": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "match-result-500-1",
+      "points": 500,
+      "question": "ما النتيجه النهائيه لهذه المباراه؟",
+      "answer": "Ajax 2–3 Tottenham",
+      "hint": "UEFA Champions League Semi-Final Second Leg 2019",
+      "media": "/media/match-results/ajax-vs-tottenham-2019/question-9.webp",
+      "answerMedia": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "match-result-500-2",
+      "points": 500,
+      "question": "ما النتيجه النهائيه لهذه المباراه؟",
+      "answer": "Argentina 1–0 Brazil",
+      "hint": "Copa América Final 2021",
+      "media": "/media/match-results/argentina-vs-brazil-2021/question-16.webp",
+      "answerMedia": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "match-result-500-3",
+      "points": 500,
+      "question": "ما النتيجه النهائيه لهذه المباراه؟",
+      "answer": "Barcelona 2–1 Arsenal",
+      "hint": "UEFA Champions League Final 2006",
+      "media": "/media/match-results/barcelona-vs-arsenal-2006/question-2.jpg",
+      "answerMedia": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "match-result-500-4",
+      "points": 500,
+      "question": "ما النتيجه النهائيه لهذه المباراه؟",
+      "answer": "Barcelona 3–1 Manchester United",
+      "hint": "UEFA Champions League Final 2011",
+      "media": "/media/match-results/barcelona-vs-manchester-united-2011/question-20.webp",
+      "answerMedia": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "match-result-500-5",
+      "points": 500,
+      "question": "ما النتيجه النهائيه لهذه المباراه؟",
+      "answer": "Chelsea 1–1 Bayern Munich (Chelsea won 4–3 on penalties)",
+      "hint": "UEFA Champions League Final 2012",
+      "media": "/media/match-results/chelsea-vs-bayern-2012/question-22.webp",
+      "answerMedia": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "match-result-500-6",
+      "points": 500,
+      "question": "ما النتيجه النهائيه لهذه المباراه؟",
+      "answer": "Inter Milan 3–1 Barcelona",
+      "hint": "UEFA Champions League Semi-Final First Leg 2010",
+      "media": "/media/match-results/inter-vs-barcelona-2010/question-13.webp",
+      "answerMedia": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "match-result-500-7",
+      "points": 500,
+      "question": "ما النتيجه النهائيه لهذه المباراه؟",
+      "answer": "Italy 1–2 England",
+      "hint": "UEFA Euro 2024 Qualifying",
+      "media": "/media/match-results/italy-vs-england-2024/question-1.jpg",
+      "answerMedia": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "match-result-500-8",
+      "points": 500,
+      "question": "ما النتيجه النهائيه لهذه المباراه؟",
+      "answer": "Leicester City 2–0 Sevilla",
+      "hint": "UEFA Champions League Round of 16 Second Leg 2017",
+      "media": "/media/match-results/leicester-vs-sevilla-2017/question-30.webp",
+      "answerMedia": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "match-result-500-9",
+      "points": 500,
+      "question": "ما النتيجه النهائيه لهذه المباراه؟",
+      "answer": "Chelsea 0–0 Liverpool (Liverpool won 6–5 on penalties)",
+      "hint": "FA Cup Final 2022",
+      "media": "/media/match-results/liverpool-vs-chelsea-2022/question-6.jpg",
+      "answerMedia": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "match-result-500-10",
+      "points": 500,
+      "question": "ما النتيجه النهائيه لهذه المباراه؟",
+      "answer": "AC Milan 3–3 Liverpool (Liverpool won 3–2 on penalties)",
+      "hint": "UEFA Champions League Final 2005",
+      "media": "/media/match-results/liverpool-vs-milan-2005/question-34.webp",
+      "answerMedia": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "match-result-500-11",
+      "points": 500,
+      "question": "ما النتيجه النهائيه لهذه المباراه؟",
+      "answer": "Manchester United 2–1 Bayern Munich",
+      "hint": "UEFA Champions League Final 1999",
+      "media": "/media/match-results/manchester-united-vs-bayern-1999/question-32.webp",
+      "answerMedia": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "match-result-500-12",
+      "points": 500,
+      "question": "ما النتيجه النهائيه لهذه المباراه؟",
+      "answer": "AC Milan 2–1 Liverpool",
+      "hint": "UEFA Champions League Final 2007",
+      "media": "/media/match-results/AC-Milan-2-1-Liverpool/question-36.jpeg",
+      "answerMedia": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "match-result-500-13",
+      "points": 500,
+      "question": "ما النتيجه النهائيه لهذه المباراه؟",
+      "answer": "Borussia Dortmund 1–2 Bayern Munich",
+      "hint": "UEFA Champions League Final 2013",
+      "media": "/media/match-results/Borussia-Dortmund-1-2-Bayern-Munich/question-35.jpeg",
+      "answerMedia": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "match-result-500-14",
+      "points": 500,
+      "question": "ما النتيجه النهائيه لهذه المباراه؟",
+      "answer": "Manchester City 1–0 Inter Milan",
+      "hint": "UEFA Champions League Final 2023",
+      "media": "/media/match-results/Manchester-City-1-0-Inter-Milan/question-37.jpeg",
+      "answerMedia": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "match-result-500-15",
+      "points": 500,
+      "question": "ما النتيجه النهائيه لهذه المباراه؟",
+      "answer": "Croatia 2–1 England",
+      "hint": "FIFA World Cup Semi-Final 2018",
+      "media": "/media/match-results/Croatia-2-1-England/question-46.jpeg",
+      "answerMedia": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "match-result-500-16",
+      "points": 500,
+      "question": "ما النتيجه النهائيه لهذه المباراه؟",
+      "answer": "Brazil 2–0 Germany",
+      "hint": "FIFA World Cup Final 2002",
+      "media": "/media/match-results/Brazil-2-0-Germany/question-48.jpeg",
+      "answerMedia": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "match-result-500-17",
+      "points": 500,
+      "question": "ما النتيجه النهائيه لهذه المباراه؟",
+      "answer": "France 4–3 Argentina",
+      "hint": "FIFA World Cup Round of 16 2018",
+      "media": "/media/match-results/France-4-3-Argentina/question-49.jpeg",
+      "answerMedia": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "match-result-500-18",
+      "points": 500,
+      "question": "ما النتيجه النهائيه لهذه المباراه؟",
+      "answer": "Chelsea 1–1 Bayern Munich (Chelsea won 4–3 on penalties)",
+      "hint": "UEFA Champions League Final 2012",
+      "media": "/media/match-results/Chelsea-1-1-Bayern-Munich/question-45.jpeg",
+      "answerMedia": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "match-result-500-19",
+      "points": 500,
+      "question": "ما النتيجه النهائيه لهذه المباراه؟",
+      "answer": "Portugal 1–0 Greece",
+      "hint": "UEFA Euro 2004 Final",
+      "media": "/media/match-results/Portugal-1-0-Greece/question-40.jpeg",
+      "answerMedia": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "match-result-500-20",
+      "points": 500,
+      "question": "ما النتيجه النهائيه لهذه المباراه؟",
+      "answer": "Germany 1–0 Argentina",
+      "hint": "FIFA World Cup Final 2014",
+      "media": "/media/match-results/Germany-1-0-Argentina/question-42.jpeg",
+      "answerMedia": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "match-result-500-21",
+      "points": 500,
+      "question": "ما النتيجه النهائيه لهذه المباراه؟",
+      "answer": "Italy 1–2 England",
+      "hint": "UEFA Euro 2020 Final 2021",
+      "media": "/media/match-results/Italy-1-2-England/question-38.jpeg",
+      "answerMedia": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "match-result-500-22",
+      "points": 500,
+      "question": "ما النتيجه النهائيه لهذه المباراه؟",
+      "answer": "Manchester City 5–3 Monaco",
+      "hint": "UEFA Champions League Round of 16 First Leg 2017",
+      "media": "/media/match-results/Manchester-City-5-3-Monaco/question-52.jpeg",
+      "answerMedia": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "match-result-500-24",
+      "points": 500,
+      "question": "ما النتيجه النهائيه لهذه المباراه؟",
+      "answer": "Italy 1–2 England",
+      "hint": "UEFA Euro 2024 Qualifying",
+      "media": "/media/match-results/Italy-1-2-England/question-38.jpeg",
+      "answerMedia": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "match-result-500-25",
+      "points": 500,
+      "question": "ما النتيجه النهائيه لهذه المباراه؟",
+      "answer": "Juventus 1–4 Real Madrid",
+      "hint": "UEFA Champions League Final 2017",
+      "media": "/media/match-results/Juventus-1-4-Real-Madrid/question-39.jpeg",
+      "answerMedia": "",
+      "mediaType": "image"
+    }
+  ],
+  "metadata": {
+    "sectionId": "sports",
+    "updatedAt": "2026-08-05",
+    "status": "pending"
+  }
+}

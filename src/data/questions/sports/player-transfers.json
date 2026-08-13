@@ -1,11 +1,910 @@
-﻿{
-    "categoryId":  "player-transfers",
-    "questions":  [
-
-                  ],
-    "metadata":  {
-                     "sectionId":  "sports",
-                     "updatedAt":  "2026-08-03",
-                     "status":  "pending"
-                 }
+{
+  "categoryId": "player-transfers",
+  "questions": [
+    {
+      "id": "player-transfers-100-1",
+      "points": 100,
+      "question": "من أي نادٍ انتقل محمد صلاح إلى ليفربول؟",
+      "answer": "روما",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "player-transfers-100-2",
+      "points": 100,
+      "question": "في أي عام انتقل محمد صلاح إلى ليفربول؟",
+      "answer": "2017",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "player-transfers-100-3",
+      "points": 100,
+      "question": "إلى أي نادٍ انتقل ساديو ماني من ساوثهامبتون؟",
+      "answer": "ليفربول",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "player-transfers-100-4",
+      "points": 100,
+      "question": "من أي نادٍ انتقل ساديو ماني إلى ليفربول؟",
+      "answer": "ساوثهامبتون",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "player-transfers-100-5",
+      "points": 100,
+      "question": "إلى أي نادٍ انتقل ساديو ماني بعد ليفربول؟",
+      "answer": "بايرن ميونخ",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "player-transfers-100-6",
+      "points": 100,
+      "question": "من أي نادٍ انتقل لويس سواريز إلى برشلونة؟",
+      "answer": "ليفربول",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "player-transfers-100-7",
+      "points": 100,
+      "question": "في أي عام انتقل لويس سواريز إلى برشلونة؟",
+      "answer": "2014",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "player-transfers-100-8",
+      "points": 100,
+      "question": "من أي نادٍ انتقل نيمار إلى باريس سان جيرمان؟",
+      "answer": "برشلونة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "player-transfers-100-9",
+      "points": 100,
+      "question": "في أي عام انتقل نيمار إلى باريس سان جيرمان؟",
+      "answer": "2017",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "player-transfers-100-10",
+      "points": 100,
+      "question": "من أي نادٍ انتقل نيمار إلى الهلال؟",
+      "answer": "باريس سان جيرمان",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "player-transfers-100-11",
+      "points": 100,
+      "question": "من أي نادٍ انتقل كريستيانو رونالدو إلى ريال مدريد عام 2009؟",
+      "answer": "مانشستر يونايتد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "player-transfers-100-12",
+      "points": 100,
+      "question": "إلى أي نادٍ عاد كريستيانو رونالدو عام 2021؟",
+      "answer": "مانشستر يونايتد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "player-transfers-100-13",
+      "points": 100,
+      "question": "من أي نادٍ انتقل كريستيانو رونالدو إلى يوفنتوس؟",
+      "answer": "ريال مدريد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "player-transfers-100-14",
+      "points": 100,
+      "question": "إلى أي نادٍ انتقل ليونيل ميسي بعد برشلونة؟",
+      "answer": "باريس سان جيرمان",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "player-transfers-100-15",
+      "points": 100,
+      "question": "إلى أي نادٍ انتقل ليونيل ميسي بعد باريس سان جيرمان؟",
+      "answer": "إنتر ميامي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "player-transfers-100-16",
+      "points": 100,
+      "question": "من أي نادٍ انتقل ليونيل ميسي إلى باريس سان جيرمان؟",
+      "answer": "برشلونة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "player-transfers-100-17",
+      "points": 100,
+      "question": "من أي نادٍ انتقل كريم بنزيما إلى الاتحاد؟",
+      "answer": "ريال مدريد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "player-transfers-100-18",
+      "points": 100,
+      "question": "في أي عام انتقل كريم بنزيما إلى الاتحاد؟",
+      "answer": "2023",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "player-transfers-100-19",
+      "points": 100,
+      "question": "من أي نادٍ انتقل كانتي إلى الاتحاد؟",
+      "answer": "تشيلسي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "player-transfers-100-20",
+      "points": 100,
+      "question": "من أي نادٍ انتقل نغولو كانتي إلى تشيلسي؟",
+      "answer": "ليستر سيتي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "player-transfers-100-21",
+      "points": 100,
+      "question": "من أي نادٍ انتقل رياض محرز إلى مانشستر سيتي؟",
+      "answer": "ليستر سيتي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "player-transfers-100-22",
+      "points": 100,
+      "question": "من أي نادٍ انتقل رياض محرز إلى الأهلي السعودي؟",
+      "answer": "مانشستر سيتي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "player-transfers-100-23",
+      "points": 100,
+      "question": "من أي نادٍ انتقل إيرلينغ هالاند إلى مانشستر سيتي؟",
+      "answer": "بوروسيا دورتموند",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "player-transfers-100-24",
+      "points": 100,
+      "question": "في أي عام انتقل هالاند إلى مانشستر سيتي؟",
+      "answer": "2022",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "player-transfers-100-25",
+      "points": 100,
+      "question": "من أي نادٍ انتقل جود بيلينغهام إلى ريال مدريد؟",
+      "answer": "بوروسيا دورتموند",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "player-transfers-100-26",
+      "points": 100,
+      "question": "من أي نادٍ انتقل جود بيلينغهام إلى بوروسيا دورتموند؟",
+      "answer": "بوروسيا دورتموند؟",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "player-transfers-100-27",
+      "points": 100,
+      "question": "من أي نادٍ انتقل جود بيلينغهام إلى دورتموند؟",
+      "answer": "برمنغهام سيتي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "player-transfers-100-28",
+      "points": 100,
+      "question": "من أي نادٍ انتقل فينيسيوس جونيور إلى ريال مدريد؟",
+      "answer": "فلامنغو",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "player-transfers-100-29",
+      "points": 100,
+      "question": "من أي نادٍ انتقل رودريغو إلى ريال مدريد؟",
+      "answer": "سانتوس",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "player-transfers-100-30",
+      "points": 100,
+      "question": "من أي نادٍ انتقل كاسيميرو إلى ريال مدريد؟",
+      "answer": "ساو باولو",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "player-transfers-100-31",
+      "points": 100,
+      "question": "من أي نادٍ انتقل كاسيميرو إلى مانشستر يونايتد؟",
+      "answer": "ريال مدريد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "player-transfers-100-32",
+      "points": 100,
+      "question": "من أي نادٍ انتقل توني كروس إلى ريال مدريد؟",
+      "answer": "بايرن ميونخ",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "player-transfers-100-33",
+      "points": 100,
+      "question": "من أي نادٍ انتقل توني كروس إلى بايرن ميونخ؟",
+      "answer": "باير ليفركوزن",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "player-transfers-100-34",
+      "points": 100,
+      "question": "من أي نادٍ انتقل لوكا مودريتش إلى ريال مدريد؟",
+      "answer": "توتنهام",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "player-transfers-300-1",
+      "points": 300,
+      "question": "من أي نادٍ انتقل غاريث بيل إلى ريال مدريد؟",
+      "answer": "توتنهام",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "player-transfers-300-2",
+      "points": 300,
+      "question": "من أي نادٍ انتقل غاريث بيل إلى توتنهام بعد ريال مدريد؟",
+      "answer": "ريال مدريد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "player-transfers-300-3",
+      "points": 300,
+      "question": "من أي نادٍ انتقل تيبو كورتوا إلى ريال مدريد؟",
+      "answer": "تشيلسي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "player-transfers-300-4",
+      "points": 300,
+      "question": "من أي نادٍ انتقل إيدين هازارد إلى ريال مدريد؟",
+      "answer": "تشيلسي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "player-transfers-300-5",
+      "points": 300,
+      "question": "من أي نادٍ انتقل تييري هنري إلى برشلونة؟",
+      "answer": "أرسنال",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "player-transfers-300-6",
+      "points": 300,
+      "question": "من أي نادٍ انتقل فابريغاس إلى برشلونة؟",
+      "answer": "أرسنال",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "player-transfers-300-7",
+      "points": 300,
+      "question": "من أي نادٍ انتقل فابريغاس إلى تشيلسي بعد برشلونة؟",
+      "answer": "برشلونة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "player-transfers-300-8",
+      "points": 300,
+      "question": "من أي نادٍ انتقل روبن إلى ريال مدريد؟",
+      "answer": "تشيلسي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "player-transfers-300-9",
+      "points": 300,
+      "question": "من أي نادٍ انتقل روبن إلى بايرن ميونخ؟",
+      "answer": "ريال مدريد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "player-transfers-300-10",
+      "points": 300,
+      "question": "من أي نادٍ انتقل فرانك ريبيري إلى بايرن ميونخ؟",
+      "answer": "مارسيليا",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "player-transfers-300-11",
+      "points": 300,
+      "question": "من أي نادٍ انتقل روبرت ليفاندوفسكي إلى بايرن ميونخ؟",
+      "answer": "بوروسيا دورتموند",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "player-transfers-300-12",
+      "points": 300,
+      "question": "من أي نادٍ انتقل ليفاندوفسكي إلى برشلونة؟",
+      "answer": "بايرن ميونخ",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "player-transfers-300-13",
+      "points": 300,
+      "question": "من أي نادٍ انتقل أوباميانغ إلى برشلونة؟",
+      "answer": "أرسنال",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "player-transfers-300-14",
+      "points": 300,
+      "question": "من أي نادٍ انتقل أوباميانغ إلى أرسنال؟",
+      "answer": "بوروسيا دورتموند",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "player-transfers-300-15",
+      "points": 300,
+      "question": "من أي نادٍ انتقل أوباميانغ إلى تشيلسي؟",
+      "answer": "برشلونة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "player-transfers-300-16",
+      "points": 300,
+      "question": "من أي نادٍ انتقل هاري كين إلى بايرن ميونخ؟",
+      "answer": "توتنهام",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "player-transfers-300-17",
+      "points": 300,
+      "question": "من أي نادٍ انتقل كيفن دي بروين إلى مانشستر سيتي؟",
+      "answer": "فولفسبورغ",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "player-transfers-300-18",
+      "points": 300,
+      "question": "من أي نادٍ انتقل كيفن دي بروين إلى تشيلسي؟",
+      "answer": "فولفسبورغ؟",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "player-transfers-300-19",
+      "points": 300,
+      "question": "من أي نادٍ انتقل محمد كودوس إلى وست هام؟",
+      "answer": "أياكس",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "player-transfers-300-20",
+      "points": 300,
+      "question": "من أي نادٍ انتقل مارتن أوديغارد إلى أرسنال؟",
+      "answer": "ريال مدريد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "player-transfers-300-21",
+      "points": 300,
+      "question": "من أي نادٍ انتقل مارتن أوديغارد إلى ريال مدريد؟",
+      "answer": "سترومسغودست",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "player-transfers-300-22",
+      "points": 300,
+      "question": "من أي نادٍ انتقل ديكلان رايس إلى أرسنال؟",
+      "answer": "وست هام",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "player-transfers-300-23",
+      "points": 300,
+      "question": "من أي نادٍ انتقل كاي هافرتز إلى أرسنال؟",
+      "answer": "تشيلسي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "player-transfers-300-24",
+      "points": 300,
+      "question": "من أي نادٍ انتقل كاي هافرتز إلى تشيلسي؟",
+      "answer": "باير ليفركوزن",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "player-transfers-300-25",
+      "points": 300,
+      "question": "من أي نادٍ انتقل كول بالمر إلى تشيلسي؟",
+      "answer": "مانشستر سيتي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "player-transfers-300-26",
+      "points": 300,
+      "question": "من أي نادٍ انتقل رحيم سترلينغ إلى تشيلسي؟",
+      "answer": "مانشستر سيتي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "player-transfers-300-27",
+      "points": 300,
+      "question": "من أي نادٍ انتقل رحيم سترلينغ إلى مانشستر سيتي؟",
+      "answer": "ليفربول",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "player-transfers-300-28",
+      "points": 300,
+      "question": "من أي نادٍ انتقل فيرجيل فان دايك إلى ليفربول؟",
+      "answer": "ساوثهامبتون",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "player-transfers-300-29",
+      "points": 300,
+      "question": "من أي نادٍ انتقل أليسون بيكر إلى ليفربول؟",
+      "answer": "روما",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "player-transfers-300-30",
+      "points": 300,
+      "question": "من أي نادٍ انتقل أليسون إلى روما؟",
+      "answer": "إنترناسيونال",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "player-transfers-300-31",
+      "points": 300,
+      "question": "من أي نادٍ انتقل ترينت ألكسندر أرنولد إلى ريال مدريد؟",
+      "answer": "ليفربول",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "player-transfers-300-32",
+      "points": 300,
+      "question": "من أي نادٍ انتقل سون هيونغ مين إلى توتنهام؟",
+      "answer": "باير ليفركوزن",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "player-transfers-300-33",
+      "points": 300,
+      "question": "من أي نادٍ انتقل هينغ مين سون إلى باير ليفركوزن؟",
+      "answer": "هامبورغ",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "player-transfers-500-1",
+      "points": 500,
+      "question": "من أي نادٍ انتقل زلاتان إبراهيموفيتش إلى برشلونة؟",
+      "answer": "إنتر ميلان",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "player-transfers-500-2",
+      "points": 500,
+      "question": "من أي نادٍ انتقل زلاتان إلى ميلان؟",
+      "answer": "برشلونة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "player-transfers-500-3",
+      "points": 500,
+      "question": "من أي نادٍ انتقل زلاتان إلى باريس سان جيرمان؟",
+      "answer": "ميلان",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "player-transfers-500-4",
+      "points": 500,
+      "question": "من أي نادٍ انتقل أنخيل دي ماريا إلى مانشستر يونايتد؟",
+      "answer": "ريال مدريد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "player-transfers-500-5",
+      "points": 500,
+      "question": "من أي نادٍ انتقل دي ماريا إلى باريس سان جيرمان؟",
+      "answer": "مانشستر يونايتد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "player-transfers-500-6",
+      "points": 500,
+      "question": "من أي نادٍ انتقل إدينسون كافاني إلى باريس سان جيرمان؟",
+      "answer": "نابولي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "player-transfers-500-7",
+      "points": 500,
+      "question": "من أي نادٍ انتقل كافاني إلى مانشستر يونايتد؟",
+      "answer": "باريس سان جيرمان",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "player-transfers-500-8",
+      "points": 500,
+      "question": "من أي نادٍ انتقل ديفيد بيكهام إلى ريال مدريد؟",
+      "answer": "مانشستر يونايتد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "player-transfers-500-9",
+      "points": 500,
+      "question": "من أي نادٍ انتقل ديفيد بيكهام إلى لوس أنجلوس غالاكسي؟",
+      "answer": "ريال مدريد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "player-transfers-500-10",
+      "points": 500,
+      "question": "من أي نادٍ انتقل تشابي ألونسو إلى ريال مدريد؟",
+      "answer": "ليفربول",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "player-transfers-500-11",
+      "points": 500,
+      "question": "من أي نادٍ انتقل تشابي ألونسو إلى بايرن ميونخ؟",
+      "answer": "ريال مدريد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "player-transfers-500-12",
+      "points": 500,
+      "question": "من أي نادٍ انتقل فيرناندو توريس إلى تشيلسي؟",
+      "answer": "ليفربول",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "player-transfers-500-13",
+      "points": 500,
+      "question": "من أي نادٍ انتقل توريس إلى أتلتيكو مدريد بعد تشيلسي؟",
+      "answer": "ميلان؟",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "player-transfers-500-14",
+      "points": 500,
+      "question": "من أي نادٍ انتقل راؤول خيمينيز إلى وولفرهامبتون؟",
+      "answer": "بنفيكا",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "player-transfers-500-15",
+      "points": 500,
+      "question": "من أي نادٍ انتقل برونو فيرنانديز إلى مانشستر يونايتد؟",
+      "answer": "سبورتينغ لشبونة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "player-transfers-500-16",
+      "points": 500,
+      "question": "من أي نادٍ انتقل برونو فيرنانديز إلى سبورتينغ؟",
+      "answer": "سامبدوريا",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "player-transfers-500-17",
+      "points": 500,
+      "question": "من أي نادٍ انتقل كريستيانو رونالدو إلى مانشستر يونايتد أول مرة؟",
+      "answer": "سبورتينغ لشبونة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "player-transfers-500-18",
+      "points": 500,
+      "question": "من أي نادٍ انتقل بيتر شمايكل إلى مانشستر يونايتد؟",
+      "answer": "بروندبي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "player-transfers-500-19",
+      "points": 500,
+      "question": "من أي نادٍ انتقل إريك كانتونا إلى مانشستر يونايتد؟",
+      "answer": "ليدز يونايتد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "player-transfers-500-20",
+      "points": 500,
+      "question": "من أي نادٍ انتقل واين روني إلى مانشستر يونايتد؟",
+      "answer": "إيفرتون",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "player-transfers-500-21",
+      "points": 500,
+      "question": "من أي نادٍ انتقل روبن فان بيرسي إلى مانشستر يونايتد؟",
+      "answer": "أرسنال",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "player-transfers-500-22",
+      "points": 500,
+      "question": "من أي نادٍ انتقل أندريه شيفتشينكو إلى تشيلسي؟",
+      "answer": "ميلان",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "player-transfers-500-23",
+      "points": 500,
+      "question": "من أي نادٍ انتقل ديدييه دروغبا إلى تشيلسي؟",
+      "answer": "مارسيليا",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "player-transfers-500-24",
+      "points": 500,
+      "question": "من أي نادٍ انتقل أشرف حكيمي إلى باريس سان جيرمان؟",
+      "answer": "إنتر ميلان",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "player-transfers-500-25",
+      "points": 500,
+      "question": "من أي نادٍ انتقل أشرف حكيمي إلى إنتر ميلان؟",
+      "answer": "ريال مدريد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "player-transfers-500-26",
+      "points": 500,
+      "question": "من أي نادٍ انتقل سيرخيو راموس إلى باريس سان جيرمان؟",
+      "answer": "ريال مدريد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "player-transfers-500-27",
+      "points": 500,
+      "question": "من أي نادٍ انتقل راموس إلى ريال مدريد؟",
+      "answer": "إشبيلية",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "player-transfers-500-28",
+      "points": 500,
+      "question": "من أي نادٍ انتقل كيلور نافاس إلى ريال مدريد؟",
+      "answer": "ليفانتي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "player-transfers-500-29",
+      "points": 500,
+      "question": "من أي نادٍ انتقل كيلور نافاس إلى باريس سان جيرمان؟",
+      "answer": "ريال مدريد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "player-transfers-500-30",
+      "points": 500,
+      "question": "من أي نادٍ انتقل خاميس رودريغيز إلى ريال مدريد؟",
+      "answer": "موناكو",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "player-transfers-500-31",
+      "points": 500,
+      "question": "من أي نادٍ انتقل خاميس رودريغيز إلى بايرن ميونخ؟",
+      "answer": "ريال مدريد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "player-transfers-500-32",
+      "points": 500,
+      "question": "من أي نادٍ انتقل فيليب كوتينيو إلى برشلونة؟",
+      "answer": "ليفربول",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "player-transfers-500-33",
+      "points": 500,
+      "question": "من أي نادٍ انتقل فيليب كوتينيو إلى أستون فيلا؟",
+      "answer": "برشلونة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    }
+  ],
+  "metadata": {
+    "sectionId": "sports",
+    "updatedAt": "2026-08-05",
+    "status": "ready"
+  }
 }

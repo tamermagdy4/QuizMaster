@@ -1,11 +1,1360 @@
-﻿{
-    "categoryId":  "national-teams",
-    "questions":  [
-
-                  ],
-    "metadata":  {
-                     "sectionId":  "sports",
-                     "updatedAt":  "2026-08-03",
-                     "status":  "pending"
-                 }
+{
+  "categoryId": "national-teams",
+  "questions": [
+    {
+      "id": "national-teams-100-1",
+      "points": 100,
+      "question": "من هو الفريق الأكثر فوزاً بكأس الأمم الأفريقية؟",
+      "answer": "المنتخب المصري",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-100-2",
+      "points": 100,
+      "question": "كم مرة فاز المنتخب المصري بكأس الأمم الأفريقية؟",
+      "answer": "7 مرات",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-100-3",
+      "points": 100,
+      "question": "من هو أول منتخب عربي شارك في أول كأس عالم؟",
+      "answer": "المنتخب المصري عام 1934",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-100-4",
+      "points": 100,
+      "question": "كم مرة تأهل المنتخب المصري لكأس العالم؟",
+      "answer": "3 مرات فقط (1934، 1990، 2018)",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-100-5",
+      "points": 100,
+      "question": "متى شارك المنتخب المصري في كأس القارات؟",
+      "answer": "1999",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-100-6",
+      "points": 100,
+      "question": "متى فاز المنتخب المصري بالميدالية الذهبية في البطولة العربية؟",
+      "answer": "عام 1992",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-100-7",
+      "points": 100,
+      "question": "متى صعد المنتخب المغربي إلى كأس العالم للمرة الأولى؟",
+      "answer": "عام 1970",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-300-1",
+      "points": 300,
+      "question": "متى كانت النسخة الأولى من كأس أمم أوروبا؟",
+      "answer": "1960",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-300-2",
+      "points": 300,
+      "question": "من هو المنتخب الأكثر فوزًا بكأس أمم أوروبا؟",
+      "answer": "ألمانيا وإسبانيا (3 مرات لكل)",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-300-3",
+      "points": 300,
+      "question": "من هو أكثر لاعب سجل في نسخة واحدة من كأس أمم أوروبا؟",
+      "answer": "ميشيل بلاتيني (9 أهداف)",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-300-4",
+      "points": 300,
+      "question": "من سجل الهدف الذهبي لفرنسا في إيطاليا في يورو 2000؟",
+      "answer": "ديفيد تريزيغيه",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-300-5",
+      "points": 300,
+      "question": "من هو هداف إنجلترا في كأس أمم أوروبا؟",
+      "answer": "وين روني",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-300-6",
+      "points": 300,
+      "question": "في أي عام زادت المنتخبات المشاركة في كأس أمم أوروبا من 16 إلى 24؟",
+      "answer": "2016",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-300-7",
+      "points": 300,
+      "question": "من هو الوحيد الذي فاز بكأس أمم أوروبا كلاعب ومدرب؟",
+      "answer": "ديدييه ديشامب",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-500-1",
+      "points": 500,
+      "question": "أي من هذه المنتخبات لم يفز بكأس أمم أوروبا من قبل: الدنمارك، بلجيكا واليونان؟",
+      "answer": "بلجيكا",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-500-2",
+      "points": 500,
+      "question": "فاز منتخب الدنمارك بيورو 92 رغم فشله في الوصول من التصفيات، فمن المنتخب الذي شارك بدلاً منه؟",
+      "answer": "يوغوسلافيا",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-500-3",
+      "points": 500,
+      "question": "ما هي الأرقام القياسية التي حققها المنتخب المصري؟",
+      "answer": "مشاركة مع الحارس الأعظم عصام الحضري",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-500-4",
+      "points": 500,
+      "question": "من هو اللاعب المصري الفائز بجائزة أفضل لاعب في أفريقيا داخل القارة وفي أي عام؟",
+      "answer": "محمود الخطيب في عام 1983",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-500-5",
+      "points": 500,
+      "question": "من هو أقدم لاعب في كأس العالم سيطر على بلاده؟",
+      "answer": "بيتر شيلتون",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-500-6",
+      "points": 500,
+      "question": "كم مرة فازت مصر بكأس أفريقيا للشباب؟",
+      "answer": "مرة واحدة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-100-8",
+      "points": 100,
+      "question": "متى فازت السعودية بأول كأس آسيا؟",
+      "answer": "1984",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-100-9",
+      "points": 100,
+      "question": "كم مرة فازت اليابان بكأس آسيا؟",
+      "answer": "4 مرات",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-100-10",
+      "points": 100,
+      "question": "من هو المنتخب الذي فاز بكأس آسيا 2019؟",
+      "answer": "قطر",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-100-11",
+      "points": 100,
+      "question": "كم مرة فازت إيران بكأس آسيا؟",
+      "answer": "3 مرات",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-100-12",
+      "points": 100,
+      "question": "من هو المنتخب الذي فاز بكأس آسيا 2007؟",
+      "answer": "العراق",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-100-13",
+      "points": 100,
+      "question": "كم مرة فازت كوريا الجنوبية بكأس آسيا؟",
+      "answer": "مرتين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-100-14",
+      "points": 100,
+      "question": "من هو المنتخب الذي فاز بكأس آسيا 2011؟",
+      "answer": "اليابان",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-100-15",
+      "points": 100,
+      "question": "كم مرة فازت أستراليا بكأس آسيا؟",
+      "answer": "مرة واحدة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-100-16",
+      "points": 100,
+      "question": "من هو المنتخب الذي فاز بكأس آسيا 2015؟",
+      "answer": "أستراليا",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-100-17",
+      "points": 100,
+      "question": "كم مرة فازت الصين بكأس آسيا؟",
+      "answer": "مرتين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-100-18",
+      "points": 100,
+      "question": "من هو المنتخب الذي فاز بكأس آسيا 1992؟",
+      "answer": "اليابان",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-100-19",
+      "points": 100,
+      "question": "كم مرة فازت قطر بكأس آسيا؟",
+      "answer": "مرة واحدة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-100-20",
+      "points": 100,
+      "question": "من هو المنتخب الذي فاز بكأس آسيا 1988؟",
+      "answer": "السعودية",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-100-21",
+      "points": 100,
+      "question": "كم مرة فازت الكويت بكأس آسيا؟",
+      "answer": "مرة واحدة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-100-22",
+      "points": 100,
+      "question": "من هو المنتخب الذي فاز بكأس آسيا 1980؟",
+      "answer": "الكويت",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-100-23",
+      "points": 100,
+      "question": "كم مرة فازت الإمارات بكأس آسيا؟",
+      "answer": "0 مرة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-100-24",
+      "points": 100,
+      "question": "من هو المنتخب الذي فاز بكأس آسيا 1996؟",
+      "answer": "السعودية",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-100-25",
+      "points": 100,
+      "question": "كم مرة فازت الأردن بكأس آسيا؟",
+      "answer": "0 مرة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-100-26",
+      "points": 100,
+      "question": "من هو المنتخب الذي فاز بكأس آسيا 2000؟",
+      "answer": "اليابان",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-100-27",
+      "points": 100,
+      "question": "كم مرة فازت سوريا بكأس آسيا؟",
+      "answer": "0 مرة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-100-28",
+      "points": 100,
+      "question": "من هو المنتخب الذي فاز بكأس آسيا 2004؟",
+      "answer": "اليابان",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-100-29",
+      "points": 100,
+      "question": "كم مرة فازت عمان بكأس آسيا؟",
+      "answer": "0 مرة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-100-30",
+      "points": 100,
+      "question": "من هو المنتخب الذي فاز بكأس آسيا 1960؟",
+      "answer": "كوريا الجنوبية",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-100-31",
+      "points": 100,
+      "question": "كم مرة فازت البحرين بكأس آسيا؟",
+      "answer": "0 مرة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-100-32",
+      "points": 100,
+      "question": "من هو المنتخب الذي فاز بكأس آسيا 1964؟",
+      "answer": "إسرائيل",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-100-33",
+      "points": 100,
+      "question": "كم مرة فازت لبنان بكأس آسيا؟",
+      "answer": "0 مرة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-100-34",
+      "points": 100,
+      "question": "من هو المنتخب الذي فاز بكأس آسيا 1972؟",
+      "answer": "إيران",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-100-35",
+      "points": 100,
+      "question": "كم مرة فازت العراق بكأس آسيا؟",
+      "answer": "مرة واحدة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-100-36",
+      "points": 100,
+      "question": "من هو المنتخب الذي فاز بكأس آسيا 1976؟",
+      "answer": "إيران",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-100-37",
+      "points": 100,
+      "question": "كم مرة فازت اليمن بكأس آسيا؟",
+      "answer": "0 مرة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-100-38",
+      "points": 100,
+      "question": "من هو المنتخب الذي فاز بكأس آسيا 1956؟",
+      "answer": "كوريا الجنوبية",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-100-39",
+      "points": 100,
+      "question": "كم مرة فازت فلسطين بكأس آسيا؟",
+      "answer": "0 مرة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-100-40",
+      "points": 100,
+      "question": "من هو المنتخب الذي فاز بكأس أمم أفريقيا 2019؟",
+      "answer": "الجزائر",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-100-41",
+      "points": 100,
+      "question": "كم مرة فازت الجزائر بكأس أمم أفريقيا؟",
+      "answer": "مرتين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-100-42",
+      "points": 100,
+      "question": "من هو المنتخب الذي فاز بكأس أمم أفريقيا 2021؟",
+      "answer": "السنغال",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-100-43",
+      "points": 100,
+      "question": "كم مرة فازت السنغال بكأس أمم أفريقيا؟",
+      "answer": "مرة واحدة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-100-44",
+      "points": 100,
+      "question": "من هو المنتخب الذي فاز بكأس أمم أفريقيا 2017؟",
+      "answer": "الكاميرون",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-100-45",
+      "points": 100,
+      "question": "كم مرة فازت الكاميرون بكأس أمم أفريقيا؟",
+      "answer": "5 مرات",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-100-46",
+      "points": 100,
+      "question": "من هو المنتخب الذي فاز بكأس أمم أفريقيا 2015؟",
+      "answer": "ساحل العاج",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-100-47",
+      "points": 100,
+      "question": "كم مرة فازت ساحل العاج بكأس أمم أفريقيا؟",
+      "answer": "مرتين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-100-48",
+      "points": 100,
+      "question": "من هو المنتخب الذي فاز بكأس أمم أفريقيا 2013؟",
+      "answer": "نيجيريا",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-100-49",
+      "points": 100,
+      "question": "كم مرة فازت نيجيريا بكأس أمم أفريقيا؟",
+      "answer": "3 مرات",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-100-50",
+      "points": 100,
+      "question": "من هو المنتخب الذي فاز بكأس أمم أفريقيا 2012؟",
+      "answer": "زامبيا",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-300-8",
+      "points": 300,
+      "question": "من هو أكثر لاعب سجل في تاريخ كأس أمم أفريقيا؟",
+      "answer": "صمويل إيتو",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-300-9",
+      "points": 300,
+      "question": "كم هدف سجل صمويل إيتو في كأس أمم أفريقيا؟",
+      "answer": "18 هدفاً",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-300-10",
+      "points": 300,
+      "question": "من هو المنتخب الأكثر فوزاً بكأس آسيا؟",
+      "answer": "اليابان",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-300-11",
+      "points": 300,
+      "question": "كم مرة فازت اليابان بكأس آسيا؟",
+      "answer": "4 مرات",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-300-12",
+      "points": 300,
+      "question": "من هو المنتخب الذي فاز بكأس كوبا أمريكا 2021؟",
+      "answer": "الأرجنتين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-300-13",
+      "points": 300,
+      "question": "كم مرة فازت الأرجنتين بكأس كوبا أمريكا؟",
+      "answer": "15 مرة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-300-14",
+      "points": 300,
+      "question": "من هو المنتخب الذي فاز بكأس كوبا أمريكا 2019؟",
+      "answer": "البرازيل",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-300-15",
+      "points": 300,
+      "question": "كم مرة فازت البرازيل بكأس كوبا أمريكا؟",
+      "answer": "9 مرات",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-300-16",
+      "points": 300,
+      "question": "من هو المنتخب الذي فاز بكأس كوبا أمريكا 2016؟",
+      "answer": "تشيلي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-300-17",
+      "points": 300,
+      "question": "كم مرة فازت تشيلي بكأس كوبا أمريكا؟",
+      "answer": "مرتين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-300-18",
+      "points": 300,
+      "question": "من هو المنتخب الذي فاز بكأس كوبا أمريكا 2015؟",
+      "answer": "تشيلي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-300-19",
+      "points": 300,
+      "question": "كم مرة فازت أوروغواي بكأس كوبا أمريكا؟",
+      "answer": "15 مرة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-300-20",
+      "points": 300,
+      "question": "من هو المنتخب الذي فاز بكأس كوبا أمريكا 2011؟",
+      "answer": "أوروغواي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-300-21",
+      "points": 300,
+      "question": "كم مرة فازت كولومبيا بكأس كوبا أمريكا؟",
+      "answer": "مرة واحدة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-300-22",
+      "points": 300,
+      "question": "من هو المنتخب الذي فاز بكأس كوبا أمريكا 2007؟",
+      "answer": "البرازيل",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-300-23",
+      "points": 300,
+      "question": "كم مرة فازت المكسيك بكأس كوبا أمريكا؟",
+      "answer": "0 مرة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-300-24",
+      "points": 300,
+      "question": "من هو المنتخب الذي فاز بكأس كوبا أمريكا 2004؟",
+      "answer": "البرازيل",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-300-25",
+      "points": 300,
+      "question": "كم مرة فازت باراغواي بكأس كوبا أمريكا؟",
+      "answer": "مرتين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-300-26",
+      "points": 300,
+      "question": "من هو المنتخب الذي فاز بكأس كوبا أمريكا 2001؟",
+      "answer": "كولومبيا",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-300-27",
+      "points": 300,
+      "question": "كم مرة فازت بيرو بكأس كوبا أمريكا؟",
+      "answer": "مرتين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-300-28",
+      "points": 300,
+      "question": "من هو المنتخب الذي فاز بكأس كوبا أمريكا 1999؟",
+      "answer": "البرازيل",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-300-29",
+      "points": 300,
+      "question": "كم مرة فازت الإكوادور بكأس كوبا أمريكا؟",
+      "answer": "0 مرة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-300-30",
+      "points": 300,
+      "question": "من هو المنتخب الذي فاز بكأس كوبا أمريكا 1997؟",
+      "answer": "البرازيل",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-300-31",
+      "points": 300,
+      "question": "كم مرة فازت بوليفيا بكأس كوبا أمريكا؟",
+      "answer": "مرة واحدة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-300-32",
+      "points": 300,
+      "question": "من هو المنتخب الذي فاز بكأس كوبا أمريكا 1995؟",
+      "answer": "أوروغواي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-300-33",
+      "points": 300,
+      "question": "كم مرة فازت فنزويلا بكأس كوبا أمريكا؟",
+      "answer": "0 مرة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-300-34",
+      "points": 300,
+      "question": "من هو المنتخب الذي فاز بكأس كوبا أمريكا 1993؟",
+      "answer": "الأرجنتين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-300-35",
+      "points": 300,
+      "question": "كم مرة فازت الولايات المتحدة بكأس كوبا أمريكا؟",
+      "answer": "0 مرة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-300-36",
+      "points": 300,
+      "question": "من هو المنتخب الذي فاز بكأس كوبا أمريكا 1991؟",
+      "answer": "الأرجنتين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-300-37",
+      "points": 300,
+      "question": "كم مرة فازت كوستاريكا بكأس كوبا أمريكا؟",
+      "answer": "0 مرة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-300-38",
+      "points": 300,
+      "question": "من هو المنتخب الذي فاز بكأس كوبا أمريكا 1989؟",
+      "answer": "البرازيل",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-300-39",
+      "points": 300,
+      "question": "كم مرة فازت هندوراس بكأس كوبا أمريكا؟",
+      "answer": "0 مرة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-300-40",
+      "points": 300,
+      "question": "من هو المنتخب الذي فاز بكأس كوبا أمريكا 1987؟",
+      "answer": "أوروغواي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-300-41",
+      "points": 300,
+      "question": "كم مرة فازت جامايكا بكأس كوبا أمريكا؟",
+      "answer": "0 مرة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-300-42",
+      "points": 300,
+      "question": "من هو المنتخب الذي فاز بكأس كوبا أمريكا 1983؟",
+      "answer": "البرازيل",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-300-43",
+      "points": 300,
+      "question": "كم مرة فازت هايتي بكأس كوبا أمريكا؟",
+      "answer": "0 مرة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-300-44",
+      "points": 300,
+      "question": "من هو المنتخب الذي فاز بكأس كوبا أمريكا 1979؟",
+      "answer": "البرازيل",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-300-45",
+      "points": 300,
+      "question": "كم مرة فازت بنما بكأس كوبا أمريكا؟",
+      "answer": "0 مرة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-300-46",
+      "points": 300,
+      "question": "من هو المنتخب الذي فاز بكأس كوبا أمريكا 1975؟",
+      "answer": "البرازيل",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-300-47",
+      "points": 300,
+      "question": "كم مرة فازت غيانا بكأس كوبا أمريكا؟",
+      "answer": "0 مرة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-300-48",
+      "points": 300,
+      "question": "من هو المنتخب الذي فاز بكأس كوبا أمريكا 1967؟",
+      "answer": "أوروغواي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-300-49",
+      "points": 300,
+      "question": "كم مرة فازت سورينام بكأس كوبا أمريكا؟",
+      "answer": "0 مرة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-300-50",
+      "points": 300,
+      "question": "من هو المنتخب الذي فاز بكأس كوبا أمريكا 1963؟",
+      "answer": "البرازيل",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-500-7",
+      "points": 500,
+      "question": "من هو المنتخب الذي سجل أكبر عدد من الأهداف في نسخة واحدة من كأس أمم أفريقيا؟",
+      "answer": "مصر في 2010 (11 هدفاً)",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-500-8",
+      "points": 500,
+      "question": "من هو المنتخب الذي استقبل أقل عدد من الأهداف في نسخة واحدة من كأس أمم أفريقيا؟",
+      "answer": "مصر في 2006 (هدف واحد)",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-500-9",
+      "points": 500,
+      "question": "من هو المنتخب الذي فاز بكأس أمم أفريقيا بدون هزيمة؟",
+      "answer": "مصر في 2006 و2008 و2010",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-500-10",
+      "points": 500,
+      "question": "من هو المنتخب الذي فاز بكأس أمم أفريقيا بدون تعادل؟",
+      "answer": "لا يوجد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-500-11",
+      "points": 500,
+      "question": "من هو المنتخب الذي فاز بكأس أمم أفريقيا بركلات الجزاء؟",
+      "answer": "السنغال في 2021",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-500-12",
+      "points": 500,
+      "question": "من هو المنتخب الذي خسر نهائي كأس أمم أفريقيا بركلات الجزاء؟",
+      "answer": "مصر في 2021",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-500-13",
+      "points": 500,
+      "question": "من هو المنتخب الذي فاز بكأس أمم أفريقيا بفارق هدفين؟",
+      "answer": "الجزائر في 2019",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-500-14",
+      "points": 500,
+      "question": "من هو المنتخب الذي فاز بكأس أمم أفريقيا بهدف واحد؟",
+      "answer": "زامبيا في 2012",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-500-15",
+      "points": 500,
+      "question": "من هو المنتخب الذي فاز بكأس أمم أفريقيا بفارق هدف؟",
+      "answer": "ساحل العاج في 2015",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-500-16",
+      "points": 500,
+      "question": "من هو المنتخب الذي فاز بكأس أمم أفريقيا بفارق هدفين؟",
+      "answer": "الكاميرون في 2017",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-500-17",
+      "points": 500,
+      "question": "من هو المنتخب الذي فاز بكأس أمم أفريقيا بفارق هدف؟",
+      "answer": "نيجيريا في 2013",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-500-18",
+      "points": 500,
+      "question": "من هو المنتخب الذي فاز بكأس أمم أفريقيا بركلات الجزاء؟",
+      "answer": "الكاميرون في 2000",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-500-19",
+      "points": 500,
+      "question": "من هو المنتخب الذي خسر نهائي كأس أمم أفريقيا بركلات الجزاء؟",
+      "answer": "السنغال في 2002",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-500-20",
+      "points": 500,
+      "question": "من هو المنتخب الذي فاز بكأس أمم أفريقيا بدون خسارة؟",
+      "answer": "مصر في 2006 و2008 و2010",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-500-21",
+      "points": 500,
+      "question": "من هو المنتخب الذي فاز بكأس أمم أفريقيا بدون تعادل؟",
+      "answer": "لا يوجد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-500-22",
+      "points": 500,
+      "question": "من هو المنتخب الذي فاز بكأس أمم أفريقيا بركلات الجزاء؟",
+      "answer": "ساحل العاج في 2015",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-500-23",
+      "points": 500,
+      "question": "من هو المنتخب الذي خسر نهائي كأس أمم أفريقيا بركلات الجزاء؟",
+      "answer": "غانا في 2015",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-500-24",
+      "points": 500,
+      "question": "من هو المنتخب الذي فاز بكأس أمم أفريقيا بدون خسارة؟",
+      "answer": "مصر في 2006 و2008 و2010",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-500-25",
+      "points": 500,
+      "question": "من هو المنتخب الذي فاز بكأس أمم أفريقيا بدون تعادل؟",
+      "answer": "لا يوجد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-500-26",
+      "points": 500,
+      "question": "من هو المنتخب الذي فاز بكأس أمم أفريقيا بركلات الجزاء؟",
+      "answer": "السنغال في 2021",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-500-27",
+      "points": 500,
+      "question": "من هو المنتخب الذي خسر نهائي كأس أمم أفريقيا بركلات الجزاء؟",
+      "answer": "مصر في 2021",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-500-28",
+      "points": 500,
+      "question": "من هو المنتخب الذي فاز بكأس أمم أفريقيا بدون خسارة؟",
+      "answer": "مصر في 2006 و2008 و2010",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-500-29",
+      "points": 500,
+      "question": "من هو المنتخب الذي فاز بكأس أمم أفريقيا بدون تعادل؟",
+      "answer": "لا يوجد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-500-30",
+      "points": 500,
+      "question": "من هو المنتخب الذي فاز بكأس آسيا بركلات الجزاء؟",
+      "answer": "أستراليا في 2015",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-500-31",
+      "points": 500,
+      "question": "من هو المنتخب الذي خسر نهائي كأس آسيا بركلات الجزاء؟",
+      "answer": "كوريا الجنوبية في 2015",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-500-32",
+      "points": 500,
+      "question": "من هو المنتخب الذي فاز بكأس آسيا بدون خسارة؟",
+      "answer": "اليابان في 2011",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-500-33",
+      "points": 500,
+      "question": "من هو المنتخب الذي فاز بكأس آسيا بدون تعادل؟",
+      "answer": "لا يوجد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-500-34",
+      "points": 500,
+      "question": "من هو المنتخب الذي فاز بكأس كوبا أمريكا بركلات الجزاء؟",
+      "answer": "الأرجنتين في 2021",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-500-35",
+      "points": 500,
+      "question": "من هو المنتخب الذي خسر نهائي كوبا أمريكا بركلات الجزاء؟",
+      "answer": "كولومبيا في 2021",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-500-36",
+      "points": 500,
+      "question": "من هو المنتخب الذي فاز بكأس كوبا أمريكا بدون خسارة؟",
+      "answer": "البرازيل في 2007",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-500-37",
+      "points": 500,
+      "question": "من هو المنتخب الذي فاز بكأس كوبا أمريكا بدون تعادل؟",
+      "answer": "لا يوجد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-500-38",
+      "points": 500,
+      "question": "من هو المنتخب الذي فاز بكأس كوبا أمريكا بركلات الجزاء؟",
+      "answer": "تشيلي في 2015",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-500-39",
+      "points": 500,
+      "question": "من هو المنتخب الذي خسر نهائي كوبا أمريكا بركلات الجزاء؟",
+      "answer": "الأرجنتين في 2015",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-500-40",
+      "points": 500,
+      "question": "من هو المنتخب الذي فاز بكأس كوبا أمريكا بدون خسارة؟",
+      "answer": "البرازيل في 2019",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-500-41",
+      "points": 500,
+      "question": "من هو المنتخب الذي فاز بكأس كوبا أمريكا بدون تعادل؟",
+      "answer": "لا يوجد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-500-42",
+      "points": 500,
+      "question": "من هو المنتخب الذي فاز بكأس كوبا أمريكا بركلات الجزاء؟",
+      "answer": "الأوروغواي في 2011",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-500-43",
+      "points": 500,
+      "question": "من هو المنتخب الذي خسر نهائي كوبا أمريكا بركلات الجزاء؟",
+      "answer": "باراغواي في 2011",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-500-44",
+      "points": 500,
+      "question": "من هو المنتخب الذي فاز بكأس كوبا أمريكا بدون خسارة؟",
+      "answer": "الأرجنتين في 2021",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-500-45",
+      "points": 500,
+      "question": "من هو المنتخب الذي فاز بكأس كوبا أمريكا بدون تعادل؟",
+      "answer": "لا يوجد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-500-46",
+      "points": 500,
+      "question": "من هو المنتخب الذي فاز بكأس كوبا أمريكا بركلات الجزاء؟",
+      "answer": "تشيلي في 2016",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-500-47",
+      "points": 500,
+      "question": "من هو المنتخب الذي خسر نهائي كوبا أمريكا بركلات الجزاء؟",
+      "answer": "الأرجنتين في 2016",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-500-48",
+      "points": 500,
+      "question": "من هو المنتخب الذي فاز بكأس كوبا أمريكا بدون خسارة؟",
+      "answer": "البرازيل في 2004",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-500-49",
+      "points": 500,
+      "question": "من هو المنتخب الذي فاز بكأس كوبا أمريكا بدون تعادل؟",
+      "answer": "لا يوجد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "national-teams-500-50",
+      "points": 500,
+      "question": "من هو المنتخب الذي فاز بكأس كوبا أمريكا بركلات الجزاء؟",
+      "answer": "البرازيل في 1997",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    }
+  ],
+  "metadata": {
+    "sectionId": "sports",
+    "updatedAt": "2026-08-04",
+    "status": "ready"
+  }
 }

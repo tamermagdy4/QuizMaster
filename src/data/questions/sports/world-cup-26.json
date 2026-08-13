@@ -1,0 +1,350 @@
+{
+  "categoryId": "world-cup-26",
+  "questions": [
+    {
+      "id": "world-cup-26-100-1",
+      "points": 100,
+      "question": "من سجل هدف الأرجنتين الأول في الفوز 3-0 على الجزائر؟",
+      "answer": "ليونيل ميسي",
+      "image": ""
+    },
+    {
+      "id": "world-cup-26-100-2",
+      "points": 100,
+      "question": "كم انتهت مباراة ألمانيا وكوراساو؟",
+      "answer": "7-1 لألمانيا",
+      "image": "",
+      "answerMedia": "/media/world-cup-26/7-1 ألمانيا.jpeg"
+    },
+    {
+      "id": "world-cup-26-100-3",
+      "points": 100,
+      "question": "من سجل أهداف الأرجنتين الثلاثة أمام الجزائر؟",
+      "answer": "ليونيل ميسي",
+      "image": ""
+    },
+    {
+      "id": "world-cup-26-100-4",
+      "points": 100,
+      "question": "كم انتهت مباراة البرازيل والمغرب في دور المجموعات؟",
+      "answer": "1-1",
+      "image": "",
+      "answerMedia": "/media/world-cup-26/1-1.jpeg"
+    },
+    {
+      "id": "world-cup-26-100-5",
+      "points": 100,
+      "question": "من سجل هدف مصر في التعادل 1-1 أمام بلجيكا؟",
+      "answer": "محمود حسن تريزيغيه",
+      "image": ""
+    },
+    {
+      "id": "world-cup-26-100-7",
+      "points": 100,
+      "question": "من سجل ثلاثية فرنسا أمام النرويج؟",
+      "answer": "عثمان ديمبيلي",
+      "image": ""
+    },
+    {
+      "id": "world-cup-26-100-8",
+      "points": 100,
+      "question": "كم انتهت مباراة إنجلترا وكرواتيا؟",
+      "answer": "4-2 لإنجلترا",
+      "image": "",
+      "answerMedia": "/media/world-cup-26/4-2 لإنجلترا.jpeg"
+    },
+    {
+      "id": "world-cup-26-100-9",
+      "points": 100,
+      "question": "كم انتهت مباراة البرتغال وأوزبكستان في دور المجموعات؟",
+      "answer": "5-0 للبرتغال",
+      "image": "",
+      "answerMedia": "/media/world-cup-26/5-0 للبرتغال.jpeg"
+    },
+    {
+      "id": "world-cup-26-100-10",
+      "points": 100,
+      "question": "من سجل هاتريك الأرجنتين أمام الجزائر؟",
+      "answer": "ليونيل ميسي",
+      "image": ""
+    },
+    {
+      "id": "world-cup-26-100-11",
+      "points": 100,
+      "question": "كم هدفًا سجل ميسي في مباراة الأرجنتين والجزائر؟",
+      "answer": "3 أهداف",
+      "image": ""
+    },
+    {
+      "id": "world-cup-26-100-12",
+      "points": 100,
+      "question": "من سجل هاتريك فرنسا أمام النرويج؟",
+      "answer": "عثمان ديمبيلي",
+      "image": ""
+    },
+    {
+      "id": "world-cup-26-100-13",
+      "points": 100,
+      "question": "من سجل هدف النرويج أمام فرنسا؟",
+      "answer": "ثيلو أوسغارد",
+      "image": ""
+    },
+    {
+      "id": "world-cup-26-100-14",
+      "points": 100,
+      "question": "كم انتهت مباراة البرازيل واليابان في دور الـ32؟",
+      "answer": "2-1 للبرازيل",
+      "image": "",
+      "answerMedia": "/media/world-cup-26/2-1 البرازيل.jpeg"
+    },
+    {
+      "id": "world-cup-26-100-15",
+      "points": 100,
+      "question": "أي منتخب أقصى ألمانيا من دور الـ32؟",
+      "answer": "باراغواي",
+      "image": ""
+    },
+    {
+      "id": "world-cup-26-100-16",
+      "points": 100,
+      "question": "كم انتهت مباراة ألمانيا وباراغواي؟",
+      "answer": "1-1، وفازت باراغواي بركلات الترجيح 4-3",
+      "image": "",
+      "answerMedia": "/media/world-cup-26/1-1? بركلات الترجيح البارغواي 4-3.jpeg"
+    },
+    {
+      "id": "world-cup-26-100-17",
+      "points": 100,
+      "question": "كم انتهت مباراة بلجيكا والسنغال في دور الـ32؟",
+      "answer": "3-2 لبلجيكا بعد الوقت الإضافي",
+      "image": "",
+      "answerMedia": "/media/world-cup-26/3-2 لبلجيكا بعد الوقت الإضافي.jpeg"
+    },
+    {
+      "id": "world-cup-26-300-1",
+      "points": 300,
+      "question": "كم انتهت مباراة فرنسا والسويد؟",
+      "answer": "3-0 لفرنسا",
+      "image": "",
+      "answerMedia": "/media/world-cup-26/3-0 لفرنسا.jpeg"
+    },
+    {
+      "id": "world-cup-26-300-2",
+      "points": 300,
+      "question": "كم انتهت مباراة الأرجنتين وكابو فيردي؟",
+      "answer": "3-2 للأرجنتين بعد الوقت الإضافي",
+      "image": "",
+      "answerMedia": "/media/world-cup-26/3-2 للأرجنتين بعد الوقت الإضافي.jpeg"
+    },
+    {
+      "id": "world-cup-26-300-3",
+      "points": 300,
+      "question": "من سجل الهدف الثالث للأرجنتين أمام الجزائر؟",
+      "answer": "ليونيل ميسي",
+      "image": ""
+    },
+    {
+      "id": "world-cup-26-300-4",
+      "points": 300,
+      "question": "في أي دقائق سجل ميسي أهدافه الثلاثة أمام الجزائر؟",
+      "answer": "17، 60، 76",
+      "image": ""
+    },
+    {
+      "id": "world-cup-26-300-5",
+      "points": 300,
+      "question": "من سجل هدف فرنسا الرابع أمام النرويج؟",
+      "answer": "ديزيريه دوي",
+      "image": ""
+    },
+    {
+      "id": "world-cup-26-300-6",
+      "points": 300,
+      "question": "في أي دقيقة سجل عثمان ديمبيلي هدفه الأول أمام النرويج؟",
+      "answer": "الدقيقة 7",
+      "image": ""
+    },
+    {
+      "id": "world-cup-26-300-7",
+      "points": 300,
+      "question": "كم انتهت مباراة الأرجنتين وسويسرا في ربع النهائي؟",
+      "answer": "3-1 للأرجنتين بعد الوقت الإضافي",
+      "image": "",
+      "answerMedia": "/media/world-cup-26/3-1 للأرجنتين بعد الوقت الإضافي.jpeg"
+    },
+    {
+      "id": "world-cup-26-300-8",
+      "points": 300,
+      "question": "من المنتخب الذي هزم البرازيل في ربع النهائي؟",
+      "answer": "النرويج",
+      "image": ""
+    },
+    {
+      "id": "world-cup-26-300-9",
+      "points": 300,
+      "question": "كم انتهت مباراة البرازيل والنرويج في دور الـ16؟",
+      "answer": "2-1 للنرويج",
+      "image": "",
+      "answerMedia": "/media/world-cup-26/2-1 للنرويج.jpeg"
+    },
+    {
+      "id": "world-cup-26-300-10",
+      "points": 300,
+      "question": "كم انتهت مباراة النرويج وإنجلترا في ربع النهائي؟",
+      "answer": "2-1 لإنجلترا بعد الوقت الإضافي",
+      "image": "",
+      "answerMedia": "/media/world-cup-26/2-1 لإنجلترا بعد الوقت الإضافي.jpeg"
+    },
+    {
+      "id": "world-cup-26-300-13",
+      "points": 300,
+      "question": "من فاز بالمباراة النهائية لكأس العالم 2026؟",
+      "answer": "إسبانيا",
+      "image": ""
+    },
+    {
+      "id": "world-cup-26-300-14",
+      "points": 300,
+      "question": "كم انتهت المباراة النهائية بين إسبانيا والأرجنتين؟",
+      "answer": "1-0 لإسبانيا بعد الوقت الإضافي",
+      "image": "",
+      "answerMedia": "/media/world-cup-26/1-0 لإسبانيا بعد الوقت الإضافي.jpeg"
+    },
+    {
+      "id": "world-cup-26-300-15",
+      "points": 300,
+      "question": "من سجل هدف إسبانيا في نهائي كأس العالم 2026؟",
+      "answer": "فران توريس",
+      "image": ""
+    },
+    {
+      "id": "world-cup-26-300-16",
+      "points": 300,
+      "question": "من كان هداف كأس العالم 2026؟",
+      "answer": "كيليان مبابي برصيد 10 أهداف",
+      "image": ""
+    },
+    {
+      "id": "world-cup-26-300-17",
+      "points": 300,
+      "question": "كم انتهت مباراة المكسيك وجنوب أفريقيا في افتتاح كأس العالم 2026؟",
+      "answer": "2-0 للمكسيك",
+      "image": "",
+      "answerMedia": "/media/world-cup-26/2-0 للمكسيك.jpeg"
+    },
+    {
+      "id": "world-cup-26-500-1",
+      "points": 500,
+      "question": "من فاز على تشيكيا في أول مباراة له بكأس العالم 2026؟",
+      "answer": "كوريا الجنوبية",
+      "image": ""
+    },
+    {
+      "id": "world-cup-26-500-2",
+      "points": 500,
+      "question": "كم انتهت مباراة كندا والبوسنة والهرسك؟",
+      "answer": "1-1 تعادل",
+      "image": "",
+      "answerMedia": "/media/world-cup-26/1-1 تعادل.jpeg"
+    },
+    {
+      "id": "world-cup-26-500-4",
+      "points": 500,
+      "question": "كم هدفًا سجلت إسبانيا أمام السعودية؟",
+      "answer": "4 أهداف",
+      "image": ""
+    },
+    {
+      "id": "world-cup-26-500-5",
+      "points": 500,
+      "question": "كم انتهت مباراة البرازيل وهايتي؟",
+      "answer": "3-0 للبرازيل",
+      "image": "",
+      "answerMedia": "/media/world-cup-26/3-0 للبرازيل.jpeg"
+    },
+    {
+      "id": "world-cup-26-500-6",
+      "points": 500,
+      "question": "كم انتهت مباراة هولندا والسويد؟",
+      "answer": "5-1 لهولندا",
+      "image": "",
+      "answerMedia": "/media/world-cup-26/5-1 لهولندا.jpeg"
+    },
+    {
+      "id": "world-cup-26-500-7",
+      "points": 500,
+      "question": "كم انتهت مباراة المغرب واسكتلندا؟",
+      "answer": "1-0 للمغرب",
+      "image": "",
+      "answerMedia": "/media/world-cup-26/1-0 للمغرب.jpeg"
+    },
+    {
+      "id": "world-cup-26-500-8",
+      "points": 500,
+      "question": "أي منتخب أقصى هولندا من دور الـ32؟",
+      "answer": "المغرب",
+      "image": ""
+    },
+    {
+      "id": "world-cup-26-500-9",
+      "points": 500,
+      "question": "من أقصى اليابان من دور الـ32؟",
+      "answer": "البرازيل",
+      "image": ""
+    },
+    {
+      "id": "world-cup-26-500-10",
+      "points": 500,
+      "question": "من أقصى كوت ديفوار من دور الـ32؟",
+      "answer": "النرويج",
+      "image": ""
+    },
+    {
+      "id": "world-cup-26-500-11",
+      "points": 500,
+      "question": "أي منتخب فاز على السنغال في دور الـ32؟",
+      "answer": "بلجيكا",
+      "image": ""
+    },
+    {
+      "id": "world-cup-26-500-12",
+      "points": 500,
+      "question": "من أقصى النمسا من دور الـ32؟",
+      "answer": "إسبانيا",
+      "image": ""
+    },
+    {
+      "id": "world-cup-26-500-13",
+      "points": 500,
+      "question": "أي منتخب أقصى كولومبيا بركلات الترجيح في دور الـ16؟",
+      "answer": "سويسرا",
+      "image": ""
+    },
+    {
+      "id": "world-cup-26-500-14",
+      "points": 500,
+      "question": "كم كانت نتيجة ركلات الترجيح بين سويسرا وكولومبيا؟",
+      "answer": "4-3 لسويسرا",
+      "image": ""
+    },
+    {
+      "id": "world-cup-26-500-15",
+      "points": 500,
+      "question": "من أقصى البرازيل من كأس العالم في دور الـ16؟",
+      "answer": "النرويج",
+      "image": ""
+    },
+    {
+      "id": "world-cup-26-500-16",
+      "points": 500,
+      "question": "من أقصى المكسيك من دور الـ16؟",
+      "answer": "إنجلترا",
+      "image": ""
+    }
+  ],
+  "metadata": {
+    "sectionId": "sports",
+    "updatedAt": "2026-08-10",
+    "status": "active"
+  }
+}

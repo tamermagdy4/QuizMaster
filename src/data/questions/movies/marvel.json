@@ -1,22 +1,910 @@
-﻿{
+{
   "categoryId": "marvel",
   "questions": [
     {
-      "question": "من هو بطل فيلم Iron Man؟",
-      "answer": "طوني ستارك."
+      "id": "marvel-100-1",
+      "points": 100,
+      "question": "من هو الممثل الذي لعب دور توني ستارك في أفلام مارفل؟",
+      "answer": "روبرت داوني جونيور",
+      "image": "",
+      "media": "",
+      "mediaType": ""
     },
     {
-      "question": "ما اسم السلاح الذي يستخدمه Captain America؟",
-      "answer": "درع ستيف روجرز."
+      "id": "marvel-100-2",
+      "points": 100,
+      "question": "من هو الممثل الذي لعب دور كابتن أمريكا في أفلام مارفل؟",
+      "answer": "كريس إيفانز",
+      "image": "",
+      "media": "",
+      "mediaType": ""
     },
     {
-      "question": "في أي فيلم ظهر Thanos لأول مرة كخصم رئيسي؟",
-      "answer": "في Avengers: Infinity War."
+      "id": "marvel-100-3",
+      "points": 100,
+      "question": "من هو الممثل الذي لعب دور ثور في أفلام مارفل؟",
+      "answer": "كريس هيمسورث",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "marvel-100-4",
+      "points": 100,
+      "question": "من هو الممثل الذي لعب دور هulk في أفلام مارفل؟",
+      "answer": "مارك روفالو",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "marvel-100-5",
+      "points": 100,
+      "question": "من هي الممثلة التي لعبت دور بلاك ويدو في أفلام مارفل؟",
+      "answer": "سكرليت جوهانسون",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "marvel-100-6",
+      "points": 100,
+      "question": "من هو الممثل الذي لعب دور هاوكاي في أفلام مارفل؟",
+      "answer": "جيريمي رينر",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "marvel-100-7",
+      "points": 100,
+      "question": "من هو الممثل الذي لعب دور سبايدرمان في أفلام مارفل؟",
+      "answer": "توم هولاند",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "marvel-100-8",
+      "points": 100,
+      "question": "من هو الممثل الذي لعب دور بلاك بانثر في أفلام مارفل؟",
+      "answer": "شادويك بوسمان",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "marvel-100-9",
+      "points": 100,
+      "question": "من هو الممثل الذي لعب دور ستار لورد في أفلام مارفل؟",
+      "answer": "كريس برات",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "marvel-100-10",
+      "points": 100,
+      "question": "من هي الممثلة التي لعبت دور جامورا في أفلام مارفل؟",
+      "answer": "زوي سالدانا",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "marvel-100-11",
+      "points": 100,
+      "question": "من هو الممثل الذي لعب دور دراكس في أفلام مارفل؟",
+      "answer": "ديف باتيستا",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "marvel-100-12",
+      "points": 100,
+      "question": "من هو الممثل الذي لعب دور راكت في أفلام مارفل؟",
+      "answer": "برادلي كوبر",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "marvel-100-13",
+      "points": 100,
+      "question": "من هو الممثل الذي لعب دور غروت في أفلام مارفل؟",
+      "answer": "فين ديزل",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "marvel-100-14",
+      "points": 100,
+      "question": "من هو الممثل الذي لعب دور مانتيس في أفلام مارفل؟",
+      "answer": "بوم كليمنتيف",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "marvel-100-15",
+      "points": 100,
+      "question": "من هو الممثل الذي لعب دور دكتور سترينج في أفلام مارفل؟",
+      "answer": "بينيديكت كامبرباتش",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "marvel-100-16",
+      "points": 100,
+      "question": "من هي الممثلة التي لعبت دور بيبشي في أفلام مارفل؟",
+      "answer": "تييلدا سوينتون",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "marvel-100-17",
+      "points": 100,
+      "question": "من هو الممثل الذي لعب دور وونغ في أفلام مارفل؟",
+      "answer": "بenedict wong",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "marvel-100-18",
+      "points": 100,
+      "question": "من هو الممثل الذي لعب دور كاوغيل في أفلام مارفل؟",
+      "answer": "تشانديل",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "marvel-100-19",
+      "points": 100,
+      "question": "من هي الممثلة التي لعبت دور ميكي في أفلام مارفل؟",
+      "answer": "لتيشا رايت",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "marvel-100-20",
+      "points": 100,
+      "question": "من هو الممثل الذي لعب دور واكندا في أفلام مارفل؟",
+      "answer": "شادويك بوسمان",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "marvel-100-21",
+      "points": 100,
+      "question": "من هي الممثلة التي لعبت دور شوري في أفلام مارفل؟",
+      "answer": "ليتيشا رايت",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "marvel-100-22",
+      "points": 100,
+      "question": "من هو الممثل الذي لعب دور نجو في أفلام مارفل؟",
+      "answer": "winston duke",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "marvel-100-23",
+      "points": 100,
+      "question": "من هي الممثلة التي لعبت دور أوكوي في أفلام مارفل؟",
+      "answer": "danai gurira",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "marvel-100-24",
+      "points": 100,
+      "question": "من هو الممثل الذي لعب دور مباكو في أفلام مارفل؟",
+      "answer": "forester whitaker",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "marvel-100-25",
+      "points": 100,
+      "question": "من هو الممثل الذي لعب دور أنت مان في أفلام مارفل؟",
+      "answer": "paul rudd",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "marvel-100-26",
+      "points": 100,
+      "question": "من هي الممثلة التي لعبت دور هوب في أفلام مارفل؟",
+      "answer": "evangeline lilly",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "marvel-100-27",
+      "points": 100,
+      "question": "من هو الممثل الذي لعب دور واسب في أفلام مارفل؟",
+      "answer": "michael douglas",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "marvel-100-28",
+      "points": 100,
+      "question": "من هي الممثلة التي لعبت دور جانيت في أفلام مارفل؟",
+      "answer": "michelle pfeiffer",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "marvel-100-29",
+      "points": 100,
+      "question": "من هو الممثل الذي لعب دور كاسيتي في أفلام مارفل؟",
+      "answer": "abraham attah",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "marvel-100-30",
+      "points": 100,
+      "question": "من هو الممثل الذي لعب دور جونستون في أفلام مارفل؟",
+      "answer": "harry lloyd",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "marvel-300-1",
+      "points": 300,
+      "question": "ما هو الاسم الحقيقي لآيرون مان؟",
+      "answer": "توني ستارك",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "marvel-300-2",
+      "points": 300,
+      "question": "ما هو الاسم الحقيقي لكابتن أمريكا؟",
+      "answer": "ستيف روجرز",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "marvel-300-3",
+      "points": 300,
+      "question": "ما هو الاسم الحقيقي لثور؟",
+      "answer": "ثور",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "marvel-300-4",
+      "points": 300,
+      "question": "ما هو الاسم الحقيقي لهulk؟",
+      "answer": "بروس بانر",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "marvel-300-5",
+      "points": 300,
+      "question": "ما هو الاسم الحقيقي لباك ويدو؟",
+      "answer": "ناتاشا رومانوف",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "marvel-300-6",
+      "points": 300,
+      "question": "ما هو الاسم الحقيقي لهاوكاي؟",
+      "answer": "كلينت بارتون",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "marvel-300-7",
+      "points": 300,
+      "question": "ما هو الاسم الحقيقي لسبايدرمان؟",
+      "answer": "بيتر باركر",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "marvel-300-8",
+      "points": 300,
+      "question": "ما هو الاسم الحقيقي لبلاك بانثر؟",
+      "answer": "ت'تشالا",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "marvel-300-9",
+      "points": 300,
+      "question": "ما هو الاسم الحقيقي لستار لورد؟",
+      "answer": "بيتر كويل",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "marvel-300-10",
+      "points": 300,
+      "question": "ما هو الاسم الحقيقي لدكتور سترينج؟",
+      "answer": "ستيفن سترينج",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "marvel-300-11",
+      "points": 300,
+      "question": "ما هو الاسم الحقيقي لباك بانثر؟",
+      "answer": "ت'تشالا",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "marvel-300-12",
+      "points": 300,
+      "question": "ما هو الاسم الحقيقي لأنت مان؟",
+      "answer": "سكوت لانغ",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "marvel-300-13",
+      "points": 300,
+      "question": "ما هو الاسم الحقيقي لاسبي؟",
+      "answer": "hope pym",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "marvel-300-14",
+      "points": 300,
+      "question": "ما هو الاسم الحقيقي لواسب؟",
+      "answer": "janet van dyne",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "marvel-300-15",
+      "points": 300,
+      "question": "ما هو الاسم الحقيقي لواسب؟",
+      "answer": "hank pym",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "marvel-300-16",
+      "points": 300,
+      "question": "من هو الخصم الرئيسي في أول فيلم آيرون مان؟",
+      "answer": "obadiah stane",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "marvel-300-17",
+      "points": 300,
+      "question": "من هو الخصم الرئيسي في فيلم كابتن أمريكا الأول؟",
+      "answer": "red skull",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "marvel-300-18",
+      "points": 300,
+      "question": "من هو الخصم الرئيسي في أول فيلم ثور؟",
+      "answer": "loki",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "marvel-300-19",
+      "points": 300,
+      "question": "من هو الخصم الرئيسي في فيلم هulk؟",
+      "answer": "abomination",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "marvel-300-20",
+      "points": 300,
+      "question": "من هو الخصم الرئيسي في أول فيلم سبايدرمان؟",
+      "answer": "green goblin",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "marvel-300-21",
+      "points": 300,
+      "question": "من هو الخصم الرئيسي في فيلم دكتور سترينج؟",
+      "answer": "kaecilius",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "marvel-300-22",
+      "points": 300,
+      "question": "من هو الخصم الرئيسي في فيلم بلاك بانثر؟",
+      "answer": "killmonger",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "marvel-300-23",
+      "points": 300,
+      "question": "من هو الخصم الرئيسي في أول فيلم أنت مان؟",
+      "answer": "yellowjacket",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "marvel-300-24",
+      "points": 300,
+      "question": "من هو الخصم الرئيسي في فيلم جارديانز أوف ذا جالاكسي؟",
+      "answer": "ronan",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "marvel-300-25",
+      "points": 300,
+      "question": "من هو الخصم الرئيسي في فيلم جارديانز أوف ذا جالاكسي 2؟",
+      "answer": "ego",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "marvel-300-26",
+      "points": 300,
+      "question": "من هو الخصم الرئيسي في أفلام الأفينجرز الأولى؟",
+      "answer": "loki",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "marvel-300-27",
+      "points": 300,
+      "question": "من هو الخصم الرئيسي في أفلام الأفينجرز: عصر ألترون؟",
+      "answer": "ultron",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "marvel-300-28",
+      "points": 300,
+      "question": "من هو الخصم الرئيسي في أفلام الأفينجرز: إنفنتي وار؟",
+      "answer": "thanos",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "marvel-300-29",
+      "points": 300,
+      "question": "من هو الخصم الرئيسي في أفلام الأفينجرز: إندغيم؟",
+      "answer": "thanos",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "marvel-300-30",
+      "points": 300,
+      "question": "ما هو اسم الشركة التي أنشأها توني ستارك؟",
+      "answer": "stark industries",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "marvel-300-31",
+      "points": 300,
+      "question": "ما هو اسم المعدن الذي استخدمه توني ستارك لصنع بدلة الآيرون مان؟",
+      "answer": "vibranium",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "marvel-300-32",
+      "points": 300,
+      "question": "ما هو اسم المعدن الذي يستخدم في واكندا؟",
+      "answer": "vibranium",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "marvel-300-33",
+      "points": 300,
+      "question": "ما هو اسم الخاتم الذي يستخدمه ثور؟",
+      "answer": "mjolnir",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "marvel-300-34",
+      "points": 300,
+      "question": "ما هو اسم العصا التي يستخدمها كابتن أمريكا؟",
+      "answer": "الدرع",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "marvel-300-35",
+      "points": 300,
+      "question": "ما هو اسم السلاح الذي يستخدمه هاوكاي؟",
+      "answer": "القوس والسهم",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "marvel-500-1",
+      "points": 500,
+      "question": "من هو الخصم الذي قتل والدي توني ستارك؟",
+      "answer": "winter soldier",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "marvel-500-2",
+      "points": 500,
+      "question": "من هو الخصم الذي قتل والدي بيتر باركر؟",
+      "answer": "green goblin",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "marvel-500-3",
+      "points": 500,
+      "question": "من هو الخصم الذي قتل والد ت'تشالا؟",
+      "answer": "killmonger",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "marvel-500-4",
+      "points": 500,
+      "question": "من هو الخصم الذي قتل والد ستار لورد؟",
+      "answer": "ego",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "marvel-500-5",
+      "points": 500,
+      "question": "من هو الخصم الذي قتل والد دكتور سترينج؟",
+      "answer": "the ancient one",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "marvel-500-6",
+      "points": 500,
+      "question": "من هو الخصم الذي قتل والد أنت مان؟",
+      "answer": "hank pym",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "marvel-500-7",
+      "points": 500,
+      "question": "من هو الخصم الذي قتل والد كابتن أمريكا؟",
+      "answer": "red skull",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "marvel-500-8",
+      "points": 500,
+      "question": "من هو الخصم الذي قتل والد ثور؟",
+      "answer": "loki",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "marvel-500-9",
+      "points": 500,
+      "question": "من هو الخصم الذي قتل والد هulk؟",
+      "answer": "thaddeus ross",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "marvel-500-10",
+      "points": 500,
+      "question": "من هو الخصم الذي قتل والد بلاك ويدو؟",
+      "answer": "dreykov",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "marvel-500-11",
+      "points": 500,
+      "question": "من هو الخصم الذي قتل والد هاوكاي؟",
+      "answer": "trick shot",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "marvel-500-12",
+      "points": 500,
+      "question": "من هو الخصم الذي قتل والد واكندا؟",
+      "answer": "killmonger",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "marvel-500-13",
+      "points": 500,
+      "question": "من هو الخصم الذي قتل والد نجو؟",
+      "answer": "m'baku",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "marvel-500-14",
+      "points": 500,
+      "question": "من هو الخصم الذي قتل والد أوكوي؟",
+      "answer": "killmonger",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "marvel-500-15",
+      "points": 500,
+      "question": "من هو الخصم الذي قتل والد مباكو؟",
+      "answer": "killmonger",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "marvel-500-16",
+      "points": 500,
+      "question": "من هو الخصم الذي قتل والد جونستون؟",
+      "answer": "arnim zola",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "marvel-500-17",
+      "points": 500,
+      "question": "من هو الخصم الذي قتل والد كاسيتي؟",
+      "answer": "darren cross",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "marvel-500-18",
+      "points": 500,
+      "question": "من هو الخصم الذي قتل والد هوب؟",
+      "answer": "darren cross",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "marvel-500-19",
+      "points": 500,
+      "question": "من هو الخصم الذي قتل والد جانيت؟",
+      "answer": "hank pym",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "marvel-500-20",
+      "points": 500,
+      "question": "من هو الخصم الذي قتل والد هانك؟",
+      "answer": "darren cross",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "marvel-500-21",
+      "points": 500,
+      "question": "من هو المخرج الذي أخرج أفلام الأفينجرز؟",
+      "answer": "جوس ويدون",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "marvel-500-22",
+      "points": 500,
+      "question": "من هو المخرج الذي أخرج أفلام كابتن أمريكا: الحرب الأهلية؟",
+      "answer": "russo brothers",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "marvel-500-23",
+      "points": 500,
+      "question": "من هو المخرج الذي أخرج أفلام ثور: راجناروك؟",
+      "answer": "taika waititi",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "marvel-500-24",
+      "points": 500,
+      "question": "من هو المخرج الذي أخرج أفلام بلاك بانثر؟",
+      "answer": "ryan coogler",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "marvel-500-25",
+      "points": 500,
+      "question": "من هو المخرج الذي أخرج أفلام دكتور سترينج؟",
+      "answer": "scott derrickson",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "marvel-500-26",
+      "points": 500,
+      "question": "من هو المخرج الذي أخرج أفلام أنت مان؟",
+      "answer": "peyton reed",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "marvel-500-27",
+      "points": 500,
+      "question": "من هو المخرج الذي أخرج أفلام جارديانز أوف ذا جالاكسي؟",
+      "answer": "james gunn",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "marvel-500-28",
+      "points": 500,
+      "question": "من هو المخرج الذي أخرج أفلام سبايدرمان: هومكومنج؟",
+      "answer": "jon watts",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "marvel-500-29",
+      "points": 500,
+      "question": "من هو الكاتب الذي خلق شخصية آيرون مان؟",
+      "answer": "stan lee and jack kirby",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "marvel-500-30",
+      "points": 500,
+      "question": "من هو الكاتب الذي خلق شخصية كابتن أمريكا؟",
+      "answer": "joe simon and jack kirby",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "marvel-500-31",
+      "points": 500,
+      "question": "من هو الكاتب الذي خلق شخصية ثور؟",
+      "answer": "stan lee and jack kirby",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "marvel-500-32",
+      "points": 500,
+      "question": "من هو الكاتب الذي خلق شخصية هulk؟",
+      "answer": "stan lee and jack kirby",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "marvel-500-33",
+      "points": 500,
+      "question": "من هو الكاتب الذي خلق شخصية سبايدرمان؟",
+      "answer": "stan lee and steve ditko",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "marvel-500-34",
+      "points": 500,
+      "question": "من هو الكاتب الذي خلق شخصية بلاك بانثر؟",
+      "answer": "stan lee and jack kirby",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "marvel-500-35",
+      "points": 500,
+      "question": "من هو الكاتب الذي خلق شخصية ستار لورد؟",
+      "answer": "steve englehart and steve gan",
+      "image": "",
+      "media": "",
+      "mediaType": ""
     }
   ],
   "metadata": {
     "sectionId": "movies",
-    "updatedAt": "2026-08-03",
+    "updatedAt": "2026-08-05",
     "status": "ready"
   }
 }

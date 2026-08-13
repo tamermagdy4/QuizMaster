@@ -1,11 +1,1358 @@
-﻿{
-    "categoryId":  "mountains",
-    "questions":  [
-
-                  ],
-    "metadata":  {
-                     "sectionId":  "geography",
-                     "updatedAt":  "2026-08-03",
-                     "status":  "pending"
-                 }
+{
+  "categoryId": "mountains",
+  "questions": [
+    {
+      "id": "mountains-100-1",
+      "points": 100,
+      "question": "ما هو أعلى جبل في العالم؟",
+      "answer": "جبل إفرست",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-100-2",
+      "points": 100,
+      "question": "ما هو أعلى جبل في أفريقيا؟",
+      "answer": "جبل كليمنجارو",
+      "image": ""
+    },
+    {
+      "id": "mountains-100-3",
+      "points": 100,
+      "question": "ما هو أعلى جبل في أوروبا؟",
+      "answer": "جبل إلبروس",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-100-4",
+      "points": 100,
+      "question": "ما هو أعلى جبل في أمريكا الشمالية؟",
+      "answer": "جبل دينالي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-100-5",
+      "points": 100,
+      "question": "ما هو أعلى جبل في أمريكا الجنوبية؟",
+      "answer": "جبل آكونكاغوا",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-100-6",
+      "points": 100,
+      "question": "ما هو أعلى جبل في آسيا؟",
+      "answer": "جبل إفرست",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-100-7",
+      "points": 100,
+      "question": "ما هو أعلى جبل في أستراليا؟",
+      "answer": "جبل كوسيوسكو",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-100-8",
+      "points": 100,
+      "question": "ما هو أعلى جبل في أنتاركتيكا؟",
+      "answer": "جبل فينسون",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-100-9",
+      "points": 100,
+      "question": "ما هو أعلى جبل في العالم العربي؟",
+      "answer": "جبل طوبقال",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-100-10",
+      "points": 100,
+      "question": "ما هو أعلى جبل في السعودية؟",
+      "answer": "جبل السودة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-100-11",
+      "points": 100,
+      "question": "ما هو أعلى جبل في مصر؟",
+      "answer": "جبل كاترين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-100-12",
+      "points": 100,
+      "question": "ما هو أعلى جبل في المغرب؟",
+      "answer": "جبل طوبقال",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-100-13",
+      "points": 100,
+      "question": "ما هو أعلى جبل في الجزائر؟",
+      "answer": "جبل تاهات",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-100-14",
+      "points": 100,
+      "question": "ما هو أعلى جبل في تونس؟",
+      "answer": "جبل الشعانبي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-100-15",
+      "points": 100,
+      "question": "ما هو أعلى جبل في ليبيا؟",
+      "answer": "جبل بيكو",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-100-16",
+      "points": 100,
+      "question": "ما هو أعلى جبل في اليمن؟",
+      "answer": "جبل النبي شعيب",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-100-17",
+      "points": 100,
+      "question": "ما هو أعلى جبل في سوريا؟",
+      "answer": "جبل الشيخ",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-100-18",
+      "points": 100,
+      "question": "ما هو أعلى جبل في لبنان؟",
+      "answer": "جبل القرن السويداء",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-100-19",
+      "points": 100,
+      "question": "ما هو أعلى جبل في الأردن؟",
+      "answer": "جبل رم",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-100-20",
+      "points": 100,
+      "question": "ما هو أعلى جبل في عمان؟",
+      "answer": "جبل شمس",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-100-21",
+      "points": 100,
+      "question": "ما هو أعلى جبل في الإمارات؟",
+      "answer": "جبل جيس",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-100-22",
+      "points": 100,
+      "question": "ما هو أعلى جبل في الكويت؟",
+      "answer": "لا توجد جبال",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-100-23",
+      "points": 100,
+      "question": "ما هو أعلى جبل في قطر؟",
+      "answer": "لا توجد جبال",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-100-24",
+      "points": 100,
+      "question": "ما هو أعلى جبل في البحرين؟",
+      "answer": "لا توجد جبال",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-100-25",
+      "points": 100,
+      "question": "ما هو اسم سلسلة جبال الألب؟",
+      "answer": "جبال الألب",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-100-26",
+      "points": 100,
+      "question": "ما هو اسم سلسلة جبال الأندلس؟",
+      "answer": "جبال الأندلس",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-100-27",
+      "points": 100,
+      "question": "ما هو اسم سلسلة جبال الهيمالايا؟",
+      "answer": "جبال الهيمالايا",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-100-28",
+      "points": 100,
+      "question": "ما هو اسم سلسلة جبال الأبلاش؟",
+      "answer": "جبال الأبلاش",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-100-29",
+      "points": 100,
+      "question": "ما هو اسم سلسلة جبال روكي؟",
+      "answer": "جبال روكي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-100-30",
+      "points": 100,
+      "question": "ما هو اسم سلسلة جبال الأورال؟",
+      "answer": "جبال الأورال",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-100-31",
+      "points": 100,
+      "question": "ما هو اسم سلسلة جبال القوقاز؟",
+      "answer": "جبال القوقاز",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-100-32",
+      "points": 100,
+      "question": "ما هو اسم سلسلة جبال الأطلس؟",
+      "answer": "جبال الأطلس",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-100-33",
+      "points": 100,
+      "question": "ما هو اسم سلسلة جبال درناوية؟",
+      "answer": "جبال درناوية",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-100-34",
+      "points": 100,
+      "question": "ما هو اسم سلسلة جبال لبنان؟",
+      "answer": "جبال لبنان",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-100-35",
+      "points": 100,
+      "question": "ما هو اسم سلسلة جبال حوران؟",
+      "answer": "جبال حوران",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-100-36",
+      "points": 100,
+      "question": "ما هو اسم سلسلة جبال السروات؟",
+      "answer": "جبال السروات",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-100-37",
+      "points": 100,
+      "question": "ما هو اسم سلسلة جبال عسير؟",
+      "answer": "جبال عسير",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-100-38",
+      "points": 100,
+      "question": "ما هو اسم سلسلة جبال الحجاز؟",
+      "answer": "جبال الحجاز",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-100-39",
+      "points": 100,
+      "question": "ما هو اسم سلسلة جبال شمر؟",
+      "answer": "جبال شمر",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-100-40",
+      "points": 100,
+      "question": "ما هو اسم سلسلة جبال سيناء؟",
+      "answer": "جبال سيناء",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-100-41",
+      "points": 100,
+      "question": "ما هو اسم سلسلة جبال شبه الجزيرة العربية؟",
+      "answer": "جبال شبه الجزيرة العربية",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-100-42",
+      "points": 100,
+      "question": "ما هو اسم سلسلة جبال زاغروس؟",
+      "answer": "جبال زاغروس",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-100-43",
+      "points": 100,
+      "question": "ما هو اسم سلسلة جبال طوروس؟",
+      "answer": "جبال طوروس",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-100-44",
+      "points": 100,
+      "question": "ما هو اسم سلسلة جبال البرانس؟",
+      "answer": "جبال البرانس",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-100-45",
+      "points": 100,
+      "question": "ما هو اسم سلسلة جبال الأبنين؟",
+      "answer": "جبال الأبنين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-100-46",
+      "points": 100,
+      "question": "ما هو اسم سلسلة جبال الألب الدينارية؟",
+      "answer": "جبال الألب الدينارية",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-100-47",
+      "points": 100,
+      "question": "ما هو اسم سلسلة جبال البلقان؟",
+      "answer": "جبال البلقان",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-100-48",
+      "points": 100,
+      "question": "ما هو اسم سلسلة جبال الكاربات؟",
+      "answer": "جبال الكاربات",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-100-49",
+      "points": 100,
+      "question": "ما هو اسم سلسلة جبال البرانس؟",
+      "answer": "جبال البرانس",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-100-50",
+      "points": 100,
+      "question": "ما هو اسم سلسلة جبال الأبلاش؟",
+      "answer": "جبال الأبلاش",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-300-1",
+      "points": 300,
+      "question": "كم ارتفاع جبل إفرست بالمتر؟",
+      "answer": "8848 متر",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-300-2",
+      "points": 300,
+      "question": "كم ارتفاع جبل كليمنجارو بالمتر؟",
+      "answer": "5895 متر",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-300-3",
+      "points": 300,
+      "question": "كم ارتفاع جبل إلبروس بالمتر؟",
+      "answer": "5642 متر",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-300-4",
+      "points": 300,
+      "question": "كم ارتفاع جبل دينالي بالمتر؟",
+      "answer": "6190 متر",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-300-5",
+      "points": 300,
+      "question": "كم ارتفاع جبل آكونكاغوا بالمتر؟",
+      "answer": "6961 متر",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-300-6",
+      "points": 300,
+      "question": "كم ارتفاع جبل كوسيوسكو بالمتر؟",
+      "answer": "2228 متر",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-300-7",
+      "points": 300,
+      "question": "كم ارتفاع جبل فينسون بالمتر؟",
+      "answer": "4892 متر",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-300-8",
+      "points": 300,
+      "question": "كم ارتفاع جبل طوبقال بالمتر؟",
+      "answer": "4167 متر",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-300-9",
+      "points": 300,
+      "question": "كم ارتفاع جبل السودة بالمتر؟",
+      "answer": "3015 متر",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-300-10",
+      "points": 300,
+      "question": "كم ارتفاع جبل كاترين بالمتر؟",
+      "answer": "2629 متر",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-300-11",
+      "points": 300,
+      "question": "كم ارتفاع جبل تاهات بالمتر؟",
+      "answer": "2918 متر",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-300-12",
+      "points": 300,
+      "question": "كم ارتفاع جبل الشعانبي بالمتر؟",
+      "answer": "1544 متر",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-300-13",
+      "points": 300,
+      "question": "كم ارتفاع جبل النبي شعيب بالمتر؟",
+      "answer": "3666 متر",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-300-14",
+      "points": 300,
+      "question": "كم ارتفاع جبل الشيخ بالمتر؟",
+      "answer": "2814 متر",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-300-15",
+      "points": 300,
+      "question": "كم ارتفاع جبل القرن السويداء بالمتر؟",
+      "answer": "3088 متر",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-300-16",
+      "points": 300,
+      "question": "كم ارتفاع جبل رم بالمتر؟",
+      "answer": "1754 متر",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-300-17",
+      "points": 300,
+      "question": "كم ارتفاع جبل شمس بالمتر؟",
+      "answer": "2997 متر",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-300-18",
+      "points": 300,
+      "question": "كم ارتفاع جبل جيس بالمتر؟",
+      "answer": "1934 متر",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-300-19",
+      "points": 300,
+      "question": "في أي دولة يقع جبل إفرست؟",
+      "answer": "نيبال والصين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-300-20",
+      "points": 300,
+      "question": "في أي دولة يقع جبل كليمنجارو؟",
+      "answer": "تنزانيا",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-300-21",
+      "points": 300,
+      "question": "في أي دولة يقع جبل إلبروس؟",
+      "answer": "روسيا",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-300-22",
+      "points": 300,
+      "question": "في أي دولة يقع جبل دينالي؟",
+      "answer": "الولايات المتحدة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-300-23",
+      "points": 300,
+      "question": "في أي دولة يقع جبل آكونكاغوا؟",
+      "answer": "الأرجنتين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-300-24",
+      "points": 300,
+      "question": "في أي دولة يقع جبل كوسيوسكو؟",
+      "answer": "أستراليا",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-300-25",
+      "points": 300,
+      "question": "في أي قارة يقع جبل فينسون؟",
+      "answer": "أنتاركتيكا",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-300-26",
+      "points": 300,
+      "question": "في أي دولة يقع جبل طوبقال؟",
+      "answer": "المغرب",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-300-27",
+      "points": 300,
+      "question": "في أي دولة يقع جبل السودة؟",
+      "answer": "السعودية",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-300-28",
+      "points": 300,
+      "question": "في أي دولة يقع جبل كاترين؟",
+      "answer": "مصر",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-300-29",
+      "points": 300,
+      "question": "في أي دولة يقع جبل تاهات؟",
+      "answer": "الجزائر",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-300-30",
+      "points": 300,
+      "question": "في أي دولة يقع جبل الشعانبي؟",
+      "answer": "تونس",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-300-31",
+      "points": 300,
+      "question": "في أي دولة يقع جبل النبي شعيب؟",
+      "answer": "اليمن",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-300-32",
+      "points": 300,
+      "question": "في أي دولة يقع جبل الشيخ؟",
+      "answer": "سوريا",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-300-33",
+      "points": 300,
+      "question": "في أي دولة يقع جبل القرن السويداء؟",
+      "answer": "لبنان",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-300-34",
+      "points": 300,
+      "question": "في أي دولة يقع جبل رم؟",
+      "answer": "الأردن",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-300-35",
+      "points": 300,
+      "question": "في أي دولة يقع جبل شمس؟",
+      "answer": "عمان",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-300-36",
+      "points": 300,
+      "question": "في أي دولة يقع جبل جيس؟",
+      "answer": "الإمارات",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-300-37",
+      "points": 300,
+      "question": "ما هو ثاني أعلى جبل في العالم؟",
+      "answer": "جبل كي2",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-300-38",
+      "points": 300,
+      "question": "ما هو ثالث أعلى جبل في العالم؟",
+      "answer": "جبل كانجشنغونغا",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-300-39",
+      "points": 300,
+      "question": "ما هو رابع أعلى جبل في العالم؟",
+      "answer": "جبل لوتس",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-300-40",
+      "points": 300,
+      "question": "ما هو خامس أعلى جبل في العالم؟",
+      "answer": "جبل ماكالو",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-300-41",
+      "points": 300,
+      "question": "كم ارتفاع جبل كي2 بالمتر؟",
+      "answer": "8611 متر",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-300-42",
+      "points": 300,
+      "question": "كم ارتفاع جبل كانجشنغونغا بالمتر؟",
+      "answer": "8586 متر",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-300-43",
+      "points": 300,
+      "question": "كم ارتفاع جبل لوتس بالمتر؟",
+      "answer": "8516 متر",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-300-44",
+      "points": 300,
+      "question": "كم ارتفاع جبل ماكالو بالمتر؟",
+      "answer": "8485 متر",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-300-45",
+      "points": 300,
+      "question": "في أي دولة يقع جبل كي2؟",
+      "answer": "باكستان",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-300-46",
+      "points": 300,
+      "question": "في أي دولة يقع جبل كانجشنغونغا؟",
+      "answer": "نيبال والهند",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-300-47",
+      "points": 300,
+      "question": "في أي دولة يقع جبل لوتس؟",
+      "answer": "الصين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-300-48",
+      "points": 300,
+      "question": "في أي دولة يقع جبل ماكالو؟",
+      "answer": "نيبال والصين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-300-49",
+      "points": 300,
+      "question": "ما هو اسم سلسلة جبال الهيمالايا؟",
+      "answer": "سلسلة جبال الهيمالايا",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-300-50",
+      "points": 300,
+      "question": "كم عدد القمم التي يزيد ارتفاعها عن 8000 متر؟",
+      "answer": "14 قمة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-500-1",
+      "points": 500,
+      "question": "ما هو اسم السلسلة الجبلية التي تفصل أوروبا عن آسيا؟",
+      "answer": "جبال الأورال",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-500-2",
+      "points": 500,
+      "question": "ما هو اسم السلسلة الجبلية التي تفصل إسبانيا عن فرنسا؟",
+      "answer": "جبال البرانس",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-500-3",
+      "points": 500,
+      "question": "ما هو اسم السلسلة الجبلية التي تفصل إيطاليا عن فرنسا؟",
+      "answer": "جبال الألب",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-500-4",
+      "points": 500,
+      "question": "ما هو اسم السلسلة الجبلية التي تفصل شمال أفريقيا عن جنوبها؟",
+      "answer": "جبال الأطلس",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-500-5",
+      "points": 500,
+      "question": "ما هو اسم السلسلة الجبلية التي تفصل آسيا عن أوروبا؟",
+      "answer": "جبال القوقاز",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-500-6",
+      "points": 500,
+      "question": "ما هو اسم السلسلة الجبلية في غرب أمريكا الشمالية؟",
+      "answer": "جبال روكي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-500-7",
+      "points": 500,
+      "question": "ما هو اسم السلسلة الجبلية في شرق أمريكا الشمالية؟",
+      "answer": "جبال الأبلاش",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-500-8",
+      "points": 500,
+      "question": "ما هو اسم السلسلة الجبلية في غرب أمريكا الجنوبية؟",
+      "answer": "جبال الأنديز",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-500-9",
+      "points": 500,
+      "question": "ما هو اسم السلسلة الجبلية في جنوب آسيا؟",
+      "answer": "جبال الهيمالايا",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-500-10",
+      "points": 500,
+      "question": "ما هو اسم السلسلة الجبلية في وسط آسيا؟",
+      "answer": "جبال بامير",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-500-11",
+      "points": 500,
+      "question": "ما هو اسم السلسلة الجبلية في جنوب شرق آسيا؟",
+      "answer": "جبال الأناضول",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-500-12",
+      "points": 500,
+      "question": "ما هو اسم السلسلة الجبلية في غرب إفريقيا؟",
+      "answer": "جبال الكاميرون",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-500-13",
+      "points": 500,
+      "question": "ما هو اسم السلسلة الجبلية في شرق إفريقيا؟",
+      "answer": "جبال شرق إفريقيا",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-500-14",
+      "points": 500,
+      "question": "ما هو اسم السلسلة الجبلية في جنوب إفريقيا؟",
+      "answer": "جبال دراكنزبرغ",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-500-15",
+      "points": 500,
+      "question": "ما هو اسم السلسلة الجبلية في أستراليا؟",
+      "answer": "جبال الألب الأسترالية",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-500-16",
+      "points": 500,
+      "question": "ما هو اسم السلسلة الجبلية في نيوزيلندا؟",
+      "answer": "جبال الألب الجنوبية",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-500-17",
+      "points": 500,
+      "question": "ما هو اسم السلسلة الجبلية في اليابان؟",
+      "answer": "جبال الألب اليابانية",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-500-18",
+      "points": 500,
+      "question": "ما هو اسم السلسلة الجبلية في الفلبين؟",
+      "answer": "جبال وسط الفلبين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-500-19",
+      "points": 500,
+      "question": "ما هو اسم السلسلة الجبلية في إندونيسيا؟",
+      "answer": "جبال باريسان",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-500-20",
+      "points": 500,
+      "question": "ما هو اسم السلسلة الجبلية في غرينلاند؟",
+      "answer": "جبال غرينلاند",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-500-21",
+      "points": 500,
+      "question": "ما هو اسم السلسلة الجبلية في آيسلندا؟",
+      "answer": "جبال آيسلندا",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-500-22",
+      "points": 500,
+      "question": "ما هو اسم السلسلة الجبلية في جزر الأنتيل؟",
+      "answer": "جزر الأنتيل الصغرى",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-500-23",
+      "points": 500,
+      "question": "ما هو اسم السلسلة الجبلية في جزر هاواي؟",
+      "answer": "جزر هاواي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-500-24",
+      "points": 500,
+      "question": "ما هو اسم السلسلة الجبلية في البحر الكاريبي؟",
+      "answer": "جزر الأنتيل الكبرى",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-500-25",
+      "points": 500,
+      "question": "ما هو اسم السلسلة الجبلية في شبه الجزيرة العربية؟",
+      "answer": "جبال الحجاز",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-500-26",
+      "points": 500,
+      "question": "ما هو اسم السلسلة الجبلية في شبه جزيرة سيناء؟",
+      "answer": "جبال سيناء",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-500-27",
+      "points": 500,
+      "question": "ما هو اسم السلسلة الجبلية في البلقان؟",
+      "answer": "جبال البلقان",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-500-28",
+      "points": 500,
+      "question": "ما هو اسم السلسلة الجبلية في الكاربات؟",
+      "answer": "جبال الكاربات",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-500-29",
+      "points": 500,
+      "question": "ما هو اسم السلسلة الجبلية في الألب الدينارية؟",
+      "answer": "جبال الألب الدينارية",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-500-30",
+      "points": 500,
+      "question": "ما هو اسم السلسلة الجبلية في الأبنين؟",
+      "answer": "جبال الأبنين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-500-31",
+      "points": 500,
+      "question": "ما هو اسم السلسلة الجبلية في البرانس؟",
+      "answer": "جبال البرانس",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-500-32",
+      "points": 500,
+      "question": "ما هو اسم السلسلة الجبلية في الألب الألبية؟",
+      "answer": "جبال الألب",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-500-33",
+      "points": 500,
+      "question": "ما هو اسم السلسلة الجبلية في جبال اسكندنافيا؟",
+      "answer": "جبال اسكندنافيا",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-500-34",
+      "points": 500,
+      "question": "ما هو اسم السلسلة الجبلية في جبال القوقاز؟",
+      "answer": "جبال القوقاز",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-500-35",
+      "points": 500,
+      "question": "ما هو اسم السلسلة الجبلية في جبال طوروس؟",
+      "answer": "جبال طوروس",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-500-36",
+      "points": 500,
+      "question": "ما هو اسم السلسلة الجبلية في جبال زاغروس؟",
+      "answer": "جبال زاغروس",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-500-37",
+      "points": 500,
+      "question": "ما هو اسم السلسلة الجبلية في جبال هندوكوش؟",
+      "answer": "جبال هندوكوش",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-500-38",
+      "points": 500,
+      "question": "ما هو اسم السلسلة الجبلية في جبال كاراكورام؟",
+      "answer": "جبال كاراكورام",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-500-39",
+      "points": 500,
+      "question": "ما هو اسم السلسلة الجبلية في جبال بامير؟",
+      "answer": "جبال بامير",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-500-40",
+      "points": 500,
+      "question": "ما هو اسم السلسلة الجبلية في جبات تيان شان؟",
+      "answer": "جبال تيان شان",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-500-41",
+      "points": 500,
+      "question": "ما هو اسم السلسلة الجبلية في جبال كونلون؟",
+      "answer": "جبال كونلون",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-500-42",
+      "points": 500,
+      "question": "ما هو اسم السلسلة الجبلية في جبال تشينغلينغ؟",
+      "answer": "جبال تشينغلينغ",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-500-43",
+      "points": 500,
+      "question": "ما هو اسم السلسلة الجبلية في جبال التبت؟",
+      "answer": "جبال التبت",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-500-44",
+      "points": 500,
+      "question": "ما هو اسم السلسلة الجبلية في جبال الهند الصينية؟",
+      "answer": "جبال الهند الصينية",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-500-45",
+      "points": 500,
+      "question": "ما هو اسم السلسلة الجبلية في جبال ملايو؟",
+      "answer": "جبال ملايو",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-500-46",
+      "points": 500,
+      "question": "ما هو اسم السلسلة الجبلية في جبال سولاويزي؟",
+      "answer": "جبال سولاويزي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-500-47",
+      "points": 500,
+      "question": "ما هو اسم السلسلة الجبلية في جباب بورنيو؟",
+      "answer": "جبال بورنيو",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-500-48",
+      "points": 500,
+      "question": "ما هو اسم السلسلة الجبلية في جباب غينيا الجديدة؟",
+      "answer": "جبال غينيا الجديدة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-500-49",
+      "points": 500,
+      "question": "ما هو اسم السلسلة الجبلية في جبال الأنديز؟",
+      "answer": "جبال الأنديز",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "mountains-500-50",
+      "points": 500,
+      "question": "ما هو اسم السلسلة الجبلية في جبال روكي؟",
+      "answer": "جبال روكي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    }
+  ],
+  "metadata": {
+    "sectionId": "geography",
+    "updatedAt": "2026-08-03",
+    "status": "ready"
+  }
 }

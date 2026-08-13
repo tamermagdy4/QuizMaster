@@ -1,5 +1,5 @@
-import { BoardColumn } from './BoardColumn'
-import { getCategoriesByIds } from '../../utils/categories'
+import { BoardRow } from './BoardRow'
+import { getCategoryById } from '../../utils/categories'
 import type { BoardCell } from '../../types/board'
 import type { TeamId } from '../../types/game'
 
@@ -17,22 +17,27 @@ export function BoardGrid({
   isCellPlayable,
   onSelectCell,
 }: BoardGridProps) {
-  const categories = getCategoriesByIds(categoryIds)
-
   return (
-    <div className="overflow-x-auto pb-2">
-      <div className="flex min-w-max gap-3 sm:gap-4">
-        {categories.map((category, index) => (
-          <BoardColumn
-            key={category.id}
+    <div className="flex flex-col gap-3">
+      {categoryIds.map((categoryId, index) => {
+        const category = getCategoryById(categoryId)
+        if (!category) return null
+
+        const categoryCells = cells[index] ?? []
+        const leftCells = categoryCells.slice(0, 3)
+        const rightCells = categoryCells.slice(3, 6)
+
+        return (
+          <BoardRow
+            key={categoryId}
             category={category}
-            cells={cells[index] ?? []}
-            columnIndex={index}
+            leftCells={leftCells}
+            rightCells={rightCells}
             isCellPlayable={isCellPlayable}
             onSelectCell={onSelectCell}
           />
-        ))}
-      </div>
+        )
+      })}
     </div>
   )
 }

@@ -1,11 +1,1060 @@
-﻿{
-    "categoryId":  "civilizations",
-    "questions":  [
-
-                  ],
-    "metadata":  {
-                     "sectionId":  "history",
-                     "updatedAt":  "2026-08-03",
-                     "status":  "pending"
-                 }
+{
+  "categoryId": "civilizations",
+  "questions": [
+    {
+      "id": "civilizations-100-1",
+      "points": 100,
+      "question": "ما هي الحضارة الأقدم في العالم؟",
+      "answer": "الحضارة السومرية",
+      "image": ""
+    },
+    {
+      "id": "civilizations-100-2",
+      "points": 100,
+      "question": "أين نشأت الحضارة السومرية؟",
+      "answer": "بلاد الرافدين",
+      "image": ""
+    },
+    {
+      "id": "civilizations-100-3",
+      "points": 100,
+      "question": "ما هي الحضارة الفرعونية؟",
+      "answer": "حضارة مصر القديمة",
+      "image": ""
+    },
+    {
+      "id": "civilizations-100-4",
+      "points": 100,
+      "question": "أين تقع الحضارة الفرعونية؟",
+      "answer": "مصر",
+      "image": ""
+    },
+    {
+      "id": "civilizations-100-5",
+      "points": 100,
+      "question": "ما هي الحضارة البابلية؟",
+      "answer": "حضارة بلاد الرافدين",
+      "image": ""
+    },
+    {
+      "id": "civilizations-100-6",
+      "points": 100,
+      "question": "ما هي الحضارة الآشورية؟",
+      "answer": "حضارة بلاد الرافدين",
+      "image": ""
+    },
+    {
+      "id": "civilizations-100-7",
+      "points": 100,
+      "question": "ما هي الحضارة الفينيقية؟",
+      "answer": "حضارة شرق المتوسط",
+      "image": ""
+    },
+    {
+      "id": "civilizations-100-8",
+      "points": 100,
+      "question": "ما هي الحضارة اليونانية؟",
+      "answer": "حضارة اليونان القديمة",
+      "image": ""
+    },
+    {
+      "id": "civilizations-100-9",
+      "points": 100,
+      "question": "ما هي الحضارة الرومانية؟",
+      "answer": "حضارة روما القديمة",
+      "image": ""
+    },
+    {
+      "id": "civilizations-100-10",
+      "points": 100,
+      "question": "ما هي الحضارة الصينية؟",
+      "answer": "حضارة الصين القديمة",
+      "image": ""
+    },
+    {
+      "id": "civilizations-100-11",
+      "points": 100,
+      "question": "ما هي الحضارة الهندية؟",
+      "answer": "حضارة وادي السند",
+      "image": ""
+    },
+    {
+      "id": "civilizations-100-12",
+      "points": 100,
+      "question": "ما هي الحضارة الفارسية؟",
+      "answer": "حضارة فارس القديمة",
+      "image": ""
+    },
+    {
+      "id": "civilizations-100-13",
+      "points": 100,
+      "question": "ما هي الحضارة البيزنطية؟",
+      "answer": "حضارة الإمبراطورية البيزنطية",
+      "image": ""
+    },
+    {
+      "id": "civilizations-100-14",
+      "points": 100,
+      "question": "ما هي الحضارة العربية؟",
+      "answer": "حضارة الحضارة الإسلامية",
+      "image": ""
+    },
+    {
+      "id": "civilizations-100-15",
+      "points": 100,
+      "question": "ما هي الحضارة العثمانية؟",
+      "answer": "حضارة الإمبراطورية العثمانية",
+      "image": ""
+    },
+    {
+      "id": "civilizations-100-16",
+      "points": 100,
+      "question": "ما هي الحضارة الإنكا؟",
+      "answer": "حضارة أمريكا الجنوبية",
+      "image": ""
+    },
+    {
+      "id": "civilizations-100-17",
+      "points": 100,
+      "question": "ما هي الحضارة المايا؟",
+      "answer": "حضارة أمريكا الوسطى",
+      "image": ""
+    },
+    {
+      "id": "civilizations-100-18",
+      "points": 100,
+      "question": "ما هي الحضارة الأزتيك؟",
+      "answer": "حضارة أمريكا الوسطى",
+      "image": ""
+    },
+    {
+      "id": "civilizations-100-19",
+      "points": 100,
+      "question": "ما هي الحضارة الأولمك؟",
+      "answer": "حضارة أمريكا الوسطى",
+      "image": ""
+    },
+    {
+      "id": "civilizations-100-20",
+      "points": 100,
+      "question": "ما هي الحضارة المصرية القديمة؟",
+      "answer": "حضارة وادي النيل",
+      "image": ""
+    },
+    {
+      "id": "civilizations-100-21",
+      "points": 100,
+      "question": "ما هي الحضارة السورية القديمة؟",
+      "answer": "حضارة بلاد الشام",
+      "image": ""
+    },
+    {
+      "id": "civilizations-100-22",
+      "points": 100,
+      "question": "ما هي الحضارة اليمنية القديمة؟",
+      "answer": "حضارة جنوب الجزيرة العربية",
+      "image": ""
+    },
+    {
+      "id": "civilizations-100-23",
+      "points": 100,
+      "question": "ما هي الحضارة الصومرية القديمة؟",
+      "answer": "حضارة جنوب العراق",
+      "image": ""
+    },
+    {
+      "id": "civilizations-100-24",
+      "points": 100,
+      "question": "ما هي الحضارة البابلية القديمة؟",
+      "answer": "حضارة وسط العراق",
+      "image": ""
+    },
+    {
+      "id": "civilizations-100-25",
+      "points": 100,
+      "question": "ما هي الحضارة الآشورية القديمة؟",
+      "answer": "حضارة شمال العراق",
+      "image": ""
+    },
+    {
+      "id": "civilizations-100-26",
+      "points": 100,
+      "question": "ما هي الحضارة الكنعانية؟",
+      "answer": "حضارة لبنان وسوريا",
+      "image": ""
+    },
+    {
+      "id": "civilizations-100-27",
+      "points": 100,
+      "question": "ما هي الحضارة الحيثية؟",
+      "answer": "حضارة شمال سوريا",
+      "image": ""
+    },
+    {
+      "id": "civilizations-100-28",
+      "points": 100,
+      "question": "ما هي الحضارة الأرامية؟",
+      "answer": "حضارة الأردن وسوريا",
+      "image": ""
+    },
+    {
+      "id": "civilizations-100-29",
+      "points": 100,
+      "question": "ما هي الحضارة الفينيقية؟",
+      "answer": "حضارة لبنان",
+      "image": ""
+    },
+    {
+      "id": "civilizations-100-30",
+      "points": 100,
+      "question": "ما هي الحضارة القرطاجية؟",
+      "answer": "حضارة تونس",
+      "image": ""
+    },
+    {
+      "id": "civilizations-100-31",
+      "points": 100,
+      "question": "ما هي الحضارة الليبية القديمة؟",
+      "answer": "حضارة شمال أفريقيا",
+      "image": ""
+    },
+    {
+      "id": "civilizations-100-32",
+      "points": 100,
+      "question": "ما هي الحضارة المغربية القديمة؟",
+      "answer": "حضارة شمال أفريقيا",
+      "image": ""
+    },
+    {
+      "id": "civilizations-100-33",
+      "points": 100,
+      "question": "ما هي الحضارة النوبية؟",
+      "answer": "حضارة جنوب مصر وشمال السودان",
+      "image": ""
+    },
+    {
+      "id": "civilizations-100-34",
+      "points": 100,
+      "question": "ما هي الحضارة الحبشة؟",
+      "answer": "حضارة إثيوبيا",
+      "image": ""
+    },
+    {
+      "id": "civilizations-100-35",
+      "points": 100,
+      "question": "ما هي الحضارة المينوية؟",
+      "answer": "حضارة اليمن",
+      "image": ""
+    },
+    {
+      "id": "civilizations-100-36",
+      "points": 100,
+      "question": "ما هي الحضارة الصابئية؟",
+      "answer": "حضارة جنوب اليمن",
+      "image": ""
+    },
+    {
+      "id": "civilizations-100-37",
+      "points": 100,
+      "question": "ما هي الحضارة التيمورية؟",
+      "answer": "حضارة اليمن",
+      "image": ""
+    },
+    {
+      "id": "civilizations-100-38",
+      "points": 100,
+      "question": "ما هي الحضارة الحميرية؟",
+      "answer": "حضارة اليمن",
+      "image": ""
+    },
+    {
+      "id": "civilizations-100-39",
+      "points": 100,
+      "question": "ما هي الحضارة الخميرية؟",
+      "answer": "حضارة سلطنة عمان",
+      "image": ""
+    },
+    {
+      "id": "civilizations-100-40",
+      "points": 100,
+      "question": "ما هي الحضارة اليونانية القديمة؟",
+      "answer": "حضارة اليونان",
+      "image": ""
+    },
+    {
+      "id": "civilizations-100-41",
+      "points": 100,
+      "question": "ما هي الحضارة المقدونية؟",
+      "answer": "حضارة اليونان",
+      "image": ""
+    },
+    {
+      "id": "civilizations-100-42",
+      "points": 100,
+      "question": "ما هي الحضارة الرومانية القديمة؟",
+      "answer": "حضارة إيطاليا",
+      "image": ""
+    },
+    {
+      "id": "civilizations-100-43",
+      "points": 100,
+      "question": "ما هي الحضارة الإتروسكانية؟",
+      "answer": "حضارة إيطاليا",
+      "image": ""
+    },
+    {
+      "id": "civilizations-100-44",
+      "points": 100,
+      "question": "ما هي الحضارة الإيبيرية؟",
+      "answer": "حضارة إسبانيا والبرتغال",
+      "image": ""
+    },
+    {
+      "id": "civilizations-100-45",
+      "points": 100,
+      "question": "ما هي الحضارة السلتية؟",
+      "answer": "حضارة أوروبا الوسطى",
+      "image": ""
+    },
+    {
+      "id": "civilizations-100-46",
+      "points": 100,
+      "question": "ما هي الحضارة الألمانية القديمة؟",
+      "answer": "حضارة ألمانيا",
+      "image": ""
+    },
+    {
+      "id": "civilizations-100-47",
+      "points": 100,
+      "question": "ما هي الحضارة الفرنسية القديمة؟",
+      "answer": "حضارة فرنسا",
+      "image": ""
+    },
+    {
+      "id": "civilizations-100-48",
+      "points": 100,
+      "question": "ما هي الحضارة البريطانية القديمة؟",
+      "answer": "حضارة بريطانيا",
+      "image": ""
+    },
+    {
+      "id": "civilizations-100-49",
+      "points": 100,
+      "question": "ما هي الحضارة الروسية القديمة؟",
+      "answer": "حضارة روسيا",
+      "image": ""
+    },
+    {
+      "id": "civilizations-100-50",
+      "points": 100,
+      "question": "ما هي الحضارة الصينية القديمة؟",
+      "answer": "حضارة الصين",
+      "image": ""
+    },
+    {
+      "id": "civilizations-300-1",
+      "points": 300,
+      "question": "ما هو السد الأشهر في الحضارة السومرية؟",
+      "answer": "سد ماري",
+      "image": ""
+    },
+    {
+      "id": "civilizations-300-2",
+      "points": 300,
+      "question": "ما هو السد الأشهر في الحضارة الفرعونية؟",
+      "answer": "سد أسوان",
+      "image": ""
+    },
+    {
+      "id": "civilizations-300-3",
+      "points": 300,
+      "question": "ما هو البرج الأشهر في الحضارة البابلية؟",
+      "answer": "برج بابل",
+      "image": ""
+    },
+    {
+      "id": "civilizations-300-4",
+      "points": 300,
+      "question": "ما هو البرج الأشهر في الحضارة المصرية؟",
+      "answer": "برج الإسكندرية",
+      "image": ""
+    },
+    {
+      "id": "civilizations-300-5",
+      "points": 300,
+      "question": "ما هو الكتاب المقدس في الحضارة اليهودية؟",
+      "answer": "التوراة",
+      "image": ""
+    },
+    {
+      "id": "civilizations-300-6",
+      "points": 300,
+      "question": "ما هو الكتاب المقدس في الحضارة المسيحية؟",
+      "answer": "الإنجيل",
+      "image": ""
+    },
+    {
+      "id": "civilizations-300-7",
+      "points": 300,
+      "question": "ما هو الكتاب المقدس في الحضارة الإسلامية؟",
+      "answer": "القرآن",
+      "image": ""
+    },
+    {
+      "id": "civilizations-300-8",
+      "points": 300,
+      "question": "ما هو النظام السياسي في الحضارة السومرية؟",
+      "answer": "الملكية",
+      "image": ""
+    },
+    {
+      "id": "civilizations-300-9",
+      "points": 300,
+      "question": "ما هو النظام السياسي في الحضارة الفرعونية؟",
+      "answer": "الملكية المطلقة",
+      "image": ""
+    },
+    {
+      "id": "civilizations-300-10",
+      "points": 300,
+      "question": "ما هو النظام السياسي في الحضارة اليونانية؟",
+      "answer": "الديمقراطية",
+      "image": ""
+    },
+    {
+      "id": "civilizations-300-11",
+      "points": 300,
+      "question": "ما هو النظام السياسي في الحضارة الرومانية؟",
+      "answer": "الإمبراطورية",
+      "image": ""
+    },
+    {
+      "id": "civilizations-300-12",
+      "points": 300,
+      "question": "ما هو النظام السياسي في الحضارة الصينية؟",
+      "answer": "الإمبراطورية",
+      "image": ""
+    },
+    {
+      "id": "civilizations-300-13",
+      "points": 300,
+      "question": "ما هو النظام السياسي في الحضارة الهندية؟",
+      "answer": "الملكية",
+      "image": ""
+    },
+    {
+      "id": "civilizations-300-14",
+      "points": 300,
+      "question": "ما هو النظام السياسي في الحضارة الفارسية؟",
+      "answer": "الإمبراطورية",
+      "image": ""
+    },
+    {
+      "id": "civilizations-300-15",
+      "points": 300,
+      "question": "ما هو النظام السياسي في الحضارة البيزنطية؟",
+      "answer": "الإمبراطورية",
+      "image": ""
+    },
+    {
+      "id": "civilizations-300-16",
+      "points": 300,
+      "question": "ما هو النظام السياسي في الحضارة العربية؟",
+      "answer": "الخلافة",
+      "image": ""
+    },
+    {
+      "id": "civilizations-300-17",
+      "points": 300,
+      "question": "ما هو النظام السياسي في الحضارة العثمانية؟",
+      "answer": "الإمبراطورية",
+      "image": ""
+    },
+    {
+      "id": "civilizations-300-18",
+      "points": 300,
+      "question": "ما هو النظام السياسي في الحضارة الإنكا؟",
+      "answer": "الإمبراطورية",
+      "image": ""
+    },
+    {
+      "id": "civilizations-300-19",
+      "points": 300,
+      "question": "ما هو النظام السياسي في الحضارة المايا؟",
+      "answer": "الإمبراطورية",
+      "image": ""
+    },
+    {
+      "id": "civilizations-300-20",
+      "points": 300,
+      "question": "ما هو النظام السياسي في الحضارة الأزتيك؟",
+      "answer": "الإمبراطورية",
+      "image": ""
+    },
+    {
+      "id": "civilizations-300-21",
+      "points": 300,
+      "question": "ما هو النظام الاقتصادي في الحضارة السومرية؟",
+      "answer": "الزراعة والتجارة",
+      "image": ""
+    },
+    {
+      "id": "civilizations-300-22",
+      "points": 300,
+      "question": "ما هو النظام الاقتصادي في الحضارة الفرعونية؟",
+      "answer": "الزراعة والبناء",
+      "image": ""
+    },
+    {
+      "id": "civilizations-300-23",
+      "points": 300,
+      "question": "ما هو النظام الاقتصادي في الحضارة البابلية؟",
+      "answer": "الزراعة والتجارة",
+      "image": ""
+    },
+    {
+      "id": "civilizations-300-24",
+      "points": 300,
+      "question": "ما هو النظام الاقتصادي في الحضارة الآشورية؟",
+      "answer": "الزراعة والحرب",
+      "image": ""
+    },
+    {
+      "id": "civilizations-300-25",
+      "points": 300,
+      "question": "ما هو النظام الاقتصادي في الحضارة الفينيقية؟",
+      "answer": "التجارة والنقل البحري",
+      "image": ""
+    },
+    {
+      "id": "civilizations-300-26",
+      "points": 300,
+      "question": "ما هو النظام الاقتصادي في الحضارة اليونانية؟",
+      "answer": "التجارة والفلسفة",
+      "image": ""
+    },
+    {
+      "id": "civilizations-300-27",
+      "points": 300,
+      "question": "ما هو النظام الاقتصادي في الحضارة الرومانية؟",
+      "answer": "التجارة والحرب",
+      "image": ""
+    },
+    {
+      "id": "civilizations-300-28",
+      "points": 300,
+      "question": "ما هو النظام الاقتصادي في الحضارة الصينية؟",
+      "answer": "الزراعة والتجارة",
+      "image": ""
+    },
+    {
+      "id": "civilizations-300-29",
+      "points": 300,
+      "question": "ما هو النظام الاقتصادي في الحضارة الهندية؟",
+      "answer": "الزراعة والتجارة",
+      "image": ""
+    },
+    {
+      "id": "civilizations-300-30",
+      "points": 300,
+      "question": "ما هو النظام الاقتصادي في الحضارة الفارسية؟",
+      "answer": "التجارة والحرب",
+      "image": ""
+    },
+    {
+      "id": "civilizations-300-31",
+      "points": 300,
+      "question": "ما هو النظام الديني في الحضارة السومرية؟",
+      "answer": "الوثنية",
+      "image": ""
+    },
+    {
+      "id": "civilizations-300-32",
+      "points": 300,
+      "question": "ما هو النظام الديني في الحضارة الفرعونية؟",
+      "answer": "التعددية",
+      "image": ""
+    },
+    {
+      "id": "civilizations-300-33",
+      "points": 300,
+      "question": "ما هو النظام الديني في الحضارة البابلية؟",
+      "answer": "التعددية",
+      "image": ""
+    },
+    {
+      "id": "civilizations-300-34",
+      "points": 300,
+      "question": "ما هو النظام الديني في الحضارة الآشورية؟",
+      "answer": "التعددية",
+      "image": ""
+    },
+    {
+      "id": "civilizations-300-35",
+      "points": 300,
+      "question": "ما هو النظام الديني في الحضارة الفينيقية؟",
+      "answer": "التعددية",
+      "image": ""
+    },
+    {
+      "id": "civilizations-300-36",
+      "points": 300,
+      "question": "ما هو النظام الديني في الحضارة اليونانية؟",
+      "answer": "التعددية",
+      "image": ""
+    },
+    {
+      "id": "civilizations-300-37",
+      "points": 300,
+      "question": "ما هو النظام الديني في الحضارة الرومانية؟",
+      "answer": "التعددية",
+      "image": ""
+    },
+    {
+      "id": "civilizations-300-38",
+      "points": 300,
+      "question": "ما هو النظام الديني في الحضارة الصينية؟",
+      "answer": "البوذية",
+      "image": ""
+    },
+    {
+      "id": "civilizations-300-39",
+      "points": 300,
+      "question": "ما هو النظام الديني في الحضارة الهندية؟",
+      "answer": "الهندوسية",
+      "image": ""
+    },
+    {
+      "id": "civilizations-300-40",
+      "points": 300,
+      "question": "ما هو النظام الديني في الحضارة الفارسية؟",
+      "answer": "الزرادشتية",
+      "image": ""
+    },
+    {
+      "id": "civilizations-300-41",
+      "points": 300,
+      "question": "ما هو النظام الديني في الحضارة البيزنطية؟",
+      "answer": "المسيحية",
+      "image": ""
+    },
+    {
+      "id": "civilizations-300-42",
+      "points": 300,
+      "question": "ما هو النظام الديني في الحضارة العربية؟",
+      "answer": "الإسلام",
+      "image": ""
+    },
+    {
+      "id": "civilizations-300-43",
+      "points": 300,
+      "question": "ما هو النظام الديني في الحضارة العثمانية؟",
+      "answer": "الإسلام",
+      "image": ""
+    },
+    {
+      "id": "civilizations-300-44",
+      "points": 300,
+      "question": "ما هو النظام الديني في الحضارة الإنكا؟",
+      "answer": "التعددية",
+      "image": ""
+    },
+    {
+      "id": "civilizations-300-45",
+      "points": 300,
+      "question": "ما هو النظام الديني في الحضارة المايا؟",
+      "answer": "التعددية",
+      "image": ""
+    },
+    {
+      "id": "civilizations-300-46",
+      "points": 300,
+      "question": "ما هو النظام الديني في الحضارة الأزتيك؟",
+      "answer": "التعددية",
+      "image": ""
+    },
+    {
+      "id": "civilizations-300-47",
+      "points": 300,
+      "question": "ما هو النظام الاجتماعي في الحضارة السومرية؟",
+      "answer": "الطبقية",
+      "image": ""
+    },
+    {
+      "id": "civilizations-300-48",
+      "points": 300,
+      "question": "ما هو النظام الاجتماعي في الحضارة الفرعونية؟",
+      "answer": "الطبقية",
+      "image": ""
+    },
+    {
+      "id": "civilizations-300-49",
+      "points": 300,
+      "question": "ما هو النظام الاجتماعي في الحضارة البابلية؟",
+      "answer": "الطبقية",
+      "image": ""
+    },
+    {
+      "id": "civilizations-300-50",
+      "points": 300,
+      "question": "ما هو النظام الاجتماعي في الحضارة الآشورية؟",
+      "answer": "الطبقية",
+      "image": ""
+    },
+    {
+      "id": "civilizations-500-1",
+      "points": 500,
+      "question": "ما هو الاختراع الذي غير الحضارة السومرية؟",
+      "answer": "الكتابة",
+      "image": ""
+    },
+    {
+      "id": "civilizations-500-2",
+      "points": 500,
+      "question": "ما هو الاختراع الذي غير الحضارة الفرعونية؟",
+      "answer": "الهرم",
+      "image": ""
+    },
+    {
+      "id": "civilizations-500-3",
+      "points": 500,
+      "question": "ما هو الاختراع الذي غير الحضارة البابلية؟",
+      "answer": "برج بابل",
+      "image": ""
+    },
+    {
+      "id": "civilizations-500-4",
+      "points": 500,
+      "question": "ما هو الاختراع الذي غير الحضارة الآشورية؟",
+      "answer": "الحدود",
+      "image": ""
+    },
+    {
+      "id": "civilizations-500-5",
+      "points": 500,
+      "question": "ما هو الاختراع الذي غير الحضارة الفينيقية؟",
+      "answer": "الأبجدية",
+      "image": ""
+    },
+    {
+      "id": "civilizations-500-6",
+      "points": 500,
+      "question": "ما هو الاختراع الذي غير الحضارة اليونانية؟",
+      "answer": "الديمقراطية",
+      "image": ""
+    },
+    {
+      "id": "civilizations-500-7",
+      "points": 500,
+      "question": "ما هو الاختراع الذي غير الحضارة الرومانية؟",
+      "answer": "القانون",
+      "image": ""
+    },
+    {
+      "id": "civilizations-500-8",
+      "points": 500,
+      "question": "ما هو الاختراع الذي غير الحضارة الصينية؟",
+      "answer": "الورق",
+      "image": ""
+    },
+    {
+      "id": "civilizations-500-9",
+      "points": 500,
+      "question": "ما هو الاختراع الذي غير الحضارة الهندية؟",
+      "answer": "الرياضيات",
+      "image": ""
+    },
+    {
+      "id": "civilizations-500-10",
+      "points": 500,
+      "question": "ما هو الاختراع الذي غير الحضارة الفارسية؟",
+      "answer": "الطريق الملكي",
+      "image": ""
+    },
+    {
+      "id": "civilizations-500-11",
+      "points": 500,
+      "question": "ما هو الاختراع الذي غير الحضارة البيزنطية؟",
+      "answer": "القانون الروماني",
+      "image": ""
+    },
+    {
+      "id": "civilizations-500-12",
+      "points": 500,
+      "question": "ما هو الاختراع الذي غير الحضارة العربية؟",
+      "answer": "القرآن",
+      "image": ""
+    },
+    {
+      "id": "civilizations-500-13",
+      "points": 500,
+      "question": "ما هو الاختراع الذي غير الحضارة العثمانية؟",
+      "answer": "المدفعع",
+      "image": ""
+    },
+    {
+      "id": "civilizations-500-14",
+      "points": 500,
+      "question": "ما هو الاختراع الذي غير الحضارة الإنكا؟",
+      "answer": "الطرق",
+      "image": ""
+    },
+    {
+      "id": "civilizations-500-15",
+      "points": 500,
+      "question": "ما هو الاختراع الذي غير الحضارة المايا؟",
+      "answer": "التقويم",
+      "image": ""
+    },
+    {
+      "id": "civilizations-500-16",
+      "points": 500,
+      "question": "ما هو الاختراع الذي غير الحضارة الأزتيك؟",
+      "answer": "التقويم",
+      "image": ""
+    },
+    {
+      "id": "civilizations-500-17",
+      "points": 500,
+      "question": "ما هو العنصر الذي سقط الحضارة السومرية؟",
+      "answer": "الغزو الفارسي",
+      "image": ""
+    },
+    {
+      "id": "civilizations-500-18",
+      "points": 500,
+      "question": "ما هو العنصر الذي سقط الحضارة الفرعونية؟",
+      "answer": "الغزو الفارسي",
+      "image": ""
+    },
+    {
+      "id": "civilizations-500-19",
+      "points": 500,
+      "question": "ما هو العنصر الذي سقط الحضارة البابلية؟",
+      "answer": "الغزو الفارسي",
+      "image": ""
+    },
+    {
+      "id": "civilizations-500-20",
+      "points": 500,
+      "question": "ما هو العنصر الذي سقط الحضارة الآشورية؟",
+      "answer": "الغزو البابلي",
+      "image": ""
+    },
+    {
+      "id": "civilizations-500-21",
+      "points": 500,
+      "question": "ما هو العنصر الذي سقط الحضارة الفينيقية؟",
+      "answer": "الغزو الروماني",
+      "image": ""
+    },
+    {
+      "id": "civilizations-500-22",
+      "points": 500,
+      "question": "ما هو العنصر الذي سقط الحضارة اليونانية؟",
+      "answer": "الغزو الروماني",
+      "image": ""
+    },
+    {
+      "id": "civilizations-500-23",
+      "points": 500,
+      "question": "ما هو العنصر الذي سقط الحضارة الرومانية؟",
+      "answer": "الغزو البربري",
+      "image": ""
+    },
+    {
+      "id": "civilizations-500-24",
+      "points": 500,
+      "question": "ما هو العنصر الذي سقط الحضارة الصينية؟",
+      "answer": "الغزو المغولي",
+      "image": ""
+    },
+    {
+      "id": "civilizations-500-25",
+      "points": 500,
+      "question": "ما هو العنصر الذي سقط الحضارة الهندية؟",
+      "answer": "الغزو المغولي",
+      "image": ""
+    },
+    {
+      "id": "civilizations-500-26",
+      "points": 500,
+      "question": "ما هو العنصر الذي سقط الحضارة الفارسية؟",
+      "answer": "الغزو العربي",
+      "image": ""
+    },
+    {
+      "id": "civilizations-500-27",
+      "points": 500,
+      "question": "ما هو العنصر الذي سقط الحضارة البيزنطية؟",
+      "answer": "الغزو العثماني",
+      "image": ""
+    },
+    {
+      "id": "civilizations-500-28",
+      "points": 500,
+      "question": "ما هو العنصر الذي سقط الحضارة العربية؟",
+      "answer": "الغزو المغولي",
+      "image": ""
+    },
+    {
+      "id": "civilizations-500-29",
+      "points": 500,
+      "question": "ما هو العنصر الذي سقط الحضارة العثمانية؟",
+      "answer": "الحرب العالمية الأولى",
+      "image": ""
+    },
+    {
+      "id": "civilizations-500-30",
+      "points": 500,
+      "question": "ما هو العنصر الذي سقط الحضارة الإنكا؟",
+      "answer": "الغزو الإسباني",
+      "image": ""
+    },
+    {
+      "id": "civilizations-500-31",
+      "points": 500,
+      "question": "ما هو العنصر الذي سقط الحضارة المايا؟",
+      "answer": "الغزو الإسباني",
+      "image": ""
+    },
+    {
+      "id": "civilizations-500-32",
+      "points": 500,
+      "question": "ما هو العنصر الذي سقط الحضارة الأزتيك؟",
+      "answer": "الغزو الإسباني",
+      "image": ""
+    },
+    {
+      "id": "civilizations-500-33",
+      "points": 500,
+      "question": "ما هو العنصر الذي حفظ الحضارة السومرية؟",
+      "answer": "اللغة الأكادية",
+      "image": ""
+    },
+    {
+      "id": "civilizations-500-34",
+      "points": 500,
+      "question": "ما هو العنصر الذي حفظ الحضارة الفرعونية؟",
+      "answer": "الهرمات",
+      "image": ""
+    },
+    {
+      "id": "civilizations-500-35",
+      "points": 500,
+      "question": "ما هو العنصر الذي حفظ الحضارة البابلية؟",
+      "answer": "التوراة",
+      "image": ""
+    },
+    {
+      "id": "civilizations-500-36",
+      "points": 500,
+      "question": "ما هو العنصر الذي حفظ الحضارة الآشورية؟",
+      "answer": "المكتبات",
+      "image": ""
+    },
+    {
+      "id": "civilizations-500-37",
+      "points": 500,
+      "question": "ما هو العنصر الذي حفظ الحضارة الفينيقية؟",
+      "answer": "الأبجدية",
+      "image": ""
+    },
+    {
+      "id": "civilizations-500-38",
+      "points": 500,
+      "question": "ما هو العنصر الذي حفظ الحضارة اليونانية؟",
+      "answer": "الفلسفة",
+      "image": ""
+    },
+    {
+      "id": "civilizations-500-39",
+      "points": 500,
+      "question": "ما هو العنصر الذي حفظ الحضارة الرومانية؟",
+      "answer": "القانون",
+      "image": ""
+    },
+    {
+      "id": "civilizations-500-40",
+      "points": 500,
+      "question": "ما هو العنصر الذي حفظ الحضارة الصينية؟",
+      "answer": "الورق",
+      "image": ""
+    },
+    {
+      "id": "civilizations-500-41",
+      "points": 500,
+      "question": "ما هو العنصر الذي حفظ الحضارة الهندية؟",
+      "answer": "الرياضيات",
+      "image": ""
+    },
+    {
+      "id": "civilizations-500-42",
+      "points": 500,
+      "question": "ما هو العنصر الذي حفظ الحضارة الفارسية؟",
+      "answer": "الطريق الملكي",
+      "image": ""
+    },
+    {
+      "id": "civilizations-500-43",
+      "points": 500,
+      "question": "ما هو العنصر الذي حفظ الحضارة البيزنطية؟",
+      "answer": "القانون الروماني",
+      "image": ""
+    },
+    {
+      "id": "civilizations-500-44",
+      "points": 500,
+      "question": "ما هو العنصر الذي حفظ الحضارة العربية؟",
+      "answer": "القرآن",
+      "image": ""
+    },
+    {
+      "id": "civilizations-500-45",
+      "points": 500,
+      "question": "ما هو العنصر الذي حفظ الحضارة العثمانية؟",
+      "answer": "المدافع",
+      "image": ""
+    },
+    {
+      "id": "civilizations-500-46",
+      "points": 500,
+      "question": "ما هو العنصر الذي حفظ الحضارة الإنكا؟",
+      "answer": "الطرق",
+      "image": ""
+    },
+    {
+      "id": "civilizations-500-47",
+      "points": 500,
+      "question": "ما هو العنصر الذي حفظ الحضارة المايا؟",
+      "answer": "التقويم",
+      "image": ""
+    },
+    {
+      "id": "civilizations-500-48",
+      "points": 500,
+      "question": "ما هو العنصر الذي حفظ الحضارة الأزتيك؟",
+      "answer": "التقويم",
+      "image": ""
+    },
+    {
+      "id": "civilizations-500-49",
+      "points": 500,
+      "question": "ما هو العنصر الذي أعاد اكتشاف الحضارة السومرية؟",
+      "answer": "هنري رولنسون",
+      "image": ""
+    },
+    {
+      "id": "civilizations-500-50",
+      "points": 500,
+      "question": "ما هو العنصر الذي أعاد اكتشاف الحضارة الفرعونية؟",
+      "answer": "نابليون بونابرت",
+      "image": ""
+    }
+  ],
+  "metadata": {
+    "sectionId": "history",
+    "updatedAt": "2026-08-03",
+    "status": "ready"
+  }
 }

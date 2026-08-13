@@ -1,11 +1,910 @@
-﻿{
-    "categoryId":  "netflix",
-    "questions":  [
-
-                  ],
-    "metadata":  {
-                     "sectionId":  "movies",
-                     "updatedAt":  "2026-08-03",
-                     "status":  "pending"
-                 }
+{
+  "categoryId": "netflix",
+  "questions": [
+    {
+      "id": "netflix-100-1",
+      "points": 100,
+      "question": "من هو الممثل الذي لعب دور والتر وايت في مسلسل Breaking Bad؟",
+      "answer": "بريان كرانستون",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "netflix-100-2",
+      "points": 100,
+      "question": "من هو الممثل الذي لعب دور جيسي بينكمان في مسلسل Breaking Bad؟",
+      "answer": "آرون بول",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "netflix-100-3",
+      "points": 100,
+      "question": "من هو الممثل الذي لعب دور جون سنو في مسلسل Game of Thrones؟",
+      "answer": "كيت هارينجتون",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "netflix-100-4",
+      "points": 100,
+      "question": "من هي الممثلة التي لعبت دور دينريس تارغاريين في مسلسل Game of Thrones؟",
+      "answer": "إميليا كلارك",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "netflix-100-5",
+      "points": 100,
+      "question": "من هو الممثل الذي لعب دور تيريون لانيستر في مسلسل Game of Thrones؟",
+      "answer": "بيتر دينكلاج",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "netflix-100-6",
+      "points": 100,
+      "question": "من هو الممثل الذي لعب دور جوني كاش في مسلسل Cobra Kai؟",
+      "answer": "ويليام زابكا",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "netflix-100-7",
+      "points": 100,
+      "question": "من هو الممثل الذي لعب دور دانيال لاروسو في مسلسل Cobra Kai؟",
+      "answer": "رالف ماتشيو",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "netflix-100-8",
+      "points": 100,
+      "question": "من هو الممثل الذي لعب دور مارتن في مسلسل Money Heist؟",
+      "answer": "آلفارو مورتي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "netflix-100-9",
+      "points": 100,
+      "question": "من هي الممثلة التي لعبت دور طوكيو في مسلسل Money Heist؟",
+      "answer": "أورسولا كوربيرو",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "netflix-100-10",
+      "points": 100,
+      "question": "من هو الممثل الذي لعب دور ريو في مسلسل Money Heist؟",
+      "answer": "ميجيل هيران",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "netflix-100-11",
+      "points": 100,
+      "question": "من هو الممثل الذي لعب دور الأستاذ في مسلسل Money Heist؟",
+      "answer": "آلفارو مورتي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "netflix-100-12",
+      "points": 100,
+      "question": "من هي الممثلة التي لعبت دور نايروبي في مسلسل Money Heist؟",
+      "answer": "ألفيرا مورتي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "netflix-100-13",
+      "points": 100,
+      "question": "من هو الممثل الذي لعب دور سترينجر في مسلسل Stranger Things؟",
+      "answer": "فين ديزل",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "netflix-100-14",
+      "points": 100,
+      "question": "من هي الممثلة التي لعبت دور إيليفن في مسلسل Stranger Things؟",
+      "answer": "ميلي بوبي براون",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "netflix-100-15",
+      "points": 100,
+      "question": "من هو الممثل الذي لعب دور مايك في مسلسل Stranger Things؟",
+      "answer": "فين وولفهارد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "netflix-100-16",
+      "points": 100,
+      "question": "من هو الممثل الذي لعب دور داستن في مسلسل Stranger Things؟",
+      "answer": "غاتن ماتارازو",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "netflix-100-17",
+      "points": 100,
+      "question": "من هو الممثل الذي لعب دور لوكاس في مسلسل Stranger Things؟",
+      "answer": "كاليب مكلاكلين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "netflix-100-18",
+      "points": 100,
+      "question": "من هي الممثلة التي لعبت دور ماكس في مسلسل Stranger Things؟",
+      "answer": "سينادي ريتشاردسون",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "netflix-100-19",
+      "points": 100,
+      "question": "من هو الممثل الذي لعب دور هوب في مسلسل Stranger Things؟",
+      "answer": "ديفيد هاربور",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "netflix-100-20",
+      "points": 100,
+      "question": "من هي الممثلة التي لعبت دور جويس في مسلسل Stranger Things؟",
+      "answer": "ينا بروني",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "netflix-100-21",
+      "points": 100,
+      "question": "من هو الممثل الذي لعب دور ديف في مسلسل Stranger Things؟",
+      "answer": "ماتيو مودين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "netflix-100-22",
+      "points": 100,
+      "question": "من هو الممثل الذي لعب دور روس في مسلسل Friends؟",
+      "answer": "ديفيد شويمر",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "netflix-100-23",
+      "points": 100,
+      "question": "من هي الممثلة التي لعبت دور ريتشل في مسلسل Friends؟",
+      "answer": "جينيفر أنيستون",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "netflix-100-24",
+      "points": 100,
+      "question": "من هو الممثل الذي لعب دور تشاندلر في مسلسل Friends؟",
+      "answer": "ماثيو بيري",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "netflix-100-25",
+      "points": 100,
+      "question": "من هي الممثلة التي لعبت دور مونيكا في مسلسل Friends؟",
+      "answer": "كورتني كوكس",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "netflix-100-26",
+      "points": 100,
+      "question": "من هو الممثل الذي لعب دور جوي في مسلسل Friends؟",
+      "answer": "مات لوبلانك",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "netflix-100-27",
+      "points": 100,
+      "question": "من هي الممثلة التي لعبت دور فيبي في مسلسل Friends؟",
+      "answer": "ليزا كودرو",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "netflix-100-28",
+      "points": 100,
+      "question": "من هو الممثل الذي لعب دور ناثان دريك في فيلم Uncharted؟",
+      "answer": "توم هولاند",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "netflix-100-29",
+      "points": 100,
+      "question": "من هو الممثل الذي لعب دور فيكتور سوليفان في فيلم Uncharted؟",
+      "answer": "مارك والبرغ",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "netflix-100-30",
+      "points": 100,
+      "question": "من هي الممثلة التي لعبت دور إيلينا في فيلم Uncharted؟",
+      "answer": "سوفيا تaylor",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "netflix-300-1",
+      "points": 300,
+      "question": "ما هو اسم مسلسل Breaking Bad الذي تابع له؟",
+      "answer": "Better Call Saul",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "netflix-300-2",
+      "points": 300,
+      "question": "من هو الممثل الذي لعب دور سول غودمان في مسلسل Breaking Bad؟",
+      "answer": "بوب أودينكيرك",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "netflix-300-3",
+      "points": 300,
+      "question": "من هو الممثل الذي لعب دور غوس فرينغ في مسلسل Breaking Bad؟",
+      "answer": "جيانكارلو إسبوزيتو",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "netflix-300-4",
+      "points": 300,
+      "question": "من هو الممثل الذي لعب دور مايك إهرمانتراوت في مسلسل Breaking Bad؟",
+      "answer": "جوناثان بانكس",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "netflix-300-5",
+      "points": 300,
+      "question": "من هو الممثل الذي لعب دور سكايلار وايت في مسلسل Breaking Bad؟",
+      "answer": "آنا غون",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "netflix-300-6",
+      "points": 300,
+      "question": "من هو الممثل الذي لعب دور هانك شرايدر في مسلسل Breaking Bad؟",
+      "answer": "دين نوريس",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "netflix-300-7",
+      "points": 300,
+      "question": "من هو الممثل الذي لعب دور واليت وايت في مسلسل Breaking Bad؟",
+      "answer": "بريان كرانستون",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "netflix-300-8",
+      "points": 300,
+      "question": "من هو الممثل الذي لعب دور جيسي بينكمان في مسلسل Breaking Bad؟",
+      "answer": "آرون بول",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "netflix-300-9",
+      "points": 300,
+      "question": "من هو الممثل الذي لعب دور بيتر شولر في مسلسل Breaking Bad؟",
+      "answer": "ستيفن مايكل",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "netflix-300-10",
+      "points": 300,
+      "question": "من هو الممثل الذي لعب دور تود في مسلسل Breaking Bad؟",
+      "answer": "جيسي بليمنز",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "netflix-300-11",
+      "points": 300,
+      "question": "من هو الممثل الذي لعب دور ليديا في مسلسل Breaking Bad؟",
+      "answer": "لورا فريزر",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "netflix-300-12",
+      "points": 300,
+      "question": "من هو الممثل الذي لعب دور جاك في مسلسل Breaking Bad؟",
+      "answer": "مايكل بوتي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "netflix-300-13",
+      "points": 300,
+      "question": "من هو الممثل الذي لعب دور كيني في مسلسل Breaking Bad؟",
+      "answer": "كيفن رانكين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "netflix-300-14",
+      "points": 300,
+      "question": "من هو الممثل الذي لعب دور غوميز في مسلسل Breaking Bad؟",
+      "answer": "ستيفن مايكل",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "netflix-300-15",
+      "points": 300,
+      "question": "من هو الممثل الذي لعب دور هولي في مسلسل Breaking Bad؟",
+      "answer": "ماري شير",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "netflix-300-16",
+      "points": 300,
+      "question": "من هو الممثل الذي لعب دور جوني في مسلسل Cobra Kai؟",
+      "answer": "ويليام زابكا",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "netflix-300-17",
+      "points": 300,
+      "question": "من هو الممثل الذي لعب دور دانيال في مسلسل Cobra Kai؟",
+      "answer": "رالف ماتشيو",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "netflix-300-18",
+      "points": 300,
+      "question": "من هو الممثل الذي لعب دور مياجي في مسلسل Cobra Kai؟",
+      "answer": "توماس إيان غريفيث",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "netflix-300-19",
+      "points": 300,
+      "question": "من هو الممثل الذي لعب دور سنساي في مسلسل Cobra Kai؟",
+      "answer": "دانيال براون",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "netflix-300-21",
+      "points": 300,
+      "question": "من هو الممثل الذي لعب دور روبي في مسلسل Cobra Kai؟",
+      "answer": "ماري ماؤر",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "netflix-300-22",
+      "points": 300,
+      "question": "من هو الممثل الذي لعب دور سام في مسلسل Cobra Kai؟",
+      "answer": "توني رودولف",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "netflix-300-23",
+      "points": 300,
+      "question": "من هو الممثل الذي لعب دور توري في مسلسل Cobra Kai؟",
+      "answer": "بيبي وود",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "netflix-300-24",
+      "points": 300,
+      "question": "من هو الممثل الذي لعب دور كينغ في مسلسل Cobra Kai؟",
+      "answer": "مارتن كوف",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "netflix-300-25",
+      "points": 300,
+      "question": "من هو الممثل الذي لعب دور سيلفر في مسلسل Cobra Kai؟",
+      "answer": "توماس إيان غريفيث",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "netflix-300-26",
+      "points": 300,
+      "question": "من هو الممثل الذي لعب دور كريوس في مسلسل Cobra Kai؟",
+      "answer": "دانيال براون",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "netflix-300-27",
+      "points": 300,
+      "question": "من هو الممثل الذي لعب دور ديف في مسلسل Cobra Kai؟",
+      "answer": "سكوت ثومسون",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "netflix-300-28",
+      "points": 300,
+      "question": "من هو الممثل الذي لعب دور أليسا في مسلسل Cobra Kai؟",
+      "answer": "راشيل هورتش",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "netflix-300-29",
+      "points": 300,
+      "question": "من هو الممثل الذي لعب دور ميتش في مسلسل Cobra Kai؟",
+      "answer": "بريان فورتشناتو",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "netflix-300-30",
+      "points": 300,
+      "question": "من هو الممثل الذي لعب دور نات في مسلسل Cobra Kai؟",
+      "answer": "جيك سيمونز",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "netflix-300-31",
+      "points": 300,
+      "question": "من هو الممثل الذي لعب دور برنت في مسلسل Cobra Kai؟",
+      "answer": "دونيل رولينز",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "netflix-300-32",
+      "points": 300,
+      "question": "من هو الممثل الذي لعب دور كيث في مسلسل Cobra Kai؟",
+      "answer": "بيري ماثيو",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "netflix-300-33",
+      "points": 300,
+      "question": "من هو الممثل الذي لعب دور شون في مسلسل Cobra Kai؟",
+      "answer": "شون بيرد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "netflix-300-34",
+      "points": 300,
+      "question": "من هو الممثل الذي لعب دور جوليان في مسلسل Cobra Kai؟",
+      "answer": "جوليان هيل",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "netflix-300-35",
+      "points": 300,
+      "question": "من هو الممثل الذي لعب دور كيفن في مسلسل Cobra Kai؟",
+      "answer": "كيفن تشان",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "netflix-500-1",
+      "points": 500,
+      "question": "من هو المخرج الذي أخرج مسلسل Breaking Bad؟",
+      "answer": "فينس غيليغان",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "netflix-500-2",
+      "points": 500,
+      "question": "من هو المخرج الذي أخرج مسلسل Better Call Saul؟",
+      "answer": "فينس غيليغان",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "netflix-500-3",
+      "points": 500,
+      "question": "من هو المخرج الذي أخرج مسلسل Game of Thrones؟",
+      "answer": "دي. بي. ويس وديفيد بينيوف",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "netflix-500-4",
+      "points": 500,
+      "question": "من هو المخرج الذي أخرج مسلسل Stranger Things؟",
+      "answer": "دافر براذرز",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "netflix-500-5",
+      "points": 500,
+      "question": "من هو المخرج الذي أخرج مسلسل Money Heist؟",
+      "answer": "أليكس بينا",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "netflix-500-6",
+      "points": 500,
+      "question": "من هو المخرج الذي أخرج مسلسل Cobra Kai؟",
+      "answer": "جون هيرشفيلد وجوش هيلد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "netflix-500-7",
+      "points": 500,
+      "question": "من هو المخرج الذي أخرج مسلسل Friends؟",
+      "answer": "جيمس بوروز",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "netflix-500-8",
+      "points": 500,
+      "question": "من هو المخرج الذي أخرج فيلم Uncharted؟",
+      "answer": "روبين فليشر",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "netflix-500-9",
+      "points": 500,
+      "question": "من هو الكاتب الذي خلق مسلسل Breaking Bad؟",
+      "answer": "فينس غيليغان",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "netflix-500-10",
+      "points": 500,
+      "question": "من هو الكاتب الذي خلق مسلسل Game of Thrones؟",
+      "answer": "جورج ر. ر. مارتن",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "netflix-500-11",
+      "points": 500,
+      "question": "من هو الكاتب الذي خلق مسلسل Stranger Things؟",
+      "answer": "دافر براذرز",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "netflix-500-12",
+      "points": 500,
+      "question": "من هو الكاتب الذي خلق مسلسل Money Heist؟",
+      "answer": "أليكس بينا",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "netflix-500-13",
+      "points": 500,
+      "question": "من هو الكاتب الذي خلق مسلسل Cobra Kai؟",
+      "answer": "جون هيرشفيلد وجوش هيلد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "netflix-500-14",
+      "points": 500,
+      "question": "من هو الكاتب الذي خلق مسلسل Friends؟",
+      "answer": "ديفيد كرين ومارتا كوفمان",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "netflix-500-15",
+      "points": 500,
+      "question": "من هو الكاتب الذي خلق لعبة Uncharted؟",
+      "answer": "نوتي دوغ",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "netflix-500-16",
+      "points": 500,
+      "question": "ما هو اسم الشركة التي أنتجت مسلسل Breaking Bad؟",
+      "answer": "sony pictures television",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "netflix-500-17",
+      "points": 500,
+      "question": "ما هو اسم الشركة التي أنتجت مسلسل Game of Thrones؟",
+      "answer": "hbo",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "netflix-500-18",
+      "points": 500,
+      "question": "ما هو اسم الشركة التي أنتجت مسلسل Stranger Things؟",
+      "answer": "netflix",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "netflix-500-19",
+      "points": 500,
+      "question": "ما هو اسم الشركة التي أنتجت مسلسل Money Heist؟",
+      "answer": "netflix",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "netflix-500-20",
+      "points": 500,
+      "question": "ما هو اسم الشركة التي أنتجت مسلسل Cobra Kai؟",
+      "answer": "sony pictures television",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "netflix-500-21",
+      "points": 500,
+      "question": "ما هو اسم الشركة التي أنتجت مسلسل Friends؟",
+      "answer": "warner bros. television",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "netflix-500-22",
+      "points": 500,
+      "question": "ما هو اسم الشركة التي أنتجت فيلم Uncharted؟",
+      "answer": "sony pictures",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "netflix-500-23",
+      "points": 500,
+      "question": "ما هو عدد مواسم مسلسل Breaking Bad؟",
+      "answer": "5",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "netflix-500-24",
+      "points": 500,
+      "question": "ما هو عدد مواسم مسلسل Game of Thrones؟",
+      "answer": "8",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "netflix-500-25",
+      "points": 500,
+      "question": "ما هو عدد مواسم مسلسل Stranger Things؟",
+      "answer": "4",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "netflix-500-26",
+      "points": 500,
+      "question": "ما هو عدد مواسم مسلسل Money Heist؟",
+      "answer": "5",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "netflix-500-27",
+      "points": 500,
+      "question": "ما هو عدد مواسم مسلسل Cobra Kai؟",
+      "answer": "5",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "netflix-500-28",
+      "points": 500,
+      "question": "ما هو عدد مواسم مسلسل Friends؟",
+      "answer": "10",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "netflix-500-29",
+      "points": 500,
+      "question": "ما هو عدد حلقات مسلسل Breaking Bad؟",
+      "answer": "62",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "netflix-500-30",
+      "points": 500,
+      "question": "ما هو عدد حلقات مسلسل Game of Thrones؟",
+      "answer": "73",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "netflix-500-31",
+      "points": 500,
+      "question": "ما هو عدد حلقات مسلسل Stranger Things؟",
+      "answer": "34",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "netflix-500-32",
+      "points": 500,
+      "question": "ما هو عدد حلقات مسلسل Money Heist؟",
+      "answer": "41",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "netflix-500-33",
+      "points": 500,
+      "question": "ما هو عدد حلقات مسلسل Cobra Kai؟",
+      "answer": "50",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "netflix-500-34",
+      "points": 500,
+      "question": "ما هو عدد حلقات مسلسل Friends؟",
+      "answer": "236",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "netflix-500-35",
+      "points": 500,
+      "question": "ما هو أول فيلم Netflix الأصلي؟",
+      "answer": "beasts of no nation",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "netflix-500-36",
+      "points": 500,
+      "question": "ما هو أشهر مسلسل Netflix في التاريخ؟",
+      "answer": "stranger things",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    }
+  ],
+  "metadata": {
+    "sectionId": "movies",
+    "updatedAt": "2026-08-05",
+    "status": "ready"
+  }
 }

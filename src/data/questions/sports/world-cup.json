@@ -1,11 +1,1360 @@
-﻿{
-    "categoryId":  "world-cup",
-    "questions":  [
-
-                  ],
-    "metadata":  {
-                     "sectionId":  "sports",
-                     "updatedAt":  "2026-08-03",
-                     "status":  "pending"
-                 }
+{
+  "categoryId": "world-cup",
+  "questions": [
+    {
+      "id": "world-cup-100-1",
+      "points": 100,
+      "question": "أي بلد فاز بأول كأس عالم في عام 1930؟",
+      "answer": "أوروغواي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-100-2",
+      "points": 100,
+      "question": "أي بلد فاز بأكبر عدد من بطولات كأس العالم؟",
+      "answer": "البرازيل",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-100-3",
+      "points": 100,
+      "question": "كل كم عام يتم إقامة بطولة كأس العالم؟",
+      "answer": "كل 4 سنوات",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-100-4",
+      "points": 100,
+      "question": "من هي الدولة الأفريقية الوحيدة التي استضافت كأس العالم؟",
+      "answer": "جنوب أفريقيا",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-100-5",
+      "points": 100,
+      "question": "سيتم استضافة كأس العالم 2026 في ثلاث دول مختلفة. يمكنك تسميتهم؟",
+      "answer": "الولايات المتحدة، كندا، المكسيك",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-100-6",
+      "points": 100,
+      "question": "ما هي القارة الأكثر استضافة لكأس العالم؟",
+      "answer": "أوروبا (11 مرة)",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-100-7",
+      "points": 100,
+      "question": "من هي الدولة العربية الأولى التي شاركت في بطولة كأس العالم؟",
+      "answer": "الجزائر",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-100-8",
+      "points": 100,
+      "question": "من هو المنتخب الوحيد الذي تأهل لكل بطولات كأس العالم حتى الوقت الحالي؟",
+      "answer": "البرازيل",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-300-1",
+      "points": 300,
+      "question": "فازت ثلاث دول بالمونديال مرتين. يمكنك تسميتهم؟",
+      "answer": "ألمانيا، إيطاليا، الأرجنتين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-300-2",
+      "points": 300,
+      "question": "أي بلد شارك في ثلاث نهائيات لكأس العالم لكنه لم يفز أبداً بالمنافسة؟",
+      "answer": "هولندا",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-300-3",
+      "points": 300,
+      "question": "في أي بطولة كأس عالم سجل فيها دييغو مارادونا هدفه الشهير باليد؟",
+      "answer": "كأس العالم 1986 في المكسيك",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-300-4",
+      "points": 300,
+      "question": "الرقم القياسي لأهداف كأس العالم هو 16. من سجله؟",
+      "answer": "ميروسلاف كلوزه",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-300-5",
+      "points": 300,
+      "question": "فاز ثلاثة أشخاص بكأس العالم كلاعب ومدرب. ماريو زاجالو وديدييه ديشامب. هل يمكنك تسمية الثالث؟",
+      "answer": "فرانز بيكنباور",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-300-6",
+      "points": 300,
+      "question": "فاز لاعبان إنجليزيان بالحذاء الذهبي لكأس العالم. من هؤلاء؟",
+      "answer": "جاري لينيكر وهاري كين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-300-7",
+      "points": 300,
+      "question": "من هو أصغر لاعب شارك في كأس العالم لكرة القدم؟",
+      "answer": "بيليه",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-300-8",
+      "points": 300,
+      "question": "من هو اللاعب الأكبر سناً الذي شارك في كأس العالم؟",
+      "answer": "عصام الحضري",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-300-9",
+      "points": 300,
+      "question": "من هو أشهر لاعب كرة القدم قد مر على التاريخ؟",
+      "answer": "بيليه",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-300-10",
+      "points": 300,
+      "question": "متى ظهرت البطاقات الصفراء والحمراء في كأس العالم؟",
+      "answer": "1970 في المكسيك",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-500-1",
+      "points": 500,
+      "question": "من هو الفريق الذي استطاع أن يفوز بأول بطولة لكأس العالم مرتان على التوالي؟",
+      "answer": "إيطاليا (1934، 1938)",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-500-2",
+      "points": 500,
+      "question": "كم مرة حصل المنتخب البرازيلي على بطولة كأس العالم؟",
+      "answer": "5 مرات (1958، 1962، 1970، 1994، 2002)",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-500-3",
+      "points": 500,
+      "question": "من هي الدولة التي لعب أكبر عدد مباريات في كأس العالم دون الفوز أو التعادل؟",
+      "answer": "السلفادور",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-500-4",
+      "points": 500,
+      "question": "من هي البلد صاحبة الرقم القياسي 16 مباراة متتالية دون تعادل في كأس العالم؟",
+      "answer": "البرتغال",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-500-5",
+      "points": 500,
+      "question": "من هو أكبر لاعب شارك في بطولة كأس العالم؟",
+      "answer": "عصام الحضري",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-500-6",
+      "points": 500,
+      "question": "من هو اللاعب الحاصل على جائزة أفضل لاعب شاب في كأس العالم 2018؟",
+      "answer": "كيليان مبابي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-500-7",
+      "points": 500,
+      "question": "من هم المنتخبين الذين تسبب مباراة كرة قدم في اندلاع الحرب بينهم؟",
+      "answer": "السلفادور وهندوراس",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-500-8",
+      "points": 500,
+      "question": "كم بلد عربي شاركت في بطولة كأس العالم عام 1990؟",
+      "answer": "بلدين (مصر والإمارات)",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-100-9",
+      "points": 100,
+      "question": "أي كأس عالم فازت فرنسا للمرة الأولى؟",
+      "answer": "1998",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-100-10",
+      "points": 100,
+      "question": "من فاز بكأس العالم 2018؟",
+      "answer": "فرنسا",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-100-11",
+      "points": 100,
+      "question": "في أي دولة أقيمت كأس العالم 2014؟",
+      "answer": "البرازيل",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-100-12",
+      "points": 100,
+      "question": "من هو أكثر لاعب فاز بكأس العالم؟",
+      "answer": "بيليه (3 مرات)",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-100-13",
+      "points": 100,
+      "question": "كم هدف سجله جوست فونتان في كأس العالم 1958؟",
+      "answer": "13 هدفاً",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-100-14",
+      "points": 100,
+      "question": "من هو الفريق الوحيد الذي خسر ثلاث نهائيات كأس العالم؟",
+      "answer": "ألمانيا",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-100-15",
+      "points": 100,
+      "question": "أي منتخب فاز بكأس العالم 2010؟",
+      "answer": "إسبانيا",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-100-16",
+      "points": 100,
+      "question": "من هو الحارس الوحيد الذي سجل هدف في كأس العالم؟",
+      "answer": "روجيليو مارتينيز",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-100-17",
+      "points": 100,
+      "question": "في أي عام أقيمت أول كأس عالم في أوروبا؟",
+      "answer": "1934 في إيطاليا",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-100-18",
+      "points": 100,
+      "question": "من هو أول لاعب سجل هاتريك في كأس العالم؟",
+      "answer": "بيرت باتينود",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-100-19",
+      "points": 100,
+      "question": "كم مرة استضافت المكسيك كأس العالم؟",
+      "answer": "مرتين (1970، 1986)",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-100-20",
+      "points": 100,
+      "question": "من هو الفريق الذي فاز بكأس العالم 2006؟",
+      "answer": "إيطاليا",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-100-21",
+      "points": 100,
+      "question": "أي دولة أقيمت كأس العالم 2002؟",
+      "answer": "كوريا الجنوبية واليابان",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-100-22",
+      "points": 100,
+      "question": "من هو اللاعب الذي سجل 4 أهداف في نهائي كأس العالم؟",
+      "answer": "جيف هيرست",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-100-23",
+      "points": 100,
+      "question": "من فاز بكأس العالم 1966؟",
+      "answer": "إنجلترا",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-100-24",
+      "points": 100,
+      "question": "كم مرة وصلت الأرجنتين لنهائي كأس العالم؟",
+      "answer": "5 مرات",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-100-25",
+      "points": 100,
+      "question": "من هو المدرب الذي قاد ألمانيا للفوز بكأس العالم 2014؟",
+      "answer": "يواخيم لو",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-100-26",
+      "points": 100,
+      "question": "في أي عام أقيمت كأس العالم 1994؟",
+      "answer": "1994 في الولايات المتحدة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-100-27",
+      "points": 100,
+      "question": "من هو الفريق الذي فاز بكأس العالم 1990؟",
+      "answer": "ألمانيا الغربية",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-100-28",
+      "points": 100,
+      "question": "كم هدف سجل المختار الديح في كأس العالم؟",
+      "answer": "هدف واحد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-100-29",
+      "points": 100,
+      "question": "من هو أول لاعب أفريقي يفوز بالحذاء الذهبي؟",
+      "answer": "إيباني ديومب",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-100-30",
+      "points": 100,
+      "question": "أي منتخب فاز بكأس العالم 1954؟",
+      "answer": "ألمانيا الغربية",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-100-31",
+      "points": 100,
+      "question": "من هو الفريق الذي فاز بكأس العالم 1978؟",
+      "answer": "الأرجنتين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-100-32",
+      "points": 100,
+      "question": "كم مرة تأهلت هولندا لنهائي كأس العالم؟",
+      "answer": "3 مرات",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-100-33",
+      "points": 100,
+      "question": "من هو الحارس الذي فاز بكأس العالم ببطولتين؟",
+      "answer": "دينو زوف",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-100-34",
+      "points": 100,
+      "question": "في أي عام أقيمت كأس العالم 1974؟",
+      "answer": "1974 في ألمانيا الغربية",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-100-35",
+      "points": 100,
+      "question": "من هو اللاعب الذي سجل أسرع هدف في كأس العالم؟",
+      "answer": "هركيس مولر",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-100-36",
+      "points": 100,
+      "question": "كم مرة استضافت إيطاليا كأس العالم؟",
+      "answer": "مرتين (1934، 1990)",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-100-37",
+      "points": 100,
+      "question": "من هو الفريق الذي فاز بكأس العالم 1962؟",
+      "answer": "البرازيل",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-100-38",
+      "points": 100,
+      "question": "كم مرة وصلت البرازيل لنهائي كأس العالم؟",
+      "answer": "7 مرات",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-100-39",
+      "points": 100,
+      "question": "من هو اللاعب الذي سجل هدف المباراة في نهائي 2010؟",
+      "answer": "أندريس إنييستا",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-100-40",
+      "points": 100,
+      "question": "أي منتخب فاز بكأس العالم 1958؟",
+      "answer": "البرازيل",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-100-41",
+      "points": 100,
+      "question": "من هو الحارس الذي سجل ركلة جزاء في كأس العالم؟",
+      "answer": "ياسين بنو",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-100-42",
+      "points": 100,
+      "question": "كم مرة تأهلت كرواتيا لنهائي كأس العالم؟",
+      "answer": "مرتين (2018، 2022)",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-100-43",
+      "points": 100,
+      "question": "من هو الفريق الذي فاز بكأس العالم 2022؟",
+      "answer": "الأرجنتين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-100-44",
+      "points": 100,
+      "question": "في أي دولة أقيمت كأس العالم 2018؟",
+      "answer": "روسيا",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-100-45",
+      "points": 100,
+      "question": "من هو اللاعب الذي فاز بالحذاء الذهبي في 2022؟",
+      "answer": "كيليان مبابي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-100-46",
+      "points": 100,
+      "question": "كم مرة استضافت فرنسا كأس العالم؟",
+      "answer": "مرتين (1938، 1998)",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-100-47",
+      "points": 100,
+      "question": "من هو الفريق الذي فاز بكأس العالم 1970؟",
+      "answer": "البرازيل",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-100-48",
+      "points": 100,
+      "question": "من هو أول لاعب يفوز بثلاث كؤوس عالم؟",
+      "answer": "بيليه",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-100-49",
+      "points": 100,
+      "question": "كم مرة تأهلت اليابان لكأس العالم؟",
+      "answer": "7 مرات",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-100-50",
+      "points": 100,
+      "question": "من هو الفريق الذي فاز بكأس العالم 1998؟",
+      "answer": "فرنسا",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-300-11",
+      "points": 300,
+      "question": "من هو اللاعب الذي سجل أسرع هاتريك في كأس العالم؟",
+      "answer": "جابييل باتيستوتا",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-300-12",
+      "points": 300,
+      "question": "كم مرة فاز كريستيانو رونالدو بالحذاء الذهبي؟",
+      "answer": "مرة واحدة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-300-13",
+      "points": 300,
+      "question": "من هو الفريق الذي سجل أكبر عدد من الأهداف في كأس عالم واحدة؟",
+      "answer": "المجر في 1954 (27 هدفاً)",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-300-14",
+      "points": 300,
+      "question": "من هو الحارس الذي تصدى لأكثر ركلات جزاء في كأس العالم؟",
+      "answer": "ليفي يشافي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-300-15",
+      "points": 300,
+      "question": "كم مرة فازت إسبانيا بكأس العالم؟",
+      "answer": "مرة واحدة (2010)",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-300-16",
+      "points": 300,
+      "question": "من هو اللاعب الذي سجل أهداف في ثلاث نهائيات كأس عالم؟",
+      "answer": "بيليه",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-300-17",
+      "points": 300,
+      "question": "كم مرة تأهلت إنجلترا لنهائي كأس العالم؟",
+      "answer": "مرتين (1966، 2022)",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-300-18",
+      "points": 300,
+      "question": "من هو الفريق الذي خسر أكبر عدد من النهائيات؟",
+      "answer": "ألمانيا (4 مرات)",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-300-19",
+      "points": 300,
+      "question": "من هو اللاعب الذي سجل هدف في كل مباراة في كأس عالم؟",
+      "answer": "جاست فونتان",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-300-20",
+      "points": 300,
+      "question": "كم مرة تأهلت المكسيك لكأس العالم؟",
+      "answer": "16 مرة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-300-21",
+      "points": 300,
+      "question": "من هو المدرب الذي فاز بكأس العالم كلاعب ومدرب؟",
+      "answer": "ماريو زاجالو",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-300-22",
+      "points": 300,
+      "question": "كم هدف سجل ليونيل ميسي في كأس العالم؟",
+      "answer": "13 هدفاً",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-300-23",
+      "points": 300,
+      "question": "من هو الفريق الذي فاز بكأس العالم 1938؟",
+      "answer": "إيطاليا",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-300-24",
+      "points": 300,
+      "question": "كم مرة تأهلت السعودية لكأس العالم؟",
+      "answer": "6 مرات",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-300-25",
+      "points": 300,
+      "question": "من هو اللاعب الذي سجل 5 أهداف في مباراة كأس عالم؟",
+      "answer": "تيوري هنري",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-300-26",
+      "points": 300,
+      "question": "كم مرة تأهلت تونس لكأس العالم؟",
+      "answer": "6 مرات",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-300-27",
+      "points": 300,
+      "question": "من هو الفريق الذي فاز بكأس العالم 1950؟",
+      "answer": "الأوروغواي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-300-28",
+      "points": 300,
+      "question": "كم مرة تأهلت الجزائر لكأس العالم؟",
+      "answer": "4 مرات",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-300-29",
+      "points": 300,
+      "question": "من هو اللاعب الذي سجل أسرع هدف في تاريخ كأس العالم؟",
+      "answer": "هاكان شوكور",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-300-30",
+      "points": 300,
+      "question": "كم مرة تأهلت المغرب لكأس العالم؟",
+      "answer": "6 مرات",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-300-31",
+      "points": 300,
+      "question": "من هو الفريق الذي فاز بكأس العالم 1986؟",
+      "answer": "الأرجنتين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-300-32",
+      "points": 300,
+      "question": "كم مرة تأهلت موريتانيا لكأس العالم؟",
+      "answer": "مرة واحدة (2018)",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-300-33",
+      "points": 300,
+      "question": "من هو اللاعب الذي سجل هدف في 4 كؤوس عالم؟",
+      "answer": "كريستيانو رونالدو",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-300-34",
+      "points": 300,
+      "question": "كم مرة تأهلت كوريا الجنوبية لكأس العالم؟",
+      "answer": "10 مرات",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-300-35",
+      "points": 300,
+      "question": "من هو الفريق الذي فاز بكأس العالم 1982؟",
+      "answer": "إيطاليا",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-300-36",
+      "points": 300,
+      "question": "كم مرة تأهلت إيران لكأس العالم؟",
+      "answer": "6 مرات",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-300-37",
+      "points": 300,
+      "question": "من هو اللاعب الذي سجل أكثر أهداف في كأس عالم واحد؟",
+      "answer": "جوست فونتان (13 هدفاً)",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-300-38",
+      "points": 300,
+      "question": "كم مرة تأهلت أستراليا لكأس العالم؟",
+      "answer": "5 مرات",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-300-39",
+      "points": 300,
+      "question": "من هو الفريق الذي فاز بكأس العالم 1998؟",
+      "answer": "فرنسا",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-300-40",
+      "points": 300,
+      "question": "كم مرة تأهلت الولايات المتحدة لكأس العالم؟",
+      "answer": "11 مرة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-300-41",
+      "points": 300,
+      "question": "من هو اللاعب الذي سجل أهداف في 5 كؤوس عالم؟",
+      "answer": "لا يوجد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-300-42",
+      "points": 300,
+      "question": "كم مرة تأهلت بلجيكا لكأس العالم؟",
+      "answer": "14 مرة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-300-43",
+      "points": 300,
+      "question": "من هو الفريق الذي فاز بكأس العالم 2014؟",
+      "answer": "ألمانيا",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-300-44",
+      "points": 300,
+      "question": "كم مرة تأهلت السويد لكأس العالم؟",
+      "answer": "12 مرة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-300-45",
+      "points": 300,
+      "question": "من هو اللاعب الذي سجل أهداف في كل كؤوس عالم شارك فيها؟",
+      "answer": "ليونيل ميسي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-300-46",
+      "points": 300,
+      "question": "كم مرة تأهلت سويسرا لكأس العالم؟",
+      "answer": "11 مرة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-300-47",
+      "points": 300,
+      "question": "من هو الفريق الذي فاز بكأس العالم 2010؟",
+      "answer": "إسبانيا",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-300-48",
+      "points": 300,
+      "question": "كم مرة تأهلت الدنمارك لكأس العالم؟",
+      "answer": "5 مرات",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-300-49",
+      "points": 300,
+      "question": "من هو اللاعب الذي سجل أهداف في 3 كؤوس عالم؟",
+      "answer": "ميروسلاف كلوزه",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-300-50",
+      "points": 300,
+      "question": "كم مرة تأهلت النرويج لكأس العالم؟",
+      "answer": "3 مرات",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-500-9",
+      "points": 500,
+      "question": "من هو الفريق الذي سجل أسرع هدف في نهائي كأس العالم؟",
+      "answer": "هولندا في 1978 (أول دقيقة)",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-500-10",
+      "points": 500,
+      "question": "كم مرة فازت البرازيل بكأس العالم خارج أوروبا؟",
+      "answer": "4 مرات",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-500-11",
+      "points": 500,
+      "question": "من هو اللاعب الذي سجل هدف في أول مشاركة له في كأس العالم؟",
+      "answer": "بيليه",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-500-12",
+      "points": 500,
+      "question": "كم مرة فازت ألمانيا بكأس العالم؟",
+      "answer": "4 مرات",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-500-13",
+      "points": 500,
+      "question": "من هو الفريق الذي فاز بكأس العالم بدون تعادل؟",
+      "answer": "إيطاليا في 1938",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-500-14",
+      "points": 500,
+      "question": "كم مرة فازت إيطاليا بكأس العالم؟",
+      "answer": "4 مرات",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-500-15",
+      "points": 500,
+      "question": "من هو اللاعب الذي سجل هدف في آخر مشاركة له في كأس العالم؟",
+      "answer": "زين الدين زيدان",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-500-16",
+      "points": 500,
+      "question": "كم مرة فازت الأرجنتين بكأس العالم؟",
+      "answer": "3 مرات",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-500-17",
+      "points": 500,
+      "question": "من هو الفريق الذي فاز بكأس العالم بدون هزيمة؟",
+      "answer": "إسبانيا في 2010",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-500-18",
+      "points": 500,
+      "question": "كم مرة فازت فرنسا بكأس العالم؟",
+      "answer": "مرتين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-500-19",
+      "points": 500,
+      "question": "من هو اللاعب الذي سجل هدف في 4 نهائيات كأس عالم؟",
+      "answer": "لا يوجد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-500-20",
+      "points": 500,
+      "question": "كم مرة فازت الأوروغواي بكأس العالم؟",
+      "answer": "مرتين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-500-21",
+      "points": 500,
+      "question": "من هو الفريق الذي فاز بكأس العالم بدون تلقي أي هدف؟",
+      "answer": "لا يوجد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-500-22",
+      "points": 500,
+      "question": "كم مرة فازت إنجلترا بكأس العالم؟",
+      "answer": "مرة واحدة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-500-23",
+      "points": 500,
+      "question": "من هو اللاعب الذي سجل أهداف في نهائيين كأس عالم؟",
+      "answer": "بيليه وغيرد مولر",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-500-24",
+      "points": 500,
+      "question": "كم مرة فازت إسبانيا بكأس العالم؟",
+      "answer": "مرة واحدة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-500-25",
+      "points": 500,
+      "question": "من هو الفريق الذي خسر نهائي كأس العالم بركلات الجزاء؟",
+      "answer": "ألمانيا في 1990",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-500-26",
+      "points": 500,
+      "question": "كم مرة فازت هولندا بكأس العالم؟",
+      "answer": "0 مرة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-500-27",
+      "points": 500,
+      "question": "من هو اللاعب الذي سجل هدف في أول نهائي كأس عالم؟",
+      "answer": "بيدرو سيزا",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-500-28",
+      "points": 500,
+      "question": "كم مرة فازت كرواتيا بكأس العالم؟",
+      "answer": "0 مرة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-500-29",
+      "points": 500,
+      "question": "من هو الفريق الذي فاز بكأس العالم بدون خسارة؟",
+      "answer": "البرازيل في 1970",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-500-30",
+      "points": 500,
+      "question": "كم مرة فازت ألمانيا الغربية بكأس العالم؟",
+      "answer": "3 مرات",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-500-31",
+      "points": 500,
+      "question": "من هو اللاعب الذي سجل هدف في آخر نهائي كأس عالم؟",
+      "answer": "كيليان مبابي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-500-32",
+      "points": 500,
+      "question": "كم مرة فازت المكسيك بكأس العالم؟",
+      "answer": "0 مرة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-500-33",
+      "points": 500,
+      "question": "من هو الفريق الذي فاز بكأس العالم بدون لعب أExtra time؟",
+      "answer": "البرازيل في 1994",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-500-34",
+      "points": 500,
+      "question": "كم مرة فازت السويد بكأس العالم؟",
+      "answer": "مرة واحدة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-500-35",
+      "points": 500,
+      "question": "من هو اللاعب الذي سجل هدف في نهائيين مختلفين؟",
+      "answer": "بيليه",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-500-36",
+      "points": 500,
+      "question": "كم مرة فازت تشيكوسلوفاكيا بكأس العالم؟",
+      "answer": "0 مرة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-500-37",
+      "points": 500,
+      "question": "من هو الفريق الذي فاز بكأس العالم بدون خسارة في المجموعات؟",
+      "answer": "إسبانيا في 2010",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-500-38",
+      "points": 500,
+      "question": "كم مرة فازت المجر بكأس العالم؟",
+      "answer": "0 مرة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-500-39",
+      "points": 500,
+      "question": "من هو اللاعب الذي سجل هدف في أول نهائي كأس عالم له؟",
+      "answer": "ليونيل ميسي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-500-40",
+      "points": 500,
+      "question": "كم مرة فازت النمسا بكأس العالم؟",
+      "answer": "0 مرة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-500-41",
+      "points": 500,
+      "question": "من هو الفريق الذي فاز بكأس العالم بدون أي تعادل؟",
+      "answer": "إيطاليا في 1934",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-500-42",
+      "points": 500,
+      "question": "كم مرة فازت البرازيل بالكأس؟",
+      "answer": "5 مرات",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-500-43",
+      "points": 500,
+      "question": "من هو اللاعب الذي سجل هدف في نهائي 2018؟",
+      "answer": "بول بوجبا وماركو أسينسيو",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-500-44",
+      "points": 500,
+      "question": "كم مرة فازت الأرجنتين بالكأس؟",
+      "answer": "3 مرات",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-500-45",
+      "points": 500,
+      "question": "من هو الفريق الذي فاز بكأس العالم بدون خسارة في النهائي؟",
+      "answer": "إيطاليا في 1934",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-500-46",
+      "points": 500,
+      "question": "كم مرة فازت ألمانيا الشرقية بكأس العالم؟",
+      "answer": "0 مرة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-500-47",
+      "points": 500,
+      "question": "من هو اللاعب الذي سجل هدف في نهائي 2006؟",
+      "answer": "زين الدين زيدان وماركو ماتراتزي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-500-48",
+      "points": 500,
+      "question": "كم مرة فازت يوغوسلافيا بكأس العالم؟",
+      "answer": "0 مرة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-500-49",
+      "points": 500,
+      "question": "من هو الفريق الذي فاز بكأس العالم بدون لعب ركلات جزاء؟",
+      "answer": "البرازيل في 2002",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "world-cup-500-50",
+      "points": 500,
+      "question": "كم مرة فازت تركيا بكأس العالم؟",
+      "answer": "0 مرة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    }
+  ],
+  "metadata": {
+    "sectionId": "sports",
+    "updatedAt": "2026-08-04",
+    "status": "ready"
+  }
 }

@@ -1,0 +1,610 @@
+{
+  "categoryId": "who-am-i-general",
+  "questions": [
+    {
+      "id": "who-am-i-general-100-1",
+      "points": 100,
+      "question": "من الشخصيه؟",
+      "answer": "",
+      "media": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "who-am-i-general-100-2",
+      "points": 100,
+      "question": "من الشخصيه؟",
+      "answer": "",
+      "media": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "who-am-i-general-100-3",
+      "points": 100,
+      "question": "من الشخصيه؟",
+      "answer": "",
+      "media": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "who-am-i-general-100-4",
+      "points": 100,
+      "question": "من الشخصيه؟",
+      "answer": "",
+      "media": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "who-am-i-general-100-5",
+      "points": 100,
+      "question": "من الشخصيه؟",
+      "answer": "",
+      "media": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "who-am-i-general-100-6",
+      "points": 100,
+      "question": "من الشخصيه؟",
+      "answer": "",
+      "media": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "who-am-i-general-100-7",
+      "points": 100,
+      "question": "من الشخصيه؟",
+      "answer": "",
+      "media": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "who-am-i-general-100-8",
+      "points": 100,
+      "question": "من الشخصيه؟",
+      "answer": "",
+      "media": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "who-am-i-general-100-9",
+      "points": 100,
+      "question": "من الشخصيه؟",
+      "answer": "",
+      "media": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "who-am-i-general-100-10",
+      "points": 100,
+      "question": "من الشخصيه؟",
+      "answer": "",
+      "media": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "who-am-i-general-100-11",
+      "points": 100,
+      "question": "من الشخصيه؟",
+      "answer": "",
+      "media": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "who-am-i-general-100-12",
+      "points": 100,
+      "question": "من الشخصيه؟",
+      "answer": "",
+      "media": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "who-am-i-general-100-13",
+      "points": 100,
+      "question": "من الشخصيه؟",
+      "answer": "",
+      "media": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "who-am-i-general-100-14",
+      "points": 100,
+      "question": "من الشخصيه؟",
+      "answer": "",
+      "media": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "who-am-i-general-100-15",
+      "points": 100,
+      "question": "من الشخصيه؟",
+      "answer": "",
+      "media": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "who-am-i-general-100-16",
+      "points": 100,
+      "question": "من الشخصيه؟",
+      "answer": "",
+      "media": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "who-am-i-general-100-17",
+      "points": 100,
+      "question": "من الشخصيه؟",
+      "answer": "",
+      "media": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "who-am-i-general-100-18",
+      "points": 100,
+      "question": "من الشخصيه؟",
+      "answer": "",
+      "media": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "who-am-i-general-100-19",
+      "points": 100,
+      "question": "من الشخصيه؟",
+      "answer": "",
+      "media": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "who-am-i-general-100-20",
+      "points": 100,
+      "question": "من الشخصيه؟",
+      "answer": "",
+      "media": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "who-am-i-general-100-21",
+      "points": 100,
+      "question": "من الشخصيه؟",
+      "answer": "",
+      "media": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "who-am-i-general-100-22",
+      "points": 100,
+      "question": "من الشخصيه؟",
+      "answer": "",
+      "media": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "who-am-i-general-100-23",
+      "points": 100,
+      "question": "من الشخصيه؟",
+      "answer": "",
+      "media": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "who-am-i-general-100-24",
+      "points": 100,
+      "question": "من الشخصيه؟",
+      "answer": "",
+      "media": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "who-am-i-general-100-25",
+      "points": 100,
+      "question": "من الشخصيه؟",
+      "answer": "",
+      "media": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "who-am-i-general-300-1",
+      "points": 300,
+      "question": "من الشخصيه؟",
+      "answer": "",
+      "media": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "who-am-i-general-300-2",
+      "points": 300,
+      "question": "من الشخصيه؟",
+      "answer": "",
+      "media": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "who-am-i-general-300-3",
+      "points": 300,
+      "question": "من الشخصيه؟",
+      "answer": "",
+      "media": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "who-am-i-general-300-4",
+      "points": 300,
+      "question": "من الشخصيه؟",
+      "answer": "",
+      "media": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "who-am-i-general-300-5",
+      "points": 300,
+      "question": "من الشخصيه؟",
+      "answer": "",
+      "media": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "who-am-i-general-300-6",
+      "points": 300,
+      "question": "من الشخصيه؟",
+      "answer": "",
+      "media": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "who-am-i-general-300-7",
+      "points": 300,
+      "question": "من الشخصيه؟",
+      "answer": "",
+      "media": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "who-am-i-general-300-8",
+      "points": 300,
+      "question": "من الشخصيه؟",
+      "answer": "",
+      "media": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "who-am-i-general-300-9",
+      "points": 300,
+      "question": "من الشخصيه؟",
+      "answer": "",
+      "media": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "who-am-i-general-300-10",
+      "points": 300,
+      "question": "من الشخصيه؟",
+      "answer": "",
+      "media": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "who-am-i-general-300-11",
+      "points": 300,
+      "question": "من الشخصيه؟",
+      "answer": "",
+      "media": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "who-am-i-general-300-12",
+      "points": 300,
+      "question": "من الشخصيه؟",
+      "answer": "",
+      "media": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "who-am-i-general-300-13",
+      "points": 300,
+      "question": "من الشخصيه؟",
+      "answer": "",
+      "media": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "who-am-i-general-300-14",
+      "points": 300,
+      "question": "من الشخصيه؟",
+      "answer": "",
+      "media": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "who-am-i-general-300-15",
+      "points": 300,
+      "question": "من الشخصيه؟",
+      "answer": "",
+      "media": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "who-am-i-general-300-16",
+      "points": 300,
+      "question": "من الشخصيه؟",
+      "answer": "",
+      "media": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "who-am-i-general-300-17",
+      "points": 300,
+      "question": "من الشخصيه؟",
+      "answer": "",
+      "media": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "who-am-i-general-300-18",
+      "points": 300,
+      "question": "من الشخصيه؟",
+      "answer": "",
+      "media": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "who-am-i-general-300-19",
+      "points": 300,
+      "question": "من الشخصيه؟",
+      "answer": "",
+      "media": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "who-am-i-general-300-20",
+      "points": 300,
+      "question": "من الشخصيه؟",
+      "answer": "",
+      "media": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "who-am-i-general-300-21",
+      "points": 300,
+      "question": "من الشخصيه؟",
+      "answer": "",
+      "media": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "who-am-i-general-300-22",
+      "points": 300,
+      "question": "من الشخصيه؟",
+      "answer": "",
+      "media": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "who-am-i-general-300-23",
+      "points": 300,
+      "question": "من الشخصيه؟",
+      "answer": "",
+      "media": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "who-am-i-general-300-24",
+      "points": 300,
+      "question": "من الشخصيه؟",
+      "answer": "",
+      "media": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "who-am-i-general-300-25",
+      "points": 300,
+      "question": "من الشخصيه؟",
+      "answer": "",
+      "media": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "who-am-i-general-500-1",
+      "points": 500,
+      "question": "من الشخصيه؟",
+      "answer": "",
+      "media": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "who-am-i-general-500-2",
+      "points": 500,
+      "question": "من الشخصيه؟",
+      "answer": "",
+      "media": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "who-am-i-general-500-3",
+      "points": 500,
+      "question": "من الشخصيه؟",
+      "answer": "",
+      "media": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "who-am-i-general-500-4",
+      "points": 500,
+      "question": "من الشخصيه؟",
+      "answer": "",
+      "media": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "who-am-i-general-500-5",
+      "points": 500,
+      "question": "من الشخصيه؟",
+      "answer": "",
+      "media": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "who-am-i-general-500-6",
+      "points": 500,
+      "question": "من الشخصيه؟",
+      "answer": "",
+      "media": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "who-am-i-general-500-7",
+      "points": 500,
+      "question": "من الشخصيه؟",
+      "answer": "",
+      "media": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "who-am-i-general-500-8",
+      "points": 500,
+      "question": "من الشخصيه؟",
+      "answer": "",
+      "media": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "who-am-i-general-500-9",
+      "points": 500,
+      "question": "من الشخصيه؟",
+      "answer": "",
+      "media": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "who-am-i-general-500-10",
+      "points": 500,
+      "question": "من الشخصيه؟",
+      "answer": "",
+      "media": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "who-am-i-general-500-11",
+      "points": 500,
+      "question": "من الشخصيه؟",
+      "answer": "",
+      "media": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "who-am-i-general-500-12",
+      "points": 500,
+      "question": "من الشخصيه؟",
+      "answer": "",
+      "media": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "who-am-i-general-500-13",
+      "points": 500,
+      "question": "من الشخصيه؟",
+      "answer": "",
+      "media": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "who-am-i-general-500-14",
+      "points": 500,
+      "question": "من الشخصيه؟",
+      "answer": "",
+      "media": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "who-am-i-general-500-15",
+      "points": 500,
+      "question": "من الشخصيه؟",
+      "answer": "",
+      "media": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "who-am-i-general-500-16",
+      "points": 500,
+      "question": "من الشخصيه؟",
+      "answer": "",
+      "media": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "who-am-i-general-500-17",
+      "points": 500,
+      "question": "من الشخصيه؟",
+      "answer": "",
+      "media": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "who-am-i-general-500-18",
+      "points": 500,
+      "question": "من الشخصيه؟",
+      "answer": "",
+      "media": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "who-am-i-general-500-19",
+      "points": 500,
+      "question": "من الشخصيه؟",
+      "answer": "",
+      "media": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "who-am-i-general-500-20",
+      "points": 500,
+      "question": "من الشخصيه؟",
+      "answer": "",
+      "media": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "who-am-i-general-500-21",
+      "points": 500,
+      "question": "من الشخصيه؟",
+      "answer": "",
+      "media": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "who-am-i-general-500-22",
+      "points": 500,
+      "question": "من الشخصيه؟",
+      "answer": "",
+      "media": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "who-am-i-general-500-23",
+      "points": 500,
+      "question": "من الشخصيه؟",
+      "answer": "",
+      "media": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "who-am-i-general-500-24",
+      "points": 500,
+      "question": "من الشخصيه؟",
+      "answer": "",
+      "media": "",
+      "mediaType": "image"
+    },
+    {
+      "id": "who-am-i-general-500-25",
+      "points": 500,
+      "question": "من الشخصيه؟",
+      "answer": "",
+      "media": "",
+      "mediaType": "image"
+    }
+  ],
+  "metadata": {
+    "sectionId": "general",
+    "updatedAt": "2026-08-05",
+    "status": "pending"
+  }
+}

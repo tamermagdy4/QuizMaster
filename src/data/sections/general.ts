@@ -139,4 +139,16 @@ export const generalCategories: GameCategory[] = [
     gradient: 'from-rose-500/70 via-pink-600/50 to-rose-900/70',
     accent: '#fb7185',
   },
+  {
+    id: 'who-am-i-general',
+    title: 'من أنا؟',
+    icon: '❓',
+    image: '❓',
+    description: 'الشخصيات المشهورة والمعروفة',
+    questionCount: 75,
+    difficulty: 'medium',
+    sectionId: 'general',
+    gradient: 'from-violet-500/70 via-purple-600/50 to-indigo-900/70',
+    accent: '#8b5cf6',
+  },
 ]

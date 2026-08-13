@@ -1,11 +1,910 @@
-﻿{
-    "categoryId":  "dc",
-    "questions":  [
-
-                  ],
-    "metadata":  {
-                     "sectionId":  "movies",
-                     "updatedAt":  "2026-08-03",
-                     "status":  "pending"
-                 }
+{
+  "categoryId": "dc",
+  "questions": [
+    {
+      "id": "dc-100-1",
+      "points": 100,
+      "question": "من هو الممثل الذي لعب دور باتمان في أفلام كريستوفر نولان؟",
+      "answer": "كريستيان بيل",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "dc-100-2",
+      "points": 100,
+      "question": "من هي الممثلة التي لعبت دور ووندر وومان في أفلام DC؟",
+      "answer": "غال غادوت",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "dc-100-3",
+      "points": 100,
+      "question": "من هو الممثل الذي لعب دور سوبرمان في فيلم Man of Steel؟",
+      "answer": "هنري كافيل",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "dc-100-4",
+      "points": 100,
+      "question": "من هو الممثل الذي لعب دور الجوكر في فيلم Dark Knight؟",
+      "answer": "هيث ليدجر",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "dc-100-5",
+      "points": 100,
+      "question": "من هو الممثل الذي لعب دور هارلي كوين في أفلام DC؟",
+      "answer": "مارغوت روبي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "dc-100-6",
+      "points": 100,
+      "question": "من هو الممثل الذي لعب دور أكوامان في أفلام DC؟",
+      "answer": "جيسون موموا",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "dc-100-7",
+      "points": 100,
+      "question": "من هو الممثل الذي لعب دور فلاش في أفلام DC؟",
+      "answer": "إيزيايل ميلر",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "dc-100-8",
+      "points": 100,
+      "question": "من هو الممثل الذي لعب دور باتمان في فيلم Batman v Superman؟",
+      "answer": "بن أفليك",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "dc-100-9",
+      "points": 100,
+      "question": "من هو الممثل الذي لعب دور سوبرمان في أفلام DC الحديثة؟",
+      "answer": "هنري كافيل",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "dc-100-10",
+      "points": 100,
+      "question": "من هي الممثلة التي لعبت دور كات وومان في فيلم The Dark Knight Rises؟",
+      "answer": "آن هاثاواي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "dc-100-11",
+      "points": 100,
+      "question": "من هو الممثل الذي لعب دو جوك في فيلم Suicide Squad؟",
+      "answer": "جاريد ليتو",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "dc-100-12",
+      "points": 100,
+      "question": "من هو الممثل الذي لعب دور ديدشوت في فيلم Suicide Squad؟",
+      "answer": "ويل سميث",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "dc-100-13",
+      "points": 100,
+      "question": "من هي الممثلة التي لعبت دور بويشر في أفلام DC؟",
+      "answer": "كارا ديليفين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "dc-100-14",
+      "points": 100,
+      "question": "من هو الممثل الذي لعب دور سايبورغ في أفلام DC؟",
+      "answer": "راي فيشر",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "dc-100-15",
+      "points": 100,
+      "question": "من هو الممثل الذي لعب دور لويس لين في أفلام DC؟",
+      "answer": "آدمي كلاوس",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "dc-100-16",
+      "points": 100,
+      "question": "من هي الممثلة التي لعبت دور لويس لين في أفلام DC؟",
+      "answer": "آدمي كلاوس",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "dc-100-17",
+      "points": 100,
+      "question": "من هو الممثل الذي لعب دور جيمس غوردون في أفلام كريستوفر نولان؟",
+      "answer": "غاري أولدمان",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "dc-100-18",
+      "points": 100,
+      "question": "من هو الممثل الذي لعب دور رأس الغول في فيلم Batman Begins؟",
+      "answer": "ليام نيسون",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "dc-100-19",
+      "points": 100,
+      "question": "من هو الممثل الذي لعب دور التوفيدي في فيلم The Dark Knight؟",
+      "answer": "آرون إيكهارت",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "dc-100-20",
+      "points": 100,
+      "question": "من هو الممثل الذي لعب دور بيني في فيلم The Dark Knight Rises؟",
+      "answer": "توم هاردي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "dc-100-21",
+      "points": 100,
+      "question": "من هو الممثل الذي لعب دور زود في فيلم Man of Steel؟",
+      "answer": "مايكل شانون",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "dc-100-22",
+      "points": 100,
+      "question": "من هي الممثلة التي لعبت دور فاورا في فيلم Man of Steel؟",
+      "answer": "أنطونيا توماس",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "dc-100-23",
+      "points": 100,
+      "question": "من هو الممثل الذي لعب دور ليكس لوثر في أفلام DC؟",
+      "answer": "جيسي آيزنبرغ",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "dc-100-24",
+      "points": 100,
+      "question": "من هو الممثل الذي لعب دور دوومسداي في فيلم Batman v Superman؟",
+      "answer": "روبن أتكينز داونز",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "dc-100-25",
+      "points": 100,
+      "question": "من هو الممثل الذي لعب دور ميرا في فيلم Aquaman؟",
+      "answer": "أمبر هيرد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "dc-100-26",
+      "points": 100,
+      "question": "من هو الممثل الذي لعب دور أورم في فيلم Aquaman؟",
+      "answer": "باتريك ويلسون",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "dc-100-27",
+      "points": 100,
+      "question": "من هي الممثلة التي لعبت دور هيرا في فيلم Wonder Woman؟",
+      "answer": "روبن رايت",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "dc-100-28",
+      "points": 100,
+      "question": "من هو الممثل الذي لعب دور ستيف تريفور في فيلم Wonder Woman؟",
+      "answer": "كريس باين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "dc-100-29",
+      "points": 100,
+      "question": "من هو الممثل الذي لعب دور أريس في فيلم Wonder Woman؟",
+      "answer": "ديفيد ثيوليس",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "dc-100-30",
+      "points": 100,
+      "question": "من هي الممثلة التي لعبت دور تشيتا في فيلم Wonder Woman 1984؟",
+      "answer": "كريستين ويغ",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "dc-300-1",
+      "points": 300,
+      "question": "ما هو اسم المدينة التي يعيش فيها باتمان؟",
+      "answer": "غوثام",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "dc-300-2",
+      "points": 300,
+      "question": "ما هو اسم المدينة التي يعيش فيها سوبرمان؟",
+      "answer": "ميتروبوليس",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "dc-300-3",
+      "points": 300,
+      "question": "ما هو الاسم الحقيقي لباتمان؟",
+      "answer": "بروس واين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "dc-300-4",
+      "points": 300,
+      "question": "ما هو الاسم الحقيقي لسوبرمان؟",
+      "answer": "كلارك كينت",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "dc-300-5",
+      "points": 300,
+      "question": "ما هو الاسم الحقيقي لووندر وومان؟",
+      "answer": "ديانا برنس",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "dc-300-6",
+      "points": 300,
+      "question": "ما هو الاسم الحقيقي لأكوامان؟",
+      "answer": "آرثر كاري",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "dc-300-7",
+      "points": 300,
+      "question": "ما هو الاسم الحقيقي لفلاش؟",
+      "answer": "باري ألن",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "dc-300-8",
+      "points": 300,
+      "question": "ما هو الاسم الحقيقي لسايبورغ؟",
+      "answer": "فيكتور ستون",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "dc-300-9",
+      "points": 300,
+      "question": "من هو الخصم الرئيسي لباتمان؟",
+      "answer": "الجوكر",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "dc-300-10",
+      "points": 300,
+      "question": "من هو الخصم الرئيسي لسوبرمان؟",
+      "answer": "ليكس لوثر",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "dc-300-11",
+      "points": 300,
+      "question": "من هو الخصم الرئيسي لووندر وومان؟",
+      "answer": "أريس",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "dc-300-12",
+      "points": 300,
+      "question": "من هو الخصم الرئيسي لأكوامان؟",
+      "answer": "أورم",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "dc-300-13",
+      "points": 300,
+      "question": "ما هو اسم جزيرة ووندر وومان؟",
+      "answer": "ثيميسكيرا",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "dc-300-14",
+      "points": 300,
+      "question": "من هو أب باتمان؟",
+      "answer": "توماس واين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "dc-300-15",
+      "points": 300,
+      "question": "من هي أم باتمان؟",
+      "answer": "مارثا واين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "dc-300-16",
+      "points": 300,
+      "question": "من هو أب سوبرمان البيولوجي؟",
+      "answer": "جوريل",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "dc-300-17",
+      "points": 300,
+      "question": "من هي أم سوبرمان البيولوجية؟",
+      "answer": "لارا",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "dc-300-18",
+      "points": 300,
+      "question": "من هما والدا سوبرمان بالتبني؟",
+      "answer": "جوناثان ومارثا كينت",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "dc-300-19",
+      "points": 300,
+      "question": "ما هو اسم الخيل الذي يركبه باتمان؟",
+      "answer": "بات موبيل",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "dc-300-20",
+      "points": 300,
+      "question": "ما هو اسم السيارة التي يستخدمها باتمان؟",
+      "answer": "بات موبيل",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "dc-300-21",
+      "points": 300,
+      "question": "من هو الخادم المخلص لعائلة واين؟",
+      "answer": "ألفريد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "dc-300-22",
+      "points": 300,
+      "question": "ما هو الاسم الكامل لألفريد؟",
+      "answer": "ألفريد بينيورث",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "dc-300-23",
+      "points": 300,
+      "question": "من هو كوميسنير الشرطة المتعاون مع باتمان؟",
+      "answer": "جيمس غوردون",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "dc-300-24",
+      "points": 300,
+      "question": "ما هو اسم الطبيعة التي تمتلكها ووندر وومان؟",
+      "answer": "إلهة الحب والحرب",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "dc-300-25",
+      "points": 300,
+      "question": "ما هو اسم السلاح الرئيسي لووندر وومان؟",
+      "answer": "اللاسو",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "dc-300-26",
+      "points": 300,
+      "question": "ما هو نوع الخرز الذي تمتلكه ووندر وومان؟",
+      "answer": "خرز الحقيقة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "dc-300-27",
+      "points": 300,
+      "question": "ما هو اسم الكوكب الذي جاء منه سوبرمان؟",
+      "answer": "كريبتون",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "dc-300-28",
+      "points": 300,
+      "question": "ما هو اسم المعدن الذي يضعف سوبرمان؟",
+      "answer": "الكرابتونيت",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "dc-300-29",
+      "points": 300,
+      "question": "ما هو اسم المملكة التي يحكمها أكوامان؟",
+      "answer": "أتلانتس",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "dc-300-30",
+      "points": 300,
+      "question": "ما هو اسم القوة التي يمتلكها فلاش؟",
+      "answer": "السرعة الخارقة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "dc-300-31",
+      "points": 300,
+      "question": "من هو المخلق الأول لسايبورغ؟",
+      "answer": "ساتو",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "dc-300-32",
+      "points": 300,
+      "question": "ما هو اسم الجراد التي يقاتلها سايبورغ؟",
+      "answer": "مومو",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "dc-300-33",
+      "points": 300,
+      "question": "من هو الشريك الأول لباتمان؟",
+      "answer": "روبن",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "dc-300-34",
+      "points": 300,
+      "question": "ما هو الاسم الحقيقي لروبين الأول؟",
+      "answer": "ديك غرايسون",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "dc-300-35",
+      "points": 300,
+      "question": "من هو الخصم الذي قتل جيسون تود؟",
+      "answer": "الجوكر",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "dc-500-1",
+      "points": 500,
+      "question": "من هو الخصم الذي قتل والدي باتمان؟",
+      "answer": "جو تشيل",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "dc-500-2",
+      "points": 500,
+      "question": "من هو الممثل الذي لعب دور باتمان في فيلم Batman 1989؟",
+      "answer": "مايكل كيتون",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "dc-500-3",
+      "points": 500,
+      "question": "من هو الممثل الذي لعب دور الجوكر في فيلم Batman 1989؟",
+      "answer": "جاك نيكلسون",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "dc-500-4",
+      "points": 500,
+      "question": "من هي الممثلة التي لعبت دور كات وومان في فيلم Batman Returns؟",
+      "answer": "ميشيل فيفر",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "dc-500-5",
+      "points": 500,
+      "question": "من هو الممثل الذي لعب دور بينجوين في فيلم Batman Returns؟",
+      "answer": "ديفون ساويا",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "dc-500-6",
+      "points": 500,
+      "question": "من هو الممثل الذي لعب دور ريدلر في فيلم Batman Forever؟",
+      "answer": "جيم كاري",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "dc-500-7",
+      "points": 500,
+      "question": "من هو الممثل الذي لعب دور تو فيس في فيلم Batman Forever؟",
+      "answer": "تومي لي جونز",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "dc-500-8",
+      "points": 500,
+      "question": "من هو الممثل الذي لعب دور باتمان في فيلم Batman & Robin؟",
+      "answer": "جورج كلوني",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "dc-500-9",
+      "points": 500,
+      "question": "من هو الممثل الذي لعب دور باني في فيلم Batman & Robin؟",
+      "answer": "أرنولد شوارزنيجر",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "dc-500-10",
+      "points": 500,
+      "question": "من هي الممثلة التي لعبت دور آيس في فيلم Batman & Robin؟",
+      "answer": "أوميما ثورمان",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "dc-500-11",
+      "points": 500,
+      "question": "من هو الممثل الذي لعب دور سوبرمان في أفلام كريستوفر ريف؟",
+      "answer": "كريستوفر ريف",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "dc-500-12",
+      "points": 500,
+      "question": "من هي الممثلة التي لعبت دور لويس لين في أفلام كريستوفر ريف؟",
+      "answer": "مارجوت كيدر",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "dc-500-13",
+      "points": 500,
+      "question": "من هو الممثل الذي لعب دور ليكس لوثر في أفلام كريستوفر ريف؟",
+      "answer": "جين هاكمان",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "dc-500-14",
+      "points": 500,
+      "question": "من هو الممثل الذي لعب دور زود في أفلام كريستوفر ريف؟",
+      "answer": "تيرينس ستامب",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "dc-500-15",
+      "points": 500,
+      "question": "من هو الممثل الذي لعب دور باتمان في فيلم Batman v Superman؟",
+      "answer": "بن أفليك",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "dc-500-16",
+      "points": 500,
+      "question": "من هو الممثل الذي لعب دور الجوكر في فيلم Suicide Squad؟",
+      "answer": "جاريد ليتو",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "dc-500-17",
+      "points": 500,
+      "question": "من هو الممثل الذي لعب دور باتمان في فيلم The Batman 2022؟",
+      "answer": "روبرت باتنسون",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "dc-500-18",
+      "points": 500,
+      "question": "من هو الممثل الذي لعب دور الجوكر في فيلم The Batman 2022؟",
+      "answer": "باري كيوجان",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "dc-500-19",
+      "points": 500,
+      "question": "من هي الممثلة التي لعبت دور كات وومان في فيلم The Batman 2022؟",
+      "answer": "زوي كرافيتز",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "dc-500-20",
+      "points": 500,
+      "question": "من هو الممثل الذي لعب role ريدلر في فيلم The Batman 2022؟",
+      "answer": "بول دانو",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "dc-500-21",
+      "points": 500,
+      "question": "من هو الممثل الذي لعب دور بينجوين في فيلم The Batman 2022؟",
+      "answer": "كولين فاريل",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "dc-500-22",
+      "points": 500,
+      "question": "من هو المخرج الذي أخرج ثلاثية كريستوفر نولان لباتمان؟",
+      "answer": "كريستوفر نولان",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "dc-500-23",
+      "points": 500,
+      "question": "من هو المخرج الذي أخرج أفلام DC الحديثة؟",
+      "answer": "زاك سنايدر",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "dc-500-24",
+      "points": 500,
+      "question": "من هو المخرج الذي أخرج فيلم Wonder Woman؟",
+      "answer": "باتي جينكينز",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "dc-500-25",
+      "points": 500,
+      "question": "من هو المخرج الذي أخرج فيلم Aquaman؟",
+      "answer": "جيمس وان",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "dc-500-26",
+      "points": 500,
+      "question": "من هو المخرج الذي أخرج فيلم The Batman 2022؟",
+      "answer": "مات ريفز",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "dc-500-27",
+      "points": 500,
+      "question": "من هو الكاتب الذي خلق شخصية باتمان؟",
+      "answer": "بوب كين وبيل فينجر",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "dc-500-28",
+      "points": 500,
+      "question": "من هو الكاتب الذي خلق شخصية سوبرمان؟",
+      "answer": "جيري سيغيل وجو شوستار",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "dc-500-29",
+      "points": 500,
+      "question": "من هو الكاتب الذي خلق شخصية ووندر وومان؟",
+      "answer": "ويليام مولتون مارستون",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "dc-500-30",
+      "points": 500,
+      "question": "من هو الكاتب الذي خلق شخصية الجوكر؟",
+      "answer": "بوب كين وبيل فينجر وجerry robinson",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "dc-500-31",
+      "points": 500,
+      "question": "ما هو عنوان أول فيلم باتمان؟",
+      "answer": "Batman",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "dc-500-32",
+      "points": 500,
+      "question": "ما هو عنوان أول فيلم سوبرمان؟",
+      "answer": "Superman",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "dc-500-33",
+      "points": 500,
+      "question": "ما هو عنوان أول فيلم ووندر وومان؟",
+      "answer": "Wonder Woman",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "dc-500-34",
+      "points": 500,
+      "question": "ما هو عنوان أول فيلم أكوامان؟",
+      "answer": "Aquaman",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "dc-500-35",
+      "points": 500,
+      "question": "ما هو اسم الفريق الذي يجمع أبطال DC؟",
+      "answer": "Justice League",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    }
+  ],
+  "metadata": {
+    "sectionId": "movies",
+    "updatedAt": "2026-08-05",
+    "status": "ready"
+  }
 }

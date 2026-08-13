@@ -1,22 +1,622 @@
-﻿{
+{
   "categoryId": "football",
   "questions": [
     {
+      "id": "football-100-1",
+      "points": 100,
       "question": "كم عدد اللاعبين الأساسيين في مباراة كرة القدم في وقت واحد؟",
-      "answer": "11 لاعبًا من كل فريق."
+      "answer": "11 لاعبًا من كل فريق",
+      "image": "",
+      "media": "",
+      "mediaType": ""
     },
     {
+      "id": "football-100-2",
+      "points": 100,
       "question": "ما اسم البطولة العالمية لكرة القدم التي تُقام كل 4 سنوات؟",
-      "answer": "كأس العالم FIFA."
+      "answer": "كأس العالم FIFA",
+      "image": "",
+      "media": "",
+      "mediaType": ""
     },
     {
+      "id": "football-100-3",
+      "points": 100,
       "question": "من هو اللاعب الذي فاز بالكرة الذهبية في 2023؟",
-      "answer": "إيرلينغ هالاند."
+      "answer": "إيرلينغ هالاند",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "football-100-4",
+      "points": 100,
+      "question": "ما هو اسم النادي الذي لعب له كريستيانو رونالدو في البرتغال؟",
+      "answer": "سبورتينج لشبونة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "football-100-5",
+      "points": 100,
+      "question": "ما هو اسم النادي الذي يلعب له ليونيل ميسي حالياً؟",
+      "answer": "إنتر ميامي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "football-100-6",
+      "points": 100,
+      "question": "ما هو الملعب الذي يلعب فيه ريال مدريد؟",
+      "answer": "سانتياغو برنابيو",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "football-100-7",
+      "points": 100,
+      "question": "ما هو اسم البطولة الأوروبية للنوادي؟",
+      "answer": "دوري أبطال أوروبا",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "football-100-8",
+      "points": 100,
+      "question": "من هو الفريق الذي فاز بكأس العالم 2022؟",
+      "answer": "الأرجنتين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "football-100-9",
+      "points": 100,
+      "question": "ما هو اسم النادي الذي يلعب فيه محمد صلاح؟",
+      "answer": "ليفربول",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "football-100-10",
+      "points": 100,
+      "question": "ما هو اسم الملعب الذي يلعب فيه برشلونة؟",
+      "answer": "نو كامب",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "football-100-11",
+      "points": 100,
+      "question": "من هو المدرب الذي قاد فرنسا للفوز بكأس العالم 2018؟",
+      "answer": "ديديه ديشامب",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "football-100-12",
+      "points": 100,
+      "question": "ما هو اسم البطولة الأوروبية للمنتخبات؟",
+      "answer": "البطولة الأوروبية",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "football-100-13",
+      "points": 100,
+      "question": "من هو الفريق الذي فاز بالبطولة الأوروبية 2020؟",
+      "answer": "إيطاليا",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "football-100-14",
+      "points": 100,
+      "question": "ما هو الملعب الذي يلعب فيه مانشستر يونايتد؟",
+      "answer": "أولد ترافورد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "football-100-15",
+      "points": 100,
+      "question": "من هو اللاعب الذي يلعب لنادي باريس سان جيرمان؟",
+      "answer": "كيليان مباببي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "football-100-16",
+      "points": 100,
+      "question": "ما هو اسم الدوري الإنجليزي الممتاز؟",
+      "answer": "الدوري الإنجليزي الممتاز",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "football-100-17",
+      "points": 100,
+      "question": "من هو الهداف التاريخي للدوري الإنجليزي؟",
+      "answer": "آلان شيرر",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "football-100-18",
+      "points": 100,
+      "question": "ما هو اسم الدوري الإسباني؟",
+      "answer": "لا ليغا",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "football-100-19",
+      "points": 100,
+      "question": "من هو الهداف التاريخي للا ليغا؟",
+      "answer": "ليونيل ميسي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "football-100-20",
+      "points": 100,
+      "question": "ما هو اسم الدوري الألماني؟",
+      "answer": "بوندسليغا",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "football-100-21",
+      "points": 100,
+      "question": "من هو الفريق الذي فاز بكأس العالم 2014؟",
+      "answer": "ألمانيا",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "football-100-22",
+      "points": 100,
+      "question": "ما هو الملعب الذي يلعب فيه ليفربول؟",
+      "answer": "أنفيلد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "football-100-23",
+      "points": 100,
+      "question": "من هو المدرب الذي قاد ألمانيا للفوز بكأس العالم 2014؟",
+      "answer": "يواكيم لو",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "football-100-24",
+      "points": 100,
+      "question": "ما هو اسم البطولة الأفريقية للأمم؟",
+      "answer": "كأس الأمم الأفريقية",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "football-100-25",
+      "points": 100,
+      "question": "من هو الفريق الذي فاز بكأس الأمم الأفريقية 2021؟",
+      "answer": "السنغال",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "football-300-1",
+      "points": 300,
+      "question": "كم عدد مرات فوز ريال مدريد بدوري أبطال أوروبا؟",
+      "answer": "15 مرة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "football-300-2",
+      "points": 300,
+      "question": "من هو الهداف التاريخي لدوري أبطال أوروبا؟",
+      "answer": "كريستيانو رونالدو",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "football-300-3",
+      "points": 300,
+      "question": "كم عدد مرات فوز البرازيل بكأس العالم؟",
+      "answer": "5 مرات",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "football-300-4",
+      "points": 300,
+      "question": "من هو اللاعب الذي سجل أسرع هاتريك في كأس العالم؟",
+      "answer": "إريك بروبست",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "football-300-5",
+      "points": 300,
+      "question": "كم عدد مرات فوز مانشستر يونايتد بالدوري الإنجليزي؟",
+      "answer": "20 مرة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "football-300-6",
+      "points": 300,
+      "question": "من هو المدرب الذي قاد ليستر سيتي للفوز بالدوري الإنجليزي؟",
+      "answer": "كلاوديو رانييري",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "football-300-7",
+      "points": 300,
+      "question": "كم عدد مرات فوز إيطاليا بكأس العالم؟",
+      "answer": "4 مرات",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "football-300-8",
+      "points": 300,
+      "question": "من هو اللاعب الذي سجل هدف المارادونا في كأس العالم 1986؟",
+      "answer": "دييجو مارادونا",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "football-300-9",
+      "points": 300,
+      "question": "كم عدد مرات فوز ألمانيا بكأس العالم؟",
+      "answer": "4 مرات",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "football-300-10",
+      "points": 300,
+      "question": "من هو المدرب الذي قاد الأرجنتين للفوز بكأس العالم 2022؟",
+      "answer": "ليونيل سكالوني",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "football-300-11",
+      "points": 300,
+      "question": "كم عدد مرات فوز برشلونة بدوري أبطال أوروبا؟",
+      "answer": "5 مرات",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "football-300-12",
+      "points": 300,
+      "question": "من هو اللاعب الذي فاز بأكبر عدد من جوائز الكرة الذهبية؟",
+      "answer": "ليونيل ميسي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "football-300-13",
+      "points": 300,
+      "question": "كم عدد مرات فوز الأوروغواي بكأس العالم؟",
+      "answer": "مرتين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "football-300-14",
+      "points": 300,
+      "question": "من هو اللاعب الذي سجل أكثر من 700 هدف في مسيرته المهنية؟",
+      "answer": "كريستيانو رونالدو",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "football-300-15",
+      "points": 300,
+      "question": "كم عدد مرات فوز فرنسا بكأس العالم؟",
+      "answer": "مرتين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "football-300-16",
+      "points": 300,
+      "question": "من هو المدرب الذي قاد إسبانيا للفوز بكأس العالم 2010؟",
+      "answer": "فيسنتي ديل بوسكي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "football-300-17",
+      "points": 300,
+      "question": "كم عدد مرات فوز إنجلترا بكأس العالم؟",
+      "answer": "مرة واحدة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "football-300-18",
+      "points": 300,
+      "question": "من هو اللاعب الذي سجل هدف الزيادون في نهائي كأس العالم 2022؟",
+      "answer": "كيليان مبابي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "football-300-19",
+      "points": 300,
+      "question": "كم عدد مرات فوز الأرجنتين بكأس العالم؟",
+      "answer": "3 مرات",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "football-300-20",
+      "points": 300,
+      "question": "من هو المدرب الذي قاد البرتغال للفوز بالبطولة الأوروبية 2016؟",
+      "answer": "فرناندو سانتوس",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "football-300-21",
+      "points": 300,
+      "question": "كم عدد مرات فوز الأرجنتين بالبطولة الأوروبية؟",
+      "answer": "مرتين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "football-300-22",
+      "points": 300,
+      "question": "من هو اللاعب الذي سجل هدف الموسم ضد غزة في نهائي كأس العالم 1986؟",
+      "answer": "دييجو مارادونا",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "football-300-23",
+      "points": 300,
+      "question": "كم عدد مرات فوز هولندا بكأس العالم؟",
+      "answer": "مرة واحدة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "football-300-24",
+      "points": 300,
+      "question": "من هو المدرب الذي قاد فرنسا للفوز بالبطولة الأوروبية 1984؟",
+      "answer": "ميشيل بلاتيني",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "football-300-25",
+      "points": 300,
+      "question": "كم عدد مرات فوز فرنسا بالبطولة الأوروبية؟",
+      "answer": "مرتين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "football-500-1",
+      "points": 500,
+      "question": "من هو اللاعب الوحيد الذي فاز بكأس العالم 3 مرات كلاعب؟",
+      "answer": "بيليه",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "football-500-2",
+      "points": 500,
+      "question": "من هو المدرب الذي فاز بكأس العالم كلاعب ومدرب؟",
+      "answer": "ماريو زاغالو",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "football-500-3",
+      "points": 500,
+      "question": "من هو اللاعب الذي سجل أسرع هاتريك في تاريخ كأس العالم؟",
+      "answer": "إريك بروبست",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "football-500-4",
+      "points": 500,
+      "question": "في أي عام سجل دييجو مارادونا هدف الموسم ضد غزة؟",
+      "answer": "1986",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "football-500-5",
+      "points": 500,
+      "question": "من هو المدرب الذي قاد 3 منتخبات مختلفة للفوز بكأس العالم؟",
+      "answer": "ماريو زاغالو",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "football-500-8",
+      "points": 500,
+      "question": "كم عدد الأهداف التي سجلها جوست فونتن في نهائي كأس العالم؟",
+      "answer": "13 هدف",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "football-500-9",
+      "points": 500,
+      "question": "من هو المدرب الذي قاد ألمانيا للفوز بكأس العالم 1954؟",
+      "answer": "سيب هيربرغر",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "football-500-11",
+      "points": 500,
+      "question": "من هو اللاعب الذي سجل أسرع هاتريك في تاريخ دوري أبطال أوروبا؟",
+      "answer": "محمد صلاح",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "football-500-12",
+      "points": 500,
+      "question": "كم استغرق أسرع هاتريك في دوري أبطال أوروبا؟",
+      "answer": "6 دقائق و12 ثانية",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "football-500-13",
+      "points": 500,
+      "question": "من هو المدرب الذي قاد المنتخب الهولندي للفوز بكأس العالم 1988؟",
+      "answer": "ماركو فان باستن",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "football-500-15",
+      "points": 500,
+      "question": "من هو اللاعب الذي سجل أكبر عدد من الأهداف في نهائي دوري أبطال أوروبا؟",
+      "answer": "كريستيانو رونالدو",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "football-500-16",
+      "points": 500,
+      "question": "كم عدد الأهداف التي سجلها كريستيانو رونالدو في نهائي دوري أبطال أوروبا؟",
+      "answer": "4 أهداف",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "football-500-17",
+      "points": 500,
+      "question": "من هو المدرب الذي قاد إيطاليا للفوز بكأس العالم 1982؟",
+      "answer": "إنزو بيرزوت",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "football-500-19",
+      "points": 500,
+      "question": "من هو اللاعب الذي سجل أسرع هدف في تاريخ كأس العالم؟",
+      "answer": "شان لونج",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "football-500-20",
+      "points": 500,
+      "question": "كم استغرق أسرع هدف في كأس العالم؟",
+      "answer": "10.8 ثانية",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "football-500-21",
+      "points": 500,
+      "question": "من هو المدرب الذي قاد إسبانيا للفوز بكأس العالم 1934؟",
+      "answer": "فرناندو أوردونيا",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "football-500-23",
+      "points": 500,
+      "question": "من هو المدرب الذي قاد الأرجنتين للفوز بكأس العالم 1978؟",
+      "answer": "سيزار لويس مينوتي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "football-500-25",
+      "points": 500,
+      "question": "من هو اللاعب الذي سجل هدف اليد المبارز في نهائي كأس العالم 1986؟",
+      "answer": "دييجو مارادونا",
+      "image": "",
+      "media": "",
+      "mediaType": ""
     }
   ],
   "metadata": {
     "sectionId": "sports",
-    "updatedAt": "2026-08-03",
+    "updatedAt": "2026-08-05",
     "status": "ready"
   }
 }

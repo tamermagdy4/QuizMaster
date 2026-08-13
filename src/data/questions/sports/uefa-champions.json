@@ -1,11 +1,1360 @@
-﻿{
-    "categoryId":  "uefa-champions",
-    "questions":  [
-
-                  ],
-    "metadata":  {
-                     "sectionId":  "sports",
-                     "updatedAt":  "2026-08-03",
-                     "status":  "pending"
-                 }
+{
+  "categoryId": "uefa-champions",
+  "questions": [
+    {
+      "id": "uefa-champions-100-1",
+      "points": 100,
+      "question": "أي ناد فاز بأكبر عدد من ألقاب دوري أبطال أوروبا؟",
+      "answer": "ريال مدريد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-100-2",
+      "points": 100,
+      "question": "من هو الفريق الأول من المملكة المتحدة الذي فاز بكأس أوروبا؟",
+      "answer": "سيلتيك",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-100-3",
+      "points": 100,
+      "question": "فاز ليفربول بستة دوري أبطال أوروبا، وفاز مانشستر يونايتد بثلاثة، لكن من هم ثالث أنجح فريق من إنجلترا في المسابقة بلقبين؟",
+      "answer": "تشيلسي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-100-4",
+      "points": 100,
+      "question": "كم عدد النوادي التي فازت بدوري أبطال أوروبا؟",
+      "answer": "22 نادي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-100-5",
+      "points": 100,
+      "question": "ما هو النادي الألماني الأكثر فوزاً بدوري أبطال أوروبا؟",
+      "answer": "بايرن ميونخ",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-100-6",
+      "points": 100,
+      "question": "ما هو النادي الإيطالي الأكثر فوزاً بدوري أبطال أوروبا؟",
+      "answer": "ميلان",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-100-7",
+      "points": 100,
+      "question": "كم عدد مرات فوز برشلونة بدوري أبطال أوروبا؟",
+      "answer": "5 مرات",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-100-8",
+      "points": 100,
+      "question": "من هو النادي الهولندي الذي فاز بدوري أبطال أوروبا؟",
+      "answer": "أياكس",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-100-9",
+      "points": 100,
+      "question": "كم عدد مرات فوز ليفربول بدوري أبطال أوروبا؟",
+      "answer": "6 مرات",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-100-10",
+      "points": 100,
+      "question": "ما هو النادي البرتغالي الذي فاز بدوري أبطال أوروبا؟",
+      "answer": "بنفيكا",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-100-11",
+      "points": 100,
+      "question": "كم عدد مرات فوز مانشستر يونايتد بدوري أبطال أوروبا؟",
+      "answer": "3 مرات",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-100-12",
+      "points": 100,
+      "question": "من هو النادي اليوناني الذي فاز بدوري أبطال أوروبا؟",
+      "answer": "باناثينايكوس",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-100-13",
+      "points": 100,
+      "question": "كم عدد مرات فوز ميلان بدوري أبطال أوروبا؟",
+      "answer": "7 مرات",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-100-14",
+      "points": 100,
+      "question": "ما هو النادي الفرنسي الذي فاز بدوري أبطال أوروبا؟",
+      "answer": "مارسيليا",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-100-15",
+      "points": 100,
+      "question": "كم عدد مرات فوز بايرن ميونخ بدوري أبطال أوروبا؟",
+      "answer": "6 مرات",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-100-16",
+      "points": 100,
+      "question": "من هو النادي الروماني الذي فاز بدوري أبطال أوروبا؟",
+      "answer": "ستيوا بوخارست",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-100-17",
+      "points": 100,
+      "question": "كم عدد مرات فوز إنتر ميلان بدوري أبطال أوروبا؟",
+      "answer": "3 مرات",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-100-18",
+      "points": 100,
+      "question": "ما هو النادي الصربي الذي فاز بدوري أبطال أوروبا؟",
+      "answer": "نجم بلغراد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-100-19",
+      "points": 100,
+      "question": "كم عدد مرات فوز تشيلسي بدوري أبطال أوروبا؟",
+      "answer": "مرتين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-100-20",
+      "points": 100,
+      "question": "من هو النادي الألماني الذي فاز بدوري أبطال أوروبا في عام 1997؟",
+      "answer": "دورتموند",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-100-21",
+      "points": 100,
+      "question": "كم عدد مرات فوز يوفنتوس بدوري أبطال أوروبا؟",
+      "answer": "مرتين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-100-22",
+      "points": 100,
+      "question": "ما هو النادي الإنجليزي الذي فاز بدوري أبطال أوروبا في عام 2005؟",
+      "answer": "ليفربول",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-100-23",
+      "points": 100,
+      "question": "كم عدد مرات فوز فياريال بدوري أبطال أوروبا؟",
+      "answer": "مرة واحدة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-100-24",
+      "points": 100,
+      "question": "من هو النادي الإسباني الذي فاز بدوري أبطال أوروبا في عام 2010؟",
+      "answer": "إنتر ميلان",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-100-25",
+      "points": 100,
+      "question": "كم عدد مرات فوز بوروسيا دورتموند بدوري أبطال أوروبا؟",
+      "answer": "مرة واحدة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-100-26",
+      "points": 100,
+      "question": "ما هو النادي البرتغالي الذي فاز بدوري أبطال أوروبا في عام 1987؟",
+      "answer": "بورتو",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-100-27",
+      "points": 100,
+      "question": "كم عدد مرات فوز نوتينغهام فورست بدوري أبطال أوروبا؟",
+      "answer": "مرتين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-100-28",
+      "points": 100,
+      "question": "من هو النادي الهولندي الذي فاز بدوري أبطال أوروبا في عام 1995؟",
+      "answer": "أياكس",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-100-29",
+      "points": 100,
+      "question": "كم عدد مرات فوز هامبورغ بدوري أبطال أوروبا؟",
+      "answer": "مرة واحدة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-100-30",
+      "points": 100,
+      "question": "ما هو النادي السلوفيني الذي فاز بدوري أبطال أوروبا؟",
+      "answer": "ماريبور",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-100-31",
+      "points": 100,
+      "question": "كم عدد مرات فوز نجم بلغراد بدوري أبطال أوروبا؟",
+      "answer": "مرة واحدة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-100-32",
+      "points": 100,
+      "question": "من هو النادي التركي الذي وصل لنهائي دوري أبطال أوروبا؟",
+      "answer": "غلطة سراي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-100-33",
+      "points": 100,
+      "question": "كم عدد مرات فوز أستون فيلا بدوري أبطال أوروبا؟",
+      "answer": "مرة واحدة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-100-34",
+      "points": 100,
+      "question": "ما هو النادي الأوكراني الذي وصل لنهائي دوري أبطال أوروبا؟",
+      "answer": "دينامو كييف",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-100-35",
+      "points": 100,
+      "question": "كم عدد مرات فوز رينجرز بدوري أبطال أوروبا؟",
+      "answer": "مرة واحدة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-100-36",
+      "points": 100,
+      "question": "من هو النادي الفرنسي الذي وصل لنهائي دوري أبطال أوروبا؟",
+      "answer": "سان جيرمان",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-100-37",
+      "points": 100,
+      "question": "كم عدد مرات فوز فينورد بدوري أبطال أوروبا؟",
+      "answer": "مرة واحدة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-100-38",
+      "points": 100,
+      "question": "ما هو النادي الروسي الذي وصل لنهائي دوري أبطال أوروبا؟",
+      "answer": "سيسكا موسكو",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-100-39",
+      "points": 100,
+      "question": "كم عدد مرات فوز فاينورد بدوري أبطال أوروبا؟",
+      "answer": "مرة واحدة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-100-40",
+      "points": 100,
+      "question": "من هو النادي اليوغوسلافي الذي فاز بدوري أبطال أوروبا؟",
+      "answer": "نجم بلغراد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-100-41",
+      "points": 100,
+      "question": "كم عدد مرات فوز بنفيكا بدوري أبطال أوروبا؟",
+      "answer": "مرتين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-100-42",
+      "points": 100,
+      "question": "ما هو النادي الألماني الذي وصل لنهائي دوري أبطال أوروبا؟",
+      "answer": "باير ليفركوزن",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-100-43",
+      "points": 100,
+      "question": "كم عدد مرات فوز أياكس بدوري أبطال أوروبا؟",
+      "answer": "4 مرات",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-100-44",
+      "points": 100,
+      "question": "من هو النادي الإنجليزي الذي وصل لنهائي دوري أبطال أوروبا؟",
+      "answer": "أرسنال",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-100-45",
+      "points": 100,
+      "question": "كم عدد مرات فوز سيلتيك بدوري أبطال أوروبا؟",
+      "answer": "مرة واحدة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-100-46",
+      "points": 100,
+      "question": "ما هو النادي الإيطالي الذي وصل لنهائي دوري أبطال أوروبا؟",
+      "answer": "يوفنتوس",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-100-47",
+      "points": 100,
+      "question": "كم عدد مرات فوز بورتو بدوري أبطال أوروبا؟",
+      "answer": "مرتين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-100-48",
+      "points": 100,
+      "question": "من هو النادي الألماني الذي فاز بدوري أبطال أوروبا في عام 2001؟",
+      "answer": "بايرن ميونخ",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-100-49",
+      "points": 100,
+      "question": "كم عدد مرات فوز نادي بوروسيا مونشنغلادباخ بدوري أبطال أوروبا؟",
+      "answer": "مرة واحدة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-100-50",
+      "points": 100,
+      "question": "ما هو النادي الإنجليزي الذي فاز بدوري أبطال أوروبا في عام 2012؟",
+      "answer": "تشيلسي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-300-1",
+      "points": 300,
+      "question": "من هو اللاعب الوحيد الذي فاز بدوري أبطال أوروبا مع ثلاثة أندية مختلفة؟",
+      "answer": "كلارنس سيدورف",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-300-2",
+      "points": 300,
+      "question": "في أي موسم تم تغيير اسم كأس أوروبا ليصبح دوري أبطال أوروبا؟",
+      "answer": "1992-1993",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-300-3",
+      "points": 300,
+      "question": "من هو هداف دوري أبطال أوروبا في كل العصور؟",
+      "answer": "كريستيانو رونالدو",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-300-4",
+      "points": 300,
+      "question": "من اللاعب الذي يحمل الرقم القياسي لعدد مرات المشاركة في دوري أبطال أوروبا؟",
+      "answer": "إيكر كاسياس",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-300-5",
+      "points": 300,
+      "question": "أي لاعب يحمل الرقم القياسي للفائزين بدوري أبطال أوروبا؟",
+      "answer": "باكو خنتوريو",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-300-6",
+      "points": 300,
+      "question": "كم عدد الأهداف التي سجلها كريستيانو رونالدو في دوري أبطال أوروبا؟",
+      "answer": "أكثر من 140 هدف",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-300-7",
+      "points": 300,
+      "question": "من هو اللاعب الذي سجل أكبر عدد من الأهداف في نهائي دوري أبطال أوروبا؟",
+      "answer": "كريستيانو رونالدو",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-300-8",
+      "points": 300,
+      "question": "كم عدد مرات فوز ريال مدريد بدوري أبطال أوروبا؟",
+      "answer": "15 مرة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-300-9",
+      "points": 300,
+      "question": "من هو المدرب الذي فاز بدوري أبطال أوروبا مع أكبر عدد من الأندية؟",
+      "answer": "كارلو أنشيلوتي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-300-10",
+      "points": 300,
+      "question": "كم عدد الأهداف التي سجلها ليونيل ميسي في دوري أبطال أوروبا؟",
+      "answer": "أكثر من 120 هدف",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-300-11",
+      "points": 300,
+      "question": "من هو النادي الذي فاز بدوري أبطال أوروبا لأكبر عدد من المرات المتتالية؟",
+      "answer": "ريال مدريد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-300-12",
+      "points": 300,
+      "question": "كم عدد الأهداف التي سجلها راؤول غونزاليس في دوري أبطال أوروبا؟",
+      "answer": "أكثر من 70 هدف",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-300-13",
+      "points": 300,
+      "question": "من هو اللاعب الذي سجل أكبر عدد من الهاتريك في دوري أبطال أوروبا؟",
+      "answer": "كريستيانو رونالدو",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-300-14",
+      "points": 300,
+      "question": "كم عدد المرات التي فاز فيها مانشستر يونايتد بدوري أبطال أوروبا؟",
+      "answer": "3 مرات",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-300-15",
+      "points": 300,
+      "question": "من هو المدرب الذي فاز بدوري أبطال أوروبا مع ريال مدريد ثلاث مرات؟",
+      "answer": "زيندين زيدان",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-300-16",
+      "points": 300,
+      "question": "كم عدد الأهداف التي سجلها كريم بنزيما في دوري أبطال أوروبا؟",
+      "answer": "أكثر من 70 هدف",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-300-17",
+      "points": 300,
+      "question": "من هو النادي الذي فاز بدوري أبطال أوروبا لأول مرة في عام 1992؟",
+      "answer": "برشلونة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-300-18",
+      "points": 300,
+      "question": "كم عدد المرات التي فاز فيها ليفربول بدوري أبطال أوروبا؟",
+      "answer": "6 مرات",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-300-19",
+      "points": 300,
+      "question": "من هو اللاعب الذي سجل أكبر عدد من الأهداف في موسم واحد في دوري أبطال أوروبا؟",
+      "answer": "كريستيانو رونالدو",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-300-20",
+      "points": 300,
+      "question": "كم عدد المرات التي فاز فيها بايرن ميونخ بدوري أبطال أوروبا؟",
+      "answer": "6 مرات",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-300-21",
+      "points": 300,
+      "question": "من هو المدرب الذي فاز بدوري أبطال أوروبا مع برشلونة؟",
+      "answer": "بيب غوارديولا",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-300-22",
+      "points": 300,
+      "question": "كم عدد الأهداف التي سجلها فيرينتس بوشكاش في دوري أبطال أوروبا؟",
+      "answer": "أكثر من 30 هدف",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-300-23",
+      "points": 300,
+      "question": "من هو النادي الذي فاز بدوري أبطال أوروبا في عام 2005؟",
+      "answer": "ليفربول",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-300-24",
+      "points": 300,
+      "question": "كم عدد المرات التي فاز فيها ميلان بدوري أبطال أوروبا؟",
+      "answer": "7 مرات",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-300-25",
+      "points": 300,
+      "question": "من هو اللاعب الذي سجل أسرع هاتريك في دوري أبطال أوروبا؟",
+      "answer": "بايو",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-300-26",
+      "points": 300,
+      "question": "كم عدد المرات التي فاز فيها إنتر ميلان بدوري أبطال أوروبا؟",
+      "answer": "3 مرات",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-300-27",
+      "points": 300,
+      "question": "من هو المدرب الذي فاز بدوري أبطال أوروبا مع إنتر ميلان؟",
+      "answer": "جوزيبي مورينيو",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-300-28",
+      "points": 300,
+      "question": "كم عدد الأهداف التي سجلها كريم بنزيما في نهائي دوري أبطال أوروبا؟",
+      "answer": "أكثر من 5 أهداف",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-300-29",
+      "points": 300,
+      "question": "من هو النادي الذي فاز بدوري أبطال أوروبا في عام 2010؟",
+      "answer": "إنتر ميلان",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-300-30",
+      "points": 300,
+      "question": "كم عدد المرات التي فاز فيها تشيلسي بدوري أبطال أوروبا؟",
+      "answer": "مرتين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-300-31",
+      "points": 300,
+      "question": "من هو المدرب الذي فاز بدوري أبطال أوروبا مع تشيلسي؟",
+      "answer": "روبرتو دي ماتيو",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-300-32",
+      "points": 300,
+      "question": "كم عدد الأهداف التي سجلها ميسي في نهائي دوري أبطال أوروبا؟",
+      "answer": "هدفين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-300-33",
+      "points": 300,
+      "question": "من هو النادي الذي فاز بدوري أبطال أوروبا في عام 2012؟",
+      "answer": "تشيلسي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-300-34",
+      "points": 300,
+      "question": "كم عدد المرات التي فاز فيها برشلونة بدوري أبطال أوروبا؟",
+      "answer": "5 مرات",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-300-35",
+      "points": 300,
+      "question": "من هو المدرب الذي فاز بدوري أبطال أوروبا مع بايرن ميونخ؟",
+      "answer": "بيب غوارديولا",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-300-36",
+      "points": 300,
+      "question": "كم عدد الأهداف التي سجلها رونالدو في نهائي دوري أبطال أوروبا؟",
+      "answer": "4 أهداف",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-300-37",
+      "points": 300,
+      "question": "من هو النادي الذي فاز بدوري أبطال أوروبا في عام 2014؟",
+      "answer": "ريال مدريد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-300-38",
+      "points": 300,
+      "question": "كم عدد المرات التي فاز فيها ريال مدريد بدوري أبطال أوروبا؟",
+      "answer": "15 مرة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-300-39",
+      "points": 300,
+      "question": "من هو المدرب الذي فاز بدوري أبطال أوروبا مع ريال مدريد؟",
+      "answer": "زيندين زيدان",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-300-40",
+      "points": 300,
+      "question": "كم عدد الأهداف التي سجلها كريستيانو رونالدو في موسم واحد في دوري أبطال أوروبا؟",
+      "answer": "17 هدف",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-300-41",
+      "points": 300,
+      "question": "من هو النادي الذي فاز بدوري أبطال أوروبا في عام 2016؟",
+      "answer": "ريال مدريد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-300-42",
+      "points": 300,
+      "question": "كم عدد المرات التي فاز فيها يوفنتوس بدوري أبطال أوروبا؟",
+      "answer": "مرتين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-300-43",
+      "points": 300,
+      "question": "من هو المدرب الذي فاز بدوري أبطال أوروبا مع يوفنتوس؟",
+      "answer": "جوفاني تراباتوني",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-300-44",
+      "points": 300,
+      "question": "كم عدد الأهداف التي سجلها بيتي في دوري أبطال أوروبا؟",
+      "answer": "أكثر من 50 هدف",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-300-45",
+      "points": 300,
+      "question": "من هو النادي الذي فاز بدوري أبطال أوروبا في عام 2018؟",
+      "answer": "ريال مدريد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-300-46",
+      "points": 300,
+      "question": "كم عدد المرات التي فاز فيها فياريال بدوري أبطال أوروبا؟",
+      "answer": "مرة واحدة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-300-47",
+      "points": 300,
+      "question": "من هو المدرب الذي فاز بدوري أبطال أوروبا مع فياريال؟",
+      "answer": "أوناي إيمري",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-300-48",
+      "points": 300,
+      "question": "كم عدد الأهداف التي سجلها رونالدو في نهائي دوري أبطال أوروبا 2014؟",
+      "answer": "4 أهداف",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-300-49",
+      "points": 300,
+      "question": "من هو النادي الذي فاز بدوري أبطال أوروبا في عام 2020؟",
+      "answer": "بايرن ميونخ",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-300-50",
+      "points": 300,
+      "question": "كم عدد المرات التي فاز فيها بوروسيا دورتموند بدوري أبطال أوروبا؟",
+      "answer": "مرة واحدة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-500-1",
+      "points": 500,
+      "question": "ثلاثة أشخاص فازوا بدوري أبطال أوروبا رقما قياسيا ثلاث مرات كمدير فني. من هم؟",
+      "answer": "كارلو أنشيلوتي، بوب بايزلي، زيبي زيغلر",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-500-2",
+      "points": 500,
+      "question": "فاز فريق من رومانيا بدوري أبطال أوروبا مرة واحدة فقط. يمكنك تسميته؟",
+      "answer": "ستيوا بوخارست",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-500-3",
+      "points": 500,
+      "question": "من أكثر لاعب شارك في دوري أبطال أوروبا وكم عدد المباريات؟",
+      "answer": "إيكر كاسياس (177 مباراة)",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-500-4",
+      "points": 500,
+      "question": "كم عدد الأهداف التي سجلها كريستيانو رونالدو في دوري أبطال أوروبا؟",
+      "answer": "140 هدف",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-500-5",
+      "points": 500,
+      "question": "من هو المدرب الذي فاز بدوري أبطال أوروبا مع أكبر عدد من الأندية؟",
+      "answer": "كارلو أنشيلوتي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-500-6",
+      "points": 500,
+      "question": "كم عدد مرات فوز ريال مدريد بدوري أبطال أوروبا؟",
+      "answer": "15 مرة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-500-7",
+      "points": 500,
+      "question": "من هو اللاعب الذي سجل أكبر عدد من الأهداف في نهائي دوري أبطال أوروبا؟",
+      "answer": "كريستيانو رونالدو",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-500-8",
+      "points": 500,
+      "question": "كم عدد الأهداف التي سجلها ليونيل ميسي في دوري أبطال أوروبا؟",
+      "answer": "129 هدف",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-500-9",
+      "points": 500,
+      "question": "من هو النادي الذي فاز بدوري أبطال أوروبا لأكبر عدد من المرات المتتالية؟",
+      "answer": "ريال مدريد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-500-10",
+      "points": 500,
+      "question": "كم عدد الأهداف التي سجلها راؤول غونزاليس في دوري أبطال أوروبا؟",
+      "answer": "71 هدف",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-500-11",
+      "points": 500,
+      "question": "من هو اللاعب الذي سجل أكبر عدد من الهاتريك في دوري أبطال أوروبا؟",
+      "answer": "كريستيانو رونالدو",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-500-12",
+      "points": 500,
+      "question": "كم عدد الأهداف التي سجلها كريم بنزيما في دوري أبطال أوروبا؟",
+      "answer": "90 هدف",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-500-13",
+      "points": 500,
+      "question": "من هو النادي الذي فاز بدوري أبطال أوروبا لأول مرة في عام 1992؟",
+      "answer": "برشلونة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-500-14",
+      "points": 500,
+      "question": "كم عدد الأهداف التي سجلها فيرينتس بوشكاش في دوري أبطال أوروبا؟",
+      "answer": "35 هدف",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-500-15",
+      "points": 500,
+      "question": "من هو اللاعب الذي سجل أسرع هاتريك في دوري أبطال أوروبا؟",
+      "answer": "بايو",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-500-16",
+      "points": 500,
+      "question": "كم عدد الأهداف التي سجلها كريم بنزيما في نهائي دوري أبطال أوروبا؟",
+      "answer": "3 أهداف",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-500-17",
+      "points": 500,
+      "question": "من هو النادي الذي فاز بدوري أبطال أوروبا في عام 2005؟",
+      "answer": "ليفربول",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-500-18",
+      "points": 500,
+      "question": "كم عدد الأهداف التي سجلها ميسي في نهائي دوري أبطال أوروبا؟",
+      "answer": "هدفين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-500-19",
+      "points": 500,
+      "question": "من هو النادي الذي فاز بدوري أبطال أوروبا في عام 2010؟",
+      "answer": "إنتر ميلان",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-500-20",
+      "points": 500,
+      "question": "كم عدد الأهداف التي سجلها رونالدو في نهائي دوري أبطال أوروبا؟",
+      "answer": "4 أهداف",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-500-21",
+      "points": 500,
+      "question": "من هو النادي الذي فاز بدوري أبطال أوروبا في عام 2012؟",
+      "answer": "تشيلسي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-500-22",
+      "points": 500,
+      "question": "كم عدد الأهداف التي سجلها كريستيانو رونالدو في موسم واحد في دوري أبطال أوروبا؟",
+      "answer": "17 هدف",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-500-23",
+      "points": 500,
+      "question": "من هو النادي الذي فاز بدوري أبطال أوروبا في عام 2014؟",
+      "answer": "ريال مدريد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-500-24",
+      "points": 500,
+      "question": "كم عدد الأهداف التي سجلها بيتي في دوري أبطال أوروبا؟",
+      "answer": "50 هدف",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-500-25",
+      "points": 500,
+      "question": "من هو النادي الذي فاز بدوري أبطال أوروبا في عام 2016؟",
+      "answer": "ريال مدريد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-500-26",
+      "points": 500,
+      "question": "كم عدد الأهداف التي سجلها كريستيانو رونالدو في نهائي دوري أبطال أوروبا 2014؟",
+      "answer": "4 أهداف",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-500-27",
+      "points": 500,
+      "question": "من هو النادي الذي فاز بدوري أبطال أوروبا في عام 2018؟",
+      "answer": "ريال مدريد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-500-28",
+      "points": 500,
+      "question": "كم عدد الأهداف التي سجلها كريم بنزيما في نهائي دوري أبطال أوروبا 2022؟",
+      "answer": "لم يسجل",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-500-29",
+      "points": 500,
+      "question": "من هو النادي الذي فاز بدوري أبطال أوروبا في عام 2020؟",
+      "answer": "بايرن ميونخ",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-500-30",
+      "points": 500,
+      "question": "كم عدد الأهداف التي سجلها راؤول غونزاليس في نهائي دوري أبطال أوروبا؟",
+      "answer": "3 أهداف",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-500-31",
+      "points": 500,
+      "question": "من هو النادي الذي فاز بدوري أبطال أوروبا في عام 2022؟",
+      "answer": "ريال مدريد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-500-32",
+      "points": 500,
+      "question": "كم عدد الأهداف التي سجلها فيرينتس بوشكاش في نهائي دوري أبطال أوروبا؟",
+      "answer": "7 أهداف",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-500-33",
+      "points": 500,
+      "question": "من هو النادي الذي فاز بدوري أبطال أوروبا في عام 2023؟",
+      "answer": "مانشستر سيتي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-500-34",
+      "points": 500,
+      "question": "كم عدد الأهداف التي سجلها كريم بنزيما في موسم واحد في دوري أبطال أوروبا؟",
+      "answer": "15 هدف",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-500-35",
+      "points": 500,
+      "question": "من هو النادي الذي فاز بدوري أبطال أوروبا في عام 2024؟",
+      "answer": "ريال مدريد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-500-36",
+      "points": 500,
+      "question": "كم عدد الأهداف التي سجلها ميسي في موسم واحد في دوري أبطال أوروبا؟",
+      "answer": "14 هدف",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-500-37",
+      "points": 500,
+      "question": "من هو المدرب الذي فاز بدوري أبطال أوروبا مع مانشستر سيتي؟",
+      "answer": "بيب غوارديولا",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-500-38",
+      "points": 500,
+      "question": "كم عدد الأهداف التي سجلها كريستيانو رونالدو في نهائي دوري أبطال أوروبا 2016؟",
+      "answer": "لم يسجل",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-500-39",
+      "points": 500,
+      "question": "من هو النادي الذي فاز بدوري أبطال أوروبا في عام 2025؟",
+      "answer": "لم يحدد بعد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-500-40",
+      "points": 500,
+      "question": "كم عدد الأهداف التي سجلها رونالدو في نهائي دوري أبطال أوروبا 2018؟",
+      "answer": "لم يسجل",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-500-41",
+      "points": 500,
+      "question": "من هو المدرب الذي فاز بدوري أبطال أوروبا مع ريال مدريد ثلاث مرات؟",
+      "answer": "زيندين زيدان",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-500-42",
+      "points": 500,
+      "question": "كم عدد الأهداف التي سجلها ميسي في نهائي دوري أبطال أوروبا 2011؟",
+      "answer": "هدف واحد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-500-43",
+      "points": 500,
+      "question": "من هو النادي الذي فاز بدوري أبطال أوروبا في عام 2000؟",
+      "answer": "ريال مدريد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-500-44",
+      "points": 500,
+      "question": "كم عدد الأهداف التي سجلها رونالدو في نهائي دوري أبطال أوروبا 2008؟",
+      "answer": "هدف واحد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-500-45",
+      "points": 500,
+      "question": "من هو المدرب الذي فاز بدوري أبطال أوروبا مع ميلان؟",
+      "answer": "كارلو أنشيلوتي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-500-46",
+      "points": 500,
+      "question": "كم عدد الأهداف التي سجلها ميسي في نهائي دوري أبطال أوروبا 2009؟",
+      "answer": "هدف واحد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-500-47",
+      "points": 500,
+      "question": "من هو النادي الذي فاز بدوري أبطال أوروبا في عام 1994؟",
+      "answer": "ميلان",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-500-48",
+      "points": 500,
+      "question": "كم عدد الأهداف التي سجلها رونالدو في نهائي دوري أبطال أوروبا 2017؟",
+      "answer": "هدفين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-500-49",
+      "points": 500,
+      "question": "من هو المدرب الذي فاز بدوري أبطال أوروبا مع يوفنتوس؟",
+      "answer": "جوفاني تراباتوني",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "uefa-champions-500-50",
+      "points": 500,
+      "question": "كم عدد الأهداف التي سجلها ميسي في نهائي دوري أبطال أوروبا 2015؟",
+      "answer": "لم يسجل",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    }
+  ],
+  "metadata": {
+    "sectionId": "sports",
+    "updatedAt": "2026-08-04",
+    "status": "ready"
+  }
 }

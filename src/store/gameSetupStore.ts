@@ -2,11 +2,13 @@ import { create } from 'zustand'
 import { persist } from 'zustand/middleware'
 import {
   CATEGORIES_PER_TEAM,
+  LIFELINES_PER_TEAM,
   MAX_PLAYERS,
   MIN_PLAYERS,
   type CategoryOwner,
   type TeamId,
 } from '../types/game'
+import type { LifelineId } from '../types/board'
 
 interface GameSetupState {
   gameName: string
@@ -16,6 +18,8 @@ interface GameSetupState {
   team2Players: number
   team1CategoryIds: string[]
   team2CategoryIds: string[]
+  team1LifelineIds: LifelineId[]
+  team2LifelineIds: LifelineId[]
   activeTeam: TeamId
 
   setGameName: (name: string) => void
@@ -25,8 +29,10 @@ interface GameSetupState {
   adjustTeam2Players: (delta: number) => void
   toggleCategory: (categoryId: string) => void
   getCategoryOwner: (categoryId: string) => CategoryOwner
+  toggleLifeline: (teamId: TeamId, lifelineId: LifelineId) => void
   canStartGame: () => boolean
   reset: () => void
+  resetCategories: () => void
 }
 
 const clampPlayers = (count: number) =>
@@ -40,7 +46,13 @@ const initialState = {
   team2Players: 2,
   team1CategoryIds: [] as string[],
   team2CategoryIds: [] as string[],
+  team1LifelineIds: [] as LifelineId[],
+  team2LifelineIds: [] as LifelineId[],
   activeTeam: 1 as TeamId,
+}
+
+function normalizeCategoryId(categoryId: string): string {
+  return categoryId.trim()
 }
 
 function resolveActiveTeam(
@@ -81,11 +93,14 @@ export const useGameSetupStore = create<GameSetupState>()(
 
       toggleCategory: (categoryId) =>
         set((state) => {
-          const inTeam1 = state.team1CategoryIds.includes(categoryId)
-          const inTeam2 = state.team2CategoryIds.includes(categoryId)
+          const id = normalizeCategoryId(categoryId)
+          if (!id) return state
+
+          const inTeam1 = state.team1CategoryIds.includes(id)
+          const inTeam2 = state.team2CategoryIds.includes(id)
 
           if (inTeam1) {
-            const team1CategoryIds = state.team1CategoryIds.filter((id) => id !== categoryId)
+            const team1CategoryIds = state.team1CategoryIds.filter((value) => value !== id)
             return {
               team1CategoryIds,
               activeTeam: resolveActiveTeam(
@@ -97,7 +112,7 @@ export const useGameSetupStore = create<GameSetupState>()(
           }
 
           if (inTeam2) {
-            const team2CategoryIds = state.team2CategoryIds.filter((id) => id !== categoryId)
+            const team2CategoryIds = state.team2CategoryIds.filter((value) => value !== id)
             return {
               team2CategoryIds,
               activeTeam: resolveActiveTeam(
@@ -108,31 +123,75 @@ export const useGameSetupStore = create<GameSetupState>()(
             }
           }
 
-          if (state.activeTeam === 1 && state.team1CategoryIds.length < CATEGORIES_PER_TEAM) {
-            const team1CategoryIds = [...state.team1CategoryIds, categoryId]
-            return {
-              team1CategoryIds,
-              activeTeam: resolveActiveTeam(
-                team1CategoryIds.length,
-                state.team2CategoryIds.length,
-                state.activeTeam,
-              ),
+          if (state.activeTeam === 1) {
+            if (state.team1CategoryIds.length < CATEGORIES_PER_TEAM) {
+              const team1CategoryIds = [...state.team1CategoryIds, id]
+              return {
+                team1CategoryIds,
+                activeTeam: resolveActiveTeam(
+                  team1CategoryIds.length,
+                  state.team2CategoryIds.length,
+                  state.activeTeam,
+                ),
+              }
+            }
+
+            if (state.team2CategoryIds.length < CATEGORIES_PER_TEAM) {
+              const team2CategoryIds = [...state.team2CategoryIds, id]
+              return {
+                team2CategoryIds,
+                activeTeam: resolveActiveTeam(
+                  state.team1CategoryIds.length,
+                  team2CategoryIds.length,
+                  state.activeTeam,
+                ),
+              }
             }
           }
 
-          if (state.activeTeam === 2 && state.team2CategoryIds.length < CATEGORIES_PER_TEAM) {
-            const team2CategoryIds = [...state.team2CategoryIds, categoryId]
-            return {
-              team2CategoryIds,
-              activeTeam: resolveActiveTeam(
-                state.team1CategoryIds.length,
-                team2CategoryIds.length,
-                state.activeTeam,
-              ),
+          if (state.activeTeam === 2) {
+            if (state.team2CategoryIds.length < CATEGORIES_PER_TEAM) {
+              const team2CategoryIds = [...state.team2CategoryIds, id]
+              return {
+                team2CategoryIds,
+                activeTeam: resolveActiveTeam(
+                  state.team1CategoryIds.length,
+                  team2CategoryIds.length,
+                  state.activeTeam,
+                ),
+              }
+            }
+
+            if (state.team1CategoryIds.length < CATEGORIES_PER_TEAM) {
+              const team1CategoryIds = [...state.team1CategoryIds, id]
+              return {
+                team1CategoryIds,
+                activeTeam: resolveActiveTeam(
+                  team1CategoryIds.length,
+                  state.team2CategoryIds.length,
+                  state.activeTeam,
+                ),
+              }
             }
           }
 
           return state
+        }),
+
+      toggleLifeline: (teamId, lifelineId) =>
+        set((state) => {
+          const key = teamId === 1 ? 'team1LifelineIds' : 'team2LifelineIds'
+          const current = state[key]
+
+          if (current.includes(lifelineId)) {
+            return { [key]: current.filter((id) => id !== lifelineId) }
+          }
+
+          if (current.length >= LIFELINES_PER_TEAM) {
+            return state
+          }
+
+          return { [key]: [...current, lifelineId] }
         }),
 
       canStartGame: () => {
@@ -142,15 +201,25 @@ export const useGameSetupStore = create<GameSetupState>()(
           state.team1Name.trim().length > 0 &&
           state.team2Name.trim().length > 0 &&
           state.team1CategoryIds.length === CATEGORIES_PER_TEAM &&
-          state.team2CategoryIds.length === CATEGORIES_PER_TEAM
+          state.team2CategoryIds.length === CATEGORIES_PER_TEAM &&
+          state.team1LifelineIds.length === LIFELINES_PER_TEAM &&
+          state.team2LifelineIds.length === LIFELINES_PER_TEAM
         )
       },
 
       reset: () => set(initialState),
+
+      resetCategories: () =>
+        set({
+          team1CategoryIds: [],
+          team2CategoryIds: [],
+          team1LifelineIds: [],
+          team2LifelineIds: [],
+          activeTeam: 1 as TeamId,
+        }),
     }),
     {
       name: 'quizmaster-setup',
     },
   ),
 )
-

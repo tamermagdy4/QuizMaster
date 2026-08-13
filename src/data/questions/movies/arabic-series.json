@@ -1,11 +1,910 @@
-﻿{
-    "categoryId":  "arabic-series",
-    "questions":  [
-
-                  ],
-    "metadata":  {
-                     "sectionId":  "movies",
-                     "updatedAt":  "2026-08-03",
-                     "status":  "pending"
-                 }
+{
+  "categoryId": "arabic-series",
+  "questions": [
+    {
+      "id": "arabic-series-100-1",
+      "points": 100,
+      "question": "من هو قائل عبارة يا وقعة مربربة؟",
+      "answer": "أحمد مكي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-series-100-2",
+      "points": 100,
+      "question": "من هو قائل عبارة ليه مدلعه اوي كده! اشمعنا أنا! أنا غلطت غلطة واحدة؟",
+      "answer": "يحيى الفخراني",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-series-100-3",
+      "points": 100,
+      "question": "من هو قائل عبارة ركز في وشى كويس يا عصفور انت ماشوفتش الشكل دة قبل كدة؟",
+      "answer": "هشام ماجد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-series-100-4",
+      "points": 100,
+      "question": "من هي قائلة عبارة ايه اللى انتى بتقوليه ده يا صفية. اضيع وقتى ايه؟",
+      "answer": "نيللي كريم",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-series-100-5",
+      "points": 100,
+      "question": "من هي قائلة عبارة أنا من حقي أقول أه وأقول لأ حتى لو كنت كبرت؟",
+      "answer": "عبلة كامل",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-series-100-6",
+      "points": 100,
+      "question": "من هو بطل مسلسل أرض النفاق؟",
+      "answer": "محمد هنيدي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-series-100-7",
+      "points": 100,
+      "question": "من هو بطل مسلسل فرقة ناجي عطالله؟",
+      "answer": "عادل إمام",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-series-100-8",
+      "points": 100,
+      "question": "من هو بطل مسلسل ونوس؟",
+      "answer": "يحيى الفخراني",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-series-100-9",
+      "points": 100,
+      "question": "من هو بطل مسلسل راس الغول؟",
+      "answer": "محمود عبد العزيز",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-series-100-10",
+      "points": 100,
+      "question": "من هو بطل مسلسل 30 يوم؟",
+      "answer": "آسر ياسين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-series-100-11",
+      "points": 100,
+      "question": "من هو مخرج مسلسل الكبير اوي الجزء الأول؟",
+      "answer": "إسلام خيري",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-series-100-12",
+      "points": 100,
+      "question": "من هو مخرج مسلسل الرجل العناب؟",
+      "answer": "شادي علي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-series-100-13",
+      "points": 100,
+      "question": "من هو مخرج مسلسل تحت السيطرة؟",
+      "answer": "تامر محسن",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-series-100-14",
+      "points": 100,
+      "question": "من هو مخرج مسلسل عايزة اتجوز؟",
+      "answer": "رامي إمام",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-series-100-15",
+      "points": 100,
+      "question": "من هو مخرج مسلسل حارة اليهود؟",
+      "answer": "محمد جمال العدل",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-series-100-16",
+      "points": 100,
+      "question": "من هي الممثلة المصرية التي لعبت دور في مسلسل الكبير أوي؟",
+      "answer": "مي سليم",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-series-100-17",
+      "points": 100,
+      "question": "من هو الممثل المصري الذي لعب دور في مسلسل نص جني؟",
+      "answer": "محمد رمضان",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-series-100-18",
+      "points": 100,
+      "question": "من هي الممثلة المصرية التي لعبت دور في مسلسل أرض النفاق؟",
+      "answer": "ميرفت أمين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-series-100-19",
+      "points": 100,
+      "question": "من هو الممثل المصري الذي لعب دور في مسلسل الزينة؟",
+      "answer": "كريم عبد العزيز",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-series-100-20",
+      "points": 100,
+      "question": "من هو الممثل المصري الذي لعب دور في مسلسل عايزة اتجوز؟",
+      "answer": "محمود عبد العزيز",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-series-100-21",
+      "points": 100,
+      "question": "من هي الممثلة المصرية التي لعبت دور في مسلسل أهل القمة؟",
+      "answer": "يسرا",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-series-100-22",
+      "points": 100,
+      "question": "من هو الممثل المصري الذي لعب دور في مسلسل حارة اليهود؟",
+      "answer": "أحمد السقا",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-series-100-23",
+      "points": 100,
+      "question": "من هو الممثل المصري الذي لعب دور في مسلسل أدهم شرقاوي؟",
+      "answer": "نور الشريف",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-series-100-24",
+      "points": 100,
+      "question": "من هي الممثلة المصرية التي لعبت دور في مسلسل تحت السيطرة؟",
+      "answer": "إلهام شاهين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-series-100-25",
+      "points": 100,
+      "question": "من هو الممثل المصري الذي لعب دور في مسلسل اللعبة؟",
+      "answer": "محمود حميدة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-series-100-26",
+      "points": 100,
+      "question": "من هو الممثل المصري الذي لعب دور في مسلسل الرجل العناب؟",
+      "answer": "هشام ماجد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-series-100-27",
+      "points": 100,
+      "question": "من هي الممثلة المصرية التي لعبت دور في مسلسل ذات؟",
+      "answer": "نيللي كريم",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-series-100-28",
+      "points": 100,
+      "question": "من هي الممثلة المصرية التي لعبت دور في مسلسل أين قلبي؟",
+      "answer": "عبلة كامل",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-series-100-29",
+      "points": 100,
+      "question": "من هو الممثل المصري الذي لعب دور في مسلسل جدران الفولاذ؟",
+      "answer": "خالد الصاوي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-series-100-30",
+      "points": 100,
+      "question": "من هو الممثل المصري الذي لعب دور في مسلسل المطرب؟",
+      "answer": "عادل إمام",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-series-300-1",
+      "points": 300,
+      "question": "من هي الممثلة المصرية التي لعبت دور في مسلسل اللعبة؟",
+      "answer": "منى زكي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-series-300-2",
+      "points": 300,
+      "question": "من هو الممثل المصري الذي لعب دور في مسلسل أهل القمة؟",
+      "answer": "أحمد السقا",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-series-300-3",
+      "points": 300,
+      "question": "من هو الممثل المصري الذي لعب دور في مسلسل أدهم شرقاوي؟",
+      "answer": "نور الشريف",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-series-300-4",
+      "points": 300,
+      "question": "من هو الممثل المصري الذي لعب دور في مسلسل نص جني؟",
+      "answer": "محمد رمضان",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-series-300-5",
+      "points": 300,
+      "question": "من هي الممثلة المصرية التي لعبت دور في مسلسل الريس فرحات؟",
+      "answer": "دنيا سمير غانم",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-series-300-6",
+      "points": 300,
+      "question": "من هو الممثل المصري الذي لعب دور في مسلسل عواصف؟",
+      "answer": "عبد الله الصاوي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-series-300-7",
+      "points": 300,
+      "question": "من هي الممثلة المصرية التي لعبت دور في مسلسل الديوان؟",
+      "answer": "أمينة خليل",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-series-300-8",
+      "points": 300,
+      "question": "من هو الممثل المصري الذي لعب دور في مسلسل الشك؟",
+      "answer": "مصطفى شعبان",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-series-300-9",
+      "points": 300,
+      "question": "من هو الممثل المصري الذي لعب دور في مسلسل الأرض؟",
+      "answer": "محمود ياسين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-series-300-10",
+      "points": 300,
+      "question": "من هو الممثل المصري الذي لعب دور في مسلسل حرب الجواسيس؟",
+      "answer": "أحمد السقا",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-series-300-11",
+      "points": 300,
+      "question": "من هي الممثلة المصرية التي لعبت دور في مسلسل زيزة وكنزة؟",
+      "answer": "زينة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-series-300-12",
+      "points": 300,
+      "question": "من هو الممثل المصري الذي لعب دور في مسلسل في بيتنا حلوة؟",
+      "answer": "أحمد رزق",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-series-300-13",
+      "points": 300,
+      "question": "من هي الممثلة المصرية التي لعبت دور في مسلسل ميراث الريح؟",
+      "answer": "سيرين عبد النور",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-series-300-14",
+      "points": 300,
+      "question": "من هو الممثل المصري الذي لعب دور في مسلسل المساكن؟",
+      "answer": "عزت العلايلي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-series-300-15",
+      "points": 300,
+      "question": "من هو الممثل المصري الذي لعب دور في مسلسل السقوط؟",
+      "answer": "خالد النبوي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-series-300-16",
+      "points": 300,
+      "question": "من هو الممثل المصري الذي لعب دور في مسلسل أبو العروس؟",
+      "answer": "محمد فؤاد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-series-300-17",
+      "points": 300,
+      "question": "من هو الممثل المصري الذي لعب دور في مسلسل بيت من ورق؟",
+      "answer": "أحمد السقا",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-series-300-18",
+      "points": 300,
+      "question": "من هو الممثل المصري الذي لعب دور في مسلسل الصعلوك؟",
+      "answer": "سوسن بدر",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-series-300-19",
+      "points": 300,
+      "question": "من هو الممثل المصري الذي لعب دور في مسلسل الأبرياء؟",
+      "answer": "أحمد السقا",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-series-300-20",
+      "points": 300,
+      "question": "من هو الممثل المصري الذي لعب دور في مسلسل الزينة؟",
+      "answer": "كريم عبد العزيز",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-series-300-21",
+      "points": 300,
+      "question": "من هي الممثلة المصرية التي لعبت دور في مسلسل الكهف؟",
+      "answer": "سيرين عبد النور",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-series-300-22",
+      "points": 300,
+      "question": "من هو الممثل المصري الذي لعب دور في مسلسل بنت الخلفاء؟",
+      "answer": "حسن الرداد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-series-300-23",
+      "points": 300,
+      "question": "من هو الممثل المصري الذي لعب دور في مسلسل الظاهر بيبرس؟",
+      "answer": "محمود قابيل",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-series-300-24",
+      "points": 300,
+      "question": "من هو الممثل المصري الذي لعب دور في مسلسل المماليك؟",
+      "answer": "حسين فهمي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-series-300-25",
+      "points": 300,
+      "question": "من هو الممثل المصري الذي لعب دور في مسلسل فوق السحاب؟",
+      "answer": "محمود الكمش",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-series-300-26",
+      "points": 300,
+      "question": "من هو الممثل المصري الذي لعب دور في مسلسل السجادة الأحمر؟",
+      "answer": "كريم محمود عبد العزيز",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-series-300-27",
+      "points": 300,
+      "question": "من هو الممثل المصري الذي لعب دور في مسلسل الهجمة؟",
+      "answer": "محمد إمام",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-series-300-28",
+      "points": 300,
+      "question": "من هو الممثل المصري الذي لعب دور في مسلسل الذئب؟",
+      "answer": "عبد المحسن النمر",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-series-300-29",
+      "points": 300,
+      "question": "من هي الممثلة المصرية التي لعبت دور في مسلسل السيدات؟",
+      "answer": "عبلة كامل",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-series-300-30",
+      "points": 300,
+      "question": "من هي الممثلة المصرية التي لعبت دور في مسلسل شهد؟",
+      "answer": "سمية الخشاب",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-series-300-31",
+      "points": 300,
+      "question": "من هو الممثل المصري الذي لعب دور في مسلسل الكبير أوي الجزء الثاني؟",
+      "answer": "أحمد مكي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-series-300-32",
+      "points": 300,
+      "question": "من هو الممثل المصري الذي لعب دور في مسلسل القرعة؟",
+      "answer": "أحمد السقا",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-series-300-33",
+      "points": 300,
+      "question": "من هو الممثل المصري الذي لعب دور في مسلسل رئيس الجمهورية؟",
+      "answer": "أحمد رزق",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-series-300-34",
+      "points": 300,
+      "question": "من هو الممثل المصري الذي لعب دور في مسلسل العمدة؟",
+      "answer": "محمود حميدة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-series-300-35",
+      "points": 300,
+      "question": "من هي الممثلة المصرية التي لعبت دور في مسلسل شهد؟",
+      "answer": "سمية الخشاب",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-series-500-1",
+      "points": 500,
+      "question": "من هو الممثل المصري الذي جسد شخصية أنور السادات في مسلسل؟",
+      "answer": "أحمد زكي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-series-500-2",
+      "points": 500,
+      "question": "من هو الممثل المصري الذي جسد شخصية جمال عبد الناصر في مسلسل؟",
+      "answer": "عزت العلايلي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-series-500-3",
+      "points": 500,
+      "question": "من هو الممثل السوري الذي جسد شخصية صلاح الدين الأيوبي في مسلسل؟",
+      "answer": "بسام كوسا",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-series-500-4",
+      "points": 500,
+      "question": "من هي الممثلة السورية التي جسدت شخصية نور الدين زنكي في مسلسل؟",
+      "answer": "منى واصف",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-series-500-5",
+      "points": 500,
+      "question": "من هو الممثل اللبناني الذي جسد شخصية عمر بن عبد العزيز في مسلسل؟",
+      "answer": "عاصي الحلاني",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-series-500-6",
+      "points": 500,
+      "question": "من هي الممثلة السعودية التي جسدت شخصية أم هارون في مسلسل؟",
+      "answer": "عائشة عبد الرحمن",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-series-500-7",
+      "points": 500,
+      "question": "من هو الممثل الكويتي الذي جسد شخصية أبي مسلم الكوفي في مسلسل؟",
+      "answer": "طارق العلي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-series-500-8",
+      "points": 500,
+      "question": "من هي الممثلة المغربية التي جسدت شخصية فاطمة نسومر في فيلم؟",
+      "answer": "فاطمة الحاج",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-series-500-9",
+      "points": 500,
+      "question": "من هو الممثل التونسي الذي جسد شخصية بورقيبة في فيلم؟",
+      "answer": "هشام رستم",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-series-500-10",
+      "points": 500,
+      "question": "من هي الممثلة الجزائرية التي جسدت شخصية جميلة بوحيرد في فيلم؟",
+      "answer": "نادية لبيض",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-series-500-11",
+      "points": 500,
+      "question": "من هو الممثل المصري الذي جسد شخصية النبي يوسف في مسلسل؟",
+      "answer": "محمود ياسين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-series-500-12",
+      "points": 500,
+      "question": "من هو الممثل المصري الذي جسد شخصية موسى في مسلسل؟",
+      "answer": "محمود ياسين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-series-500-13",
+      "points": 500,
+      "question": "من هو الممثل المصري الذي جسد شخصية عيسى في مسلسل؟",
+      "answer": "محمود ياسين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-series-500-14",
+      "points": 500,
+      "question": "من هو الممثل المصري الذي جسد شخصية محمد في مسلسل؟",
+      "answer": "محمود ياسين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-series-500-15",
+      "points": 500,
+      "question": "من هو الممثل المصري الذي جسد شخصية أبو بكر في مسلسل؟",
+      "answer": "محمود ياسين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-series-500-16",
+      "points": 500,
+      "question": "من هو الممثل المصري الذي جسد شخصية عمر في مسلسل؟",
+      "answer": "محمود ياسين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-series-500-17",
+      "points": 500,
+      "question": "من هو الممثل المصري الذي جسد شخصية علي في مسلسل؟",
+      "answer": "محمود ياسين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-series-500-18",
+      "points": 500,
+      "question": "من هو الممثل المصري الذي جسد شخصية الحسن في مسلسل؟",
+      "answer": "محمود ياسين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-series-500-19",
+      "points": 500,
+      "question": "من هو الممثل المصري الذي جسد شخصية الحسين في مسلسل؟",
+      "answer": "محمود ياسين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-series-500-20",
+      "points": 500,
+      "question": "من هو الممثل المصري الذي جسد شخصية خالد بن الوليد في مسلسل؟",
+      "answer": "محمود ياسين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-series-500-21",
+      "points": 500,
+      "question": "من هو الممثل المصري الذي جسد شخصية سيف الدين في مسلسل؟",
+      "answer": "محمود ياسين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-series-500-22",
+      "points": 500,
+      "question": "من هو الممثل المصري الذي جسد شخصية نور الدين زنكي في مسلسل؟",
+      "answer": "محمود ياسين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-series-500-23",
+      "points": 500,
+      "question": "من هو الممثل المصري الذي جسد شخصية بيبرس في مسلسل؟",
+      "answer": "محمود ياسين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-series-500-24",
+      "points": 500,
+      "question": "من هو الممثل المصري الذي جسد شخصية قطز في مسلسل؟",
+      "answer": "محمود ياسين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-series-500-25",
+      "points": 500,
+      "question": "من هو الممثل المصري الذي جسد شخصية الظاهر بيبرس في مسلسل؟",
+      "answer": "محمود قابيل",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-series-500-26",
+      "points": 500,
+      "question": "من هو الممثل المصري الذي جسد شخصية السلطان قايتباي في مسلسل؟",
+      "answer": "محمود ياسين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-series-500-27",
+      "points": 500,
+      "question": "من هو الممثل المصري الذي جسد شخصية السلطان برقوق في مسلسل؟",
+      "answer": "محمود ياسين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-series-500-28",
+      "points": 500,
+      "question": "من هو الممثل المصري الذي جسد شخصية السلطان اشرف خليل في مسلسل؟",
+      "answer": "محمود ياسين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-series-500-29",
+      "points": 500,
+      "question": "من هو الممثل المصري الذي جسد شخصية السلطان ظاهر جوقندار في مسلسل؟",
+      "answer": "محمود ياسين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-series-500-30",
+      "points": 500,
+      "question": "من هو الممثل المصري الذي جسد شخصية السلطان أحمد بن طولون في مسلسل؟",
+      "answer": "محمود ياسين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-series-500-31",
+      "points": 500,
+      "question": "من هو الممثل المصري الذي جسد شخصية السلطان صلاح الدين الأيوبي في مسلسل؟",
+      "answer": "محمود ياسين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-series-500-32",
+      "points": 500,
+      "question": "من هو الممثل المصري الذي جسد شخصية السلطان نور الدين في مسلسل؟",
+      "answer": "محمود ياسين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-series-500-33",
+      "points": 500,
+      "question": "من هو الممثل المصري الذي جسد شخصية السلطان الأشرف في مسلسل؟",
+      "answer": "محمود ياسين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-series-500-34",
+      "points": 500,
+      "question": "من هو الممثل المصري الذي جسد شخصية السلطان المظفر في مسلسل؟",
+      "answer": "محمود ياسين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "arabic-series-500-35",
+      "points": 500,
+      "question": "من هو الممثل المصري الذي جسد شخصية السلطان المنصور في مسلسل؟",
+      "answer": "محمود ياسين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    }
+  ],
+  "metadata": {
+    "sectionId": "movies",
+    "updatedAt": "2026-08-05",
+    "status": "ready"
+  }
 }

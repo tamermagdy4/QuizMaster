@@ -1,22 +1,685 @@
-﻿{
+{
   "categoryId": "general-knowledge",
   "questions": [
     {
+      "id": "general-knowledge-100-1",
+      "points": 100,
       "question": "ما الوحدة الأساسية للطاقة في النظام الدولي؟",
-      "answer": "الجول."
+      "answer": "الجول",
+      "image": "",
+      "media": "",
+      "mediaType": ""
     },
     {
+      "id": "general-knowledge-100-2",
+      "points": 100,
       "question": "ما اسم القمر الذي يدور حول كوكب الأرض؟",
-      "answer": "القمر."
+      "answer": "القمر",
+      "image": "",
+      "media": "",
+      "mediaType": ""
     },
     {
+      "id": "general-knowledge-100-3",
+      "points": 100,
       "question": "ما اسم الجهاز الذي يستخدم لقياس الضغط الجوي؟",
-      "answer": "البارومتر."
+      "answer": "البارومتر",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "general-knowledge-100-4",
+      "points": 100,
+      "question": "ما هو أكبر كوكب في المجموعة الشمسية؟",
+      "answer": "المشتري",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "general-knowledge-100-5",
+      "points": 100,
+      "question": "ما هي العاصمة الفرنسية؟",
+      "answer": "باريس",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "general-knowledge-100-6",
+      "points": 100,
+      "question": "ما هو أسرع حيوان بري؟",
+      "answer": "الفهد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "general-knowledge-100-7",
+      "points": 100,
+      "question": "ما هو العنصر الكيميائي الأكثر وفرة في الغلاف الجوي؟",
+      "answer": "النيتروجين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "general-knowledge-100-8",
+      "points": 100,
+      "question": "ما هو النهر الأطول في العالم؟",
+      "answer": "نهر النيل ",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "general-knowledge-100-9",
+      "points": 100,
+      "question": "ما هي العاصمة اليابانية؟",
+      "answer": "طوكيو",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "general-knowledge-100-10",
+      "points": 100,
+      "question": "ما هو اللون الطبيعي للفضة؟",
+      "answer": "فضي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "general-knowledge-100-11",
+      "points": 100,
+      "question": "ما هو أصغر كوكب في المجموعة الشمسية؟",
+      "answer": "عطارد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "general-knowledge-100-12",
+      "points": 100,
+      "question": "ما هي العاصمة الإيطالية؟",
+      "answer": "روما",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "general-knowledge-100-13",
+      "points": 100,
+      "question": "ما هو الحيوان الأكبر في العالم؟",
+      "answer": "الحوت الأزرق",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "general-knowledge-100-14",
+      "points": 100,
+      "question": "ما هو العنصر الكيميائي الذي يرمز له بالرمز O؟",
+      "answer": "الأكسجين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "general-knowledge-100-15",
+      "points": 100,
+      "question": "ما هو أعلى جبل في العالم؟",
+      "answer": "إفرست",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "general-knowledge-100-16",
+      "points": 100,
+      "question": "ما هي العاصمة البريطانية؟",
+      "answer": "لندن",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "general-knowledge-100-17",
+      "points": 100,
+      "question": "ما هو عدد أضلاع الشكل السداسي؟",
+      "answer": "6 أضلاع",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "general-knowledge-100-18",
+      "points": 100,
+      "question": "ما هو لون الأرجواني؟",
+      "answer": "أزرق وأبيض",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "general-knowledge-100-19",
+      "points": 100,
+      "question": "ما هو الكوكب الأحمر؟",
+      "answer": "المريخ",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "general-knowledge-100-20",
+      "points": 100,
+      "question": "ما هي العاصمة الألمانية؟",
+      "answer": "برلين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "general-knowledge-100-21",
+      "points": 100,
+      "question": "ما هو عدد أسنان الفم البشري الكامل؟",
+      "answer": "32 سناً",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "general-knowledge-100-22",
+      "points": 100,
+      "question": "ما هو الغاز الذي يحتاجه الإنسان للتنفس؟",
+      "answer": "الأكسجين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "general-knowledge-100-23",
+      "points": 100,
+      "question": "ما هو المحيط الأكبر في العالم؟",
+      "answer": "المحيط الهادئ",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "general-knowledge-100-24",
+      "points": 100,
+      "question": "ما هي العاصمة الصينية؟",
+      "answer": "بكين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "general-knowledge-100-25",
+      "points": 100,
+      "question": "ما هو عدد أضلاع الشكل السباعي؟",
+      "answer": "7 أضلاع",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "general-knowledge-300-1",
+      "points": 300,
+      "question": "ما هو رمز الذهب في الجدول الدوري؟",
+      "answer": "Au",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "general-knowledge-300-2",
+      "points": 300,
+      "question": "ما هو أعمق محيط في العالم؟",
+      "answer": "المحيط الهادئ",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "general-knowledge-300-3",
+      "points": 300,
+      "question": "ما هو عدد دول العالم؟",
+      "answer": "أكثر من 190 دولة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "general-knowledge-300-4",
+      "points": 300,
+      "question": "ما هو العنصر الكيميائي الذي يرمز له بالرمز H؟",
+      "answer": "الهيدروجين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "general-knowledge-300-5",
+      "points": 300,
+      "question": "ما هو أطول نهر في آسيا؟",
+      "answer": "نهر يانغتسي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "general-knowledge-300-6",
+      "points": 300,
+      "question": "ما هو الكوكب الذي يطلق عليه الكوكب العملاق؟",
+      "answer": "زحل",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "general-knowledge-300-7",
+      "points": 300,
+      "question": "ما هو عدد لغات العالم؟",
+      "answer": "أكثر من 7000 لغة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "general-knowledge-300-8",
+      "points": 300,
+      "question": "ما هو العنصر الكيميائي الذي يرمز له بالرمز Fe؟",
+      "answer": "الحديد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "general-knowledge-300-9",
+      "points": 300,
+      "question": "ما هو أعلى برج في العالم؟",
+      "answer": "برج خليفة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "general-knowledge-300-10",
+      "points": 300,
+      "question": "ما هو عدد قارات العالم؟",
+      "answer": "7 قارات",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "general-knowledge-300-11",
+      "points": 300,
+      "question": "ما هو الكوكب الذي يدور حول الأرض؟",
+      "answer": "القمر",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "general-knowledge-300-12",
+      "points": 300,
+      "question": "ما هو العنصر الكيميائي الذي يرمز له بالرمز Na؟",
+      "answer": "الصوديوم",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "general-knowledge-300-13",
+      "points": 300,
+      "question": "ما هو أكبر صحراء في العالم؟",
+      "answer": "الصحراء الكبرى",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "general-knowledge-300-14",
+      "points": 300,
+      "question": "ما هو عدد نجوم في المجرة؟",
+      "answer": "أكثر من 100 مليار نجمة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "general-knowledge-300-15",
+      "points": 300,
+      "question": "ما هو العنصر الكيميائي الذي يرمز له بالرمز Cl؟",
+      "answer": "الكلور",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "general-knowledge-300-16",
+      "points": 300,
+      "question": "ما هو أعمق نقطة في المحيطات؟",
+      "answer": "خندق ماريانا",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "general-knowledge-300-17",
+      "points": 300,
+      "question": "ما هو عدد ساعات اليوم؟",
+      "answer": "24 ساعة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "general-knowledge-300-18",
+      "points": 300,
+      "question": "ما هو العنصر الكيميائي الذي يرمز له بالرمز C؟",
+      "answer": "الكربون",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "general-knowledge-300-19",
+      "points": 300,
+      "question": "ما هو أكبر صحراء في آسيا؟",
+      "answer": "صحراء غوبي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "general-knowledge-300-20",
+      "points": 300,
+      "question": "ما هو عدد قارات في أوروبا؟",
+      "answer": "أوروبا ليست قارة بل هي قارة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "general-knowledge-300-21",
+      "points": 300,
+      "question": "ما هو العنصر الكيميائي الذي يرمز له بالرمز S؟",
+      "answer": "الكبريت",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "general-knowledge-300-22",
+      "points": 300,
+      "question": "ما هو أسرع طائر في العالم؟",
+      "answer": "الصقر الجبلي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "general-knowledge-300-23",
+      "points": 300,
+      "question": "ما هو عدد لغات الرسمية في الهند؟",
+      "answer": "22 لغة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "general-knowledge-300-24",
+      "points": 300,
+      "question": "ما هو العنصر الكيميائي الذي يرمز له بالرمز K؟",
+      "answer": "البوتاسيوم",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "general-knowledge-300-25",
+      "points": 300,
+      "question": "ما هو عدد الكواكب في المجموعة الشمسية؟",
+      "answer": "8 كواكب",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "general-knowledge-500-1",
+      "points": 500,
+      "question": "ما هو العنصر الكيميائي الذي يرمز له بالرمز He؟",
+      "answer": "الهيليوم",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "general-knowledge-500-2",
+      "points": 500,
+      "question": "ما هو الكوكب الذي يدور حول الشمس في 88 يوم؟",
+      "answer": "عطارد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "general-knowledge-500-3",
+      "points": 500,
+      "question": "ما هو عدد عظام جسم الإنسان البالغ؟",
+      "answer": "206 عظمة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "general-knowledge-500-4",
+      "points": 500,
+      "question": "ما هو العنصر الكيميائي الذي يرمز له بالرمز Si؟",
+      "answer": "السيليكون",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "general-knowledge-500-5",
+      "points": 500,
+      "question": "ما هو الكوكب الذي يدور حول الشمس في 687 يوم؟",
+      "answer": "المريخ",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "general-knowledge-500-6",
+      "points": 500,
+      "question": "ما هو عدد عضلات جسم الإنسان؟",
+      "answer": "أكثر من 600 عضلة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "general-knowledge-500-7",
+      "points": 500,
+      "question": "ما هو العنصر الكيميائي الذي يرمز له بالرمز N؟",
+      "answer": "النيتروجين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "general-knowledge-500-8",
+      "points": 500,
+      "question": "ما هو الكوكب الذي يدور حول الشمس في 12 سنة؟",
+      "answer": "المشتري",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "general-knowledge-500-9",
+      "points": 500,
+      "question": "ما هو عدد خلايا جسم الإنسان؟",
+      "answer": "تريليونات الخلايا",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "general-knowledge-500-10",
+      "points": 500,
+      "question": "ما هو العنصر الكيميائي الذي يرمز له بالرمز Ca؟",
+      "answer": "الكالسيوم",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "general-knowledge-500-11",
+      "points": 500,
+      "question": "ما هو الكوكب الذي يدور حول الشمس في 29 سنة؟",
+      "answer": "زحل",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "general-knowledge-500-12",
+      "points": 500,
+      "question": "ما هو عدد أنواع الدم في الإنسان؟",
+      "answer": "4 أنواع",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "general-knowledge-500-13",
+      "points": 500,
+      "question": "ما هو العنصر الكيميائي الذي يرمز له بالرمز Mg؟",
+      "answer": "المغنيسيوم",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "general-knowledge-500-14",
+      "points": 500,
+      "question": "ما هو الكوكب الذي يدور حول الشمس في 84 سنة؟",
+      "answer": "أورانوس",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "general-knowledge-500-15",
+      "points": 500,
+      "question": "ما هو عدد حواس الإنسان؟",
+      "answer": "5 حواس",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "general-knowledge-500-16",
+      "points": 500,
+      "question": "ما هو العنصر الكيميائي الذي يرمز له بالرمز Al؟",
+      "answer": "الألمنيوم",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "general-knowledge-500-17",
+      "points": 500,
+      "question": "ما هو الكوكب الذي يدور حول الشمس في 165 سنة؟",
+      "answer": "نبتون",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "general-knowledge-500-18",
+      "points": 500,
+      "question": "ما هو عدد قارات المأهولة في العالم؟",
+      "answer": "6 قارات",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "general-knowledge-500-19",
+      "points": 500,
+      "question": "ما هو العنصر الكيميائي الذي يرمز له بالرمز Zn؟",
+      "answer": "الزنك",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "general-knowledge-500-20",
+      "points": 500,
+      "question": "ما هو الكوكب الكوكب القزم؟",
+      "answer": "بلوتو",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "general-knowledge-500-21",
+      "points": 500,
+      "question": "ما هو عدد قارات غير المأهولة في العالم؟",
+      "answer": "قارة واحدة (القارة القطبية الجنوبية)",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "general-knowledge-500-22",
+      "points": 500,
+      "question": "ما هو العنصر الكيميائي الذي يرمز له بالرمز Cu؟",
+      "answer": "النحاس",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "general-knowledge-500-23",
+      "points": 500,
+      "question": "ما هو الكوكب الذي يدور حول الشمس أقل من سنة؟",
+      "answer": "عطارد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "general-knowledge-500-24",
+      "points": 500,
+      "question": "ما هو عدد أنواع المناخات الرئيسية في العالم؟",
+      "answer": "5 أنواع",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "general-knowledge-500-25",
+      "points": 500,
+      "question": "ما هو العنصر الكيميائي الذي يرمز له بالرمز Ag؟",
+      "answer": "الفضة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
     }
   ],
   "metadata": {
     "sectionId": "general",
-    "updatedAt": "2026-08-03",
+    "updatedAt": "2026-08-05",
     "status": "ready"
   }
 }

@@ -1,11 +1,1360 @@
-﻿{
-    "categoryId":  "ronaldo",
-    "questions":  [
-
-                  ],
-    "metadata":  {
-                     "sectionId":  "sports",
-                     "updatedAt":  "2026-08-03",
-                     "status":  "pending"
-                 }
+{
+  "categoryId": "ronaldo",
+  "questions": [
+    {
+      "id": "ronaldo-100-1",
+      "points": 100,
+      "question": "أي فريق برتغالي لعب له رونالدو قبل التوقيع مع مانشستر يونايتد؟",
+      "answer": "سبورتينج لشبونة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-100-2",
+      "points": 100,
+      "question": "رونالدو مرادف للرقم 7، ولكن ما هو الرقم الآخر الذي ارتداه في ريال مدريد؟",
+      "answer": "الرقم 9",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-100-3",
+      "points": 100,
+      "question": "رونالدو يهتف بأي كلمة عند الاحتفال بهدف؟",
+      "answer": "Siuuu",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-100-4",
+      "points": 100,
+      "question": "أي جزيرة برتغالية قبالة سواحل أفريقيا، والتي تشترك أيضًا في اسمها مع كعكة، يأتي منها رونالدو؟",
+      "answer": "ماديرا",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-100-5",
+      "points": 100,
+      "question": "ما هو موطن كريستيانو رونالدو؟",
+      "answer": "البرتغال",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-100-6",
+      "points": 100,
+      "question": "ما هو لقب رونالدو بين عشاق كرة القدم؟",
+      "answer": "الصاروخ",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-100-7",
+      "points": 100,
+      "question": "في أي شهر ولد رونالدو؟",
+      "answer": "فبراير",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-100-8",
+      "points": 100,
+      "question": "كم عدد أبناء رونالدو؟",
+      "answer": "5 أبناء",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-100-9",
+      "points": 100,
+      "question": "ما هو النادي الذي انتقل إليه رونالدو بعد ريال مدريد؟",
+      "answer": "يوفنتوس",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-100-10",
+      "points": 100,
+      "question": "ما هو النادي الذي فاز رونالدو معه بلقب الدوري الإيطالي؟",
+      "answer": "يوفنتوس",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-100-11",
+      "points": 100,
+      "question": "كم عدد الموسم التي قضاها رونالدو في ريال مدريد؟",
+      "answer": "9 مواسم",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-100-12",
+      "points": 100,
+      "question": "ما هو النادي الذي فاز رونالدو معه بأول لقب دوري أبطال أوروبا؟",
+      "answer": "مانشستر يونايتد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-100-13",
+      "points": 100,
+      "question": "كم عدد المرات التي فاز فيها رونالدو بالدوري الإنجليزي؟",
+      "answer": "3 مرات",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-100-14",
+      "points": 100,
+      "question": "ما هو النادي الذي سجل رونالدو ضده أول هاتريك له؟",
+      "answer": "مانشستر سيتي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-100-15",
+      "points": 100,
+      "question": "كم عدد الأهداف التي سجلها رونالدو في موسمه الأول مع مانشستر يونايتد؟",
+      "answer": "4 أهداف",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-100-16",
+      "points": 100,
+      "question": "في أي عام فاز رونالدو بجائزة أفضل لاعب شاب في العالم؟",
+      "answer": "2005",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-100-17",
+      "points": 100,
+      "question": "ما هو النادي الذي هزمه رونالدو في نهائي يورو 2016؟",
+      "answer": "فرنسا",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-100-18",
+      "points": 100,
+      "question": "كم عدد المرات التي فاز فيها رونالدو بجائزة أفضل لاعب في الدوري الإسباني؟",
+      "answer": "مرتين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-100-19",
+      "points": 100,
+      "question": "ما هو الرقم الذي يرتديه رونالدو في المنتخب البرتغالي؟",
+      "answer": "الرقم 7",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-100-20",
+      "points": 100,
+      "question": "كم عدد مرات فوز رونالدو بالكلاسيكو؟",
+      "answer": "8 مرات",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-100-21",
+      "points": 100,
+      "question": "كم عدد الأهداف التي سجلها رونالدو في يوفنتوس إجمالاً؟",
+      "answer": "101 هدف",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-100-22",
+      "points": 100,
+      "question": "ما هو النادي الذي احتاج رونالدو للانتظار 18 شهراً للانتقال إليه؟",
+      "answer": "مانشستر يونايتد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-100-23",
+      "points": 100,
+      "question": "كم عدد الأهداف التي سجلها رونالدو في الدوري الإيطالي مع يوفنتوس؟",
+      "answer": "أكثر من 50 هدف",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-100-24",
+      "points": 100,
+      "question": "ما هو النادي الذي سجل رونالدو ضده آخر هدف له في الدوري الإسباني؟",
+      "answer": "ليفانتي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-100-25",
+      "points": 100,
+      "question": "كم عدد البطولات التي فاز بها رونالدو في موسمه الوحيد في يوفنتوس؟",
+      "answer": "بطولتان",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-100-26",
+      "points": 100,
+      "question": "ما هو النادي الذي أقصى رونالدو من دوري أبطال أوروبا في موسمه الأول مع يوفنتوس؟",
+      "answer": "أياكس",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-100-27",
+      "points": 100,
+      "question": "كم عدد مرات فوز رونالدو بالدوري الإسباني مع ريال مدريد؟",
+      "answer": "مرتين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-100-28",
+      "points": 100,
+      "question": "ما هو النادي الذي سجل رونالدو ضده أول هدف له في دوري أبطال أوروبا؟",
+      "answer": "ديبورتيفو لا كورونيا",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-100-29",
+      "points": 100,
+      "question": "كم عدد الأهداف التي سجلها رونالدو في نهائي دوري أبطال أوروبا؟",
+      "answer": "4 أهداف",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-100-30",
+      "points": 100,
+      "question": "ما هو النادي الذي هزمه رونالدو في نهائي دوري أبطال أوروبا 2014؟",
+      "answer": "أتلتيكو مدريد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-100-31",
+      "points": 100,
+      "question": "كم عدد مرات فوز رونالدو بالكأس الملك مع ريال مدريد؟",
+      "answer": "مرتين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-100-32",
+      "points": 100,
+      "question": "كم عدد المرات التي قاد فيها رونالدو المنتخب البرتغالي كقائد؟",
+      "answer": "أكثر من 100 مرة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-100-33",
+      "points": 100,
+      "question": "ما هو النادي الذي سجل رونالدو ضده آخر هاتريك له في الدوري الإسباني؟",
+      "answer": "خيخون",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-100-34",
+      "points": 100,
+      "question": "كم عدد الأهداف التي سجلها رونالدو في أول موسم له مع نصر السعودية؟",
+      "answer": "أكثر من 10 أهداف",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-100-35",
+      "points": 100,
+      "question": "ما هو النادي الذي فاز رونالدو معه بأول لقب في مسيرته المهنية؟",
+      "answer": "سبورتينج لشبونة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-100-36",
+      "points": 100,
+      "question": "كم عدد الأهداف التي سجلها رونالدو في مبارياته مع المنتخب البرتغالي؟",
+      "answer": "أكثر من 120 هدف",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-100-37",
+      "points": 100,
+      "question": "ما هو النادي الذي هزمه رونالدو في نهائي دوري أبطال أوروبا 2008؟",
+      "answer": "تشيلسي",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-100-38",
+      "points": 100,
+      "question": "كم عدد مرات فوز رونالدو بالدوري الإسباني المتتالية؟",
+      "answer": "مرة واحدة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-100-39",
+      "points": 100,
+      "question": "ما هو النادي الذي سجل رونالدو ضده أول هاتريك له في نهائي دوري أبطال أوروبا؟",
+      "answer": "ليفركوزن",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-100-40",
+      "points": 100,
+      "question": "كم عدد البطولات التي فاز بها رونالدو في مسيرته المهنية؟",
+      "answer": "أكثر من 30 بطولة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-100-41",
+      "points": 100,
+      "question": "ميسي مرادف للرقم 10، رونالدو مرادف للرقم؟",
+      "answer": "الرقم 7",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-100-42",
+      "points": 100,
+      "question": "ما هو النادي الذي يلعب له حالياً؟",
+      "answer": "نصر السعودية",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-100-43",
+      "points": 100,
+      "question": "كم عدد المواسم التي لعبها رونالدو في الدوري الإنجليزي؟",
+      "answer": "6 مواسم",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-100-44",
+      "points": 100,
+      "question": "ما هو النادي الذي سجل رونالدو ضده أول هاتريك له في الدوري الإنجليزي؟",
+      "answer": "نيوكاسل",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-100-45",
+      "points": 100,
+      "question": "كم عدد مرات فوز رونالدو بالدوري الإيطالي المتتالية؟",
+      "answer": "مرتين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-100-46",
+      "points": 100,
+      "question": "ما هو النادي الذي فاز رونالدو معه بأول لقب دوري أبطال أوروبا؟",
+      "answer": "مانشستر يونايتد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-100-47",
+      "points": 100,
+      "question": "كم عدد الأهداف التي سجلها رونالدو في موسمه الأول مع نصر السعودية؟",
+      "answer": "أكثر من 10 أهداف",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-100-48",
+      "points": 100,
+      "question": "ما هو النادي الذي سجل رونالدو ضده آخر هدف له في الدوري الإنجليزي؟",
+      "answer": "ليفربول",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-100-49",
+      "points": 100,
+      "question": "كم عدد المرات التي فاز فيها رونالدو بالسوبر كوب الإسباني؟",
+      "answer": "مرتين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-100-50",
+      "points": 100,
+      "question": "ما هو النادي الذي انضم إليه رونالدو بعد يوفنتوس؟",
+      "answer": "مانشستر يونايتد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-300-1",
+      "points": 300,
+      "question": "ساعد رونالدو البرتغال على الفوز بالبطولة الأوروبية في أي عام؟",
+      "answer": "2016",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-300-2",
+      "points": 300,
+      "question": "من اللاعب الحاصل على جائزة الكرة الذهبية في عام 2015؟",
+      "answer": "كريستيانو رونالدو",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-300-3",
+      "points": 300,
+      "question": "كم عدد جوائز الكرة الذهبية التي حصل عليها رونالدو؟",
+      "answer": "5 جوائز",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-300-4",
+      "points": 300,
+      "question": "كم عدد مرات فوز رونالدو بالدوري الإسباني؟",
+      "answer": "مرتين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-300-5",
+      "points": 300,
+      "question": "من هو الهداف التاريخي لريال مدريد؟",
+      "answer": "كريستيانو رونالدو",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-300-6",
+      "points": 300,
+      "question": "كم عدد مرات فوز رونالدو بدوري أبطال أوروبا؟",
+      "answer": "5 مرات",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-300-7",
+      "points": 300,
+      "question": "ما هو الرقم القياسي لأهداف رونالدو في موسم واحد في الدوري الإسباني؟",
+      "answer": "48 هدف",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-300-8",
+      "points": 300,
+      "question": "كم عدد مرات فوز رونالدو بالحذاء الذهبي الأوروبي؟",
+      "answer": "4 مرات",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-300-9",
+      "points": 300,
+      "question": "من هو الهداف التاريخي للمنتخب البرتغالي؟",
+      "answer": "كريستيانو رونالدو",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-300-10",
+      "points": 300,
+      "question": "كم عدد مرات فوز رونالدو بالكأس الملك؟",
+      "answer": "مرتين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-300-11",
+      "points": 300,
+      "question": "كم عدد مرات فوز رونالدو بكأس العالم للأندية؟",
+      "answer": "4 مرات",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-300-12",
+      "points": 300,
+      "question": "كم عدد المباريات التي لعبها رونالدو مع ريال مدريد؟",
+      "answer": "438 مباراة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-300-13",
+      "points": 300,
+      "question": "ما هو الرقم القياسي لأهداف رونالدو مع ريال مدريد؟",
+      "answer": "450 هدف",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-300-14",
+      "points": 300,
+      "question": "كم عدد مرات فوز رونالدو بالدوري الإنجليزي؟",
+      "answer": "3 مرات",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-300-15",
+      "points": 300,
+      "question": "كم عدد الأهداف التي سجلها رونالدو في نهائي يورو 2016؟",
+      "answer": "لم يسجل أهداف",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-300-16",
+      "points": 300,
+      "question": "كم عدد مرات فوز رونالدو بالكأس السوبر الإسباني؟",
+      "answer": "مرتين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-300-17",
+      "points": 300,
+      "question": "ما هو أكبر فوز لرونالدو في الكلاسيكو؟",
+      "answer": "5-0",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-300-18",
+      "points": 300,
+      "question": "كم عدد مرات فوز رونالدو بالسوبر كوب الأوروبي؟",
+      "answer": "3 مرات",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-300-19",
+      "points": 300,
+      "question": "في أي عام فاز رونالدو بكأس العالم للأندية لأول مرة؟",
+      "answer": "2014",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-300-20",
+      "points": 300,
+      "question": "كم عدد المرات التي سجل فيها رونالدو أهداف في مباريات متتالية؟",
+      "answer": "10 مباريات",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-300-21",
+      "points": 300,
+      "question": "كم عدد مرات فوز رونالدو بجائزة بوتيني؟",
+      "answer": "مرتين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-300-22",
+      "points": 300,
+      "question": "كم عدد الأهداف التي سجلها رونالدو في جميع المسابقات مع ريال مدريد؟",
+      "answer": "450 هدف",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-300-23",
+      "points": 300,
+      "question": "كم عدد مرات فوز رونالدو بالدوري الإيطالي؟",
+      "answer": "مرتين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-300-24",
+      "points": 300,
+      "question": "كم عدد مرات فوز رونالدو بالدوري الإيطالي المتتالية؟",
+      "answer": "مرتين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-300-25",
+      "points": 300,
+      "question": "كم عدد الأهداف التي سجلها رونالدو في موسمه الأول مع يوفنتوس؟",
+      "answer": "21 هدف",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-300-26",
+      "points": 300,
+      "question": "كم عدد مرات فوز رونالدو بالكأس الإيطالية؟",
+      "answer": "مرة واحدة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-300-27",
+      "points": 300,
+      "question": "كم عدد مرات ترشح رونالدو لجائزة الكرة الذهبية؟",
+      "answer": "18 مرة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-300-28",
+      "points": 300,
+      "question": "كم عدد الأهداف التي سجلها رونالدو في البطولات الكبرى؟",
+      "answer": "14 هدف",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-300-29",
+      "points": 300,
+      "question": "كم عدد مرات فوز رونالدو بالسوبر كوب الإيطالي؟",
+      "answer": "مرة واحدة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-300-30",
+      "points": 300,
+      "question": "كم عدد الأهداف التي سجلها رونالدو في مسيرته المهنية؟",
+      "answer": "أكثر من 900 هدف",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-300-31",
+      "points": 300,
+      "question": "من هو اللاعب الذي صنع أكبر عدد من الأهداف لرونالدو؟",
+      "answer": "كريم بنزيما",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-300-32",
+      "points": 300,
+      "question": "كم عدد مرات فوز رونالدو بالسوبر كوب الأوروبي؟",
+      "answer": "3 مرات",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-300-33",
+      "points": 300,
+      "question": "في أي عام سجل رونالدو أول هاتريك له في دوري أبطال أوروبا؟",
+      "answer": "2007",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-300-34",
+      "points": 300,
+      "question": "كم عدد الأهداف التي سجلها رونالدو في نهائي دوري أبطال أوروبا؟",
+      "answer": "4 أهداف",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-300-35",
+      "points": 300,
+      "question": "من هو المدرب الذي فاز مع رونالدو بأكبر عدد من البطولات في ريال مدريد؟",
+      "answer": "زيندين زيدان",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-300-36",
+      "points": 300,
+      "question": "كم عدد مرات فوز رونالدو بالكأس الملك مع ريال مدريد؟",
+      "answer": "مرتين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-300-37",
+      "points": 300,
+      "question": "كم عدد الأهداف التي سجلها رونالدو في نهائي يورو 2016؟",
+      "answer": "لم يسجل أهداف",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-300-38",
+      "points": 300,
+      "question": "من هو اللاعب الذي سجل مع رونالدو أكبر عدد من الأهداف في نهائي دوري أبطال أوروبا؟",
+      "answer": "غاري كاهيل",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-300-39",
+      "points": 300,
+      "question": "كم عدد مرات فوز رونالدو بالدوري الإنجليزي المتتالية؟",
+      "answer": "3 مرات",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-300-40",
+      "points": 300,
+      "question": "في أي عام سجل رونالدو أول هاتريك له في الدوري الإسباني؟",
+      "answer": "2008",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-300-41",
+      "points": 300,
+      "question": "كم عدد الأهداف التي سجلها رونالدو في البطولات الكبرى مع المنتخب؟",
+      "answer": "أكثر من 10 أهداف",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-300-42",
+      "points": 300,
+      "question": "من هو صديق رونالدو الذي كان رفيقه في ريال مدريد؟",
+      "answer": "كريم بنزيما",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-300-43",
+      "points": 300,
+      "question": "كم عدد الأهداف التي سجلها رونالدو في نهائي دوري أبطال أوروبا 2014؟",
+      "answer": "4 أهداف",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-300-44",
+      "points": 300,
+      "question": "من هو اللاعب الذي فاز مع رونالدو بأكبر عدد من البطولات؟",
+      "answer": "مارسيلو",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-300-45",
+      "points": 300,
+      "question": "كم عدد مرات فوز رونالدو بالدوري الإسباني المتتالية؟",
+      "answer": "مرة واحدة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-300-46",
+      "points": 300,
+      "question": "في أي عام سجل رونالدو أول هاتريك له في الدوري الإنجليزي؟",
+      "answer": "2006",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-300-47",
+      "points": 300,
+      "question": "كم عدد الأهداف التي سجلها رونالدو في نهائي دوري أبطال أوروبا 2008؟",
+      "answer": "هدف واحد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-300-48",
+      "points": 300,
+      "question": "كم عدد أهداف رونالدو مع المنتخب البرتغالي؟",
+      "answer": "أكثر من 120 هدف",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-300-49",
+      "points": 300,
+      "question": "من هو المدرب الذي قاد رونالدو للفوز بأول لقب دوري أبطال أوروبا؟",
+      "answer": "أليكس فيرغسون",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-300-50",
+      "points": 300,
+      "question": "كم عدد مرات فوز رونالدو بكأس رابطة الأبطال؟",
+      "answer": "مرة واحدة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-500-1",
+      "points": 500,
+      "question": "أين لعب البرتغالي كريستيانو رونالدو قبل اللعب لمانشستر يونايتد الإنجليزي؟",
+      "answer": "سبورتينج لشبونة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-500-2",
+      "points": 500,
+      "question": "كم عدد جوائز الكرة الذهبية التي حصل عليها كريستيانو رونالدو؟",
+      "answer": "5 جوائز",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-500-3",
+      "points": 500,
+      "question": "في أي عام فاز رونالدو بالبطولة الأوروبية مع البرتغال؟",
+      "answer": "2016",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-500-4",
+      "points": 500,
+      "question": "كم عدد أهداف رونالدو مع المنتخب البرتغالي؟",
+      "answer": "أكثر من 120 هدف",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-500-5",
+      "points": 500,
+      "question": "من هو المدرب الذي فاز مع رونالدو بأكبر عدد من البطولات في ريال مدريد؟",
+      "answer": "زيندين زيدان",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-500-6",
+      "points": 500,
+      "question": "كم عدد مرات فوز رونالدو بالدوري الإسباني؟",
+      "answer": "مرتين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-500-7",
+      "points": 500,
+      "question": "كم عدد مرات فوز رونالدو بدوري أبطال أوروبا؟",
+      "answer": "5 مرات",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-500-8",
+      "points": 500,
+      "question": "ما هو الرقم القياسي لأهداف رونالدو في موسم واحد في الدوري الإسباني؟",
+      "answer": "48 هدف",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-500-9",
+      "points": 500,
+      "question": "في أي عام سجل رونالدو هدفه الأول مع المنتخب البرتغالي؟",
+      "answer": "2004",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-500-10",
+      "points": 500,
+      "question": "كم عدد المرات التي فاز فيها رونالدو بالحذاء الذهبي الأوروبي؟",
+      "answer": "4 مرات",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-500-11",
+      "points": 500,
+      "question": "ما هو النادي الحالي لرونالدو؟",
+      "answer": "نصر السعودية",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-500-12",
+      "points": 500,
+      "question": "كم عدد مرات فوز رونالدو بجائزة أفضل لاعب في العالم؟",
+      "answer": "5 مرات",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-500-13",
+      "points": 500,
+      "question": "في أي عام كان رونالدو أصغر لاعب يشارك في مباراة لسبورتينج لشبونة؟",
+      "answer": "2002",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-500-14",
+      "points": 500,
+      "question": "كم عدد الأهداف التي سجلها رونالدو في الكلاسيكو؟",
+      "answer": "18 هدف",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-500-15",
+      "points": 500,
+      "question": "من هو اللاعب الذي سجل أكبر عدد من الأهداف مع رونالدو في ريال مدريد؟",
+      "answer": "كريم بنزيما",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-500-16",
+      "points": 500,
+      "question": "كم عدد مرات فوز رونالدو بالكأس الملك؟",
+      "answer": "مرتين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-500-17",
+      "points": 500,
+      "question": "ما هو الرقم القياسي لعدد الهاتريك في موسم واحد لرونالدو؟",
+      "answer": "8 هاتريك",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-500-18",
+      "points": 500,
+      "question": "في أي عام فاز رونالدو بجائزة أفضل لاعب شاب في العالم؟",
+      "answer": "2005",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-500-19",
+      "points": 500,
+      "question": "كم عدد المباريات التي لعبها رونالدو مع ريال مدريد؟",
+      "answer": "438 مباراة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-500-20",
+      "points": 500,
+      "question": "ما هو الرقم القياسي لأهداف رونالدو مع ريال مدريد؟",
+      "answer": "450 هدف",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-500-21",
+      "points": 500,
+      "question": "كم عدد مرات فوز رونالدو بالدوري الإنجليزي؟",
+      "answer": "3 مرات",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-500-22",
+      "points": 500,
+      "question": "من هو المدرب الذي قاد رونالدو للفوز بالبطولة الأوروبية؟",
+      "answer": "فرناندو سانتوس",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-500-23",
+      "points": 500,
+      "question": "كم عدد الأهداف التي سجلها رونالدو في نهائي يورو 2016؟",
+      "answer": "لم يسجل أهداف",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-500-24",
+      "points": 500,
+      "question": "في أي مدينة لعب رونالدو أول مباراة له مع المنتخب البرتغالي؟",
+      "answer": "كازاخستان",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-500-25",
+      "points": 500,
+      "question": "كم عدد مرات فوز رونالدو بالكأس السوبر الإسباني؟",
+      "answer": "مرتين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-500-26",
+      "points": 500,
+      "question": "ما هو أكبر فوز لرونالدو في الكلاسيكو؟",
+      "answer": "5-0",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-500-27",
+      "points": 500,
+      "question": "كم عدد مرات فوز رونالدو بكأس العالم للأندية؟",
+      "answer": "4 مرات",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-500-28",
+      "points": 500,
+      "question": "في أي عام فاز رونالدو بكأس العالم للأندية لأول مرة؟",
+      "answer": "2014",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-500-29",
+      "points": 500,
+      "question": "كم عدد المرات التي سجل فيها رونالدو أهداف في مباريات متتالية؟",
+      "answer": "10 مباريات",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-500-30",
+      "points": 500,
+      "question": "من هو اللاعب الذي سجل مع رونالدو أكبر عدد من الأهداف في نهائي دوري أبطال أوروبا؟",
+      "answer": "غاري كاهيل",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-500-31",
+      "points": 500,
+      "question": "كم عدد مرات فوز رونالدو بجائزة بوتيني؟",
+      "answer": "مرتين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-500-32",
+      "points": 500,
+      "question": "كم عدد الأهداف التي سجلها رونالدو في جميع المسابقات مع ريال مدريد؟",
+      "answer": "450 هدف",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-500-33",
+      "points": 500,
+      "question": "من هو المدرب الذي قاد رونالدو للفوز بأول لقب دوري أبطال أوروبا؟",
+      "answer": "أليكس فيرغسون",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-500-34",
+      "points": 500,
+      "question": "كم عدد مرات فوز رونالدو بالدوري الإيطالي؟",
+      "answer": "مرتين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-500-35",
+      "points": 500,
+      "question": "ما هو النادي الذي انتقل إليه رونالدو بعد يوفنتوس؟",
+      "answer": "مانشستر يونايتد",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-500-36",
+      "points": 500,
+      "question": "كم عدد مرات فوز رونالدو بالدوري الإيطالي المتتالية؟",
+      "answer": "مرتين",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-500-37",
+      "points": 500,
+      "question": "في أي عام سجل رونالدو آخر هدف له مع ريال مدريد؟",
+      "answer": "2018",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-500-38",
+      "points": 500,
+      "question": "كم عدد مرات ترشح رونالدو لجائزة الكرة الذهبية؟",
+      "answer": "18 مرة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-500-39",
+      "points": 500,
+      "question": "من هو اللاعب الذي سجل مع رونالدو في نهائي يورو 2016؟",
+      "answer": "إيدير",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-500-40",
+      "points": 500,
+      "question": "كم عدد الأهداف التي سجلها رونالدو في البطولات الكبرى؟",
+      "answer": "14 هدف",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-500-41",
+      "points": 500,
+      "question": "من هو الحارس الذي لعب مع رونالدو لأطول فترة في ريال مدريد؟",
+      "answer": "إيكر كاسياس",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-500-42",
+      "points": 500,
+      "question": "كم عدد مرات فوز رونالدو بالسوبر كوب الأوروبي؟",
+      "answer": "3 مرات",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-500-43",
+      "points": 500,
+      "question": "في أي عام سجل رونالدو أول هاتريك له في دوري أبطال أوروبا؟",
+      "answer": "2007",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-500-44",
+      "points": 500,
+      "question": "كم عدد الأهداف التي سجلها رونالدو في مسيرته المهنية؟",
+      "answer": "أكثر من 900 هدف",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-500-45",
+      "points": 500,
+      "question": "من هو اللاعب الذي صنع أكبر عدد من الأهداف لرونالدو؟",
+      "answer": "كريم بنزيما",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-500-46",
+      "points": 500,
+      "question": "كم عدد مرات فوز رونالدو بالكأس الإيطالية؟",
+      "answer": "مرة واحدة",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-500-47",
+      "points": 500,
+      "question": "في أي عام فاز رونالدو بجائزة أفضل لاعب في الدوري الإسباني؟",
+      "answer": "2014",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-500-48",
+      "points": 500,
+      "question": "كم عدد الأهداف التي سجلها رونالدو في الدوري الإيطالي؟",
+      "answer": "أكثر من 50 هدف",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-500-49",
+      "points": 500,
+      "question": "من هو صديق رونالدو الذي كان رفيقه في ريال مدريد؟",
+      "answer": "كريم بنزيما",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    },
+    {
+      "id": "ronaldo-500-50",
+      "points": 500,
+      "question": "من هو اللاعب الذي سجل مع رونالدو أكثر من 100 هدف في البطولات؟",
+      "answer": "كريم بنزيما",
+      "image": "",
+      "media": "",
+      "mediaType": ""
+    }
+  ],
+  "metadata": {
+    "sectionId": "sports",
+    "updatedAt": "2026-08-04",
+    "status": "ready"
+  }
 }
