@@ -12,6 +12,8 @@ export function Signup() {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [confirmPassword, setConfirmPassword] = useState('')
+  const [showPassword, setShowPassword] = useState(false)
+  const [showConfirmPassword, setShowConfirmPassword] = useState(false)
   const [error, setError] = useState('')
   const [isSubmitting, setIsSubmitting] = useState(false)
 
@@ -95,6 +97,7 @@ export function Signup() {
         </p>
 
         <form className="mt-6 space-y-5" onSubmit={handleSubmit}>
+          {/* Name */}
           <label className="block">
             <span className="mb-2 block text-sm font-bold text-slate-700">
               {english ? 'Name' : 'الاسم'}
@@ -110,6 +113,7 @@ export function Signup() {
             />
           </label>
 
+          {/* Email */}
           <label className="block">
             <span className="mb-2 block text-sm font-bold text-slate-700">
               {english ? 'Email' : 'البريد الإلكتروني'}
@@ -126,40 +130,139 @@ export function Signup() {
             />
           </label>
 
+          {/* Password */}
           <label className="block">
             <span className="mb-2 block text-sm font-bold text-slate-700">
               {english ? 'Password' : 'كلمة المرور'}
             </span>
 
-            <input
-              type="password"
-              value={password}
-              onChange={(event) => setPassword(event.target.value)}
-              autoComplete="new-password"
-              required
-              minLength={6}
-              className="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-slate-900 outline-none focus:border-sky-500"
-              dir="ltr"
-            />
+            <div className="relative">
+              <input
+                type={showPassword ? 'text' : 'password'}
+                value={password}
+                onChange={(event) => setPassword(event.target.value)}
+                autoComplete="new-password"
+                required
+                minLength={6}
+                className="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 ps-12 text-slate-900 outline-none focus:border-sky-500"
+                dir="ltr"
+              />
+
+              {/* Eye button - left side */}
+              <button
+                type="button"
+                onClick={() => setShowPassword((value) => !value)}
+                aria-label={
+                  showPassword
+                    ? english
+                      ? 'Hide password'
+                      : 'إخفاء كلمة المرور'
+                    : english
+                      ? 'Show password'
+                      : 'إظهار كلمة المرور'
+                }
+                className="absolute start-3 top-1/2 -translate-y-1/2 text-slate-500 transition hover:text-sky-600"
+              >
+                {showPassword ? (
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    className="h-5 w-5"
+                  >
+                    <path d="M3 3l18 18" />
+                    <path d="M10.6 10.6a2 2 0 0 0 2.8 2.8" />
+                    <path d="M9.9 4.2A10.8 10.8 0 0 1 12 4c5 0 8.5 4 9.5 6a15.8 15.8 0 0 1-3.1 3.8" />
+                    <path d="M6.6 6.6C4.7 7.8 3.4 9.4 2.5 10c1 2 4.5 6 9.5 6 1 0 2-.2 2.9-.5" />
+                  </svg>
+                ) : (
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    className="h-5 w-5"
+                  >
+                    <path d="M2.5 12s3.5-6 9.5-6 9.5 6 9.5 6-3.5 6-9.5 6-9.5-6-9.5-6Z" />
+                    <circle cx="12" cy="12" r="2.5" />
+                  </svg>
+                )}
+              </button>
+            </div>
           </label>
 
+          {/* Confirm Password */}
           <label className="block">
             <span className="mb-2 block text-sm font-bold text-slate-700">
               {english ? 'Confirm password' : 'تأكيد كلمة المرور'}
             </span>
 
-            <input
-              type="password"
-              value={confirmPassword}
-              onChange={(event) => setConfirmPassword(event.target.value)}
-              autoComplete="new-password"
-              required
-              minLength={6}
-              className="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-slate-900 outline-none focus:border-sky-500"
-              dir="ltr"
-            />
+            <div className="relative">
+              <input
+                type={showConfirmPassword ? 'text' : 'password'}
+                value={confirmPassword}
+                onChange={(event) =>
+                  setConfirmPassword(event.target.value)
+                }
+                autoComplete="new-password"
+                required
+                minLength={6}
+                className="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 ps-12 text-slate-900 outline-none focus:border-sky-500"
+                dir="ltr"
+              />
+
+              {/* Eye button - left side */}
+              <button
+                type="button"
+                onClick={() =>
+                  setShowConfirmPassword((value) => !value)
+                }
+                aria-label={
+                  showConfirmPassword
+                    ? english
+                      ? 'Hide password'
+                      : 'إخفاء كلمة المرور'
+                    : english
+                      ? 'Show password'
+                      : 'إظهار كلمة المرور'
+                }
+                className="absolute start-3 top-1/2 -translate-y-1/2 text-slate-500 transition hover:text-sky-600"
+              >
+                {showConfirmPassword ? (
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    className="h-5 w-5"
+                  >
+                    <path d="M3 3l18 18" />
+                    <path d="M10.6 10.6a2 2 0 0 0 2.8 2.8" />
+                    <path d="M9.9 4.2A10.8 10.8 0 0 1 12 4c5 0 8.5 4 9.5 6a15.8 15.8 0 0 1-3.1 3.8" />
+                    <path d="M6.6 6.6C4.7 7.8 3.4 9.4 2.5 10c1 2 4.5 6 9.5 6 1 0 2-.2 2.9-.5" />
+                  </svg>
+                ) : (
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    className="h-5 w-5"
+                  >
+                    <path d="M2.5 12s3.5-6 9.5-6 9.5 6 9.5 6-3.5 6-9.5 6-9.5-6-9.5-6Z" />
+                    <circle cx="12" cy="12" r="2.5" />
+                  </svg>
+                )}
+              </button>
+            </div>
           </label>
 
+          {/* Error */}
           {error && (
             <p
               role="alert"
@@ -169,6 +272,7 @@ export function Signup() {
             </p>
           )}
 
+          {/* Submit */}
           <button
             type="submit"
             disabled={isSubmitting}
@@ -184,6 +288,7 @@ export function Signup() {
           </button>
         </form>
 
+        {/* Login link */}
         <p className="mt-6 text-center text-sm text-slate-500">
           {english ? 'Already have an account?' : 'لديك حساب بالفعل؟'}{' '}
           <Link
