@@ -16,7 +16,6 @@ const navItems: NavItem[] = [
   { path: '/results', label: 'النتائج' },
   { path: '/settings', label: 'الإعدادات' },
   { path: '/about', label: 'عن المطور' },
-  { path: '/admin', label: 'الإدارة' },
 ]
 
 export function MainLayout() {
@@ -24,6 +23,11 @@ export function MainLayout() {
   const location = useLocation()
   const navigate = useNavigate()
   const { user, isAuthenticated, signOut } = useAuth()
+  const isAdmin = user?.app_metadata?.role === 'admin'
+
+const visibleNavItems: NavItem[] = isAdmin
+  ? [...navItems, { path: '/admin', label: 'الإدارة' }]
+  : navItems
   const { direction, setDirection, musicEnabled, musicVolume, theme, animationsEnabled } = useAppStore()
   const language = direction === 'rtl' ? 'ar' : 'en'
   const navLabels = language === 'ar'
@@ -65,7 +69,7 @@ export function MainLayout() {
           </div>
 
           <nav className="flex flex-wrap items-center gap-1">
-            {navItems.map((item) => (
+           {visibleNavItems.map((item) => (
               <NavLinkItem
                 key={item.path}
                 to={item.path}
