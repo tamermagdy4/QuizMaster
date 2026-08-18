@@ -36,14 +36,18 @@ const check = (label, ok, detail = '') => {
   else { failed += 1; console.log(`  ✗ ${label} ${detail}`) }
 }
 
+const password = process.env.E2E_TEST_PASSWORD
+if (!password) {
+  throw new Error('E2E_TEST_PASSWORD is required')
+}
 const stamp = Date.now()
 const A = await (await fetch(`${SUPABASE_URL}/auth/v1/signup`, {
   method: 'POST', headers: { apikey: ANON, 'Content-Type': 'application/json' },
-  body: JSON.stringify({ email: `transferA-${stamp}@test.local`, password: 'password123' }),
+  body: JSON.stringify({ email: `transferA-${stamp}@test.local`, password }),
 })).json()
 const B = await (await fetch(`${SUPABASE_URL}/auth/v1/signup`, {
   method: 'POST', headers: { apikey: ANON, 'Content-Type': 'application/json' },
-  body: JSON.stringify({ email: `transferB-${stamp}@test.local`, password: 'password123' }),
+  body: JSON.stringify({ email: `transferB-${stamp}@test.local`, password }),
 })).json()
 check('host A signed up', Boolean(A.access_token))
 check('player B signed up', Boolean(B.access_token))

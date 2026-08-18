@@ -27,7 +27,10 @@ async function jfetch(path, opts = {}, token) {
 }
 
 const email = `packs-e2e-${Date.now()}@test.local`
-const password = 'TestPass!234'
+const password = process.env.E2E_TEST_PASSWORD
+if (!password) {
+  throw new Error('E2E_TEST_PASSWORD is required')
+}
 
 console.log('\n[1] Sign up throwaway user')
 let r = await jfetch('/auth/v1/signup', {

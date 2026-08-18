@@ -14,8 +14,12 @@ const stamp = Date.now().toString(36)
 const admin = createClient(url, anon)
 
 async function signUp(email, name) {
+  const password = process.env.E2E_TEST_PASSWORD
+  if (!password) {
+    throw new Error('E2E_TEST_PASSWORD is required')
+  }
   const { data, error } = await admin.auth.signUp({
-    email, password: 'password123', options: { data: { name } },
+    email, password, options: { data: { name } },
   })
   if (error || !data.session) throw new Error('signUp failed: ' + error?.message)
   const c = createClient(url, anon)

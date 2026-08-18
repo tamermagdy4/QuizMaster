@@ -24,11 +24,15 @@ const rpc = async (token, fn, body) => {
   return { status: res.status, text }
 }
 
+const password = process.env.E2E_TEST_PASSWORD
+if (!password) {
+  throw new Error('E2E_TEST_PASSWORD is required')
+}
 const stamp = Date.now()
 const signup = await (await fetch(`${SUPABASE_URL}/auth/v1/signup`, {
   method: 'POST',
   headers: { apikey: ANON, 'Content-Type': 'application/json' },
-  body: JSON.stringify({ email: `timer-${stamp}@test.local`, password: 'password123' }),
+  body: JSON.stringify({ email: `timer-${stamp}@test.local`, password }),
 })).json()
 const host = signup.access_token
 if (!host) throw new Error('signup failed')
@@ -36,7 +40,7 @@ if (!host) throw new Error('signup failed')
 const playerSignup = await (await fetch(`${SUPABASE_URL}/auth/v1/signup`, {
   method: 'POST',
   headers: { apikey: ANON, 'Content-Type': 'application/json' },
-  body: JSON.stringify({ email: `timerp-${stamp}@test.local`, password: 'password123' }),
+  body: JSON.stringify({ email: `timerp-${stamp}@test.local`, password }),
 })).json()
 const player = playerSignup.access_token
 

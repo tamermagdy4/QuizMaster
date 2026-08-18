@@ -64,11 +64,15 @@ const rpc = async (token, fn, body) => {
   return { status: res.status, data, text }
 }
 
+const password = process.env.E2E_TEST_PASSWORD
+if (!password) {
+  throw new Error('E2E_TEST_PASSWORD is required')
+}
 const stamp = Date.now()
 console.log('— signup accounts —')
-const A = await signUp(`liveA-${stamp}@test.local`, 'password123')
-const B = await signUp(`liveB-${stamp}@test.local`, 'password123')
-const C = await signUp(`liveC-${stamp}@test.local`, 'password123')
+const A = await signUp(`liveA-${stamp}@test.local`, password)
+const B = await signUp(`liveB-${stamp}@test.local`, password)
+const C = await signUp(`liveC-${stamp}@test.local`, password)
 check('host A signed up', Boolean(A.token))
 check('player B signed up', Boolean(B.token))
 check('player C signed up', Boolean(C.token))

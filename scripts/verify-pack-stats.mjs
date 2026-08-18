@@ -23,7 +23,11 @@ async function jfetch(path, opts = {}, token) {
 }
 
 const email = `stats-${Date.now()}@test.local`
-const r = await jfetch('/auth/v1/signup', { method: 'POST', body: JSON.stringify({ email, password: 'TestPass!234' }) }, ANON)
+const password = process.env.E2E_TEST_PASSWORD
+if (!password) {
+  throw new Error('E2E_TEST_PASSWORD is required')
+}
+const r = await jfetch('/auth/v1/signup', { method: 'POST', body: JSON.stringify({ email, password }) }, ANON)
 const token = r.body?.access_token ?? r.body?.session?.access_token
 const userId = r.body?.user?.id ?? r.body?.id
 ok('signup', !!token && !!userId)

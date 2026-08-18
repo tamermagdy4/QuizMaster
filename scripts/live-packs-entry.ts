@@ -42,10 +42,14 @@ function ok(name: string, cond: boolean, extra = '') {
 }
 
 async function signup(email: string): Promise<{ token: string; user: User }> {
+  const password = process.env.E2E_TEST_PASSWORD
+  if (!password) {
+    throw new Error('E2E_TEST_PASSWORD is required')
+  }
   const res = await fetch(`${URL}/auth/v1/signup`, {
     method: 'POST',
     headers: { apikey: ANON, 'Content-Type': 'application/json' },
-    body: JSON.stringify({ email, password: 'TestPass!234', data: { display_name: 'خالد سالم' } }),
+    body: JSON.stringify({ email, password, data: { display_name: 'خالد سالم' } }),
   })
   const body = (await res.json()) as Record<string, unknown>
   const token = String(body.access_token ?? (body.session as { access_token?: string } | undefined)?.access_token ?? '')
