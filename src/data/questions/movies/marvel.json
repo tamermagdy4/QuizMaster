@@ -2,51 +2,6 @@
   "categoryId": "marvel",
   "questions": [
     {
-      "id": "marvel-100-1",
-      "points": 100,
-      "question": "من هو الممثل الذي لعب دور توني ستارك في أفلام مارفل؟",
-      "answer": "روبرت داوني جونيور",
-      "image": "",
-      "media": "",
-      "mediaType": ""
-    },
-    {
-      "id": "marvel-100-2",
-      "points": 100,
-      "question": "من هو الممثل الذي لعب دور كابتن أمريكا في أفلام مارفل؟",
-      "answer": "كريس إيفانز",
-      "image": "",
-      "media": "",
-      "mediaType": ""
-    },
-    {
-      "id": "marvel-100-3",
-      "points": 100,
-      "question": "من هو الممثل الذي لعب دور ثور في أفلام مارفل؟",
-      "answer": "كريس هيمسورث",
-      "image": "",
-      "media": "",
-      "mediaType": ""
-    },
-    {
-      "id": "marvel-100-4",
-      "points": 100,
-      "question": "من هو الممثل الذي لعب دور هulk في أفلام مارفل؟",
-      "answer": "مارك روفالو",
-      "image": "",
-      "media": "",
-      "mediaType": ""
-    },
-    {
-      "id": "marvel-100-5",
-      "points": 100,
-      "question": "من هي الممثلة التي لعبت دور بلاك ويدو في أفلام مارفل؟",
-      "answer": "سكرليت جوهانسون",
-      "image": "",
-      "media": "",
-      "mediaType": ""
-    },
-    {
       "id": "marvel-100-6",
       "points": 100,
       "question": "من هو الممثل الذي لعب دور هاوكاي في أفلام مارفل؟",
@@ -149,7 +104,7 @@
       "id": "marvel-100-17",
       "points": 100,
       "question": "من هو الممثل الذي لعب دور وونغ في أفلام مارفل؟",
-      "answer": "بenedict wong",
+      "answer": "بينيديكت وونغ",
       "image": "",
       "media": "",
       "mediaType": ""
@@ -158,7 +113,7 @@
       "id": "marvel-100-18",
       "points": 100,
       "question": "من هو الممثل الذي لعب دور كاوغيل في أفلام مارفل؟",
-      "answer": "تشانديل",
+      "answer": "mads mikkelsen",
       "image": "",
       "media": "",
       "mediaType": ""
@@ -167,7 +122,7 @@
       "id": "marvel-100-19",
       "points": 100,
       "question": "من هي الممثلة التي لعبت دور ميكي في أفلام مارفل؟",
-      "answer": "لتيشا رايت",
+      "answer": "ليتيشا رايت",
       "image": "",
       "media": "",
       "mediaType": ""
@@ -212,7 +167,7 @@
       "id": "marvel-100-24",
       "points": 100,
       "question": "من هو الممثل الذي لعب دور مباكو في أفلام مارفل؟",
-      "answer": "forester whitaker",
+      "answer": "forest whitaker",
       "image": "",
       "media": "",
       "mediaType": ""
@@ -310,7 +265,7 @@
     {
       "id": "marvel-300-5",
       "points": 300,
-      "question": "ما هو الاسم الحقيقي لباك ويدو؟",
+      "question": "ما هو الاسم الحقيقي لبلاك ويدو؟",
       "answer": "ناتاشا رومانوف",
       "image": "",
       "media": "",
@@ -364,8 +319,8 @@
     {
       "id": "marvel-300-11",
       "points": 300,
-      "question": "ما هو الاسم الحقيقي لباك بانثر؟",
-      "answer": "ت'تشالا",
+      "question": "ما هو اسم المدينة التي يحكمها ت'تشالا؟",
+      "answer": "wakanda",
       "image": "",
       "media": "",
       "mediaType": ""
@@ -382,7 +337,7 @@
     {
       "id": "marvel-300-13",
       "points": 300,
-      "question": "ما هو الاسم الحقيقي لاسبي؟",
+      "question": "ما هو الاسم الحقيقي للواسب الجديد؟",
       "answer": "hope pym",
       "image": "",
       "media": "",
@@ -391,7 +346,7 @@
     {
       "id": "marvel-300-14",
       "points": 300,
-      "question": "ما هو الاسم الحقيقي لواسب؟",
+      "question": "ما هو الاسم الحقيقي للواسب الأصلي؟",
       "answer": "janet van dyne",
       "image": "",
       "media": "",
@@ -400,8 +355,8 @@
     {
       "id": "marvel-300-15",
       "points": 300,
-      "question": "ما هو الاسم الحقيقي لواسب؟",
-      "answer": "hank pym",
+      "question": "من هو الخصم الرئيسي في فيلم أنت مان والواسب؟",
+      "answer": "ghost",
       "image": "",
       "media": "",
       "mediaType": ""
@@ -545,7 +500,7 @@
       "id": "marvel-300-31",
       "points": 300,
       "question": "ما هو اسم المعدن الذي استخدمه توني ستارك لصنع بدلة الآيرون مان؟",
-      "answer": "vibranium",
+      "answer": "titanium gold alloy",
       "image": "",
       "media": "",
       "mediaType": ""
@@ -625,8 +580,8 @@
     {
       "id": "marvel-500-5",
       "points": 500,
-      "question": "من هو الخصم الذي قتل والد دكتور سترينج؟",
-      "answer": "the ancient one",
+      "question": "ما هو اسم المستشفى الذي يعمل فيه دكتور سترينج قبل حادثته؟",
+      "answer": "new york surgical academy",
       "image": "",
       "media": "",
       "mediaType": ""
@@ -634,8 +589,8 @@
     {
       "id": "marvel-500-6",
       "points": 500,
-      "question": "من هو الخصم الذي قتل والد أنت مان؟",
-      "answer": "hank pym",
+      "question": "ما هو اسم المخلوق الذي هزم جانوس في فيلم ثور؟",
+      "answer": "the destroyer",
       "image": "",
       "media": "",
       "mediaType": ""
@@ -643,8 +598,8 @@
     {
       "id": "marvel-500-7",
       "points": 500,
-      "question": "من هو الخصم الذي قتل والد كابتن أمريكا؟",
-      "answer": "red skull",
+      "question": "ما هو اسم السلاح الذي صنعه توني ستارك في الكهف؟",
+      "answer": "mk1",
       "image": "",
       "media": "",
       "mediaType": ""
@@ -652,8 +607,8 @@
     {
       "id": "marvel-500-8",
       "points": 500,
-      "question": "من هو الخصم الذي قتل والد ثور؟",
-      "answer": "loki",
+      "question": "ما هو اسم المركبة التي استخدمها الأفينجرز للدفاع عن نيويورك؟",
+      "answer": "quinjet",
       "image": "",
       "media": "",
       "mediaType": ""
@@ -661,8 +616,8 @@
     {
       "id": "marvel-500-9",
       "points": 500,
-      "question": "من هو الخصم الذي قتل والد هulk؟",
-      "answer": "thaddeus ross",
+      "question": "ما هو اسم الفريق الذي ينتمي إليه رونان في فيلم جارديانز أوف ذا جالاكسي؟",
+      "answer": "kree",
       "image": "",
       "media": "",
       "mediaType": ""
@@ -670,8 +625,8 @@
     {
       "id": "marvel-500-10",
       "points": 500,
-      "question": "من هو الخصم الذي قتل والد بلاك ويدو؟",
-      "answer": "dreykov",
+      "question": "ما هو اسم القفاز الذي يحمله ثانوس في فيلم الأفينجرز؟",
+      "answer": "infinity gauntlet",
       "image": "",
       "media": "",
       "mediaType": ""
@@ -679,8 +634,8 @@
     {
       "id": "marvel-500-11",
       "points": 500,
-      "question": "من هو الخصم الذي قتل والد هاوكاي؟",
-      "answer": "trick shot",
+      "question": "ما هو اسم الحجر الذي يحمله ريد سكول؟",
+      "answer": "tesseract",
       "image": "",
       "media": "",
       "mediaType": ""
@@ -688,8 +643,8 @@
     {
       "id": "marvel-500-12",
       "points": 500,
-      "question": "من هو الخصم الذي قتل والد واكندا؟",
-      "answer": "killmonger",
+      "question": "ما هو اسم المدرسة التي يلتحق بها بيتر باركر؟",
+      "answer": "midtown school",
       "image": "",
       "media": "",
       "mediaType": ""
@@ -697,8 +652,8 @@
     {
       "id": "marvel-500-13",
       "points": 500,
-      "question": "من هو الخصم الذي قتل والد نجو؟",
-      "answer": "m'baku",
+      "question": "ما هو اسم الحي الذي يعيش فيه ستيف روجرز قبل الانفجار الجليدي؟",
+      "answer": "brooklyn",
       "image": "",
       "media": "",
       "mediaType": ""
@@ -706,8 +661,8 @@
     {
       "id": "marvel-500-14",
       "points": 500,
-      "question": "من هو الخصم الذي قتل والد أوكوي؟",
-      "answer": "killmonger",
+      "question": "ما هو اسم المدينة التي يحميها بلاك بانثر؟",
+      "answer": "wakanda",
       "image": "",
       "media": "",
       "mediaType": ""
@@ -715,8 +670,8 @@
     {
       "id": "marvel-500-15",
       "points": 500,
-      "question": "من هو الخصم الذي قتل والد مباكو؟",
-      "answer": "killmonger",
+      "question": "ما هو اسم الفرقة التي يقودها ستار لورد؟",
+      "answer": "guardians of the galaxy",
       "image": "",
       "media": "",
       "mediaType": ""
@@ -724,8 +679,8 @@
     {
       "id": "marvel-500-16",
       "points": 500,
-      "question": "من هو الخصم الذي قتل والد جونستون؟",
-      "answer": "arnim zola",
+      "question": "ما هو اسم السلاح الذي يحمله كابتن أمريكا؟",
+      "answer": "vibranium shield",
       "image": "",
       "media": "",
       "mediaType": ""
@@ -733,8 +688,8 @@
     {
       "id": "marvel-500-17",
       "points": 500,
-      "question": "من هو الخصم الذي قتل والد كاسيتي؟",
-      "answer": "darren cross",
+      "question": "ما هو اسم الكوكب الذي يعيش فيه ثور؟",
+      "answer": "asgard",
       "image": "",
       "media": "",
       "mediaType": ""
@@ -742,8 +697,8 @@
     {
       "id": "marvel-500-18",
       "points": 500,
-      "question": "من هو الخصم الذي قتل والد هوب؟",
-      "answer": "darren cross",
+      "question": "ما هو اسم المخلوق الذي يهاجم نيويورك في فيلم الأفينجرز؟",
+      "answer": "chitauri",
       "image": "",
       "media": "",
       "mediaType": ""
@@ -751,8 +706,8 @@
     {
       "id": "marvel-500-19",
       "points": 500,
-      "question": "من هو الخصم الذي قتل والد جانيت؟",
-      "answer": "hank pym",
+      "question": "ما هو اسم البطلة التي ترث قدرات الواسب؟",
+      "answer": "hope van dyne",
       "image": "",
       "media": "",
       "mediaType": ""
@@ -760,8 +715,8 @@
     {
       "id": "marvel-500-20",
       "points": 500,
-      "question": "من هو الخصم الذي قتل والد هانك؟",
-      "answer": "darren cross",
+      "question": "ما هو اسم المكان الذي يتعلم فيه دكتور سترينج السحر؟",
+      "answer": "kamar-taj",
       "image": "",
       "media": "",
       "mediaType": ""

@@ -1,8 +1,129 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { NavLink, Outlet, useNavigate } from 'react-router-dom'
 import { cn } from '../../utils/cn'
 import { getSupabaseClient } from '../../lib/supabaseClient'
 
 import { useAppStore } from '../../store/appStore'
-const links = [{ to: '/admin', label: 'Dashboard', ar: 'لوحة التحكم', icon: '▦', end: true }, { to: '/admin/questions', label: 'Questions', ar: 'الأسئلة', icon: '❓' }, { to: '/admin/categories', label: 'Categories', ar: 'الفئات', icon: '▤' }, { to: '/admin/import', label: 'Import JSON', ar: 'استيراد JSON', icon: '↑' }, { to: '/admin/export', label: 'Export JSON', ar: 'تصدير JSON', icon: '↓' }, { to: '/admin/statistics', label: 'Statistics', ar: 'الإحصائيات', icon: '◒' }]
-export function AdminLayout() { const navigate = useNavigate(); const [isLoggingOut, setIsLoggingOut] = useState(false); const { language } = useAppStore(); const english = language === 'en'; const label = (link: typeof links[number]) => english ? link.label : link.ar; async function handleLogout() { setIsLoggingOut(true); const { error } = await getSupabaseClient().auth.signOut(); if (error) { setIsLoggingOut(false); return } navigate('/admin/login', { replace: true }) } return <div className="min-h-dvh bg-[#050e1d] text-slate-100" dir={language === 'ar' ? 'rtl' : 'ltr'}><aside className="fixed inset-y-0 start-0 z-30 hidden w-72 border-e border-white/10 bg-[#09182c]/95 p-5 lg:block"><div className="flex items-center gap-3 border-b border-white/10 pb-6"><div className="flex h-11 w-11 items-center justify-center rounded-xl bg-gradient-to-br from-cyan-400 to-blue-600 text-xl font-black">Q</div><div><p className="font-black">QuizMaster</p><p className="text-xs text-slate-400">{english ? 'Admin workspace' : 'لوحة الإدارة'}</p></div></div><nav className="mt-8 space-y-2">{links.map((link) => <NavLink key={link.to} to={link.to} end={link.end} className={({ isActive }) => cn('flex items-center gap-3 rounded-xl px-4 py-3 text-sm font-bold transition', isActive ? 'bg-cyan-400/15 text-cyan-200 shadow-lg shadow-cyan-950/20' : 'text-slate-400 hover:bg-white/5 hover:text-white')}><span aria-hidden>{link.icon}</span>{label(link)}</NavLink>)}</nav><div className="absolute inset-x-5 bottom-5 space-y-3 border-t border-white/10 pt-5"><div className="flex items-center gap-3 rounded-xl bg-white/5 p-3"><span className="flex h-9 w-9 items-center justify-center rounded-full bg-cyan-500 font-black">A</span><div><p className="text-sm font-bold">{english ? 'Administrator' : 'المالك'}</p><p className="text-xs text-slate-500">Admin</p></div></div><div className="grid grid-cols-2 gap-2"><button type="button" onClick={() => navigate('/')} className="rounded-xl border border-white/10 px-3 py-2 text-xs font-bold text-slate-300 hover:bg-white/5">{english ? 'App' : 'التطبيق'}</button><button type="button" onClick={() => void handleLogout()} disabled={isLoggingOut} className="rounded-xl border border-rose-500/30 px-3 py-2 text-xs font-bold text-rose-300 hover:bg-rose-500/10">{isLoggingOut ? '...' : (english ? 'Logout' : 'خروج')}</button></div></div></aside><div className="lg:ms-72"><header className="sticky top-0 z-20 border-b border-white/10 bg-[#050e1d]/90 px-4 py-4 backdrop-blur-xl sm:px-8"><div className="flex items-center justify-between gap-4"><div><p className="text-xs font-bold uppercase tracking-[.2em] text-cyan-300">Admin workspace</p><h1 className="text-xl font-black">{english ? 'QuizMaster administration' : 'إدارة QuizMaster'}</h1></div><button type="button" onClick={() => useAppStore.getState().setLanguage(english ? 'ar' : 'en')} className="rounded-xl border border-cyan-300/20 px-3 py-2 text-xs font-black text-cyan-200">{english ? 'عربي' : 'EN'}</button></div><nav className="mt-4 flex gap-2 overflow-x-auto lg:hidden">{links.map((link) => <NavLink key={link.to} to={link.to} end={link.end} className={({ isActive }) => cn('whitespace-nowrap rounded-lg px-3 py-2 text-xs font-bold', isActive ? 'bg-cyan-400/15 text-cyan-100' : 'bg-white/5 text-slate-400')}>{label(link)}</NavLink>)}</nav></header><main className="mx-auto max-w-7xl p-4 sm:p-8"><Outlet /></main></div></div> }
+import { ensureLocalQuestionsLoaded } from '../../data/questionLoader'
+import { PageLoader } from '../ui/PageLoader'
+
+const links = [
+  { to: '/admin', label: 'Dashboard', ar: 'لوحة التحكم', icon: '▦', end: true },
+  { to: '/admin/questions', label: 'Questions', ar: 'الأسئلة', icon: '❓' },
+  { to: '/admin/categories', label: 'Categories', ar: 'الفئات', icon: '▤' },
+  { to: '/admin/packs', label: 'Packs', ar: 'الباقات', icon: '▤' },
+  { to: '/admin/import', label: 'Import JSON', ar: 'استيراد JSON', icon: '↑' },
+  { to: '/admin/export', label: 'Export JSON', ar: 'تصدير JSON', icon: '↓' },
+  { to: '/admin/statistics', label: 'Statistics', ar: 'الإحصائيات', icon: '◒' },
+]
+
+export function AdminLayout() {
+  const navigate = useNavigate()
+  const [isLoggingOut, setIsLoggingOut] = useState(false)
+  // Admin pages read question data synchronously — wait for the lazy JSON
+  // chunks to be loaded before rendering the Outlet so the pages show data
+  // on first paint instead of an empty state.
+  const [questionsReady, setQuestionsReady] = useState(false)
+  const { language } = useAppStore()
+  const english = language === 'en'
+  const label = (link: (typeof links)[number]) => (english ? link.label : link.ar)
+
+  useEffect(() => {
+    let mounted = true
+    void ensureLocalQuestionsLoaded().then(() => {
+      if (mounted) setQuestionsReady(true)
+    })
+    return () => {
+      mounted = false
+    }
+  }, [])
+
+  async function handleLogout() {
+    setIsLoggingOut(true)
+    const { error } = await getSupabaseClient().auth.signOut()
+    if (error) {
+      setIsLoggingOut(false)
+      return
+    }
+    navigate('/admin/login', { replace: true })
+  }
+
+  return (
+    <div className="min-h-dvh bg-[#050e1d] text-slate-100" dir={language === 'ar' ? 'rtl' : 'ltr'}>
+      <aside className="fixed inset-y-0 start-0 z-30 hidden w-72 border-e border-white/10 bg-[#09182c]/95 p-5 lg:block">
+        <div className="flex items-center gap-3 border-b border-white/10 pb-6">
+          <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-gradient-to-br from-cyan-400 to-blue-600 text-xl font-black">Q</div>
+          <div>
+            <p className="font-black">QuizMaster</p>
+            <p className="text-xs text-slate-400">{english ? 'Admin workspace' : 'لوحة الإدارة'}</p>
+          </div>
+        </div>
+        <nav className="mt-8 space-y-2">
+          {links.map((link) => (
+            <NavLink
+              key={link.to}
+              to={link.to}
+              end={link.end}
+              className={({ isActive }) =>
+                cn(
+                  'flex items-center gap-3 rounded-xl px-4 py-3 text-sm font-bold transition',
+                  isActive ? 'bg-cyan-400/15 text-cyan-200 shadow-lg shadow-cyan-950/20' : 'text-slate-400 hover:bg-white/5 hover:text-white',
+                )
+              }
+            >
+              <span aria-hidden>{link.icon}</span>
+              {label(link)}
+            </NavLink>
+          ))}
+        </nav>
+        <div className="absolute inset-x-5 bottom-5 space-y-3 border-t border-white/10 pt-5">
+          <div className="flex items-center gap-3 rounded-xl bg-white/5 p-3">
+            <span className="flex h-9 w-9 items-center justify-center rounded-full bg-cyan-500 font-black">A</span>
+            <div>
+              <p className="text-sm font-bold">{english ? 'Administrator' : 'المالك'}</p>
+              <p className="text-xs text-slate-500">Admin</p>
+            </div>
+          </div>
+          <div className="grid grid-cols-2 gap-2">
+            <button type="button" onClick={() => navigate('/')} className="rounded-xl border border-white/10 px-3 py-2 text-xs font-bold text-slate-300 hover:bg-white/5">
+              {english ? 'App' : 'التطبيق'}
+            </button>
+            <button type="button" onClick={() => void handleLogout()} disabled={isLoggingOut} className="rounded-xl border border-rose-500/30 px-3 py-2 text-xs font-bold text-rose-300 hover:bg-rose-500/10">
+              {isLoggingOut ? '...' : (english ? 'Logout' : 'خروج')}
+            </button>
+          </div>
+        </div>
+      </aside>
+      <div className="lg:ms-72">
+        <header className="sticky top-0 z-20 border-b border-white/10 bg-[#050e1d]/90 px-4 py-4 backdrop-blur-xl sm:px-8">
+          <div className="flex items-center justify-between gap-4">
+            <div>
+              <p className="text-xs font-bold uppercase tracking-[.2em] text-cyan-300">Admin workspace</p>
+              <h1 className="text-xl font-black">{english ? 'QuizMaster administration' : 'إدارة QuizMaster'}</h1>
+            </div>
+            <button type="button" onClick={() => useAppStore.getState().setLanguage(english ? 'ar' : 'en')} className="rounded-xl border border-cyan-300/20 px-3 py-2 text-xs font-black text-cyan-200">
+              {english ? 'عربي' : 'EN'}
+            </button>
+          </div>
+          <nav className="mt-4 flex gap-2 overflow-x-auto lg:hidden">
+            {links.map((link) => (
+              <NavLink
+                key={link.to}
+                to={link.to}
+                end={link.end}
+                className={({ isActive }) =>
+                  cn('whitespace-nowrap rounded-lg px-3 py-2 text-xs font-bold', isActive ? 'bg-cyan-400/15 text-cyan-100' : 'bg-white/5 text-slate-400')
+                }
+              >
+                {label(link)}
+              </NavLink>
+            ))}
+          </nav>
+        </header>
+        <main className="mx-auto max-w-7xl p-4 sm:p-8">
+          {questionsReady ? <Outlet /> : <PageLoader />}
+        </main>
+      </div>
+    </div>
+  )
+}

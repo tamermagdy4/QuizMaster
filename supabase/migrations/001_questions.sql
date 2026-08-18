@@ -33,22 +33,28 @@ alter table public.questions enable row level security;
 
 -- No public write policy is created. Add policies after Admin Auth is connected.
 -- The expected admin claim is auth.jwt()->'app_metadata'->>'role' = 'admin'.
+-- Policies are dropped first to keep this migration idempotent for databases
+-- that were set up manually (dashboard) before migration tracking existed.
+drop policy if exists "admins can read questions" on public.questions;
 create policy "admins can read questions"
 on public.questions for select
 to authenticated
 using ((auth.jwt()->'app_metadata'->>'role') = 'admin');
 
+drop policy if exists "admins can insert questions" on public.questions;
 create policy "admins can insert questions"
 on public.questions for insert
 to authenticated
 with check ((auth.jwt()->'app_metadata'->>'role') = 'admin');
 
+drop policy if exists "admins can update questions" on public.questions;
 create policy "admins can update questions"
 on public.questions for update
 to authenticated
 using ((auth.jwt()->'app_metadata'->>'role') = 'admin')
 with check ((auth.jwt()->'app_metadata'->>'role') = 'admin');
 
+drop policy if exists "admins can delete questions" on public.questions;
 create policy "admins can delete questions"
 on public.questions for delete
 to authenticated
@@ -61,17 +67,20 @@ on conflict (id) do update set
   file_size_limit = excluded.file_size_limit,
   allowed_mime_types = excluded.allowed_mime_types;
 
+drop policy if exists "admins can upload question images" on storage.objects;
 create policy "admins can upload question images"
 on storage.objects for insert
 to authenticated
 with check (bucket_id = 'question-images' and (auth.jwt()->'app_metadata'->>'role') = 'admin');
 
+drop policy if exists "admins can update question images" on storage.objects;
 create policy "admins can update question images"
 on storage.objects for update
 to authenticated
 using (bucket_id = 'question-images' and (auth.jwt()->'app_metadata'->>'role') = 'admin')
 with check (bucket_id = 'question-images' and (auth.jwt()->'app_metadata'->>'role') = 'admin');
 
+drop policy if exists "admins can delete question images" on storage.objects;
 create policy "admins can delete question images"
 on storage.objects for delete
 to authenticated

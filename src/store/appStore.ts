@@ -10,8 +10,6 @@ interface AppState {
   direction: Direction
   soundEnabled: boolean
   questionDuration: 15 | 20 | 30 | 45 | 60
-  musicEnabled: boolean
-  musicVolume: number
   enabledLifelines: LifelineId[]
   theme: 'premium' | 'light'
   animationsEnabled: boolean
@@ -20,8 +18,6 @@ interface AppState {
   toggleDirection: () => void
   setSoundEnabled: (enabled: boolean) => void
   setQuestionDuration: (duration: AppState['questionDuration']) => void
-  setMusicEnabled: (enabled: boolean) => void
-  setMusicVolume: (volume: number) => void
   toggleLifelineAvailability: (lifelineId: LifelineId) => void
   setTheme: (theme: AppState['theme']) => void
   setAnimationsEnabled: (enabled: boolean) => void
@@ -33,8 +29,6 @@ const defaultAppSettings = {
   direction: 'rtl' as Direction,
   soundEnabled: true,
   questionDuration: 30 as const,
-  musicEnabled: false,
-  musicVolume: 0.25,
   enabledLifelines: ['double', 'two-answers', 'block', 'call', 'wheel'] as LifelineId[],
   theme: 'premium' as const,
   animationsEnabled: true,
@@ -53,8 +47,6 @@ export const useAppStore = create<AppState>()(
         }),
       setSoundEnabled: (soundEnabled) => set({ soundEnabled }),
       setQuestionDuration: (questionDuration) => set({ questionDuration }),
-      setMusicEnabled: (musicEnabled) => set({ musicEnabled }),
-      setMusicVolume: (musicVolume) => set({ musicVolume }),
       toggleLifelineAvailability: (lifelineId) => set((state) => ({
         enabledLifelines: state.enabledLifelines.includes(lifelineId)
           ? state.enabledLifelines.filter((id) => id !== lifelineId)

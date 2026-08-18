@@ -1,5 +1,24 @@
-import { Link } from 'react-router-dom'
-import { motion } from 'framer-motion'
-import { GlassCard } from '../components/GlassCard'
-import { useTranslation } from '../i18n/translations'
-export function Home() { const { t, english } = useTranslation(); const features = [{ icon: '◈', title: t('categories'), desc: t('categoriesDesc') }, { icon: '♜', title: t('teams'), desc: t('teamsDesc') }, { icon: '✦', title: t('rtl'), desc: t('rtlDesc') }]; return <div className="space-y-8"><section className="relative overflow-hidden rounded-[2rem] border border-cyan-300/15 bg-[radial-gradient(circle_at_20%_35%,rgba(0,198,255,.16),transparent_30%),linear-gradient(135deg,#0b2444,#061329_55%,#111b50)] px-6 py-10 shadow-2xl shadow-cyan-950/30 sm:px-12 sm:py-14"><div className="absolute -end-20 -top-24 h-80 w-80 rounded-full bg-blue-600/15 blur-3xl" /><div className="relative grid items-center gap-8 lg:grid-cols-[.8fr_1.2fr]" dir={english ? 'ltr' : 'rtl'}><motion.div initial={{ opacity: 0, scale: .9 }} animate={{ opacity: 1, scale: 1 }} className="order-2 flex justify-center lg:order-1"><div className="relative flex h-56 w-56 items-center justify-center rounded-full border border-cyan-300/30 bg-cyan-400/10 shadow-[0_0_70px_rgba(0,198,255,.25)] sm:h-72 sm:w-72"><div className="absolute inset-7 rounded-full border border-blue-400/30" /><span className="relative text-8xl drop-shadow-[0_0_22px_rgba(255,185,40,.8)] sm:text-9xl">🏆</span><span className="absolute bottom-4 rounded-full bg-gradient-to-r from-cyan-400 to-blue-600 px-5 py-1 text-sm font-black text-white">Q</span></div></motion.div><motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} className="order-1 text-center lg:order-2 lg:text-start"><p className="mb-3 text-xs font-black uppercase tracking-[.3em] text-amber-300">{t('welcome')}</p><h1 className="text-5xl font-black tracking-tight text-white sm:text-7xl">{t('arena')}</h1><p className="mt-5 max-w-2xl text-base leading-8 text-slate-300">{t('subtitle')}</p><div className="mt-8 flex flex-wrap justify-center gap-3 lg:justify-start"><Link to="/create" className="rounded-xl bg-gradient-to-r from-cyan-400 to-blue-600 px-6 py-3 font-black text-white shadow-lg shadow-cyan-500/25 transition hover:-translate-y-0.5">{t('newGame')} <span aria-hidden>＋</span></Link><Link to="/board" className="rounded-xl border border-white/15 bg-white/5 px-6 py-3 font-black text-slate-200 transition hover:border-cyan-300/40 hover:bg-white/10">{t('viewBoard')} <span aria-hidden>▦</span></Link></div></motion.div></div></section><div className="grid gap-4 md:grid-cols-3">{features.map((feature) => <GlassCard key={feature.title} className="group transition hover:-translate-y-1 hover:border-cyan-300/30"><span className="flex h-11 w-11 items-center justify-center rounded-xl bg-cyan-400/10 text-xl text-cyan-300">{feature.icon}</span><h2 className="mt-5 text-lg font-black text-white">{feature.title}</h2><p className="mt-2 text-sm leading-6 text-slate-400">{feature.desc}</p><div className="mt-5 h-1 w-12 rounded-full bg-gradient-to-r from-cyan-400 to-amber-300 transition-all group-hover:w-20" /></GlassCard>)}</div></div> }
+import { MotionConfig } from 'framer-motion'
+import { ScrollStory } from '../components/home/ScrollStory'
+
+/**
+ * فهلوي — homepage
+ *
+ * ONE continuous scroll-driven cinematic film. Scroll = camera progress.
+ *
+ *   Opening (orbit-globe video) → Football → History → Geography
+ *   → Science → Video chapter (showcase-stream) → Final CTA
+ *
+ * Every scene is mapped from scroll position — photos enter the frame,
+ * the camera zooms, chapters cross-fade. The Fahloy header floats
+ * transparently over the opening and solidifies on scroll (MainLayout).
+ *
+ * Presentation-only: no real game state is touched.
+ */
+export function Home() {
+  return (
+    <MotionConfig reducedMotion="user">
+      <ScrollStory />
+    </MotionConfig>
+  )
+}

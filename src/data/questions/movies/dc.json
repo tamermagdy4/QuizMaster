@@ -2,42 +2,6 @@
   "categoryId": "dc",
   "questions": [
     {
-      "id": "dc-100-1",
-      "points": 100,
-      "question": "من هو الممثل الذي لعب دور باتمان في أفلام كريستوفر نولان؟",
-      "answer": "كريستيان بيل",
-      "image": "",
-      "media": "",
-      "mediaType": ""
-    },
-    {
-      "id": "dc-100-2",
-      "points": 100,
-      "question": "من هي الممثلة التي لعبت دور ووندر وومان في أفلام DC؟",
-      "answer": "غال غادوت",
-      "image": "",
-      "media": "",
-      "mediaType": ""
-    },
-    {
-      "id": "dc-100-3",
-      "points": 100,
-      "question": "من هو الممثل الذي لعب دور سوبرمان في فيلم Man of Steel؟",
-      "answer": "هنري كافيل",
-      "image": "",
-      "media": "",
-      "mediaType": ""
-    },
-    {
-      "id": "dc-100-4",
-      "points": 100,
-      "question": "من هو الممثل الذي لعب دور الجوكر في فيلم Dark Knight؟",
-      "answer": "هيث ليدجر",
-      "image": "",
-      "media": "",
-      "mediaType": ""
-    },
-    {
       "id": "dc-100-5",
       "points": 100,
       "question": "من هو الممثل الذي لعب دور هارلي كوين في أفلام DC؟",

@@ -3,683 +3,1058 @@
   "questions": [
     {
       "id": "general-knowledge-100-1",
+      "question": "ما العنصر الكيميائي الذي يرمز له بالرمز Fe؟",
+      "answer": "الحديد",
       "points": 100,
-      "question": "ما الوحدة الأساسية للطاقة في النظام الدولي؟",
-      "answer": "الجول",
-      "image": "",
-      "media": "",
-      "mediaType": ""
+      "image": ""
     },
     {
       "id": "general-knowledge-100-2",
+      "question": "ما اسم الجهاز الذي يقيس الضغط الجوي؟",
+      "answer": "البارومتر",
       "points": 100,
-      "question": "ما اسم القمر الذي يدور حول كوكب الأرض؟",
-      "answer": "القمر",
-      "image": "",
-      "media": "",
-      "mediaType": ""
+      "image": ""
     },
     {
       "id": "general-knowledge-100-3",
+      "question": "في أي قارة تقع صحراء أتاكاما؟",
+      "answer": "أمريكا الجنوبية",
       "points": 100,
-      "question": "ما اسم الجهاز الذي يستخدم لقياس الضغط الجوي؟",
-      "answer": "البارومتر",
-      "image": "",
-      "media": "",
-      "mediaType": ""
+      "image": ""
     },
     {
       "id": "general-knowledge-100-4",
+      "question": "ما أكبر عضو داخلي في جسم الإنسان؟",
+      "answer": "الكبد",
       "points": 100,
-      "question": "ما هو أكبر كوكب في المجموعة الشمسية؟",
-      "answer": "المشتري",
-      "image": "",
-      "media": "",
-      "mediaType": ""
+      "image": ""
     },
     {
       "id": "general-knowledge-100-5",
+      "question": "ما الكوكب الذي يدور حول نفسه في الاتجاه المعاكس لمعظم الكواكب؟",
+      "answer": "الزهرة",
       "points": 100,
-      "question": "ما هي العاصمة الفرنسية؟",
-      "answer": "باريس",
-      "image": "",
-      "media": "",
-      "mediaType": ""
+      "image": ""
     },
     {
       "id": "general-knowledge-100-6",
+      "question": "ما الوحدة الأساسية لقياس شدة التيار الكهربائي؟",
+      "answer": "الأمبير",
       "points": 100,
-      "question": "ما هو أسرع حيوان بري؟",
-      "answer": "الفهد",
-      "image": "",
-      "media": "",
-      "mediaType": ""
+      "image": ""
     },
     {
       "id": "general-knowledge-100-7",
+      "question": "ما الحيوان الذي يُعرف بقدرته على تغيير لون جلده للتمويه؟",
+      "answer": "الحرباء",
       "points": 100,
-      "question": "ما هو العنصر الكيميائي الأكثر وفرة في الغلاف الجوي؟",
-      "answer": "النيتروجين",
-      "image": "",
-      "media": "",
-      "mediaType": ""
+      "image": ""
     },
     {
       "id": "general-knowledge-100-8",
+      "question": "ما المعدن الذي يُعد المكوّن الأساسي في صناعة الفولاذ؟",
+      "answer": "الحديد",
       "points": 100,
-      "question": "ما هو النهر الأطول في العالم؟",
-      "answer": "نهر النيل ",
-      "image": "",
-      "media": "",
-      "mediaType": ""
+      "image": ""
     },
     {
       "id": "general-knowledge-100-9",
+      "question": "ما اسم العملية التي تصنع بها النباتات غذاءها باستخدام الضوء؟",
+      "answer": "البناء الضوئي",
       "points": 100,
-      "question": "ما هي العاصمة اليابانية؟",
-      "answer": "طوكيو",
-      "image": "",
-      "media": "",
-      "mediaType": ""
+      "image": ""
     },
     {
       "id": "general-knowledge-100-10",
+      "question": "ما البحر الذي يفصل بين أوروبا وأفريقيا؟",
+      "answer": "البحر المتوسط",
       "points": 100,
-      "question": "ما هو اللون الطبيعي للفضة؟",
-      "answer": "فضي",
-      "image": "",
-      "media": "",
-      "mediaType": ""
+      "image": ""
     },
     {
       "id": "general-knowledge-100-11",
+      "question": "ما اللغة التي ينحدر منها عدد كبير من المصطلحات العلمية والطبية القديمة؟",
+      "answer": "اليونانية",
       "points": 100,
-      "question": "ما هو أصغر كوكب في المجموعة الشمسية؟",
-      "answer": "عطارد",
-      "image": "",
-      "media": "",
-      "mediaType": ""
+      "image": ""
     },
     {
       "id": "general-knowledge-100-12",
+      "question": "ما أكبر محيط على سطح الأرض؟",
+      "answer": "المحيط الهادئ",
       "points": 100,
-      "question": "ما هي العاصمة الإيطالية؟",
-      "answer": "روما",
-      "image": "",
-      "media": "",
-      "mediaType": ""
+      "image": ""
     },
     {
       "id": "general-knowledge-100-13",
+      "question": "ما العنصر الأكثر وفرة في الغلاف الجوي للأرض؟",
+      "answer": "النيتروجين",
       "points": 100,
-      "question": "ما هو الحيوان الأكبر في العالم؟",
-      "answer": "الحوت الأزرق",
-      "image": "",
-      "media": "",
-      "mediaType": ""
+      "image": ""
     },
     {
       "id": "general-knowledge-100-14",
+      "question": "ما اسم الخط الوهمي الذي يقسم الأرض إلى نصفين شمالي وجنوبي؟",
+      "answer": "خط الاستواء",
       "points": 100,
-      "question": "ما هو العنصر الكيميائي الذي يرمز له بالرمز O؟",
-      "answer": "الأكسجين",
-      "image": "",
-      "media": "",
-      "mediaType": ""
+      "image": ""
     },
     {
       "id": "general-knowledge-100-15",
+      "question": "ما الحيوان الذي يمتلك أطول فترة حمل بين الثدييات؟",
+      "answer": "الفيل",
       "points": 100,
-      "question": "ما هو أعلى جبل في العالم؟",
-      "answer": "إفرست",
-      "image": "",
-      "media": "",
-      "mediaType": ""
+      "image": ""
     },
     {
       "id": "general-knowledge-100-16",
+      "question": "ما العضو المسؤول بشكل أساسي عن ضخ الدم في جسم الإنسان؟",
+      "answer": "القلب",
       "points": 100,
-      "question": "ما هي العاصمة البريطانية؟",
-      "answer": "لندن",
-      "image": "",
-      "media": "",
-      "mediaType": ""
+      "image": ""
     },
     {
       "id": "general-knowledge-100-17",
+      "question": "ما اسم المجرة التي تقع فيها المجموعة الشمسية؟",
+      "answer": "درب التبانة",
       "points": 100,
-      "question": "ما هو عدد أضلاع الشكل السداسي؟",
-      "answer": "6 أضلاع",
-      "image": "",
-      "media": "",
-      "mediaType": ""
+      "image": ""
     },
     {
       "id": "general-knowledge-100-18",
+      "question": "ما المعدن الذي رمزه الكيميائي Ag؟",
+      "answer": "الفضة",
       "points": 100,
-      "question": "ما هو لون الأرجواني؟",
-      "answer": "أزرق وأبيض",
-      "image": "",
-      "media": "",
-      "mediaType": ""
+      "image": ""
     },
     {
       "id": "general-knowledge-100-19",
+      "question": "ما الدولة التي نشأت فيها رياضة الجودو؟",
+      "answer": "اليابان",
       "points": 100,
-      "question": "ما هو الكوكب الأحمر؟",
-      "answer": "المريخ",
-      "image": "",
-      "media": "",
-      "mediaType": ""
+      "image": ""
     },
     {
       "id": "general-knowledge-100-20",
+      "question": "ما اسم أكبر صحراء حارة في العالم؟",
+      "answer": "الصحراء الكبرى",
       "points": 100,
-      "question": "ما هي العاصمة الألمانية؟",
-      "answer": "برلين",
-      "image": "",
-      "media": "",
-      "mediaType": ""
+      "image": ""
     },
     {
       "id": "general-knowledge-100-21",
+      "question": "ما الكوكب المعروف بحلقاته الأكثر وضوحًا؟",
+      "answer": "زحل",
       "points": 100,
-      "question": "ما هو عدد أسنان الفم البشري الكامل؟",
-      "answer": "32 سناً",
-      "image": "",
-      "media": "",
-      "mediaType": ""
+      "image": ""
     },
     {
       "id": "general-knowledge-100-22",
+      "question": "ما اسم العلم الذي يدرس الزلازل؟",
+      "answer": "علم الزلازل",
       "points": 100,
-      "question": "ما هو الغاز الذي يحتاجه الإنسان للتنفس؟",
-      "answer": "الأكسجين",
-      "image": "",
-      "media": "",
-      "mediaType": ""
+      "image": ""
     },
     {
       "id": "general-knowledge-100-23",
+      "question": "ما الحيوان الذي يُعد أكبر حيوان بري على الأرض؟",
+      "answer": "الفيل الأفريقي",
       "points": 100,
-      "question": "ما هو المحيط الأكبر في العالم؟",
-      "answer": "المحيط الهادئ",
-      "image": "",
-      "media": "",
-      "mediaType": ""
+      "image": ""
     },
     {
       "id": "general-knowledge-100-24",
+      "question": "ما العضو الذي ينتج الإنسولين في جسم الإنسان؟",
+      "answer": "البنكرياس",
       "points": 100,
-      "question": "ما هي العاصمة الصينية؟",
-      "answer": "بكين",
-      "image": "",
-      "media": "",
-      "mediaType": ""
+      "image": ""
     },
     {
       "id": "general-knowledge-100-25",
+      "question": "ما اسم العملية التي يتحول فيها الماء من سائل إلى غاز؟",
+      "answer": "التبخر",
       "points": 100,
-      "question": "ما هو عدد أضلاع الشكل السباعي؟",
-      "answer": "7 أضلاع",
-      "image": "",
-      "media": "",
-      "mediaType": ""
+      "image": ""
+    },
+    {
+      "id": "general-knowledge-100-26",
+      "question": "ما القارة التي لا توجد فيها دولة ذات سيادة؟",
+      "answer": "القارة القطبية الجنوبية",
+      "points": 100,
+      "image": ""
+    },
+    {
+      "id": "general-knowledge-100-27",
+      "question": "ما الغاز الذي تحتاجه معظم الكائنات الحية للتنفس؟",
+      "answer": "الأكسجين",
+      "points": 100,
+      "image": ""
+    },
+    {
+      "id": "general-knowledge-100-28",
+      "question": "ما اسم أقرب نجم إلى الأرض بعد الشمس؟",
+      "answer": "بروكسيما قنطورس",
+      "points": 100,
+      "image": ""
+    },
+    {
+      "id": "general-knowledge-100-29",
+      "question": "ما الدولة التي يرتبط بها اختراع البوصلة المغناطيسية تاريخيًا؟",
+      "answer": "الصين",
+      "points": 100,
+      "image": ""
+    },
+    {
+      "id": "general-knowledge-100-30",
+      "question": "ما اسم الطبقة التي تحمي الأرض من جزء كبير من الأشعة فوق البنفسجية؟",
+      "answer": "طبقة الأوزون",
+      "points": 100,
+      "image": ""
+    },
+    {
+      "id": "general-knowledge-100-31",
+      "question": "ما الحيوان المعروف بأنه أسرع حيوان بري؟",
+      "answer": "الفهد",
+      "points": 100,
+      "image": ""
+    },
+    {
+      "id": "general-knowledge-100-32",
+      "question": "ما أكبر عظمة في جسم الإنسان؟",
+      "answer": "عظم الفخذ",
+      "points": 100,
+      "image": ""
+    },
+    {
+      "id": "general-knowledge-100-33",
+      "question": "ما العلم الذي يدرس الكائنات الحية؟",
+      "answer": "علم الأحياء",
+      "points": 100,
+      "image": ""
+    },
+    {
+      "id": "general-knowledge-100-34",
+      "question": "ما اسم أصغر كوكب في المجموعة الشمسية؟",
+      "answer": "عطارد",
+      "points": 100,
+      "image": ""
+    },
+    {
+      "id": "general-knowledge-100-35",
+      "question": "ما الدولة التي تشتهر تاريخيًا باختراع الورق؟",
+      "answer": "الصين",
+      "points": 100,
+      "image": ""
+    },
+    {
+      "id": "general-knowledge-100-36",
+      "question": "ما اسم الظاهرة التي يحدث فيها انحراف الضوء عند انتقاله بين وسطين؟",
+      "answer": "الانكسار",
+      "points": 100,
+      "image": ""
+    },
+    {
+      "id": "general-knowledge-100-37",
+      "question": "ما الكوكب الأقرب إلى الشمس؟",
+      "answer": "عطارد",
+      "points": 100,
+      "image": ""
+    },
+    {
+      "id": "general-knowledge-100-38",
+      "question": "ما اسم الجهاز الذي يُستخدم لقياس درجة الحرارة؟",
+      "answer": "ميزان الحرارة",
+      "points": 100,
+      "image": ""
+    },
+    {
+      "id": "general-knowledge-100-39",
+      "question": "ما الحيوان الذي يستخدم الصدى لتحديد مواقع الأشياء من حوله؟",
+      "answer": "الخفاش",
+      "points": 100,
+      "image": ""
+    },
+    {
+      "id": "general-knowledge-100-40",
+      "question": "ما أكبر دولة في العالم من حيث المساحة؟",
+      "answer": "روسيا",
+      "points": 100,
+      "image": ""
+    },
+    {
+      "id": "general-knowledge-100-41",
+      "question": "ما اسم العملية التي يتحول فيها الغاز إلى سائل؟",
+      "answer": "التكاثف",
+      "points": 100,
+      "image": ""
+    },
+    {
+      "id": "general-knowledge-100-42",
+      "question": "ما العنصر الذي يحمل العدد الذري 1؟",
+      "answer": "الهيدروجين",
+      "points": 100,
+      "image": ""
+    },
+    {
+      "id": "general-knowledge-100-43",
+      "question": "ما اسم القارة التي تضم أكبر عدد من الدول؟",
+      "answer": "أفريقيا",
+      "points": 100,
+      "image": ""
+    },
+    {
+      "id": "general-knowledge-100-44",
+      "question": "ما الكوكب المعروف باسم الكوكب الأحمر؟",
+      "answer": "المريخ",
+      "points": 100,
+      "image": ""
+    },
+    {
+      "id": "general-knowledge-100-45",
+      "question": "ما اسم العلم الذي يدرس الطقس والغلاف الجوي؟",
+      "answer": "الأرصاد الجوية",
+      "points": 100,
+      "image": ""
+    },
+    {
+      "id": "general-knowledge-100-46",
+      "question": "ما أكبر عضو في جسم الإنسان من حيث المساحة؟",
+      "answer": "الجلد",
+      "points": 100,
+      "image": ""
+    },
+    {
+      "id": "general-knowledge-100-47",
+      "question": "ما الدولة التي يقع فيها جبل إيفرست؟",
+      "answer": "نيبال والصين",
+      "points": 100,
+      "image": ""
+    },
+    {
+      "id": "general-knowledge-100-48",
+      "question": "ما اسم القوة التي تجذب الأجسام نحو الأرض؟",
+      "answer": "الجاذبية",
+      "points": 100,
+      "image": ""
+    },
+    {
+      "id": "general-knowledge-100-49",
+      "question": "ما الحيوان الذي يُعد أكبر أنواع القطط البرية؟",
+      "answer": "النمر",
+      "points": 100,
+      "image": ""
+    },
+    {
+      "id": "general-knowledge-100-50",
+      "question": "ما اسم الجهاز الذي يحول الطاقة الشمسية إلى طاقة كهربائية مباشرة؟",
+      "answer": "الخلية الشمسية",
+      "points": 100,
+      "image": ""
     },
     {
       "id": "general-knowledge-300-1",
+      "question": "ما العنصر الذي يشكل أكبر نسبة من كتلة الشمس؟",
+      "answer": "الهيدروجين",
       "points": 300,
-      "question": "ما هو رمز الذهب في الجدول الدوري؟",
-      "answer": "Au",
-      "image": "",
-      "media": "",
-      "mediaType": ""
+      "image": ""
     },
     {
       "id": "general-knowledge-300-2",
+      "question": "ما اسم أعمق نقطة معروفة في محيطات العالم؟",
+      "answer": "تشالنجر ديب",
       "points": 300,
-      "question": "ما هو أعمق محيط في العالم؟",
-      "answer": "المحيط الهادئ",
-      "image": "",
-      "media": "",
-      "mediaType": ""
+      "image": ""
     },
     {
       "id": "general-knowledge-300-3",
+      "question": "ما الدولة التي كانت تُعرف تاريخيًا باسم بلاد فارس؟",
+      "answer": "إيران",
       "points": 300,
-      "question": "ما هو عدد دول العالم؟",
-      "answer": "أكثر من 190 دولة",
-      "image": "",
-      "media": "",
-      "mediaType": ""
+      "image": ""
     },
     {
       "id": "general-knowledge-300-4",
+      "question": "ما الوحدة المستخدمة لقياس المقاومة الكهربائية؟",
+      "answer": "الأوم",
       "points": 300,
-      "question": "ما هو العنصر الكيميائي الذي يرمز له بالرمز H؟",
-      "answer": "الهيدروجين",
-      "image": "",
-      "media": "",
-      "mediaType": ""
+      "image": ""
     },
     {
       "id": "general-knowledge-300-5",
+      "question": "من العالم الذي وضع قوانين الحركة الثلاثة؟",
+      "answer": "إسحاق نيوتن",
       "points": 300,
-      "question": "ما هو أطول نهر في آسيا؟",
-      "answer": "نهر يانغتسي",
-      "image": "",
-      "media": "",
-      "mediaType": ""
+      "image": ""
     },
     {
       "id": "general-knowledge-300-6",
+      "question": "ما اسم أقدم نظام كتابة معروف في بلاد الرافدين؟",
+      "answer": "الكتابة المسمارية",
       "points": 300,
-      "question": "ما هو الكوكب الذي يطلق عليه الكوكب العملاق؟",
-      "answer": "زحل",
-      "image": "",
-      "media": "",
-      "mediaType": ""
+      "image": ""
     },
     {
       "id": "general-knowledge-300-7",
+      "question": "ما الكوكب الذي يستغرق أطول مدة لإكمال دورة حول الشمس؟",
+      "answer": "نبتون",
       "points": 300,
-      "question": "ما هو عدد لغات العالم؟",
-      "answer": "أكثر من 7000 لغة",
-      "image": "",
-      "media": "",
-      "mediaType": ""
+      "image": ""
     },
     {
       "id": "general-knowledge-300-8",
+      "question": "ما المضيق الذي يفصل آسيا عن أمريكا الشمالية؟",
+      "answer": "مضيق بيرينغ",
       "points": 300,
-      "question": "ما هو العنصر الكيميائي الذي يرمز له بالرمز Fe؟",
-      "answer": "الحديد",
-      "image": "",
-      "media": "",
-      "mediaType": ""
+      "image": ""
     },
     {
       "id": "general-knowledge-300-9",
+      "question": "ما اسم أكبر قمر لكوكب زحل؟",
+      "answer": "تيتان",
       "points": 300,
-      "question": "ما هو أعلى برج في العالم؟",
-      "answer": "برج خليفة",
-      "image": "",
-      "media": "",
-      "mediaType": ""
+      "image": ""
     },
     {
       "id": "general-knowledge-300-10",
+      "question": "ما العلم الذي يدرس أصل وتطور اللغات؟",
+      "answer": "علم اللغة التاريخي",
       "points": 300,
-      "question": "ما هو عدد قارات العالم؟",
-      "answer": "7 قارات",
-      "image": "",
-      "media": "",
-      "mediaType": ""
+      "image": ""
     },
     {
       "id": "general-knowledge-300-11",
+      "question": "ما الدولة التي يقع فيها معظم حوض نهر الأمازون؟",
+      "answer": "البرازيل",
       "points": 300,
-      "question": "ما هو الكوكب الذي يدور حول الأرض؟",
-      "answer": "القمر",
-      "image": "",
-      "media": "",
-      "mediaType": ""
+      "image": ""
     },
     {
       "id": "general-knowledge-300-12",
+      "question": "ما اسم أول عنصر في سلسلة الهالوجينات؟",
+      "answer": "الفلور",
       "points": 300,
-      "question": "ما هو العنصر الكيميائي الذي يرمز له بالرمز Na؟",
-      "answer": "الصوديوم",
-      "image": "",
-      "media": "",
-      "mediaType": ""
+      "image": ""
     },
     {
       "id": "general-knowledge-300-13",
+      "question": "ما الحضارة التي بنت مدينة ماتشو بيتشو؟",
+      "answer": "الإنكا",
       "points": 300,
-      "question": "ما هو أكبر صحراء في العالم؟",
-      "answer": "الصحراء الكبرى",
-      "image": "",
-      "media": "",
-      "mediaType": ""
+      "image": ""
     },
     {
       "id": "general-knowledge-300-14",
+      "question": "ما اسم الظاهرة التي تجعل السماء تبدو زرقاء نهارًا؟",
+      "answer": "تشتت رايلي",
       "points": 300,
-      "question": "ما هو عدد نجوم في المجرة؟",
-      "answer": "أكثر من 100 مليار نجمة",
-      "image": "",
-      "media": "",
-      "mediaType": ""
+      "image": ""
     },
     {
       "id": "general-knowledge-300-15",
+      "question": "ما أكبر صفيحة تكتونية على سطح الأرض؟",
+      "answer": "صفيحة المحيط الهادئ",
       "points": 300,
-      "question": "ما هو العنصر الكيميائي الذي يرمز له بالرمز Cl؟",
-      "answer": "الكلور",
-      "image": "",
-      "media": "",
-      "mediaType": ""
+      "image": ""
     },
     {
       "id": "general-knowledge-300-16",
+      "question": "ما اسم أول قمر صناعي أطلقه الإنسان إلى الفضاء؟",
+      "answer": "سبوتنيك 1",
       "points": 300,
-      "question": "ما هو أعمق نقطة في المحيطات؟",
-      "answer": "خندق ماريانا",
-      "image": "",
-      "media": "",
-      "mediaType": ""
+      "image": ""
     },
     {
       "id": "general-knowledge-300-17",
+      "question": "ما الدولة التي يمر بها نهر الدانوب أكثر من أي دولة أخرى؟",
+      "answer": "رومانيا",
       "points": 300,
-      "question": "ما هو عدد ساعات اليوم؟",
-      "answer": "24 ساعة",
-      "image": "",
-      "media": "",
-      "mediaType": ""
+      "image": ""
     },
     {
       "id": "general-knowledge-300-18",
+      "question": "ما اسم الجزيء الذي يحمل معظم المعلومات الوراثية في الكائنات الحية؟",
+      "answer": "DNA",
       "points": 300,
-      "question": "ما هو العنصر الكيميائي الذي يرمز له بالرمز C؟",
-      "answer": "الكربون",
-      "image": "",
-      "media": "",
-      "mediaType": ""
+      "image": ""
     },
     {
       "id": "general-knowledge-300-19",
+      "question": "ما الحضارة التي اشتهرت بمدينة تيوتيهواكان؟",
+      "answer": "الحضارة الوسطى المكسيكية القديمة",
       "points": 300,
-      "question": "ما هو أكبر صحراء في آسيا؟",
-      "answer": "صحراء غوبي",
-      "image": "",
-      "media": "",
-      "mediaType": ""
+      "image": ""
     },
     {
       "id": "general-knowledge-300-20",
+      "question": "ما اسم المقياس المستخدم تاريخيًا لقياس قوة الزلازل؟",
+      "answer": "مقياس ريختر",
       "points": 300,
-      "question": "ما هو عدد قارات في أوروبا؟",
-      "answer": "أوروبا ليست قارة بل هي قارة",
-      "image": "",
-      "media": "",
-      "mediaType": ""
+      "image": ""
     },
     {
       "id": "general-knowledge-300-21",
+      "question": "ما الدولة التي تقع فيها منطقة ترانسلفانيا؟",
+      "answer": "رومانيا",
       "points": 300,
-      "question": "ما هو العنصر الكيميائي الذي يرمز له بالرمز S؟",
-      "answer": "الكبريت",
-      "image": "",
-      "media": "",
-      "mediaType": ""
+      "image": ""
     },
     {
       "id": "general-knowledge-300-22",
+      "question": "ما اسم أكبر قمر في المجموعة الشمسية؟",
+      "answer": "غانيميد",
       "points": 300,
-      "question": "ما هو أسرع طائر في العالم؟",
-      "answer": "الصقر الجبلي",
-      "image": "",
-      "media": "",
-      "mediaType": ""
+      "image": ""
     },
     {
       "id": "general-knowledge-300-23",
+      "question": "من العالم الذي اكتشف البنسلين؟",
+      "answer": "ألكسندر فليمنغ",
       "points": 300,
-      "question": "ما هو عدد لغات الرسمية في الهند؟",
-      "answer": "22 لغة",
-      "image": "",
-      "media": "",
-      "mediaType": ""
+      "image": ""
     },
     {
       "id": "general-knowledge-300-24",
+      "question": "ما المضيق الذي يربط البحر المتوسط بالمحيط الأطلسي؟",
+      "answer": "مضيق جبل طارق",
       "points": 300,
-      "question": "ما هو العنصر الكيميائي الذي يرمز له بالرمز K؟",
-      "answer": "البوتاسيوم",
-      "image": "",
-      "media": "",
-      "mediaType": ""
+      "image": ""
     },
     {
       "id": "general-knowledge-300-25",
+      "question": "ما اسم النظرية التي تفسر حركة الصفائح الأرضية؟",
+      "answer": "نظرية الصفائح التكتونية",
       "points": 300,
-      "question": "ما هو عدد الكواكب في المجموعة الشمسية؟",
-      "answer": "8 كواكب",
-      "image": "",
-      "media": "",
-      "mediaType": ""
+      "image": ""
+    },
+    {
+      "id": "general-knowledge-300-26",
+      "question": "ما الدولة التي كانت تُعرف باسم سيام؟",
+      "answer": "تايلاند",
+      "points": 300,
+      "image": ""
+    },
+    {
+      "id": "general-knowledge-300-27",
+      "question": "ما اسم أول إنسان دار حول الأرض في الفضاء؟",
+      "answer": "يوري غاغارين",
+      "points": 300,
+      "image": ""
+    },
+    {
+      "id": "general-knowledge-300-28",
+      "question": "ما الغاز النبيل الذي يستخدم في بعض اللافتات المضيئة ويعطي ضوءًا أحمر مائلًا للبرتقالي؟",
+      "answer": "النيون",
+      "points": 300,
+      "image": ""
+    },
+    {
+      "id": "general-knowledge-300-29",
+      "question": "ما المدينة التي كانت عاصمة الإمبراطورية البيزنطية؟",
+      "answer": "القسطنطينية",
+      "points": 300,
+      "image": ""
+    },
+    {
+      "id": "general-knowledge-300-30",
+      "question": "ما اسم أكبر نظام بيئي على الأرض من حيث المساحة؟",
+      "answer": "المحيطات",
+      "points": 300,
+      "image": ""
+    },
+    {
+      "id": "general-knowledge-300-31",
+      "question": "ما العالم الذي اكتشف قوانين الوراثة من خلال تجاربه على نبات البازلاء؟",
+      "answer": "غريغور مندل",
+      "points": 300,
+      "image": ""
+    },
+    {
+      "id": "general-knowledge-300-32",
+      "question": "ما الدولة التي يوجد فيها أكبر عدد من البراكين النشطة تقريبًا؟",
+      "answer": "إندونيسيا",
+      "points": 300,
+      "image": ""
+    },
+    {
+      "id": "general-knowledge-300-33",
+      "question": "ما اسم الظاهرة التي تحدث عندما يحجب القمر ضوء الشمس عن جزء من الأرض؟",
+      "answer": "كسوف الشمس",
+      "points": 300,
+      "image": ""
+    },
+    {
+      "id": "general-knowledge-300-34",
+      "question": "ما العنصر الذي يحمل العدد الذري 79؟",
+      "answer": "الذهب",
+      "points": 300,
+      "image": ""
+    },
+    {
+      "id": "general-knowledge-300-35",
+      "question": "ما اسم الحضارة التي استخدمت نظامًا عشريًا متقدمًا ووضعت مفهوم الصفر في الرياضيات؟",
+      "answer": "الحضارة الهندية",
+      "points": 300,
+      "image": ""
+    },
+    {
+      "id": "general-knowledge-300-36",
+      "question": "ما أطول سلسلة جبلية فوق سطح الأرض؟",
+      "answer": "سلسلة جبال وسط المحيط",
+      "points": 300,
+      "image": ""
+    },
+    {
+      "id": "general-knowledge-300-37",
+      "question": "ما الدولة التي تقع فيها مدينة البتراء؟",
+      "answer": "الأردن",
+      "points": 300,
+      "image": ""
+    },
+    {
+      "id": "general-knowledge-300-38",
+      "question": "ما اسم العلم الذي يدرس العملات القديمة؟",
+      "answer": "علم المسكوكات",
+      "points": 300,
+      "image": ""
+    },
+    {
+      "id": "general-knowledge-300-39",
+      "question": "ما أول مركبة هبطت بنجاح على سطح المريخ؟",
+      "answer": "فايكينغ 1",
+      "points": 300,
+      "image": ""
+    },
+    {
+      "id": "general-knowledge-300-40",
+      "question": "ما اسم أكبر بحر مغلق في العالم؟",
+      "answer": "بحر قزوين",
+      "points": 300,
+      "image": ""
+    },
+    {
+      "id": "general-knowledge-300-41",
+      "question": "ما العالم الذي اقترح نموذجًا لمركزية الشمس في النظام الكوكبي في عصر النهضة؟",
+      "answer": "نيكولاس كوبرنيكوس",
+      "points": 300,
+      "image": ""
+    },
+    {
+      "id": "general-knowledge-300-42",
+      "question": "ما الدولة التي كانت تُعرف باسم روديسيا الجنوبية؟",
+      "answer": "زيمبابوي",
+      "points": 300,
+      "image": ""
+    },
+    {
+      "id": "general-knowledge-300-43",
+      "question": "ما اسم الظاهرة التي ينتج عنها ضوء ملون في السماء قرب القطبين؟",
+      "answer": "الشفق القطبي",
+      "points": 300,
+      "image": ""
+    },
+    {
+      "id": "general-knowledge-300-44",
+      "question": "ما العنصر الضروري لتكوين الهيموغلوبين؟",
+      "answer": "الحديد",
+      "points": 300,
+      "image": ""
+    },
+    {
+      "id": "general-knowledge-300-45",
+      "question": "ما اسم أقدم جامعة ما زالت تعمل باستمرار وفق كثير من المصادر التاريخية؟",
+      "answer": "جامعة القرويين",
+      "points": 300,
+      "image": ""
+    },
+    {
+      "id": "general-knowledge-300-46",
+      "question": "ما القارة التي تقع فيها صحراء غوبي؟",
+      "answer": "آسيا",
+      "points": 300,
+      "image": ""
+    },
+    {
+      "id": "general-knowledge-300-47",
+      "question": "ما اسم أكبر بركان في المجموعة الشمسية؟",
+      "answer": "أوليمبوس مونس",
+      "points": 300,
+      "image": ""
+    },
+    {
+      "id": "general-knowledge-300-48",
+      "question": "ما الدولة التي كانت تُعرف باسم بورما؟",
+      "answer": "ميانمار",
+      "points": 300,
+      "image": ""
+    },
+    {
+      "id": "general-knowledge-300-49",
+      "question": "ما اسم الجهاز الذي يسجل الموجات الزلزالية؟",
+      "answer": "السيزموجراف",
+      "points": 300,
+      "image": ""
+    },
+    {
+      "id": "general-knowledge-300-50",
+      "question": "ما النهر الذي يمر بمدينة بودابست؟",
+      "answer": "نهر الدانوب",
+      "points": 300,
+      "image": ""
     },
     {
       "id": "general-knowledge-500-1",
+      "question": "ما اسم الظاهرة الفيزيائية التي يتغير فيها تردد الموجة بسبب حركة مصدرها أو الراصد؟",
+      "answer": "تأثير دوبلر",
       "points": 500,
-      "question": "ما هو العنصر الكيميائي الذي يرمز له بالرمز He؟",
-      "answer": "الهيليوم",
-      "image": "",
-      "media": "",
-      "mediaType": ""
+      "image": ""
     },
     {
       "id": "general-knowledge-500-2",
+      "question": "ما أقدم ملحمة أدبية معروفة على نطاق واسع؟",
+      "answer": "ملحمة جلجامش",
       "points": 500,
-      "question": "ما هو الكوكب الذي يدور حول الشمس في 88 يوم؟",
-      "answer": "عطارد",
-      "image": "",
-      "media": "",
-      "mediaType": ""
+      "image": ""
     },
     {
       "id": "general-knowledge-500-3",
+      "question": "ما اسم النقطة التي تتساوى عندها كثافة المادة مع كثافة الماء في بعض القياسات الفلكية؟",
+      "answer": "كثافة الماء ليست نقطة فلكية محددة",
       "points": 500,
-      "question": "ما هو عدد عظام جسم الإنسان البالغ؟",
-      "answer": "206 عظمة",
-      "image": "",
-      "media": "",
-      "mediaType": ""
+      "image": ""
     },
     {
       "id": "general-knowledge-500-4",
+      "question": "ما الحضارة التي طورت نظام الكتابة المعروف باسم Linear B؟",
+      "answer": "الحضارة الميسينية",
       "points": 500,
-      "question": "ما هو العنصر الكيميائي الذي يرمز له بالرمز Si؟",
-      "answer": "السيليكون",
-      "image": "",
-      "media": "",
-      "mediaType": ""
+      "image": ""
     },
     {
       "id": "general-knowledge-500-5",
+      "question": "ما اسم الحد الفاصل بين القشرة الأرضية والوشاح؟",
+      "answer": "انقطاع موهو",
       "points": 500,
-      "question": "ما هو الكوكب الذي يدور حول الشمس في 687 يوم؟",
-      "answer": "المريخ",
-      "image": "",
-      "media": "",
-      "mediaType": ""
+      "image": ""
     },
     {
       "id": "general-knowledge-500-6",
+      "question": "ما أول عنصر تم اكتشافه باستخدام التحليل الطيفي؟",
+      "answer": "السيزيوم",
       "points": 500,
-      "question": "ما هو عدد عضلات جسم الإنسان؟",
-      "answer": "أكثر من 600 عضلة",
-      "image": "",
-      "media": "",
-      "mediaType": ""
+      "image": ""
     },
     {
       "id": "general-knowledge-500-7",
+      "question": "ما اسم أعمق بحيرة في العالم؟",
+      "answer": "بحيرة بايكال",
       "points": 500,
-      "question": "ما هو العنصر الكيميائي الذي يرمز له بالرمز N؟",
-      "answer": "النيتروجين",
-      "image": "",
-      "media": "",
-      "mediaType": ""
+      "image": ""
     },
     {
       "id": "general-knowledge-500-8",
+      "question": "ما الدولة التي تمتلك إقليم كالينينغراد المنفصل جغرافيًا عن معظم أراضيها؟",
+      "answer": "روسيا",
       "points": 500,
-      "question": "ما هو الكوكب الذي يدور حول الشمس في 12 سنة؟",
-      "answer": "المشتري",
-      "image": "",
-      "media": "",
-      "mediaType": ""
+      "image": ""
     },
     {
       "id": "general-knowledge-500-9",
+      "question": "ما اسم العملية التي تتحول فيها المادة الصلبة مباشرة إلى غاز؟",
+      "answer": "التسامي",
       "points": 500,
-      "question": "ما هو عدد خلايا جسم الإنسان؟",
-      "answer": "تريليونات الخلايا",
-      "image": "",
-      "media": "",
-      "mediaType": ""
+      "image": ""
     },
     {
       "id": "general-knowledge-500-10",
+      "question": "ما المعاهدة التي أنهت حرب الثلاثين عامًا في أوروبا عام 1648؟",
+      "answer": "صلح وستفاليا",
       "points": 500,
-      "question": "ما هو العنصر الكيميائي الذي يرمز له بالرمز Ca؟",
-      "answer": "الكالسيوم",
-      "image": "",
-      "media": "",
-      "mediaType": ""
+      "image": ""
     },
     {
       "id": "general-knowledge-500-11",
+      "question": "ما اسم أقدم نص قانوني مكتوب معروف من بلاد الرافدين؟",
+      "answer": "قانون أور نمو",
       "points": 500,
-      "question": "ما هو الكوكب الذي يدور حول الشمس في 29 سنة؟",
-      "answer": "زحل",
-      "image": "",
-      "media": "",
-      "mediaType": ""
+      "image": ""
     },
     {
       "id": "general-knowledge-500-12",
+      "question": "ما العنصر الذي يمتلك أعلى درجة انصهار بين العناصر المستقرة؟",
+      "answer": "التنغستن",
       "points": 500,
-      "question": "ما هو عدد أنواع الدم في الإنسان؟",
-      "answer": "4 أنواع",
-      "image": "",
-      "media": "",
-      "mediaType": ""
+      "image": ""
     },
     {
       "id": "general-knowledge-500-13",
+      "question": "ما اسم القمر الذي يدور حول نبتون في مدار رجعي ويدور عكس اتجاه دوران معظم الأقمار الكبيرة؟",
+      "answer": "تريتون",
       "points": 500,
-      "question": "ما هو العنصر الكيميائي الذي يرمز له بالرمز Mg؟",
-      "answer": "المغنيسيوم",
-      "image": "",
-      "media": "",
-      "mediaType": ""
+      "image": ""
     },
     {
       "id": "general-knowledge-500-14",
+      "question": "ما الدولة التي تقع فيها منطقة كابادوكيا التاريخية؟",
+      "answer": "تركيا",
       "points": 500,
-      "question": "ما هو الكوكب الذي يدور حول الشمس في 84 سنة؟",
-      "answer": "أورانوس",
-      "image": "",
-      "media": "",
-      "mediaType": ""
+      "image": ""
     },
     {
       "id": "general-knowledge-500-15",
+      "question": "ما اسم الظاهرة التي تتسبب في ارتفاع مستوى سطح البحر وانخفاضه دوريًا بفعل الجاذبية؟",
+      "answer": "المد والجزر",
       "points": 500,
-      "question": "ما هو عدد حواس الإنسان؟",
-      "answer": "5 حواس",
-      "image": "",
-      "media": "",
-      "mediaType": ""
+      "image": ""
     },
     {
       "id": "general-knowledge-500-16",
+      "question": "ما الإمبراطورية التي استخدمت طريقًا ملكيًا شهيرًا امتد من سوسة إلى سارديس؟",
+      "answer": "الإمبراطورية الأخمينية",
       "points": 500,
-      "question": "ما هو العنصر الكيميائي الذي يرمز له بالرمز Al؟",
-      "answer": "الألمنيوم",
-      "image": "",
-      "media": "",
-      "mediaType": ""
+      "image": ""
     },
     {
       "id": "general-knowledge-500-17",
+      "question": "ما اسم أول كائن حي أرسل إلى مدار حول الأرض؟",
+      "answer": "الكلبة لايكا",
       "points": 500,
-      "question": "ما هو الكوكب الذي يدور حول الشمس في 165 سنة؟",
-      "answer": "نبتون",
-      "image": "",
-      "media": "",
-      "mediaType": ""
+      "image": ""
     },
     {
       "id": "general-knowledge-500-18",
+      "question": "ما أعمق بحيرة في أفريقيا؟",
+      "answer": "بحيرة تنجانيقا",
       "points": 500,
-      "question": "ما هو عدد قارات المأهولة في العالم؟",
-      "answer": "6 قارات",
-      "image": "",
-      "media": "",
-      "mediaType": ""
+      "image": ""
     },
     {
       "id": "general-knowledge-500-19",
+      "question": "ما اسم المبدأ الذي ينص على استحالة معرفة موضع الجسيم وزخمه بدقة مطلقة في الوقت نفسه؟",
+      "answer": "مبدأ عدم اليقين لهايزنبرغ",
       "points": 500,
-      "question": "ما هو العنصر الكيميائي الذي يرمز له بالرمز Zn؟",
-      "answer": "الزنك",
-      "image": "",
-      "media": "",
-      "mediaType": ""
+      "image": ""
     },
     {
       "id": "general-knowledge-500-20",
+      "question": "ما المدينة القديمة التي دُفنت بسبب ثوران جبل فيزوف عام 79م؟",
+      "answer": "بومبي",
       "points": 500,
-      "question": "ما هو الكوكب الكوكب القزم؟",
-      "answer": "بلوتو",
-      "image": "",
-      "media": "",
-      "mediaType": ""
+      "image": ""
     },
     {
       "id": "general-knowledge-500-21",
+      "question": "ما اسم أقدم معدن استخدمه الإنسان على نطاق واسع في صناعة الأدوات؟",
+      "answer": "النحاس",
       "points": 500,
-      "question": "ما هو عدد قارات غير المأهولة في العالم؟",
-      "answer": "قارة واحدة (القارة القطبية الجنوبية)",
-      "image": "",
-      "media": "",
-      "mediaType": ""
+      "image": ""
     },
     {
       "id": "general-knowledge-500-22",
+      "question": "ما الدولة التي تضم منطقة ناغورنو كاراباخ المتنازع عليها تاريخيًا؟",
+      "answer": "أذربيجان",
       "points": 500,
-      "question": "ما هو العنصر الكيميائي الذي يرمز له بالرمز Cu؟",
-      "answer": "النحاس",
-      "image": "",
-      "media": "",
-      "mediaType": ""
+      "image": ""
     },
     {
       "id": "general-knowledge-500-23",
+      "question": "ما اسم العملية التي تنتج بها النجوم طاقتها عبر دمج نوى الهيدروجين؟",
+      "answer": "الاندماج النووي",
       "points": 500,
-      "question": "ما هو الكوكب الذي يدور حول الشمس أقل من سنة؟",
-      "answer": "عطارد",
-      "image": "",
-      "media": "",
-      "mediaType": ""
+      "image": ""
     },
     {
       "id": "general-knowledge-500-24",
+      "question": "ما المعركة البحرية التي هُزمت فيها الأرمادا الإسبانية عام 1588؟",
+      "answer": "معركة الأرمادا الإسبانية",
       "points": 500,
-      "question": "ما هو عدد أنواع المناخات الرئيسية في العالم؟",
-      "answer": "5 أنواع",
-      "image": "",
-      "media": "",
-      "mediaType": ""
+      "image": ""
     },
     {
       "id": "general-knowledge-500-25",
+      "question": "ما اسم أول عنصر تم اكتشافه في الشمس قبل اكتشافه على الأرض؟",
+      "answer": "الهيليوم",
       "points": 500,
-      "question": "ما هو العنصر الكيميائي الذي يرمز له بالرمز Ag؟",
-      "answer": "الفضة",
-      "image": "",
-      "media": "",
-      "mediaType": ""
+      "image": ""
+    },
+    {
+      "id": "general-knowledge-500-26",
+      "question": "ما القارة التي لا توجد فيها ثعابين برية أصلية؟",
+      "answer": "القارة القطبية الجنوبية",
+      "points": 500,
+      "image": ""
+    },
+    {
+      "id": "general-knowledge-500-27",
+      "question": "ما اسم السلسلة الجبلية التي تفصل تقليديًا بين أوروبا وآسيا؟",
+      "answer": "جبال الأورال",
+      "points": 500,
+      "image": ""
+    },
+    {
+      "id": "general-knowledge-500-28",
+      "question": "ما الحضارة التي بنت مدينة تشيتشن إيتزا؟",
+      "answer": "المايا",
+      "points": 500,
+      "image": ""
+    },
+    {
+      "id": "general-knowledge-500-29",
+      "question": "ما اسم أقدم عاصمة إمبراطورية رومانية في القسطنطينية قبل انتقال العاصمة إليها؟",
+      "answer": "روما",
+      "points": 500,
+      "image": ""
+    },
+    {
+      "id": "general-knowledge-500-30",
+      "question": "ما الدولة التي كانت تُعرف باسم الحبشة؟",
+      "answer": "إثيوبيا",
+      "points": 500,
+      "image": ""
+    },
+    {
+      "id": "general-knowledge-500-31",
+      "question": "ما اسم أكبر قمر لكوكب أورانوس؟",
+      "answer": "تيتانيا",
+      "points": 500,
+      "image": ""
+    },
+    {
+      "id": "general-knowledge-500-32",
+      "question": "ما النظرية التي تفسر انحناء الزمكان بفعل الكتلة والطاقة؟",
+      "answer": "النسبية العامة",
+      "points": 500,
+      "image": ""
+    },
+    {
+      "id": "general-knowledge-500-33",
+      "question": "ما اسم البحر الذي يُعد أخفض نقطة مكشوفة على سطح اليابسة؟",
+      "answer": "البحر الميت",
+      "points": 500,
+      "image": ""
+    },
+    {
+      "id": "general-knowledge-500-34",
+      "question": "ما الحضارة التي استخدمت نظام العد الستيني الذي ما زال يؤثر في قياس الوقت والزوايا؟",
+      "answer": "الحضارة البابلية",
+      "points": 500,
+      "image": ""
+    },
+    {
+      "id": "general-knowledge-500-35",
+      "question": "ما اسم العملية التي تفقد فيها الذرة إلكترونًا أو أكثر؟",
+      "answer": "التأين",
+      "points": 500,
+      "image": ""
+    },
+    {
+      "id": "general-knowledge-500-36",
+      "question": "ما المدينة التي كانت مركزًا رئيسيًا للعلم والترجمة في العصر العباسي؟",
+      "answer": "بغداد",
+      "points": 500,
+      "image": ""
+    },
+    {
+      "id": "general-knowledge-500-37",
+      "question": "ما اسم أقرب مجرة كبيرة إلى درب التبانة؟",
+      "answer": "مجرة أندروميدا",
+      "points": 500,
+      "image": ""
+    },
+    {
+      "id": "general-knowledge-500-38",
+      "question": "ما الدولة التي تقع فيها مدينة سمرقند؟",
+      "answer": "أوزبكستان",
+      "points": 500,
+      "image": ""
+    },
+    {
+      "id": "general-knowledge-500-39",
+      "question": "ما اسم القانون الذي يربط بين ضغط الغاز وحجمه عند ثبات درجة الحرارة؟",
+      "answer": "قانون بويل",
+      "points": 500,
+      "image": ""
+    },
+    {
+      "id": "general-knowledge-500-40",
+      "question": "ما المعركة التي شهدت هزيمة نابليون النهائية عام 1815؟",
+      "answer": "واترلو",
+      "points": 500,
+      "image": ""
+    },
+    {
+      "id": "general-knowledge-500-41",
+      "question": "ما اسم أكبر صحراء في العالم إذا شملت الصحارى القطبية؟",
+      "answer": "صحراء أنتاركتيكا",
+      "points": 500,
+      "image": ""
+    },
+    {
+      "id": "general-knowledge-500-42",
+      "question": "ما العنصر الذي يُستخدم في صناعة معظم الشرائح الإلكترونية الحديثة؟",
+      "answer": "السيليكون",
+      "points": 500,
+      "image": ""
+    },
+    {
+      "id": "general-knowledge-500-43",
+      "question": "ما اسم الطبقة الداخلية للأرض التي تتكون أساسًا من الحديد والنيكل وتكون صلبة؟",
+      "answer": "النواة الداخلية",
+      "points": 500,
+      "image": ""
+    },
+    {
+      "id": "general-knowledge-500-44",
+      "question": "ما الإمبراطورية التي كانت عاصمتها تينوتشتيتلان؟",
+      "answer": "إمبراطورية الأزتك",
+      "points": 500,
+      "image": ""
+    },
+    {
+      "id": "general-knowledge-500-45",
+      "question": "ما اسم أقدم نظام أبجدي معروف على نطاق واسع؟",
+      "answer": "الأبجدية الفينيقية",
+      "points": 500,
+      "image": ""
+    },
+    {
+      "id": "general-knowledge-500-46",
+      "question": "ما الدولة التي يقع فيها الجزء الأكبر من جبال الأطلس؟",
+      "answer": "المغرب والجزائر وتونس وليبيا",
+      "points": 500,
+      "image": ""
+    },
+    {
+      "id": "general-knowledge-500-47",
+      "question": "ما اسم الظاهرة التي يحدث فيها انفصال الضوء الأبيض إلى ألوانه عند مروره في منشور؟",
+      "answer": "التشتت",
+      "points": 500,
+      "image": ""
+    },
+    {
+      "id": "general-knowledge-500-48",
+      "question": "ما اسم أول مركبة بشرية وصلت إلى سطح كوكب الزهرة؟",
+      "answer": "فينيرا 7",
+      "points": 500,
+      "image": ""
+    },
+    {
+      "id": "general-knowledge-500-49",
+      "question": "ما الدولة التي كانت تُعرف تاريخيًا باسم مملكة سيام؟",
+      "answer": "تايلاند",
+      "points": 500,
+      "image": ""
+    },
+    {
+      "id": "general-knowledge-500-50",
+      "question": "ما اسم المقياس المستخدم لقياس صلابة المعادن؟",
+      "answer": "مقياس موس",
+      "points": 500,
+      "image": ""
     }
   ],
   "metadata": {
     "sectionId": "general",
-    "updatedAt": "2026-08-05",
+    "updatedAt": "2026-08-18",
     "status": "ready"
   }
 }

@@ -1,6 +1,6 @@
 import { useState, type FormEvent } from 'react'
 import { Link } from 'react-router-dom'
-import { getSupabaseClient } from '../../lib/supabaseClient'
+import { getAuthErrorMessage, resetPassword } from '../../auth/authService'
 import { useAppStore } from '../../store/appStore'
 
 export function ForgotPassword() {
@@ -20,29 +20,15 @@ export function ForgotPassword() {
     setIsSubmitting(true)
 
     try {
-      const { error: resetError } =
-        await getSupabaseClient().auth.resetPasswordForEmail(
-          email.trim(),
-          {
-            redirectTo: `${window.location.origin}/reset-password`,
-          },
-        )
-
-      if (resetError) throw resetError
+      await resetPassword(email)
 
       setMessage(
         english
-          ? 'If this email is registered, you will receive a password reset link.'
-          : 'إذا كان هذا البريد الإلكتروني مسجلًا، ستصلك رسالة لإعادة تعيين كلمة المرور.',
+          ? 'Password reset email sent. Check your inbox.'
+          : 'تم إرسال رابط إعادة تعيين كلمة المرور إلى بريدك الإلكتروني.',
       )
     } catch (submitError) {
-      setError(
-        submitError instanceof Error
-          ? submitError.message
-          : english
-            ? 'Something went wrong. Please try again.'
-            : 'حدث خطأ. حاول مرة أخرى.',
-      )
+     setError(getAuthErrorMessage(submitError, english))
     } finally {
       setIsSubmitting(false)
     }
@@ -53,42 +39,24 @@ export function ForgotPassword() {
       className="flex min-h-[70vh] items-center justify-center px-4 py-8"
       dir={english ? 'ltr' : 'rtl'}
     >
-      <section className="w-full max-w-md rounded-3xl border border-slate-200 bg-white p-6 shadow-xl shadow-slate-200/50 sm:p-8">
-        <p className="text-sm font-black text-sky-600">
+      <section className="glass-panel-strong w-full max-w-md rounded-3xl p-6 sm:p-8">
+        <p className="eyebrow">
           {english ? 'Fahloy account' : 'حساب فهلوي'}
         </p>
 
-        <h1 className="mt-2 text-3xl font-black text-slate-900">
+        <h1 className="mt-2 text-3xl font-black text-navy">
           {english ? 'Forgot password?' : 'نسيت كلمة المرور؟'}
         </h1>
 
-        <p className="mt-2 text-sm text-slate-500">
+        <p className="mt-2 text-sm text-muted">
           {english
             ? 'Enter your email and we will send you a password reset link.'
-            : 'أدخل بريدك الإلكتروني وسنرسل لك رابطًا لإعادة تعيين كلمة المرور.'}
+            : 'اكتب بريدك الإلكتروني وسنرسل لك رابطًا لإعادة تعيين كلمة المرور.'}
         </p>
-
-        {message && (
-          <p
-            role="status"
-            className="mt-5 rounded-xl border border-emerald-200 bg-emerald-50 px-4 py-3 text-sm font-bold text-emerald-700"
-          >
-            {message}
-          </p>
-        )}
-
-        {error && (
-          <p
-            role="alert"
-            className="mt-5 rounded-xl border border-rose-200 bg-rose-50 px-4 py-3 text-sm font-bold text-rose-700"
-          >
-            {error}
-          </p>
-        )}
 
         <form className="mt-6 space-y-5" onSubmit={handleSubmit}>
           <label className="block">
-            <span className="mb-2 block text-sm font-bold text-slate-700">
+            <span className="mb-2 block text-sm font-bold text-ink-2">
               {english ? 'Email' : 'البريد الإلكتروني'}
             </span>
 
@@ -99,14 +67,32 @@ export function ForgotPassword() {
               autoComplete="email"
               required
               dir="ltr"
-              className="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-slate-900 outline-none focus:border-sky-500"
+              className="w-full rounded-xl border border-border-soft bg-surface-raised px-4 py-3 text-ink outline-none transition focus:border-teal focus:ring-2 focus:ring-teal/20"
             />
           </label>
+
+          {message && (
+            <p
+              role="status"
+              className="rounded-xl border border-emerald-200 bg-emerald-50 px-4 py-3 text-sm font-bold text-emerald-700"
+            >
+              {message}
+            </p>
+          )}
+
+          {error && (
+            <p
+              role="alert"
+              className="rounded-xl border border-rose-200 bg-rose-50 px-4 py-3 text-sm font-bold text-rose-700"
+            >
+              {error}
+            </p>
+          )}
 
           <button
             type="submit"
             disabled={isSubmitting}
-            className="w-full rounded-xl bg-sky-600 px-4 py-3 font-black text-white transition hover:bg-sky-700 disabled:cursor-wait disabled:opacity-60"
+            className="btn btn-teal w-full rounded-xl px-4 py-3 font-black disabled:cursor-wait disabled:opacity-60"
           >
             {isSubmitting
               ? english
@@ -118,10 +104,10 @@ export function ForgotPassword() {
           </button>
         </form>
 
-        <p className="mt-6 text-center text-sm text-slate-500">
+        <p className="mt-6 text-center text-sm text-muted">
           <Link
             to="/login"
-            className="font-black text-sky-600 hover:text-sky-700"
+            className="font-black text-teal hover:text-navy-3"
           >
             {english ? 'Back to sign in' : 'العودة لتسجيل الدخول'}
           </Link>

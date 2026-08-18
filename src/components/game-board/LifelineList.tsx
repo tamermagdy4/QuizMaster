@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion'
+import { AnimatePresence, motion } from 'framer-motion'
 import type { Lifeline } from '../../types/board'
 import { cn } from '../../utils/cn'
 
@@ -10,9 +10,14 @@ interface LifelineListProps {
   onSelect?: (lifelineId: string) => void
 }
 
+/**
+ * Game-show control deck — each lifeline is a physical tool card with a
+ * coloured icon tile and a status chip (متاح / مُستخدم / نشط). `accent`
+ * colours the idle state: royal (team 1, blue) vs gold (team 2, gold).
+ */
 export function LifelineList({ lifelines, accent, getDisabled, activeLifelineId, onSelect }: LifelineListProps) {
   return (
-    <ul className="space-y-2">
+    <ul className="space-y-1 sm:space-y-1.5">
       {lifelines.map((lifeline, index) => {
         const isUsed = lifeline.used
         const isActive = activeLifelineId === lifeline.id
@@ -21,9 +26,9 @@ export function LifelineList({ lifelines, accent, getDisabled, activeLifelineId,
         return (
           <motion.li
             key={lifeline.id}
-            initial={{ opacity: 0, x: 8 }}
+            initial={{ opacity: 0, x: 10 }}
             animate={{ opacity: 1, x: 0 }}
-            transition={{ delay: index * 0.05 }}
+            transition={{ delay: index * 0.04, duration: 0.3, ease: [0.25, 1, 0.5, 1] }}
           >
             <button
               type="button"
@@ -32,44 +37,97 @@ export function LifelineList({ lifelines, accent, getDisabled, activeLifelineId,
                 if (isDisabled) return
                 onSelect?.(lifeline.id)
               }}
-              className={cn(
-                'group flex w-full items-center gap-3 rounded-xl border px-3 py-2.5 text-right transition-all duration-200 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D4A843]/60',
+              aria-label={
                 isUsed
-                  ? 'cursor-not-allowed border-gray-700/40 bg-[#0F172A] opacity-50'
+                  ? `${lifeline.label} — used`
                   : isActive
-                    ? 'border-[#D4A843]/60 bg-[#D4A843]/10 shadow-[0_0_20px_rgba(212,168,67,0.25)]'
+                    ? `${lifeline.label} — active`
                     : isDisabled
-                      ? 'cursor-not-allowed border-gray-700/30 bg-[#0F172A]/60 opacity-60'
+                      ? `${lifeline.label} — locked`
+                      : `${lifeline.label} — available`
+              }
+              className={cn(
+                'group flex w-full items-center gap-2 rounded-xl border px-2 py-1.5 text-start transition-all duration-200 ease-out sm:gap-2.5 sm:px-2.5 sm:py-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold-bright/60',
+                'shadow-[inset_0_1px_0_rgba(255,255,255,0.06),0_4px_14px_rgba(0,0,0,0.35)]',
+                isUsed
+                  ? 'cursor-not-allowed border-white/[0.07] bg-[#0a1622] opacity-45'
+                  : isActive
+                    ? 'border-gold/70 bg-gold/10 shadow-[inset_0_1px_0_rgba(255,255,255,0.06),0_0_20px_rgba(201,162,39,0.3)]'
+                    : isDisabled
+                      ? 'cursor-not-allowed border-white/[0.07] bg-[#0a1622] opacity-45'
                       : accent === 'royal'
-                        ? 'cursor-pointer border-[#3B82F6]/30 bg-[#3B82F6]/5 shadow-[0_4px_14px_rgba(59,130,246,0.1)] hover:border-[#3B82F6]/50 hover:bg-[#3B82F6]/10 hover:shadow-[0_0_20px_rgba(59,130,246,0.2)]'
-                        : 'cursor-pointer border-[#EF4444]/30 bg-[#EF4444]/5 shadow-[0_4px_14px_rgba(239,68,68,0.1)] hover:border-[#EF4444]/50 hover:bg-[#EF4444]/10 hover:shadow-[0_0_20px_rgba(239,68,68,0.2)]',
+                        ? 'cursor-pointer border-[#3b82f6]/40 bg-[#3b82f6]/[0.07] hover:-translate-y-0.5 hover:border-[#60a5fa]/70 hover:bg-[#3b82f6]/15 hover:shadow-[inset_0_1px_0_rgba(255,255,255,0.06),0_0_20px_rgba(59,130,246,0.28)] active:translate-y-0 active:scale-[0.98]'
+                        : 'cursor-pointer border-gold/40 bg-gold/[0.06] hover:-translate-y-0.5 hover:border-gold/70 hover:bg-gold/15 hover:shadow-[inset_0_1px_0_rgba(255,255,255,0.06),0_0_20px_rgba(201,162,39,0.28)] active:translate-y-0 active:scale-[0.98]',
               )}
             >
               <span
                 className={cn(
-                  'flex h-10 w-10 shrink-0 items-center justify-center rounded-lg text-base shadow-inner transition-transform duration-200 group-hover:scale-105',
-                  isUsed ? 'bg-gray-800' : isActive ? 'bg-[#D4A843]/20' : 'bg-[#1E293B]',
+                  'flex h-8 w-8 shrink-0 items-center justify-center rounded-lg text-sm shadow-inner transition-transform duration-200 group-hover:scale-105 sm:h-9 sm:w-9 sm:text-base',
+                  isUsed
+                    ? 'bg-white/[0.06] grayscale'
+                    : isActive
+                      ? 'bg-gold/25'
+                      : accent === 'royal'
+                        ? 'bg-[#3b82f6]/15'
+                        : 'bg-gold/15',
                 )}
                 aria-hidden
               >
                 {lifeline.icon}
               </span>
+
               <div className="min-w-0 flex-1">
                 <p className={cn(
-                  'text-sm font-semibold',
-                  isUsed ? 'text-gray-500' : isActive ? 'text-[#D4A843]' : 'text-white',
+                  'text-[12px] font-bold leading-tight sm:text-[13px]',
+                  isUsed ? 'text-gray-500' : isActive ? 'text-gold-bright' : 'text-cream',
                 )}>
                   {lifeline.label}
                 </p>
-                <p className="truncate text-xs text-gray-400">{lifeline.description}</p>
+                <p className="truncate text-[10px] text-cream/40 sm:text-[11px]">{lifeline.description}</p>
               </div>
-              {isUsed && (
-                <span className="shrink-0 text-xs text-gray-500">مُستخدم</span>
-              )}
-              {isActive && !isUsed && (
-                <span className="shrink-0 text-xs font-bold text-[#D4A843]">✓ نشط</span>
+
+              {isUsed ? (
+                <span className="shrink-0 rounded-full bg-white/[0.08] px-2 py-0.5 text-[9px] font-black text-gray-400">
+                  مُستخدم
+                </span>
+              ) : isActive ? (
+                <span className="shrink-0 rounded-full bg-gold/20 px-2 py-0.5 text-[9px] font-black text-gold-bright">
+                  ✓ نشط
+                </span>
+              ) : (
+                <span
+                  className={cn(
+                    'shrink-0 rounded-full px-2 py-0.5 text-[9px] font-black',
+                    accent === 'royal' ? 'bg-[#3b82f6]/12 text-[#93c5fd]' : 'bg-gold/12 text-gold-bright',
+                  )}
+                >
+                  متاح
+                </span>
               )}
             </button>
+
+            {/*
+             * Function hint — appears below the cell while the lifeline is
+             * selected/active, with a soft fade + slide entrance.
+             */}
+            <AnimatePresence initial={false}>
+              {isActive && (
+                <motion.p
+                  initial={{ opacity: 0, y: -5, scale: 0.98 }}
+                  animate={{ opacity: 1, y: 0, scale: 1 }}
+                  exit={{ opacity: 0, y: -4, scale: 0.98 }}
+                  transition={{ duration: 0.22, ease: 'easeOut' }}
+                  className={cn(
+                    'mt-1.5 rounded-lg border px-2.5 py-1.5 text-[10px] font-bold leading-relaxed',
+                    accent === 'royal'
+                      ? 'border-[#3b82f6]/35 bg-[#3b82f6]/10 text-[#93c5fd]'
+                      : 'border-gold/35 bg-gold/10 text-gold-bright',
+                  )}
+                >
+                  {lifeline.icon} {lifeline.description}
+                </motion.p>
+              )}
+            </AnimatePresence>
           </motion.li>
         )
       })}

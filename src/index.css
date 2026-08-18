@@ -1,27 +1,77 @@
 @import 'tailwindcss';
 
+/* =========================================================
+   فهلوي — DESIGN TOKENS
+   Premium Arabic quiz product. Light and calm: off-white
+   surfaces, deep petrol primary, soft green success,
+   subtle gold reserved for scores / winner states.
+   Contrast-checked on #F7F9FA.
+   ========================================================= */
+
 @theme {
+  /* --- Fonts --- */
   --font-arabic: 'IBM Plex Sans Arabic', system-ui, sans-serif;
+  --font-display: 'Changa', 'IBM Plex Sans Arabic', system-ui, sans-serif;
 
-  --color-midnight-950: #263238;
-  --color-midnight-900: #263238;
-  --color-midnight-800: #37474F;
-  --color-royal-500: #176B87;
-  --color-royal-400: #2A9DB8;
-  --color-gold-400: #D98B2B;
-  --color-gold-500: #D98B2B;
-  --color-teal-400: #2E9F78;
-  --color-violet-500: #D85C5C;
-  --color-violet-400: #D85C5C;
-  --color-glass-white: rgba(255, 255, 255, 0.92);
-  --color-glass-white-strong: rgba(255, 255, 255, 0.97);
-  --color-glass-border: rgba(215, 227, 232, 0.6);
-  --color-glass-border-strong: rgba(215, 227, 232, 0.8);
+  /* --- Light palette (the product surface) --- */
+  --color-cream: #f7f9fa;        /* page background (off-white) */
+  --color-ink: #12232b;          /* primary text (14:1 on cream) */
+  --color-ink-2: #33464d;        /* secondary text */
+  --color-muted: #66777d;        /* muted text (4.6:1 on cream) */
 
-  --shadow-glass: 0 8px 32px rgba(23, 107, 135, 0.08);
-  --shadow-glow-gold: 0 0 40px rgba(217, 139, 43, 0.15);
-  --shadow-glow-royal: 0 0 40px rgba(23, 107, 135, 0.15);
-  --shadow-glow-violet: 0 0 40px rgba(216, 92, 92, 0.15);
+  /* --- Petrol family (primary brand) --- */
+  --color-navy: #123b46;         /* deep petrol — headings / primary */
+  --color-navy-2: #174c57;       /* petrol panel */
+  --color-navy-3: #20616c;       /* petrol raised */
+
+  /* --- Premium petroleum stage (the game-board color system) ---
+     Dark, cinematic, teal-tinted. Every game surface shares these. */
+  --color-petro-950: #060f17;    /* page base — very dark petroleum */
+  --color-petro-900: #0a1823;    /* deep surface */
+  --color-petro-800: #102433;    /* cards / raised panels */
+  --color-petro-700: #17324a;    /* tiles / hover */
+  --color-petro-line: rgba(82, 148, 163, 0.22);   /* muted teal border */
+  --color-petro-line-strong: rgba(108, 178, 192, 0.4); /* teal border strong */
+
+  /* --- Semantic accents --- */
+  --color-gold: #c9a227;         /* scores / winner / CTA */
+  --color-gold-bright: #e3c76a;  /* light gold — reserved for the dark stage */
+  --color-gold-ink: #a8861f;     /* gold text on light bg (4.9:1) */
+  --color-teal: #2f6f7e;         /* interactive (5.6:1) */
+  --color-teal-bright: #8cc3ca;  /* light teal — dark stage only */
+  --color-blue: #2e6f9e;         /* team 1 identity (muted blue) */
+  --color-blue-bright: #93bcd8;  /* light blue — dark stage only */
+  --color-green: #3d8b68;        /* correct / success (4.8:1) */
+  --color-green-bright: #7fb88f; /* light green — dark stage only */
+  --color-red: #b0554f;          /* wrong / danger (4.9:1) */
+  --color-red-bright: #d19a94;   /* light red — dark stage only */
+
+  /* --- Surfaces --- */
+  --color-surface: #ffffff;
+  --color-surface-raised: #eef3f5;
+  --color-border-subtle: rgba(18, 35, 43, 0.08);
+  --color-border-soft: rgba(18, 35, 43, 0.12);
+  --color-border-strong: rgba(18, 59, 70, 0.25);
+
+  /* --- Radius --- */
+  --radius-panel: 1.25rem;
+  --radius-cell: 0.75rem;
+  --radius-pill: 999px;
+
+  /* --- Shadows (soft, restrained) --- */
+  --shadow-panel: 0 18px 48px rgba(18, 35, 43, 0.08);
+  --shadow-raised: 0 12px 32px rgba(18, 35, 43, 0.1);
+  --shadow-glow-gold: 0 0 28px rgba(201, 162, 39, 0.22);
+  --shadow-glow-teal: 0 0 24px rgba(47, 111, 126, 0.18);
+  --shadow-glow-green: 0 0 24px rgba(61, 139, 104, 0.22);
+  --shadow-glow-red: 0 0 24px rgba(176, 85, 79, 0.2);
+
+  /* --- Motion tokens --- */
+  --ease-out-quart: cubic-bezier(0.25, 1, 0.5, 1);
+  --ease-snappy: cubic-bezier(0.3, 0.9, 0.4, 1);
+  --duration-fast: 120ms;
+  --duration-base: 220ms;
+  --duration-slow: 420ms;
 }
 
 @layer base {
@@ -39,8 +89,8 @@
   body {
     margin: 0;
     min-height: 100dvh;
-    color: #263238;
-    background-color: #F4F8FA;
+    color: var(--color-ink);
+    background-color: var(--color-cream);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
@@ -50,73 +100,1036 @@
   }
 
   ::selection {
-    background: rgba(42, 157, 184, 0.25);
+    background: rgba(201, 162, 39, 0.28);
+  }
+
+  /* Visible focus — petrol ring, never removed */
+  :focus-visible {
+    outline: 2px solid var(--color-navy);
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+
+  button,
+  a,
+  [role='button'] {
+    cursor: pointer;
   }
 }
 
 @layer components {
-  .glass-panel {
-    background: linear-gradient(
-      135deg,
-      rgba(255, 255, 255, 0.95) 0%,
-      rgba(244, 248, 250, 0.9) 100%
-    );
-    backdrop-filter: blur(18px);
-    -webkit-backdrop-filter: blur(18px);
-    border: 1px solid rgba(215, 227, 232, 0.6);
-    box-shadow: 0 8px 32px rgba(23, 107, 135, 0.06);
-  }
-
-  .glass-panel-strong {
-    background: linear-gradient(
-      145deg,
-      rgba(255, 255, 255, 0.98) 0%,
-      rgba(244, 248, 250, 0.95) 100%
-    );
-    backdrop-filter: blur(22px);
-    -webkit-backdrop-filter: blur(22px);
-    border: 1px solid rgba(215, 227, 232, 0.7);
-    box-shadow: 0 12px 40px rgba(23, 107, 135, 0.08);
-  }
-
-  .glass-button {
-    background: linear-gradient(
-      135deg,
-      #2A9DB8 0%,
-      #176B87 100%
-    );
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    box-shadow: 0 8px 24px rgba(23, 107, 135, 0.25);
-    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
-  }
-
-  .glass-button:hover {
-    transform: translateY(-1px);
-    border-color: rgba(255, 255, 255, 0.5);
-    box-shadow: 0 10px 30px rgba(23, 107, 135, 0.35);
-  }
-
-  .glass-button:active {
-    transform: translateY(0);
-  }
-
+  /* =========================================================
+     BACKGROUND SYSTEM — calm light stage
+     Soft petrol / green radial tints on off-white.
+     ========================================================= */
   .ambient-bg {
     background:
-      radial-gradient(ellipse 120% 70% at 50% 0%, rgba(42, 157, 184, 0.08), transparent),
-      radial-gradient(ellipse 70% 50% at 12% 45%, rgba(46, 159, 120, 0.06), transparent),
-      radial-gradient(ellipse 70% 50% at 88% 55%, rgba(23, 107, 135, 0.05), transparent),
-      radial-gradient(ellipse 60% 40% at 50% 100%, rgba(215, 227, 232, 0.3), transparent),
-      linear-gradient(180deg, #F4F8FA 0%, #EDF2F7 50%, #F4F8FA 100%);
+      radial-gradient(60% 45% at 82% 0%, rgba(47, 111, 126, 0.1), transparent 62%),
+      radial-gradient(55% 42% at 10% 10%, rgba(61, 139, 104, 0.08), transparent 60%),
+      linear-gradient(180deg, #fbfcfd 0%, #f2f6f8 55%, #edf2f4 100%);
   }
 
-  .page-surface {
+  .stage-surface {
     background:
-      linear-gradient(180deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.85)),
-      radial-gradient(circle at top right, rgba(42, 157, 184, 0.06), transparent 40%),
-      radial-gradient(circle at bottom left, rgba(46, 159, 120, 0.04), transparent 35%);
-    border: 1px solid rgba(215, 227, 232, 0.5);
-    box-shadow: 0 18px 48px rgba(23, 107, 135, 0.06);
+      radial-gradient(50% 38% at 85% 0%, rgba(47, 111, 126, 0.1), transparent 60%),
+      radial-gradient(46% 36% at 8% 10%, rgba(61, 139, 104, 0.07), transparent 58%),
+      linear-gradient(180deg, #fbfcfd 0%, #f2f6f8 60%, #edf2f4 100%);
   }
+
+  /* =========================================================
+     SURFACES — light, quiet cards
+     ========================================================= */
+  .glass-panel,
+  .surface-panel {
+    position: relative;
+    background: linear-gradient(150deg, rgba(255, 255, 255, 0.94) 0%, rgba(255, 255, 255, 0.88) 100%);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid var(--color-border-soft);
+    border-radius: var(--radius-panel);
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, 0.9),
+      var(--shadow-panel);
+  }
+
+  .glass-panel-strong,
+  .surface-panel-raised {
+    position: relative;
+    background: linear-gradient(155deg, #ffffff 0%, #f7fafb 100%);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    border: 1px solid var(--color-border-strong);
+    border-radius: var(--radius-panel);
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, 0.95),
+      inset 0 0 0 1px rgba(47, 111, 126, 0.05),
+      var(--shadow-raised);
+  }
+
+  /* Thin gold hairline on top of a panel — premium edge, kept subtle */
+  .panel-gold-edge {
+    position: relative;
+  }
+  .panel-gold-edge::before {
+    content: '';
+    position: absolute;
+    inset-inline: 14%;
+    top: 0;
+    height: 2px;
+    border-radius: var(--radius-pill);
+    background: linear-gradient(90deg, transparent, rgba(201, 162, 39, 0.5), transparent);
+    pointer-events: none;
+  }
+
+  /* =========================================================
+     BUTTONS — one system, four tones
+     ========================================================= */
+  /* =========================================================
+     BUTTONS — one premium system, four tones
+     Refined product controls: thin borders, subtle depth,
+     controlled radius, elegant hover, real pressed state.
+     No giant pills, no neon, no generic AI gradients.
+     ========================================================= */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    border-radius: 0.625rem;
+    font-weight: 800;
+    line-height: 1;
+    padding: 0.8rem 1.35rem;
+    font-size: 0.95rem;
+    position: relative;
+    overflow: hidden;
+    transition:
+      transform var(--duration-fast) var(--ease-snappy),
+      box-shadow var(--duration-base) var(--ease-out-quart),
+      background-color var(--duration-base) var(--ease-out-quart),
+      border-color var(--duration-base) var(--ease-out-quart),
+      color var(--duration-base) var(--ease-out-quart),
+      filter var(--duration-base) var(--ease-out-quart);
+  }
+  .btn:active {
+    transform: translateY(1px) scale(0.97);
+    box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.2);
+  }
+  .btn:disabled {
+    cursor: not-allowed;
+    opacity: 0.45;
+    transform: none;
+  }
+
+  /* Primary CTA — gold, the strongest action. Tactile, premium. */
+  .btn-gold {
+    color: #1d1603;
+    background: linear-gradient(180deg, #eccf78 0%, var(--color-gold) 100%);
+    border: 1px solid rgba(168, 134, 31, 0.5);
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, 0.55),
+      inset 0 -1px 0 rgba(0, 0, 0, 0.12),
+      0 10px 26px rgba(201, 162, 39, 0.26);
+  }
+  .btn-gold:hover:not(:disabled) {
+    filter: brightness(1.05);
+    transform: translateY(-2px);
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, 0.55),
+      inset 0 -1px 0 rgba(0, 0, 0, 0.12),
+      0 14px 32px rgba(201, 162, 39, 0.32);
+  }
+
+  /* Secondary CTA — outline / petrol. Distinct from the primary. */
+  .btn-teal {
+    color: #ffffff;
+    background: linear-gradient(180deg, #1d5663 0%, #123b46 100%);
+    border: 1px solid rgba(140, 195, 202, 0.35);
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, 0.14),
+      inset 0 -1px 0 rgba(0, 0, 0, 0.2),
+      0 10px 24px rgba(13, 27, 42, 0.3);
+  }
+  .btn-teal:hover:not(:disabled) {
+    filter: brightness(1.1);
+    transform: translateY(-2px);
+    border-color: rgba(140, 195, 202, 0.55);
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, 0.14),
+      inset 0 -1px 0 rgba(0, 0, 0, 0.2),
+      0 14px 30px rgba(13, 27, 42, 0.36);
+  }
+
+  /* Ghost — quiet, border-driven control (header actions, secondary links) */
+  .btn-ghost {
+    color: var(--color-navy);
+    background: rgba(255, 255, 255, 0.6);
+    border: 1px solid var(--color-border-strong);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+  }
+  .btn-ghost:hover:not(:disabled) {
+    color: var(--color-navy-3);
+    border-color: rgba(18, 59, 70, 0.45);
+    background: #f4f8f9;
+    transform: translateY(-1px);
+  }
+
+  .btn-danger {
+    color: var(--color-red);
+    background: rgba(176, 85, 79, 0.08);
+    border: 1px solid rgba(176, 85, 79, 0.35);
+  }
+  .btn-danger:hover:not(:disabled) {
+    background: rgba(176, 85, 79, 0.14);
+    border-color: rgba(176, 85, 79, 0.55);
+    transform: translateY(-1px);
+  }
+
+  /* =========================================================
+     HEADER CONTROLS — EN / حسابي / خروج
+     Compact premium controls: thin border, inset top highlight,
+     hover light-sweep (transform-only), real press state.
+     ========================================================= */
+  .hdr-ctl {
+    position: relative;
+    overflow: hidden;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    height: 2.15rem;
+    padding-inline: 0.75rem;
+    border-radius: 0.55rem;
+    font-size: 0.72rem;
+    font-weight: 800;
+    letter-spacing: 0.01em;
+    border: 1px solid;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.07), inset 0 -1px 0 rgba(0, 0, 0, 0.18);
+    transition:
+      transform 120ms cubic-bezier(0.3, 0.9, 0.4, 1),
+      box-shadow 180ms cubic-bezier(0.25, 1, 0.5, 1),
+      border-color 180ms ease,
+      background-color 180ms ease,
+      color 180ms ease;
+  }
+  .hdr-ctl::after {
+    /* light sweep on hover — travels across the control */
+    content: '';
+    position: absolute;
+    inset-block: 0;
+    width: 40%;
+    background: linear-gradient(100deg, transparent, rgba(255, 255, 255, 0.18), transparent);
+    transform: translateX(-220%);
+    pointer-events: none;
+    transition: transform 420ms cubic-bezier(0.25, 1, 0.5, 1);
+  }
+  .hdr-ctl:hover::after {
+    transform: translateX(260%);
+  }
+  .hdr-ctl:active {
+    transform: translateY(1px) scale(0.965);
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.22);
+  }
+  .hdr-ctl:focus-visible {
+    outline: 2px solid rgba(201, 162, 39, 0.8);
+    outline-offset: 2px;
+  }
+
+  /* Light variant (utility pages) */
+  .hdr-ctl-light {
+    color: var(--color-navy);
+    background: #ffffff;
+    border-color: var(--color-border-strong);
+  }
+  .hdr-ctl-light:hover {
+    color: var(--color-navy-3);
+    border-color: rgba(18, 59, 70, 0.45);
+    background: #f4f8f9;
+    transform: translateY(-1px);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.7), 0 5px 12px rgba(18, 35, 43, 0.12);
+  }
+
+  /* Dark variant (home hero / game routes) */
+  .hdr-ctl-dark {
+    color: rgba(244, 241, 232, 0.85);
+    background: rgba(255, 255, 255, 0.07);
+    border-color: rgba(244, 241, 232, 0.18);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+  }
+  .hdr-ctl-dark:hover {
+    color: var(--color-cream);
+    border-color: rgba(140, 195, 202, 0.5);
+    background: rgba(255, 255, 255, 0.14);
+    transform: translateY(-1px);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 5px 12px rgba(0, 0, 0, 0.25);
+  }
+
+  /* Danger variant (logout) — quiet red, same shape */
+  .hdr-ctl-danger-light {
+    color: var(--color-red);
+    background: rgba(176, 85, 79, 0.06);
+    border-color: rgba(176, 85, 79, 0.3);
+  }
+  .hdr-ctl-danger-light:hover {
+    color: var(--color-red);
+    background: rgba(176, 85, 79, 0.14);
+    border-color: rgba(176, 85, 79, 0.5);
+    transform: translateY(-1px);
+  }
+  .hdr-ctl-danger-dark {
+    color: var(--color-red-bright);
+    background: rgba(176, 85, 79, 0.1);
+    border-color: rgba(176, 85, 79, 0.32);
+  }
+  .hdr-ctl-danger-dark:hover {
+    color: var(--color-red-bright);
+    background: rgba(176, 85, 79, 0.18);
+    border-color: rgba(176, 85, 79, 0.55);
+    transform: translateY(-1px);
+  }
+
+  /* Dark-stage variants — used on the home hero / game routes */
+  .btn-dark {
+    color: var(--color-cream);
+    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(244, 241, 232, 0.18);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+  .btn-dark:hover:not(:disabled) {
+    background: rgba(255, 255, 255, 0.14);
+    border-color: rgba(244, 241, 232, 0.32);
+    transform: translateY(-1px);
+  }
+
+  /* Legacy glass button — used inside the (unchanged) question modal */
+  .glass-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    color: #f8fafc;
+    transition:
+      background-color 150ms ease,
+      border-color 150ms ease,
+      transform 120ms ease;
+  }
+  .glass-button:hover:not(:disabled) {
+    background: rgba(255, 255, 255, 0.18);
+    border-color: rgba(255, 255, 255, 0.3);
+  }
+
+  /* =========================================================
+     CHIPS — selectable pills (lobby, lifelines, settings)
+     ========================================================= */
+  .chip {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    min-height: 40px;
+    padding: 0.5rem 0.9rem;
+    border-radius: var(--radius-pill);
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--color-muted);
+    background: #ffffff;
+    border: 1px solid var(--color-border-soft);
+    transition:
+      background-color var(--duration-fast) var(--ease-snappy),
+      border-color var(--duration-fast) var(--ease-snappy),
+      color var(--duration-fast) var(--ease-snappy),
+      box-shadow var(--duration-base) var(--ease-out-quart),
+      transform var(--duration-fast) var(--ease-snappy);
+  }
+  .chip:hover:not(:disabled):not(.chip-active) {
+    color: var(--color-navy);
+    border-color: var(--color-border-strong);
+    background: #f4f8f9;
+  }
+  .chip:active:not(:disabled) {
+    transform: scale(0.96);
+  }
+  .chip-active {
+    color: #ffffff;
+    border-color: rgba(18, 59, 70, 0.4);
+    background: linear-gradient(180deg, #20616c 0%, #123b46 100%);
+    box-shadow: 0 8px 20px rgba(18, 59, 70, 0.22);
+  }
+  .chip-gold {
+    color: var(--color-gold-ink);
+    border-color: rgba(201, 162, 39, 0.45);
+    background: rgba(201, 162, 39, 0.1);
+    box-shadow: 0 8px 20px rgba(201, 162, 39, 0.16);
+  }
+
+  /* =========================================================
+     TYPOGRAPHY HELPERS
+     ========================================================= */
+  .eyebrow {
+    font-size: 0.7rem;
+    font-weight: 800;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    color: var(--color-gold-ink);
+  }
+
+  /* Huge cinematic display headline — the hero of the game-show typography */
+  .title-cinematic {
+    font-family: var(--font-display);
+    font-weight: 800;
+    line-height: 1.08;
+    letter-spacing: -0.02em;
+    font-size: clamp(2.6rem, 7.5vw, 6.5rem);
+  }
+
+  /* Even larger display type — the reference video's typography scale.
+     Occupies a major portion of the viewport on wide screens. */
+  .title-hero {
+    font-family: var(--font-display);
+    font-weight: 800;
+    line-height: 1.02;
+    letter-spacing: -0.025em;
+    font-size: clamp(3.4rem, 11vw, 9.5rem);
+  }
+
+  /* Mask wrapper for kinetic word reveals — the text rises from inside */
+  .mask-line {
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: top;
+    padding-block: 0.06em;
+  }
+
+  .text-question {
+    font-size: clamp(1.35rem, 4.5vw, 2.1rem);
+    font-weight: 800;
+    line-height: 1.5;
+    color: var(--color-ink);
+  }
+
+  .score-number {
+    font-family: var(--font-display);
+    font-variant-numeric: tabular-nums;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+  }
+
+  /* Game-show board tile — premium hover depth */
+  .tile-playable {
+    transition: transform 120ms cubic-bezier(0.3, 0.9, 0.4, 1),
+                box-shadow 200ms cubic-bezier(0.25, 1, 0.5, 1),
+                filter 200ms cubic-bezier(0.25, 1, 0.5, 1);
+  }
+  .tile-playable:active {
+    transform: translateY(1px) scale(0.96);
+    box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.3);
+  }
+
+  /* Category card hover — subtle gold lift */
+  .cat-card {
+    transition: border-color 200ms ease, box-shadow 250ms ease;
+  }
+  .cat-card:hover {
+    border-color: rgba(201, 162, 39, 0.6);
+    box-shadow: 0 0 24px rgba(201, 162, 39, 0.15);
+  }
+
+  /* =========================================================
+     PREMIUM PETROLEUM GAME-SHOW STAGE
+     The board, question, online and results live on ONE dark
+     petroleum stage — teal-tinted surfaces, muted teal borders,
+     warm white text, metallic gold accent. Coherent by design:
+     every surface uses the same token ladder.
+     ========================================================= */
+  .stage-dark {
+    background:
+      radial-gradient(90% 62% at 50% 0%, rgba(47, 125, 126, 0.1), transparent 62%),
+      radial-gradient(68% 46% at 88% 100%, rgba(201, 162, 39, 0.04), transparent 60%),
+      linear-gradient(180deg, #0a1823 0%, #08121d 55%, #060f17 100%);
+  }
+
+  /* Petroleum panel — the dark equivalent of glass-panel-strong */
+  .glass-dark {
+    position: relative;
+    background: linear-gradient(160deg, rgba(18, 39, 53, 0.94) 0%, rgba(12, 27, 38, 0.96) 100%);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border: 1px solid var(--color-petro-line);
+    border-radius: var(--radius-panel);
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, 0.04),
+      0 18px 48px rgba(0, 0, 0, 0.32);
+  }
+
+  /* Petroleum raised tile — inside dark panels */
+  .dark-card {
+    border: 1px solid var(--color-petro-line);
+    background: linear-gradient(160deg, #17324a 0%, #102433 100%);
+    border-radius: var(--radius-cell);
+  }
+
+  /* Dark chips — lobby options / filters on the petroleum stage */
+  .chip-dark {
+    color: rgba(242, 238, 228, 0.72);
+    background: rgba(16, 36, 51, 0.85);
+    border: 1px solid var(--color-petro-line);
+  }
+  .chip-dark:hover:not(:disabled):not(.chip-active) {
+    color: var(--color-cream);
+    border-color: rgba(108, 178, 192, 0.5);
+    background: rgba(23, 50, 74, 0.95);
+  }
+  .chip-dark-active {
+    color: #fff;
+    border-color: rgba(108, 178, 192, 0.55);
+    background: linear-gradient(180deg, #20616c 0%, #123b46 100%);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+  }
+  .chip-dark-gold {
+    color: var(--color-gold-bright);
+    border-color: rgba(201, 162, 39, 0.5);
+    background: rgba(201, 162, 39, 0.12);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  }
+
+  /* Eyebrow labels need the bright gold on the navy stage (contrast) */
+  .stage-dark .eyebrow,
+  .glass-dark .eyebrow {
+    color: var(--color-gold-bright);
+  }
+
+  /* =========================================================
+     CINEMATIC FRAME — the reference video's experience frame
+     A large centered rounded rectangle with a dark inner surface.
+     Used by the homepage opening + finale scenes.
+     ========================================================= */
+  .frame-cinematic {
+    position: relative;
+    border-radius: 1.75rem;
+    border: 1px solid rgba(244, 241, 232, 0.12);
+    background:
+      radial-gradient(110% 90% at 50% 0%, rgba(47, 125, 126, 0.14), transparent 55%),
+      linear-gradient(180deg, rgba(13, 27, 42, 0.92) 0%, rgba(8, 17, 28, 0.96) 100%);
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, 0.06),
+      0 40px 90px rgba(0, 0, 0, 0.55),
+      0 0 0 1px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+  }
+  .frame-cinematic::before {
+    content: '';
+    position: absolute;
+    inset-inline: 12%;
+    top: 0;
+    height: 1px;
+    border-radius: 999px;
+    background: linear-gradient(90deg, transparent, rgba(201, 162, 39, 0.55), transparent);
+    pointer-events: none;
+  }
+
+  /* Subtle film grain — animated very slowly, GPU-friendly */
+  .grain-overlay {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.05;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 240 240' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    background-size: 240px 240px;
+    mix-blend-mode: overlay;
+  }
+
+  /* Dark vignette — closes the viewport edges, cinematic depth */
+  .vignette-dark {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: radial-gradient(120% 100% at 50% 50%, transparent 55%, rgba(5, 10, 16, 0.5) 100%);
+  }
+
+  /* Dark input — used by GlassInput dark variant on the navy stage */
+  .input-dark {
+    background: rgba(11, 21, 38, 0.7);
+    border: 1px solid rgba(244, 241, 232, 0.14);
+    color: var(--color-cream);
+  }
+  .input-dark::placeholder {
+    color: rgba(244, 241, 232, 0.4);
+  }
+  .input-dark:focus {
+    border-color: rgba(140, 195, 202, 0.7);
+    box-shadow: 0 0 0 3px rgba(47, 125, 126, 0.18);
+  }
+}
+
+/* =========================================================
+   SAFE AREA FOR PHONES (portrait)
+   ========================================================= */
+
+@supports (padding: env(safe-area-inset-top)) {
+  .game-board-shell {
+    padding-left: max(0.5rem, env(safe-area-inset-left));
+    padding-right: max(0.5rem, env(safe-area-inset-right));
+    padding-top: max(0.375rem, env(safe-area-inset-top));
+    padding-bottom: max(0.375rem, env(safe-area-inset-bottom));
+  }
+}
+
+/* =========================================================
+   MOBILE PORTRAIT — responsive typography & layout tweaks
+   ========================================================= */
+
+@media (max-width: 640px) {
+  /* Prevent body horizontal scroll on mobile */
+  html, body {
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* Score numbers — tabular alignment */
+  .score-number {
+    font-variant-numeric: tabular-nums;
+    letter-spacing: -0.02em;
+  }
+
+  /* Question modal text sizing for mobile portrait */
+  .game-board-shell .text-2xl {
+    font-size: 1.125rem;
+    line-height: 1.4;
+  }
+
+  .game-board-shell .text-lg {
+    font-size: 0.9375rem;
+    line-height: 1.5;
+  }
+
+  .game-board-shell .text-base {
+    font-size: 0.8125rem;
+    line-height: 1.5;
+  }
+
+  /* Glass button — ensure adequate touch target */
+  .glass-button {
+    min-height: 40px;
+    min-width: 40px;
+  }
+}
+
+/* =========================================================
+   VERY SMALL PHONES (<=360px) — extra compact
+   ========================================================= */
+
+@media (max-width: 360px) {
+  .game-board-shell {
+    gap: 0.375rem;
+    padding: 0.25rem;
+  }
+
+  .game-board-shell .font-display {
+    font-size: 0.7rem;
+  }
+}
+
+/* =========================================================
+   MOBILE LANDSCAPE OPTIMIZATION
+   ========================================================= */
+
+@media (max-width: 900px) and (orientation: landscape) {
+  main {
+    padding: 0.25rem 0.5rem;
+    max-height: 100dvh;
+    overflow-y: auto;
+  }
+
+  main section {
+    max-height: 98dvh;
+    overflow-y: auto;
+  }
+
+  main section img,
+  main section video {
+    max-height: 30vh !important;
+    object-fit: contain;
+  }
+}
+
+/* =========================================================
+   MOTION SYSTEM — reduced motion + disabled-animations guard
+   ========================================================= */
+
+.motion-reduced *,
+.motion-reduced *::before,
+.motion-reduced *::after {
+  animation-duration: 0.01ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.01ms !important;
+  scroll-behavior: auto !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* =========================================================
+   HOMEPAGE SCENES — environmental micro-motion
+   All GPU-friendly (transform only). The reduced-motion rules
+   above collapse them for users who opt out.
+   ========================================================= */
+
+@keyframes fh-sway {
+  0%,
+  100% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(4deg);
+  }
+}
+.animate-fh-sway {
+  animation: fh-sway 2.8s ease-in-out infinite;
+  transform-origin: 50% 10%;
+  will-change: transform;
+}
+
+@keyframes fh-floaty {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+.animate-fh-floaty {
+  animation: fh-floaty 3.6s ease-in-out infinite;
+  will-change: transform;
+}
+
+@keyframes fh-floaty-slow {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+.animate-fh-floaty-slow {
+  animation: fh-floaty-slow 5s ease-in-out infinite;
+  will-change: transform;
+}
+
+@keyframes fh-spin-y {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+.animate-fh-spin-y {
+  animation: fh-spin-y 9s linear infinite;
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+
+@keyframes fh-spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.animate-fh-spin-slow {
+  animation: fh-spin-slow 16s linear infinite;
+  will-change: transform;
+}
+
+/* =========================================================
+   ARENA GRID — the game-show floor behind the board
+   A faint perspective grid that suggests the challenge arena.
+   ========================================================= */
+
+.arena-grid {
+  position: relative;
+  background-image:
+    linear-gradient(rgba(82, 148, 163, 0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(82, 148, 163, 0.07) 1px, transparent 1px);
+  background-size: 44px 44px;
+  mask-image: radial-gradient(75% 75% at 50% 35%, black 30%, transparent 100%);
+  -webkit-mask-image: radial-gradient(75% 75% at 50% 35%, black 30%, transparent 100%);
+}
+
+/* =========================================================
+   GAME-BOARD CINEMATIC SURFACES
+   Slow, transform-only drift for the category world plates —
+   the media breathes and the aura glows, GPU-friendly.
+   Collapsed by the reduced-motion rules above.
+   ========================================================= */
+
+@keyframes fh-kenburns {
+  0% {
+    transform: scale(1.04) translateY(0);
+  }
+  50% {
+    transform: scale(1.14) translateY(-2%);
+  }
+  100% {
+    transform: scale(1.04) translateY(0);
+  }
+}
+.kenburns {
+  animation: fh-kenburns 22s ease-in-out infinite alternate;
+  will-change: transform;
+}
+
+@keyframes fh-breath {
+  0%,
+  100% {
+    opacity: 0.55;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+.breath-glow {
+  animation: fh-breath 5.5s ease-in-out infinite;
+  will-change: opacity;
+}
+
+/* =========================================================
+   LIGHT THEME — Settings → Appearance → ☀️ Light
+   The dark petroleum game-stage surfaces (stage-dark / glass-dark)
+   are recolored to a light premium arena when the persisted theme
+   is light. Semantic text tokens inside those surfaces flip to
+   dark ink so cream/white text stays readable on the light stage.
+   The homepage cinematic hero and the board's dark game-show tiles
+   keep their own designed surfaces.
+   ========================================================= */
+.theme-light .stage-dark,
+.theme-light .glass-dark {
+  --color-cream: #16303f; /* warm dark ink on the light stage */
+  --color-gold-bright: #8a6d12;
+  --color-teal-bright: #0e7490;
+  --color-green-bright: #15803d;
+  --color-blue-bright: #1d5f8a;
+  --color-red-bright: #b91c1c;
+}
+
+/* Light arena shell (replaces the dark petroleum gradient) */
+.theme-light .stage-dark {
+  background:
+    radial-gradient(90% 62% at 50% 0%, rgba(47, 125, 126, 0.07), transparent 62%),
+    radial-gradient(68% 46% at 88% 100%, rgba(201, 162, 39, 0.05), transparent 60%),
+    linear-gradient(180deg, #fbfcfd 0%, #eef2f6 100%);
+  border-color: rgba(100, 116, 139, 0.3);
+  box-shadow: 0 24px 64px rgba(15, 23, 42, 0.1);
+}
+
+.theme-light .glass-dark {
+  background: linear-gradient(160deg, rgba(255, 255, 255, 0.94) 0%, rgba(240, 244, 248, 0.97) 100%);
+  border-color: rgba(100, 116, 139, 0.3);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.85),
+    0 18px 48px rgba(15, 23, 42, 0.08);
+}
+
+/* Inner dark navy panels become white/light surfaces.
+   Attribute selectors avoid escaping arbitrary-value class names. */
+.theme-light .stage-dark [class~='bg-[#101D2E]'],
+.theme-light .glass-dark [class~='bg-[#101D2E]'] {
+  background-color: #ffffff;
+}
+.theme-light .stage-dark [class~='bg-[#101D2E]/90'] {
+  background-color: rgba(255, 255, 255, 0.92);
+}
+.theme-light .stage-dark [class~='bg-[#0B1526]/70'] {
+  background-color: rgba(255, 255, 255, 0.72);
+}
+.theme-light .stage-dark [class~='bg-[#0B1526]/60'] {
+  background-color: rgba(255, 255, 255, 0.62);
+}
+.theme-light .stage-dark [class~='bg-[#0B1526]/50'] {
+  background-color: rgba(255, 255, 255, 0.56);
+}
+
+/* Petroleum tiles inside the light arena become light surfaces */
+.theme-light .stage-dark .dark-card,
+.theme-light .glass-dark .dark-card {
+  background: linear-gradient(160deg, #ffffff 0%, #f1f5f9 100%);
+  border-color: rgba(100, 116, 139, 0.28);
+}
+
+/* Dark chips become light chips (stage-dark and glass-dark arenas) */
+.theme-light .stage-dark .chip-dark,
+.theme-light .glass-dark .chip-dark {
+  color: #33464d;
+  background: rgba(255, 255, 255, 0.85);
+  border-color: rgba(100, 116, 139, 0.28);
+}
+.theme-light .stage-dark .chip-dark:hover:not(:disabled):not(.chip-active),
+.theme-light .glass-dark .chip-dark:hover:not(:disabled):not(.chip-active) {
+  color: #12232b;
+  border-color: rgba(100, 116, 139, 0.5);
+  background: #ffffff;
+}
+
+/* Dark inputs become light inputs */
+.theme-light .stage-dark .input-dark,
+.theme-light .glass-dark .input-dark {
+  background: rgba(255, 255, 255, 0.88);
+  border-color: rgba(100, 116, 139, 0.3);
+}
+.theme-light .stage-dark .input-dark::placeholder,
+.theme-light .glass-dark .input-dark::placeholder {
+  color: rgba(51, 70, 77, 0.5);
+}
+
+/* Glass buttons on the light stage */
+.theme-light .stage-dark .glass-button,
+.theme-light .glass-dark .glass-button {
+  color: #16303f;
+  background: rgba(100, 116, 139, 0.08);
+  border-color: rgba(100, 116, 139, 0.25);
+}
+.theme-light .stage-dark .glass-button:hover:not(:disabled),
+.theme-light .glass-dark .glass-button:hover:not(:disabled) {
+  background: rgba(100, 116, 139, 0.14);
+  border-color: rgba(100, 116, 139, 0.4);
+}
+
+/* White borders become muted slate on the light stage */
+.theme-light .stage-dark [class~='border-white/8'],
+.theme-light .glass-dark [class~='border-white/8'] {
+  border-color: rgba(100, 116, 139, 0.22);
+}
+.theme-light .stage-dark [class~='border-white/10'],
+.theme-light .glass-dark [class~='border-white/10'] {
+  border-color: rgba(100, 116, 139, 0.28);
+}
+.theme-light .stage-dark [class~='border-white/12'],
+.theme-light .glass-dark [class~='border-white/12'] {
+  border-color: rgba(100, 116, 139, 0.32);
+}
+.theme-light .stage-dark [class~='border-white/15'],
+.theme-light .glass-dark [class~='border-white/15'] {
+  border-color: rgba(100, 116, 139, 0.38);
+}
+.theme-light .stage-dark [class~='border-white/18'],
+.theme-light .glass-dark [class~='border-white/18'] {
+  border-color: rgba(100, 116, 139, 0.42);
+}
+.theme-light .stage-dark [class~='border-white/25'],
+.theme-light .glass-dark [class~='border-white/25'] {
+  border-color: rgba(100, 116, 139, 0.45);
+}
+
+/* Quiet white fills stay subtle against the light arena */
+.theme-light .stage-dark [class~='bg-white/5'],
+.theme-light .glass-dark [class~='bg-white/5'] {
+  background-color: rgba(100, 116, 139, 0.06);
+}
+.theme-light .stage-dark [class~='bg-white/8'],
+.theme-light .glass-dark [class~='bg-white/8'] {
+  background-color: rgba(100, 116, 139, 0.09);
+}
+.theme-light .stage-dark [class~='bg-white/10'],
+.theme-light .glass-dark [class~='bg-white/10'] {
+  background-color: rgba(100, 116, 139, 0.12);
+}
+.theme-light .stage-dark [class~='bg-white/15'],
+.theme-light .glass-dark [class~='bg-white/15'] {
+  background-color: rgba(100, 116, 139, 0.16);
+}
+
+/* ---------------------------------------------------------------------------
+ * Live-game wager slider — premium petroleum/gold track + thumb.
+ * The gold fill is driven by the inline `--fill` custom property; the RTL
+ * variant mirrors the gradient so the fill grows from the right in Arabic.
+ * ------------------------------------------------------------------------- */
+.fahloy-range {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 10px;
+  border-radius: 9999px;
+  background: linear-gradient(
+    90deg,
+    var(--color-gold) 0%,
+    var(--color-gold) var(--fill, 50%),
+    rgba(18, 59, 70, 0.18) var(--fill, 50%),
+    rgba(18, 59, 70, 0.18) 100%
+  );
+  outline: none;
+  cursor: pointer;
+}
+.fahloy-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 26px;
+  height: 26px;
+  border-radius: 9999px;
+  background: linear-gradient(180deg, #e8c54f, var(--color-gold));
+  border: 3px solid var(--color-navy);
+  box-shadow: 0 0 0 1px rgba(201, 162, 39, 0.5), 0 6px 16px rgba(201, 162, 39, 0.45);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.fahloy-range::-webkit-slider-thumb:hover {
+  transform: scale(1.08);
+}
+.fahloy-range:active::-webkit-slider-thumb {
+  transform: scale(0.94);
+}
+.fahloy-range:focus-visible {
+  box-shadow: 0 0 0 3px rgba(201, 162, 39, 0.35);
+}
+.fahloy-range::-moz-range-track {
+  height: 10px;
+  border-radius: 9999px;
+  background: linear-gradient(
+    90deg,
+    var(--color-gold) 0%,
+    var(--color-gold) var(--fill, 50%),
+    rgba(18, 59, 70, 0.18) var(--fill, 50%),
+    rgba(18, 59, 70, 0.18) 100%
+  );
+}
+.fahloy-range::-moz-range-thumb {
+  width: 22px;
+  height: 22px;
+  border-radius: 9999px;
+  background: linear-gradient(180deg, #e8c54f, var(--color-gold));
+  border: 3px solid var(--color-navy);
+  box-shadow: 0 0 0 1px rgba(201, 162, 39, 0.5), 0 6px 16px rgba(201, 162, 39, 0.45);
+}
+[dir='rtl'] .fahloy-range {
+  background: linear-gradient(
+    270deg,
+    var(--color-gold) 0%,
+    var(--color-gold) var(--fill, 50%),
+    rgba(18, 59, 70, 0.18) var(--fill, 50%),
+    rgba(18, 59, 70, 0.18) 100%
+  );
+}
+[dir='rtl'] .fahloy-range::-moz-range-track {
+  background: linear-gradient(
+    270deg,
+    var(--color-gold) 0%,
+    var(--fill, 50%),
+    rgba(18, 59, 70, 0.18) var(--fill, 50%),
+    rgba(18, 59, 70, 0.18) 100%
+  );
 }

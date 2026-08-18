@@ -21,8 +21,9 @@ export interface GameSetup {
   team2Players: number
   team1CategoryIds: string[]
   team2CategoryIds: string[]
-  team1LifelineIds: string[]
-  team2LifelineIds: string[]
+  /** Lifelines are a closed set — only `LifelineId` values are legal. */
+  team1LifelineIds: import('./board').LifelineId[]
+  team2LifelineIds: import('./board').LifelineId[]
 }
 
 export type CategoryOwner = TeamId | null

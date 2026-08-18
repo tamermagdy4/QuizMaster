@@ -49,7 +49,7 @@
     {
       "id": "netflix-100-6",
       "points": 100,
-      "question": "من هو الممثل الذي لعب دور جوني كاش في مسلسل Cobra Kai؟",
+      "question": "من هو الممثل الذي لعب دور جوني لورانس في مسلسل Cobra Kai؟",
       "answer": "ويليام زابكا",
       "image": "",
       "media": "",
@@ -67,7 +67,7 @@
     {
       "id": "netflix-100-8",
       "points": 100,
-      "question": "من هو الممثل الذي لعب دور مارتن في مسلسل Money Heist؟",
+      "question": "من هو الممثل الذي لعب دور البروفيسور في مسلسل Money Heist؟",
       "answer": "آلفارو مورتي",
       "image": "",
       "media": "",
@@ -112,8 +112,8 @@
     {
       "id": "netflix-100-13",
       "points": 100,
-      "question": "من هو الممثل الذي لعب دور سترينجر في مسلسل Stranger Things؟",
-      "answer": "فين ديزل",
+      "question": "من هو الممثل الذي لعب دور ويل بايرز في مسلسل Stranger Things؟",
+      "answer": "نوح شناب",
       "image": "",
       "media": "",
       "mediaType": ""
@@ -328,8 +328,8 @@
     {
       "id": "netflix-300-7",
       "points": 300,
-      "question": "من هو الممثل الذي لعب دور واليت وايت في مسلسل Breaking Bad؟",
-      "answer": "بريان كرانستون",
+      "question": "ما هو اسم المكتب الذي يعمل فيه سول غودمان في مسلسل Better Call Saul؟",
+      "answer": "شعبة تكساس",
       "image": "",
       "media": "",
       "mediaType": ""
@@ -337,8 +337,8 @@
     {
       "id": "netflix-300-8",
       "points": 300,
-      "question": "من هو الممثل الذي لعب دور جيسي بينكمان في مسلسل Breaking Bad؟",
-      "answer": "آرون بول",
+      "question": "في أي حلقة من Breaking Bad يظهر هانك شرايدر لأول مرة؟",
+      "answer": "الحلقة الأولى",
       "image": "",
       "media": "",
       "mediaType": ""
@@ -391,8 +391,8 @@
     {
       "id": "netflix-300-14",
       "points": 300,
-      "question": "من هو الممثل الذي لعب دور غوميز في مسلسل Breaking Bad؟",
-      "answer": "ستيفن مايكل",
+      "question": "من هو الممثل الذي لعب دور والتر وايت جونيور في مسلسل Breaking Bad؟",
+      "answer": "آر جيه ميت",
       "image": "",
       "media": "",
       "mediaType": ""
@@ -409,8 +409,8 @@
     {
       "id": "netflix-300-16",
       "points": 300,
-      "question": "من هو الممثل الذي لعب دور جوني في مسلسل Cobra Kai؟",
-      "answer": "ويليام زابكا",
+      "question": "ما هو اسم dojoosing في مسلسل Cobra Kai؟",
+      "answer": "كوكاي",
       "image": "",
       "media": "",
       "mediaType": ""
@@ -418,8 +418,8 @@
     {
       "id": "netflix-300-17",
       "points": 300,
-      "question": "من هو الممثل الذي لعب دور دانيال في مسلسل Cobra Kai؟",
-      "answer": "رالف ماتشيو",
+      "question": "ما هو اسم مدرسة دانيال لاروسو في مسلسل Cobra Kai؟",
+      "answer": "ويست هاي",
       "image": "",
       "media": "",
       "mediaType": ""
@@ -427,8 +427,8 @@
     {
       "id": "netflix-300-18",
       "points": 300,
-      "question": "من هو الممثل الذي لعب دور مياجي في مسلسل Cobra Kai؟",
-      "answer": "توماس إيان غريفيث",
+      "question": "ما هو اسم فريق ميجيل في مسلسل Cobra Kai؟",
+      "answer": "كوبرا كاي",
       "image": "",
       "media": "",
       "mediaType": ""
@@ -436,8 +436,8 @@
     {
       "id": "netflix-300-19",
       "points": 300,
-      "question": "من هو الممثل الذي لعب دور سنساي في مسلسل Cobra Kai؟",
-      "answer": "دانيال براون",
+      "question": "ما هو اسم فتاة ميجيل في مسلسل Cobra Kai؟",
+      "answer": "سام لاروسو",
       "image": "",
       "media": "",
       "mediaType": ""
@@ -481,8 +481,8 @@
     {
       "id": "netflix-300-25",
       "points": 300,
-      "question": "من هو الممثل الذي لعب دور سيلفر في مسلسل Cobra Kai؟",
-      "answer": "توماس إيان غريفيث",
+      "question": "ما هو اسم والد سام في مسلسل Cobra Kai؟",
+      "answer": "دانيال لاروسو",
       "image": "",
       "media": "",
       "mediaType": ""
@@ -490,8 +490,8 @@
     {
       "id": "netflix-300-26",
       "points": 300,
-      "question": "من هو الممثل الذي لعب دور كريوس في مسلسل Cobra Kai؟",
-      "answer": "دانيال براون",
+      "question": "ما هو اسم والد هوك في مسلسل Cobra Kai؟",
+      "answer": "جون كيث",
       "image": "",
       "media": "",
       "mediaType": ""

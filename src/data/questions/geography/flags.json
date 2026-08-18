@@ -77,7 +77,7 @@
       "id": "flags-100-10",
       "points": 100,
       "question": "علم دوله ايه؟",
-      "answer": "البانيا",
+      "answer": "ألبانيا",
       "media": "/media/flags/flags/البانيا.png",
       "mediaType": "image"
     },
@@ -133,7 +133,7 @@
       "id": "flags-100-17",
       "points": 100,
       "question": "علم دوله ايه؟",
-      "answer": "المملكه المتحده",
+      "answer": "المملكة المتحدة",
       "media": "/media/flags/flags/المملكه المتحده.png",
       "mediaType": "image"
     },
@@ -189,7 +189,7 @@
       "id": "flags-100-24",
       "points": 100,
       "question": "علم دوله ايه؟",
-      "answer": "تاينلد",
+      "answer": "تايلاند",
       "media": "/media/flags/flags/تاينلد.png",
       "mediaType": "image"
     },
@@ -285,7 +285,7 @@
       "id": "flags-300-11",
       "points": 300,
       "question": "علم دوله ايه؟",
-      "answer": "سنغافوره",
+      "answer": "سنغافورة",
       "media": "/media/flags/flags/سنغافوره.png",
       "mediaType": "image"
     },
@@ -445,7 +445,7 @@
       "id": "flags-500-6",
       "points": 500,
       "question": "علم دوله ايه؟",
-      "answer": "لوكسمبرج",
+      "answer": "لوكسمبورغ",
       "media": "/media/flags/flags/لوكسمبرج.png",
       "mediaType": "image"
     },
@@ -535,22 +535,6 @@
       "question": "علم دوله ايه؟",
       "answer": "إريتريا",
       "media": "/media/flags/flags/إريتريا.webp",
-      "mediaType": "image"
-    },
-    {
-      "id": "flags-500-18",
-      "points": 500,
-      "question": "علم دوله ايه؟",
-      "answer": "",
-      "media": "",
-      "mediaType": "image"
-    },
-    {
-      "id": "flags-500-19",
-      "points": 500,
-      "question": "علم دوله ايه؟",
-      "answer": "",
-      "media": "",
       "mediaType": "image"
     }
   ],

@@ -36,44 +36,104 @@ export function QuestionScreen() {
 
   return (
     <main dir={direction} className="mx-auto w-full max-w-4xl py-2 sm:py-6">
-      <section className="overflow-hidden rounded-[28px] border border-slate-200/90 bg-white shadow-[0_18px_50px_rgba(15,23,42,0.12)]">
-        <header className="border-b border-slate-200/80 bg-white px-5 py-5 sm:px-8 sm:py-6">
-          <div className="flex flex-wrap items-start justify-between gap-4">
+      <section className="stage-dark overflow-hidden rounded-[20px] lg:rounded-[28px] border border-white/10 shadow-[0_24px_64px_rgba(0,0,0,0.4)]">
+        {/* gold hairline — the game-show stage line */}
+        <span aria-hidden className="pointer-events-none absolute inset-x-10 top-0 h-[2px] rounded-full bg-gradient-to-r from-transparent via-gold/60 to-transparent" />
+
+        <header className="border-b border-white/10 bg-[#101D2E]/90 px-2 py-2 sm:px-3 sm:py-5 lg:px-8 lg:py-6">
+          <div className="flex flex-wrap items-start justify-between gap-1.5 sm:gap-4">
             <div>
-              <p className="text-xs font-black uppercase tracking-[0.2em] text-sky-600">{english ? 'Fahloy' : 'فهلوي'}</p>
-              <h1 className="mt-2 text-2xl font-black tracking-tight text-slate-900 sm:text-3xl">{english ? 'Question' : 'السؤال'}</h1>
+              <p className="eyebrow text-[9px] sm:text-xs">{english ? 'Fahloy' : 'فهلوي'}</p>
+              <h1 className="mt-1 sm:mt-2 text-base sm:text-2xl lg:text-3xl font-display font-extrabold tracking-tight text-cream">{english ? 'Question' : 'السؤال'}</h1>
             </div>
-            <div className="flex flex-wrap items-center justify-end gap-2">
-              {activeQuestion && <span className="rounded-full border border-sky-200 bg-sky-50 px-3 py-1.5 text-sm font-black text-sky-700">{activeQuestion.points} {english ? 'points' : 'نقطة'}</span>}
-              <span className="rounded-full border border-slate-200 bg-slate-50 px-3 py-1.5 text-sm font-bold text-slate-600">{activeQuestion ? activeTeamName : (english ? 'No active question' : 'لا يوجد سؤال مفعّل')}</span>
+            <div className="flex flex-wrap items-center justify-end gap-1 sm:gap-2">
+              {activeQuestion && (
+                <span className="rounded-full border border-gold/45 bg-gold/12 px-1.5 py-1 sm:px-3 sm:py-1.5 text-[10px] sm:text-sm font-black text-gold-bright">
+                  {activeQuestion.points} {english ? 'points' : 'نقطة'}
+                </span>
+              )}
+              <span className="rounded-full border border-teal/35 bg-teal/10 px-1.5 py-1 sm:px-3 sm:py-1.5 text-[10px] sm:text-sm font-bold text-teal-bright">
+                {activeQuestion ? activeTeamName : (english ? 'No active question' : 'لا يوجد سؤال مفعّل')}
+              </span>
             </div>
           </div>
-          {categoryTitle && <p className="mt-4 text-sm font-bold text-slate-500">{english ? 'Category' : 'التصنيف'} <span className="mx-1 text-slate-300">•</span><span className="text-slate-800">{categoryTitle}</span></p>}
+          {categoryTitle && (
+            <p className="mt-1.5 sm:mt-4 text-[10px] sm:text-sm font-bold text-cream/55">
+              {english ? 'Category' : 'التصنيف'} <span className="mx-1 text-cream/25">•</span>
+              <span className="text-gold-bright">{categoryTitle}</span>
+            </p>
+          )}
         </header>
 
-        <div className="px-5 py-6 sm:px-8 sm:py-8">
+        <div className="px-2 py-3 sm:px-5 sm:py-6 lg:px-8 lg:py-8">
           {activeQuestion ? (
-            <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} className="space-y-5">
-              <div className="rounded-2xl border border-slate-200 bg-slate-50/80 px-5 py-7 text-center sm:px-8 sm:py-10">
-                {!showAnswer && <p className="text-xl font-black leading-[1.9] text-slate-900 sm:text-3xl">{activeQuestion.questionText}</p>}
-                {showAnswer && <p className="text-sm font-bold uppercase tracking-[0.16em] text-slate-400">{english ? 'Answer revealed' : 'تم إظهار الإجابة'}</p>}
+            <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} className="space-y-2 sm:space-y-5">
+              {/* Question — the hero element; long text scrolls on its own */}
+              <div className="max-h-[40dvh] min-h-0 overflow-y-auto overscroll-contain rounded-xl sm:rounded-2xl border border-white/10 bg-[#0B1526]/70 px-2 py-3 sm:px-5 sm:py-7 lg:px-8 lg:py-10 text-center sm:max-h-[45dvh] lg:max-h-[55dvh]">
+                {!showAnswer && (
+                  <p className="text-sm sm:text-xl lg:text-3xl font-black leading-[1.5] sm:leading-[1.9] text-cream">{activeQuestion.questionText}</p>
+                )}
+                {showAnswer && (
+                  <p className="text-[10px] sm:text-sm font-bold uppercase tracking-[0.16em] text-gold-bright">{english ? 'Answer revealed' : 'تم إظهار الإجابة'}</p>
+                )}
               </div>
 
-              {isVideoQuestion && activeQuestion.media && <div className="overflow-hidden rounded-2xl border border-slate-200 bg-slate-50 p-3"><video src={activeQuestion.media} controls className="mx-auto max-h-80 w-full rounded-xl" /></div>}
-              {!showAnswer && isImageQuestion && activeQuestion.media && <div className="overflow-hidden rounded-2xl border border-slate-200 bg-slate-50 p-3"><img src={activeQuestion.media} alt={english ? 'Question image' : 'صورة السؤال'} className="mx-auto max-h-80 w-full rounded-xl object-contain" /></div>}
+              {/* Media stays OUTSIDE the text scroll container */}
+              {isVideoQuestion && activeQuestion.media && (
+                <div className="overflow-hidden rounded-xl sm:rounded-2xl border border-white/10 bg-[#0B1526]/50 p-1.5 sm:p-3">
+                  <video src={activeQuestion.media} controls className="mx-auto max-h-[28vh] sm:max-h-80 w-full rounded-lg sm:rounded-xl" />
+                </div>
+              )}
+              {!showAnswer && isImageQuestion && activeQuestion.media && (
+                <div className="overflow-hidden rounded-xl sm:rounded-2xl border border-white/10 bg-[#0B1526]/50 p-1.5 sm:p-3">
+                  <img src={activeQuestion.media} alt={english ? 'Question image' : 'صورة السؤال'} className="mx-auto max-h-[28vh] sm:max-h-80 w-full rounded-lg sm:rounded-xl object-contain" />
+                </div>
+              )}
 
-              {activeQuestion?.hint && showHint && !showAnswer && <div className="rounded-2xl border border-amber-200 bg-amber-50 p-4 text-amber-950"><p className="mb-1 text-xs font-black text-amber-700">💡 {english ? 'Hint' : 'تلميح'}</p><p className="text-base leading-relaxed">{activeQuestion.hint}</p></div>}
-              {showAnswer && activeQuestion.answerMedia && <div className="overflow-hidden rounded-2xl border border-slate-200 bg-slate-50 p-3"><img src={activeQuestion.answerMedia} alt={english ? 'Answer image' : 'صورة الإجابة'} className="mx-auto max-h-80 w-full rounded-xl object-contain" /></div>}
-              {showAnswer && !isVideoQuestion && <div className="rounded-2xl border border-emerald-200 bg-emerald-50 p-5 text-emerald-950"><p className="mb-2 text-xs font-black uppercase tracking-[0.14em] text-emerald-700">{english ? 'Correct answer' : 'الإجابة الصحيحة'}</p><p className="text-lg font-black leading-relaxed">{activeQuestion.answerText}</p></div>}
+              {activeQuestion?.hint && showHint && !showAnswer && (
+                <div className="rounded-xl sm:rounded-2xl border border-gold/35 bg-gold/10 p-2 sm:p-4">
+                  <p className="mb-0.5 sm:mb-1 text-[10px] sm:text-xs font-black text-gold-bright">💡 {english ? 'Hint' : 'تلميح'}</p>
+                  <p className="text-sm sm:text-base leading-relaxed text-cream/85">{activeQuestion.hint}</p>
+                </div>
+              )}
+              {showAnswer && activeQuestion.answerMedia && (
+                <div className="overflow-hidden rounded-xl sm:rounded-2xl border border-white/10 bg-[#0B1526]/50 p-1.5 sm:p-3">
+                  <img src={activeQuestion.answerMedia} alt={english ? 'Answer image' : 'صورة الإجابة'} className="mx-auto max-h-[28vh] sm:max-h-80 w-full rounded-lg sm:rounded-xl object-contain" />
+                </div>
+              )}
+              {showAnswer && !isVideoQuestion && (
+                <div className="max-h-[30dvh] min-h-0 overflow-y-auto overscroll-contain rounded-xl sm:rounded-2xl border border-green/45 bg-green/10 p-2 sm:p-5 sm:max-h-[35dvh] lg:max-h-[45dvh]">
+                  <p className="mb-1 sm:mb-2 text-[10px] sm:text-xs font-black uppercase tracking-[0.14em] text-green-bright">{english ? 'Correct answer' : 'الإجابة الصحيحة'}</p>
+                  <p className="text-sm sm:text-lg font-black leading-relaxed text-cream">{activeQuestion.answerText}</p>
+                </div>
+              )}
 
-              {(isVideoQuestion || isImageQuestion) && <div className="flex flex-col gap-3 sm:flex-row">
-                {!showAnswer && activeQuestion?.hint && (!isImageQuestion || !showHint) && <button type="button" onClick={handleShowHint} className="flex-1 rounded-xl border border-amber-200 bg-amber-50 px-4 py-3 text-sm font-black text-amber-800 transition hover:bg-amber-100">{english ? 'Show hint' : 'إظهار التلميح'}</button>}
-                {!showAnswer && <button type="button" onClick={handleShowAnswer} className="flex-1 rounded-xl bg-sky-600 px-4 py-3 text-sm font-black text-white shadow-sm transition hover:bg-sky-700">{english ? 'Show answer' : 'إظهار الإجابة'}</button>}
-                {showAnswer && <button type="button" onClick={handleResetQuestion} className="flex-1 rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm font-black text-slate-700 transition hover:bg-slate-50">{english ? 'Reset question' : 'إعادة السؤال'}</button>}
-              </div>}
+              {(isVideoQuestion || isImageQuestion) && (
+                <div className="flex flex-col gap-1.5 sm:gap-3 sm:flex-row">
+                  {!showAnswer && activeQuestion?.hint && (!isImageQuestion || !showHint) && (
+                    <button type="button" onClick={handleShowHint} className="flex-1 rounded-lg sm:rounded-xl border border-gold/40 bg-gold/10 px-2 py-1.5 sm:px-4 sm:py-3 text-[10px] sm:text-sm font-black text-gold-bright transition hover:bg-gold/20">
+                      {english ? 'Show hint' : 'إظهار التلميح'}
+                    </button>
+                  )}
+                  {!showAnswer && (
+                    <button type="button" onClick={handleShowAnswer} className="flex-1 rounded-lg sm:rounded-xl bg-gradient-to-b from-[#20616C] to-[#123B46] px-2 py-1.5 sm:px-4 sm:py-3 text-[10px] sm:text-sm font-black text-white shadow-[0_10px_22px_rgba(18,59,70,0.4)] transition hover:brightness-110">
+                      {english ? 'Show answer' : 'إظهار الإجابة'}
+                    </button>
+                  )}
+                  {showAnswer && (
+                    <button type="button" onClick={handleResetQuestion} className="flex-1 rounded-lg sm:rounded-xl border border-white/15 bg-white/5 px-2 py-1.5 sm:px-4 sm:py-3 text-[10px] sm:text-sm font-black text-cream/70 transition hover:bg-white/10">
+                      {english ? 'Reset question' : 'إعادة السؤال'}
+                    </button>
+                  )}
+                </div>
+              )}
             </motion.div>
           ) : (
-            <div className="rounded-2xl border border-dashed border-slate-300 bg-slate-50 px-5 py-12 text-center"><div className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-sky-50 text-2xl text-sky-600">?</div><h2 className="mt-4 text-xl font-black text-slate-900">{english ? 'No question available' : 'لا يوجد سؤال متاح'}</h2><p className="mt-2 text-sm text-slate-500">{english ? 'Choose a question from the game board to continue.' : 'اختر سؤالًا من لوحة اللعب للمتابعة.'}</p></div>
+            <div className="rounded-xl sm:rounded-2xl border border-dashed border-white/15 bg-[#0B1526]/50 px-2 py-6 sm:px-5 sm:py-12 text-center">
+              <div className="mx-auto flex h-8 w-8 sm:h-14 sm:w-14 items-center justify-center rounded-xl sm:rounded-2xl bg-teal/12 text-lg sm:text-2xl text-teal-bright">?</div>
+              <h2 className="mt-2 sm:mt-4 text-lg sm:text-xl font-black text-cream">{english ? 'No question available' : 'لا يوجد سؤال متاح'}</h2>
+              <p className="mt-1 sm:mt-2 text-[10px] sm:text-sm text-cream/55">{english ? 'Choose a question from the game board to continue.' : 'اختر سؤالًا من لوحة اللعب للمتابعة.'}</p>
+            </div>
           )}
         </div>
       </section>

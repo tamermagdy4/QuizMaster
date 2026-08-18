@@ -81,16 +81,16 @@ export function Signup() {
       className="flex min-h-[70vh] items-center justify-center px-4 py-8"
       dir={english ? 'ltr' : 'rtl'}
     >
-      <section className="w-full max-w-md rounded-3xl border border-slate-200 bg-white p-6 shadow-xl shadow-slate-200/50 sm:p-8">
-        <p className="text-sm font-black text-sky-600">
+      <section className="glass-panel-strong w-full max-w-md rounded-3xl p-6 sm:p-8">
+        <p className="eyebrow">
           {english ? 'Fahloy account' : 'حساب فهلوي'}
         </p>
 
-        <h1 className="mt-2 text-3xl font-black text-slate-900">
+        <h1 className="mt-2 text-3xl font-black text-navy">
           {english ? 'Create account' : 'إنشاء حساب'}
         </h1>
 
-        <p className="mt-2 text-sm text-slate-500">
+        <p className="mt-2 text-sm text-muted">
           {english
             ? 'Create your account to continue.'
             : 'أنشئ حسابك للمتابعة.'}
@@ -99,7 +99,7 @@ export function Signup() {
         <form className="mt-6 space-y-5" onSubmit={handleSubmit}>
           {/* Name */}
           <label className="block">
-            <span className="mb-2 block text-sm font-bold text-slate-700">
+            <span className="mb-2 block text-sm font-bold text-ink-2">
               {english ? 'Name' : 'الاسم'}
             </span>
 
@@ -109,13 +109,13 @@ export function Signup() {
               onChange={(event) => setDisplayName(event.target.value)}
               autoComplete="name"
               required
-              className="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-slate-900 outline-none focus:border-sky-500"
+              className="w-full rounded-xl border border-border-soft bg-surface-raised px-4 py-3 text-ink outline-none transition focus:border-teal focus:ring-2 focus:ring-teal/20"
             />
           </label>
 
           {/* Email */}
           <label className="block">
-            <span className="mb-2 block text-sm font-bold text-slate-700">
+            <span className="mb-2 block text-sm font-bold text-ink-2">
               {english ? 'Email' : 'البريد الإلكتروني'}
             </span>
 
@@ -125,14 +125,14 @@ export function Signup() {
               onChange={(event) => setEmail(event.target.value)}
               autoComplete="email"
               required
-              className="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-slate-900 outline-none focus:border-sky-500"
+              className="w-full rounded-xl border border-border-soft bg-surface-raised px-4 py-3 text-ink outline-none transition focus:border-teal focus:ring-2 focus:ring-teal/20"
               dir="ltr"
             />
           </label>
 
           {/* Password */}
           <label className="block">
-            <span className="mb-2 block text-sm font-bold text-slate-700">
+            <span className="mb-2 block text-sm font-bold text-ink-2">
               {english ? 'Password' : 'كلمة المرور'}
             </span>
 
@@ -144,7 +144,7 @@ export function Signup() {
                 autoComplete="new-password"
                 required
                 minLength={6}
-                className="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 ps-12 text-slate-900 outline-none focus:border-sky-500"
+                className="w-full rounded-xl border border-border-soft bg-surface-raised px-4 py-3 ps-12 text-ink outline-none transition focus:border-teal focus:ring-2 focus:ring-teal/20"
                 dir="ltr"
               />
 
@@ -161,7 +161,7 @@ export function Signup() {
                       ? 'Show password'
                       : 'إظهار كلمة المرور'
                 }
-                className="absolute start-3 top-1/2 -translate-y-1/2 text-slate-500 transition hover:text-sky-600"
+                className="absolute start-3 top-1/2 -translate-y-1/2 text-muted transition hover:text-teal"
               >
                 {showPassword ? (
                   <svg
@@ -196,7 +196,7 @@ export function Signup() {
 
           {/* Confirm Password */}
           <label className="block">
-            <span className="mb-2 block text-sm font-bold text-slate-700">
+            <span className="mb-2 block text-sm font-bold text-ink-2">
               {english ? 'Confirm password' : 'تأكيد كلمة المرور'}
             </span>
 
@@ -210,7 +210,7 @@ export function Signup() {
                 autoComplete="new-password"
                 required
                 minLength={6}
-                className="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 ps-12 text-slate-900 outline-none focus:border-sky-500"
+                className="w-full rounded-xl border border-border-soft bg-surface-raised px-4 py-3 ps-12 text-ink outline-none transition focus:border-teal focus:ring-2 focus:ring-teal/20"
                 dir="ltr"
               />
 
@@ -229,7 +229,7 @@ export function Signup() {
                       ? 'Show password'
                       : 'إظهار كلمة المرور'
                 }
-                className="absolute start-3 top-1/2 -translate-y-1/2 text-slate-500 transition hover:text-sky-600"
+                className="absolute start-3 top-1/2 -translate-y-1/2 text-muted transition hover:text-teal"
               >
                 {showConfirmPassword ? (
                   <svg
@@ -276,7 +276,7 @@ export function Signup() {
           <button
             type="submit"
             disabled={isSubmitting}
-            className="w-full rounded-xl bg-sky-600 px-4 py-3 font-black text-white transition hover:bg-sky-700 disabled:cursor-wait disabled:opacity-60"
+            className="btn btn-teal w-full rounded-xl px-4 py-3 font-black disabled:cursor-wait disabled:opacity-60"
           >
             {isSubmitting
               ? english
@@ -289,11 +289,11 @@ export function Signup() {
         </form>
 
         {/* Login link */}
-        <p className="mt-6 text-center text-sm text-slate-500">
+        <p className="mt-6 text-center text-sm text-muted">
           {english ? 'Already have an account?' : 'لديك حساب بالفعل؟'}{' '}
           <Link
             to="/login"
-            className="font-black text-sky-600 hover:text-sky-700"
+            className="font-black text-teal hover:text-navy-3"
           >
             {english ? 'Sign in' : 'تسجيل الدخول'}
           </Link>

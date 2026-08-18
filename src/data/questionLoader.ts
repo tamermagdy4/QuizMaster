@@ -1,3 +1,4 @@
+import { isPointValue } from '../domain/contracts'
 import { getPublicQuestions, type SupabaseQuestion } from '../services/questionService'
 import type { PointValue } from '../types/board'
 
@@ -34,41 +35,93 @@ function normalizeCategoryId(value: string): string {
   return value.trim().replace(/\.json$/i, '').split('/').pop() ?? value.trim()
 }
 
-const questionModules = import.meta.glob('./questions/**/*.json', {
-  eager: true,
-}) as Record<string, QuestionModule>
+/**
+ * Lazy glob: every question JSON becomes its OWN async chunk, loaded only when
+ * `ensureLocalQuestionsLoaded()` runs (board initialization / admin pages).
+ * The main bundle and pages that never touch questions (Home, Online lobby)
+ * never download the ~1.8MB of question data.
+ *
+ * IMPORTANT — the module KEYS are available synchronously even with a lazy
+ * glob, so we can still know which categories HAVE a question file at import
+ * time without loading any content (used by `hasQuestionEntries`).
+ */
+const questionModules = import.meta.glob('./questions/**/*.json') as Record<
+  string,
+  () => Promise<QuestionModule>
+>
+
+/**
+ * Synchronous "does this category have a local question file" set, derived
+ * from the glob keys (no content is loaded). One known divergence: the file
+ * `geography/Landmarks of countries.json` declares `categoryId: city-country`
+ * internally, which only becomes known after loading — keep the alias so the
+ * category survives the import-time filter exactly like the eager loader did.
+ */
+const QUESTION_FILE_ALIASES: Record<string, string> = {
+  'Landmarks of countries': 'city-country',
+}
+
+const questionFileIds = new Set<string>()
+for (const filePath of Object.keys(questionModules)) {
+  const id = normalizeCategoryId(filePath)
+  questionFileIds.add(QUESTION_FILE_ALIASES[id] ?? id)
+}
 
 const questionLibrary = new Map<string, QuestionCollection>()
 
-for (const [filePath, module] of Object.entries(questionModules)) {
-  const collection = (module?.default ?? module) as Partial<QuestionCollection> | undefined
+let localQuestionsLoaded = false
+let localQuestionsRequest: Promise<void> | null = null
 
-  if (!collection || typeof collection !== 'object') {
-    continue
-  }
+/** Loads every local question JSON exactly once (idempotent, cached promise). */
+export function ensureLocalQuestionsLoaded(): Promise<void> {
+  if (localQuestionsLoaded) return Promise.resolve()
+  if (localQuestionsRequest) return localQuestionsRequest
 
-  const sourceCategoryId = typeof collection.categoryId === 'string' ? collection.categoryId.trim() : ''
-  const categoryId = sourceCategoryId || normalizeCategoryId(filePath)
+  localQuestionsRequest = (async () => {
+    // Load all question files in parallel (they are separate small chunks).
+    const loaded = await Promise.all(
+      Object.values(questionModules).map((loader) => loader()),
+    )
+    const filePaths = Object.keys(questionModules)
 
-  if (!categoryId) {
-    continue
-  }
+    for (let index = 0; index < filePaths.length; index += 1) {
+      const module = loaded[index] as QuestionModule | undefined
+      const filePath = filePaths[index]
+      const collection = (module?.default ?? module) as Partial<QuestionCollection> | undefined
 
-  const nextCollection: QuestionCollection = {
-    categoryId,
-    questions: Array.isArray(collection.questions) ? collection.questions : [],
-    questionsByPoints: collection.questionsByPoints,
-    metadata: {
-      sectionId: collection.metadata?.sectionId ?? '',
-      updatedAt: collection.metadata?.updatedAt ?? '',
-      status: collection.metadata?.status ?? 'loaded',
-    },
-  }
+      if (!collection || typeof collection !== 'object') {
+        continue
+      }
 
-  // Always use the categoryId from the JSON file if present
-  questionLibrary.set(categoryId, nextCollection)
+      const sourceCategoryId = typeof collection.categoryId === 'string' ? collection.categoryId.trim() : ''
+      const categoryId = sourceCategoryId || normalizeCategoryId(filePath)
+
+      if (!categoryId) {
+        continue
+      }
+
+      const nextCollection: QuestionCollection = {
+        categoryId,
+        questions: Array.isArray(collection.questions) ? collection.questions : [],
+        questionsByPoints: collection.questionsByPoints,
+        metadata: {
+          sectionId: collection.metadata?.sectionId ?? '',
+          updatedAt: collection.metadata?.updatedAt ?? '',
+          status: collection.metadata?.status ?? 'loaded',
+        },
+      }
+
+      // Always use the categoryId from the JSON file if present
+      questionLibrary.set(categoryId, nextCollection)
+      // Correct the sync set for files whose internal id differs from the filename.
+      questionFileIds.add(categoryId)
+    }
+
+    localQuestionsLoaded = true
+  })()
+
+  return localQuestionsRequest
 }
-
 
 const remoteQuestionLibrary = new Map<string, QuestionItem[]>()
 let remoteQuestionsLoaded = false
@@ -106,6 +159,11 @@ function mergeQuestionEntries(categoryId: string, entries: QuestionItem[], point
   const fingerprints = new Set<string>()
 
   entries.forEach((item, index) => {
+    // Domain contract: `points` may only be one of 100 | 300 | 500. An item
+    // that declares an invalid value (e.g. 250, 0, or a string) is malformed
+    // and must never become a board candidate — drop it instead of silently
+    // defaulting it into a valid bucket.
+    if (item.points !== undefined && !isPointValue(item.points)) return
     if (points !== undefined && item.points !== undefined && item.points !== points) return
     const normalized = normalizeQuestionEntry(categoryId, points ?? item.points ?? 100, item, index)
     const fingerprint = questionFingerprint(normalized)
@@ -151,7 +209,20 @@ export async function loadRemoteQuestions() {
   return remoteQuestionsRequest
 }
 
+/**
+ * True when the category has question data: a local question file, or remote
+ * questions already fetched from Supabase. Synchronous and cheap — it never
+ * triggers a question-file load by itself (categories.ts calls it at import).
+ */
+export function hasQuestionEntries(categoryId: string): boolean {
+  return questionFileIds.has(categoryId) || remoteQuestionLibrary.has(categoryId)
+}
 
+/**
+ * Local question entries. NOTE: this reads from the in-memory library — call
+ * `ensureLocalQuestionsLoaded()` first (the board does it during
+ * `initializeBoard`, admin pages gate on it). Returns [] before the load.
+ */
 export function getQuestionEntries(categoryId: string): QuestionItem[] {
   const collectionItems = questionLibrary.get(categoryId)?.questions ?? []
   const remoteItems = remoteQuestionLibrary.get(categoryId) ?? []
@@ -164,8 +235,4 @@ export function getQuestionEntriesByPoints(categoryId: string, points: PointValu
   const filteredPool = pool.filter((item) => !item.points || item.points === points)
   const remotePool = (remoteQuestionLibrary.get(categoryId) ?? []).filter((item) => item.points === points)
   return mergeQuestionEntries(categoryId, [...filteredPool, ...remotePool], points)
-}
-
-export function hasQuestionEntries(categoryId: string): boolean {
-  return getQuestionEntries(categoryId).length > 0
 }

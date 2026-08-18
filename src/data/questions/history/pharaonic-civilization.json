@@ -46,7 +46,7 @@
     {
       "id": "pharaonic-civilization-100-7",
       "points": 100,
-      "question": "من هو إله السماء في مصر القديمة؟",
+      "question": "من هي إلهة السماء في مصر القديمة؟",
       "answer": "نوت",
       "image": ""
     },
@@ -60,295 +60,295 @@
     {
       "id": "pharaonic-civilization-100-9",
       "points": 100,
-      "question": "من هو إله الخصوبة في مصر القديمة؟",
-      "answer": "إيزيس",
-      "image": ""
-    },
-    {
-      "id": "pharaonic-civilization-100-10",
-      "points": 100,
-      "question": "من هو إله الحكمة في مصر القديمة؟",
+      "question": "من هي إلهة الحكمة في مصر القديمة؟",
       "answer": "تحوت",
       "image": ""
     },
     {
-      "id": "pharaonic-civilization-100-11",
+      "id": "pharaonic-civilization-100-10",
       "points": 100,
       "question": "من هو إله الحرب في مصر القديمة؟",
       "answer": "حورس",
       "image": ""
     },
     {
-      "id": "pharaonic-civilization-100-12",
+      "id": "pharaonic-civilization-100-11",
       "points": 100,
       "question": "من هو إله القوة في مصر القديمة؟",
       "answer": "سخمت",
       "image": ""
     },
     {
+      "id": "pharaonic-civilization-100-12",
+      "points": 100,
+      "question": "من هو إله الخصوبة في مصر القديمة؟",
+      "answer": "إيزيس",
+      "image": ""
+    },
+    {
       "id": "pharaonic-civilization-100-13",
-      "points": 100,
-      "question": "ما هو هرم خوفو؟",
-      "answer": "هرم خوفو",
-      "image": ""
-    },
-    {
-      "id": "pharaonic-civilization-100-14",
-      "points": 100,
-      "question": "ما هو هرم خفرع؟",
-      "answer": "هرم خفرع",
-      "image": ""
-    },
-    {
-      "id": "pharaonic-civilization-100-15",
-      "points": 100,
-      "question": "ما هو هرم منقرع؟",
-      "answer": "هرم منقرع",
-      "image": ""
-    },
-    {
-      "id": "pharaonic-civilization-100-16",
-      "points": 100,
-      "question": "ما هو تمثال أبو الهول؟",
-      "answer": "تمثال أبو الهول",
-      "image": ""
-    },
-    {
-      "id": "pharaonic-civilization-100-17",
       "points": 100,
       "question": "من بنى الأهرامات؟",
       "answer": "خوفو",
       "image": ""
     },
     {
-      "id": "pharaonic-civilization-100-18",
+      "id": "pharaonic-civilization-100-14",
       "points": 100,
       "question": "من بنى تمثال أبو الهول؟",
       "answer": "خفرع",
       "image": ""
     },
     {
-      "id": "pharaonic-civilization-100-19",
+      "id": "pharaonic-civilization-100-15",
       "points": 100,
       "question": "متى بنيت الأهرامات؟",
       "answer": "2500 قبل الميلاد",
       "image": ""
     },
     {
-      "id": "pharaonic-civilization-100-20",
+      "id": "pharaonic-civilization-100-16",
       "points": 100,
       "question": "ما هو الغرض من الأهرامات؟",
       "answer": "مقابر للفراعين",
       "image": ""
     },
     {
-      "id": "pharaonic-civilization-100-21",
+      "id": "pharaonic-civilization-100-17",
       "points": 100,
       "question": "ما هو الهيروغليف؟",
       "answer": "الكتابة المصرية القديمة",
       "image": ""
     },
     {
-      "id": "pharaonic-civilization-100-22",
+      "id": "pharaonic-civilization-100-18",
       "points": 100,
       "question": "من فك شيفرة الهيروغليف؟",
       "answer": "شانبوليون",
       "image": ""
     },
     {
-      "id": "pharaonic-civilization-100-23",
+      "id": "pharaonic-civilization-100-19",
       "points": 100,
       "question": "ما هو البردي؟",
       "answer": "الورق المصري القديم",
       "image": ""
     },
     {
-      "id": "pharaonic-civilization-100-24",
+      "id": "pharaonic-civilization-100-20",
       "points": 100,
       "question": "ما هو التحنيط؟",
       "answer": "حفظ الجثث الموتى",
       "image": ""
     },
     {
-      "id": "pharaonic-civilization-100-25",
+      "id": "pharaonic-civilization-100-21",
       "points": 100,
       "question": "ما هو كتاب الموتى؟",
-      "answer": "الكتاب المقدس في مصر القديمة",
+      "answer": "نص جنائزية用来 إرشاد الموتى في العالم الآخر",
       "image": ""
     },
     {
-      "id": "pharaonic-civilization-100-26",
+      "id": "pharaonic-civilization-100-22",
       "points": 100,
       "question": "من هو أشهر فرعون؟",
       "answer": "رمسيس الثاني",
       "image": ""
     },
     {
-      "id": "pharaonic-civilization-100-27",
+      "id": "pharaonic-civilization-100-23",
       "points": 100,
       "question": "من هو فرعون الذي بنى الأهرامات؟",
       "answer": "خوفو",
       "image": ""
     },
     {
-      "id": "pharaonic-civilization-100-28",
+      "id": "pharaonic-civilization-100-24",
       "points": 100,
       "question": "من هو فرعون الذي حكم مصر أطول فترة؟",
       "answer": "رمسيس الثاني",
       "image": ""
     },
     {
-      "id": "pharaonic-civilization-100-29",
-      "points": 100,
-      "question": "من هو فرعون الذي حكم مصر أقصر فترة؟",
-      "answer": "توت عنخ آمون",
-      "image": ""
-    },
-    {
-      "id": "pharaonic-civilization-100-30",
-      "points": 100,
-      "question": "من هو الملكة حتشبسوت؟",
-      "answer": "ملكة حتشبسوت",
-      "image": ""
-    },
-    {
-      "id": "pharaonic-civilization-100-31",
-      "points": 100,
-      "question": "من هو الملكة نفرتيتي؟",
-      "answer": "ملكة نفرتيتي",
-      "image": ""
-    },
-    {
-      "id": "pharaonic-civilization-100-32",
-      "points": 100,
-      "question": "من هو الملكة كليوباترا؟",
-      "answer": "ملكة كليوباترا",
-      "image": ""
-    },
-    {
-      "id": "pharaonic-civilization-100-33",
-      "points": 100,
-      "question": "ما هو معبد الكرنك؟",
-      "answer": "معبد الكرنك",
-      "image": ""
-    },
-    {
-      "id": "pharaonic-civilization-100-34",
-      "points": 100,
-      "question": "ما هو معبد الأقصر؟",
-      "answer": "معبد الأقصر",
-      "image": ""
-    },
-    {
-      "id": "pharaonic-civilization-100-35",
-      "points": 100,
-      "question": "ما هو وادي الملوك؟",
-      "answer": "مقبرة وادي الملوك",
-      "image": ""
-    },
-    {
-      "id": "pharaonic-civilization-100-36",
-      "points": 100,
-      "question": "ما هو مقبرة توت عنخ آمون؟",
-      "answer": "مقبرة توت عنخ آمون",
-      "image": ""
-    },
-    {
-      "id": "pharaonic-civilization-100-37",
+      "id": "pharaonic-civilization-100-25",
       "points": 100,
       "question": "من اكتشف مقبرة توت عنخ آمون؟",
       "answer": "هوارد كارتر",
       "image": ""
     },
     {
-      "id": "pharaonic-civilization-100-38",
+      "id": "pharaonic-civilization-100-26",
       "points": 100,
       "question": "متى اكتشف مقبرة توت عنخ آمون؟",
       "answer": "1922",
       "image": ""
     },
     {
-      "id": "pharaonic-civilization-100-39",
+      "id": "pharaonic-civilization-100-27",
+      "points": 100,
+      "question": "من هي الملكة حتشبسوت؟",
+      "answer": "أول ملكة تحكم مصر بشكل رسمي",
+      "image": ""
+    },
+    {
+      "id": "pharaonic-civilization-100-28",
+      "points": 100,
+      "question": "من هي الملكة نفرتيتي؟",
+      "answer": "زوجة الملك أخناتون",
+      "image": ""
+    },
+    {
+      "id": "pharaonic-civilization-100-29",
+      "points": 100,
+      "question": "من هي الملكة كليوباترا؟",
+      "answer": "آخر حاكمة من سلسلة البطالمة",
+      "image": ""
+    },
+    {
+      "id": "pharaonic-civilization-100-30",
+      "points": 100,
+      "question": "ما هو معبد الكرنك؟",
+      "answer": "أكبر معبد في طيبة",
+      "image": ""
+    },
+    {
+      "id": "pharaonic-civilization-100-31",
+      "points": 100,
+      "question": "ما هو معبد الأقصر؟",
+      "answer": "معبد تابع لمعبد الكرنك",
+      "image": ""
+    },
+    {
+      "id": "pharaonic-civilization-100-32",
+      "points": 100,
+      "question": "ما هو وادي الملوك؟",
+      "answer": "وديان دفن الفراعنة في طيبة",
+      "image": ""
+    },
+    {
+      "id": "pharaonic-civilization-100-33",
       "points": 100,
       "question": "ما هو قناع توت عنخ آمون؟",
-      "answer": "قناع توت عنخ آمون",
+      "answer": "قناع ذهبي لدفن الفرعون",
+      "image": ""
+    },
+    {
+      "id": "pharaonic-civilization-100-34",
+      "points": 100,
+      "question": "ما هو التحنيط الفرعوني؟",
+      "answer": "تقنية حفظ الجثث لضمان البقاء في العالم الآخر",
+      "image": ""
+    },
+    {
+      "id": "pharaonic-civilization-100-35",
+      "points": 100,
+      "question": "ما هو التابوت الفرعوني؟",
+      "answer": "إناء لوضع الجثث فيه أثناء الدفن",
+      "image": ""
+    },
+    {
+      "id": "pharaonic-civilization-100-36",
+      "points": 100,
+      "question": "ما هي hieroglyphics؟",
+      "answer": "نظام الكتابة المصرية القديمة",
+      "image": ""
+    },
+    {
+      "id": "pharaonic-civilization-100-37",
+      "points": 100,
+      "question": "ما هو ryty الفرعوني؟",
+      "answer": "زخرفة ونقوش على المعابد",
+      "image": ""
+    },
+    {
+      "id": "pharaonic-civilization-100-38",
+      "points": 100,
+      "question": "ما هو Electra في مصر القديمة؟",
+      "answer": "نظام الري والزراعة على ضفاف النيل",
+      "image": ""
+    },
+    {
+      "id": "pharaonic-civilization-100-39",
+      "points": 100,
+      "question": "ما هو حجر رشيد؟",
+      "answer": "حجر كتبت عليه ثلاثة أنظمة كتابة不同ة",
       "image": ""
     },
     {
       "id": "pharaonic-civilization-100-40",
       "points": 100,
-      "question": "ما هو الدفن الفرعوني؟",
-      "answer": "الدفن الفرعوني",
+      "question": "ما هو الأهرام؟",
+      "answer": "هرم مallbackتبنى كمقبرة للفراعنة",
       "image": ""
     },
     {
       "id": "pharaonic-civilization-100-41",
       "points": 100,
-      "question": "ما هو التابوت الفرعوني؟",
-      "answer": "التابوت الفرعوني",
+      "question": "ما هو الهيكل الفرعوني؟",
+      "answer": "معبد مخصص للعبادة والطقوس الدينية",
       "image": ""
     },
     {
       "id": "pharaonic-civilization-100-42",
       "points": 100,
-      "question": "ما هو الأثاث الفرعوني؟",
-      "answer": "الأثاث الفرعوني",
+      "question": "ما هو النحت الفرعوني؟",
+      "answer": "منحوتات تمثل الآلهة والفراعنة",
       "image": ""
     },
     {
       "id": "pharaonic-civilization-100-43",
       "points": 100,
-      "question": "ما هو الحلي الفرعوني؟",
-      "answer": "الحلي الفرعوني",
+      "question": "ما هو الرسم الفرعوني؟",
+      "answer": "رسوم على الجدران تمثل الحياة اليومية",
       "image": ""
     },
     {
       "id": "pharaonic-civilization-100-44",
       "points": 100,
-      "question": "ما هو النحت الفرعوني؟",
-      "answer": "النحت الفرعوني",
+      "question": "ما هي العمارة الفرعونية؟",
+      "answer": "أسلوب بناء المعابد والأهرامات",
       "image": ""
     },
     {
       "id": "pharaonic-civilization-100-45",
       "points": 100,
-      "question": "ما هو الرسم الفرعوني؟",
-      "answer": "الرسم الفرعوني",
+      "question": "ما هي الهندسة الفرعونية؟",
+      "answer": "علوم البناء وال=counting among the ancients",
       "image": ""
     },
     {
       "id": "pharaonic-civilization-100-46",
       "points": 100,
-      "question": "ما هو العمارة الفرعونية؟",
-      "answer": "العمارة الفرعونية",
+      "question": "ما هو الطب الفرعوني؟",
+      "answer": "علوم العلاج والتحنيط",
       "image": ""
     },
     {
       "id": "pharaonic-civilization-100-47",
       "points": 100,
-      "question": "ما هو الهندسة الفرعونية؟",
-      "answer": "الهندسة الفرعونية",
+      "question": "ما هو الفلك الفرعوني؟",
+      "answer": "علوم التقويم ومراقبة النجوم",
       "image": ""
     },
     {
       "id": "pharaonic-civilization-100-48",
       "points": 100,
-      "question": "ما هو الطب الفرعوني؟",
-      "answer": "الطب الفرعوني",
+      "question": "ما هي الرياضيات الفرعونية؟",
+      "answer": "علوم الحساب والهندسة",
       "image": ""
     },
     {
       "id": "pharaonic-civilization-100-49",
       "points": 100,
-      "question": "ما هو الفلك الفرعوني؟",
-      "answer": "الفلك الفرعوني",
+      "question": "ما هو الحلي الفرعوني؟",
+      "answer": "مجوهرات ذهبية ترتديها النخبة",
       "image": ""
     },
     {
       "id": "pharaonic-civilization-100-50",
       "points": 100,
-      "question": "ما هو الرياضيات الفرعونية؟",
-      "answer": "الرياضيات الفرعونية",
+      "question": "ما هو الأثاث الفرعوني؟",
+      "answer": "أثاث خشبي لزينة القصور والمقابر",
       "image": ""
     },
     {
@@ -453,608 +453,328 @@
       "id": "pharaonic-civilization-300-15",
       "points": 300,
       "question": "من هو أمنحتب الثالث؟",
-      "answer": "فرعون عصر الأسرات الحديثة",
+      "answer": "فرعون من الأسرة الثامنة عشرة",
       "image": ""
     },
     {
       "id": "pharaonic-civilization-300-16",
       "points": 300,
       "question": "من هو تحتمس الثالث؟",
-      "answer": "فرعون عصر الأسرات الحديثة",
+      "answer": "فرعون من الأسرة الثامنة عشرة",
       "image": ""
     },
     {
       "id": "pharaonic-civilization-300-17",
       "points": 300,
       "question": "من هو رمسيس الثاني؟",
-      "answer": "فرعون عصر الأسرات الحديثة",
+      "answer": "فرعون من الأسرة التاسعة عشرة",
       "image": ""
     },
     {
       "id": "pharaonic-civilization-300-18",
       "points": 300,
       "question": "من هو رمسيس الثالث؟",
-      "answer": "فرعون عصر الأسرات الحديثة",
+      "answer": "فرعون من الأسرة العشرين",
       "image": ""
     },
     {
       "id": "pharaonic-civilization-300-19",
       "points": 300,
-      "question": "من هو تحتمس الثاني؟",
-      "answer": "فرعون عصر الأسرات الحديثة",
+      "question": "من هو حتشبسوت؟",
+      "answer": "ملكة من الأسرة الثامنة عشرة",
       "image": ""
     },
     {
       "id": "pharaonic-civilization-300-20",
       "points": 300,
-      "question": "من هو حتشبسوت؟",
-      "answer": "ملكة عصر الأسرات الحديثة",
+      "question": "من هو توت عنخ آمون؟",
+      "answer": "فرعون من الأسرة الثامنة عشرة",
       "image": ""
     },
     {
       "id": "pharaonic-civilization-300-21",
       "points": 300,
-      "question": "من هو توت عنخ آمون؟",
-      "answer": "فرعون عصر الأسرات الحديثة",
+      "question": "من هو أخناتون؟",
+      "answer": "فرعون أصلح الديانة في مصر",
       "image": ""
     },
     {
       "id": "pharaonic-civilization-300-22",
-      "points": 300,
-      "question": "من هو أخناتون؟",
-      "answer": "فرعون عصر الأسرات الحديثة",
-      "image": ""
-    },
-    {
-      "id": "pharaonic-civilization-300-23",
-      "points": 300,
-      "question": "من هو نفرتيتي؟",
-      "answer": "ملكة عصر الأسرات الحديثة",
-      "image": ""
-    },
-    {
-      "id": "pharaonic-civilization-300-24",
-      "points": 300,
-      "question": "من هو سنوسرت الأول؟",
-      "answer": "فرعون عصر الأسرات الوسطى",
-      "image": ""
-    },
-    {
-      "id": "pharaonic-civilization-300-25",
-      "points": 300,
-      "question": "من هو سنوسرت الثاني؟",
-      "answer": "فرعون عصر الأسرات الوسطى",
-      "image": ""
-    },
-    {
-      "id": "pharaonic-civilization-300-26",
-      "points": 300,
-      "question": "من هو سنوسرت الثالث؟",
-      "answer": "فرعون عصر الأسرات الوسطى",
-      "image": ""
-    },
-    {
-      "id": "pharaonic-civilization-300-27",
-      "points": 300,
-      "question": "من هو أمنمحتب الأول؟",
-      "answer": "فرعون عصر الأسرات الوسطى",
-      "image": ""
-    },
-    {
-      "id": "pharaonic-civilization-300-28",
-      "points": 300,
-      "question": "من هو أمنمحتب الثاني؟",
-      "answer": "فرعون عصر الأسرات الوسطى",
-      "image": ""
-    },
-    {
-      "id": "pharaonic-civilization-300-29",
-      "points": 300,
-      "question": "من هو أمنمحتب الثالث؟",
-      "answer": "فرعون عصر الأسرات الوسطى",
-      "image": ""
-    },
-    {
-      "id": "pharaonic-civilization-300-30",
       "points": 300,
       "question": "من هو نعرمر؟",
       "answer": "أول فرعون مصري",
       "image": ""
     },
     {
-      "id": "pharaonic-civilization-300-31",
+      "id": "pharaonic-civilization-300-23",
       "points": 300,
       "question": "من هو خوفو؟",
-      "answer": "فرعون عصر الأسرات المبكرة",
+      "answer": "فرعون من الأسرة الرابعة",
+      "image": ""
+    },
+    {
+      "id": "pharaonic-civilization-300-24",
+      "points": 300,
+      "question": "من هو خفرع؟",
+      "answer": "فرعون من الأسرة الرابعة",
+      "image": ""
+    },
+    {
+      "id": "pharaonic-civilization-300-25",
+      "points": 300,
+      "question": "من هو منقرع؟",
+      "answer": "فرعون من الأسرة الرابعة",
+      "image": ""
+    },
+    {
+      "id": "pharaonic-civilization-300-26",
+      "points": 300,
+      "question": "من هو الإسكندر الأكبر؟",
+      "answer": "ملك مقدوني فتح مصر عام 332 قبل الميلاد",
+      "image": ""
+    },
+    {
+      "id": "pharaonic-civilization-300-27",
+      "points": 300,
+      "question": "من هو بطليموس الأول؟",
+      "answer": "مؤسس سلسلة البطالمة في مصر",
+      "image": ""
+    },
+    {
+      "id": "pharaonic-civilization-300-28",
+      "points": 300,
+      "question": "ما هو حجر رشيد؟",
+      "answer": "حجر كُتب عليه بالهيروغليفية والديموطية واليونانية",
+      "image": ""
+    },
+    {
+      "id": "pharaonic-civilization-300-29",
+      "points": 300,
+      "question": "ما هي مكتبة الإسكندرية القديمة؟",
+      "answer": "أكبر مكتبة في العالم القديم",
+      "image": ""
+    },
+    {
+      "id": "pharaonic-civilization-300-30",
+      "points": 300,
+      "question": "ما هو الفن الفرعوني؟",
+      "answer": "منحوتات ونقوش تمثل الآلهة والفراعنة",
+      "image": ""
+    },
+    {
+      "id": "pharaonic-civilization-300-31",
+      "points": 300,
+      "question": "ما هي اللغة المصرية القديمة؟",
+      "answer": "لغة المكتوبات على المعابد والمقابر",
       "image": ""
     },
     {
       "id": "pharaonic-civilization-300-32",
       "points": 300,
-      "question": "من هو خفرع؟",
-      "answer": "فرعون عصر الأسرات المبكرة",
+      "question": "ما هو نظام الكتابة الهيروغليفية؟",
+      "answer": "نظام كتابة رمزي يمثل الأصوات والمعاني",
       "image": ""
     },
     {
       "id": "pharaonic-civilization-300-33",
       "points": 300,
-      "question": "من هو منقرع؟",
-      "answer": "فرعون عصر الأسرات المبكرة",
+      "question": "ما هو البردي الفرعوني؟",
+      "answer": "ورق من نبات البردي للكتابة عليه",
       "image": ""
     },
     {
       "id": "pharaonic-civilization-300-34",
       "points": 300,
-      "question": "من هو دجر؟",
-      "answer": "فرعون عصر الأسرات المبكرة",
+      "question": "ما هو التقويم الفرعوني؟",
+      "answer": "تقويم شمسي يستخدم 365 يومًا",
       "image": ""
     },
     {
       "id": "pharaonic-civilization-300-35",
       "points": 300,
-      "question": "من هو كليوباترا؟",
-      "answer": "آخر فرعون مصري",
+      "question": "ما هي الديانة الفرعونية؟",
+      "answer": "نظام ديني يعبد آلهة متعددة",
       "image": ""
     },
     {
       "id": "pharaonic-civilization-300-36",
       "points": 300,
-      "question": "من هو بطليموس؟",
-      "answer": "حاكم البطالمة",
+      "question": "ما هو المللخ الفرعوني؟",
+      "answer": "م Registro de los días festivos",
       "image": ""
     },
     {
       "id": "pharaonic-civilization-300-37",
       "points": 300,
-      "question": "من هو الإسكندر الأكبر؟",
-      "answer": "فاتح مصر",
+      "question": "ما هو الإله أوزيريس؟",
+      "answer": "إله العالم الآخر والبعث",
       "image": ""
     },
     {
       "id": "pharaonic-civilization-300-38",
       "points": 300,
-      "question": "من هو بطليموس الأول؟",
-      "answer": "أول بطالمة",
+      "question": "ما هو الإله حورس؟",
+      "answer": "إله السماء والملكية",
       "image": ""
     },
     {
       "id": "pharaonic-civilization-300-39",
       "points": 300,
-      "question": "من هو بطليموس الثاني؟",
-      "answer": "بطالمة",
+      "question": "ما هو الإله إيزيس؟",
+      "answer": "إلهة السحر والحماية",
       "image": ""
     },
     {
       "id": "pharaonic-civilization-300-40",
       "points": 300,
-      "question": "من هو بطليموس الثالث؟",
-      "answer": "بطالمة",
+      "question": "ما هو الإله أنوبيس؟",
+      "answer": "إله التحنيط والمقابر",
       "image": ""
     },
     {
       "id": "pharaonic-civilization-300-41",
       "points": 300,
-      "question": "من هو بطليموس الرابع؟",
-      "answer": "بطالمة",
+      "question": "ما هي إلهة ماعت؟",
+      "answer": "إلهة العدالة والحقيقة",
       "image": ""
     },
     {
       "id": "pharaonic-civilization-300-42",
       "points": 300,
-      "question": "من هو بطليموس الخامس؟",
-      "answer": "بطالمة",
+      "question": "ما هو الإله تحوت؟",
+      "answer": "إله الحكمة والكتابة",
       "image": ""
     },
     {
       "id": "pharaonic-civilization-300-43",
       "points": 300,
-      "question": "من هو بطليموس السادس؟",
-      "answer": "بطالمة",
+      "question": "ما هو الإله رع؟",
+      "answer": "إله الشمس والخلق",
       "image": ""
     },
     {
       "id": "pharaonic-civilization-300-44",
       "points": 300,
-      "question": "من هو بطليموس السابع؟",
-      "answer": "بطالمة",
+      "question": "ما هو الإله بتاح؟",
+      "answer": "إله الحرف والعمارة",
       "image": ""
     },
     {
       "id": "pharaonic-civilization-300-45",
       "points": 300,
-      "question": "من هو بطليموس الثامن؟",
-      "answer": "بطالمة",
+      "question": "ما هو الإله سخمت؟",
+      "answer": "إلهة الحرب والشفاء",
       "image": ""
     },
     {
       "id": "pharaonic-civilization-300-46",
       "points": 300,
-      "question": "من هو بطليموس التاسع؟",
-      "answer": "بطالمة",
+      "question": "ما هي إلهة حتحور؟",
+      "answer": "إلهة الحب والجمال والموسيقى",
       "image": ""
     },
     {
       "id": "pharaonic-civilization-300-47",
       "points": 300,
-      "question": "من هو بطليموس العاشر؟",
-      "answer": "بطالمة",
+      "question": "ما هو الإله ست؟",
+      "answer": "إله الفوضى والصحراء",
       "image": ""
     },
     {
       "id": "pharaonic-civilization-300-48",
       "points": 300,
-      "question": "من هو بطليموس الحادي عشر؟",
-      "answer": "بطالمة",
+      "question": "ما هو الإله سوبك؟",
+      "answer": "إله التمساح والماء",
       "image": ""
     },
     {
       "id": "pharaonic-civilization-300-49",
       "points": 300,
-      "question": "من هو بطليموس الثاني عشر؟",
-      "answer": "آخر بطالمة",
+      "question": "ما هي إلهة نبت؟",
+      "answer": "إلهة النبات والخضرة",
       "image": ""
     },
     {
       "id": "pharaonic-civilization-300-50",
       "points": 300,
-      "question": "من هو كليوباترا السابعة؟",
-      "answer": "آخر فرعون مصري",
+      "question": "ما هو الإله منف؟",
+      "answer": "إله المدينة القديمة منف",
       "image": ""
     },
     {
       "id": "pharaonic-civilization-500-1",
       "points": 500,
       "question": "ما هو السبب الرئيسي لنجاح الحضارة الفرعونية؟",
-      "answer": "نهر النيل",
+      "answer": "نهر النيل والأرض الزراعية الخصبة",
       "image": ""
     },
     {
       "id": "pharaonic-civilization-500-2",
       "points": 500,
-      "question": "ما هو السبب الرئيسي لنجاح الحضارة الفرعونية؟",
-      "answer": "الأرض الخصبة",
+      "question": "ما هو السبب الرئيسي لسقوط الحضارة الفرعونية؟",
+      "answer": "الغزو الأجنبي والصراعات الداخلية",
       "image": ""
     },
     {
       "id": "pharaonic-civilization-500-3",
       "points": 500,
-      "question": "ما هو السبب الرئيسي لنجاح الحضارة الفرعونية؟",
-      "answer": "القيادة القوية",
+      "question": "ما هو الإرث الأهم للحضارة الفرعونية؟",
+      "answer": "الأهرامات والهيروغليف والتحنيط",
       "image": ""
     },
     {
       "id": "pharaonic-civilization-500-4",
       "points": 500,
-      "question": "ما هو السبب الرئيسي لنجاح الحضارة الفرعونية؟",
-      "answer": "الوحدة الدينية",
+      "question": "كيف أثّر الإسكندر الأكبر على مصر؟",
+      "answer": "أسس مدينة الإسكندرية ونشر الثقافة الهلينستية",
       "image": ""
     },
     {
       "id": "pharaonic-civilization-500-5",
       "points": 500,
-      "question": "ما هو السبب الرئيسي لنجاح الحضارة الفرعونية؟",
-      "answer": "نظام الكتابة",
+      "question": "ما هي أهم إنجازات رمسيس الثاني؟",
+      "answer": "بناء المعابد الكبرى وتوقيع أول معاهدة سلام",
       "image": ""
     },
     {
       "id": "pharaonic-civilization-500-6",
       "points": 500,
-      "question": "ما هو السبب الرئيسي لنجاح الحضارة الفرعونية؟",
-      "answer": "المهارات الهندسية",
+      "question": "كيف تم بناء الأهرامات؟",
+      "answer": "باستخدام الجدران الحجرية وال=Mathisian techniques",
       "image": ""
     },
     {
       "id": "pharaonic-civilization-500-7",
       "points": 500,
-      "question": "ما هو السبب الرئيسي لنجاح الحضارة الفرعونية؟",
-      "answer": "المعرفة الطبية",
+      "question": "ما هي أهم اكتشافات مصر القديمة؟",
+      "answer": "مقبرة توت عنخ آمون وحجر رشيد",
       "image": ""
     },
     {
       "id": "pharaonic-civilization-500-8",
       "points": 500,
-      "question": "ما هو السبب الرئيسي لنجاح الحضارة الفرعونية؟",
-      "answer": "الاستقرار السياسي",
+      "question": "كيف أثّرت الحضارة الفرعونية على الحضارات التالية؟",
+      "answer": "أثّرت في العمارة والديانة والكتابة في حوض البحر المتوسط",
       "image": ""
     },
     {
       "id": "pharaonic-civilization-500-9",
       "points": 500,
-      "question": "ما هو السبب الرئيسي لنجاح الحضارة الفرعونية؟",
-      "answer": "الازدهار الاقتصادي",
+      "question": "ما هي أهم المواد المستخدمة في البناء الفرعوني؟",
+      "answer": "حجر الجير والحجر الرملي والنحوت",
       "image": ""
     },
     {
       "id": "pharaonic-civilization-500-10",
       "points": 500,
-      "question": "ما هو السبب الرئيسي لنجاح الحضارة الفرعونية؟",
-      "answer": "النظام الاجتماعي",
-      "image": ""
-    },
-    {
-      "id": "pharaonic-civilization-500-11",
-      "points": 500,
-      "question": "ما هو السبب الرئيسي لسقوط الحضارة الفرعونية؟",
-      "answer": "الغزو الفارسي",
-      "image": ""
-    },
-    {
-      "id": "pharaonic-civilization-500-12",
-      "points": 500,
-      "question": "ما هو السبب الرئيسي لسقوط الحضارة الفرعونية؟",
-      "answer": "الصراع الداخلي",
-      "image": ""
-    },
-    {
-      "id": "pharaonic-civilization-500-13",
-      "points": 500,
-      "question": "ما هو السبب الرئيسي لسقوط الحضارة الفرعونية؟",
-      "answer": "الفقر والجفاف",
-      "image": ""
-    },
-    {
-      "id": "pharaonic-civilization-500-14",
-      "points": 500,
-      "question": "ما هو السبب الرئيسي لسقوط الحضارة الفرعونية؟",
-      "answer": "الحروب والصراعات",
-      "image": ""
-    },
-    {
-      "id": "pharaonic-civilization-500-15",
-      "points": 500,
-      "question": "ما هو السبب الرئيسي لسقوط الحضارة الفرعونية؟",
-      "answer": "ضعف الجيش",
-      "image": ""
-    },
-    {
-      "id": "pharaonic-civilization-500-16",
-      "points": 500,
-      "question": "ما هو الإرث الأهم للحضارة الفرعونية؟",
-      "answer": "الأهرامات",
-      "image": ""
-    },
-    {
-      "id": "pharaonic-civilization-500-17",
-      "points": 500,
-      "question": "ما هو الإرث الأهم للحضارة الفرعونية؟",
-      "answer": "الهيروغليف",
-      "image": ""
-    },
-    {
-      "id": "pharaonic-civilization-500-18",
-      "points": 500,
-      "question": "ما هو الإرث الأهم للحضارة الفرعونية؟",
-      "answer": "التحنيط",
-      "image": ""
-    },
-    {
-      "id": "pharaonic-civilization-500-19",
-      "points": 500,
-      "question": "ما هو الإرث الأهم للحضارة الفرعونية؟",
-      "answer": "الطب",
-      "image": ""
-    },
-    {
-      "id": "pharaonic-civilization-500-20",
-      "points": 500,
-      "question": "ما هو الإرث الأهم للحضارة الفرعونية؟",
-      "answer": "الفلك",
-      "image": ""
-    },
-    {
-      "id": "pharaonic-civilization-500-21",
-      "points": 500,
-      "question": "ما هو الإرث الأهم للحضارة الفرعونية؟",
-      "answer": "الرياضيات",
-      "image": ""
-    },
-    {
-      "id": "pharaonic-civilization-500-22",
-      "points": 500,
-      "question": "ما هو الإرث الأهم للحضارة الفرعونية؟",
-      "answer": "الهندسة",
-      "image": ""
-    },
-    {
-      "id": "pharaonic-civilization-500-23",
-      "points": 500,
-      "question": "ما هو الإرث الأهم للحضارة الفرعونية؟",
-      "answer": "الفن",
-      "image": ""
-    },
-    {
-      "id": "pharaonic-civilization-500-24",
-      "points": 500,
-      "question": "ما هو الإرث الأهم للحضارة الفرعونية؟",
-      "answer": "الأدب",
-      "image": ""
-    },
-    {
-      "id": "pharaonic-civilization-500-25",
-      "points": 500,
-      "question": "ما هو الإرث الأهم للحضارة الفرعونية؟",
-      "answer": "العمارة",
-      "image": ""
-    },
-    {
-      "id": "pharaonic-civilization-500-26",
-      "points": 500,
-      "question": "ما هو الإرث الأهم للحضارة الفرعونية؟",
-      "answer": "الحضارة",
-      "image": ""
-    },
-    {
-      "id": "pharaonic-civilization-500-27",
-      "points": 500,
-      "question": "ما هو الإرث الأهم للحضارة الفرعونية؟",
-      "answer": "الإنسانية",
-      "image": ""
-    },
-    {
-      "id": "pharaonic-civilization-500-28",
-      "points": 500,
-      "question": "ما هو الإرث الأهم للحضارة الفرعونية؟",
-      "answer": "العالم",
-      "image": ""
-    },
-    {
-      "id": "pharaonic-civilization-500-29",
-      "points": 500,
-      "question": "ما هو الإرث الأهم للحضارة الفرعونية؟",
-      "answer": "التاريخ",
-      "image": ""
-    },
-    {
-      "id": "pharaonic-civilization-500-30",
-      "points": 500,
-      "question": "ما هو الإرث الأهم للحضارة الفرعونية؟",
-      "answer": "المستقبل",
-      "image": ""
-    },
-    {
-      "id": "pharaonic-civilization-500-31",
-      "points": 500,
-      "question": "ما هو الإرث الأهم للحضارة الفرعونية؟",
-      "answer": "الأمل",
-      "image": ""
-    },
-    {
-      "id": "pharaonic-civilization-500-32",
-      "points": 500,
-      "question": "ما هو الإرث الأهم للحضارة الفرعونية؟",
-      "answer": "الإلهام",
-      "image": ""
-    },
-    {
-      "id": "pharaonic-civilization-500-33",
-      "points": 500,
-      "question": "ما هو الإرث الأهم للحضارة الفرعونية؟",
-      "answer": "الخيال",
-      "image": ""
-    },
-    {
-      "id": "pharaonic-civilization-500-34",
-      "points": 500,
-      "question": "ما هو الإرث الأهم للحضارة الفرعونية؟",
-      "answer": "الإبداع",
-      "image": ""
-    },
-    {
-      "id": "pharaonic-civilization-500-35",
-      "points": 500,
-      "question": "ما هو الإرث الأهم للحضارة الفرعونية؟",
-      "answer": "الابتكار",
-      "image": ""
-    },
-    {
-      "id": "pharaonic-civilization-500-36",
-      "points": 500,
-      "question": "ما هو الإرث الأهم للحضارة الفرعونية؟",
-      "answer": "الإنجاز",
-      "image": ""
-    },
-    {
-      "id": "pharaonic-civilization-500-37",
-      "points": 500,
-      "question": "ما هو الإرث الأهم للحضارة الفرعونية؟",
-      "answer": "التميز",
-      "image": ""
-    },
-    {
-      "id": "pharaonic-civilization-500-38",
-      "points": 500,
-      "question": "ما هو الإرث الأهم للحضارة الفرعونية؟",
-      "answer": "الشهرة",
-      "image": ""
-    },
-    {
-      "id": "pharaonic-civilization-500-39",
-      "points": 500,
-      "question": "ما هو الإرث الأهم للحضارة الفرعونية؟",
-      "answer": "المجد",
-      "image": ""
-    },
-    {
-      "id": "pharaonic-civilization-500-40",
-      "points": 500,
-      "question": "ما هو الإرث الأهم للحضارة الفرعونية؟",
-      "answer": "العظمة",
-      "image": ""
-    },
-    {
-      "id": "pharaonic-civilization-500-41",
-      "points": 500,
-      "question": "ما هو الإرث الأهم للحضارة الفرعونية؟",
-      "answer": "الخلود",
-      "image": ""
-    },
-    {
-      "id": "pharaonic-civilization-500-42",
-      "points": 500,
-      "question": "ما هو الإرث الأهم للحضارة الفرعونية؟",
-      "answer": "الأبدية",
-      "image": ""
-    },
-    {
-      "id": "pharaonic-civilization-500-43",
-      "points": 500,
-      "question": "ما هو الإرث الأهم للحضارة الفرعونية؟",
-      "answer": "الخلق",
-      "image": ""
-    },
-    {
-      "id": "pharaonic-civilization-500-44",
-      "points": 500,
-      "question": "ما هو الإرث الأهم للحضارة الفرعونية؟",
-      "answer": "الجمال",
-      "image": ""
-    },
-    {
-      "id": "pharaonic-civilization-500-45",
-      "points": 500,
-      "question": "ما هو الإرث الأهم للحضارة الفرعونية؟",
-      "answer": "الفن",
-      "image": ""
-    },
-    {
-      "id": "pharaonic-civilization-500-46",
-      "points": 500,
-      "question": "ما هو الإرث الأهم للحضارة الفرعونية؟",
-      "answer": "الثقافة",
-      "image": ""
-    },
-    {
-      "id": "pharaonic-civilization-500-47",
-      "points": 500,
-      "question": "ما هو الإرث الأهم للحضارة الفرعونية؟",
-      "answer": "الحضارة",
-      "image": ""
-    },
-    {
-      "id": "pharaonic-civilization-500-48",
-      "points": 500,
-      "question": "ما هو الإرث الأهم للحضارة الفرعونية؟",
-      "answer": "الإنسانية",
-      "image": ""
-    },
-    {
-      "id": "pharaonic-civilization-500-49",
-      "points": 500,
-      "question": "ما هو الإرث الأهم للحضارة الفرعونية؟",
-      "answer": "العالم",
-      "image": ""
-    },
-    {
-      "id": "pharaonic-civilization-500-50",
-      "points": 500,
-      "question": "ما هو الإرث الأهم للحضارة الفرعونية؟",
-      "answer": "التاريخ",
+      "question": "كيف كان نظام الحكم في مصر القديمة؟",
+      "answer": "حكم ملكي مطلق يُعتبر الفرعون إلهًا على الأرض",
       "image": ""
     }
   ],
   "metadata": {
     "sectionId": "history",
-    "updatedAt": "2026-08-03",
+    "updatedAt": "2026-08-18",
     "status": "ready"
   }
 }

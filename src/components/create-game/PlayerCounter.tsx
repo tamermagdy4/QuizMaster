@@ -15,7 +15,7 @@ export function PlayerCounter({ label, value, onDecrease, onIncrease }: PlayerCo
 
   return (
     <div className="space-y-2">
-      <p className="text-sm font-bold text-orange-900/70">{label}</p>
+      <p className="text-sm font-bold text-cream/70">{label}</p>
       <div className="flex items-center gap-3">
         <CounterButton
           label="تقليل"
@@ -29,7 +29,7 @@ export function PlayerCounter({ label, value, onDecrease, onIncrease }: PlayerCo
           key={value}
           initial={{ scale: 0.85, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
-          className="min-w-10 text-center text-xl font-black text-orange-600"
+          className="score-number min-w-10 text-center text-xl font-black text-gold-bright"
         >
           {value}
         </motion.span>
@@ -64,8 +64,8 @@ function CounterButton({ children, label, disabled, onClick }: CounterButtonProp
       className={cn(
         'flex h-10 w-10 items-center justify-center rounded-xl border-2 text-lg font-black transition',
         disabled
-          ? 'cursor-not-allowed border-gray-200 bg-gray-100 text-gray-400'
-          : 'border-orange-400 bg-gradient-to-br from-orange-400 to-orange-600 text-white shadow-[0_6px_16px_rgba(249,115,22,0.3)]',
+          ? 'cursor-not-allowed border-white/10 bg-white/5 text-cream/30'
+          : 'border-[#20616C] bg-gradient-to-b from-[#20616C] to-[#123B46] text-white shadow-[0_6px_16px_rgba(18,59,70,0.4)]',
       )}
     >
       {children}
