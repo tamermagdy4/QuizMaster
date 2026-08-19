@@ -37,6 +37,7 @@ export function Results() {
     clearOnlineSession()
     useGameBoardStore.setState({
       isInitialized: false,
+      gameMode: 'local',
       gameName: '',
       team1Name: '',
       team2Name: '',
@@ -54,8 +55,21 @@ export function Results() {
       ffaPendingDoublePlayerId: null,
       ffaBlockedPlayerId: null,
       ffaCallFriendPlayerId: null,
+      pendingDoublePoints: null,
+      blockActive: null,
+      callFriendActive: null,
+      callFriendTimeLeft: 0,
+      callFriendHint: null,
+      wheelBonus: null,
+      wheelPending: false,
+      wheelPendingTeam: null,
+      ffaWheelPendingPlayerId: null,
       isGameFinished: false,
       isRevealed: false,
+      answerSubmitted: false,
+      selectedAnswer: null,
+      answerCorrect: null,
+      answerPoints: 0,
     })
     navigate('/create')
   }

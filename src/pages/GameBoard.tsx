@@ -5,7 +5,7 @@ import { CategoryBoard } from '../components/game-board/CategoryBoard'
 import { GameBoardHeader } from '../components/game-board/GameBoardHeader'
 import { LifelineList } from '../components/game-board/LifelineList'
 import { WheelOfFortune } from '../components/game-board/WheelOfFortune'
-import type { LifelineId } from '../types/board'
+import { POINT_SLOTS, type LifelineId } from '../types/board'
 import type { TeamId } from '../types/game'
 import { useGameBoardStore } from '../store/gameBoardStore'
 import { useAppStore } from '../store/appStore'
@@ -597,18 +597,28 @@ export function GameBoard() {
   useEffect(() => {
     if (cells.length === 0) return
 
-    const allUsed = cells
-      .flat()
-      .every(
-        (cell) =>
-          cell.team1Played &&
-          cell.team2Played,
+    const isFfa = gameMode === 'online' && ffaPlayers.length >= 3
+
+    let allUsed: boolean
+    if (isFfa) {
+      const totalCells = categoryIds.length * POINT_SLOTS.length
+      allUsed = ffaPlayers.length >= 3 && ffaPlayers.every(
+        (player) => player.usedCells.length >= totalCells,
       )
+    } else {
+      allUsed = cells
+        .flat()
+        .every(
+          (cell) =>
+            cell.team1Played &&
+            cell.team2Played,
+        )
+    }
 
     if (allUsed) {
       navigate('/results')
     }
-  }, [cells, navigate])
+  }, [cells, navigate, gameMode, ffaPlayers, categoryIds])
 
   /*
    * ============================
@@ -2043,6 +2053,11 @@ export function GameBoard() {
                           font-semibold
                           text-white
 
+                          max-[640px]:rounded-lg
+                          max-[640px]:px-2.5
+                          max-[640px]:py-1.5
+                          max-[640px]:text-[11px]
+
                           landscape:max-md:rounded-lg
                           landscape:max-md:px-2
                           landscape:max-md:py-1
@@ -2077,6 +2092,11 @@ export function GameBoard() {
                           py-2
                           font-semibold
                           text-white
+
+                          max-[640px]:rounded-lg
+                          max-[640px]:px-2.5
+                          max-[640px]:py-1.5
+                          max-[640px]:text-[11px]
 
                           landscape:max-md:rounded-lg
                           landscape:max-md:px-2
@@ -2116,6 +2136,12 @@ export function GameBoard() {
                               transition
                               hover:bg-emerald-500/30
 
+                              max-[640px]:rounded-lg
+                              max-[640px]:border
+                              max-[640px]:px-2.5
+                              max-[640px]:py-1.5
+                              max-[640px]:text-[11px]
+
                               landscape:max-md:rounded-lg
                               landscape:max-md:border
                               landscape:max-md:px-2
@@ -2146,6 +2172,12 @@ export function GameBoard() {
                               shadow-red-500/10
                               transition
                               hover:bg-red-500/30
+
+                              max-[640px]:rounded-lg
+                              max-[640px]:border
+                              max-[640px]:px-2.5
+                              max-[640px]:py-1.5
+                              max-[640px]:text-[11px]
 
                               landscape:max-md:rounded-lg
                               landscape:max-md:border
@@ -2185,6 +2217,7 @@ export function GameBoard() {
                               grid
                               grid-cols-3
                               gap-1.5
+                              max-[640px]:gap-1
                               sm:mt-3
                               sm:gap-3
 
@@ -2218,12 +2251,22 @@ export function GameBoard() {
                               `
                                 rounded-xl
                                 border-2
-                                px-4
-                                py-5
-                                text-lg
+                                px-2
+                                py-3
+                                text-xs
                                 font-bold
                                 shadow-lg
                                 transition
+
+                                max-[640px]:rounded-lg
+                                max-[640px]:border
+                                max-[640px]:px-1.5
+                                max-[640px]:py-2
+                                max-[640px]:text-[10px]
+
+                                sm:px-4
+                                sm:py-5
+                                sm:text-lg
 
                                 landscape:max-md:rounded-lg
                                 landscape:max-md:border
@@ -2279,12 +2322,22 @@ export function GameBoard() {
                               `
                                 rounded-xl
                                 border-2
-                                px-4
-                                py-5
-                                text-lg
+                                px-2
+                                py-3
+                                text-xs
                                 font-bold
                                 shadow-lg
                                 transition
+
+                                max-[640px]:rounded-lg
+                                max-[640px]:border
+                                max-[640px]:px-1.5
+                                max-[640px]:py-2
+                                max-[640px]:text-[10px]
+
+                                sm:px-4
+                                sm:py-5
+                                sm:text-lg
 
                                 landscape:max-md:rounded-lg
                                 landscape:max-md:border
@@ -2334,14 +2387,24 @@ export function GameBoard() {
                               border-2
                               border-gray-600/40
                               bg-gray-700/20
-                              px-4
-                              py-5
-                              text-lg
+                              px-2
+                              py-3
+                              text-xs
                               font-bold
                               text-gray-400
                               shadow-lg
                               shadow-gray-600/10
                               hover:bg-gray-700/30
+
+                              max-[640px]:rounded-lg
+                              max-[640px]:border
+                              max-[640px]:px-1.5
+                              max-[640px]:py-2
+                              max-[640px]:text-[10px]
+
+                              sm:px-4
+                              sm:py-5
+                              sm:text-lg
 
                               landscape:max-md:rounded-lg
                               landscape:max-md:border
