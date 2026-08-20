@@ -10,7 +10,6 @@ import { cn } from '../utils/cn'
 
 const navItems: NavItem[] = [
   { path: '/', label: 'الرئيسية' },
-  { path: '/packs', label: 'الباقات' },
   { path: '/create', label: 'إنشاء لعبة' },
   { path: '/board', label: 'لوحة اللعب' },
   { path: '/question', label: 'السؤال' },
@@ -46,8 +45,8 @@ export function MainLayout() {
   const { direction, setDirection, theme, animationsEnabled } = useAppStore()
   const language = direction === 'rtl' ? 'ar' : 'en'
   const navLabels = language === 'ar'
-    ? { '/': 'الرئيسية', '/packs': 'الباقات', '/create': 'إنشاء لعبة', '/online': 'الأونلاين', '/question': 'السؤال', '/about': 'عن المطور', '/board': 'لوحة اللعب', '/results': 'النتائج', '/settings': 'الإعدادات', '/admin': 'الإدارة' }
-    : { '/': 'Home', '/packs': 'Packs', '/create': 'Create Game', '/online': 'Online', '/question': 'Question', '/about': 'About', '/board': 'Game Board', '/results': 'Results', '/settings': 'Settings', '/admin': 'Admin' }
+    ? { '/': 'الرئيسية', '/create': 'إنشاء لعبة', '/online': 'الأونلاين', '/question': 'السؤال', '/about': 'عن المطور', '/board': 'لوحة اللعب', '/results': 'النتائج', '/settings': 'الإعدادات', '/admin': 'الإدارة' }
+    : { '/': 'Home', '/create': 'Create Game', '/online': 'Online', '/question': 'Question', '/about': 'About', '/board': 'Game Board', '/results': 'Results', '/settings': 'Settings', '/admin': 'Admin' }
 
   // Close the mobile drawer on navigation
   useEffect(() => {
@@ -78,7 +77,9 @@ export function MainLayout() {
     location.pathname === '/question' ||
     location.pathname === '/results' ||
     location.pathname === '/online' ||
-    location.pathname.startsWith('/online/')
+    location.pathname.startsWith('/online/') ||
+    location.pathname === '/live' ||
+    location.pathname.startsWith('/live/')
   const darkChrome = homeTop || (isGameRoute && theme !== 'light')
 
   return (
@@ -89,7 +90,7 @@ export function MainLayout() {
       )}
 
       {/* ===== Header ===== */}
-      <header className={cn('sticky top-0 z-50 border-b transition-colors duration-300', darkChrome ? 'border-[#526473]/25 bg-[#060f17]/75 backdrop-blur-md' : 'border-border-soft/70 bg-white/85 backdrop-blur-xl')}>
+      <header className={cn('sticky top-0 z-50 border-b transition-colors duration-300', darkChrome ? 'border-[#526473]/25 bg-[#060f17]/90' : 'border-border-soft/70 bg-white/95')}>
         <div className="mx-auto flex h-16 w-full max-w-7xl items-center justify-between gap-4 px-4 sm:px-6">
           {/* Brand */}
           <Link to="/" className="group flex items-center gap-3">

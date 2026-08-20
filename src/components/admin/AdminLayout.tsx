@@ -11,7 +11,6 @@ const links = [
   { to: '/admin', label: 'Dashboard', ar: 'لوحة التحكم', icon: '▦', end: true },
   { to: '/admin/questions', label: 'Questions', ar: 'الأسئلة', icon: '❓' },
   { to: '/admin/categories', label: 'Categories', ar: 'الفئات', icon: '▤' },
-  { to: '/admin/packs', label: 'Packs', ar: 'الباقات', icon: '▤' },
   { to: '/admin/import', label: 'Import JSON', ar: 'استيراد JSON', icon: '↑' },
   { to: '/admin/export', label: 'Export JSON', ar: 'تصدير JSON', icon: '↓' },
   { to: '/admin/statistics', label: 'Statistics', ar: 'الإحصائيات', icon: '◒' },
@@ -95,7 +94,7 @@ export function AdminLayout() {
         </div>
       </aside>
       <div className="lg:ms-72">
-        <header className="sticky top-0 z-20 border-b border-white/10 bg-[#050e1d]/90 px-4 py-4 backdrop-blur-xl sm:px-8">
+        <header className="sticky top-0 z-20 border-b border-white/10 bg-[#050e1d]/97 px-4 py-4 sm:px-8">
           <div className="flex items-center justify-between gap-4">
             <div>
               <p className="text-xs font-bold uppercase tracking-[.2em] text-cyan-300">Admin workspace</p>

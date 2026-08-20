@@ -79,7 +79,7 @@ export function HelpMenu({ lifelines, accent, getDisabled, activeLifelineId, onS
             exit={{ opacity: 0, scale: 0.97, y: -4 }}
             transition={{ duration: 0.18, ease: 'easeOut' }}
             className={cn(
-              'absolute end-0 top-full z-50 mt-2 w-64 origin-top-end rounded-2xl border border-white/10 bg-[#0B1526]/95 p-2 shadow-[0_22px_60px_rgba(0,0,0,0.6)] backdrop-blur-xl sm:w-72',
+              'absolute end-0 top-full z-50 mt-2 w-64 origin-top-end rounded-2xl border border-white/10 bg-[#0B1526]/98 p-2 shadow-[0_22px_60px_rgba(0,0,0,0.6)] sm:w-72',
             )}
           >
             <div className="mb-1.5 flex items-center justify-between border-b border-white/10 px-2 pb-2">

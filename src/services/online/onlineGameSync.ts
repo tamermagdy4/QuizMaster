@@ -371,10 +371,8 @@ export function applyRemoteGameEvent(event: OnlineGameEvent): void {
         break
       }
       case 'ANSWER_REVEALED': {
-        // Revealing the answer is a HOST-only control: a forged event from a
-        // non-host player is ignored so the joiner can never force a reveal.
-        const room = useOnlineStore.getState().room
-        if (!room || event.playerId !== room.hostId) break
+        // Any player may reveal the answer — the state is synced to everyone.
+        // Correction buttons remain host-only in resolveQuestion() and the UI.
         useGameBoardStore.setState({ isRevealed: event.payload.revealed })
         break
       }

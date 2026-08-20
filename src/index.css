@@ -669,6 +669,307 @@
 }
 
 /* =========================================================
+   PARTY DESIGN SYSTEM — Sporcle-style party game tokens
+   Bold, vibrant, playful. Circular badges, cartoon mascots,
+   generous radii, large touch targets.
+   ========================================================= */
+
+@layer components {
+  /* --- Party color palette --- */
+  --party-orange: #FF6B35;
+  --party-orange-light: #FF9F1C;
+  --party-blue: #3A86FF;
+  --party-blue-deep: #2563EB;
+  --party-purple: #8338EC;
+  --party-purple-light: #A855F7;
+  --party-yellow: #FFBE0B;
+  --party-yellow-light: #FCD34D;
+  --party-pink: #FF006E;
+  --party-green: #06D6A0;
+  --party-green-deep: #059669;
+  --party-cyan: #00B4D8;
+
+  /* --- Party backgrounds --- */
+  --party-bg: linear-gradient(135deg, #0F0720 0%, #1A0B2E 30%, #16213E 70%, #0F0720 100%);
+  --party-bg-warm: linear-gradient(135deg, #1A0B2E 0%, #2D1B69 50%, #1A0B2E 100%);
+  --party-surface: rgba(255, 255, 255, 0.06);
+  --party-surface-hover: rgba(255, 255, 255, 0.1);
+  --party-border: rgba(255, 255, 255, 0.1);
+  --party-border-hover: rgba(255, 255, 255, 0.2);
+
+  /* --- Party text --- */
+  --party-text: #F8FAFC;
+  --party-text-dim: rgba(248, 250, 252, 0.6);
+  --party-text-muted: rgba(248, 250, 252, 0.4);
+
+  /* --- Category colors --- */
+  --cat-sports: #06D6A0;
+  --cat-geography: #3A86FF;
+  --cat-music: #FF006E;
+  --cat-movies: #FF6B35;
+  --cat-history: #FFBE0B;
+  --cat-science: #8338EC;
+  --cat-religion: #00B4D8;
+  --cat-occasions: #F97316;
+  --cat-general: #6366F1;
+}
+
+/* =========================================================
+   PARTY COMPONENTS
+   ========================================================= */
+
+@layer components {
+
+  /* --- Circle badge (Sporcle-style circular card) --- */
+  .circle-badge {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid rgba(255, 255, 255, 0.15);
+    background: var(--party-surface);
+    backdrop-filter: blur(12px);
+    transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    overflow: hidden;
+  }
+  .circle-badge:hover {
+    transform: scale(1.08);
+    border-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.1);
+  }
+  .circle-badge:active {
+    transform: scale(0.95);
+  }
+  .circle-badge-lg {
+    width: 140px;
+    height: 140px;
+  }
+  .circle-badge-sm {
+    width: 80px;
+    height: 80px;
+  }
+
+  /* --- Party pack card --- */
+  .party-card {
+    position: relative;
+    border-radius: 1.25rem;
+    border: 1px solid var(--party-border);
+    background: var(--party-surface);
+    backdrop-filter: blur(16px);
+    overflow: hidden;
+    transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+  .party-card:hover {
+    transform: translateY(-4px) scale(1.02);
+    border-color: var(--party-border-hover);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  }
+  .party-card:active {
+    transform: translateY(-1px) scale(0.98);
+  }
+
+  /* --- Party button (large, bold, playful) --- */
+  .party-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    border-radius: 1rem;
+    font-weight: 800;
+    font-size: 1.1rem;
+    line-height: 1;
+    padding: 1rem 2rem;
+    min-height: 56px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.15s ease, box-shadow 0.25s ease, filter 0.2s ease;
+    cursor: pointer;
+  }
+  .party-btn:active {
+    transform: translateY(2px) scale(0.96);
+  }
+  .party-btn:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+    transform: none;
+  }
+
+  .party-btn-primary {
+    color: #fff;
+    background: linear-gradient(135deg, var(--party-orange) 0%, var(--party-pink) 100%);
+    border: 2px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 30px rgba(255, 107, 53, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  }
+  .party-btn-primary:hover:not(:disabled) {
+    filter: brightness(1.1);
+    box-shadow: 0 12px 40px rgba(255, 107, 53, 0.45), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+  }
+
+  .party-btn-secondary {
+    color: #fff;
+    background: linear-gradient(135deg, var(--party-blue) 0%, var(--party-purple) 100%);
+    border: 2px solid rgba(255, 255, 255, 0.12);
+    box-shadow: 0 8px 30px rgba(58, 134, 255, 0.3);
+  }
+  .party-btn-secondary:hover:not(:disabled) {
+    filter: brightness(1.1);
+    box-shadow: 0 12px 40px rgba(58, 134, 255, 0.4);
+    transform: translateY(-2px);
+  }
+
+  .party-btn-ghost {
+    color: var(--party-text);
+    background: var(--party-surface);
+    border: 1px solid var(--party-border);
+  }
+  .party-btn-ghost:hover:not(:disabled) {
+    background: var(--party-surface-hover);
+    border-color: var(--party-border-hover);
+  }
+
+  /* --- Party input --- */
+  .party-input {
+    width: 100%;
+    padding: 0.875rem 1.25rem;
+    border-radius: 0.875rem;
+    border: 2px solid var(--party-border);
+    background: rgba(255, 255, 255, 0.06);
+    color: var(--party-text);
+    font-size: 1rem;
+    font-weight: 600;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  }
+  .party-input::placeholder {
+    color: var(--party-text-muted);
+  }
+  .party-input:focus {
+    outline: none;
+    border-color: var(--party-blue);
+    box-shadow: 0 0 0 3px rgba(58, 134, 255, 0.2);
+  }
+
+  /* --- Party chip --- */
+  .party-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.5rem 1rem;
+    border-radius: 999px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    border: 1px solid var(--party-border);
+    background: var(--party-surface);
+    color: var(--party-text-dim);
+    transition: all 0.15s ease;
+    cursor: pointer;
+  }
+  .party-chip:hover {
+    border-color: var(--party-border-hover);
+    color: var(--party-text);
+    background: var(--party-surface-hover);
+  }
+  .party-chip-active {
+    border-color: var(--party-orange);
+    background: rgba(255, 107, 53, 0.15);
+    color: var(--party-orange);
+    box-shadow: 0 0 20px rgba(255, 107, 53, 0.15);
+  }
+
+  /* --- Party avatar ring --- */
+  .party-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    background: var(--party-surface);
+    flex-shrink: 0;
+  }
+  .party-avatar-lg {
+    width: 64px;
+    height: 64px;
+    font-size: 1.5rem;
+  }
+
+  /* --- Leaderboard row --- */
+  .leaderboard-row {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
+    border-radius: 0.875rem;
+    border: 1px solid var(--party-border);
+    background: var(--party-surface);
+    transition: background 0.15s ease;
+  }
+  .leaderboard-row-1 {
+    border-color: rgba(255, 190, 11, 0.4);
+    background: rgba(255, 190, 11, 0.08);
+  }
+  .leaderboard-row-2 {
+    border-color: rgba(192, 192, 192, 0.3);
+    background: rgba(192, 192, 192, 0.05);
+  }
+  .leaderboard-row-3 {
+    border-color: rgba(205, 127, 50, 0.3);
+    background: rgba(205, 127, 50, 0.05);
+  }
+
+  /* --- Party room code display --- */
+  .party-room-code {
+    font-family: var(--font-display);
+    font-size: 3.5rem;
+    font-weight: 800;
+    letter-spacing: 0.15em;
+    background: linear-gradient(135deg, var(--party-yellow) 0%, var(--party-orange) 50%, var(--party-pink) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-align: center;
+    line-height: 1;
+  }
+}
+
+/* Party page ambient decorations */
+@keyframes party-float {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  25% { transform: translateY(-12px) rotate(5deg); }
+  75% { transform: translateY(8px) rotate(-3deg); }
+}
+.party-float {
+  animation: party-float 4s ease-in-out infinite;
+  will-change: transform;
+}
+
+@keyframes party-pulse {
+  0%, 100% { opacity: 0.6; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.05); }
+}
+.party-pulse {
+  animation: party-pulse 2s ease-in-out infinite;
+  will-change: transform, opacity;
+}
+
+@keyframes party-shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+.party-shimmer {
+  background-size: 200% 100%;
+  animation: party-shimmer 3s linear infinite;
+}
+
+/* =========================================================
    SAFE AREA FOR PHONES (portrait)
    ========================================================= */
 
@@ -741,19 +1042,19 @@
    ========================================================= */
 
 @media (max-width: 900px) and (orientation: landscape) {
-  main {
+  main:not(:has(.scroll-story)) {
     padding: 0.25rem 0.5rem;
     max-height: 100dvh;
     overflow-y: auto;
   }
 
-  main section {
+  main:not(:has(.scroll-story)) section {
     max-height: 98dvh;
     overflow-y: auto;
   }
 
-  main section img,
-  main section video {
+  main:not(:has(.scroll-story)) section img,
+  main:not(:has(.scroll-story)) section video {
     max-height: 30vh !important;
     object-fit: contain;
   }

@@ -68,6 +68,12 @@ export const useAppStore = create<AppState>()(
           ...persisted,
           direction,
           language,
+          enabledLifelines: Array.isArray(persisted.enabledLifelines) && persisted.enabledLifelines.length > 0
+            ? persisted.enabledLifelines
+            : currentState.enabledLifelines,
+          soundEnabled: typeof persisted.soundEnabled === 'boolean' ? persisted.soundEnabled : currentState.soundEnabled,
+          theme: persisted.theme === 'light' || persisted.theme === 'premium' ? persisted.theme : currentState.theme,
+          animationsEnabled: typeof persisted.animationsEnabled === 'boolean' ? persisted.animationsEnabled : currentState.animationsEnabled,
         }
       },
     },

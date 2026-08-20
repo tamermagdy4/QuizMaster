@@ -69,7 +69,7 @@ export function CategoryPanel({
       <span aria-hidden className="pointer-events-none absolute inset-x-6 top-0 h-[2px] rounded-full bg-gradient-to-r from-transparent via-[#D4A843]/70 to-transparent" />
 
       {/* Category title bar — always readable */}
-      <div className="relative z-10 flex shrink-0 items-center justify-center gap-1 border-b border-white/10 bg-[#050b13]/80 px-2 py-1.5 backdrop-blur-sm sm:gap-2 sm:py-2">
+      <div className="relative z-10 flex shrink-0 items-center justify-center gap-1 border-b border-white/10 bg-[#050b13]/95 px-2 py-1.5 sm:gap-2 sm:py-2">
         <span className="text-xs leading-none drop-shadow-[0_2px_5px_rgba(0,0,0,0.9)] sm:text-base" aria-hidden>
           {category.icon}
         </span>

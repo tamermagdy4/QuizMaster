@@ -1,10 +1,4 @@
-import { useEffect, useState } from 'react'
 import { ADMIN_POINTS, getCategoryStats, getAdminQuestions } from '../../utils/adminData'
-import {
-  getPackStatisticsForAdmin,
-  type PackCreatorStat,
-  type PackStatistics,
-} from '../../services/packQuizService'
 
 function StatCard({ label, value, suffix, accent }: { label: string; value: string | number; suffix?: string; accent?: string }) {
   return (
@@ -14,77 +8,6 @@ function StatCard({ label, value, suffix, accent }: { label: string; value: stri
         {value}
         {suffix ? <span className="ms-1 text-lg font-bold text-slate-500">{suffix}</span> : null}
       </p>
-    </div>
-  )
-}
-
-function PackStatsSection() {
-  const [stats, setStats] = useState<PackStatistics | null>(null)
-
-  useEffect(() => {
-    let active = true
-    void getPackStatisticsForAdmin().then((result) => {
-      if (active) setStats(result)
-    })
-    return () => {
-      active = false
-    }
-  }, [])
-
-  return (
-    <div className="space-y-6">
-      <div>
-        <p className="text-sm font-bold text-sky-400">اختبارات وأسئلة الباقات</p>
-        <h3 className="mt-1 text-2xl font-black">إحصائيات المحتوى المخصص</h3>
-        <p className="mt-1 text-sm text-slate-400">حسابات مجمّعة من اختبارات وأسئلة الباقات التي أنشأها المستخدمون.</p>
-      </div>
-
-      {stats === null ? (
-        <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
-          {[0, 1, 2, 3].map((item) => (
-            <div key={item} className="h-28 animate-pulse rounded-2xl border border-slate-800 bg-slate-900" />
-          ))}
-        </div>
-      ) : (
-        <>
-          <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
-            <StatCard label="اختبارات مخصصة" value={stats.totalCustomQuizzes} accent="text-sky-300" />
-            <StatCard label="أسئلة الباقات" value={stats.totalPackQuestions} accent="text-teal-300" />
-            <StatCard label="متوسط النقاط" value={stats.avgPoints} accent="text-amber-300" />
-            <StatCard label="أسئلة بصور" value={stats.questionsWithImages} accent="text-emerald-300" />
-          </div>
-
-          <div className="rounded-2xl border border-slate-800 bg-slate-900 p-5">
-            <h3 className="font-black">أكثر المنشئين نشاطًا</h3>
-            {stats.topCreators.length === 0 ? (
-              <p className="mt-4 text-sm text-slate-400">
-                لا يوجد محتوى مخصص بعد — أنشئ أول باقة أو اختبار مخصص لرؤية الإحصائيات هنا.
-              </p>
-            ) : (
-              <ul className="mt-4 space-y-3">
-                {stats.topCreators.map((creator: PackCreatorStat, index) => (
-                  <li key={creator.creatorId} className="flex items-center justify-between gap-4 rounded-lg bg-slate-800 px-3 py-2.5">
-                    <div className="flex min-w-0 items-center gap-3">
-                      <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-sky-500/30 to-teal-500/30 text-sm font-black text-sky-300">
-                        {index + 1}
-                      </span>
-                      <span className="truncate font-bold text-slate-100">{creator.creatorName || 'مستخدم'}</span>
-                    </div>
-                    <div className="flex shrink-0 items-center gap-4 text-sm text-slate-400">
-                      <span>{creator.quizCount} اختبار</span>
-                      <span>{creator.questionCount} سؤال</span>
-                      <span className="text-amber-300">{creator.avgPoints} نقطة</span>
-                    </div>
-                  </li>
-                ))}
-              </ul>
-            )}
-            {stats.totalCreators > stats.topCreators.length ? (
-              <p className="mt-3 text-xs text-slate-500">+{stats.totalCreators - stats.topCreators.length} منشئ آخر</p>
-            ) : null}
-          </div>
-        </>
-      )}
     </div>
   )
 }
@@ -160,8 +83,6 @@ export function AdminStatistics() {
           </ul>
         </div>
       </div>
-
-      <PackStatsSection />
     </div>
   )
 }

@@ -595,15 +595,16 @@ export function GameBoard() {
    */
 
   useEffect(() => {
-    if (cells.length === 0) return
+    if (!Array.isArray(cells) || cells.length === 0) return
+    if (!Array.isArray(ffaPlayers)) return
 
     const isFfa = gameMode === 'online' && ffaPlayers.length >= 3
 
     let allUsed: boolean
     if (isFfa) {
-      const totalCells = categoryIds.length * POINT_SLOTS.length
+      const totalCells = (categoryIds?.length ?? 0) * POINT_SLOTS.length
       allUsed = ffaPlayers.length >= 3 && ffaPlayers.every(
-        (player) => player.usedCells.length >= totalCells,
+        (player) => Array.isArray(player.usedCells) && player.usedCells.length >= totalCells,
       )
     } else {
       allUsed = cells
@@ -1016,7 +1017,7 @@ export function GameBoard() {
 
         {/* Questions still streaming in — brief, only on rehydrated boards */}
         {!questionsReady && (
-          <div className="pointer-events-none absolute inset-0 z-20 flex items-center justify-center rounded-3xl bg-[#050a12]/70 backdrop-blur-[2px]">
+          <div className="pointer-events-none absolute inset-0 z-20 flex items-center justify-center rounded-3xl bg-[#050a12]/80">
             <span className="rounded-full border border-petro-line bg-[#0d1b2a]/90 px-4 py-2 text-xs font-bold text-teal-bright shadow-[0_8px_24px_rgba(0,0,0,0.4)]">
               جارٍ تحميل الأسئلة…
             </span>
@@ -1052,9 +1053,8 @@ export function GameBoard() {
               flex
               items-center
               justify-center
-              bg-black/70
+              bg-black/88
               p-2
-              backdrop-blur-md
 
               sm:p-4
 
@@ -2034,7 +2034,7 @@ export function GameBoard() {
                       landscape:max-md:gap-1
                     "
                   >
-                    {!answerSubmitted && (gameMode !== 'online' || onlineStore.isHost()) && (
+                    {!answerSubmitted && (
                       <motion.button
                         type="button"
                         ref={triggerRef}

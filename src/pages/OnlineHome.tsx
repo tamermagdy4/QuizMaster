@@ -167,11 +167,12 @@ export function OnlineHome() {
             <GlassInput
               dark
               label={t('roomCode')}
-              placeholder="ABC123"
+              placeholder="123456"
               value={code}
-              onChange={(event) => setCode(normalizeRoomCode(event.target.value).replace(/[^A-Z0-9]/g, '').slice(0, 6))}
+              onChange={(event) => setCode(event.target.value.replace(/\D/g, '').slice(0, 6))}
               autoComplete="off"
-              inputMode="text"
+              inputMode="numeric"
+              pattern="[0-9]*"
               className="text-center font-mono text-lg tracking-[0.5em]"
             />
             <motion.button

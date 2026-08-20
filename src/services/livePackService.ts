@@ -1,10 +1,56 @@
 import type { RealtimeChannel } from '@supabase/supabase-js'
 import { getSupabaseClient } from '../lib/supabaseClient'
 import { ensureLocalQuestionsLoaded } from '../data/questionLoader'
-import { listQuestions } from './packQuizService'
-import type { PackWithQuizzes } from '../types/packs'
-import { isCustomQuizId } from '../types/packs'
-import { buildQuizQuestions, type PlayableQuestion } from '../utils/packQuizzes'
+import { getQuestionEntriesByPoints } from '../data/questionLoader'
+import type { PointValue } from '../types/board'
+
+// ---------------------------------------------------------------------------
+// Inlined from deleted pack modules (only what the live game needs)
+// ---------------------------------------------------------------------------
+
+const CUSTOM_QUIZ_PREFIX = 'custom:'
+
+function isCustomQuizId(quizId: string): boolean {
+  return quizId.startsWith(CUSTOM_QUIZ_PREFIX)
+}
+
+async function listLegacyQuizQuestions(quizId: string): Promise<Array<{
+  question: string; answer: string; points: number; hint: string | null; image_url: string | null
+}>> {
+  const supabase = getSupabaseClient()
+  const { data, error } = await supabase
+    .from('pack_questions')
+    .select('question, answer, points, hint, image_url')
+    .eq('quiz_id', quizId)
+    .order('position', { ascending: true })
+  if (error) throw new Error('Could not load legacy quiz questions.')
+  return (data ?? [])
+}
+
+function buildLegacyQuizQuestions(quizId: string, cap = 15): Array<{
+  question: string; answer: string; points: number; hint?: string; media?: string; mediaType?: 'image' | 'video' | 'career'
+}> {
+  const tiers: PointValue[] = [100, 300, 500]
+  const questions: Array<{
+    question: string; answer: string; points: number; hint?: string; media?: string; mediaType?: 'image' | 'video' | 'career'
+  }> = []
+  for (const points of tiers) {
+    const pool = getQuestionEntriesByPoints(quizId, points)
+    const take = Math.min(pool.length, Math.max(1, Math.round(cap / tiers.length)))
+    const picked = shuffleArray([...pool]).slice(0, take)
+    for (const item of picked) {
+      questions.push({
+        question: item.question,
+        answer: item.answer,
+        hint: item.hint,
+        media: item.media,
+        mediaType: item.mediaType,
+        points: item.points ?? points,
+      })
+    }
+  }
+  return shuffleArray(questions)
+}
 
 /**
  * Data layer for Live Pack rooms (Sporcle-Live style multiplayer).
@@ -16,6 +62,23 @@ import { buildQuizQuestions, type PlayableQuestion } from '../utils/packQuizzes'
  *
  * Column names are kept snake_case (postgrest-js does not transform keys).
  */
+
+// ---------------------------------------------------------------------------
+// Game phases (new gameplay model)
+// ---------------------------------------------------------------------------
+
+/**
+ * The game loop has explicit phases within each question:
+ *
+ *   lobby          → waiting for players
+ *   question_intro → "Question N" (brief 3s intro)
+ *   active         → timer running, accepting answers
+ *   locked         → timer expired, answers locked, grading done
+ *   reveal         → showing correct answer + who got it right
+ *   scoring        → showing score changes
+ *   finished       → game over, final results
+ */
+export type GamePhase = 'lobby' | 'question_intro' | 'active' | 'locked' | 'host_review' | 'reveal' | 'scoring' | 'finished'
 
 // ---------------------------------------------------------------------------
 // Row types (mirror the DB columns)
@@ -37,21 +100,17 @@ export interface LiveRoomRow {
   status: LiveRoomStatus
   current_question_index: number
   max_players: number
-  /** Host-chosen per-question timer in seconds (default 30). */
   question_timeout_seconds: number
-  /** How many questions the host wants from the pack (5 / 10 / 20…). */
   question_count: number
-  /** Wager range each player picks from, per question (default 1 → 20). */
   min_wager: number
   max_wager: number
-  /** Wrong answers subtract the wager (true) or score 0 (false). */
   deduct_on_wrong: boolean
-  /** When the current question opened — every client derives the same deadline. */
   question_started_at: string | null
-  /** Explicit shared phase: active (accepting answers) → closed (ANSWERING_CLOSED). */
   question_phase: LiveQuestionPhase
-  /** Replay rounds: the finished room this lobby continues after (migration 030). */
+  /** NEW: game-phase column added by migration 033 */
+  game_phase: GamePhase
   previous_room_id: string | null
+  who_can_join: string
   created_at: string
   started_at: string | null
   finished_at: string | null
@@ -67,11 +126,11 @@ export interface LivePlayerRow {
   connected: boolean
   score: number
   correct_count: number
-  /** End-of-round stats, aggregated on the shared row (identical for all). */
   wrong_count: number
   avg_wager: number
   best_win_wager: number
   joined_at: string
+  is_ready: boolean
   last_seen_at: string
 }
 
@@ -95,7 +154,6 @@ export interface LiveAnswerRow {
   player_id: string
   question_index: number
   answer_text: string
-  /** The point value the player chose for this question (locked after send). */
   wager: number
   status: LiveAnswerStatus
   points: number
@@ -104,7 +162,6 @@ export interface LiveAnswerRow {
   created_at: string
 }
 
-/** Payload sent to live_start_game — one element per resolved question. */
 export interface LiveStartQuestion {
   quiz_id: string
   question: string
@@ -114,7 +171,6 @@ export interface LiveStartQuestion {
   imageUrl?: string | null
 }
 
-/** Host round setup — every field optional when creating/updating. */
 export interface LiveGameSettings {
   questionCount: number
   questionTimeSeconds: number
@@ -124,7 +180,6 @@ export interface LiveGameSettings {
   maxPlayers: number
 }
 
-/** Default round setup (used when the host creates a game without options). */
 export const DEFAULT_LIVE_SETTINGS: LiveGameSettings = {
   questionCount: 10,
   questionTimeSeconds: 30,
@@ -134,11 +189,6 @@ export const DEFAULT_LIVE_SETTINGS: LiveGameSettings = {
   maxPlayers: 10,
 }
 
-/**
- * Every integer from min to max — the Sporcle rule: each player picks ANY
- * value up to the ceiling, and the ceiling equals the question count
- * (5 questions → 1..5, 10 → 1..10, 20 → 1..20).
- */
 export function getWagerRange(min: number, max: number): number[] {
   const lo = Math.max(1, Math.round(min))
   const hi = Math.max(lo, Math.round(max))
@@ -156,11 +206,6 @@ function errorMessage(error: unknown, fallback: string): string {
 // Room lifecycle (RPCs)
 // ---------------------------------------------------------------------------
 
-/**
- * Creates a room for a Pack and registers the caller as the host.
- * @param previousRoomId optional finished room id (a replay round) — lets the
- * new lobby show the previous round's final ranking (migration 030).
- */
 export async function createLiveRoom(
   packId: string,
   settings: Partial<LiveGameSettings> = {},
@@ -174,17 +219,19 @@ export async function createLiveRoom(
     p_question_timeout_seconds: merged.questionTimeSeconds,
     p_question_count: merged.questionCount,
     p_min_wager: merged.minWager,
-    // NULL lets the database derive the ceiling from the question count
-    // (Sporcle rule: max points = number of questions).
     p_max_wager: settings.maxWager ?? null,
     p_deduct_on_wrong: merged.deductOnWrong,
     p_previous_room_id: previousRoomId ?? null,
+    p_who_can_join: (settings as any).whoCanJoin ?? 'anyone',
   })
-  if (error) throw new Error(errorMessage(error, 'تعذر إنشاء الغرفة.'))
+  if (error) {
+    console.error('[createLiveRoom] FAILED:', JSON.stringify(error, null, 2))
+    throw new Error(errorMessage(error, 'Could not create room.'))
+  }
+  console.log('[createLiveRoom] SUCCESS — roomId:', data)
   return data as string
 }
 
-/** Host changes the round setup while the room is still in the lobby. */
 export async function updateLiveRoomSettings(
   roomId: string,
   settings: Partial<LiveGameSettings>,
@@ -199,80 +246,57 @@ export async function updateLiveRoomSettings(
     p_deduct_on_wrong: settings.deductOnWrong ?? null,
     p_max_players: settings.maxPlayers ?? null,
   })
-  if (error) throw new Error(errorMessage(error, 'تعذر حفظ إعدادات الجولة.'))
+  if (error) throw new Error(errorMessage(error, 'Could not save settings.'))
 }
 
-/** Joins (or rejoins) a room by its short code. Returns the player id. */
 export async function joinLiveRoom(roomCode: string, playerName: string): Promise<string> {
   const supabase = getSupabaseClient()
   const { data, error } = await supabase.rpc('live_join_room', {
     p_room_code: roomCode,
     p_player_name: playerName,
   })
-  if (error) throw new Error(errorMessage(error, 'تعذر الانضمام إلى الغرفة.'))
+  if (error) throw new Error(errorMessage(error, 'Could not join room.'))
   return data as string
 }
 
-/**
- * One-click group rejoin (migration 031): joins the NEW replay room using the
- * caller's identity (name/avatar) from the previous round — no name prompt.
- * Returns the player id.
- */
 export async function rejoinLiveRoom(roomCode: string, previousRoomId: string): Promise<string> {
   const supabase = getSupabaseClient()
   const { data, error } = await supabase.rpc('live_rejoin_room', {
     p_room_code: roomCode,
     p_previous_room_id: previousRoomId,
   })
-  if (error) throw new Error(errorMessage(error, 'تعذر العودة إلى الجولة.'))
+  if (error) throw new Error(errorMessage(error, 'Could not rejoin.'))
   return data as string
 }
 
-/** Heartbeat — marks the caller as connected (call every ~8s). */
 export async function markLiveConnected(roomId: string): Promise<void> {
   const supabase = getSupabaseClient()
   const { error } = await supabase.rpc('live_mark_connected', { p_room_id: roomId })
-  if (error) {
-    // Non-fatal: presence is refreshed by the next heartbeat anyway.
-    console.warn('[live] heartbeat failed', error.message)
-  }
+  if (error) console.warn('[live] heartbeat failed', error.message)
 }
 
-/**
- * Presence sweep — every client calls this on its heartbeat. Marks stale
- * players (no heartbeat for 30s) as offline, and when the host is offline it
- * AUTOMATICALLY promotes the most active connected player (highest score,
- * then most recent heartbeat, then earliest join). Returns the new host
- * player id, or null when nothing changed.
- */
 export async function sweepLiveStale(roomId: string): Promise<string | null> {
   const supabase = getSupabaseClient()
   const { data, error } = await supabase.rpc('live_sweep_stale', { p_room_id: roomId })
-  if (error) {
-    console.warn('[live] sweep failed', error.message)
-    return null
-  }
+  if (error) { console.warn('[live] sweep failed', error.message); return null }
   return (data as string | null) ?? null
 }
 
-/** Starts the game with the resolved question list (host only, atomically). */
 export async function startLiveGame(roomId: string, questions: LiveStartQuestion[]): Promise<void> {
   const supabase = getSupabaseClient()
   const { error } = await supabase.rpc('live_start_game', {
     p_room_id: roomId,
     p_questions: questions.map((question) => ({ ...question, image_url: question.imageUrl ?? null })),
   })
-  if (error) throw new Error(errorMessage(error, 'تعذر بدء اللعبة.'))
+  if (error) throw new Error(errorMessage(error, 'Could not start game.'))
 }
 
-/** Flips the shared per-question phase to 'closed' (ANSWERING_CLOSED). */
 export async function closeLiveQuestion(roomId: string): Promise<void> {
   const supabase = getSupabaseClient()
   const { error } = await supabase.rpc('live_close_question', { p_room_id: roomId })
   if (error) console.warn('[live] close question failed', error.message)
 }
 
-/** Submits the caller's answer (with their chosen wager) for the current question. */
 export async function submitLiveAnswer(roomId: string, questionIndex: number, answerText: string, wager: number): Promise<void> {
   const supabase = getSupabaseClient()
   const { error } = await supabase.rpc('live_submit_answer', {
@@ -281,10 +305,9 @@ export async function submitLiveAnswer(roomId: string, questionIndex: number, an
     p_answer_text: answerText,
     p_wager: wager,
   })
-  if (error) throw new Error(errorMessage(error, 'تعذر إرسال الإجابة.'))
+  if (error) throw new Error(errorMessage(error, 'Could not submit answer.'))
 }
 
-/** Host grades one player's answer for the given question (correct / wrong). */
 export async function reviewLiveAnswer(
   roomId: string,
   playerId: string,
@@ -298,45 +321,110 @@ export async function reviewLiveAnswer(
     p_question_index: questionIndex,
     p_status: status,
   })
-  if (error) throw new Error(errorMessage(error, 'تعذر اعتماد الإجابة.'))
+  if (error) throw new Error(errorMessage(error, 'Could not grade answer.'))
 }
 
-/** Host advances everyone to the next question. */
 export async function nextLiveQuestion(roomId: string): Promise<void> {
   const supabase = getSupabaseClient()
   const { error } = await supabase.rpc('live_next_question', { p_room_id: roomId })
-  if (error) throw new Error(errorMessage(error, 'تعذر الانتقال للسؤال التالي.'))
+  if (error) throw new Error(errorMessage(error, 'Could not advance question.'))
 }
 
-/** Host goes back one question. */
 export async function previousLiveQuestion(roomId: string): Promise<void> {
   const supabase = getSupabaseClient()
   const { error } = await supabase.rpc('live_previous_question', { p_room_id: roomId })
-  if (error) throw new Error(errorMessage(error, 'تعذر الرجوع للسؤال السابق.'))
+  if (error) throw new Error(errorMessage(error, 'Could not go back.'))
 }
 
-/** Host ends the game — everyone sees the final leaderboard. */
 export async function finishLiveGame(roomId: string): Promise<void> {
   const supabase = getSupabaseClient()
   const { error } = await supabase.rpc('live_finish_game', { p_room_id: roomId })
-  if (error) throw new Error(errorMessage(error, 'تعذر إنهاء اللعبة.'))
+  if (error) throw new Error(errorMessage(error, 'Could not finish game.'))
 }
 
-/** Transfers hosting to another player (host offline, or before start). */
 export async function transferLiveHost(roomId: string, newHostPlayerId: string): Promise<void> {
   const supabase = getSupabaseClient()
   const { error } = await supabase.rpc('live_transfer_host', {
     p_room_id: roomId,
     p_new_host_player_id: newHostPlayerId,
   })
-  if (error) throw new Error(errorMessage(error, 'تعذر نقل صلاحيات المضيف.'))
+  if (error) throw new Error(errorMessage(error, 'Could not transfer host.'))
 }
 
-/** Host deletes the room (cancels). Cascades to players/questions/answers. */
 export async function deleteLiveRoom(roomId: string): Promise<void> {
   const supabase = getSupabaseClient()
   const { error } = await supabase.rpc('live_delete_room', { p_room_id: roomId })
-  if (error) throw new Error(errorMessage(error, 'تعذر حذف الغرفة.'))
+  if (error) throw new Error(errorMessage(error, 'Could not delete room.'))
+}
+
+// ---------------------------------------------------------------------------
+// NEW: Game-loop RPCs (migration 033)
+// ---------------------------------------------------------------------------
+
+/** Advance the game phase (host only). Triggers the next UI state. */
+export async function advanceGamePhase(roomId: string, phase: GamePhase): Promise<void> {
+  const supabase = getSupabaseClient()
+  const { error } = await supabase.rpc('live_advance_phase', {
+    p_room_id: roomId,
+    p_phase: phase,
+  })
+  if (error) throw new Error(errorMessage(error, 'Could not advance phase.'))
+}
+
+/** Auto-close answers and grade all pending answers (host only, called when timer expires). */
+export async function closeAndGrade(roomId: string): Promise<void> {
+  const supabase = getSupabaseClient()
+  const { error } = await supabase.rpc('live_close_and_grade', {
+    p_room_id: roomId,
+  })
+  if (error) throw new Error(errorMessage(error, 'Could not close and grade.'))
+}
+
+/** Host confirms scoring — applies final scores after review. */
+export async function confirmScoring(roomId: string): Promise<void> {
+  const supabase = getSupabaseClient()
+  const { error } = await supabase.rpc('live_confirm_scoring', {
+    p_room_id: roomId,
+  })
+  if (error) throw new Error(errorMessage(error, 'Could not confirm scoring.'))
+}
+
+/** Host overrides a specific player's grade after auto-grading. */
+export async function overrideGrade(
+  roomId: string,
+  playerId: string,
+  questionIndex: number,
+  status: 'correct' | 'wrong',
+): Promise<void> {
+  const supabase = getSupabaseClient()
+  const { error } = await supabase.rpc('live_override_grade', {
+    p_room_id: roomId,
+    p_player_id: playerId,
+    p_question_index: questionIndex,
+    p_status: status,
+  })
+  if (error) throw new Error(errorMessage(error, 'Could not override grade.'))
+}
+
+/** Skip the current question without scoring. */
+export async function skipQuestion(roomId: string): Promise<void> {
+  const supabase = getSupabaseClient()
+  const { error } = await supabase.rpc('live_skip_question', { p_room_id: roomId })
+  if (error) throw new Error(errorMessage(error, 'Could not skip question.'))
+}
+
+/** Pause the game (host only). */
+export async function pauseGame(roomId: string): Promise<void> {
+  const supabase = getSupabaseClient()
+  const { error } = await supabase.rpc('live_pause_game', { p_room_id: roomId })
+  if (error) throw new Error(errorMessage(error, 'Could not pause game.'))
+}
+
+/** Resume the game from pause (host only). */
+export async function resumeGame(roomId: string): Promise<void> {
+  const supabase = getSupabaseClient()
+  const { error } = await supabase.rpc('live_resume_game', { p_room_id: roomId })
+  if (error) throw new Error(errorMessage(error, 'Could not resume game.'))
 }
 
 // ---------------------------------------------------------------------------
@@ -376,7 +464,6 @@ export async function getLiveQuestions(roomId: string): Promise<LiveQuestionRow[
   return (data ?? []) as LiveQuestionRow[]
 }
 
-/** Answers the current user may read: their own + everything for the host. */
 export async function getLiveAnswers(roomId: string): Promise<LiveAnswerRow[]> {
   const supabase = getSupabaseClient()
   const { data, error } = await supabase
@@ -392,7 +479,6 @@ export async function getLiveAnswers(roomId: string): Promise<LiveAnswerRow[]> {
 // Completed-round history (migration 029)
 // ---------------------------------------------------------------------------
 
-/** One entry of the final-standings snapshot stored on a finished round. */
 export interface LiveRoundHistoryPlayer {
   name: string
   score: number
@@ -402,7 +488,6 @@ export interface LiveRoundHistoryPlayer {
   best_win_wager: number
 }
 
-/** A finished round snapshot — lets host and players reopen earlier results. */
 export interface LiveRoundHistoryRow {
   id: string
   room_id: string
@@ -417,23 +502,18 @@ export interface LiveRoundHistoryRow {
   players: LiveRoundHistoryPlayer[]
 }
 
-/** All finished rounds of a pack, newest first. */
 export async function getLiveRoundHistory(packId: string): Promise<LiveRoundHistoryRow[]> {
   const supabase = getSupabaseClient()
   const { data, error } = await supabase.rpc('live_get_round_history', { p_pack_id: packId })
-  if (error) {
-    console.warn('[live] round history failed', error.message)
-    return []
-  }
+  if (error) { console.warn('[live] round history failed', error.message); return [] }
   return (data ?? []) as LiveRoundHistoryRow[]
 }
 
-/** Single finished round by room id (e.g. the round that just finished). */
 export async function getLiveRoundHistoryByRoom(roomId: string): Promise<LiveRoundHistoryRow | null> {
   const supabase = getSupabaseClient()
   const { data, error } = await supabase.rpc('live_get_round_history_by_room', { p_room_id: roomId })
   if (error) return null
-  return (data ?? null) as LiveRoundHistoryRow | null
+  return (data ?? null) as LiveRoundHistoryRow
 }
 
 // ---------------------------------------------------------------------------
@@ -441,28 +521,94 @@ export async function getLiveRoundHistoryByRoom(roomId: string): Promise<LiveRou
 // ---------------------------------------------------------------------------
 
 /**
- * Builds the full ordered question list of a Pack for the live game.
- * Custom quizzes come from pack_questions (Supabase); existing category
- * quizzes go through the SAME questionLoader the game board uses.
+ * Fisher-Yates (Knuth) shuffle — unbiased random permutation.
+ * Mutates the array in place and returns it.
  */
-export async function resolveLivePackQuestions(pack: PackWithQuizzes, questionCount?: number): Promise<LiveStartQuestion[]> {
+function shuffleArray<T>(array: T[]): T[] {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1))
+    const temp = array[i]
+    array[i] = array[j]
+    array[j] = temp
+  }
+  return array
+}
+
+/**
+ * Resolve questions for a live game from a Pack.
+ *
+ * 1. Fetches ALL questions from pack_questions using pack_id (direct, no quiz intermediary).
+ * 2. Shuffles them randomly using Fisher-Yates.
+ * 3. Takes the first N (questionCount).
+ * 4. Returns in the randomized order — this order is stored in the room and used for the game.
+ *
+ * The randomization happens ONCE at game creation. The stored order persists
+ * across refreshes, reconnects, and component re-renders.
+ */
+export async function resolveLivePackQuestions(pack: { id: string; quizzes?: Array<{ quiz_id: string }> }, questionCount?: number): Promise<LiveStartQuestion[]> {
+  const supabase = getSupabaseClient()
+
+  // Step 1: Fetch ALL questions directly from pack_questions using pack_id
+  const { data: packQuestions, error } = await supabase
+    .from('pack_questions')
+    .select('id, question, answer, points, hint, image_url')
+    .eq('pack_id', pack.id)
+    .order('position', { ascending: true })
+
+  if (error) {
+    console.error('[resolveLivePackQuestions] Error fetching pack_questions:', JSON.stringify(error))
+    throw new Error('Could not load pack questions.')
+  }
+
+  if (!packQuestions || packQuestions.length === 0) {
+    // Fallback: try legacy quiz-based resolution for old packs
+    return resolveLegacyPackQuestions(pack, questionCount)
+  }
+
+  // Step 2: Convert to LiveStartQuestion format
+  const resolved: LiveStartQuestion[] = packQuestions.map((pq) => ({
+    quiz_id: '',
+    question: pq.question,
+    answer: pq.answer,
+    points: pq.points,
+    hint: pq.hint ?? null,
+    imageUrl: pq.image_url ?? null,
+  }))
+
+  // Step 3: Shuffle randomly (Fisher-Yates)
+  shuffleArray(resolved)
+
+  console.log(`[resolveLivePackQuestions] Resolved ${resolved.length} questions from pack ${pack.id}, shuffled.`)
+
+  // Step 4: Take the requested number
+  if (questionCount && questionCount > 0 && resolved.length > questionCount) {
+    return resolved.slice(0, questionCount)
+  }
+  return resolved
+}
+
+/**
+ * Legacy fallback: resolve questions from pack_quizzes (old intermediary architecture).
+ * Only used for packs that have no direct pack_questions but do have pack_quizzes.
+ */
+async function resolveLegacyPackQuestions(pack: { id: string; quizzes?: Array<{ quiz_id: string }> }, questionCount?: number): Promise<LiveStartQuestion[]> {
   await ensureLocalQuestionsLoaded()
   const resolved: LiveStartQuestion[] = []
-  for (const quiz of pack.quizzes) {
-    let questions: PlayableQuestion[] = []
+  for (const quiz of (pack.quizzes ?? [])) {
+    let questions: Array<{ question: string; answer: string; points: number; hint?: string; media?: string; mediaType?: 'image' | 'video' | 'career' }> = []
     if (isCustomQuizId(quiz.quiz_id)) {
       const uuid = quiz.quiz_id.slice('custom:'.length)
-      const rows = await listQuestions(uuid)
-      questions = rows.map<PlayableQuestion>((question) => ({
-        question: question.question,
-        answer: question.answer,
-        hint: question.hint ?? undefined,
-        media: question.image_url ?? undefined,
-        mediaType: question.image_url ? 'image' : undefined,
-        points: question.points,
+      const rows = await listLegacyQuizQuestions(uuid)
+      questions = rows.map((q) => ({
+        question: q.question,
+        answer: q.answer,
+        hint: q.hint ?? undefined,
+        media: q.image_url ?? undefined,
+        mediaType: q.image_url ? 'image' : undefined,
+        points: q.points,
       }))
     } else {
-      questions = buildQuizQuestions(quiz.quiz_id)
+      questions = buildLegacyQuizQuestions(quiz.quiz_id)
     }
     for (const question of questions) {
       resolved.push({
@@ -475,7 +621,8 @@ export async function resolveLivePackQuestions(pack: PackWithQuizzes, questionCo
       })
     }
   }
-  // The host-chosen question count caps the SAME ordered list for everyone.
+  // Also shuffle legacy questions
+  shuffleArray(resolved)
   if (questionCount && questionCount > 0 && resolved.length > questionCount) {
     return resolved.slice(0, questionCount)
   }
@@ -494,11 +641,6 @@ export interface LiveRealtimeCallbacks {
   onStatusChange?: (status: string) => void
 }
 
-/**
- * Subscribes to every shared piece of a live room. Any change refetches the
- * affected resource — the database stays the single source of truth and the
- * client never guesses state. Returns an unsubscribe function.
- */
 export function subscribeToLiveRoom(
   roomId: string,
   callbacks: LiveRealtimeCallbacks,
@@ -545,15 +687,9 @@ export function subscribeToLiveRoom(
 }
 
 // ---------------------------------------------------------------------------
-// Shared countdown (derived from the database — same for every client)
+// Shared countdown (derived from the database)
 // ---------------------------------------------------------------------------
 
-/**
- * Milliseconds left for the current question, or null when no question is
- * open (lobby / finished / not started). Every client computes the same value
- * from question_started_at + question_timeout_seconds, so the countdown is
- * inherently synchronized without sharing any client clock.
- */
 export function getLiveQuestionRemainingMs(room: Pick<LiveRoomRow, 'status' | 'question_started_at' | 'question_timeout_seconds'>): number | null {
   if (room.status !== 'playing' || !room.question_started_at) return null
   const deadline = new Date(room.question_started_at).getTime() + room.question_timeout_seconds * 1000
@@ -561,14 +697,88 @@ export function getLiveQuestionRemainingMs(room: Pick<LiveRoomRow, 'status' | 'q
 }
 
 // ---------------------------------------------------------------------------
+// Party system: Chat, Ready, Public Lobbies (migration 039)
+// ---------------------------------------------------------------------------
+
+export interface PublicLobby {
+  room_id: string
+  room_code: string
+  host_name: string
+  host_avatar_url: string | null
+  pack_title: string
+  pack_cover_url: string | null
+  player_count: number
+  max_players: number
+  created_at: string
+}
+
+export interface ChatMessage {
+  id: string
+  player_name: string
+  message: string
+  is_system: boolean
+  created_at: string
+}
+
+/** Fetch public lobbies (who_can_join = 'anyone', status = 'lobby'). */
+export async function listPublicLobbies(): Promise<PublicLobby[]> {
+  const supabase = getSupabaseClient()
+  const { data, error } = await supabase.rpc('live_list_public_lobbies')
+  if (error) { console.warn('[live] public lobbies failed', error.message); return [] }
+  return (data ?? []) as PublicLobby[]
+}
+
+/** Toggle ready status for the current player. */
+export async function setReady(roomId: string, ready: boolean): Promise<void> {
+  const supabase = getSupabaseClient()
+  const { error } = await supabase.rpc('live_set_ready', {
+    p_room_id: roomId,
+    p_ready: ready,
+  })
+  if (error) throw new Error(errorMessage(error, 'Could not update ready status.'))
+}
+
+/** Send a chat message. */
+export async function sendChat(roomId: string, message: string): Promise<void> {
+  const supabase = getSupabaseClient()
+  const { error } = await supabase.rpc('live_send_chat', {
+    p_room_id: roomId,
+    p_message: message,
+  })
+  if (error) throw new Error(errorMessage(error, 'Could not send message.'))
+}
+
+/** Fetch chat messages (optionally since a timestamp). */
+export async function getChat(roomId: string, since?: string): Promise<ChatMessage[]> {
+  const supabase = getSupabaseClient()
+  const { data, error } = await supabase.rpc('live_get_chat', {
+    p_room_id: roomId,
+    p_since: since ?? null,
+  })
+  if (error) { console.warn('[live] chat fetch failed', error.message); return [] }
+  return (data ?? []) as ChatMessage[]
+}
+
+/** Match a grid answer against accepted answers for a list-type question. */
+export async function matchGridAnswer(
+  roomId: string,
+  questionId: string,
+  answerText: string,
+): Promise<boolean> {
+  const supabase = getSupabaseClient()
+  const { data, error } = await supabase.rpc('live_match_grid_answer', {
+    p_room_id: roomId,
+    p_question_id: questionId,
+    p_answer_text: answerText,
+  })
+  if (error) throw new Error(errorMessage(error, 'Could not match answer.'))
+  return data as boolean
+}
+
+// ---------------------------------------------------------------------------
 // Share helpers
 // ---------------------------------------------------------------------------
 
-/**
- * Absolute invite URL for a room code. When previousRoomId is given, the link
- * carries &prev=… so returning players rejoin with their previous identity in
- * one click (migration 031).
- */
 export function liveRoomInviteUrl(roomCode: string, previousRoomId?: string | null): string {
   const base = window.location.origin
   const params = new URLSearchParams({ code: roomCode })
@@ -576,14 +786,13 @@ export function liveRoomInviteUrl(roomCode: string, previousRoomId?: string | nu
   return `${base}/packs/live/join?${params.toString()}`
 }
 
-/** Copies the invite (rejoin) link to the clipboard (falls back to prompt). */
 export async function copyLiveInvite(roomCode: string, previousRoomId?: string | null): Promise<boolean> {
   const url = liveRoomInviteUrl(roomCode, previousRoomId)
   try {
     await navigator.clipboard.writeText(url)
     return true
   } catch {
-    window.prompt('رابط الدعوة', url)
+    window.prompt('Invite link', url)
     return false
   }
 }

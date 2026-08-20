@@ -43,13 +43,8 @@ const AdminCategories = lazy(() => import('./pages/admin/AdminCategories').then(
 const AdminImport = lazy(() => import('./pages/admin/AdminImport').then((m) => ({ default: m.AdminImport })))
 const AdminExport = lazy(() => import('./pages/admin/AdminExport').then((m) => ({ default: m.AdminExport })))
 const AdminStatistics = lazy(() => import('./pages/admin/AdminStatistics').then((m) => ({ default: m.AdminStatistics })))
-const AdminPacks = lazy(() => import('./pages/admin/AdminPacks').then((m) => ({ default: m.AdminPacks })))
-const PacksHome = lazy(() => import('./pages/packs/PacksHome').then((m) => ({ default: m.PacksHome })))
-const PackDetails = lazy(() => import('./pages/packs/PackDetails').then((m) => ({ default: m.PackDetails })))
-const PackEditor = lazy(() => import('./pages/packs/PackEditor').then((m) => ({ default: m.PackEditor })))
-const PackPlay = lazy(() => import('./pages/packs/PackPlay').then((m) => ({ default: m.PackPlay })))
-const LiveJoin = lazy(() => import('./pages/packs/LiveJoin').then((m) => ({ default: m.LiveJoin })))
-const LiveRoom = lazy(() => import('./pages/packs/LiveRoom').then((m) => ({ default: m.LiveRoom })))
+const LiveJoin = lazy(() => import('./pages/live/LiveJoin').then((m) => ({ default: m.LiveJoin })))
+const LiveRoom = lazy(() => import('./pages/live/LiveRoom').then((m) => ({ default: m.LiveRoom })))
 
 /** Wraps a lazy page in Suspense so chunk loading shows a light skeleton. */
 function LazyPage({ page }: { page: ComponentType }) {
@@ -145,20 +140,8 @@ const router = createBrowserRouter([
       { path: 'privacy', element: <LazyPage page={PrivacyPolicy} /> },
       { path: 'terms', element: <LazyPage page={TermsOfService} /> },
       { path: 'forgot-password', element: <LazyPage page={ForgotPassword} /> },
-      { path: 'packs', element: <LazyPage page={PacksHome} /> },
-      { path: 'packs/new', element: <LazyPage page={PackEditor} /> },
-      { path: 'packs/:packId', element: <LazyPage page={PackDetails} /> },
       {
-        path: 'packs/:packId/edit',
-        element: (
-          <ProtectedRoute>
-            <LazyPage page={PackEditor} />
-          </ProtectedRoute>
-        ),
-      },
-      { path: 'packs/:packId/play', element: <LazyPage page={PackPlay} /> },
-      {
-        path: 'packs/live/join',
+        path: 'live/join',
         element: (
           <ProtectedRoute>
             <LazyPage page={LiveJoin} />
@@ -166,13 +149,15 @@ const router = createBrowserRouter([
         ),
       },
       {
-        path: 'packs/live/:roomId',
+        path: 'live/:roomId',
         element: (
           <ProtectedRoute>
             <LazyPage page={LiveRoom} />
           </ProtectedRoute>
         ),
       },
+      { path: 'packs', element: <Navigate to="/" replace /> },
+      { path: 'packs/*', element: <Navigate to="/" replace /> },
     ],
   },
 
@@ -212,7 +197,7 @@ const router = createBrowserRouter([
         element: <LazyPage page={AdminQuestionDetails} />,
       },
       { path: 'categories', element: <LazyPage page={AdminCategories} /> },
-      { path: 'packs', element: <LazyPage page={AdminPacks} /> },
+      { path: 'packs', element: <Navigate to="/admin" replace /> },
       { path: 'import', element: <LazyPage page={AdminImport} /> },
       { path: 'export', element: <LazyPage page={AdminExport} /> },
       { path: 'statistics', element: <LazyPage page={AdminStatistics} /> },

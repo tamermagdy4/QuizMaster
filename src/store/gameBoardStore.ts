@@ -205,7 +205,7 @@ function cloneLifelines(): Lifeline[] {
 
 /** True when the current game is an online free-for-all (3+ players). */
 function isFfaGame(state: Pick<GameBoardState, 'gameMode' | 'ffaPlayers'>): boolean {
-  return state.gameMode === 'online' && state.ffaPlayers.length >= 3
+  return state.gameMode === 'online' && Array.isArray(state.ffaPlayers) && state.ffaPlayers.length >= 3
 }
 
 /** Builds the initial per-player state for a free-for-all online game. */
@@ -419,11 +419,14 @@ export const useGameBoardStore = create<GameBoardState>()(
         const finalCategoryIds = repairCategoryIds(rawCategoryIds)
 
         const enabledLifelines = useAppStore.getState().enabledLifelines
+        // Defense in depth: if enabledLifelines is empty (corrupted localStorage),
+        // use all default lifeline IDs so the board never shows with zero lifelines.
+        const effectiveEnabled = enabledLifelines.length > 0 ? enabledLifelines : defaultLifelines().map((l) => l.id)
         const team1Lifelines = buildLifelinesFromIds(
-          (setup.team1LifelineIds as LifelineId[]).filter((id) => enabledLifelines.includes(id)),
+          (setup.team1LifelineIds as LifelineId[]).filter((id) => effectiveEnabled.includes(id)),
         )
         const team2Lifelines = buildLifelinesFromIds(
-          (setup.team2LifelineIds as LifelineId[]).filter((id) => enabledLifelines.includes(id)),
+          (setup.team2LifelineIds as LifelineId[]).filter((id) => effectiveEnabled.includes(id)),
         )
 
         const nextFfaPlayers =
@@ -1363,9 +1366,9 @@ export const useGameBoardStore = create<GameBoardState>()(
       revealAnswer: () => {
         const state = get()
         if (!state.activeQuestion) return
-        // Online: revealing the answer is a HOST-only control. The joiner
-        // receives the reveal state through the sync, never triggers it.
-        if (state.gameMode === 'online' && getOnlinePlayerTeam() !== 1) return
+        // Any player may reveal the answer — the reveal state is synced to
+        // everyone through the ANSWER_REVEALED broadcast. Correction buttons
+        // remain host-only in both UI and resolveQuestion().
         set({ isRevealed: true })
         if (state.gameMode === 'online') {
           notifyOnlineGameEvent('ANSWER_REVEALED', { revealed: true })
@@ -1374,8 +1377,7 @@ export const useGameBoardStore = create<GameBoardState>()(
 
       hideAnswer: () => {
         const state = get()
-        // Online: hiding the answer is a HOST-only control (same as reveal).
-        if (state.gameMode === 'online' && getOnlinePlayerTeam() !== 1) return
+        // Any player may hide the answer (same as reveal — synced to all).
         set({ isRevealed: false })
         if (state.gameMode === 'online') {
           notifyOnlineGameEvent('ANSWER_REVEALED', { revealed: false })
@@ -1392,19 +1394,51 @@ export const useGameBoardStore = create<GameBoardState>()(
 
         const merged = { ...currentState, ...persisted }
 
+        // --- String fields ---
+        if (typeof merged.gameName !== 'string') merged.gameName = currentState.gameName
+        if (typeof merged.team1Name !== 'string') merged.team1Name = currentState.team1Name
+        if (typeof merged.team2Name !== 'string') merged.team2Name = currentState.team2Name
+
+        // --- Boolean fields ---
+        if (typeof merged.answerSubmitted !== 'boolean') merged.answerSubmitted = false
+
+        // --- Array fields — localStorage is an untrusted boundary ---
+        if (!Array.isArray(merged.categoryIds)) merged.categoryIds = currentState.categoryIds
+        if (!Array.isArray(merged.team1Lifelines)) merged.team1Lifelines = currentState.team1Lifelines
+        if (!Array.isArray(merged.team2Lifelines)) merged.team2Lifelines = currentState.team2Lifelines
+        if (!Array.isArray(merged.usedQuestionKeys)) merged.usedQuestionKeys = []
+        if (!Array.isArray(merged.ffaPlayers)) merged.ffaPlayers = []
+
+        // --- Cells repair ---
         if (merged.isInitialized && Array.isArray(merged.categoryIds)) {
           merged.categoryIds = repairCategoryIds(merged.categoryIds)
           merged.cells = repairCells(merged.categoryIds, Array.isArray(merged.cells) ? merged.cells : [])
+        } else if (!Array.isArray(merged.cells)) {
+          merged.cells = []
         }
 
-        // localStorage is an untrusted boundary: repair non-finite scores
-        // (a tampered/old payload must not inject NaN/Infinity) while keeping
-        // legitimate NEGATIVE scores (wheel deductions) intact.
+        // --- Numeric fields — repair non-finite (NaN/Infinity) while keeping
+        //     legitimate NEGATIVE scores (wheel deductions) intact. ---
         if (!Number.isFinite(merged.team1Score)) merged.team1Score = 0
         if (!Number.isFinite(merged.team2Score)) merged.team2Score = 0
         if (!Number.isFinite(merged.answerPoints)) merged.answerPoints = 0
+
         // The turn is a closed set — anything else repairs to team 1.
         if (merged.currentTurn !== 1 && merged.currentTurn !== 2) merged.currentTurn = 1
+
+        // --- Nullable fields ---
+        if (merged.activeQuestion !== null && typeof merged.activeQuestion !== 'object') {
+          merged.activeQuestion = null
+        }
+        if (merged.selectedAnswer !== null && typeof merged.selectedAnswer !== 'string') {
+          merged.selectedAnswer = null
+        }
+        if (merged.answerCorrect !== null && merged.answerCorrect !== true && merged.answerCorrect !== false) {
+          merged.answerCorrect = null
+        }
+        if (merged.callFriendHint !== null && typeof merged.callFriendHint !== 'string') {
+          merged.callFriendHint = null
+        }
 
         return merged
       },

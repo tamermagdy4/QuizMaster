@@ -17,7 +17,7 @@ export function LeaveRoomConfirm({ open, onClose, onConfirm }: LeaveRoomConfirmP
 
   return (
     <div
-      className="fixed inset-0 z-[80] flex items-center justify-center bg-black/70 p-4 backdrop-blur-md"
+      className="fixed inset-0 z-[80] flex items-center justify-center bg-black/88 p-4"
       onClick={onClose}
       role="dialog"
       aria-modal="true"

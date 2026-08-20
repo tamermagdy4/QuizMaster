@@ -158,6 +158,23 @@ function ensureChannelCallbacks(): void {
           console.warn('[online] dropped untrusted ROOM_STATE from', event.playerId)
         }
       }
+      // When a PLAYER_JOINED arrives, add the player to the session's
+      // authoritative players list so the host sees the correct count
+      // even if the Presence sync hasn't fired yet.
+      if (event.type === 'PLAYER_JOINED' && session) {
+        const player = event.payload.player
+        const exists = session.room.players.some((entry) => entry.id === player.id)
+        if (!exists) {
+          const updated: OnlineRoom = {
+            ...session.room,
+            players: [...session.room.players, player],
+            updatedAt: Date.now(),
+          }
+          session = { room: updated, self: session.self }
+          // Also notify the players listeners so the store/UI picks up the change
+          for (const listener of playersListeners) listener(updated.players)
+        }
+      }
       for (const listener of eventListeners) listener(event)
 
       // A player intentionally left → the whole room is cancelled. Both the
@@ -349,7 +366,7 @@ export async function createOnlineRoom(input: CreateRoomInput): Promise<OnlineRo
 export async function joinOnlineRoom(input: JoinRoomInput): Promise<OnlineRoomSession> {
   const roomCode = normalizeRoomCode(input.roomCode)
   if (!isValidRoomCode(roomCode)) {
-    throw new Error('Invalid room code. Codes look like ABC123.')
+    throw new Error('Invalid room code. Codes are 6 digits like 123456.')
   }
 
   const player = buildPlayer(input.playerName, false)
@@ -379,6 +396,15 @@ export async function joinOnlineRoom(input: JoinRoomInput): Promise<OnlineRoomSe
       throw new Error(`الغرفة ممتلئة — الحد الأقصى ${room.maxPlayers} لاعبين.`)
     }
     session = { room, self: player }
+    // Broadcast PLAYER_JOINED so the host (and any other player) learns about
+    // this joiner through the event channel in addition to Presence. This is
+    // critical because Presence sync can be unreliable on mobile browsers —
+    // the host may never receive the presence update and stay stuck showing
+    // 1 player while the Start button stays disabled.
+    await broadcastEvent('PLAYER_JOINED', { player }).catch(() => {
+      // A failed broadcast must never block the join — the host's Presence
+      // callback is the primary mechanism and will self-heal on the next sync.
+    })
     return { room, self: player }
   } catch (error) {
     roomState.cancel()

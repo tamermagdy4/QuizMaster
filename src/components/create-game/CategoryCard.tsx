@@ -86,7 +86,7 @@ export function CategoryCard({ category, owner, isSelectable, onToggle }: Catego
 
       {/* title — solid readable panel over the image */}
       <div className="relative z-10 mt-auto px-2.5 pb-2.5 sm:px-3 sm:pb-3">
-        <div className="rounded-lg border border-white/10 bg-black/50 px-3 py-2 backdrop-blur-sm sm:rounded-xl sm:px-3.5 sm:py-2.5">
+        <div className="rounded-lg border border-white/10 bg-black/60 px-3 py-2 sm:rounded-xl sm:px-3.5 sm:py-2.5">
           <h3 className="font-display text-sm font-extrabold leading-snug text-white sm:text-base">
             {presentCategory(category.id, category.title, english)}
           </h3>

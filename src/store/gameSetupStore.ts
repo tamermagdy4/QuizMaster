@@ -220,6 +220,20 @@ export const useGameSetupStore = create<GameSetupState>()(
     }),
     {
       name: 'quizmaster-setup',
+      merge: (persistedState, currentState) => {
+        const persisted = (persistedState ?? {}) as Partial<GameSetupState>
+        return {
+          ...currentState,
+          ...persisted,
+          team1CategoryIds: Array.isArray(persisted.team1CategoryIds) ? persisted.team1CategoryIds : currentState.team1CategoryIds,
+          team2CategoryIds: Array.isArray(persisted.team2CategoryIds) ? persisted.team2CategoryIds : currentState.team2CategoryIds,
+          team1LifelineIds: Array.isArray(persisted.team1LifelineIds) ? persisted.team1LifelineIds : currentState.team1LifelineIds,
+          team2LifelineIds: Array.isArray(persisted.team2LifelineIds) ? persisted.team2LifelineIds : currentState.team2LifelineIds,
+          team1Players: typeof persisted.team1Players === 'number' ? persisted.team1Players : currentState.team1Players,
+          team2Players: typeof persisted.team2Players === 'number' ? persisted.team2Players : currentState.team2Players,
+          activeTeam: persisted.activeTeam === 1 || persisted.activeTeam === 2 ? persisted.activeTeam : currentState.activeTeam,
+        }
+      },
     },
   ),
 )

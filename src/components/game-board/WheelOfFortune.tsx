@@ -112,7 +112,7 @@ export function WheelOfFortune({ open, english, onResult, onClose }: WheelOfFort
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           dir={english ? 'ltr' : 'rtl'}
-          className="fixed inset-0 z-[80] flex items-center justify-center bg-black/70 p-4 backdrop-blur-sm"
+          className="fixed inset-0 z-[80] flex items-center justify-center bg-black/88 p-4"
         >
           <motion.div
             initial={{ scale: 0.85, y: 24 }}
