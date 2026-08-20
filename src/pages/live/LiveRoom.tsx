@@ -3,7 +3,6 @@ import { AnimatePresence, motion } from 'framer-motion'
 import { Link, useNavigate, useParams } from 'react-router-dom'
 import { useAppStore } from '../../store/appStore'
 import { useAuth } from '../../auth/AuthProvider'
-import { getSupabaseClient } from '../../lib/supabaseClient'
 import {
   advanceGamePhase,
   closeAndGrade,
@@ -85,10 +84,6 @@ export function LiveRoom() {
   // Timers for auto-advance (host only, to avoid duplicate calls)
   const phaseTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null)
   const gradingDoneRef = useRef<string | null>(null) // track which question we've already graded
-
-  const myPlayer = useState(() =>
-    null as LivePlayerRow | null
-  )[0] // Will be computed below
 
   const myPlayerComputed = players.find((player) => player.user_id === user?.id) ?? null
   const isHost = Boolean(room && user && room.host_auth_id === user.id)
@@ -192,10 +187,14 @@ export function LiveRoom() {
 
     gradingDoneRef.current = `${room.id}-${room.current_question_index}`
 
-    // Auto-close answers and auto-grade ALL pending answers (no intermediate locked phase)
+    // Auto-close answers and auto-grade ALL pending answers, then wait REVEAL_DURATION
+    // before advancing to host_review so players have time to see the revealed answers
     void closeAndGrade(room.id).then(() => {
-      // Move DIRECTLY to 'host_review' — answers are revealed, host reviews auto-grade
-      return advanceGamePhase(room.id, 'host_review')
+      return new Promise<void>((resolve) => {
+        phaseTimerRef.current = setTimeout(() => {
+          void advanceGamePhase(room.id, 'host_review').then(() => resolve())
+        }, REVEAL_DURATION)
+      })
     }).catch(console.error)
   }, [expired, room?.id, room?.current_question_index, room?.game_phase, isHost])
 

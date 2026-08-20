@@ -98,7 +98,7 @@ export function HostGameView({
     return (
       <div className="space-y-5">
         {/* Question */}
-        <QuestionCard question={question} index={index} total={total} room={room} answeredCount={answeredCount} playerCount={players.length} english={english} />
+        <QuestionCard question={question} index={index} total={total} room={room} answeredCount={answeredCount} playerCount={players.length} english={english} remainingSeconds={remainingSeconds} />
 
         {/* Correct answer shown */}
         <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }}
@@ -108,7 +108,7 @@ export function HostGameView({
         </motion.div>
 
         {/* ALL answers with override controls (including host's own) */}
-        <AnswerReviewList players={players} answersForIndex={answersForIndex} answerByPlayer={answerByPlayer}
+        <AnswerReviewList players={players} answerByPlayer={answerByPlayer}
           onOverrideGrade={onOverrideGrade} english={english} busy={busy} />
 
         {/* Summary + Confirm button */}
@@ -168,7 +168,7 @@ export function HostGameView({
   return (
     <div className="space-y-5">
       {/* Question */}
-      <QuestionCard question={question} index={index} total={total} room={room} answeredCount={answeredCount} playerCount={players.length} english={english} />
+      <QuestionCard question={question} index={index} total={total} room={room} answeredCount={answeredCount} playerCount={players.length} english={english} remainingSeconds={remainingSeconds} />
 
       {/* Host's own answer — SAME as a player */}
       <div className="space-y-2">
@@ -177,14 +177,19 @@ export function HostGameView({
       </div>
 
       {/* Live answers from players — only shows submitted/awaiting status, NO answer text */}
-      <AnswerListLive players={players} answersForIndex={answersForIndex} answerByPlayer={answerByPlayer} english={english} />
-
-      {/* Host controls — minimal, no grading buttons */}
+      <AnswerListLive players={players} answerByPlayer={answerByPlayer} english={english} />        {/* Host controls — minimal, no grading buttons */}
       <div className="flex flex-wrap items-center justify-center gap-3">
-        <button type="button" onClick={onPause} disabled={busy}
-          className="rounded-xl border-2 border-border-strong bg-white px-5 py-3 text-sm font-black text-muted transition hover:border-navy hover:text-navy disabled:opacity-30">
-          ⏸ {english ? 'Pause' : 'إيقاف'}
-        </button>
+        {gamePhase === 'locked' ? (
+          <button type="button" onClick={onResume} disabled={busy}
+            className="rounded-xl border-2 border-green/50 bg-green/10 px-5 py-3 text-sm font-black text-green transition hover:bg-green/20 disabled:opacity-30">
+            ▶ {english ? 'Resume' : 'استئناف'}
+          </button>
+        ) : (
+          <button type="button" onClick={onPause} disabled={busy}
+            className="rounded-xl border-2 border-border-strong bg-white px-5 py-3 text-sm font-black text-muted transition hover:border-navy hover:text-navy disabled:opacity-30">
+            ⏸ {english ? 'Pause' : 'إيقاف'}
+          </button>
+        )}
         <button type="button" onClick={onSkip} disabled={busy}
           className="rounded-xl border-2 border-border-strong bg-white px-5 py-3 text-sm font-black text-navy transition hover:border-navy hover:bg-navy hover:text-white disabled:opacity-30">
           ⏭ {english ? 'Skip' : 'تخطي'}
@@ -205,9 +210,9 @@ export function HostGameView({
 // Shared sub-components
 // ---------------------------------------------------------------------------
 
-function QuestionCard({ question, index, total, room, answeredCount, playerCount, english }: {
+function QuestionCard({ question, index, total, room, answeredCount, playerCount, english, remainingSeconds }: {
   question: LiveQuestionRow | undefined; index: number; total: number; room: LiveRoomRow
-  answeredCount: number; playerCount: number; english: boolean
+  answeredCount: number; playerCount: number; english: boolean; remainingSeconds: number | null
 }) {
   return (
     <motion.div initial={{ opacity: 0, scale: 0.98 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.3 }}
@@ -224,7 +229,7 @@ function QuestionCard({ question, index, total, room, answeredCount, playerCount
           <span className="rounded-full border border-green/40 bg-green/10 px-3 py-1.5 text-green">
             {answeredCount}/{playerCount} {english ? 'answered' : 'أجابوا'}
           </span>
-          <QuestionTimer remainingSeconds={room.question_started_at ? Math.max(0, (new Date(room.question_started_at).getTime() + room.question_timeout_seconds * 1000 - Date.now()) / 1000) : null} english={english} />
+          <QuestionTimer remainingSeconds={remainingSeconds} english={english} />
         </div>
         <h2 className="text-center font-display text-2xl font-black leading-[1.6] sm:text-3xl lg:text-4xl">
           {question ? question.question : '—'}
@@ -244,8 +249,8 @@ function QuestionCard({ question, index, total, room, answeredCount, playerCount
 }
 
 /** During host_review — ALL answers visible with override controls */
-function AnswerReviewList({ players, answersForIndex, answerByPlayer, onOverrideGrade, english, busy }: {
-  players: LivePlayerRow[]; answersForIndex: LiveAnswerRow[]; answerByPlayer: Record<string, LiveAnswerRow>
+function AnswerReviewList({ players, answerByPlayer, onOverrideGrade, english, busy }: {
+  players: LivePlayerRow[]; answerByPlayer: Record<string, LiveAnswerRow>
   onOverrideGrade: (playerId: string, status: 'correct' | 'wrong') => void
   english: boolean; busy: boolean
 }) {
@@ -308,8 +313,8 @@ function AnswerReviewList({ players, answersForIndex, answerByPlayer, onOverride
 }
 
 /** During active phase — show submitted status only, NO answer text, NO override controls */
-function AnswerListLive({ players, answersForIndex, answerByPlayer, english }: {
-  players: LivePlayerRow[]; answersForIndex: LiveAnswerRow[]; answerByPlayer: Record<string, LiveAnswerRow>
+function AnswerListLive({ players, answerByPlayer, english }: {
+  players: LivePlayerRow[]; answerByPlayer: Record<string, LiveAnswerRow>
   english: boolean
 }) {
   return (

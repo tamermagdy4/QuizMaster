@@ -32,7 +32,7 @@ export function useQuestionCountdown(room: LiveRoomRow | null): { remainingSecon
 // ---------------------------------------------------------------------------
 
 /** Avatar: real user image when available, otherwise the first letter. */
-export function PlayerAvatar({ player, size = 'md' }: { player: LivePlayerRow; size?: 'sm' | 'md' }) {
+export function PlayerAvatar({ player, size = 'md' }: { player: LivePlayerRow; size?: 'sm' | 'md'| 'lg' }) {
   const classes = size === 'sm' ? 'h-7 w-7 text-[11px]' : 'h-9 w-9 text-sm'
   if (player.avatar_url) {
     return (

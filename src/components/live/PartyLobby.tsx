@@ -174,7 +174,7 @@ export function HostLobby({
         </button>
         <button
           type="button"
-          onClick={onDelete}
+          onClick={() => void deleteLiveRoom(room.id).then(() => onDelete())}
           className="btn btn-danger rounded-xl px-4 py-2 text-xs"
         >
           🗑️ {english ? 'Delete' : 'حذف'}
@@ -192,7 +192,11 @@ export function HostLobby({
             <span className="text-sm font-bold text-teal-bright/60">{english ? 'Questions' : 'الأسئلة'}</span>
             <select
               value={room.question_count}
-              onChange={(e) => onUpdateSettings({ questionCount: Number(e.target.value) })}
+              onChange={(e) => {
+                const val = Number(e.target.value)
+                void updateLiveRoomSettings(room.id, { questionCount: val })
+                onUpdateSettings({ questionCount: val })
+              }}
               className="rounded-xl border border-petro-line-strong bg-petro-700 px-3 py-1.5 text-sm font-bold text-cream"
             >
               {[5, 10, 15, 20, 30].map((n) => <option key={n} value={n}>{n}</option>)}
@@ -202,7 +206,11 @@ export function HostLobby({
             <span className="text-sm font-bold text-teal-bright/60">{english ? 'Timer' : 'المؤقت'}</span>
             <select
               value={room.question_timeout_seconds}
-              onChange={(e) => onUpdateSettings({ questionTimeSeconds: Number(e.target.value) })}
+              onChange={(e) => {
+                const val = Number(e.target.value)
+                void updateLiveRoomSettings(room.id, { questionTimeSeconds: val })
+                onUpdateSettings({ questionTimeSeconds: val })
+              }}
               className="rounded-xl border border-petro-line-strong bg-petro-700 px-3 py-1.5 text-sm font-bold text-cream"
             >
               {[15, 30, 45, 60].map((n) => <option key={n} value={n}>{n}s</option>)}
@@ -212,7 +220,11 @@ export function HostLobby({
             <span className="text-sm font-bold text-teal-bright/60">{english ? 'Who can join' : 'مين يقدر ينضم'}</span>
             <select
               value={(room as any).who_can_join ?? 'anyone'}
-              onChange={(e) => onUpdateSettings({ whoCanJoin: e.target.value })}
+              onChange={(e) => {
+                const val = e.target.value
+                void updateLiveRoomSettings(room.id, { whoCanJoin: val })
+                onUpdateSettings({ whoCanJoin: val })
+              }}
               className="rounded-xl border border-petro-line-strong bg-petro-700 px-3 py-1.5 text-sm font-bold text-cream"
             >
               <option value="invite_only">{english ? 'Invite Only' : 'دعوة فقط'}</option>

@@ -48,6 +48,9 @@ export function GameResults({
         <h2 className="font-display text-3xl font-black text-cream">
           {english ? 'Game Over!' : 'انتهت اللعبة!'}
         </h2>
+        <p className="mt-2 text-sm text-teal-bright/50">
+          {totalQuestions} {english ? 'Questions' : 'سؤال'} · {players.length} {english ? 'Players' : 'لاعب'}
+        </p>
 
         {winner && (
           <motion.div
@@ -83,6 +86,9 @@ export function GameResults({
       >
         <h3 className="font-display text-lg font-black text-cream mb-4">
           {english ? 'Final Standings' : 'الترتيب النهائي'}
+          <span className="ms-2 text-xs font-bold text-teal-bright/40">
+            #{packId.slice(0, 8)}
+          </span>
         </h3>
 
         <div className="space-y-2">
@@ -133,8 +139,14 @@ export function GameResults({
         </motion.div>
       )}
 
-      {/* Actions */}
-      <div className="flex gap-3">
+      {/* Actions */}        <div className="flex gap-3">
+        <button
+          type="button"
+          onClick={onOpenHistory}
+          className="btn btn-ghost rounded-2xl px-4 py-3 text-sm"
+        >
+          📊 {english ? 'View History' : 'سجل الجولات'}
+        </button>
         {isHost && (
           <button
             type="button"
@@ -145,7 +157,7 @@ export function GameResults({
             🔄 {english ? 'Play Again' : 'العب مرة أخرى'}
           </button>
         )}
-        <Link to={`/`} className="btn btn-ghost flex-1 rounded-2xl py-3 text-center">
+        <Link to={`/`} className="btn btn-ghost rounded-2xl px-4 py-3 text-center text-sm">
           🏠 {english ? 'Back to Home' : 'العودة للرئيسية'}
         </Link>
       </div>

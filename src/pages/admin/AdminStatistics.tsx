@@ -26,10 +26,11 @@ export function AdminStatistics() {
       </div>
       <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
         {ADMIN_POINTS.map((points) => (
-          <div key={points} className="rounded-2xl border border-slate-800 bg-slate-900 p-5">
-            <p className="text-sm font-bold text-slate-400">أسئلة {points}</p>
-            <p className="mt-3 text-3xl font-black">{questions.filter((item) => item.points === points).length}</p>
-          </div>
+          <StatCard
+            key={points}
+            label={`أسئلة ${points}`}
+            value={questions.filter((item) => item.points === points).length}
+          />
         ))}
       </div>
       <div className="rounded-2xl border border-slate-800 bg-slate-900 p-5">

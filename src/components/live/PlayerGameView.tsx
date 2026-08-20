@@ -250,6 +250,7 @@ export function PlayerGameView({
         <span className="rounded-full border border-green/40 bg-green/10 px-3 py-1.5 text-xs font-black text-green">
           {english ? 'Answer now!' : 'أجب الآن!'}
         </span>
+        <QuestionTimer remainingSeconds={remainingSeconds} english={english} />
       </div>
 
       <QuestionCard question={question} english={english} />

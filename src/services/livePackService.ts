@@ -178,6 +178,7 @@ export interface LiveGameSettings {
   maxWager: number
   deductOnWrong: boolean
   maxPlayers: number
+  whoCanJoin: string
 }
 
 export const DEFAULT_LIVE_SETTINGS: LiveGameSettings = {
@@ -187,6 +188,7 @@ export const DEFAULT_LIVE_SETTINGS: LiveGameSettings = {
   maxWager: 20,
   deductOnWrong: false,
   maxPlayers: 10,
+  whoCanJoin: 'anyone',
 }
 
 export function getWagerRange(min: number, max: number): number[] {
@@ -222,7 +224,7 @@ export async function createLiveRoom(
     p_max_wager: settings.maxWager ?? null,
     p_deduct_on_wrong: merged.deductOnWrong,
     p_previous_room_id: previousRoomId ?? null,
-    p_who_can_join: (settings as any).whoCanJoin ?? 'anyone',
+    p_who_can_join: settings.whoCanJoin ?? 'anyone',
   })
   if (error) {
     console.error('[createLiveRoom] FAILED:', JSON.stringify(error, null, 2))
