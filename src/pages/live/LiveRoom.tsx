@@ -43,6 +43,7 @@ import { PreviousRoundSummary } from '../../components/live/PreviousRoundSummary
 import { RoundHistoryModal } from '../../components/live/RoundHistoryModal'
 import { CountdownOverlay } from '../../components/live/CountdownOverlay'
 import { subscribeToLiveRoom, type GamePhase } from '../../services/livePackService'
+import { Mic } from 'lucide-react'
 
 const HEARTBEAT_MS = 8000
 
@@ -405,7 +406,7 @@ export function LiveRoom() {
         </span>
         <span className="flex items-center gap-1.5 text-muted">
           <span className={`h-2 w-2 rounded-full ${players.some((p) => p.id === room.host_player_id && p.connected) ? 'bg-green' : 'bg-red'}`} />
-          🎙 {room.host_name}
+          <Mic className="mr-1 inline h-3 w-3" /> {room.host_name}
         </span>
         {room.status === 'playing' && (
           <span className="rounded-full border border-gold/40 bg-gold/10 px-3 py-0.5 text-gold">
@@ -427,7 +428,7 @@ export function LiveRoom() {
       {/* Promoted notification */}
       {promoted && isHost && (
         <div className="flex items-center justify-between gap-3 rounded-2xl border border-gold/60 bg-gold/15 px-4 py-3 text-sm font-black text-gold">
-          <span>🎙️ {english ? 'You are now the host.' : 'أنت الآن المضيف.'}</span>
+          <span className="flex items-center gap-1"><Mic className="h-4 w-4" /> {english ? 'You are now the host.' : 'أنت الآن المضيف.'}</span>
           <button type="button" onClick={() => setPromoted(false)} className="rounded-lg px-2 py-1 text-xs text-gold/70 hover:text-gold">✕</button>
         </div>
       )}

@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import type { LiveRoundHistoryRow } from '../../services/livePackService'
 import { cn } from '../../utils/cn'
+import { Mic, Trophy } from 'lucide-react'
 
 /** Round history modal — lists finished rounds with expandable results. */
 export function RoundHistoryModal({
@@ -97,13 +98,13 @@ export function RoundHistoryModal({
                             🏁 {dateLabel}
                           </p>
                           <p className="mt-0.5 truncate text-[11px] font-bold text-muted">
-                            🎙️ {round.host_name} · {round.question_count} {english ? 'questions' : 'أسئلة'}
+                            <Mic className="mr-1 inline h-3 w-3" /> {round.host_name} · {round.question_count} {english ? 'questions' : 'أسئلة'}
                           </p>
                         </div>
                         <div className="flex items-center gap-2">
                           {round.winner_name && (
                             <span className="rounded-full border border-gold/40 bg-gold/10 px-2.5 py-1 text-[11px] font-black text-gold">
-                              🏆 {round.winner_name} · {round.winner_score}
+                              <Trophy className="mr-1 inline h-3 w-3 text-gold" /> {round.winner_name} · {round.winner_score}
                             </span>
                           )}
                           <button

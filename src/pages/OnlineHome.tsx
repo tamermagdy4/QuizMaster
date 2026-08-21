@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import { Link, useNavigate } from 'react-router-dom'
+import { Plus, Zap, ArrowLeft } from 'lucide-react'
 import { GlassInput } from '../components/ui/GlassInput'
 import { useTranslation } from '../i18n/translations'
 import { isValidRoomCode, normalizeRoomCode } from '../services/online/roomCode'
@@ -73,7 +74,7 @@ export function OnlineHome() {
 
       {/* arena header — the cinematic title */}
       <div className="flex flex-col items-center gap-3 pt-6 text-center">
-        <p className="eyebrow">🌐 {t('arena')}</p>
+        <p className="eyebrow">{t('arena')}</p>
         <h1 className="title-cinematic text-cream">{t('onlineTitle')}</h1>
         <p className="max-w-xl text-sm text-cream/55 sm:text-base">{t('onlineSubtitle')}</p>
       </div>
@@ -83,7 +84,7 @@ export function OnlineHome() {
         {/* CREATE gate — renders immediately (no mount-hide animation) */}
         <div className="glass-dark panel-gold-edge p-5 sm:p-7">
           <div className="mb-5 flex items-center gap-3">
-            <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-gold/15 text-2xl shadow-glow-gold" aria-hidden>＋</span>
+            <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-gold/12 text-2xl" aria-hidden><Plus className="h-6 w-6 text-gold-bright" /></span>
             <div>
               <h2 className="font-display text-xl font-extrabold text-gold-bright sm:text-2xl">{t('createRoom')}</h2>
               <p className="text-xs text-cream/50">{english ? 'Open a new arena for your friends' : 'افتح ساحة جديدة لأصدقائك'}</p>
@@ -156,7 +157,7 @@ export function OnlineHome() {
         {/* JOIN gate — renders immediately (no mount-hide animation) */}
         <div className="glass-dark p-5 sm:p-7">
           <div className="mb-5 flex items-center gap-3">
-            <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-teal/15 text-2xl" aria-hidden>⌁</span>
+            <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-teal/12 text-2xl" aria-hidden><Zap className="h-6 w-6 text-teal-bright" /></span>
             <div>
               <h2 className="font-display text-xl font-extrabold text-teal-bright sm:text-2xl">{t('joinGame')}</h2>
               <p className="text-xs text-cream/50">{english ? 'Enter a friend\'s arena with its code' : 'ادخل ساحة صديقك عبر الكود'}</p>
@@ -209,7 +210,7 @@ export function OnlineHome() {
           to="/"
           className="inline-flex items-center gap-2 text-sm font-bold text-cream/50 transition hover:text-cream"
         >
-          <span aria-hidden>←</span> {t('back')}
+          <ArrowLeft className="h-4 w-4" aria-hidden /> {t('back')}
         </Link>
       </div>
     </div>

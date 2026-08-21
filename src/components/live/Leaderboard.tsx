@@ -1,6 +1,7 @@
 import { useMemo, useState } from 'react'
 import { motion } from 'framer-motion'
 import type { LivePlayerRow } from '../../services/livePackService'
+import { Trophy } from 'lucide-react'
 import { cn } from '../../utils/cn'
 import { PlayerAvatar, OnlineDot, BestStatBadge, RankBadge } from './shared'
 
@@ -85,7 +86,7 @@ export function LeaderboardPanel({ players, english, totalQuestions }: { players
     <div className="rounded-3xl border border-border-soft bg-white/80 p-4 shadow-panel sm:p-5">
       <div className="flex flex-wrap items-center justify-between gap-2">
         <h3 className="flex items-center gap-2 font-black text-navy">
-          🏆 {english ? 'Live leaderboard' : 'لوحة الصدارة'}
+          <Trophy className="mr-1 inline h-4 w-4" /> {english ? 'Live leaderboard' : 'لوحة الصدارة'}
         </h3>
         <div className="flex items-center gap-0.5 rounded-full border border-border-soft bg-white/70 p-0.5" role="group" aria-label={english ? 'Show stats' : 'عرض الإحصاءات'}>
           {(

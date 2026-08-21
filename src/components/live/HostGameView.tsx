@@ -3,6 +3,7 @@ import { motion } from 'framer-motion'
 import type { LiveAnswerRow, LivePlayerRow, LiveQuestionRow, LiveRoomRow, GamePhase } from '../../services/livePackService'
 import { cn } from '../../utils/cn'
 import { PlayerAvatar, OnlineDot, QuestionTimer } from './shared'
+import { Trophy, Mic } from 'lucide-react'
 import { AnswerComposer } from './AnswerComposer'
 import { LeaderboardPanel } from './Leaderboard'
 
@@ -151,7 +152,7 @@ export function HostGameView({
       <div className="space-y-5">
         <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }}
           className="rounded-[2rem] border-2 border-gold/50 bg-gold/10 p-6 text-center">
-          <p className="text-4xl mb-3">🏆</p>
+          <div className="mb-3 flex justify-center"><Trophy className="h-10 w-10 text-gold-bright" /></div>
           <p className="text-sm font-black uppercase tracking-wider text-gold mb-2">{english ? 'Scores Updated' : 'تم تحديث النقاط'}</p>
           <p className="text-lg font-black text-navy">
             {summary.correct} {english ? 'correct' : 'صحيحة'}
@@ -172,7 +173,7 @@ export function HostGameView({
 
       {/* Host's own answer — SAME as a player */}
       <div className="space-y-2">
-        <p className="text-xs font-black uppercase tracking-wider text-muted">🎙 {english ? 'Your answer' : 'إجابتك'}</p>
+        <p className="text-xs font-black uppercase tracking-wider text-muted"><Mic className="mr-1 inline h-3 w-3" /> {english ? 'Your answer' : 'إجابتك'}</p>
         <AnswerComposer room={room} myAnswer={myAnswer} expired={expired} english={english} onSubmit={onSubmit} busy={busy} />
       </div>
 

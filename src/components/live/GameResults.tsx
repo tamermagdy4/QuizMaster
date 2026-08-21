@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import type { LivePlayerRow } from '../../services/livePackService'
 import { cn } from '../../utils/cn'
 import { PlayerAvatar } from './shared'
+import { Trophy, Medal } from 'lucide-react'
 
 export function GameResults({
   players,
@@ -30,7 +31,7 @@ export function GameResults({
   const winner = sorted[0] ?? null
   const myRank = myPlayer ? sorted.findIndex((p) => p.id === myPlayer.id) + 1 : 0
 
-  const MEDALS = ['🥇', '🥈', '🥉']
+
 
   return (
     <div className="space-y-6">
@@ -41,8 +42,8 @@ export function GameResults({
         transition={{ type: 'spring', stiffness: 200, damping: 15 }}
         className="glass-dark rounded-3xl p-8 text-center"
       >
-        <div className="animate-fh-floaty mb-4 inline-flex">
-          <span className="text-6xl">🏆</span>
+        <div className="mb-4 inline-flex">
+          <span className="flex h-20 w-20 items-center justify-center rounded-full border-4 border-gold/50 bg-gold/20"><Trophy className="h-10 w-10 text-gold-bright" /></span>
         </div>
 
         <h2 className="font-display text-3xl font-black text-cream">
@@ -104,7 +105,7 @@ export function GameResults({
               )}
             >
               <span className="w-8 text-center text-xl">
-                {MEDALS[i] ?? `#${i + 1}`}
+                {i < 3 ? <Medal className="h-5 w-5 text-gold-bright" /> : `#${i + 1}`}
               </span>
               <PlayerAvatar player={player} size="sm" />
               <div className="min-w-0 flex-1">

@@ -1,5 +1,6 @@
 import type { LiveRoundHistoryRow } from '../../services/livePackService'
 import { cn } from '../../utils/cn'
+import { Trophy, Crown } from 'lucide-react'
 
 /** Previous-round summary shown in a NEW lobby — final ranking + points. */
 export function PreviousRoundSummary({ round, english }: { round: LiveRoundHistoryRow; english: boolean }) {
@@ -14,12 +15,12 @@ export function PreviousRoundSummary({ round, english }: { round: LiveRoundHisto
   return (
     <div className="rounded-3xl border border-gold/40 bg-white/85 p-4 shadow-panel sm:p-5">
       <div className="flex flex-wrap items-center justify-between gap-2">
-        <h3 className="font-black text-navy">🏆 {english ? 'Previous round' : 'الجولة السابقة'}</h3>
+        <h3 className="flex items-center gap-1.5 font-black text-navy"><Trophy className="h-4 w-4 text-gold" /> {english ? 'Previous round' : 'الجولة السابقة'}</h3>
         <span className="text-[11px] font-bold text-muted">{dateLabel}</span>
       </div>
       {round.winner_name && (
         <p className="mt-2 inline-flex items-center gap-2 rounded-full border border-gold/50 bg-gold/10 px-3 py-1 text-sm font-black text-gold">
-          👑 {english ? 'Winner' : 'الفائز'}: {round.winner_name} · {round.winner_score} {english ? 'pts' : 'نقطة'}
+          <span className="flex items-center gap-1"><Crown className="h-3 w-3 text-gold" /> {english ? 'Winner' : 'الفائز'}: {round.winner_name} · {round.winner_score} {english ? 'pts' : 'نقطة'}</span>
         </p>
       )}
       <div className="mt-3 space-y-1.5">

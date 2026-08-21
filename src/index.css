@@ -61,10 +61,10 @@
   /* --- Shadows (soft, restrained) --- */
   --shadow-panel: 0 18px 48px rgba(18, 35, 43, 0.08);
   --shadow-raised: 0 12px 32px rgba(18, 35, 43, 0.1);
-  --shadow-glow-gold: 0 0 28px rgba(201, 162, 39, 0.22);
-  --shadow-glow-teal: 0 0 24px rgba(47, 111, 126, 0.18);
-  --shadow-glow-green: 0 0 24px rgba(61, 139, 104, 0.22);
-  --shadow-glow-red: 0 0 24px rgba(176, 85, 79, 0.2);
+  --shadow-glow-gold: 0 1px 2px rgba(201, 162, 39, 0.12);
+  --shadow-glow-teal: 0 1px 2px rgba(47, 111, 126, 0.10);
+  --shadow-glow-green: 0 1px 2px rgba(61, 139, 104, 0.12);
+  --shadow-glow-red: 0 1px 2px rgba(176, 85, 79, 0.10);
 
   /* --- Motion tokens --- */
   --ease-out-quart: cubic-bezier(0.25, 1, 0.5, 1);
@@ -738,9 +738,8 @@
     overflow: hidden;
   }
   .circle-badge:hover {
-    transform: scale(1.08);
-    border-color: rgba(255, 255, 255, 0.3);
-    box-shadow: 0 0 30px rgba(255, 255, 255, 0.1);
+    transform: scale(1.05);
+    border-color: rgba(255, 255, 255, 0.25);
   }
   .circle-badge:active {
     transform: scale(0.95);
@@ -766,9 +765,8 @@
     cursor: pointer;
   }
   .party-card:hover {
-    transform: translateY(-4px) scale(1.02);
+    transform: translateY(-2px);
     border-color: var(--party-border-hover);
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
   }
   .party-card:active {
     transform: translateY(-1px) scale(0.98);
@@ -802,26 +800,24 @@
 
   .party-btn-primary {
     color: #fff;
-    background: linear-gradient(135deg, var(--party-orange) 0%, var(--party-pink) 100%);
-    border: 2px solid rgba(255, 255, 255, 0.15);
-    box-shadow: 0 8px 30px rgba(255, 107, 53, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    background: #c9a227;
+    border: 1px solid rgba(168, 134, 31, 0.5);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15);
   }
   .party-btn-primary:hover:not(:disabled) {
-    filter: brightness(1.1);
-    box-shadow: 0 12px 40px rgba(255, 107, 53, 0.45), inset 0 1px 0 rgba(255, 255, 255, 0.2);
-    transform: translateY(-2px);
+    filter: brightness(1.05);
+    transform: translateY(-1px);
   }
 
   .party-btn-secondary {
     color: #fff;
-    background: linear-gradient(135deg, var(--party-blue) 0%, var(--party-purple) 100%);
-    border: 2px solid rgba(255, 255, 255, 0.12);
-    box-shadow: 0 8px 30px rgba(58, 134, 255, 0.3);
+    background: #2f6f7e;
+    border: 1px solid rgba(140, 195, 202, 0.3);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
   }
   .party-btn-secondary:hover:not(:disabled) {
-    filter: brightness(1.1);
-    box-shadow: 0 12px 40px rgba(58, 134, 255, 0.4);
-    transform: translateY(-2px);
+    filter: brightness(1.08);
+    transform: translateY(-1px);
   }
 
   .party-btn-ghost {
@@ -876,10 +872,9 @@
     background: var(--party-surface-hover);
   }
   .party-chip-active {
-    border-color: var(--party-orange);
-    background: rgba(255, 107, 53, 0.15);
-    color: var(--party-orange);
-    box-shadow: 0 0 20px rgba(255, 107, 53, 0.15);
+    border-color: #c9a227;
+    background: rgba(201, 162, 39, 0.12);
+    color: #e3c76a;
   }
 
   /* --- Party avatar ring --- */
@@ -931,43 +926,13 @@
     font-size: 3.5rem;
     font-weight: 800;
     letter-spacing: 0.15em;
-    background: linear-gradient(135deg, var(--party-yellow) 0%, var(--party-orange) 50%, var(--party-pink) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: var(--color-gold-bright);
     text-align: center;
     line-height: 1;
   }
 }
 
-/* Party page ambient decorations */
-@keyframes party-float {
-  0%, 100% { transform: translateY(0) rotate(0deg); }
-  25% { transform: translateY(-12px) rotate(5deg); }
-  75% { transform: translateY(8px) rotate(-3deg); }
-}
-.party-float {
-  animation: party-float 4s ease-in-out infinite;
-  will-change: transform;
-}
 
-@keyframes party-pulse {
-  0%, 100% { opacity: 0.6; transform: scale(1); }
-  50% { opacity: 1; transform: scale(1.05); }
-}
-.party-pulse {
-  animation: party-pulse 2s ease-in-out infinite;
-  will-change: transform, opacity;
-}
-
-@keyframes party-shimmer {
-  0% { background-position: -200% 0; }
-  100% { background-position: 200% 0; }
-}
-.party-shimmer {
-  background-size: 200% 100%;
-  animation: party-shimmer 3s linear infinite;
-}
 
 /* =========================================================
    SAFE AREA FOR PHONES (portrait)

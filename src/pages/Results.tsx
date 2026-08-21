@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import { useNavigate } from 'react-router-dom'
+import { Trophy, Shield, Crown, Medal } from 'lucide-react'
 import { useGameBoardStore } from '../store/gameBoardStore'
 import { useGameSetupStore } from '../store/gameSetupStore'
 import { useOnlineStore } from '../store/onlineStore'
@@ -8,7 +9,7 @@ import { AnimatedNumber } from '../components/ui/AnimatedNumber'
 
 const confettiPieces = Array.from({ length: 10 }, (_, index) => index)
 
-const MEDALS = ['🥇', '🥈', '🥉']
+
 
 export function Results() {
   const navigate = useNavigate()
@@ -108,9 +109,9 @@ export function Results() {
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.4, ease: 'easeOut', delay: 0.1 }}
-          className="relative mx-auto inline-flex items-center gap-2 rounded-full border border-gold/45 bg-gold/15 px-4 py-1.5 shadow-glow-gold"
+          className="relative mx-auto inline-flex items-center gap-2 rounded-full border border-gold/30 bg-gold/10 px-4 py-1.5"
         >
-          <span className="text-lg" aria-hidden>🏆</span>
+          <Trophy className="h-5 w-5 text-gold-bright" aria-hidden />
           <span className="text-sm font-black text-gold-bright">
             {english ? 'Winner' : 'الفائز'}: {winner}
           </span>
@@ -136,16 +137,16 @@ export function Results() {
                 whileHover={{ y: -2 }}
                 className={`flex items-center justify-between gap-3 rounded-2xl border p-4 ${
                   index === 0
-                    ? 'border-gold/45 bg-gold/12 shadow-glow-gold'
+                    ? 'border-gold/30 bg-gold/8'
                     : index === 1
-                      ? 'border-white/15 bg-[#101D2E]'
+                      ? 'border-white/12 bg-[#101D2E]'
                       : index === 2
-                        ? 'border-white/15 bg-[#101D2E]'
-                        : 'border-white/10 bg-[#0B1526]/60'
+                        ? 'border-white/12 bg-[#101D2E]'
+                        : 'border-white/8 bg-[#0B1526]/60'
                 }`}
               >
                 <div className="flex min-w-0 items-center gap-3">
-                  <span className="text-2xl" aria-hidden>{MEDALS[index] ?? `${index + 1}.`}</span>
+                  <span className="flex h-8 w-8 items-center justify-center" aria-hidden><Medal className="h-5 w-5 text-gold-bright" /></span>
                   <span className="truncate text-base font-bold text-cream">{player.name}</span>
                 </div>
                 <AnimatedNumber from={0} value={player.score} className="score-number text-3xl font-black text-gold-bright" />
@@ -159,9 +160,9 @@ export function Results() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.35, ease: 'easeOut', delay: 0.25 }}
               whileHover={{ y: -2 }}
-              className={`rounded-2xl border p-5 ${team1Score > team2Score ? 'border-gold/45 bg-gold/12 shadow-glow-gold' : 'border-white/15 bg-[#101D2E]'}`}
+              className={`rounded-2xl border p-5 ${team1Score > team2Score ? 'border-gold/30 bg-gold/8' : 'border-white/12 bg-[#101D2E]'}`}
             >
-              <p className="text-base font-black text-teal-bright">🛡️ {team1Name}</p>
+              <p className="flex items-center gap-2 text-base font-black text-teal-bright"><Shield className="h-5 w-5" /> {team1Name}</p>
               <AnimatedNumber from={0} value={team1Score} className="score-number mt-1 block text-[clamp(2.4rem,7vw,3.6rem)] font-black text-gold-bright" />
             </motion.div>
             <motion.div
@@ -169,9 +170,9 @@ export function Results() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.35, ease: 'easeOut', delay: 0.35 }}
               whileHover={{ y: -2 }}
-              className={`rounded-2xl border p-5 ${team2Score > team1Score ? 'border-gold/45 bg-gold/12 shadow-glow-gold' : 'border-white/15 bg-[#101D2E]'}`}
+              className={`rounded-2xl border p-5 ${team2Score > team1Score ? 'border-gold/30 bg-gold/8' : 'border-white/12 bg-[#101D2E]'}`}
             >
-              <p className="text-base font-black text-gold-bright">👑 {team2Name}</p>
+              <p className="flex items-center gap-2 text-base font-black text-gold-bright"><Crown className="h-5 w-5" /> {team2Name}</p>
               <AnimatedNumber from={0} value={team2Score} className="score-number mt-1 block text-[clamp(2.4rem,7vw,3.6rem)] font-black text-gold-bright" />
             </motion.div>
           </div>

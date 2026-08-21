@@ -2097,7 +2097,7 @@ export function GameBoard() {
                         landscape:max-md:text-[8px]
                       "
                     >
-                      🛡️{' '}
+                      🛡{' '}
                       {direction === 'ltr'
                         ? 'Opponent blocked — '
                         : 'تم تفعيل حظر الخصم — الفريق '}

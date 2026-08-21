@@ -1,6 +1,7 @@
 import { useRef } from 'react'
 import { Link } from 'react-router-dom'
 import { motion, useScroll, useTransform } from 'framer-motion'
+import { ChevronDown } from 'lucide-react'
 import { HERO_VIDEOS } from './homeContent'
 import {
   TheArena,
@@ -134,14 +135,7 @@ function OpeningScene({ t }: { t: (k: string) => string }) {
         <motion.span style={{ opacity: hintOpacity }} className="text-[11px] font-bold tracking-[0.3em] text-cream/60">
           {t('scrollHint')}
         </motion.span>
-        <motion.span
-          animate={{ y: [0, 6, 0] }}
-          transition={{ duration: 1.6, repeat: Infinity, ease: 'easeInOut' }}
-          className="text-base text-gold-bright"
-          aria-hidden
-        >
-          ▾
-        </motion.span>
+        <ChevronDown className="h-4 w-4 text-gold-bright/60" aria-hidden />
       </motion.div>
     </section>
   )

@@ -78,26 +78,16 @@ export function TheArena({
           <div className="space-y-2">
             <motion.h2
               className="font-display text-[clamp(3.5rem,10vw,9rem)] font-black leading-[0.85] tracking-tight text-cream"
-              style={{
-                textShadow: '0 4px 60px rgba(140,195,202,0.15)',
-              }}
             >
               {english ? 'TEST' : 'اختبر'}
             </motion.h2>
             <motion.h2
-              className="font-display text-[clamp(3.5rem,10vw,9rem)] font-black leading-[0.85] tracking-tight"
-              style={{
-                color: '#8cc3ca',
-                textShadow: '0 4px 60px rgba(140,195,202,0.2)',
-              }}
+              className="font-display text-[clamp(3.5rem,10vw,9rem)] font-black leading-[0.85] tracking-tight text-teal-bright"
             >
               {english ? 'YOUR' : 'معلوماتك'}
             </motion.h2>
             <motion.h2
               className="font-display text-[clamp(3.5rem,10vw,9rem)] font-black leading-[0.85] tracking-tight text-cream"
-              style={{
-                textShadow: '0 4px 60px rgba(140,195,202,0.15)',
-              }}
             >
               {english ? 'KNOWLEDGE' : ''}
             </motion.h2>
@@ -159,8 +149,6 @@ export function TheArena({
             </div>
           </div>
 
-          {/* Decorative corner accent */}
-          <div className="absolute -right-4 -top-4 h-24 w-24 border border-gold/20 rounded-[1.5rem]" />
         </motion.div>
       </div>
     </section>
@@ -480,21 +468,6 @@ export function TheChallenge({
             {t('sec1Desc')}
           </p>
 
-          {/* Feature pills */}
-          <div className="mt-8 flex flex-wrap gap-3">
-            {[
-              english ? '6 Categories' : '6 فئات',
-              english ? '1000+ Questions' : '1000+ سؤال',
-              english ? '3 Difficulty Levels' : '3 مستويات صعوبة',
-            ].map((label) => (
-              <span
-                key={label}
-                className="rounded-full border border-teal/20 bg-teal/5 px-4 py-2 text-xs font-bold text-teal-bright"
-              >
-                {label}
-              </span>
-            ))}
-          </div>
         </motion.div>
 
         {/* Right: Interactive question card */}
@@ -884,8 +857,7 @@ export function Join({
           style={{
             scale: titleScale,
             opacity: titleOpacity,
-          }}
-          className="h-24 w-24 rounded-2xl object-cover shadow-[0_24px_60px_rgba(0,0,0,0.5)] ring-1 ring-white/10 sm:h-28 sm:w-28"
+          }}            className="h-24 w-24 rounded-2xl object-cover ring-1 ring-white/10 sm:h-28 sm:w-28"
         />
 
         {/* Giant title */}
@@ -895,7 +867,7 @@ export function Join({
             scale: titleScale,
             opacity: titleOpacity,
             y: titleY,
-            textShadow: '0 24px 80px rgba(140,195,202,0.15)',
+
           }}
         >
           فهلوي
@@ -917,7 +889,7 @@ export function Join({
           {/* Primary CTA */}
           <Link
             to="/create"
-            className="group relative overflow-hidden rounded-2xl bg-gold px-10 py-5 text-lg font-black text-[#0D1B2A] shadow-[0_12px_40px_rgba(201,162,39,0.3)] transition-all duration-300 hover:shadow-[0_16px_50px_rgba(201,162,39,0.4)] hover:brightness-110"
+            className="group relative overflow-hidden rounded-2xl bg-gold px-10 py-5 text-lg font-black text-[#0D1B2A] transition-all duration-300 hover:brightness-110"
           >
             <span className="relative z-10 flex items-center gap-3">
               {t('ctaPlay')}

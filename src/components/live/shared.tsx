@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import type { LivePlayerRow, LiveRoomRow } from '../../services/livePackService'
 import { getLiveQuestionRemainingMs } from '../../services/livePackService'
 import { cn } from '../../utils/cn'
+import { Trophy, Medal, Crown, Target, Zap, Scale } from 'lucide-react'
 
 // ---------------------------------------------------------------------------
 // Shared hooks
@@ -85,9 +86,9 @@ export function QuestionTimer({ remainingSeconds, english }: { remainingSeconds:
 }
 
 export function RankBadge({ rank }: { rank: number }) {
-  if (rank === 0) return <span className="text-2xl" aria-hidden>🏆</span>
-  if (rank === 1) return <span className="text-2xl" aria-hidden>🥈</span>
-  if (rank === 2) return <span className="text-2xl" aria-hidden>🥉</span>
+  if (rank === 0) return <span className="flex h-7 w-7 items-center justify-center" aria-hidden><Trophy className="h-5 w-5 text-gold-bright" /></span>
+  if (rank === 1) return <span className="flex h-7 w-7 items-center justify-center" aria-hidden><Medal className="h-5 w-5 text-cream/60" /></span>
+  if (rank === 2) return <span className="flex h-7 w-7 items-center justify-center" aria-hidden><Medal className="h-5 w-5 text-cream/40" /></span>
   return (
     <span className="flex h-9 w-9 items-center justify-center rounded-full border border-border-strong bg-surface-raised text-sm font-black text-muted">
       {rank + 1}
@@ -104,7 +105,7 @@ export function BestStatBadge({ label, title }: { label: string; title: string }
       title={title}
       className="ms-1 inline-flex h-3.5 w-3.5 items-center justify-center rounded-full bg-gold/25 text-[9px] leading-none shadow-[0_1px_3px_rgba(0,0,0,0.2)]"
     >
-      👑
+      <Crown className="h-3 w-3" />
     </span>
   )
 }
@@ -120,13 +121,13 @@ export function WagerLevelBadge({ wager, min, max, english }: { wager: number | 
   const level = ratio < 1 / 3 ? 'precise' : ratio > 2 / 3 ? 'confident' : 'moderate'
   const config =
     level === 'precise'
-      ? { label: english ? 'Precise' : 'دقيقة', icon: '🎯', cls: 'border-[#3b82f6]/40 bg-[#3b82f6]/10 text-[#3b82f6]' }
+      ? { label: english ? 'Precise' : 'دقيقة', Icon: Target, cls: 'border-[#3b82f6]/40 bg-[#3b82f6]/10 text-[#3b82f6]' }
       : level === 'confident'
-        ? { label: english ? 'Confident' : 'واثق', icon: '💪', cls: 'border-green/40 bg-green/10 text-green' }
-        : { label: english ? 'Moderate' : 'متوسطة', icon: '⚖️', cls: 'border-gold/40 bg-gold/10 text-gold' }
+        ? { label: english ? 'Confident' : 'واثق', Icon: Zap, cls: 'border-green/40 bg-green/10 text-green' }
+        : { label: english ? 'Moderate' : 'متوسطة', Icon: Scale, cls: 'border-gold/40 bg-gold/10 text-gold' }
   return (
     <span className={cn('inline-flex items-center gap-1 rounded-full border px-2 py-0.5 text-[10px] font-black', config.cls)}>
-      <span aria-hidden className="text-[9px] leading-none">{config.icon}</span>
+      <config.Icon className="h-3 w-3" aria-hidden />
       {config.label}
     </span>
   )

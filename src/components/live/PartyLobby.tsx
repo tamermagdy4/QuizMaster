@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import type { LivePlayerRow, LiveRoomRow } from '../../services/livePackService'
 import { copyLiveInvite, updateLiveRoomSettings, deleteLiveRoom, setReady } from '../../services/livePackService'
 import { cn } from '../../utils/cn'
+import { Crown } from 'lucide-react'
 import { PlayerAvatar } from './shared'
 import { ChatPanel } from './ChatPanel'
 
@@ -147,7 +148,7 @@ export function HostLobby({
                       : 'border-petro-line-strong bg-transparent',
                   )} />
                   {player.id === room.host_player_id && (
-                    <span className="text-[10px] font-black text-gold">👑</span>
+                    <span className="text-gold"><Crown className="h-3 w-3" /></span>
                   )}
                 </motion.div>
               ))}
@@ -256,7 +257,7 @@ export function HostLobby({
       >
         {starting
           ? (english ? 'Starting…' : 'جارٍ البدء…')
-          : `🎮 ${english ? 'START GAME' : 'ابدأ اللعب'}`}
+          : `${english ? 'START GAME' : 'ابدأ اللعب'}`}
       </motion.button>
     </div>
   )
@@ -359,7 +360,7 @@ export function PlayerLobby({
                     : 'border-petro-line-strong bg-transparent',
                 )} />
                 {player.id === room.host_player_id && (
-                  <span className="text-[10px] font-black text-gold">👑</span>
+                  <span className="text-gold"><Crown className="h-3 w-3" /></span>
                 )}
               </motion.div>
             ))}

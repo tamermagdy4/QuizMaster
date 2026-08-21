@@ -3,6 +3,7 @@ import { motion } from 'framer-motion'
 import type { LiveAnswerRow, LivePlayerRow, LiveQuestionRow, LiveRoomRow, GamePhase } from '../../services/livePackService'
 import { cn } from '../../utils/cn'
 import { PlayerAvatar, OnlineDot, QuestionTimer } from './shared'
+import { Mic } from 'lucide-react'
 import { AnswerComposer } from './AnswerComposer'
 
 /**
@@ -156,7 +157,7 @@ export function PlayerGameView({
         {/* Host's own answer (if host is not in players list) */}
         {myAnswer && !players.some((p) => p.user_id === myAnswer.player_id || p.id === myAnswer.player_id) && (
           <div className="rounded-2xl border border-border-soft bg-surface-raised/40 p-4">
-            <p className="text-xs font-black uppercase tracking-wider text-muted mb-2">🎙 {english ? 'Host answer' : 'إجابة المضيف'}</p>
+            <p className="text-xs font-black uppercase tracking-wider text-muted mb-2"><Mic className="mr-1 inline h-3 w-3" /> {english ? 'Host answer' : 'إجابة المضيف'}</p>
             <div className="flex items-center gap-3">
               <span className="text-sm font-bold text-ink">{myAnswer.answer_text || '—'}</span>
               <span className={cn('rounded-full px-2.5 py-1 text-[10px] font-black',

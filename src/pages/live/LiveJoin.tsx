@@ -3,6 +3,7 @@ import { motion } from 'framer-motion'
 import { Link, useNavigate, useSearchParams } from 'react-router-dom'
 import { useAppStore } from '../../store/appStore'
 import { getSupabaseClient } from '../../lib/supabaseClient'
+import { Gamepad2 } from 'lucide-react'
 import {
   getLivePlayers,
   joinLiveRoom,
@@ -136,7 +137,7 @@ export function LiveJoin() {
         <div className="pointer-events-none absolute -bottom-24 -start-10 h-52 w-52 rounded-full bg-teal/20 blur-3xl" aria-hidden />
 
         <div className="relative text-center">
-          <span className="text-4xl" aria-hidden>🎮</span>
+          <span className="flex h-16 w-16 items-center justify-center rounded-full border border-teal/20 bg-teal/10"><Gamepad2 className="h-8 w-8 text-teal-bright" /></span>
           <h1 className="mt-3 font-display text-2xl font-black tracking-tight sm:text-3xl">
             {english ? 'Join a Party' : 'انضم إلى حفلة'}
           </h1>
