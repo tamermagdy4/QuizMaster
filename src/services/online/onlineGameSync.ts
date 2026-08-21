@@ -371,8 +371,10 @@ export function applyRemoteGameEvent(event: OnlineGameEvent): void {
         break
       }
       case 'ANSWER_REVEALED': {
-        // Any player may reveal the answer — the state is synced to everyone.
-        // Correction buttons remain host-only in resolveQuestion() and the UI.
+        // In online mode, the answer must NOT be revealed to players —
+        // only the host decides correctness. Ignore reveal events in online mode.
+        const gm = useGameBoardStore.getState().gameMode
+        if (gm === 'online') break
         useGameBoardStore.setState({ isRevealed: event.payload.revealed })
         break
       }

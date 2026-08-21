@@ -185,6 +185,13 @@ export function GameBoard() {
     revealAnswer,
     hideAnswer,
     resetReveal,
+    onlineAnswers,
+    onlineAutoGrades,
+    onlineFinalGrades,
+    onlineGamePhase,
+    submitOnlineAnswer,
+    setOnlineFinalGrade,
+    confirmOnlineReview,
   } = useGameBoardStore()
 
   const onlineStore = useOnlineStore()
@@ -197,6 +204,9 @@ export function GameBoard() {
 
   const [countdown, setCountdown] =
     useState<number>(questionDuration)
+
+  /** Online: the text the host/players type as their answer */
+  const [onlineAnswerText, setOnlineAnswerText] = useState('')
 
   const [burst, setBurst] = useState<{
     team: TeamId
@@ -433,7 +443,8 @@ export function GameBoard() {
       return
     }
 
-    if (answerSubmitted) return
+    // Online: timer keeps running even after one player submits (simultaneous mode)
+    if (gameMode !== 'online' && answerSubmitted) return
 
     resetReveal()
     setCountdown(questionDuration)
@@ -443,8 +454,14 @@ export function GameBoard() {
       setCountdown((current) => {
         if (current <= 1) {
           window.clearInterval(timer)
-          revealAnswer()
           playSound('timer')
+          // ONLINE: do NOT reveal the correct answer — just lock inputs and
+          // move to review phase. The host decides correctness.
+          if (gameMode === 'online') {
+            useGameBoardStore.setState({ onlineGamePhase: 'review' })
+          } else {
+            revealAnswer()
+          }
           return 0
         }
 
@@ -457,6 +474,7 @@ export function GameBoard() {
     activeQuestion,
     answerSubmitted,
     questionDuration,
+    gameMode,
     resetReveal,
     revealAnswer,
     playSound,
@@ -514,8 +532,11 @@ export function GameBoard() {
         activeQuestion
       ) {
         event.preventDefault()
-        revealAnswer()
-        playSound('reveal')
+        // In online mode, Space should NOT reveal the answer — only the host decides.
+        if (gameMode !== 'online') {
+          revealAnswer()
+          playSound('reveal')
+        }
       }
 
       if (event.key.toLowerCase() === 'r') {
@@ -635,8 +656,10 @@ export function GameBoard() {
       return
     }
 
-    // Goes through the store so the reveal is HOST-only in online games and
-    // syncs to the other player via ANSWER_REVEALED.
+    // In online mode, the host must NOT reveal the answer manually —
+    // the answer is revealed only after the host makes a decision.
+    if (gameMode === 'online') return
+
     revealAnswer()
     playSound('reveal')
   }
@@ -886,12 +909,17 @@ export function GameBoard() {
   const canAnswer = useMemo(() => {
     if (gameMode !== 'online') return true
     if (!activeQuestion) return false
+    // Online simultaneous mode: everyone (host + all players) can answer
+    // ONLY during the answering phase. When review starts (timer=0), inputs lock.
+    if (onlineGamePhase === 'answering') return true
+    if (onlineGamePhase === 'review') return false
+    // Legacy: only the team's turn may answer
     if (ffaPlayers.length >= 3) {
       return !!onlineStore.self && activeQuestion.playerId === onlineStore.self.id
     }
     const myTeam: TeamId = onlineStore.isHost() ? 1 : 2
     return activeQuestion.team === myTeam
-  }, [gameMode, activeQuestion, ffaPlayers.length, onlineStore])
+  }, [gameMode, activeQuestion, ffaPlayers.length, onlineStore, onlineGamePhase])
 
   /*
    * ============================
@@ -1302,7 +1330,7 @@ export function GameBoard() {
                                   <div className="max-h-[18dvh] min-h-0 overflow-y-auto overscroll-contain px-1">
                                     <p className="text-lg font-bold text-white landscape:max-md:text-[10px]">
                                       {ui.yourAnswer}:{' '}
-                                      {selectedAnswer}
+                                      {selectedAnswer || (direction === 'ltr' ? 'No answer' : 'لم يجب')}
                                     </p>
                                     <p className="text-lg font-bold text-[#D4A843] landscape:max-md:text-[10px]">
                                       {ui.correctAnswer}:{' '}
@@ -1316,7 +1344,7 @@ export function GameBoard() {
                                 <>
                                   <div className="text-lg font-bold text-white landscape:max-md:text-[10px]">
                                     {ui.yourAnswer}:{' '}
-                                    {selectedAnswer}
+                                    {selectedAnswer || (direction === 'ltr' ? 'No answer' : 'لم يجب')}
                                   </div>
                                   <div className="text-base font-black text-[#D4A843] landscape:max-md:text-[10px]">
                                     {direction === 'ltr'
@@ -1396,6 +1424,24 @@ export function GameBoard() {
                               </p>
                             </>
                           )}
+                        </motion.div>
+                      ) : gameMode === 'online' && onlineGamePhase === 'review' && !answerSubmitted && !onlineStore.isHost() ? (
+                        /* Timer expired and player did NOT answer — show timeout (NOT for host) */
+                        <motion.div
+                          key="timeout"
+                          initial={{ opacity: 0 }}
+                          animate={{ opacity: 1 }}
+                          className="flex flex-col items-center justify-center py-6 text-center"
+                        >
+                          <span className="text-4xl mb-3">⏰</span>
+                          <p className="text-lg font-black text-red-400">
+                            {direction === 'ltr' ? 'Time is up!' : 'انتهى الوقت!'}
+                          </p>
+                          <p className="mt-2 text-sm font-bold text-[#D4A843]">
+                            {direction === 'ltr'
+                              ? 'Waiting for the host…'
+                              : 'بانتظار قرار المضيف…'}
+                          </p>
                         </motion.div>
                       ) : !isRevealed ? (
                         <motion.div
@@ -1507,6 +1553,48 @@ export function GameBoard() {
                             </div>
                           )}
 
+                          {/* ONLINE TEXT INPUT — host + all players type their answer */}
+                          {gameMode === 'online' && canAnswer && !answerSubmitted && (
+                            <div className="mt-3">
+                              <input
+                                type="text"
+                                value={onlineAnswerText}
+                                onChange={(e) => setOnlineAnswerText(e.target.value)}
+                                onKeyDown={(e) => {
+                                  if (e.key === 'Enter' && onlineAnswerText.trim()) {
+                                    e.preventDefault()
+                                    submitAnswer(onlineAnswerText.trim())
+                                    if (onlineStore.self) {
+                                      submitOnlineAnswer(onlineStore.self.id, onlineStore.self.name, onlineAnswerText.trim())
+                                    }
+                                    setOnlineAnswerText('')
+                                    playSound('select')
+                                  }
+                                }}
+                                placeholder={direction === 'ltr' ? 'Type your answer...' : 'اكتب إجابتك...'}
+                                className="w-full rounded-xl border-2 border-[#D4A843]/40 bg-[#0B1220] px-4 py-3 text-sm font-bold text-white placeholder-gray-500 outline-none transition focus:border-[#D4A843]/70 focus:ring-1 focus:ring-[#D4A843]/30"
+                                autoFocus
+                              />
+                              <button
+                                type="button"
+                                disabled={!onlineAnswerText.trim()}
+                                onClick={() => {
+                                  if (onlineAnswerText.trim()) {
+                                    submitAnswer(onlineAnswerText.trim())
+                                    if (onlineStore.self) {
+                                      submitOnlineAnswer(onlineStore.self.id, onlineStore.self.name, onlineAnswerText.trim())
+                                    }
+                                    setOnlineAnswerText('')
+                                    playSound('select')
+                                  }
+                                }}
+                                className="mt-2 w-full rounded-xl bg-[#D4A843] px-4 py-2.5 text-sm font-black text-[#0B1220] shadow-lg transition hover:bg-[#E0B84D] disabled:opacity-40 disabled:cursor-not-allowed"
+                              >
+                                {direction === 'ltr' ? 'Submit Answer' : 'إرسال الإجابة'}
+                              </button>
+                            </div>
+                          )}
+
                           {/* ANSWER OPTIONS */}
 
                           {activeQuestion.answerOptions
@@ -1596,13 +1684,16 @@ export function GameBoard() {
                                             option,
                                           )
 
-                                          // LOCAL: instant auto-judge feedback.
-                                          // ONLINE: the host judges — never
-                                          // reveal correctness to the picker
-                                          // before the host's decision.
+                                          // ONLINE: record in the simultaneous answers map
                                           if (
-                                            gameMode === 'online'
+                                            gameMode === 'online' &&
+                                            onlineStore.self
                                           ) {
+                                            submitOnlineAnswer(
+                                              onlineStore.self.id,
+                                              onlineStore.self.name,
+                                              option,
+                                            )
                                             playSound('select')
                                             return
                                           }
@@ -2034,7 +2125,8 @@ export function GameBoard() {
                       landscape:max-md:gap-1
                     "
                   >
-                    {!answerSubmitted && (
+                    {/* Reveal button — LOCAL only. Online auto-reveals at timer=0. */}
+                    {!answerSubmitted && gameMode !== 'online' && (
                       <motion.button
                         type="button"
                         ref={triggerRef}
@@ -2108,88 +2200,27 @@ export function GameBoard() {
                       </motion.button>
                     )}
 
-                    {answerSubmitted &&
-                      gameMode === 'online' &&
-                      onlineStore.isHost() && (
-                        <>
-                          <motion.button
-                            type="button"
-                            whileTap={{
-                              scale: 0.97,
-                            }}
-                            onClick={() =>
-                              handleResolve(
-                                activeQuestion.team,
-                              )
-                            }
-                            className="
-                              rounded-xl
-                              border-2
-                              border-emerald-500/60
-                              bg-emerald-500/20
-                              px-4
-                              py-2
-                              font-bold
-                              text-emerald-300
-                              shadow-lg
-                              shadow-emerald-500/10
-                              transition
-                              hover:bg-emerald-500/30
-
-                              max-[640px]:rounded-lg
-                              max-[640px]:border
-                              max-[640px]:px-2.5
-                              max-[640px]:py-1.5
-                              max-[640px]:text-[11px]
-
-                              landscape:max-md:rounded-lg
-                              landscape:max-md:border
-                              landscape:max-md:px-2
-                              landscape:max-md:py-1
-                              landscape:max-md:text-[9px]
-                            "
-                          >
-                            ✅ صحيحة
-                          </motion.button>
-                          <motion.button
-                            type="button"
-                            whileTap={{
-                              scale: 0.97,
-                            }}
-                            onClick={() =>
-                              handleResolve(null)
-                            }
-                            className="
-                              rounded-xl
-                              border-2
-                              border-red-500/60
-                              bg-red-500/20
-                              px-4
-                              py-2
-                              font-bold
-                              text-red-300
-                              shadow-lg
-                              shadow-red-500/10
-                              transition
-                              hover:bg-red-500/30
-
-                              max-[640px]:rounded-lg
-                              max-[640px]:border
-                              max-[640px]:px-2.5
-                              max-[640px]:py-1.5
-                              max-[640px]:text-[11px]
-
-                              landscape:max-md:rounded-lg
-                              landscape:max-md:border
-                              landscape:max-md:px-2
-                              landscape:max-md:py-1
-                              landscape:max-md:text-[9px]
-                            "
-                          >
-                            ❌ خاطئة
-                          </motion.button>
-                        </>
-                      )}
+                    {/* Online review panel: auto-graded answers + host override + Next Question */}
+                    {gameMode === 'online' && onlineStore.isHost() && onlineGamePhase === 'review' && (
+                      <OnlineReviewPanel
+                        onlineAnswers={onlineAnswers}
+                        onlineAutoGrades={onlineAutoGrades}
+                        onlineFinalGrades={onlineFinalGrades}
+                        onlineGamePhase={onlineGamePhase}
+                        correctAnswer={activeQuestion.answerText}
+                        players={onlineStore.players}
+                        onOverrideGrade={setOnlineFinalGrade}
+                        onConfirmReview={() => {
+                          confirmOnlineReview()
+                          // Delay closing the question so players can see the result.
+                          // After 3 seconds, finish the question like local mode.
+                          setTimeout(() => {
+                            handleResolve(activeQuestion.team)
+                          }, 3000)
+                        }}
+                        direction={direction}
+                      />
+                    )}
                   </div>
 
                   {/* RESOLVE BUTTONS */}
@@ -2761,5 +2792,154 @@ export function GameBoard() {
         onClose={closeWheel}
       />
     </div>
+  )
+}
+
+// ═══════════════════════════════════════════════════════════════════
+// ONLINE REVIEW PANEL — answers + auto-grading + host override
+// ═══════════════════════════════════════════════════════════════════
+
+/** Normalize an answer for fuzzy comparison: trim, collapse whitespace, lowercase, normalize Arabic-Indic digits. */
+function normalizeAnswer(text: string): string {
+  return text
+    .trim()
+    .replace(/\s+/g, ' ')
+    .toLowerCase()
+    .replace(/[\u0660-\u0669]/g, (d) => String(d.charCodeAt(0) - 0x0660)) // Arabic-Indic → 0-9
+}
+
+/** Auto-grade a player's answer against the correct answer. */
+function autoGrade(playerAnswer: string, correctAnswer: string): 'correct' | 'wrong' {
+  const a = normalizeAnswer(playerAnswer)
+  const b = normalizeAnswer(correctAnswer)
+  if (a === b) return 'correct'
+  // Levenshtein-like: allow 1 edit for short answers, 2 for longer
+  if (a.length >= 3 && b.length >= 3) {
+    const maxEdits = a.length <= 6 ? 1 : 2
+    if (levenshtein(a, b) <= maxEdits) return 'correct'
+  }
+  return 'wrong'
+}
+
+function levenshtein(a: string, b: string): number {
+  const m = a.length, n = b.length
+  const dp: number[][] = Array.from({ length: m + 1 }, () => Array(n + 1).fill(0))
+  for (let i = 0; i <= m; i++) dp[i]![0] = i
+  for (let j = 0; j <= n; j++) dp[0]![j] = j
+  for (let i = 1; i <= m; i++) {
+    for (let j = 1; j <= n; j++) {
+      const cost = a[i - 1] === b[j - 1] ? 0 : 1
+      dp[i]![j] = Math.min(dp[i - 1]![j]! + 1, dp[i]![j - 1]! + 1, dp[i - 1]![j - 1]! + cost)
+    }
+  }
+  return dp[m]![n]!
+}
+
+function OnlineReviewPanel({
+  onlineAnswers,
+  onlineAutoGrades,
+  onlineFinalGrades,
+  onlineGamePhase,
+  correctAnswer,
+  players,
+  onOverrideGrade,
+  onConfirmReview,
+  direction,
+}: {
+  onlineAnswers: Record<string, string>
+  onlineAutoGrades: Record<string, 'correct' | 'wrong' | null>
+  onlineFinalGrades: Record<string, 'correct' | 'wrong'>
+  onlineGamePhase: 'answering' | 'review' | null
+  correctAnswer: string
+  players: { id: string; name: string }[]
+  onOverrideGrade: (playerId: string, grade: 'correct' | 'wrong') => void
+  onConfirmReview: () => void
+  direction: 'ltr' | 'rtl'
+}) {
+  const isReview = onlineGamePhase === 'review'
+
+  // Auto-compute grades for players who submitted but don't have a grade yet
+  const entries = players
+    .filter((p) => onlineAnswers[p.id] !== undefined)
+    .map((p) => {
+      const answer = onlineAnswers[p.id]!
+      const autoGrade_ = onlineAutoGrades[p.id] ?? autoGrade(answer, correctAnswer)
+      const finalGrade = onlineFinalGrades[p.id] ?? autoGrade_
+      return { player: p, answer, autoGrade: autoGrade_, finalGrade }
+    })
+
+  // Players who didn't answer
+  const absent = players.filter((p) => onlineAnswers[p.id] === undefined)
+
+  if (!isReview) return null
+
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 8 }}
+      animate={{ opacity: 1, y: 0 }}
+      className="mt-3 rounded-xl border border-[#1E293B] bg-[#0F172A] p-3"
+    >
+      <h4 className="mb-2 text-xs font-black tracking-wider text-[#D4A843]">
+        {direction === 'ltr' ? 'ANSWERS' : 'الإجابات'}
+      </h4>
+
+      {/* Correct answer */}
+      <div className="mb-2 rounded-lg border border-emerald-500/30 bg-emerald-500/10 px-3 py-2 text-center">
+        <p className="text-[10px] font-bold text-emerald-400">
+          {direction === 'ltr' ? 'Correct Answer' : 'الإجابة الصحيحة'}
+        </p>
+        <p className="text-sm font-black text-emerald-300">{correctAnswer}</p>
+      </div>
+
+      {/* Answer rows */}
+      <div className="space-y-1.5">
+        {entries.map(({ player, answer, autoGrade: ag, finalGrade: fg }) => {
+          const isCorrect = fg === 'correct'
+          const overridden = ag !== fg
+          return (
+            <div key={player.id} className="flex items-center gap-2 rounded-lg border border-[#1E293B] bg-[#0B1220] px-3 py-2">
+              <span className="min-w-0 flex-1 truncate text-xs font-bold text-white">{player.name}</span>
+              <span className="min-w-0 flex-1 truncate text-xs text-gray-400">{answer || '—'}</span>
+              <span className={`shrink-0 rounded px-2 py-0.5 text-[10px] font-black ${isCorrect ? 'bg-emerald-500/20 text-emerald-300' : 'bg-red-500/20 text-red-300'}`}>
+                {isCorrect ? '✓' : '✕'}{overridden ? ' ★' : ''}
+              </span>
+              {/* Override buttons */}
+              <button
+                type="button"
+                onClick={() => onOverrideGrade(player.id, 'correct')}
+                className={`shrink-0 rounded border px-1.5 py-0.5 text-[10px] font-bold transition ${fg === 'correct' ? 'border-emerald-500/60 bg-emerald-500/20 text-emerald-300' : 'border-gray-600/30 bg-gray-800/20 text-gray-500 hover:border-emerald-500/40 hover:text-emerald-300'}`}
+              >
+                ✓
+              </button>
+              <button
+                type="button"
+                onClick={() => onOverrideGrade(player.id, 'wrong')}
+                className={`shrink-0 rounded border px-1.5 py-0.5 text-[10px] font-bold transition ${fg === 'wrong' ? 'border-red-500/60 bg-red-500/20 text-red-300' : 'border-gray-600/30 bg-gray-800/20 text-gray-500 hover:border-red-500/40 hover:text-red-300'}`}
+              >
+                ✕
+              </button>
+            </div>
+          )
+        })}
+        {absent.map((player) => (
+          <div key={player.id} className="flex items-center gap-2 rounded-lg border border-[#1E293B] bg-[#0B1220] px-3 py-2">
+            <span className="min-w-0 flex-1 truncate text-xs font-bold text-white">{player.name}</span>
+            <span className="shrink-0 rounded bg-gray-500/20 px-2 py-0.5 text-[10px] font-black text-gray-500">
+              {direction === 'ltr' ? 'No answer' : 'لم يُجب'}
+            </span>
+          </div>
+        ))}
+      </div>
+
+      {/* Confirm / Next Question button */}
+      <motion.button
+        type="button"
+        whileTap={{ scale: 0.97 }}
+        onClick={onConfirmReview}
+        className="mt-3 w-full rounded-xl bg-[#D4A843] px-4 py-2.5 text-sm font-black text-[#0B1220] shadow-lg shadow-[#D4A843]/10 transition hover:bg-[#E0B84D]"
+      >
+        {direction === 'ltr' ? 'Next Question' : 'السؤال التالي'}
+      </motion.button>
+    </motion.div>
   )
 }

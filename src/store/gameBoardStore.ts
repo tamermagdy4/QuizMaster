@@ -57,6 +57,12 @@ interface GameBoardState {
   answerCorrect: boolean | null
   answerPoints: number
 
+  /** Online simultaneous answering — all players' answers + grades */
+  onlineAnswers: Record<string, string>           // playerId → answer text
+  onlineAutoGrades: Record<string, 'correct' | 'wrong' | null>  // playerId → auto grade
+  onlineFinalGrades: Record<string, 'correct' | 'wrong'>        // playerId → host final grade
+  onlineGamePhase: 'answering' | 'review' | null
+
   initializeBoard: (mode?: GameMode, ffaPlayers?: { id: string; name: string; lifelineIds?: LifelineId[] }[]) => Promise<void>
   isCellPlayable: (categoryId: string, slotIndex: number) => boolean
   selectQuestion: (categoryId: string, slotIndex: number) => ActiveQuestion | null
@@ -80,6 +86,12 @@ interface GameBoardState {
   revealAnswer: () => void
   hideAnswer: () => void
   resetReveal: () => void
+
+  /** Online simultaneous answering */
+  submitOnlineAnswer: (playerId: string, playerName: string, answer: string) => void
+  setOnlineFinalGrade: (playerId: string, grade: 'correct' | 'wrong') => void
+  confirmOnlineReview: () => void
+  resetOnlinePhase: () => void
 }
 
 /**
@@ -361,12 +373,15 @@ export function resetOnlineMatchState(): void {
     wheelBonus: null,
     wheelPending: false,
     wheelPendingTeam: null,
-    ffaWheelPendingPlayerId: null,
-    answerSubmitted: false,
-    selectedAnswer: null,
-    answerCorrect: null,
-    answerPoints: 0,
-  })
+    ffaWheelPendingPlayerId: null,      answerSubmitted: false,
+      selectedAnswer: null,
+      answerCorrect: null,
+      answerPoints: 0,
+      onlineAnswers: {},
+      onlineAutoGrades: {},
+      onlineFinalGrades: {},
+      onlineGamePhase: null,
+    })
 }
 
 export const useGameBoardStore = create<GameBoardState>()(
@@ -407,6 +422,10 @@ export const useGameBoardStore = create<GameBoardState>()(
       selectedAnswer: null,
       answerCorrect: null,
       answerPoints: 0,
+      onlineAnswers: {},
+      onlineAutoGrades: {},
+      onlineFinalGrades: {},
+      onlineGamePhase: null,
 
       initializeBoard: async (mode = 'local', ffaPlayers) => {
         // Load the remote (Supabase) questions AND every local question JSON
@@ -580,6 +599,10 @@ export const useGameBoardStore = create<GameBoardState>()(
           selectedAnswer: null,
           answerCorrect: null,
           answerPoints: 0,
+          onlineAnswers: {},
+          onlineAutoGrades: {},
+          onlineFinalGrades: {},
+          onlineGamePhase: 'answering',
         })
 
         if (state.gameMode === 'online') {
@@ -810,12 +833,16 @@ export const useGameBoardStore = create<GameBoardState>()(
         // (host-gated). This keeps scoring rules identical, it only moves WHO
         // decides correct/wrong to the host.
         if (state.gameMode === 'online') {
+          // Record in both local state AND the simultaneous answers map
+          const nextOnlineAnswers = { ...state.onlineAnswers }
+          if (selfId) nextOnlineAnswers[selfId] = answer
           set({
             activeQuestion: { ...activeQuestion, answered: true },
             answerSubmitted: true,
             selectedAnswer: answer,
             answerCorrect: null,
             answerPoints: 0,
+            onlineAnswers: nextOnlineAnswers,
           })
           notifyOnlineGameEvent('SCORE_UPDATED', {
             team1Score: state.team1Score,
@@ -1385,6 +1412,122 @@ export const useGameBoardStore = create<GameBoardState>()(
       },
 
       resetReveal: () => set({ isRevealed: false }),
+
+      // ═══════════════════════════════════════════════════════════════════
+      // ONLINE SIMULTANEOUS ANSWERING
+      // ═══════════════════════════════════════════════════════════════════
+
+      submitOnlineAnswer: (playerId, _playerName, answer) => {
+        const state = get()
+        if (state.isGameFinished) return
+        const q = state.activeQuestion
+        if (!q) return
+        if (state.onlineGamePhase !== 'answering') return
+        if (state.isRevealed) return
+
+        // Record this player's answer
+        const next = { ...state.onlineAnswers, [playerId]: answer }
+        set({ onlineAnswers: next })
+
+        // If THIS player submitted, also mark them as having answered locally
+        const selfId = getOnlineSelfId()
+        if (selfId === playerId) {
+          set({
+            answerSubmitted: true,
+            selectedAnswer: answer,
+          })
+        }
+      },
+
+      setOnlineFinalGrade: (playerId, grade) => {
+        const state = get()
+        if (state.onlineGamePhase !== 'review') return
+        // Only host may override
+        if (!useOnlineStore.getState().isHost()) return
+        set({ onlineFinalGrades: { ...state.onlineFinalGrades, [playerId]: grade } })
+      },
+
+      confirmOnlineReview: () => {
+        const state = get()
+        if (state.onlineGamePhase !== 'review') return
+        if (!useOnlineStore.getState().isHost()) return
+        const q = state.activeQuestion
+        if (!q) return
+
+        // Calculate final scores using onlineFinalGrades (or autoGrades as fallback)
+        const grades = { ...state.onlineAutoGrades }
+        for (const [pid, g] of Object.entries(state.onlineFinalGrades)) {
+          grades[pid] = g
+        }
+
+        const points = q.doubleApplied ? q.points * 2 : q.points
+        const ffa = isFfaGame(state)
+
+        let nextTeam1 = state.team1Score
+        let nextTeam2 = state.team2Score
+        let nextFfaPlayers = state.ffaPlayers
+
+        if (ffa) {
+          nextFfaPlayers = state.ffaPlayers.map((p) => {
+            const g = grades[p.playerId]
+            return g === 'correct'
+              ? { ...p, score: p.score + points }
+              : p
+          })
+        } else {
+          // 2-player: each team gets points if their answer is correct
+          const online = useOnlineStore.getState()
+          for (const [pid, g] of Object.entries(grades)) {
+            if (g !== 'correct') continue
+            const player = state.ffaPlayers.find((p) => p.playerId === pid)
+            if (player) {
+              // FFA players used for team resolution too
+            }
+            const team = pid === online.self?.id
+              ? (online.room && pid === online.room.hostId ? 1 : 2)
+              : null
+            if (team === 1) nextTeam1 += points
+            else if (team === 2) nextTeam2 += points
+          }
+        }
+
+        // Determine the LOCAL player's result (answerCorrect) from the grades
+        const selfId = getOnlineSelfId()
+        const selfGrade = selfId ? grades[selfId] : undefined
+        const selfIsCorrect = selfGrade === 'correct'
+        const selfPoints = selfIsCorrect ? points : 0
+        const selfAnswer = selfId ? (state.onlineAnswers[selfId] ?? null) : null
+
+        set({
+          team1Score: nextTeam1,
+          team2Score: nextTeam2,
+          ffaPlayers: nextFfaPlayers,
+          onlineGamePhase: null,
+          // Do NOT set isRevealed — that would leak the correct answer to players.
+          // Instead set answerCorrect so the submitted-answer branch shows the result.
+          answerSubmitted: true,
+          selectedAnswer: selfAnswer,
+          answerCorrect: selfIsCorrect,
+          answerPoints: selfPoints,
+          onlineAnswers: {},
+          onlineAutoGrades: {},
+          onlineFinalGrades: {},
+        })
+
+        // Notify online peers
+        notifyOnlineGameEvent('SCORE_UPDATED', {
+          team1Score: nextTeam1,
+          team2Score: nextTeam2,
+          ffaPlayers: nextFfaPlayers,
+        })
+      },
+
+      resetOnlinePhase: () => set({
+        onlineAnswers: {},
+        onlineAutoGrades: {},
+        onlineFinalGrades: {},
+        onlineGamePhase: null,
+      }),
     }),
     {
       name: 'quizmaster-board',
@@ -1422,6 +1565,12 @@ export const useGameBoardStore = create<GameBoardState>()(
         if (!Number.isFinite(merged.team1Score)) merged.team1Score = 0
         if (!Number.isFinite(merged.team2Score)) merged.team2Score = 0
         if (!Number.isFinite(merged.answerPoints)) merged.answerPoints = 0
+
+        // --- Online simultaneous answering fields ---
+        if (!merged.onlineAnswers || typeof merged.onlineAnswers !== 'object') merged.onlineAnswers = {}
+        if (!merged.onlineAutoGrades || typeof merged.onlineAutoGrades !== 'object') merged.onlineAutoGrades = {}
+        if (!merged.onlineFinalGrades || typeof merged.onlineFinalGrades !== 'object') merged.onlineFinalGrades = {}
+        if (merged.onlineGamePhase !== 'answering' && merged.onlineGamePhase !== 'review') merged.onlineGamePhase = null
 
         // The turn is a closed set — anything else repairs to team 1.
         if (merged.currentTurn !== 1 && merged.currentTurn !== 2) merged.currentTurn = 1
