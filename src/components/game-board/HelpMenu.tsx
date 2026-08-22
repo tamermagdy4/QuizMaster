@@ -80,7 +80,7 @@ export function HelpMenu({ lifelines, accent, getDisabled, activeLifelineId, onS
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -4 }}
             transition={{ duration: 0.15, ease: 'easeOut' }}
-            className="absolute end-0 top-full z-50 mt-1.5 w-60 rounded-xl border border-white/10 bg-[#0c1a28]/98 p-1.5 sm:w-64"
+            className="absolute end-0 top-full z-50 mt-1.5 w-60 rounded-xl border border-white/10 bg-[#0e1622]/98 p-1.5 sm:w-64"
             style={{ boxShadow: '0 12px 40px rgba(0,0,0,0.5)' }}
           >
             <div className="mb-1 border-b border-white/[0.06] px-2 pb-1.5">
@@ -120,10 +120,10 @@ export function HelpMenu({ lifelines, accent, getDisabled, activeLifelineId, onS
                           isUsed || isDisabled
                             ? 'bg-white/[0.04] text-white/20'
                             : isActive
-                              ? 'bg-[#D4A843]/15 text-[#F5D98B]'
+                              ? 'bg-[#c69c46]/15 text-[#e4c478]'
                               : accent === 'royal'
-                                ? 'bg-[#3b82f6]/10 text-[#93c5fd]'
-                                : 'bg-[#D4A843]/10 text-[#F5D98B]',
+                                ? 'bg-[#4d79a7]/10 text-[#8eaecf]'
+                                : 'bg-[#c69c46]/10 text-[#e4c478]',
                         )}
                         aria-hidden
                       >

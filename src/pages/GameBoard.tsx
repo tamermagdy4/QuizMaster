@@ -80,7 +80,6 @@ export function GameBoard() {
     soundEnabled,
     setSoundEnabled,
     questionDuration,
-    theme,
     animationsEnabled,
   } = useAppStore()
 
@@ -167,16 +166,14 @@ export function GameBoard() {
     wheelPending,
     applyWheelResult,
     closeWheel,
-    answerSubmitted,
-    selectedAnswer,
-    answerCorrect,
-    answerPoints,
+    teamAnswers,
+    teamSubmitted,
+    submitTeamAnswer,
+    resetTeamAnswers,
     isCellPlayable,
     selectQuestion,
     switchTurn,
     resolveQuestion,
-    submitAnswer,
-    finishSubmittedQuestion,
     useLifeline,
     tickCallFriend,
     clearCallFriend,
@@ -185,13 +182,6 @@ export function GameBoard() {
     revealAnswer,
     hideAnswer,
     resetReveal,
-    onlineAnswers,
-    onlineAutoGrades,
-    onlineFinalGrades,
-    onlineGamePhase,
-    submitOnlineAnswer,
-    setOnlineFinalGrade,
-    confirmOnlineReview,
   } = useGameBoardStore()
 
   const onlineStore = useOnlineStore()
@@ -205,8 +195,11 @@ export function GameBoard() {
   const [countdown, setCountdown] =
     useState<number>(questionDuration)
 
-  /** Online: the text the host/players type as their answer */
-  const [onlineAnswerText, setOnlineAnswerText] = useState('')
+  /** Local text input state for typing answers */
+  const [typedAnswer, setTypedAnswer] = useState('')
+
+  /** Which team is currently answering (turn-based on shared device in local mode) */
+  const [answeringTeam, setAnsweringTeam] = useState<TeamId>(1)
 
   const [burst, setBurst] = useState<{
     team: TeamId
@@ -365,17 +358,6 @@ export function GameBoard() {
     (winner: TeamId | null) => {
       if (!activeQuestion) return
 
-      // LOCAL: an already-submitted answer is auto-judged on submit, so the
-      // resolve buttons must never run again on it (double scoring).
-      // ONLINE: submitting only RECORDS the answer — the host still judges it
-      // here, so resolve must be allowed after answerSubmitted.
-      if (
-        answerSubmitted &&
-        gameMode !== 'online'
-      ) {
-        return
-      }
-
       // Online: only the HOST may judge answers. The store enforces this too,
       // but guard here as well so a non-host never sees burst/tone feedback.
       if (gameMode === 'online' && !onlineStore.isHost()) {
@@ -421,7 +403,6 @@ export function GameBoard() {
     },
     [
       activeQuestion,
-      answerSubmitted,
       resolveQuestion,
       playSound,
       gameMode,
@@ -443,25 +424,19 @@ export function GameBoard() {
       return
     }
 
-    // Online: timer keeps running even after one player submits (simultaneous mode)
-    if (gameMode !== 'online' && answerSubmitted) return
-
     resetReveal()
+    resetTeamAnswers()
     setCountdown(questionDuration)
     setResolveTone(null)
+    setTypedAnswer('')
+    setAnsweringTeam(1)
 
     const timer = window.setInterval(() => {
       setCountdown((current) => {
         if (current <= 1) {
           window.clearInterval(timer)
           playSound('timer')
-          // ONLINE: do NOT reveal the correct answer — just lock inputs and
-          // move to review phase. The host decides correctness.
-          if (gameMode === 'online') {
-            useGameBoardStore.setState({ onlineGamePhase: 'review' })
-          } else {
-            revealAnswer()
-          }
+          revealAnswer()
           return 0
         }
 
@@ -472,13 +447,13 @@ export function GameBoard() {
     return () => window.clearInterval(timer)
   }, [
     activeQuestion,
-    answerSubmitted,
     questionDuration,
-    gameMode,
     resetReveal,
+    resetTeamAnswers,
     revealAnswer,
     playSound,
   ])
+
 
   /*
    * ============================
@@ -497,7 +472,7 @@ export function GameBoard() {
         hideAnswer()
       }
 
-      if (event.key === '1') {
+      if (event.key === '1' && isRevealed) {
         event.preventDefault()
 
         if (
@@ -508,7 +483,7 @@ export function GameBoard() {
         }
       }
 
-      if (event.key === '2') {
+      if (event.key === '2' && isRevealed) {
         event.preventDefault()
 
         if (
@@ -519,7 +494,7 @@ export function GameBoard() {
         }
       }
 
-      if (event.key === '0') {
+      if (event.key === '0' && isRevealed) {
         event.preventDefault()
 
         if (activeQuestion) {
@@ -527,17 +502,7 @@ export function GameBoard() {
         }
       }
 
-      if (
-        event.code === 'Space' &&
-        activeQuestion
-      ) {
-        event.preventDefault()
-        // In online mode, Space should NOT reveal the answer — only the host decides.
-        if (gameMode !== 'online') {
-          revealAnswer()
-          playSound('reveal')
-        }
-      }
+      // Space key: reveal answer is now automatic at timer=0 — no manual trigger needed.
 
       if (event.key.toLowerCase() === 'r') {
         switchTurn()
@@ -546,7 +511,8 @@ export function GameBoard() {
 
       if (
         event.key.toLowerCase() === 'c' &&
-        activeQuestion
+        activeQuestion &&
+        isRevealed
       ) {
         event.preventDefault()
 
@@ -557,7 +523,8 @@ export function GameBoard() {
 
       if (
         event.key.toLowerCase() === 'w' &&
-        activeQuestion
+        activeQuestion &&
+        isRevealed
       ) {
         event.preventDefault()
         handleResolve(null)
@@ -647,22 +614,6 @@ export function GameBoard() {
    * Reveal answer
    * ============================
    */
-
-  const handleRevealAnswer = () => {
-    if (
-      !activeQuestion ||
-      answerSubmitted
-    ) {
-      return
-    }
-
-    // In online mode, the host must NOT reveal the answer manually —
-    // the answer is revealed only after the host makes a decision.
-    if (gameMode === 'online') return
-
-    revealAnswer()
-    playSound('reveal')
-  }
 
   /*
    * ============================
@@ -761,101 +712,45 @@ export function GameBoard() {
               item.id === lifelineId,
           )
 
-        if (!lifeline) return true
+        if (!lifeline || lifeline.used) return true
 
-        if (lifeline.used) return true
+        // If answer has been revealed, lock all lifelines
+        if (isRevealed) return true
+
+        // If team has submitted their answer, lock lifelines immediately
+        if (teamSubmitted[questionTeam]) return true
+
+        // In online mode: only the team that owns the question may use lifelines, and only before submitting
+        if (gameMode === 'online') {
+          const myTeam: TeamId = onlineStore.isHost() ? 1 : 2
+          if (myTeam !== questionTeam) return true
+          if (teamSubmitted[myTeam]) return true
+        }
+
+        if (
+          activeQuestion?.answered ||
+          activeQuestion?.lifelineUsed
+        ) {
+          return true
+        }
 
         switch (lifelineId) {
           case 'double':
-            if (
-              pendingDoublePoints !== null
-            ) {
-              return true
-            }
-
-            if (
-              isRevealed ||
-              activeQuestion?.answered ||
-              activeQuestion?.lifelineUsed
-            ) {
-              return true
-            }
-
-            return false
+            return pendingDoublePoints !== null
 
           case 'wheel':
-            if (
-              isRevealed ||
-              activeQuestion?.answered ||
-              activeQuestion?.lifelineUsed
-            ) {
-              return true
-            }
-
             return false
 
           case 'two-answers':
-            if (!activeQuestion)
-              return true
-
-            if (isRevealed)
-              return true
-
-            if (activeQuestion.answered)
-              return true
-
-            if (
-              activeQuestion.twoAnswersUsed
-            ) {
-              return true
-            }
-
-            if (
-              activeQuestion.lifelineUsed
-            ) {
-              return true
-            }
-
-            return false
+            if (!activeQuestion) return true
+            return !!activeQuestion.twoAnswersUsed
 
           case 'block':
-            if (!activeQuestion)
-              return true
-
-            if (isRevealed)
-              return true
-
-            if (activeQuestion.answered)
-              return true
-
-            if (blockActive)
-              return true
-
-            if (
-              activeQuestion.lifelineUsed
-            ) {
-              return true
-            }
-
-            return false
+            if (!activeQuestion) return true
+            return !!blockActive
 
           case 'call':
-            if (!activeQuestion)
-              return true
-
-            if (isRevealed)
-              return true
-
-            if (activeQuestion.answered)
-              return true
-
-            if (
-              activeQuestion.lifelineUsed
-            ) {
-              return true
-            }
-
-            return false
+            return !activeQuestion
 
           default:
             return true
@@ -867,6 +762,10 @@ export function GameBoard() {
         activeQuestion,
         isRevealed,
         blockActive,
+        teamSubmitted,
+        questionTeam,
+        gameMode,
+        onlineStore,
       ],
     )
 
@@ -907,19 +806,9 @@ export function GameBoard() {
   // on the shared board. Online team mode: only the question's team (host =
   // team 1, joiner = team 2). Online FFA: only the question's owner.
   const canAnswer = useMemo(() => {
-    if (gameMode !== 'online') return true
-    if (!activeQuestion) return false
-    // Online simultaneous mode: everyone (host + all players) can answer
-    // ONLY during the answering phase. When review starts (timer=0), inputs lock.
-    if (onlineGamePhase === 'answering') return true
-    if (onlineGamePhase === 'review') return false
-    // Legacy: only the team's turn may answer
-    if (ffaPlayers.length >= 3) {
-      return !!onlineStore.self && activeQuestion.playerId === onlineStore.self.id
-    }
-    const myTeam: TeamId = onlineStore.isHost() ? 1 : 2
-    return activeQuestion.team === myTeam
-  }, [gameMode, activeQuestion, ffaPlayers.length, onlineStore, onlineGamePhase])
+    if (!activeQuestion || isRevealed) return false
+    return countdown > 0
+  }, [activeQuestion, isRevealed, countdown])
 
   /*
    * ============================
@@ -955,17 +844,7 @@ export function GameBoard() {
         animationsEnabled && !prefersReducedMotion
           ? 'motion-enabled'
           : 'motion-reduced',
-        theme === 'light'
-          ? `
-            theme-light-board
-            border-slate-200
-            bg-slate-100
-            text-slate-800
-          `
-          : `
-            border-white/[0.04]
-            bg-[radial-gradient(circle_at_top,rgba(47,125,126,0.08),transparent_38%),radial-gradient(50%_30%_at_50%_110%,rgba(201,162,39,0.05),transparent_70%),#050816]
-          `,
+        'border-white/[0.06] bg-[radial-gradient(ellipse_at_top,rgba(61,112,128,0.12),transparent_45%),radial-gradient(ellipse_at_bottom,rgba(198,156,70,0.06),transparent_60%),#0b1017] text-white',
       )}
     >
       {/* Arena floor — perspective grid + vignette (decorative, never blocks) */}
@@ -1007,7 +886,7 @@ export function GameBoard() {
         <motion.div
           initial={{ opacity: 0, y: -6 }}
           animate={{ opacity: 1, y: 0 }}
-          className="flex items-center justify-center gap-2 rounded-xl border border-[#D4A843]/50 bg-[#D4A843]/15 px-3 py-1.5 text-[11px] font-black text-[#F5D98B] shadow-[0_0_14px_rgba(212,168,67,0.25)]"
+          className="flex items-center justify-center gap-2 rounded-xl border border-[#c69c46]/50 bg-[#c69c46]/15 px-3 py-1.5 text-[11px] font-black text-[#e4c478] shadow-[0_0_14px_rgba(198,156,70,0.25)]"
         >
           <span className="text-xs" aria-hidden>✕2</span>
           {direction === 'ltr' ? 'Double points — pick a question' : 'مضاعفة النقاط — اختر سؤالاً'}
@@ -1026,8 +905,8 @@ export function GameBoard() {
           flex-col
           rounded-xl
           border
-          border-[#D4A843]/25
-          bg-[radial-gradient(80%_60%_at_50%_0%,rgba(47,125,126,0.1),transparent_60%),#080E1C]/60
+          border-[#c69c46]/25
+          bg-[radial-gradient(80%_60%_at_50%_0%,rgba(61,112,128,0.1),transparent_60%),#0c131d]/60
           p-1.5
           shadow-[inset_0_1px_0_rgba(255,255,255,0.05),0_18px_44px_rgba(0,0,0,0.35)]
           sm:rounded-3xl
@@ -1038,15 +917,15 @@ export function GameBoard() {
         "
       >
         {/* Stage corner brackets */}
-        <span className="pointer-events-none absolute start-2 top-2 h-4 w-4 border-s-2 border-t-2 border-[#D4A843]/50" />
-        <span className="pointer-events-none absolute end-2 top-2 h-4 w-4 border-e-2 border-t-2 border-[#D4A843]/50" />
-        <span className="pointer-events-none absolute bottom-2 start-2 h-4 w-4 border-b-2 border-s-2 border-[#D4A843]/50" />
-        <span className="pointer-events-none absolute bottom-2 end-2 h-4 w-4 border-b-2 border-e-2 border-[#D4A843]/50" />
+        <span className="pointer-events-none absolute start-2 top-2 h-4 w-4 border-s-2 border-t-2 border-[#c69c46]/50" />
+        <span className="pointer-events-none absolute end-2 top-2 h-4 w-4 border-e-2 border-t-2 border-[#c69c46]/50" />
+        <span className="pointer-events-none absolute bottom-2 start-2 h-4 w-4 border-b-2 border-s-2 border-[#c69c46]/50" />
+        <span className="pointer-events-none absolute bottom-2 end-2 h-4 w-4 border-b-2 border-e-2 border-[#c69c46]/50" />
 
         {/* Questions still streaming in — brief, only on rehydrated boards */}
         {!questionsReady && (
-          <div className="pointer-events-none absolute inset-0 z-20 flex items-center justify-center rounded-3xl bg-[#050a12]/80">
-            <span className="rounded-full border border-petro-line bg-[#0d1b2a]/90 px-4 py-2 text-xs font-bold text-teal-bright shadow-[0_8px_24px_rgba(0,0,0,0.4)]">
+          <div className="pointer-events-none absolute inset-0 z-20 flex items-center justify-center rounded-3xl bg-[#090e15]/80">
+            <span className="rounded-full border border-petro-line bg-[#0e1622]/90 px-4 py-2 text-xs font-bold text-teal-bright shadow-[0_8px_24px_rgba(0,0,0,0.4)]">
               جارٍ تحميل الأسئلة…
             </span>
           </div>
@@ -1110,8 +989,8 @@ export function GameBoard() {
                 overflow-hidden
                 rounded-xl
                 border
-                border-[#1E293B]
-                bg-[#0B1220]
+                border-[#222f42]
+                bg-[#0e1622]
                 p-3
                 shadow-2xl
 
@@ -1166,7 +1045,7 @@ export function GameBoard() {
                           text-xs
                           font-bold
                           tracking-[0.25em]
-                          text-[#D4A843]
+                          text-[#c69c46]
 
                           landscape:max-md:text-[7px]
                         "
@@ -1193,10 +1072,10 @@ export function GameBoard() {
                         className={cn(
                           'rounded-full border-2 px-3 py-1 text-sm font-black shadow-[0_0_16px_rgba(0,0,0,0.25)] landscape:max-md:border landscape:max-md:px-1.5 landscape:max-md:py-0.5 landscape:max-md:text-[9px]',
                           activeQuestion.points <= 100
-                            ? 'border-[#3b82f6]/60 bg-[#3b82f6]/12 text-[#93c5fd]'
+                            ? 'border-[#4d79a7]/60 bg-[#4d79a7]/12 text-[#8eaecf]'
                             : activeQuestion.points <= 300
-                              ? 'border-[#22c55e]/60 bg-[#22c55e]/12 text-[#86efac]'
-                              : 'border-[#ef4444]/60 bg-[#ef4444]/12 text-[#fca5a5]',
+                              ? 'border-[#468a5e]/60 bg-[#468a5e]/12 text-[#7ec498]'
+                              : 'border-[#b04d49]/60 bg-[#b04d49]/12 text-[#d48c88]',
                         )}
                       >
                         {activeQuestion.doubleApplied
@@ -1239,13 +1118,13 @@ export function GameBoard() {
                           `,
                           countdown <= 5
                             ? `
-                              border-[#EF4444]
-                              bg-[#EF4444]/10
-                              text-[#EF4444]
+                              border-[#b04d49]
+                              bg-[#b04d49]/10
+                              text-[#b04d49]
                             `
                             : `
-                              border-[#1E293B]
-                              bg-[#0F172A]
+                              border-[#222f42]
+                              bg-[#182230]
                               text-gray-400
                             `,
                         )}
@@ -1260,8 +1139,8 @@ export function GameBoard() {
                       mb-2
                       rounded-xl
                       border
-                      border-[#1E293B]
-                      bg-[#0F172A]
+                      border-[#222f42]
+                      bg-[#182230]
                       p-2
 
                       sm:mb-3
@@ -1289,161 +1168,7 @@ export function GameBoard() {
                     </p>
 
                     <AnimatePresence mode="wait">
-                      {answerSubmitted ? (
-                        <motion.div
-                          key="submitted-answer"
-                          initial={{
-                            opacity: 0,
-                            y: 8,
-                          }}
-                          animate={{
-                            opacity: 1,
-                            y: 0,
-                          }}
-                          className="
-                            space-y-2
-                            py-2
-                            text-center
-
-                            landscape:max-md:space-y-1
-                            landscape:max-md:py-1
-                          "
-                        >
-                          {gameMode === 'online' &&
-                          answerCorrect === null ? (
-                            /*
-                             * ONLINE: the answer was submitted but the HOST has
-                             * NOT judged it yet. The host (the controller) sees
-                             * the submitted answer and decides correct/wrong
-                             * (buttons below). The other players only see that
-                             * an answer is waiting — and never the correct
-                             * answer text before the host's decision.
-                             */
-                            <>
-                              {onlineStore.isHost() ? (
-                                <>
-                                  <div className="text-xl font-black text-[#F5D98B] landscape:max-md:text-sm">
-                                    {direction === 'ltr'
-                                      ? 'Submitted answer — judge it'
-                                      : 'إجابة مُرسلة — قيّمها'}
-                                  </div>
-                                  <div className="max-h-[18dvh] min-h-0 overflow-y-auto overscroll-contain px-1">
-                                    <p className="text-lg font-bold text-white landscape:max-md:text-[10px]">
-                                      {ui.yourAnswer}:{' '}
-                                      {selectedAnswer || (direction === 'ltr' ? 'No answer' : 'لم يجب')}
-                                    </p>
-                                    <p className="text-lg font-bold text-[#D4A843] landscape:max-md:text-[10px]">
-                                      {ui.correctAnswer}:{' '}
-                                      {
-                                        activeQuestion.answerText
-                                      }
-                                    </p>
-                                  </div>
-                                </>
-                              ) : (
-                                <>
-                                  <div className="text-lg font-bold text-white landscape:max-md:text-[10px]">
-                                    {ui.yourAnswer}:{' '}
-                                    {selectedAnswer || (direction === 'ltr' ? 'No answer' : 'لم يجب')}
-                                  </div>
-                                  <div className="text-base font-black text-[#D4A843] landscape:max-md:text-[10px]">
-                                    {direction === 'ltr'
-                                      ? 'Waiting for the host…'
-                                      : 'بانتظار قرار المضيف…'}
-                                  </div>
-                                </>
-                              )}
-                            </>
-                          ) : (
-                            <>
-                              <div
-                                className={cn(
-                                  `
-                                    text-xl
-                                    font-black
-
-                                    landscape:max-md:text-sm
-                                  `,
-                                  answerCorrect
-                                    ? 'text-emerald-400'
-                                    : 'text-[#FCA5A5]',
-                                )}
-                              >
-                                {answerCorrect
-                                  ? ui.answerCorrect
-                                  : ui.answerWrong}
-                              </div>
-
-                              <div                              className="
-                                max-h-[18dvh]
-                                min-h-0
-                                overflow-y-auto
-                                overscroll-contain
-                                px-1
-                              "
-                              >
-                                <p
-                                  className="
-                                    text-lg
-                                    font-bold
-                                    text-white
-
-                                    landscape:max-md:text-[10px]
-                                  "
-                                >
-                                  {ui.yourAnswer}:{' '}
-                                  {selectedAnswer}
-                                </p>
-
-                                <p
-                                  className="
-                                    text-lg
-                                    font-bold
-                                    text-[#D4A843]
-
-                                    landscape:max-md:text-[10px]
-                                  "
-                                >
-                                  {ui.correctAnswer}:{' '}
-                                  {
-                                    activeQuestion.answerText
-                                  }
-                                </p>
-                              </div>
-
-                              <p
-                                className="
-                                  text-base
-                                  font-black
-                                  text-white
-
-                                  landscape:max-md:text-[10px]
-                                "
-                              >
-                                +{answerPoints} نقطة
-                              </p>
-                            </>
-                          )}
-                        </motion.div>
-                      ) : gameMode === 'online' && onlineGamePhase === 'review' && !answerSubmitted && !onlineStore.isHost() ? (
-                        /* Timer expired and player did NOT answer — show timeout (NOT for host) */
-                        <motion.div
-                          key="timeout"
-                          initial={{ opacity: 0 }}
-                          animate={{ opacity: 1 }}
-                          className="flex flex-col items-center justify-center py-6 text-center"
-                        >
-                          <span className="text-4xl mb-3">⏰</span>
-                          <p className="text-lg font-black text-red-400">
-                            {direction === 'ltr' ? 'Time is up!' : 'انتهى الوقت!'}
-                          </p>
-                          <p className="mt-2 text-sm font-bold text-[#D4A843]">
-                            {direction === 'ltr'
-                              ? 'Waiting for the host…'
-                              : 'بانتظار قرار المضيف…'}
-                          </p>
-                        </motion.div>
-                      ) : !isRevealed ? (
+                      {!isRevealed ? (
                         <motion.div
                           key="question"
                           initial={{ opacity: 1 }}
@@ -1553,45 +1278,114 @@ export function GameBoard() {
                             </div>
                           )}
 
-                          {/* ONLINE TEXT INPUT — host + all players type their answer */}
-                          {gameMode === 'online' && canAnswer && !answerSubmitted && (
-                            <div className="mt-3">
-                              <input
-                                type="text"
-                                value={onlineAnswerText}
-                                onChange={(e) => setOnlineAnswerText(e.target.value)}
-                                onKeyDown={(e) => {
-                                  if (e.key === 'Enter' && onlineAnswerText.trim()) {
-                                    e.preventDefault()
-                                    submitAnswer(onlineAnswerText.trim())
-                                    if (onlineStore.self) {
-                                      submitOnlineAnswer(onlineStore.self.id, onlineStore.self.name, onlineAnswerText.trim())
-                                    }
-                                    setOnlineAnswerText('')
-                                    playSound('select')
-                                  }
-                                }}
-                                placeholder={direction === 'ltr' ? 'Type your answer...' : 'اكتب إجابتك...'}
-                                className="w-full rounded-xl border-2 border-[#D4A843]/40 bg-[#0B1220] px-4 py-3 text-sm font-bold text-white placeholder-gray-500 outline-none transition focus:border-[#D4A843]/70 focus:ring-1 focus:ring-[#D4A843]/30"
-                                autoFocus
-                              />
-                              <button
-                                type="button"
-                                disabled={!onlineAnswerText.trim()}
-                                onClick={() => {
-                                  if (onlineAnswerText.trim()) {
-                                    submitAnswer(onlineAnswerText.trim())
-                                    if (onlineStore.self) {
-                                      submitOnlineAnswer(onlineStore.self.id, onlineStore.self.name, onlineAnswerText.trim())
-                                    }
-                                    setOnlineAnswerText('')
-                                    playSound('select')
-                                  }
-                                }}
-                                className="mt-2 w-full rounded-xl bg-[#D4A843] px-4 py-2.5 text-sm font-black text-[#0B1220] shadow-lg transition hover:bg-[#E0B84D] disabled:opacity-40 disabled:cursor-not-allowed"
-                              >
-                                {direction === 'ltr' ? 'Submit Answer' : 'إرسال الإجابة'}
-                              </button>
+                          {/* TEAM ANSWER INPUTS — Local (shared device) or Online (per-player) */}
+                          {!isRevealed && countdown > 0 && (
+                            <div className="mt-3 space-y-2">
+                              {/* In Online Mode: show input for player's own team */}
+                              {gameMode === 'online' ? (
+                                (() => {
+                                  const myTeam: TeamId = onlineStore.isHost() ? 1 : 2
+                                  return !teamSubmitted[myTeam] ? (
+                                    <div>
+                                      <p className="mb-1 text-[11px] font-bold text-[#c69c46] landscape:max-md:text-[8px]">
+                                        {myTeam === 1 ? team1Name : team2Name}:
+                                      </p>
+                                      <input
+                                        type="text"
+                                        value={typedAnswer}
+                                        onChange={(e) => setTypedAnswer(e.target.value)}
+                                        onKeyDown={(e) => {
+                                          if (e.key === 'Enter' && typedAnswer.trim()) {
+                                            e.preventDefault()
+                                            const ans = typedAnswer.trim()
+                                            submitTeamAnswer(myTeam, ans)
+                                            setTypedAnswer('')
+                                            playSound('select')
+                                          }
+                                        }}
+                                        placeholder={direction === 'ltr' ? 'Type your answer...' : 'اكتب إجابتك هنا...'}
+                                        className="w-full rounded-xl border border-[#c69c46]/30 bg-[#0e1622] px-3 py-2.5 text-sm font-bold text-white placeholder-gray-500 outline-none transition focus:border-[#c69c46]/60 focus:ring-1 focus:ring-[#c69c46]/20 landscape:max-md:rounded-lg landscape:max-md:py-1.5 landscape:max-md:text-[11px]"
+                                        autoFocus
+                                      />
+                                      <button
+                                        type="button"
+                                        disabled={!typedAnswer.trim()}
+                                        onClick={() => {
+                                          const ans = typedAnswer.trim()
+                                          if (ans) {
+                                            submitTeamAnswer(myTeam, ans)
+                                            setTypedAnswer('')
+                                            playSound('select')
+                                          }
+                                        }}
+                                        className="mt-1.5 w-full rounded-xl bg-[#c69c46]/15 border border-[#c69c46]/30 px-3 py-2 text-xs font-bold text-[#c69c46] transition hover:bg-[#c69c46]/25 disabled:opacity-40 landscape:max-md:rounded-lg landscape:max-md:py-1 landscape:max-md:text-[10px]"
+                                      >
+                                        {direction === 'ltr' ? 'Submit' : 'تأكيد'}
+                                      </button>
+                                    </div>
+                                  ) : (
+                                    <div className="rounded-xl border border-white/10 bg-white/[0.03] p-2.5 text-center text-xs font-bold text-[#8eaecf]">
+                                      {direction === 'ltr' ? 'Answer submitted! Waiting for the other team...' : 'تم إرسال إجابتك ✓ بانتظار الفريق الآخر...'}
+                                    </div>
+                                  )
+                                })()
+                              ) : (
+                                /* Local Mode (Turn-based on shared device) */
+                                !teamSubmitted[answeringTeam] && (
+                                  <div>
+                                    <p className="mb-1 text-[11px] font-bold text-[#c69c46] landscape:max-md:text-[8px]">
+                                      {answeringTeam === 1 ? team1Name : team2Name}:
+                                    </p>
+                                    <input
+                                      type="text"
+                                      value={typedAnswer}
+                                      onChange={(e) => setTypedAnswer(e.target.value)}
+                                      onKeyDown={(e) => {
+                                        if (e.key === 'Enter') {
+                                          e.preventDefault()
+                                          const ans = typedAnswer.trim()
+                                          submitTeamAnswer(answeringTeam, ans)
+                                          setTypedAnswer('')
+                                          const otherTeam: TeamId = answeringTeam === 1 ? 2 : 1
+                                          if (!teamSubmitted[otherTeam]) {
+                                            setAnsweringTeam(otherTeam)
+                                          }
+                                          playSound('select')
+                                        }
+                                      }}
+                                      placeholder={direction === 'ltr' ? 'Type your answer...' : 'اكتب إجابتك هنا...'}
+                                      className="w-full rounded-xl border border-[#c69c46]/30 bg-[#0e1622] px-3 py-2.5 text-sm font-bold text-white placeholder-gray-500 outline-none transition focus:border-[#c69c46]/60 focus:ring-1 focus:ring-[#c69c46]/20 landscape:max-md:rounded-lg landscape:max-md:py-1.5 landscape:max-md:text-[11px]"
+                                      autoFocus
+                                    />
+                                    <button
+                                      type="button"
+                                      onClick={() => {
+                                        const ans = typedAnswer.trim()
+                                        submitTeamAnswer(answeringTeam, ans)
+                                        setTypedAnswer('')
+                                        const otherTeam: TeamId = answeringTeam === 1 ? 2 : 1
+                                        if (!teamSubmitted[otherTeam]) {
+                                          setAnsweringTeam(otherTeam)
+                                        }
+                                        playSound('select')
+                                      }}
+                                      className="mt-1.5 w-full rounded-xl bg-[#c69c46]/15 border border-[#c69c46]/30 px-3 py-2 text-xs font-bold text-[#c69c46] transition hover:bg-[#c69c46]/25 landscape:max-md:rounded-lg landscape:max-md:py-1 landscape:max-md:text-[10px]"
+                                    >
+                                      {direction === 'ltr' ? 'Submit' : 'تأكيد'}
+                                    </button>
+                                  </div>
+                                )
+                              )}
+
+                              {/* Show submitted status for both teams */}
+                              <div className="flex gap-2 text-[10px] font-bold landscape:max-md:text-[8px]">
+                                <span className={cn('rounded-full px-2 py-0.5', teamSubmitted[1] ? 'bg-[#4d79a7]/15 text-[#8eaecf]' : 'bg-white/5 text-white/25')}>
+                                  {team1Name}: {teamSubmitted[1] ? (teamAnswers[1] || 'تم الإرسال ✓') : '⏳'}
+                                </span>
+                                <span className={cn('rounded-full px-2 py-0.5', teamSubmitted[2] ? 'bg-[#b04d49]/15 text-[#d48c88]' : 'bg-white/5 text-white/25')}>
+                                  {team2Name}: {teamSubmitted[2] ? (teamAnswers[2] || 'تم الإرسال ✓') : '⏳'}
+                                </span>
+                              </div>
                             </div>
                           )}
 
@@ -1604,8 +1398,8 @@ export function GameBoard() {
                                 mt-2
                                 rounded-xl
                                 border
-                                border-[#D4A843]/30
-                                bg-[#D4A843]/10
+                                border-[#c69c46]/30
+                                bg-[#c69c46]/10
                                 p-2
 
                                 sm:mt-3
@@ -1623,7 +1417,7 @@ export function GameBoard() {
                                     text-center
                                     text-sm
                                     font-bold
-                                    text-[#D4A843]
+                                    text-[#c69c46]
 
                                     landscape:max-md:mb-1
                                     landscape:max-md:text-[8px]
@@ -1673,72 +1467,27 @@ export function GameBoard() {
                                           scale: 0.97,
                                         }}
                                         onClick={() => {
-                                          if (
-                                            answerSubmitted ||
-                                            !canAnswer
-                                          ) {
-                                            return
-                                          }
-
-                                          submitAnswer(
-                                            option,
-                                          )
-
-                                          // ONLINE: record in the simultaneous answers map
-                                          if (
-                                            gameMode === 'online' &&
-                                            onlineStore.self
-                                          ) {
-                                            submitOnlineAnswer(
-                                              onlineStore.self.id,
-                                              onlineStore.self.name,
-                                              option,
-                                            )
+                                          if (!canAnswer) return
+                                          if (gameMode === 'online') {
+                                            const myTeam: TeamId = onlineStore.isHost() ? 1 : 2
+                                            if (teamSubmitted[myTeam]) return
+                                            submitTeamAnswer(myTeam, option)
                                             playSound('select')
-                                            return
-                                          }
-
-                                          const isCorrect =
-                                            option ===
-                                            activeQuestion.answerText
-
-                                          if (
-                                            isCorrect
-                                          ) {
-                                            const pts =
-                                              activeQuestion.doubleApplied
-                                                ? activeQuestion.points *
-                                                  2
-                                                : activeQuestion.points
-
-                                            if (burstTimerRef.current) {
-                                              window.clearTimeout(burstTimerRef.current)
+                                          } else {
+                                            if (teamSubmitted[answeringTeam]) return
+                                            submitTeamAnswer(answeringTeam, option)
+                                            const otherTeam: TeamId = answeringTeam === 1 ? 2 : 1
+                                            if (!teamSubmitted[otherTeam]) {
+                                              setAnsweringTeam(otherTeam)
                                             }
-
-                                            setBurst({
-                                              team: activeQuestion.team,
-                                              points:
-                                                pts,
-                                            })
-
-                                            burstTimerRef.current = window.setTimeout(
-                                              () =>
-                                                setBurst(
-                                                  null,
-                                                ),
-                                              1100,
-                                            )
+                                            playSound('select')
                                           }
-
-                                          playSound(
-                                            isCorrect
-                                              ? 'correct'
-                                              : 'wrong',
-                                          )
                                         }}
                                         disabled={
-                                          answerSubmitted ||
-                                          !canAnswer
+                                          !canAnswer ||
+                                          (gameMode === 'online'
+                                            ? teamSubmitted[onlineStore.isHost() ? 1 : 2]
+                                            : teamSubmitted[answeringTeam])
                                         }
                                         aria-label={`${String.fromCharCode(65 + i)}: ${option}`}
                                         className={cn(
@@ -1765,7 +1514,7 @@ export function GameBoard() {
                                             landscape:max-md:py-1.5
                                             landscape:max-md:text-[9px]
                                           `,
-                                          answerSubmitted
+                                          (gameMode === 'online' ? teamSubmitted[onlineStore.isHost() ? 1 : 2] : teamSubmitted[answeringTeam])
                                             ? `
                                               cursor-not-allowed
                                               border-gray-600/30
@@ -1773,11 +1522,11 @@ export function GameBoard() {
                                               text-gray-500
                                             `
                                             : `
-                                              border-[#D4A843]/30
-                                              bg-[#D4A843]/5
-                                              text-[#D4A843]
-                                              hover:border-[#D4A843]/60
-                                              hover:bg-[#D4A843]/15
+                                              border-[#c69c46]/30
+                                              bg-[#c69c46]/5
+                                              text-[#c69c46]
+                                              hover:border-[#c69c46]/60
+                                              hover:bg-[#c69c46]/15
                                             `,
                                         )}
                                       >
@@ -1790,7 +1539,7 @@ export function GameBoard() {
                                             items-center
                                             justify-center
                                             rounded-full
-                                            bg-[#D4A843]/15
+                                            bg-[#c69c46]/15
                                             text-xs
 
                                             landscape:max-md:h-4
@@ -1834,6 +1583,24 @@ export function GameBoard() {
                             landscape:max-md:py-1
                           "
                         >
+                          {/* Show both team answers + correct answer */}
+                          {(teamSubmitted[1] || teamSubmitted[2] || teamAnswers[1] || teamAnswers[2]) && (
+                            <div className="mb-3 w-full max-w-sm space-y-1.5 rounded-xl border border-white/10 bg-white/[0.03] p-2.5 landscape:max-md:mb-1.5 landscape:max-md:p-1.5">
+                              <p className="mb-1 text-center text-xs font-bold text-[#c69c46] landscape:max-md:text-[8px]">{ui.correctAnswer}:</p>
+                              <p className="mb-2 text-center text-lg font-black text-white landscape:max-md:mb-1 landscape:max-md:text-xs">{activeQuestion.answerText}</p>
+                              <div className="border-t border-white/10 pt-1.5">
+                                <div className="flex items-center gap-2">
+                                  <span className="shrink-0 rounded bg-[#4d79a7]/15 px-1.5 py-0.5 text-[10px] font-bold text-[#8eaecf] landscape:max-md:text-[7px]">{team1Name}</span>
+                                  <span className="min-w-0 truncate text-sm font-bold text-white landscape:max-md:text-[10px]">{teamAnswers[1] || (direction === 'ltr' ? 'No answer' : 'لم تتم الإجابة')}</span>
+                                </div>
+                                <div className="flex items-center gap-2">
+                                  <span className="shrink-0 rounded bg-[#b04d49]/15 px-1.5 py-0.5 text-[10px] font-bold text-[#d48c88] landscape:max-md:text-[7px]">{team2Name}</span>
+                                  <span className="min-w-0 truncate text-sm font-bold text-white landscape:max-md:text-[10px]">{teamAnswers[2] || (direction === 'ltr' ? 'No answer' : 'لم تتم الإجابة')}</span>
+                                </div>
+                              </div>
+                            </div>
+                          )}
+
                           {activeQuestion.categoryId ===
                             'who-scored' &&
                           activeQuestion.answerMedia ? (
@@ -1996,8 +1763,8 @@ export function GameBoard() {
                           mt-2
                           rounded-xl
                           border
-                          border-[#D4A843]/30
-                          bg-[#D4A843]/10
+                          border-[#c69c46]/30
+                          bg-[#c69c46]/10
                           p-2
                           text-center
 
@@ -2013,7 +1780,7 @@ export function GameBoard() {
                           className="
                             text-xs
                             font-bold
-                            text-[#D4A843]
+                            text-[#c69c46]
 
                             sm:text-sm
 
@@ -2049,13 +1816,13 @@ export function GameBoard() {
                         mt-2
                         rounded-xl
                         border
-                        border-[#D4A843]/40
-                        bg-[#D4A843]/10
+                        border-[#c69c46]/40
+                        bg-[#c69c46]/10
                         p-1.5
                         text-center
                         text-xs
                         font-bold
-                        text-[#D4A843]
+                        text-[#c69c46]
 
                         sm:mt-3
                         sm:p-2
@@ -2080,13 +1847,13 @@ export function GameBoard() {
                         mt-2
                         rounded-xl
                         border
-                        border-[#EF4444]/40
-                        bg-[#EF4444]/10
+                        border-[#b04d49]/40
+                        bg-[#b04d49]/10
                         p-1.5
                         text-center
                         text-xs
                         font-bold
-                        text-[#FCA5A5]
+                        text-[#d48c88]
 
                         sm:mt-3
                         sm:p-2
@@ -2112,320 +1879,70 @@ export function GameBoard() {
                     </div>
                   )}
 
-                  {/* REVEAL / FINISH */}
-
-                  <div
-                    className="
-                      flex
-                      flex-wrap
-                      gap-1.5
-
-                      sm:gap-2
-
-                      landscape:max-md:gap-1
-                    "
-                  >
-                    {/* Reveal button — LOCAL only. Online auto-reveals at timer=0. */}
-                    {!answerSubmitted && gameMode !== 'online' && (
-                      <motion.button
-                        type="button"
-                        ref={triggerRef}
-                        whileTap={{
-                          scale: 0.97,
-                        }}
-                        onClick={
-                          handleRevealAnswer
-                        }
-                        aria-label={ui.reveal}
-                        className="
-                          glass-button
-                          rounded-xl
-                          px-4
-                          py-2
-                          font-semibold
-                          text-white
-
-                          max-[640px]:rounded-lg
-                          max-[640px]:px-2.5
-                          max-[640px]:py-1.5
-                          max-[640px]:text-[11px]
-
-                          landscape:max-md:rounded-lg
-                          landscape:max-md:px-2
-                          landscape:max-md:py-1
-                          landscape:max-md:text-[9px]
-                        "
-                      >
-                        إظهار الإجابة
-                      </motion.button>
-                    )}
-
-                    {/*
-                     * LOCAL: the answer was auto-judged on submit — the host
-                     * just finishes the question (unchanged behavior).
-                     * ONLINE: submitting only RECORDS the answer — the HOST
-                     * judges it here with صحيحة / خاطئة, which applies the
-                     * existing scoring (resolveQuestion is host-gated) and
-                     * finishes the question + advances the turn.
-                     */}
-                    {answerSubmitted && gameMode !== 'online' && (
-                      <motion.button
-                        type="button"
-                        whileTap={{
-                          scale: 0.97,
-                        }}
-                        onClick={
-                          finishSubmittedQuestion
-                        }
-                        className="
-                          glass-button
-                          rounded-xl
-                          px-4
-                          py-2
-                          font-semibold
-                          text-white
-
-                          max-[640px]:rounded-lg
-                          max-[640px]:px-2.5
-                          max-[640px]:py-1.5
-                          max-[640px]:text-[11px]
-
-                          landscape:max-md:rounded-lg
-                          landscape:max-md:px-2
-                          landscape:max-md:py-1
-                          landscape:max-md:text-[9px]
-                        "
-                      >
-                        إنهاء السؤال
-                      </motion.button>
-                    )}
-
-                    {/* Online review panel: auto-graded answers + host override + Next Question */}
-                    {gameMode === 'online' && onlineStore.isHost() && onlineGamePhase === 'review' && (
-                      <OnlineReviewPanel
-                        onlineAnswers={onlineAnswers}
-                        onlineAutoGrades={onlineAutoGrades}
-                        onlineFinalGrades={onlineFinalGrades}
-                        onlineGamePhase={onlineGamePhase}
-                        correctAnswer={activeQuestion.answerText}
-                        players={onlineStore.players}
-                        onOverrideGrade={setOnlineFinalGrade}
-                        onConfirmReview={() => {
-                          confirmOnlineReview()
-                          // Delay closing the question so players can see the result.
-                          // After 3 seconds, finish the question like local mode.
-                          setTimeout(() => {
-                            handleResolve(activeQuestion.team)
-                          }, 3000)
-                        }}
-                        direction={direction}
-                      />
-                    )}
-                  </div>
-
                   {/* RESOLVE BUTTONS */}
 
                   <AnimatePresence mode="wait">
-                    {isRevealed &&
-                      !answerSubmitted &&
-                      (gameMode !== 'online' || onlineStore.isHost()) && (
-                        <motion.div
-                          key="choices"
-                          initial={{
-                            opacity: 0,
-                            y: 12,
-                          }}
-                          animate={{
-                            opacity: 1,
-                            y: 0,
-                          }}
-                          exit={{
-                            opacity: 0,
-                            y: -10,
-                          }}                          className={cn(
+                    {isRevealed && (gameMode !== 'online' || onlineStore.isHost()) && (
+                      <motion.div
+                        key="choices"
+                        initial={{
+                          opacity: 0,
+                          y: 12,
+                        }}
+                        animate={{
+                          opacity: 1,
+                          y: 0,
+                        }}
+                        exit={{
+                          opacity: 0,
+                          y: -10,
+                        }}
+                        className={cn(
+                          `
+                            mt-2
+                            grid
+                            grid-cols-3
+                            gap-1.5
+                            max-[640px]:gap-1
+                            sm:mt-3
+                            sm:gap-3
+
+                            landscape:max-md:mt-1
+                            landscape:max-md:gap-1
+                          `,
+                          resolveTone ===
+                            'success' &&
+                            'animate-pulse',
+                        )}
+                      >
+                        {/* TEAM 1 */}
+
+                        <motion.button
+                          type="button"
+                          whileTap={
+                            blockActive !== 1
+                              ? {
+                                  scale: 0.97,
+                                }
+                              : undefined
+                          }
+                          onClick={() =>
+                            handleResolve(1)
+                          }
+                          disabled={
+                            blockActive === 1
+                          }
+                          aria-label={direction === 'ltr' ? 'Team 1 answered correctly' : 'الفريق الأول أجاب صح'}
+                          className={cn(
                             `
-                              mt-2
-                              grid
-                              grid-cols-3
-                              gap-1.5
-                              max-[640px]:gap-1
-                              sm:mt-3
-                              sm:gap-3
-
-                              landscape:max-md:mt-1
-                              landscape:max-md:gap-1
-                            `,
-                            resolveTone ===
-                              'success' &&
-                              'animate-pulse',
-                          )}
-                        >
-                          {/* TEAM 1 */}
-
-                          <motion.button
-                            type="button"
-                            whileTap={
-                              blockActive !== 1
-                                ? {
-                                    scale: 0.97,
-                                  }
-                                : undefined
-                            }
-                            onClick={() =>
-                              handleResolve(1)
-                            }
-                            disabled={
-                              blockActive === 1
-                            }
-                            aria-label={direction === 'ltr' ? 'Team 1 answered correctly' : 'الفريق الأول أجاب صح'}
-                            className={cn(
-                              `
-                                rounded-xl
-                                border-2
-                                px-2
-                                py-3
-                                text-xs
-                                font-bold
-                                shadow-lg
-                                transition
-
-                                max-[640px]:rounded-lg
-                                max-[640px]:border
-                                max-[640px]:px-1.5
-                                max-[640px]:py-2
-                                max-[640px]:text-[10px]
-
-                                sm:px-4
-                                sm:py-5
-                                sm:text-lg
-
-                                landscape:max-md:rounded-lg
-                                landscape:max-md:border
-                                landscape:max-md:px-1
-                                landscape:max-md:py-2
-                                landscape:max-md:text-[8px]
-                              `,
-                              blockActive === 1
-                                ? `
-                                  cursor-not-allowed
-                                  border-gray-600/30
-                                  bg-gray-800/20
-                                  text-gray-500
-                                  shadow-none
-                                `
-                                : `
-                                  border-[#3B82F6]/60
-                                  bg-[#3B82F6]/20
-                                  text-[#93C5FD]
-                                  shadow-[#3B82F6]/10
-                                  hover:bg-[#3B82F6]/30
-                                `,
-                            )}
-                          >
-                            {ui.resolveTeam1}
-
-                            {blockActive === 1 && (
-                              <span className="mt-1 block text-xs text-gray-500 landscape:max-md:text-[6px]">
-                                {ui.resolveBlocked}
-                              </span>
-                            )}
-                          </motion.button>
-
-                          {/* TEAM 2 */}
-
-                          <motion.button
-                            type="button"
-                            whileTap={
-                              blockActive !== 2
-                                ? {
-                                    scale: 0.97,
-                                  }
-                                : undefined
-                            }
-                            onClick={() =>
-                              handleResolve(2)
-                            }
-                            disabled={
-                              blockActive === 2
-                            }
-                            aria-label={direction === 'ltr' ? 'Team 2 answered correctly' : 'الفريق الثاني أجاب صح'}
-                            className={cn(
-                              `
-                                rounded-xl
-                                border-2
-                                px-2
-                                py-3
-                                text-xs
-                                font-bold
-                                shadow-lg
-                                transition
-
-                                max-[640px]:rounded-lg
-                                max-[640px]:border
-                                max-[640px]:px-1.5
-                                max-[640px]:py-2
-                                max-[640px]:text-[10px]
-
-                                sm:px-4
-                                sm:py-5
-                                sm:text-lg
-
-                                landscape:max-md:rounded-lg
-                                landscape:max-md:border
-                                landscape:max-md:px-1
-                                landscape:max-md:py-2
-                                landscape:max-md:text-[8px]
-                              `,
-                              blockActive === 2
-                                ? `
-                                  cursor-not-allowed
-                                  border-gray-600/30
-                                  bg-gray-800/20
-                                  text-gray-500
-                                  shadow-none
-                                `
-                                : `
-                                  border-[#EF4444]/60
-                                  bg-[#EF4444]/20
-                                  text-[#FCA5A5]
-                                  shadow-[#EF4444]/10
-                                  hover:bg-[#EF4444]/30
-                                `,
-                            )}
-                          >
-                            {ui.resolveTeam2}
-
-                            {blockActive === 2 && (
-                              <span className="mt-1 block text-xs text-gray-500 landscape:max-md:text-[6px]">
-                                {ui.resolveBlocked}
-                              </span>
-                            )}
-                          </motion.button>
-
-                          {/* NO ONE */}
-
-                          <motion.button
-                            type="button"
-                            whileTap={{
-                              scale: 0.97,
-                            }}
-                            onClick={() =>
-                              handleResolve(null)
-                            }
-                            aria-label={direction === 'ltr' ? 'No one answered' : 'لا أحد أجاب'}
-                            className="
                               rounded-xl
                               border-2
-                              border-gray-600/40
-                              bg-gray-700/20
                               px-2
                               py-3
                               text-xs
                               font-bold
-                              text-gray-400
                               shadow-lg
-                              shadow-gray-600/10
-                              hover:bg-gray-700/30
+                              transition
 
                               max-[640px]:rounded-lg
                               max-[640px]:border
@@ -2442,12 +1959,161 @@ export function GameBoard() {
                               landscape:max-md:px-1
                               landscape:max-md:py-2
                               landscape:max-md:text-[8px]
-                            "
-                          >
-                            {ui.noAnswer}
-                          </motion.button>
-                        </motion.div>
-                      )}
+                            `,
+                            blockActive === 1
+                              ? `
+                                cursor-not-allowed
+                                border-gray-600/30
+                                bg-gray-800/20
+                                text-gray-500
+                                shadow-none
+                              `
+                              : `
+                                border-[#4d79a7]/60
+                                bg-[#4d79a7]/20
+                                text-[#8eaecf]
+                                shadow-[#4d79a7]/10
+                                hover:bg-[#4d79a7]/30
+                              `,
+                          )}
+                        >
+                          {ui.resolveTeam1}
+
+                          {blockActive === 1 && (
+                            <span className="mt-1 block text-xs text-gray-500 landscape:max-md:text-[6px]">
+                              {ui.resolveBlocked}
+                            </span>
+                          )}
+                        </motion.button>
+
+                        {/* TEAM 2 */}
+
+                        <motion.button
+                          type="button"
+                          whileTap={
+                            blockActive !== 2
+                              ? {
+                                  scale: 0.97,
+                                }
+                              : undefined
+                          }
+                          onClick={() =>
+                            handleResolve(2)
+                          }
+                          disabled={
+                            blockActive === 2
+                          }
+                          aria-label={direction === 'ltr' ? 'Team 2 answered correctly' : 'الفريق الثاني أجاب صح'}
+                          className={cn(
+                            `
+                              rounded-xl
+                              border-2
+                              px-2
+                              py-3
+                              text-xs
+                              font-bold
+                              shadow-lg
+                              transition
+
+                              max-[640px]:rounded-lg
+                              max-[640px]:border
+                              max-[640px]:px-1.5
+                              max-[640px]:py-2
+                              max-[640px]:text-[10px]
+
+                              sm:px-4
+                              sm:py-5
+                              sm:text-lg
+
+                              landscape:max-md:rounded-lg
+                              landscape:max-md:border
+                              landscape:max-md:px-1
+                              landscape:max-md:py-2
+                              landscape:max-md:text-[8px]
+                            `,
+                            blockActive === 2
+                              ? `
+                                cursor-not-allowed
+                                border-gray-600/30
+                                bg-gray-800/20
+                                text-gray-500
+                                shadow-none
+                              `
+                              : `
+                                border-[#b04d49]/60
+                                bg-[#b04d49]/20
+                                text-[#d48c88]
+                                shadow-[#b04d49]/10
+                                hover:bg-[#b04d49]/30
+                              `,
+                          )}
+                        >
+                          {ui.resolveTeam2}
+
+                          {blockActive === 2 && (
+                            <span className="mt-1 block text-xs text-gray-500 landscape:max-md:text-[6px]">
+                              {ui.resolveBlocked}
+                            </span>
+                          )}
+                        </motion.button>
+
+                        {/* NO ONE */}
+
+                        <motion.button
+                          type="button"
+                          whileTap={{
+                            scale: 0.97,
+                          }}
+                          onClick={() =>
+                            handleResolve(null)
+                          }
+                          aria-label={direction === 'ltr' ? 'No one answered' : 'لا أحد أجاب'}
+                          className="
+                            rounded-xl
+                            border-2
+                            border-gray-600/40
+                            bg-gray-700/20
+                            px-2
+                            py-3
+                            text-xs
+                            font-bold
+                            text-gray-400
+                            shadow-lg
+                            shadow-gray-600/10
+                            hover:bg-gray-700/30
+
+                            max-[640px]:rounded-lg
+                            max-[640px]:border
+                            max-[640px]:px-1.5
+                            max-[640px]:py-2
+                            max-[640px]:text-[10px]
+
+                            sm:px-4
+                            sm:py-5
+                            sm:text-lg
+
+                            landscape:max-md:rounded-lg
+                            landscape:max-md:border
+                            landscape:max-md:px-1
+                            landscape:max-md:py-2
+                            landscape:max-md:text-[8px]
+                          "
+                        >
+                          {ui.noAnswer}
+                        </motion.button>
+                      </motion.div>
+                    )}
+
+                    {isRevealed && gameMode === 'online' && !onlineStore.isHost() && (
+                      <motion.div
+                        key="waiting-host"
+                        initial={{ opacity: 0, y: 8 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        className="mt-3 rounded-xl border border-[#c69c46]/30 bg-[#0e1622] p-3 text-center text-sm font-bold text-[#c69c46]"
+                      >
+                        {direction === 'ltr' ? 'Waiting for the host to resolve the question…' : 'بانتظار تقييم المضيف…'}
+                      </motion.div>
+                    )}
                   </AnimatePresence>
                 </div>
 
@@ -2460,8 +2126,8 @@ export function GameBoard() {
                     self-start
                     rounded-xl
                     border
-                    border-[#1E293B]
-                    bg-[#0F172A]
+                    border-[#222f42]
+                    bg-[#182230]
                     p-2
 
                     sm:p-3
@@ -2486,7 +2152,7 @@ export function GameBoard() {
                       className="
                         text-base
                         font-bold
-                        text-[#D4A843]
+                        text-[#c69c46]
 
                         landscape:max-md:text-[9px]
                       "
@@ -2564,8 +2230,8 @@ export function GameBoard() {
                           mt-3
                           rounded-lg
                           border
-                          border-[#3B82F6]/40
-                          bg-[#3B82F6]/10
+                          border-[#4d79a7]/40
+                          bg-[#4d79a7]/10
                           p-2
                           text-center
 
@@ -2577,7 +2243,7 @@ export function GameBoard() {
                           className="
                             text-xs
                             font-bold
-                            text-[#60A5FA]
+                            text-[#8eaecf]
 
                             landscape:max-md:text-[7px]
                           "
@@ -2609,13 +2275,13 @@ export function GameBoard() {
                             mt-2
                             rounded-md
                             border
-                            border-[#3B82F6]/40
+                            border-[#4d79a7]/40
                             px-2
                             py-1
                             text-[11px]
                             font-bold
-                            text-[#93C5FD]
-                            hover:bg-[#3B82F6]/10
+                            text-[#8eaecf]
+                            hover:bg-[#4d79a7]/10
 
                             landscape:max-md:mt-1
                             landscape:max-md:px-1
@@ -2632,7 +2298,7 @@ export function GameBoard() {
                             h-1
                             overflow-hidden
                             rounded-full
-                            bg-[#1E293B]
+                            bg-[#222f42]
 
                             landscape:max-md:mt-1
                             landscape:max-md:h-0.5
@@ -2645,11 +2311,11 @@ export function GameBoard() {
                             animate={{
                               width: `${
                                 (callFriendTimeLeft /
-                                  30) *
+                                   30) *
                                 100
                               }%`,
                             }}
-                            className="h-full rounded-full bg-[#3B82F6]"
+                            className="h-full rounded-full bg-[#4d79a7]"
                           />
                         </div>
                       </div>
@@ -2704,16 +2370,16 @@ export function GameBoard() {
               `,
               burst.team === 1
                 ? `
-                  border-[#3B82F6]/60
-                  bg-[#3B82F6]/20
-                  text-[#93C5FD]
-                  shadow-[#3B82F6]/30
+                  border-[#4d79a7]/60
+                  bg-[#4d79a7]/20
+                  text-[#8eaecf]
+                  shadow-[#4d79a7]/30
                 `
                 : `
-                  border-[#EF4444]/60
-                  bg-[#EF4444]/20
-                  text-[#FCA5A5]
-                  shadow-[#EF4444]/30
+                  border-[#b04d49]/60
+                  bg-[#b04d49]/20
+                  text-[#d48c88]
+                  shadow-[#b04d49]/30
                 `,
             )}
           >
@@ -2765,16 +2431,16 @@ export function GameBoard() {
               `,
               wheelBonus.teamId === 1
                 ? `
-                  border-[#3B82F6]/60
-                  bg-[#3B82F6]/20
-                  text-[#93C5FD]
-                  shadow-[#3B82F6]/30
+                  border-[#4d79a7]/60
+                  bg-[#4d79a7]/20
+                  text-[#8eaecf]
+                  shadow-[#4d79a7]/30
                 `
                 : `
-                  border-[#EF4444]/60
-                  bg-[#EF4444]/20
-                  text-[#FCA5A5]
-                  shadow-[#EF4444]/30
+                  border-[#b04d49]/60
+                  bg-[#b04d49]/20
+                  text-[#d48c88]
+                  shadow-[#b04d49]/30
                 `,
             )}
           >
@@ -2792,154 +2458,5 @@ export function GameBoard() {
         onClose={closeWheel}
       />
     </div>
-  )
-}
-
-// ═══════════════════════════════════════════════════════════════════
-// ONLINE REVIEW PANEL — answers + auto-grading + host override
-// ═══════════════════════════════════════════════════════════════════
-
-/** Normalize an answer for fuzzy comparison: trim, collapse whitespace, lowercase, normalize Arabic-Indic digits. */
-function normalizeAnswer(text: string): string {
-  return text
-    .trim()
-    .replace(/\s+/g, ' ')
-    .toLowerCase()
-    .replace(/[\u0660-\u0669]/g, (d) => String(d.charCodeAt(0) - 0x0660)) // Arabic-Indic → 0-9
-}
-
-/** Auto-grade a player's answer against the correct answer. */
-function autoGrade(playerAnswer: string, correctAnswer: string): 'correct' | 'wrong' {
-  const a = normalizeAnswer(playerAnswer)
-  const b = normalizeAnswer(correctAnswer)
-  if (a === b) return 'correct'
-  // Levenshtein-like: allow 1 edit for short answers, 2 for longer
-  if (a.length >= 3 && b.length >= 3) {
-    const maxEdits = a.length <= 6 ? 1 : 2
-    if (levenshtein(a, b) <= maxEdits) return 'correct'
-  }
-  return 'wrong'
-}
-
-function levenshtein(a: string, b: string): number {
-  const m = a.length, n = b.length
-  const dp: number[][] = Array.from({ length: m + 1 }, () => Array(n + 1).fill(0))
-  for (let i = 0; i <= m; i++) dp[i]![0] = i
-  for (let j = 0; j <= n; j++) dp[0]![j] = j
-  for (let i = 1; i <= m; i++) {
-    for (let j = 1; j <= n; j++) {
-      const cost = a[i - 1] === b[j - 1] ? 0 : 1
-      dp[i]![j] = Math.min(dp[i - 1]![j]! + 1, dp[i]![j - 1]! + 1, dp[i - 1]![j - 1]! + cost)
-    }
-  }
-  return dp[m]![n]!
-}
-
-function OnlineReviewPanel({
-  onlineAnswers,
-  onlineAutoGrades,
-  onlineFinalGrades,
-  onlineGamePhase,
-  correctAnswer,
-  players,
-  onOverrideGrade,
-  onConfirmReview,
-  direction,
-}: {
-  onlineAnswers: Record<string, string>
-  onlineAutoGrades: Record<string, 'correct' | 'wrong' | null>
-  onlineFinalGrades: Record<string, 'correct' | 'wrong'>
-  onlineGamePhase: 'answering' | 'review' | null
-  correctAnswer: string
-  players: { id: string; name: string }[]
-  onOverrideGrade: (playerId: string, grade: 'correct' | 'wrong') => void
-  onConfirmReview: () => void
-  direction: 'ltr' | 'rtl'
-}) {
-  const isReview = onlineGamePhase === 'review'
-
-  // Auto-compute grades for players who submitted but don't have a grade yet
-  const entries = players
-    .filter((p) => onlineAnswers[p.id] !== undefined)
-    .map((p) => {
-      const answer = onlineAnswers[p.id]!
-      const autoGrade_ = onlineAutoGrades[p.id] ?? autoGrade(answer, correctAnswer)
-      const finalGrade = onlineFinalGrades[p.id] ?? autoGrade_
-      return { player: p, answer, autoGrade: autoGrade_, finalGrade }
-    })
-
-  // Players who didn't answer
-  const absent = players.filter((p) => onlineAnswers[p.id] === undefined)
-
-  if (!isReview) return null
-
-  return (
-    <motion.div
-      initial={{ opacity: 0, y: 8 }}
-      animate={{ opacity: 1, y: 0 }}
-      className="mt-3 rounded-xl border border-[#1E293B] bg-[#0F172A] p-3"
-    >
-      <h4 className="mb-2 text-xs font-black tracking-wider text-[#D4A843]">
-        {direction === 'ltr' ? 'ANSWERS' : 'الإجابات'}
-      </h4>
-
-      {/* Correct answer */}
-      <div className="mb-2 rounded-lg border border-emerald-500/30 bg-emerald-500/10 px-3 py-2 text-center">
-        <p className="text-[10px] font-bold text-emerald-400">
-          {direction === 'ltr' ? 'Correct Answer' : 'الإجابة الصحيحة'}
-        </p>
-        <p className="text-sm font-black text-emerald-300">{correctAnswer}</p>
-      </div>
-
-      {/* Answer rows */}
-      <div className="space-y-1.5">
-        {entries.map(({ player, answer, autoGrade: ag, finalGrade: fg }) => {
-          const isCorrect = fg === 'correct'
-          const overridden = ag !== fg
-          return (
-            <div key={player.id} className="flex items-center gap-2 rounded-lg border border-[#1E293B] bg-[#0B1220] px-3 py-2">
-              <span className="min-w-0 flex-1 truncate text-xs font-bold text-white">{player.name}</span>
-              <span className="min-w-0 flex-1 truncate text-xs text-gray-400">{answer || '—'}</span>
-              <span className={`shrink-0 rounded px-2 py-0.5 text-[10px] font-black ${isCorrect ? 'bg-emerald-500/20 text-emerald-300' : 'bg-red-500/20 text-red-300'}`}>
-                {isCorrect ? '✓' : '✕'}{overridden ? ' ★' : ''}
-              </span>
-              {/* Override buttons */}
-              <button
-                type="button"
-                onClick={() => onOverrideGrade(player.id, 'correct')}
-                className={`shrink-0 rounded border px-1.5 py-0.5 text-[10px] font-bold transition ${fg === 'correct' ? 'border-emerald-500/60 bg-emerald-500/20 text-emerald-300' : 'border-gray-600/30 bg-gray-800/20 text-gray-500 hover:border-emerald-500/40 hover:text-emerald-300'}`}
-              >
-                ✓
-              </button>
-              <button
-                type="button"
-                onClick={() => onOverrideGrade(player.id, 'wrong')}
-                className={`shrink-0 rounded border px-1.5 py-0.5 text-[10px] font-bold transition ${fg === 'wrong' ? 'border-red-500/60 bg-red-500/20 text-red-300' : 'border-gray-600/30 bg-gray-800/20 text-gray-500 hover:border-red-500/40 hover:text-red-300'}`}
-              >
-                ✕
-              </button>
-            </div>
-          )
-        })}
-        {absent.map((player) => (
-          <div key={player.id} className="flex items-center gap-2 rounded-lg border border-[#1E293B] bg-[#0B1220] px-3 py-2">
-            <span className="min-w-0 flex-1 truncate text-xs font-bold text-white">{player.name}</span>
-            <span className="shrink-0 rounded bg-gray-500/20 px-2 py-0.5 text-[10px] font-black text-gray-500">
-              {direction === 'ltr' ? 'No answer' : 'لم يُجب'}
-            </span>
-          </div>
-        ))}
-      </div>
-
-      {/* Confirm / Next Question button */}
-      <motion.button
-        type="button"
-        whileTap={{ scale: 0.97 }}
-        onClick={onConfirmReview}
-        className="mt-3 w-full rounded-xl bg-[#D4A843] px-4 py-2.5 text-sm font-black text-[#0B1220] shadow-lg shadow-[#D4A843]/10 transition hover:bg-[#E0B84D]"
-      >
-        {direction === 'ltr' ? 'Next Question' : 'السؤال التالي'}
-      </motion.button>
-    </motion.div>
   )
 }

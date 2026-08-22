@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import { useNavigate } from 'react-router-dom'
+import { LogOut } from 'lucide-react'
 import { LeaveRoomConfirm } from '../components/online/LeaveRoomConfirm'
 import { gameCategories } from '../data/categories'
 import { defaultLifelines } from '../data/lifelines'
@@ -172,8 +173,8 @@ export function OnlineRoom() {
 
   const statusPill =
     roomFull
-      ? 'border-green/45 bg-green/15 text-green-bright'
-      : 'border-gold/45 bg-gold/15 text-gold-bright'
+      ? 'border-[#468a5e]/50 bg-[#468a5e]/20 text-[#7ec498]'
+      : 'border-[#c69c46]/50 bg-[#c69c46]/20 text-[#e4c478]'
 
   return (
     <div dir={english ? 'ltr' : 'rtl'} className="relative mx-auto w-full max-w-4xl space-y-5">
@@ -183,14 +184,14 @@ export function OnlineRoom() {
         className="pointer-events-none absolute inset-0 -z-10"
         style={{
           background:
-            'radial-gradient(60% 46% at 50% 0%, rgba(47,125,126,0.16), transparent 62%), radial-gradient(50% 40% at 12% 100%, rgba(201,162,39,0.08), transparent 60%)',
+            'radial-gradient(60% 46% at 50% 0%, rgba(61,112,128,0.12), transparent 62%), radial-gradient(50% 40% at 12% 100%, rgba(198,156,70,0.06), transparent 60%)',
         }}
       />
 
       <div className="flex flex-wrap items-center justify-between gap-3">
         <div>
-          <p className="eyebrow">🌐 {t('arena')}</p>
-          <h1 className="font-display mt-1 text-2xl font-extrabold text-cream sm:text-3xl">
+          <p className="text-xs font-bold tracking-[0.25em] text-[#c69c46]">🌐 {t('arena')}</p>
+          <h1 className="font-display mt-1 text-2xl font-extrabold text-white sm:text-3xl">
             {t('room')}
           </h1>
         </div>
@@ -202,10 +203,11 @@ export function OnlineRoom() {
       </div>
 
       {/* Room code — the giant arena gate (renders immediately, no mount-hide) */}
-      <div className="glass-dark panel-gold-edge flex flex-wrap items-center justify-between gap-4 px-5 py-5 sm:px-8">
+      <div className="relative overflow-hidden rounded-2xl border border-[#c69c46]/40 bg-gradient-to-b from-[#141d2b] to-[#0d1420] flex flex-wrap items-center justify-between gap-4 px-5 py-5 sm:px-8 shadow-2xl">
+        <span aria-hidden className="pointer-events-none absolute inset-x-6 top-0 h-[2px] rounded-full bg-gradient-to-r from-transparent via-[#c69c46]/80 to-transparent" />
         <div>
-          <p className="text-xs font-bold tracking-[0.3em] text-gold-bright/80">{t('roomCode')}</p>
-          <p className="font-display mt-1 text-4xl font-extrabold tracking-[0.22em] text-gold-bright sm:text-6xl" dir="ltr">
+          <p className="text-xs font-bold tracking-[0.3em] text-[#e4c478]/80">{t('roomCode')}</p>
+          <p className="font-display mt-1 text-4xl font-extrabold tracking-[0.22em] text-[#e4c478] sm:text-6xl" dir="ltr">
             {room.roomCode}
           </p>
         </div>
@@ -214,7 +216,7 @@ export function OnlineRoom() {
           whileHover={{ y: -2 }}
           whileTap={{ scale: 0.96 }}
           onClick={handleCopy}
-          className="rounded-xl border border-gold/50 bg-white/10 px-5 py-3 text-sm font-black text-gold-bright transition hover:border-gold/70 hover:bg-gold/20"
+          className="rounded-xl border border-[#c69c46]/50 bg-[#c69c46]/15 px-5 py-3 text-sm font-black text-[#e4c478] transition hover:border-[#c69c46]/80 hover:bg-[#c69c46]/25"
         >
           {copied ? t('copied') : t('copyCode')}
         </motion.button>
@@ -232,37 +234,37 @@ export function OnlineRoom() {
               exit={{ opacity: 0, x: -28, scale: 0.96 }}
               transition={{ duration: 0.28, ease: 'easeOut' }}
               className={cn(
-                'flex items-center gap-4 rounded-2xl border p-4 bg-[#101D2E]',
+                'flex items-center gap-4 rounded-2xl border p-4 shadow-lg transition',
                 player.isHost
-                  ? 'border-teal/45 shadow-[0_10px_24px_rgba(0,0,0,0.35)]'
+                  ? 'border-[#4d79a7]/60 bg-[#141d2b]'
                   : index % 2 === 1
-                    ? 'border-gold/30 shadow-[0_8px_20px_rgba(0,0,0,0.3)]'
-                    : 'border-white/12',
+                    ? 'border-[#c69c46]/40 bg-[#141d2b]'
+                    : 'border-[#223147] bg-[#0d1420]',
               )}
             >
               <span
                 className={cn(
                   'flex h-12 w-12 shrink-0 items-center justify-center rounded-full font-display text-lg font-extrabold',
-                  player.isHost ? 'bg-teal/20 text-teal-bright' : index % 2 === 1 ? 'bg-gold/20 text-gold-bright' : 'bg-white/10 text-cream/70',
+                  player.isHost ? 'bg-[#4d79a7]/20 text-[#8eaecf]' : index % 2 === 1 ? 'bg-[#c69c46]/20 text-[#e4c478]' : 'bg-white/10 text-slate-300',
                 )}
               >
                 {index + 1}
               </span>
               <div className="min-w-0 flex-1">
-                <h2 className="text-xs font-black text-gold-bright">
+                <h2 className="text-xs font-black text-[#e4c478]">
                   {player.isHost ? t('teamOne') : english ? `Player ${index}` : `اللاعب ${index}`}
                 </h2>
-                <p className="mt-1 flex flex-wrap items-center gap-2 text-base font-bold text-cream">
+                <p className="mt-1 flex flex-wrap items-center gap-2 text-base font-bold text-white">
                   <span aria-hidden>👤</span>
                   <span className="truncate">{player.name}</span>
                   {self.id === player.id && (
-                    <span className="rounded-full border border-teal/40 bg-teal/15 px-2 py-0.5 text-[10px] font-black text-teal-bright">
+                    <span className="rounded-full border border-[#4d79a7]/50 bg-[#4d79a7]/20 px-2 py-0.5 text-[10px] font-black text-[#8eaecf]">
                       {t('you')}
                     </span>
                   )}
                 </p>
               </div>
-              <span className="text-lg text-teal-bright" aria-hidden>♟</span>
+              <span className="text-lg text-[#8eaecf]" aria-hidden>♟</span>
             </motion.div>
           ))}
         </AnimatePresence>
@@ -270,12 +272,12 @@ export function OnlineRoom() {
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            className="rounded-2xl border border-dashed border-white/15 bg-[#101D2E] p-4 text-center"
+            className="rounded-2xl border border-dashed border-[#223147] bg-[#0d1420] p-4 text-center"
           >
             <motion.p
               animate={{ opacity: [1, 0.5, 1] }}
               transition={{ duration: 1.6, repeat: Infinity, ease: 'easeInOut' }}
-              className="mt-1 flex items-center justify-center gap-2 text-sm font-bold text-cream/60"
+              className="mt-1 flex items-center justify-center gap-2 text-sm font-bold text-slate-400"
             >
               <span aria-hidden>⏳</span> {t('waitingForPlayer')}
             </motion.p>
@@ -284,17 +286,17 @@ export function OnlineRoom() {
       </div>
 
       {(isHost || room.categoryIds.length > 0) && (
-        <div className="mt-5 rounded-2xl border border-teal/25 bg-teal/10 p-4">
+        <div className="mt-5 rounded-2xl border border-[#223147] bg-[#0d1420] p-4">
           <div className="flex items-center justify-between gap-3">
-            <p className="text-xs font-black text-teal-bright">
+            <p className="text-xs font-black text-[#8eaecf]">
               {english ? 'Match categories (host)' : 'فئات المباراة (المضيف)'}
             </p>
             <span
               className={cn(
                 'rounded-full border px-2.5 py-0.5 text-[11px] font-black',
                 categoriesReady
-                  ? 'border-green/45 bg-green/15 text-green-bright'
-                  : 'border-gold/45 bg-gold/15 text-gold-bright',
+                  ? 'border-[#468a5e]/50 bg-[#468a5e]/20 text-[#7ec498]'
+                  : 'border-[#c69c46]/50 bg-[#c69c46]/20 text-[#e4c478]',
               )}
             >
               {room.categoryIds.length}/{REQUIRED_CATEGORIES}
@@ -316,10 +318,10 @@ export function OnlineRoom() {
                     disabled={busy || full}
                     onClick={() => void handleToggleCategory(category.id)}
                     className={cn(
-                      'flex items-center gap-2 rounded-xl border px-3 py-2 text-start text-xs font-bold transition disabled:cursor-not-allowed disabled:opacity-45',
+                      'flex items-center gap-2 rounded-xl border px-3 py-2 text-start text-xs font-bold transition disabled:cursor-not-allowed disabled:opacity-35',
                       selected
-                        ? 'border-teal/55 bg-teal/15 text-teal-bright shadow-[0_0_12px_rgba(47,125,126,.2)]'
-                        : 'border-white/12 bg-[#0B1526]/60 text-cream/70 hover:border-teal/40 hover:text-cream',
+                        ? 'border-[#4d79a7] bg-[#4d79a7]/20 text-[#8eaecf] shadow-[0_0_12px_rgba(77,121,167,0.3)]'
+                        : 'border-[#223147] bg-[#141d2b] text-slate-300 hover:border-[#4d79a7]/50 hover:text-white',
                     )}
                   >
                     <span aria-hidden>{category.icon}</span>
@@ -331,7 +333,7 @@ export function OnlineRoom() {
           ) : (
             <div className="mt-3 flex flex-wrap gap-2">
               {room.categoryIds.length === 0 ? (
-                <p className="text-xs font-bold text-cream/60">
+                <p className="text-xs font-bold text-slate-400">
                   {english ? 'Waiting for the host to choose the categories…' : 'بانتظار اختيار المضيف للفئات…'}
                 </p>
               ) : (
@@ -345,7 +347,7 @@ export function OnlineRoom() {
                       initial={{ opacity: 0, scale: 0.8 }}
                       animate={{ opacity: 1, scale: 1 }}
                       transition={{ duration: 0.22 }}
-                      className="inline-flex items-center gap-1.5 rounded-full border border-teal/30 bg-teal/10 px-3 py-1 text-xs font-bold text-teal-bright"
+                      className="inline-flex items-center gap-1.5 rounded-full border border-[#4d79a7]/40 bg-[#4d79a7]/20 px-3 py-1 text-xs font-bold text-[#8eaecf]"
                     >
                       <span aria-hidden>{category.icon}</span>
                       {presentCategory(category.id, category.title, english)}
@@ -359,17 +361,17 @@ export function OnlineRoom() {
       )}
 
       {(isHost || lifelinesReady || room.team1LifelineIds.length > 0 || room.team2LifelineIds.length > 0) && (
-        <div className="mt-5 rounded-2xl border border-gold/25 bg-gold/10 p-4">
+        <div className="mt-5 rounded-2xl border border-[#223147] bg-[#0d1420] p-4">
           <div className="flex items-center justify-between gap-3">
-            <p className="text-xs font-black text-gold-bright">
+            <p className="text-xs font-black text-[#e4c478]">
               {english ? 'Match lifelines (host)' : 'اختيار المساعدات (المضيف)'}
             </p>
             <span
               className={cn(
                 'rounded-full border px-2.5 py-0.5 text-[11px] font-black',
                 lifelinesReady
-                  ? 'border-green/45 bg-green/15 text-green-bright'
-                  : 'border-gold/45 bg-gold/15 text-gold-bright',
+                  ? 'border-[#468a5e]/50 bg-[#468a5e]/20 text-[#7ec498]'
+                  : 'border-[#c69c46]/50 bg-[#c69c46]/20 text-[#e4c478]',
               )}
             >
               {english
@@ -382,7 +384,7 @@ export function OnlineRoom() {
             const ids = team === 1 ? room.team1LifelineIds : room.team2LifelineIds
             return (
               <div key={team} className="mt-4">
-                <p className="text-[11px] font-black text-cream/60">
+                <p className="text-[11px] font-black text-slate-400">
                   {team === 1 ? t('teamOne') : t('teamTwo')}
                 </p>
                 {isHost ? (
@@ -400,12 +402,12 @@ export function OnlineRoom() {
                           disabled={busy || full}
                           onClick={() => void handleToggleLifeline(team as 1 | 2, lifeline.id)}
                           className={cn(
-                            'flex items-center gap-2 rounded-xl border px-3 py-2 text-start text-xs font-bold transition disabled:cursor-not-allowed disabled:opacity-45',
+                            'flex items-center gap-2 rounded-xl border px-3 py-2 text-start text-xs font-bold transition disabled:cursor-not-allowed disabled:opacity-35',
                             selected
                               ? team === 1
-                                ? 'border-teal/55 bg-teal/15 text-teal-bright shadow-[0_0_12px_rgba(47,125,126,.2)]'
-                                : 'border-gold/55 bg-gold/15 text-gold-bright shadow-[0_0_12px_rgba(201,162,39,.2)]'
-                              : 'border-white/12 bg-[#0B1526]/60 text-cream/70 hover:border-teal/40 hover:text-cream',
+                                ? 'border-[#4d79a7] bg-[#4d79a7]/20 text-[#8eaecf] shadow-[0_0_12px_rgba(77,121,167,0.3)]'
+                                : 'border-[#b04d49] bg-[#b04d49]/20 text-[#d48c88] shadow-[0_0_12px_rgba(176,77,73,0.3)]'
+                              : 'border-[#223147] bg-[#141d2b] text-slate-300 hover:border-[#4d79a7]/50 hover:text-white',
                           )}
                         >
                           <span aria-hidden>{lifeline.icon}</span>
@@ -419,7 +421,7 @@ export function OnlineRoom() {
                 ) : (
                   <div className="mt-2 flex flex-wrap gap-2">
                     {ids.length === 0 ? (
-                      <p className="text-xs font-bold text-cream/60">
+                      <p className="text-xs font-bold text-slate-400">
                         {english ? 'Waiting for the host…' : 'بانتظار اختيار المضيف…'}
                       </p>
                     ) : (
@@ -433,7 +435,7 @@ export function OnlineRoom() {
                             initial={{ opacity: 0, scale: 0.8 }}
                             animate={{ opacity: 1, scale: 1 }}
                             transition={{ duration: 0.22 }}
-                            className="inline-flex items-center gap-1.5 rounded-full border border-gold/30 bg-gold/10 px-3 py-1 text-xs font-bold text-gold-bright"
+                            className="inline-flex items-center gap-1.5 rounded-full border border-[#c69c46]/40 bg-[#c69c46]/15 px-3 py-1 text-xs font-bold text-[#e4c478]"
                           >
                             <span aria-hidden>{lifeline.icon}</span>
                             {english ? lifeline.id : lifeline.label}
@@ -448,7 +450,7 @@ export function OnlineRoom() {
           })}
 
           {isHost && !lifelinesReady && (
-            <p className="mt-3 text-center text-xs font-bold text-gold-bright">
+            <p className="mt-3 text-center text-xs font-bold text-[#e4c478]">
               {english
                 ? 'Choose exactly 3 lifelines for each team'
                 : 'اختر 3 مساعدات لكل فريق'}
@@ -466,30 +468,30 @@ export function OnlineRoom() {
             whileTap={readyToStart && !busy ? { scale: 0.98 } : undefined}
             onClick={handleStart}
             className={cn(
-              'w-full rounded-xl px-4 py-4 text-base font-black transition',
+              'w-full rounded-xl py-4 text-base font-black transition',
               readyToStart && !busy
-                ? 'btn btn-gold'
-                : 'cursor-not-allowed border border-white/15 bg-white/5 text-cream/45',
+                ? 'border border-[#c69c46]/60 bg-gradient-to-b from-[#e4c478] to-[#c69c46] text-[#0b1017] shadow-lg shadow-[#c69c46]/25 hover:brightness-105 active:scale-[0.98]'
+                : 'cursor-not-allowed border border-white/10 bg-white/5 text-slate-500',
             )}
           >
             {busy ? '…' : t('startGame')}
           </motion.button>
           {!roomFull && (
-            <p className="text-center text-xs font-bold text-cream/60">
+            <p className="text-center text-xs font-bold text-slate-400">
               {english
                 ? `Waiting for players to fill the room (${players.length}/${room.maxPlayers})`
                 : `بانتظار اكتمال عدد اللاعبين (${players.length}/${room.maxPlayers})`}
             </p>
           )}
           {roomFull && !categoriesReady && (
-            <p className="text-center text-xs font-bold text-cream/60">
+            <p className="text-center text-xs font-bold text-slate-400">
               {english
                 ? `Choose ${REQUIRED_CATEGORIES} categories to start (${room.categoryIds.length}/${REQUIRED_CATEGORIES})`
                 : `اختر ${REQUIRED_CATEGORIES} فئات للبدء (${room.categoryIds.length}/${REQUIRED_CATEGORIES})`}
             </p>
           )}
           {roomFull && categoriesReady && !lifelinesReady && (
-            <p className="text-center text-xs font-bold text-cream/60">
+            <p className="text-center text-xs font-bold text-slate-400">
               {english
                 ? 'Choose exactly 3 lifelines for each team to start'
                 : 'اختر 3 مساعدات لكل فريق للبدء'}
@@ -499,7 +501,7 @@ export function OnlineRoom() {
       )}
 
       {error && (
-        <p className="mt-4 rounded-xl border border-red/45 bg-red/12 px-3 py-2 text-sm font-bold text-red-bright">
+        <p className="mt-4 rounded-xl border border-[#b04d49]/45 bg-[#b04d49]/12 px-3 py-2 text-sm font-bold text-[#d48c88]">
           {error}
         </p>
       )}
@@ -508,11 +510,12 @@ export function OnlineRoom() {
         <button
           type="button"
           onClick={() => setConfirmLeave(true)}
-          className="btn btn-danger inline-flex items-center gap-2 px-4 py-2.5 text-sm"
+          className="group relative inline-flex items-center gap-2 overflow-hidden rounded-xl border border-rose-500/30 bg-gradient-to-b from-[#1e141a] to-[#120c12] px-4 py-2.5 text-xs font-bold text-rose-300 shadow-[inset_0_1px_0_rgba(255,255,255,0.06),0_4px_12px_rgba(0,0,0,0.35)] transition-all duration-200 hover:border-rose-400/60 hover:bg-rose-950/40 hover:text-white hover:shadow-[0_0_16px_rgba(244,63,94,0.2)] active:scale-[0.97] sm:text-sm"
         >
-          🚪 {english ? 'Leave room' : 'مغادرة الروم'}
+          <LogOut className="h-4 w-4 text-rose-400 transition-transform duration-200 group-hover:-translate-x-0.5" />
+          <span>{english ? 'Leave room' : 'مغادرة الروم'}</span>
         </button>
-        <span className="text-[10px] font-bold text-cream/50">{t('onlineLive')}</span>
+        <span className="text-[10px] font-bold text-slate-400">{t('onlineLive')}</span>
       </div>
 
       <LeaveRoomConfirm

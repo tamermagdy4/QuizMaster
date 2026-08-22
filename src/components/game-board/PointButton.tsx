@@ -29,42 +29,42 @@ function tileTier(points: number) {
   if (points <= 100) {
     return {
       label: 'سهل',
-      lamp: 'bg-[#3b82f6]',
-      lampGlow: 'group-hover:shadow-[0_0_12px_rgba(59,130,246,0.9)]',
-      surface: 'from-[#1e4d78] via-[#17344f] to-[#0b1a2c]',
-      border: 'border-[#3b82f6]/45',
-      hoverBorder: 'hover:border-[#60a5fa]/90',
-      numGradient: 'from-[#dbeafe] via-[#93c5fd] to-[#3b82f6]',
-      labelBg: 'bg-[#3b82f6]/20',
-      labelText: 'text-[#bfdbfe]',
-      glow: 'hover:shadow-[0_0_22px_rgba(59,130,246,0.3),0_6px_14px_rgba(0,0,0,0.45)]',
+      lamp: 'bg-[#60a5fa]',
+      lampGlow: 'group-hover:shadow-[0_0_10px_rgba(96,165,250,0.7)]',
+      surface: 'from-[#1e293b] via-[#141f2d] to-[#0f172a]',
+      border: 'border-[#334155]/60',
+      hoverBorder: 'hover:border-[#c69c46]',
+      numGradient: 'from-[#ffffff] via-[#f1f5f9] to-[#cbd5e1]',
+      labelBg: 'bg-sky-950/80 border border-sky-500/30',
+      labelText: 'text-sky-300',
+      glow: 'hover:shadow-[0_0_20px_rgba(198,156,70,0.2),0_8px_18px_rgba(0,0,0,0.5)]',
     }
   }
   if (points <= 300) {
     return {
       label: 'متوسط',
-      lamp: 'bg-[#22c55e]',
-      lampGlow: 'group-hover:shadow-[0_0_12px_rgba(34,197,94,0.9)]',
-      surface: 'from-[#1f6b4a] via-[#16452f] to-[#0b201a]',
-      border: 'border-[#22c55e]/45',
-      hoverBorder: 'hover:border-[#4ade80]/90',
-      numGradient: 'from-[#dcfce7] via-[#86efac] to-[#22c55e]',
-      labelBg: 'bg-[#22c55e]/20',
-      labelText: 'text-[#bbf7d0]',
-      glow: 'hover:shadow-[0_0_22px_rgba(34,197,94,0.3),0_6px_14px_rgba(0,0,0,0.45)]',
+      lamp: 'bg-[#fbbf24]',
+      lampGlow: 'group-hover:shadow-[0_0_10px_rgba(251,191,36,0.7)]',
+      surface: 'from-[#1e293b] via-[#182333] to-[#0f172a]',
+      border: 'border-[#334155]/60',
+      hoverBorder: 'hover:border-[#c69c46]',
+      numGradient: 'from-[#fef08a] via-[#e4c478] to-[#c69c46]',
+      labelBg: 'bg-amber-950/80 border border-amber-500/30',
+      labelText: 'text-amber-300',
+      glow: 'hover:shadow-[0_0_20px_rgba(198,156,70,0.3),0_8px_18px_rgba(0,0,0,0.5)]',
     }
   }
   return {
     label: 'صعب',
-    lamp: 'bg-[#ef4444]',
-    lampGlow: 'group-hover:shadow-[0_0_14px_rgba(239,68,68,0.95)]',
-    surface: 'from-[#8f2f2b] via-[#5c201f] to-[#2a0f0e]',
-    border: 'border-[#ef4444]/50',
-    hoverBorder: 'hover:border-[#f87171]/95',
-    numGradient: 'from-[#fee2e2] via-[#fca5a5] to-[#ef4444]',
-    labelBg: 'bg-[#ef4444]/20',
-    labelText: 'text-[#fecaca]',
-    glow: 'hover:shadow-[0_0_26px_rgba(239,68,68,0.4),0_6px_14px_rgba(0,0,0,0.5)]',
+    lamp: 'bg-[#f87171]',
+    lampGlow: 'group-hover:shadow-[0_0_10px_rgba(248,113,113,0.7)]',
+    surface: 'from-[#2a1d2e] via-[#1b1424] to-[#120d18]',
+    border: 'border-[#47304f]/60',
+    hoverBorder: 'hover:border-[#e4c478]',
+    numGradient: 'from-[#fef3c7] via-[#fbbf24] to-[#f97316]',
+    labelBg: 'bg-rose-950/80 border border-rose-500/30',
+    labelText: 'text-rose-300',
+    glow: 'hover:shadow-[0_0_20px_rgba(228,196,120,0.3),0_8px_18px_rgba(0,0,0,0.5)]',
   }
 }
 
@@ -106,7 +106,7 @@ export function PointButton({
         'shadow-[inset_0_1px_0_rgba(255,255,255,0.14),inset_0_-3px_6px_rgba(0,0,0,0.22),0_3px_0_rgba(5,10,18,0.85),0_8px_16px_rgba(0,0,0,0.4)]',
         'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold-bright/60',
         completed
-          ? 'cursor-not-allowed border-white/[0.07] bg-[#0a1622] opacity-35 saturate-[0.2] shadow-none'
+          ? 'cursor-not-allowed border-white/[0.07] bg-[#0b1017] opacity-35 saturate-[0.2] shadow-none'
           : isPlayable
             ? cn(
                 'cursor-pointer bg-gradient-to-b',
@@ -116,8 +116,8 @@ export function PointButton({
                 tier.glow,
               )
             : partial
-              ? 'cursor-not-allowed border-white/15 bg-[#0f1e2c] opacity-65 shadow-[inset_0_1px_0_rgba(255,255,255,0.05),0_2px_0_rgba(5,10,18,0.8)]'
-              : 'cursor-not-allowed border-white/[0.07] bg-[#0a1622] opacity-35 shadow-none',
+              ? 'cursor-not-allowed border-white/15 bg-[#121c2a] opacity-65 shadow-[inset_0_1px_0_rgba(255,255,255,0.05),0_2px_0_rgba(5,10,18,0.8)]'
+              : 'cursor-not-allowed border-white/[0.07] bg-[#0b1017] opacity-35 shadow-none',
       )}
     >
       {/* Difficulty lamp dot */}
@@ -173,11 +173,11 @@ function TeamDot({ team, played }: { team: TeamId; played: boolean }) {
   return (
     <span
       className={cn(
-        'h-[6px] w-[6px] rounded-full border border-[#0B1526]',
+        'h-[6px] w-[6px] rounded-full border border-[#0b1017]',
         played
           ? team === 1
-            ? 'bg-[#3b82f6] shadow-[0_0_6px_rgba(59,130,246,0.8)]'
-            : 'bg-[#ef4444] shadow-[0_0_6px_rgba(239,68,68,0.8)]'
+            ? 'bg-[#4d79a7] shadow-[0_0_6px_rgba(77,121,167,0.8)]'
+            : 'bg-[#b04d49] shadow-[0_0_6px_rgba(176,77,73,0.8)]'
           : 'bg-white/15',
       )}
     />

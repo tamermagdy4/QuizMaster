@@ -146,6 +146,11 @@ export interface OnlineEventMap {
     playerId?: string
   }
   ANSWER_REVEALED: { revealed: boolean }
+  TEAM_ANSWER_SUBMITTED: {
+    team: TeamId
+    answer: string
+    playerId?: string
+  }
   SCORE_UPDATED: {
     team1Score: number
     team2Score: number
@@ -229,6 +234,8 @@ export interface OnlineEventMap {
     ffaPendingDoublePlayerId: string | null
     ffaBlockedPlayerId: string | null
     ffaCallFriendPlayerId: string | null
+    teamAnswers?: { 1: string; 2: string }
+    teamSubmitted?: { 1: boolean; 2: boolean }
     /** Full active-question text so the receiver never needs to resolve it. */
     activeQuestion: {
       categoryId: string

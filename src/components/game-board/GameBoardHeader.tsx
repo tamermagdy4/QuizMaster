@@ -31,8 +31,8 @@ interface GameBoardHeaderProps {
 }
 
 const teamColor = {
-  1: { accent: '#3b82f6', text: '#93c5fd', bg: 'rgba(59,130,246,0.12)' },
-  2: { accent: '#ef4444', text: '#fca5a5', bg: 'rgba(239,68,68,0.12)' },
+  1: { accent: '#4d79a7', text: '#8eaecf', bg: 'rgba(77,121,167,0.15)' },
+  2: { accent: '#b04d49', text: '#d48c88', bg: 'rgba(176,77,73,0.15)' },
 } as const
 
 /**
@@ -73,8 +73,8 @@ export function GameBoardHeader({
     <div className="relative z-30 overflow-visible">
       {/* ─── Main scoreboard bar ─── */}
       <div
-        className="relative flex items-stretch rounded-xl bg-[#0c1a28]/95 sm:rounded-2xl"
-        style={{ boxShadow: '0 4px 20px rgba(0,0,0,0.35)' }}
+        className="relative flex items-stretch rounded-xl border border-white/10 bg-[#0d1420]/95 sm:rounded-2xl"
+        style={{ boxShadow: '0 4px 20px rgba(0,0,0,0.45)' }}
       >
         {/* Active team accent — thin top line */}
         <motion.div
@@ -127,9 +127,9 @@ export function GameBoardHeader({
             className={cn(
               'flex h-8 w-8 items-center justify-center rounded-full tabular-nums sm:h-10 sm:w-10 lg:h-11 lg:w-11',
               lowTime
-                ? 'bg-[#ef4444]/20 text-[#fca5a5]'
+                ? 'bg-[#b04d49]/20 text-[#d48c88]'
                 : hasActiveQuestion
-                  ? 'bg-[#D4A843]/15 text-[#F5D98B]'
+                  ? 'bg-[#c69c46]/15 text-[#e4c478]'
                   : 'bg-white/5 text-white/30',
             )}
           >
@@ -179,8 +179,8 @@ export function GameBoardHeader({
           className={cn(
             'hidden items-center gap-1 rounded-md px-2 py-0.5 text-[9px] font-bold sm:flex sm:px-2.5 sm:text-[10px]',
             currentTurn === 1
-              ? 'bg-[#3b82f6]/10 text-[#93c5fd]'
-              : 'bg-[#ef4444]/10 text-[#fca5a5]',
+              ? 'bg-[#4d79a7]/10 text-[#8eaecf]'
+              : 'bg-[#b04d49]/10 text-[#d48c88]',
           )}
         >
           <span className="h-1.5 w-1.5 rounded-full" style={{ background: currentTurn === 1 ? t1.accent : t2.accent }} />
@@ -228,8 +228,8 @@ export function GameBoardHeader({
           className={cn(
             'flex items-center gap-1 rounded-md px-2 py-0.5 text-[8px] font-bold sm:hidden',
             currentTurn === 1
-              ? 'bg-[#3b82f6]/10 text-[#93c5fd]'
-              : 'bg-[#ef4444]/10 text-[#fca5a5]',
+              ? 'bg-[#4d79a7]/10 text-[#8eaecf]'
+              : 'bg-[#b04d49]/10 text-[#d48c88]',
           )}
         >
           <span className="h-1 w-1 rounded-full" style={{ background: currentTurn === 1 ? t1.accent : t2.accent }} />
@@ -255,7 +255,7 @@ export function GameBoardHeader({
               >
                 <span
                   className="h-1 w-1 rounded-full"
-                  style={{ background: isActive ? '#D4A843' : tone.accent, opacity: isActive ? 1 : 0.5 }}
+                  style={{ background: isActive ? '#c69c46' : tone.accent, opacity: isActive ? 1 : 0.5 }}
                 />
                 <span className="max-w-[40px] truncate font-bold sm:max-w-[60px]">{player.name}</span>
                 <AnimatedNumber

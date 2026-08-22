@@ -2,6 +2,7 @@ import { Link, NavLink, Outlet, useLocation, useNavigate } from 'react-router-do
 import { useAuth } from '../auth/AuthProvider'
 import { useEffect, useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
+import { Globe, User, LogOut } from 'lucide-react'
 import { useDirectionSync } from '../hooks/useDirectionSync'
 import { useAppStore } from '../store/appStore'
 import type { NavItem } from '../types'
@@ -80,17 +81,17 @@ export function MainLayout() {
     location.pathname.startsWith('/online/') ||
     location.pathname === '/live' ||
     location.pathname.startsWith('/live/')
-  const darkChrome = homeTop || (isGameRoute && theme !== 'light')
+  const darkChrome = homeTop || isGameRoute
 
   return (
-    <div className={cn('app-shell relative min-h-dvh overflow-x-clip transition-colors duration-300', theme === 'light' ? 'theme-light' : 'theme-premium', darkChrome ? 'bg-[#060f17] text-cream' : 'bg-cream text-ink', animationsEnabled ? 'motion-enabled' : 'motion-reduced')}>
+    <div className={cn('app-shell relative min-h-dvh overflow-x-clip transition-colors duration-300', theme === 'light' ? 'theme-light' : 'theme-premium', darkChrome ? 'bg-[#0b1017] text-cream' : 'bg-cream text-ink', animationsEnabled ? 'motion-enabled' : 'motion-reduced')}>
       {/* soft ambient wash — hidden on home and the dark game routes where the stage owns the bg */}
       {!isHome && !isGameRoute && (
-        <div aria-hidden className="pointer-events-none fixed inset-x-0 top-0 h-72 bg-[radial-gradient(60%_100%_at_82%_0%,rgba(47,111,126,0.08),transparent_70%),radial-gradient(50%_90%_at_8%_0%,rgba(61,139,104,0.07),transparent_70%)]" />
+        <div aria-hidden className="pointer-events-none fixed inset-x-0 top-0 h-72 bg-[radial-gradient(60%_100%_at_82%_0%,rgba(61,112,128,0.08),transparent_70%),radial-gradient(50%_90%_at_8%_0%,rgba(70,138,94,0.07),transparent_70%)]" />
       )}
 
       {/* ===== Header ===== */}
-      <header className={cn('sticky top-0 z-50 border-b transition-colors duration-300', darkChrome ? 'border-[#526473]/25 bg-[#060f17]/90' : 'border-border-soft/70 bg-white/95')}>
+      <header className={cn('sticky top-0 z-50 border-b transition-colors duration-300', darkChrome ? 'border-white/10 bg-[#0b1017]/95 backdrop-blur-md' : 'border-border-soft/70 bg-white/95')}>
         <div className="mx-auto flex h-16 w-full max-w-7xl items-center justify-between gap-4 px-4 sm:px-6">
           {/* Brand */}
           <Link to="/" className="group flex items-center gap-3">
@@ -121,8 +122,8 @@ export function MainLayout() {
                     'rounded-lg px-3 py-2 text-[13px] font-bold transition-colors duration-150',
                     isActive
                       ? darkChrome
-                        ? 'text-cream shadow-[inset_0_-2px_0_rgba(227,199,106,0.85)]'
-                        : 'text-navy shadow-[inset_0_-2px_0_rgba(201,162,39,0.85)]'
+                        ? 'text-cream shadow-[inset_0_-2px_0_rgba(198,156,70,0.9)]'
+                        : 'text-navy shadow-[inset_0_-2px_0_rgba(198,156,70,0.9)]'
                       : darkChrome
                         ? 'text-cream/65 hover:text-cream'
                         : 'text-ink-2 hover:text-navy',
@@ -136,29 +137,29 @@ export function MainLayout() {
 
           {/* Right actions */}
           <div className="flex items-center gap-2">
-            {/* Language toggle — compact pill */}
+            {/* Language toggle — realistic tactile glass button */}
             <button
               type="button"
               onClick={() => setDirection(language === 'ar' ? 'ltr' : 'rtl')}
               aria-label={language === 'ar' ? 'التبديل إلى الإنجليزية' : 'Switch to Arabic'}
-              className={cn('hdr-ctl hidden sm:inline-flex', darkChrome ? 'hdr-ctl-dark' : 'hdr-ctl-light')}
+              className="group relative hidden h-9 items-center gap-1.5 overflow-hidden rounded-xl border border-[#2a3a52] bg-gradient-to-b from-[#182333] to-[#0f1724] px-3 text-xs font-extrabold text-slate-200 shadow-[inset_0_1px_0_rgba(255,255,255,0.08),0_4px_10px_rgba(0,0,0,0.35)] transition-all duration-200 hover:border-[#c69c46]/60 hover:bg-[#1f2d42] hover:text-white hover:shadow-[0_0_14px_rgba(198,156,70,0.2)] active:scale-[0.96] sm:inline-flex"
             >
-              <svg className="h-3.5 w-3.5 opacity-70" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10A15.3 15.3 0 0 1 12 2z"/></svg>
-              {language === 'ar' ? 'EN' : 'عربي'}
+              <Globe className="h-3.5 w-3.5 text-[#8eaecf] transition-transform duration-200 group-hover:rotate-12" />
+              <span>{language === 'ar' ? 'EN' : 'عربي'}</span>
             </button>
 
             {isAuthenticated ? (
               <>
-                {/* Account — compact premium control with user icon */}
+                {/* Account — realistic tactile glass button with User icon */}
                 <Link
                   to="/profile"
-                  className={cn('hdr-ctl hidden sm:inline-flex', darkChrome ? 'hdr-ctl-dark' : 'hdr-ctl-light')}
+                  className="group relative hidden h-9 items-center gap-1.5 overflow-hidden rounded-xl border border-[#2a3a52] bg-gradient-to-b from-[#182333] to-[#0f1724] px-3 text-xs font-extrabold text-slate-200 shadow-[inset_0_1px_0_rgba(255,255,255,0.08),0_4px_10px_rgba(0,0,0,0.35)] transition-all duration-200 hover:border-[#c69c46]/60 hover:bg-[#1f2d42] hover:text-white hover:shadow-[0_0_14px_rgba(198,156,70,0.2)] active:scale-[0.96] sm:inline-flex"
                 >
-                  <svg className="h-3.5 w-3.5 opacity-70" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-                  {language === 'ar' ? 'حسابي' : 'Profile'}
+                  <User className="h-3.5 w-3.5 text-[#e4c478] transition-transform duration-200 group-hover:scale-110" />
+                  <span>{language === 'ar' ? 'حسابي' : 'Profile'}</span>
                 </Link>
 
-                {/* Logout — quiet danger control */}
+                {/* Logout — realistic dark ruby tactile glass button with LogOut icon */}
                 <button
                   type="button"
                   onClick={async () => {
@@ -169,30 +170,25 @@ export function MainLayout() {
                       // Keep the current page if logout fails.
                     }
                   }}
-                  className={cn('hdr-ctl hidden sm:inline-flex', darkChrome ? 'hdr-ctl-danger-dark' : 'hdr-ctl-danger-light')}
+                  className="group relative hidden h-9 items-center gap-1.5 overflow-hidden rounded-xl border border-rose-500/30 bg-gradient-to-b from-[#1e141a] to-[#120c12] px-3 text-xs font-extrabold text-rose-300 shadow-[inset_0_1px_0_rgba(255,255,255,0.08),0_4px_10px_rgba(0,0,0,0.35)] transition-all duration-200 hover:border-rose-400/60 hover:bg-rose-950/40 hover:text-white hover:shadow-[0_0_14px_rgba(244,63,94,0.2)] active:scale-[0.96] sm:inline-flex"
                 >
-                  <svg className="h-3.5 w-3.5 opacity-80" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
-                  {language === 'ar' ? 'خروج' : 'Sign out'}
+                  <LogOut className="h-3.5 w-3.5 text-rose-400 transition-transform duration-200 group-hover:-translate-x-0.5" />
+                  <span>{language === 'ar' ? 'خروج' : 'Sign out'}</span>
                 </button>
               </>
             ) : (
               <>
-                {/* تسجيل الدخول — PRIMARY action: solid petrol, strongest emphasis */}
+                {/* تسجيل الدخول — realistic gold button */}
                 <Link
                   to="/login"
-                  className={cn(
-                    'hdr-ctl hidden sm:inline-flex !px-3.5',
-                    darkChrome
-                      ? '!bg-cream !text-navy !border-cream/30 hover:!bg-white'
-                      : '!bg-navy !text-white !border-navy hover:!bg-navy-3',
-                  )}
+                  className="hidden h-9 items-center rounded-xl border border-[#c69c46]/60 bg-gradient-to-b from-[#e4c478] to-[#c69c46] px-3.5 text-xs font-black text-[#0b1017] shadow-[inset_0_1px_0_rgba(255,255,255,0.35),0_4px_12px_rgba(198,156,70,0.25)] transition hover:brightness-105 active:scale-[0.96] sm:inline-flex"
                 >
                   {language === 'ar' ? 'تسجيل الدخول' : 'Sign in'}
                 </Link>
-                {/* إنشاء حساب — SECONDARY action: quiet outline */}
+                {/* إنشاء حساب — realistic dark button */}
                 <Link
                   to="/signup"
-                  className={cn('hdr-ctl hidden sm:inline-flex', darkChrome ? 'hdr-ctl-dark' : 'hdr-ctl-light')}
+                  className="hidden h-9 items-center rounded-xl border border-[#2a3a52] bg-gradient-to-b from-[#182333] to-[#0f1724] px-3.5 text-xs font-extrabold text-slate-200 shadow-[inset_0_1px_0_rgba(255,255,255,0.08),0_4px_10px_rgba(0,0,0,0.35)] transition hover:border-[#c69c46]/60 hover:text-white active:scale-[0.96] sm:inline-flex"
                 >
                   {language === 'ar' ? 'إنشاء حساب' : 'Create account'}
                 </Link>

@@ -20,14 +20,14 @@ interface WheelSegment {
  * outcome is readable at a glance.
  */
 const SEGMENTS: WheelSegment[] = [
-  { value: 50, color: '#16a34a', labelColor: '#ffffff' },
-  { value: -50, color: '#dc2626', labelColor: '#ffffff' },
-  { value: 100, color: '#059669', labelColor: '#ffffff' },
-  { value: -100, color: '#e11d48', labelColor: '#ffffff' },
-  { value: 150, color: '#0d9488', labelColor: '#ffffff' },
-  { value: -150, color: '#be123c', labelColor: '#ffffff' },
-  { value: 200, color: '#15803d', labelColor: '#ffffff' },
-  { value: -200, color: '#b91c1c', labelColor: '#ffffff' },
+  { value: 50, color: '#468a5e', labelColor: '#ffffff' },
+  { value: -50, color: '#b04d49', labelColor: '#ffffff' },
+  { value: 100, color: '#3d7953', labelColor: '#ffffff' },
+  { value: -100, color: '#9e433f', labelColor: '#ffffff' },
+  { value: 150, color: '#356847', labelColor: '#ffffff' },
+  { value: -150, color: '#8c3a37', labelColor: '#ffffff' },
+  { value: 200, color: '#2c573c', labelColor: '#ffffff' },
+  { value: -200, color: '#7a322f', labelColor: '#ffffff' },
 ]
 
 const SEGMENT_ANGLE = 360 / SEGMENTS.length
@@ -118,19 +118,19 @@ export function WheelOfFortune({ open, english, onResult, onClose }: WheelOfFort
             initial={{ scale: 0.85, y: 24 }}
             animate={{ scale: 1, y: 0 }}
             exit={{ scale: 0.9, y: 16 }}
-            className="relative max-h-[92vh] w-full max-w-md overflow-y-auto rounded-[24px] border border-amber-300/20 bg-[#0B1530]/95 p-5 text-center shadow-2xl shadow-black/60"
+            className="relative max-h-[92vh] w-full max-w-md overflow-y-auto rounded-[24px] border border-gold/30 bg-[#0e1622]/95 p-5 text-center shadow-2xl shadow-black/60"
           >
             <button
               type="button"
               onClick={onClose}
               disabled={spinning}
               aria-label={english ? 'Close' : 'إغلاق'}
-              className="absolute top-3 end-3 z-20 flex h-8 w-8 items-center justify-center rounded-full border border-white/10 bg-white/5 text-sm font-black text-slate-400 transition hover:border-rose-400/40 hover:text-rose-300 disabled:cursor-not-allowed disabled:opacity-40"
+              className="absolute top-3 end-3 z-20 flex h-8 w-8 items-center justify-center rounded-full border border-white/10 bg-white/5 text-sm font-black text-slate-400 transition hover:border-red/40 hover:text-red-bright disabled:cursor-not-allowed disabled:opacity-40"
             >
               ✕
             </button>
             <p className="text-3xl" aria-hidden>🎡</p>
-            <h2 className="mt-1 text-xl font-black text-amber-200">
+            <h2 className="mt-1 text-xl font-black text-[#e4c478]">
               {english ? 'Wheel of Fortune' : 'عجلة الحظ'}
             </h2>
             <p className="mt-1 text-xs font-bold text-slate-400">
@@ -149,14 +149,14 @@ export function WheelOfFortune({ open, english, onResult, onClose }: WheelOfFort
                 <svg width="38" height="46" viewBox="0 0 38 46" aria-hidden>
                   <defs>
                     <linearGradient id="wheelArrowGold" x1="0" y1="0" x2="0" y2="1">
-                      <stop offset="0%" stopColor="#fde68a" />
-                      <stop offset="100%" stopColor="#f59e0b" />
+                      <stop offset="0%" stopColor="#e4c478" />
+                      <stop offset="100%" stopColor="#c69c46" />
                     </linearGradient>
                   </defs>
                   <path
                     d="M19 45 L32 8 L19 16 L6 8 Z"
                     fill="url(#wheelArrowGold)"
-                    stroke="#92400e"
+                    stroke="#7a5818"
                     strokeWidth="2.5"
                     strokeLinejoin="round"
                   />
@@ -180,8 +180,8 @@ export function WheelOfFortune({ open, english, onResult, onClose }: WheelOfFort
               >
                 <svg viewBox="0 0 260 260" className="h-full w-full drop-shadow-2xl" aria-hidden>
                   {/* Outer gold rim */}
-                  <circle cx={CENTER} cy={CENTER} r={WHEEL_RADIUS + 5} fill="#fbbf24" />
-                  <circle cx={CENTER} cy={CENTER} r={WHEEL_RADIUS + 5} fill="none" stroke="#92400e" strokeWidth="2" />
+                  <circle cx={CENTER} cy={CENTER} r={WHEEL_RADIUS + 5} fill="#c69c46" />
+                  <circle cx={CENTER} cy={CENTER} r={WHEEL_RADIUS + 5} fill="none" stroke="#7a5818" strokeWidth="2" />
 
                   {SEGMENTS.map((segment, idx) => {
                     const startAngle = idx * SEGMENT_ANGLE - 90
@@ -204,7 +204,7 @@ export function WheelOfFortune({ open, english, onResult, onClose }: WheelOfFort
                         <path
                           d={`M ${CENTER} ${CENTER} L ${x1} ${y1} A ${WHEEL_RADIUS} ${WHEEL_RADIUS} 0 0 1 ${x2} ${y2} Z`}
                           fill={segment.color}
-                          stroke="#0B1530"
+                          stroke="#0e1622"
                           strokeWidth="3"
                         />
                         <text
@@ -219,20 +219,20 @@ export function WheelOfFortune({ open, english, onResult, onClose }: WheelOfFort
                         >
                           {formatPoints(segment.value)}
                         </text>
-                        <circle cx={bx} cy={by} r="2.4" fill="#fde68a" />
+                        <circle cx={bx} cy={by} r="2.4" fill="#e4c478" />
                       </g>
                     )
                   })}
 
                   {/* Center hub */}
-                  <circle cx={CENTER} cy={CENTER} r="24" fill="#0B1530" stroke="#fbbf24" strokeWidth="3" />
-                  <circle cx={CENTER} cy={CENTER} r="18" fill="#1e3a5f" stroke="#f59e0b" strokeWidth="1" />
+                  <circle cx={CENTER} cy={CENTER} r="24" fill="#0e1622" stroke="#c69c46" strokeWidth="3" />
+                  <circle cx={CENTER} cy={CENTER} r="18" fill="#182230" stroke="#e4c478" strokeWidth="1" />
                   <text
                     x={CENTER}
                     y={CENTER}
                     textAnchor="middle"
                     dominantBaseline="central"
-                    fill="#fde68a"
+                    fill="#e4c478"
                     fontSize="16"
                     fontWeight="900"
                   >
@@ -255,7 +255,7 @@ export function WheelOfFortune({ open, english, onResult, onClose }: WheelOfFort
                       'w-full rounded-xl px-4 py-3 text-sm font-black transition',
                       spinning
                         ? 'cursor-not-allowed border border-white/10 bg-white/5 text-slate-500'
-                        : 'bg-gradient-to-r from-amber-400 to-orange-500 text-[#1a1200] shadow-lg shadow-amber-500/30 hover:-translate-y-0.5',
+                        : 'bg-gradient-to-r from-[#d4a84f] to-[#c69c46] text-[#0e1622] shadow-lg shadow-[#c69c46]/20 hover:-translate-y-0.5',
                     )}
                   >
                     {spinning
@@ -263,7 +263,7 @@ export function WheelOfFortune({ open, english, onResult, onClose }: WheelOfFort
                       : english ? '🎰 Spin the wheel' : 'لف العجلة'}
                   </button>
                   {spinning && (
-                    <p className="mt-2 text-[11px] font-bold text-amber-200/70">
+                    <p className="mt-2 text-[11px] font-bold text-[#e4c478]/70">
                       {english ? 'Good luck!' : 'بالتوفيق!'}
                     </p>
                   )}
@@ -276,8 +276,8 @@ export function WheelOfFortune({ open, english, onResult, onClose }: WheelOfFort
                     className={cn(
                       'inline-flex items-baseline gap-2 rounded-full px-6 py-2 ring-1',
                       result > 0
-                        ? 'bg-emerald-500/15 text-emerald-300 ring-emerald-400/40'
-                        : 'bg-rose-500/15 text-rose-300 ring-rose-400/40',
+                        ? 'bg-green/15 text-green-bright ring-green/40'
+                        : 'bg-red/15 text-red-bright ring-red/40',
                     )}
                   >
                     <span className="text-4xl font-black">{formatPoints(result)}</span>
@@ -288,7 +288,7 @@ export function WheelOfFortune({ open, english, onResult, onClose }: WheelOfFort
                   <button
                     type="button"
                     onClick={onClose}
-                    className="w-full rounded-xl bg-gradient-to-r from-cyan-400 to-blue-600 px-4 py-3 text-sm font-black text-white shadow-lg shadow-blue-500/25 transition hover:-translate-y-0.5"
+                    className="w-full rounded-xl bg-[#4d79a7] hover:bg-[#5b87b5] px-4 py-3 text-sm font-black text-white shadow-lg shadow-[#4d79a7]/25 transition hover:-translate-y-0.5"
                   >
                     {english ? 'Done' : 'تم'}
                   </button>

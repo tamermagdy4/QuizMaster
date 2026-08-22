@@ -206,6 +206,8 @@ function buildGameStateSyncPayload(): SyncPayload | null {
     ffaPendingDoublePlayerId: board.ffaPendingDoublePlayerId,
     ffaBlockedPlayerId: board.ffaBlockedPlayerId,
     ffaCallFriendPlayerId: board.ffaCallFriendPlayerId,
+    teamAnswers: board.teamAnswers,
+    teamSubmitted: board.teamSubmitted,
     activeQuestion: syncQuestion,
   }
 }
@@ -318,6 +320,8 @@ function applyRemoteSync(payload: SyncPayload, senderId: string): void {
     ffaPendingDoublePlayerId: payload.ffaPendingDoublePlayerId,
     ffaBlockedPlayerId: payload.ffaBlockedPlayerId,
     ffaCallFriendPlayerId: payload.ffaCallFriendPlayerId,
+    teamAnswers: payload.teamAnswers ?? { 1: '', 2: '' },
+    teamSubmitted: payload.teamSubmitted ?? { 1: false, 2: false },
   })
 
   console.info(
@@ -371,11 +375,15 @@ export function applyRemoteGameEvent(event: OnlineGameEvent): void {
         break
       }
       case 'ANSWER_REVEALED': {
-        // In online mode, the answer must NOT be revealed to players —
-        // only the host decides correctness. Ignore reveal events in online mode.
-        const gm = useGameBoardStore.getState().gameMode
-        if (gm === 'online') break
         useGameBoardStore.setState({ isRevealed: event.payload.revealed })
+        break
+      }
+      case 'TEAM_ANSWER_SUBMITTED': {
+        const { team, answer } = event.payload
+        useGameBoardStore.setState((state) => ({
+          teamAnswers: { ...state.teamAnswers, [team]: answer },
+          teamSubmitted: { ...state.teamSubmitted, [team]: true },
+        }))
         break
       }
       case 'TURN_CHANGED': {
@@ -545,6 +553,8 @@ function applyRemoteQuestion(payload: OnlineEventMap['QUESTION_SELECTED']): void
     selectedAnswer: null,
     answerCorrect: null,
     answerPoints: 0,
+    teamAnswers: { 1: '', 2: '' },
+    teamSubmitted: { 1: false, 2: false },
     isRevealed: false,
   }))
 }
@@ -587,6 +597,8 @@ function applyRemoteScore(payload: OnlineEventMap['SCORE_UPDATED']): void {
       patch.selectedAnswer = null
       patch.answerCorrect = null
       patch.answerPoints = 0
+      patch.teamAnswers = { 1: '', 2: '' }
+      patch.teamSubmitted = { 1: false, 2: false }
       patch.isRevealed = false
     }
 

@@ -56,6 +56,8 @@ interface GameBoardState {
   selectedAnswer: string | null
   answerCorrect: boolean | null
   answerPoints: number
+  teamAnswers: { 1: string; 2: string }
+  teamSubmitted: { 1: boolean; 2: boolean }
 
   /** Online simultaneous answering — all players' answers + grades */
   onlineAnswers: Record<string, string>           // playerId → answer text
@@ -86,6 +88,8 @@ interface GameBoardState {
   revealAnswer: () => void
   hideAnswer: () => void
   resetReveal: () => void
+  submitTeamAnswer: (team: TeamId, answer: string) => void
+  resetTeamAnswers: () => void
 
   /** Online simultaneous answering */
   submitOnlineAnswer: (playerId: string, playerName: string, answer: string) => void
@@ -422,6 +426,8 @@ export const useGameBoardStore = create<GameBoardState>()(
       selectedAnswer: null,
       answerCorrect: null,
       answerPoints: 0,
+      teamAnswers: { 1: '', 2: '' },
+      teamSubmitted: { 1: false, 2: false },
       onlineAnswers: {},
       onlineAutoGrades: {},
       onlineFinalGrades: {},
@@ -599,6 +605,8 @@ export const useGameBoardStore = create<GameBoardState>()(
           selectedAnswer: null,
           answerCorrect: null,
           answerPoints: 0,
+          teamAnswers: { 1: '', 2: '' },
+          teamSubmitted: { 1: false, 2: false },
           onlineAnswers: {},
           onlineAutoGrades: {},
           onlineFinalGrades: {},
@@ -781,6 +789,8 @@ export const useGameBoardStore = create<GameBoardState>()(
           selectedAnswer: null,
           answerCorrect: null,
           answerPoints: 0,
+          teamAnswers: { 1: '', 2: '' },
+          teamSubmitted: { 1: false, 2: false },
         })
 
         if (state.gameMode === 'online') {
@@ -1159,6 +1169,9 @@ export const useGameBoardStore = create<GameBoardState>()(
         const lifelineActingTeam = state.activeQuestion ? state.activeQuestion.team : state.currentTurn
         if (state.gameMode === 'online' && getOnlinePlayerTeam() !== lifelineActingTeam) return
 
+        // Guard: if the acting team has already submitted their answer, they cannot use lifelines.
+        if (state.teamSubmitted[lifelineActingTeam]) return
+
         if (lifelineId === 'double') {
           const teamId = state.activeQuestion?.team ?? state.currentTurn
           const lifelinesKey = teamId === 1 ? 'team1Lifelines' : 'team2Lifelines'
@@ -1412,6 +1425,30 @@ export const useGameBoardStore = create<GameBoardState>()(
       },
 
       resetReveal: () => set({ isRevealed: false }),
+
+      submitTeamAnswer: (team, answer) => {
+        const state = get()
+        const nextAnswers = { ...state.teamAnswers, [team]: answer }
+        const nextSubmitted = { ...state.teamSubmitted, [team]: true }
+        set({
+          teamAnswers: nextAnswers,
+          teamSubmitted: nextSubmitted,
+        })
+        if (state.gameMode === 'online') {
+          notifyOnlineGameEvent('TEAM_ANSWER_SUBMITTED', {
+            team,
+            answer,
+            playerId: getOnlineSelfId() ?? undefined,
+          })
+        }
+      },
+
+      resetTeamAnswers: () => {
+        set({
+          teamAnswers: { 1: '', 2: '' },
+          teamSubmitted: { 1: false, 2: false },
+        })
+      },
 
       // ═══════════════════════════════════════════════════════════════════
       // ONLINE SIMULTANEOUS ANSWERING

@@ -61,15 +61,15 @@ export function CategoryPanel({
       role="group"
       aria-label={title}
       className={cn(
-        'relative flex min-h-0 flex-col overflow-hidden rounded-xl border bg-gradient-to-b from-[#0e2030] to-[#08121d] shadow-[inset_0_1px_0_rgba(255,255,255,0.05),0_14px_34px_rgba(0,0,0,0.45)] transition-colors duration-300 sm:rounded-2xl',
-        'border-[#1E293B] hover:border-[#D4A843]/40',
+        'relative flex min-h-0 flex-col overflow-hidden rounded-xl border bg-gradient-to-b from-[#141d2b] to-[#0b1017] shadow-[inset_0_1px_0_rgba(255,255,255,0.06),0_14px_34px_rgba(0,0,0,0.5)] transition-colors duration-300 sm:rounded-2xl',
+        'border-[#223147] hover:border-[#c69c46]/60',
       )}
     >
       {/* Gold top edge */}
-      <span aria-hidden className="pointer-events-none absolute inset-x-6 top-0 h-[2px] rounded-full bg-gradient-to-r from-transparent via-[#D4A843]/70 to-transparent" />
+      <span aria-hidden className="pointer-events-none absolute inset-x-6 top-0 h-[2px] rounded-full bg-gradient-to-r from-transparent via-[#c69c46]/80 to-transparent" />
 
       {/* Category title bar — always readable */}
-      <div className="relative z-10 flex shrink-0 items-center justify-center gap-1 border-b border-white/10 bg-[#050b13]/95 px-2 py-1.5 sm:gap-2 sm:py-2">
+      <div className="relative z-10 flex shrink-0 items-center justify-center gap-1 border-b border-white/10 bg-[#0d1420]/95 px-2 py-1.5 sm:gap-2 sm:py-2">
         <span className="text-xs leading-none drop-shadow-[0_2px_5px_rgba(0,0,0,0.9)] sm:text-base" aria-hidden>
           {category.icon}
         </span>
@@ -107,7 +107,7 @@ export function CategoryPanel({
         </div>
 
         {/* Central artwork — phones: full-width banner; sm+: center lane */}
-        <div className="relative order-1 col-span-2 h-16 min-h-0 overflow-hidden rounded-lg border border-white/10 bg-[#050b13] sm:order-2 sm:col-span-1 sm:h-auto sm:flex-1 sm:rounded-xl">
+        <div className="relative order-1 col-span-2 h-16 min-h-0 overflow-hidden rounded-lg border border-white/10 bg-[#0e1622] sm:order-2 sm:col-span-1 sm:h-auto sm:flex-1 sm:rounded-xl">
           {assetUrl ? (
             <>
               <img
@@ -117,15 +117,15 @@ export function CategoryPanel({
                 className="absolute inset-0 h-full w-full object-cover"
               />
               {/* Scrim so the art recedes and the pills stay dominant */}
-              <div className="absolute inset-0 bg-gradient-to-t from-[#060f17]/85 via-transparent to-[#060f17]/40" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0e1622]/85 via-transparent to-[#0e1622]/40" />
             </>
           ) : (
-            <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-[#17324a] via-[#102433] to-[#060f17] text-xl sm:text-4xl">
+            <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-[#222f42] via-[#182230] to-[#0e1622] text-xl sm:text-4xl">
               {category.icon}
             </div>
           )}
           {/* Center glow */}
-          <div aria-hidden className="pointer-events-none absolute inset-0 bg-[radial-gradient(70%_60%_at_50%_45%,rgba(47,125,126,0.12),transparent_70%)]" />
+          <div aria-hidden className="pointer-events-none absolute inset-0 bg-[radial-gradient(70%_60%_at_50%_45%,rgba(61,112,128,0.12),transparent_70%)]" />
         </div>
 
         {/* Right lane (team 2 side) — phones: third grid column; sm+: last */}

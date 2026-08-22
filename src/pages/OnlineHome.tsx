@@ -68,26 +68,31 @@ export function OnlineHome() {
         className="pointer-events-none absolute inset-0 -z-10"
         style={{
           background:
-            'radial-gradient(60% 46% at 50% 0%, rgba(47,125,126,0.16), transparent 62%), radial-gradient(50% 40% at 88% 100%, rgba(201,162,39,0.07), transparent 60%)',
+            'radial-gradient(60% 46% at 50% 0%, rgba(61,112,128,0.12), transparent 62%), radial-gradient(50% 40% at 88% 100%, rgba(198,156,70,0.06), transparent 60%)',
         }}
       />
 
       {/* arena header — the cinematic title */}
-      <div className="flex flex-col items-center gap-3 pt-6 text-center">
-        <p className="eyebrow">{t('arena')}</p>
-        <h1 className="title-cinematic text-cream">{t('onlineTitle')}</h1>
-        <p className="max-w-xl text-sm text-cream/55 sm:text-base">{t('onlineSubtitle')}</p>
+      <div className="flex flex-col items-center gap-2 pt-4 text-center">
+        <p className="text-xs font-bold tracking-[0.25em] text-[#c69c46]">{t('arena')}</p>
+        <h1 className="font-display text-2xl font-extrabold text-white sm:text-4xl">{t('onlineTitle')}</h1>
+        <p className="max-w-xl text-sm text-slate-400 sm:text-base">{t('onlineSubtitle')}</p>
       </div>
 
       {/* the two arena gates — create (gold) / join (teal) */}
       <div className="grid items-start gap-5 lg:grid-cols-2">
         {/* CREATE gate — renders immediately (no mount-hide animation) */}
-        <div className="glass-dark panel-gold-edge p-5 sm:p-7">
+        <div className="relative overflow-hidden rounded-2xl border border-[#223147] bg-gradient-to-b from-[#141d2b] to-[#0d1420] p-5 shadow-2xl transition hover:border-[#c69c46]/50 sm:p-7">
+          {/* Gold top edge hairline */}
+          <span aria-hidden className="pointer-events-none absolute inset-x-6 top-0 h-[2px] rounded-full bg-gradient-to-r from-transparent via-[#c69c46]/80 to-transparent" />
+
           <div className="mb-5 flex items-center gap-3">
-            <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-gold/12 text-2xl" aria-hidden><Plus className="h-6 w-6 text-gold-bright" /></span>
+            <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#c69c46]/15 text-2xl" aria-hidden>
+              <Plus className="h-6 w-6 text-[#e4c478]" />
+            </span>
             <div>
-              <h2 className="font-display text-xl font-extrabold text-gold-bright sm:text-2xl">{t('createRoom')}</h2>
-              <p className="text-xs text-cream/50">{english ? 'Open a new arena for your friends' : 'افتح ساحة جديدة لأصدقائك'}</p>
+              <h2 className="font-display text-xl font-extrabold text-[#e4c478] sm:text-2xl">{t('createRoom')}</h2>
+              <p className="text-xs text-slate-400">{english ? 'Open a new arena for your friends' : 'افتح ساحة جديدة لأصدقائك'}</p>
             </div>
           </div>
 
@@ -101,8 +106,8 @@ export function OnlineHome() {
               autoComplete="off"
             />
 
-            <div className="dark-card space-y-2 p-3.5">
-              <p className="text-xs font-black text-teal-bright">{english ? 'Players' : 'عدد اللاعبين'}</p>
+            <div className="space-y-2 rounded-xl border border-[#1e293b] bg-[#090e15]/70 p-3.5">
+              <p className="text-xs font-bold text-[#c69c46]">{english ? 'Players' : 'عدد اللاعبين'}</p>
               <div className="grid grid-cols-3 gap-2">
                 {MAX_PLAYERS_OPTIONS.map((option) => (
                   <motion.button
@@ -113,7 +118,12 @@ export function OnlineHome() {
                     whileHover={busy ? undefined : { y: -2 }}
                     whileTap={busy ? undefined : { scale: 0.96 }}
                     onClick={() => setMaxPlayers(option)}
-                    className={cn('chip chip-dark', maxPlayers === option && 'chip-dark-active')}
+                    className={cn(
+                      'flex min-h-[38px] items-center justify-center rounded-xl border px-2 py-1.5 text-xs font-bold transition',
+                      maxPlayers === option
+                        ? 'border-2 border-[#c69c46] bg-[#c69c46]/15 font-black text-[#e4c478] shadow-[0_0_14px_rgba(198,156,70,0.25)]'
+                        : 'border-[#223147] bg-[#141d2b] text-slate-300 hover:border-[#c69c46]/50 hover:text-white',
+                    )}
                   >
                     {option} {english ? 'players' : 'لاعبين'}
                   </motion.button>
@@ -121,8 +131,8 @@ export function OnlineHome() {
               </div>
             </div>
 
-            <div className="dark-card space-y-2 p-3.5">
-              <p className="text-xs font-black text-teal-bright">{english ? 'Question duration' : 'مدة السؤال'}</p>
+            <div className="space-y-2 rounded-xl border border-[#1e293b] bg-[#090e15]/70 p-3.5">
+              <p className="text-xs font-bold text-[#c69c46]">{english ? 'Question duration' : 'مدة السؤال'}</p>
               <div className="grid grid-cols-3 gap-2">
                 {DURATION_OPTIONS.map((option) => (
                   <motion.button
@@ -133,7 +143,12 @@ export function OnlineHome() {
                     whileHover={busy ? undefined : { y: -2 }}
                     whileTap={busy ? undefined : { scale: 0.96 }}
                     onClick={() => setQuestionDuration(option)}
-                    className={cn('chip chip-dark', questionDuration === option && 'chip-dark-active')}
+                    className={cn(
+                      'flex min-h-[38px] items-center justify-center rounded-xl border px-2 py-1.5 text-xs font-bold transition',
+                      questionDuration === option
+                        ? 'border-2 border-[#c69c46] bg-[#c69c46]/15 font-black text-[#e4c478] shadow-[0_0_14px_rgba(198,156,70,0.25)]'
+                        : 'border-[#223147] bg-[#141d2b] text-slate-300 hover:border-[#c69c46]/50 hover:text-white',
+                    )}
                   >
                     {option} {english ? 's' : 'ثانية'}
                   </motion.button>
@@ -147,7 +162,7 @@ export function OnlineHome() {
               whileHover={busy ? undefined : { y: -2 }}
               whileTap={busy ? undefined : { scale: 0.98 }}
               onClick={handleCreate}
-              className="btn btn-gold w-full py-4 text-base"
+              className="w-full rounded-xl border border-[#c69c46]/50 bg-gradient-to-b from-[#e4c478] to-[#c69c46] py-3.5 text-base font-black text-[#0b1017] shadow-lg shadow-[#c69c46]/20 transition hover:brightness-105 active:scale-[0.98] disabled:opacity-40"
             >
               {busy ? '…' : `${t('createRoom')} ＋`}
             </motion.button>
@@ -155,12 +170,17 @@ export function OnlineHome() {
         </div>
 
         {/* JOIN gate — renders immediately (no mount-hide animation) */}
-        <div className="glass-dark p-5 sm:p-7">
+        <div className="relative overflow-hidden rounded-2xl border border-[#223147] bg-gradient-to-b from-[#141d2b] to-[#0d1420] p-5 shadow-2xl transition hover:border-[#4d79a7]/50 sm:p-7">
+          {/* Blue top edge hairline */}
+          <span aria-hidden className="pointer-events-none absolute inset-x-6 top-0 h-[2px] rounded-full bg-gradient-to-r from-transparent via-[#4d79a7]/80 to-transparent" />
+
           <div className="mb-5 flex items-center gap-3">
-            <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-teal/12 text-2xl" aria-hidden><Zap className="h-6 w-6 text-teal-bright" /></span>
+            <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#4d79a7]/15 text-2xl" aria-hidden>
+              <Zap className="h-6 w-6 text-[#8eaecf]" />
+            </span>
             <div>
-              <h2 className="font-display text-xl font-extrabold text-teal-bright sm:text-2xl">{t('joinGame')}</h2>
-              <p className="text-xs text-cream/50">{english ? 'Enter a friend\'s arena with its code' : 'ادخل ساحة صديقك عبر الكود'}</p>
+              <h2 className="font-display text-xl font-extrabold text-[#8eaecf] sm:text-2xl">{t('joinGame')}</h2>
+              <p className="text-xs text-slate-400">{english ? 'Enter a friend\'s arena with its code' : 'ادخل ساحة صديقك عبر الكود'}</p>
             </div>
           </div>
 
@@ -182,7 +202,7 @@ export function OnlineHome() {
               whileHover={busy ? undefined : { y: -2 }}
               whileTap={busy ? undefined : { scale: 0.98 }}
               onClick={handleJoin}
-              className="btn btn-teal w-full py-4 text-base"
+              className="w-full rounded-xl border border-[#4d79a7]/50 bg-gradient-to-b from-[#5c8ab8] to-[#4d79a7] py-3.5 text-base font-black text-white shadow-lg shadow-[#4d79a7]/20 transition hover:brightness-105 active:scale-[0.98] disabled:opacity-40"
             >
               {busy ? '…' : t('joinGame')}
             </motion.button>
@@ -198,7 +218,7 @@ export function OnlineHome() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -4 }}
             transition={{ duration: 0.22 }}
-            className="mx-auto max-w-xl rounded-xl border border-red/45 bg-red/12 px-3 py-2 text-center text-sm font-bold text-red-bright"
+            className="mx-auto max-w-xl rounded-xl border border-[#b04d49]/45 bg-[#b04d49]/12 px-3 py-2 text-center text-sm font-bold text-[#d48c88]"
           >
             {message}
           </motion.p>
@@ -208,7 +228,7 @@ export function OnlineHome() {
       <div className="flex justify-center">
         <Link
           to="/"
-          className="inline-flex items-center gap-2 text-sm font-bold text-cream/50 transition hover:text-cream"
+          className="inline-flex items-center gap-2 text-sm font-bold text-slate-400 transition hover:text-white"
         >
           <ArrowLeft className="h-4 w-4" aria-hidden /> {t('back')}
         </Link>

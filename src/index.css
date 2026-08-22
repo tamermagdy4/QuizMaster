@@ -10,41 +10,41 @@
 
 @theme {
   /* --- Fonts --- */
-  --font-arabic: 'IBM Plex Sans Arabic', system-ui, sans-serif;
-  --font-display: 'Changa', 'IBM Plex Sans Arabic', system-ui, sans-serif;
+  --font-arabic: 'Readex Pro', 'IBM Plex Sans Arabic', system-ui, sans-serif;
+  --font-display: 'IBM Plex Sans Arabic', 'Readex Pro', system-ui, sans-serif;
 
   /* --- Light palette (the product surface) --- */
-  --color-cream: #f7f9fa;        /* page background (off-white) */
-  --color-ink: #12232b;          /* primary text (14:1 on cream) */
-  --color-ink-2: #33464d;        /* secondary text */
-  --color-muted: #66777d;        /* muted text (4.6:1 on cream) */
+  --color-cream: #f4f6f8;        /* page background (off-white) */
+  --color-ink: #0e1622;          /* primary text */
+  --color-ink-2: #243347;        /* secondary text */
+  --color-muted: #64748b;        /* muted text */
 
-  /* --- Petrol family (primary brand) --- */
-  --color-navy: #123b46;         /* deep petrol — headings / primary */
-  --color-navy-2: #174c57;       /* petrol panel */
-  --color-navy-3: #20616c;       /* petrol raised */
+  /* --- Deep Navy family (primary brand) --- */
+  --color-navy: #0e1622;         /* deep navy — headings / primary */
+  --color-navy-2: #182230;       /* navy panel */
+  --color-navy-3: #222f42;       /* navy raised */
 
-  /* --- Premium petroleum stage (the game-board color system) ---
-     Dark, cinematic, teal-tinted. Every game surface shares these. */
-  --color-petro-950: #060f17;    /* page base — very dark petroleum */
-  --color-petro-900: #0a1823;    /* deep surface */
-  --color-petro-800: #102433;    /* cards / raised panels */
-  --color-petro-700: #17324a;    /* tiles / hover */
-  --color-petro-line: rgba(82, 148, 163, 0.22);   /* muted teal border */
-  --color-petro-line-strong: rgba(108, 178, 192, 0.4); /* teal border strong */
+  /* --- Game Show Stage Color System ---
+     Deep Navy / Charcoal base, Dark Slate surfaces, Warm Gold accents. */
+  --color-petro-950: #0b1017;    /* page base — deep navy charcoal */
+  --color-petro-900: #0e1622;    /* deep stage surface */
+  --color-petro-800: #182230;    /* cards / raised panels */
+  --color-petro-700: #222f42;    /* tiles / hover */
+  --color-petro-line: rgba(148, 163, 184, 0.16);   /* muted steel border */
+  --color-petro-line-strong: rgba(148, 163, 184, 0.32); /* steel border strong */
 
   /* --- Semantic accents --- */
-  --color-gold: #c9a227;         /* scores / winner / CTA */
-  --color-gold-bright: #e3c76a;  /* light gold — reserved for the dark stage */
-  --color-gold-ink: #a8861f;     /* gold text on light bg (4.9:1) */
-  --color-teal: #2f6f7e;         /* interactive (5.6:1) */
-  --color-teal-bright: #8cc3ca;  /* light teal — dark stage only */
-  --color-blue: #2e6f9e;         /* team 1 identity (muted blue) */
-  --color-blue-bright: #93bcd8;  /* light blue — dark stage only */
-  --color-green: #3d8b68;        /* correct / success (4.8:1) */
-  --color-green-bright: #7fb88f; /* light green — dark stage only */
-  --color-red: #b0554f;          /* wrong / danger (4.9:1) */
-  --color-red-bright: #d19a94;   /* light red — dark stage only */
+  --color-gold: #c69c46;         /* scores / winner / CTA — warm gold */
+  --color-gold-bright: #e4c478;  /* light warm gold — dark stage */
+  --color-gold-ink: #a67e2a;     /* gold text on light bg */
+  --color-teal: #3d7080;         /* interactive muted teal */
+  --color-teal-bright: #82adb8;  /* light muted teal */
+  --color-blue: #4d79a7;         /* team 1 identity — muted professional blue */
+  --color-blue-bright: #8eaecf;  /* light muted blue */
+  --color-green: #468a5e;        /* correct / success — muted green */
+  --color-green-bright: #7ec498; /* light muted green */
+  --color-red: #b04d49;          /* wrong / danger — muted red / burgundy */
+  --color-red-bright: #d48c88;   /* light muted red */
 
   /* --- Surfaces --- */
   --color-surface: #ffffff;
@@ -61,7 +61,7 @@
   /* --- Shadows (soft, restrained) --- */
   --shadow-panel: 0 18px 48px rgba(18, 35, 43, 0.08);
   --shadow-raised: 0 12px 32px rgba(18, 35, 43, 0.1);
-  --shadow-glow-gold: 0 1px 2px rgba(201, 162, 39, 0.12);
+  --shadow-glow-gold: 0 1px 2px rgba(212, 165, 74, 0.12);
   --shadow-glow-teal: 0 1px 2px rgba(47, 111, 126, 0.10);
   --shadow-glow-green: 0 1px 2px rgba(61, 139, 104, 0.12);
   --shadow-glow-red: 0 1px 2px rgba(176, 85, 79, 0.10);
@@ -100,7 +100,7 @@
   }
 
   ::selection {
-    background: rgba(201, 162, 39, 0.28);
+    background: rgba(212, 165, 74, 0.28);
   }
 
   /* Visible focus — petrol ring, never removed */
@@ -177,7 +177,7 @@
     top: 0;
     height: 2px;
     border-radius: var(--radius-pill);
-    background: linear-gradient(90deg, transparent, rgba(201, 162, 39, 0.5), transparent);
+    background: linear-gradient(90deg, transparent, rgba(212, 165, 74, 0.5), transparent);
     pointer-events: none;
   }
 
@@ -224,11 +224,11 @@
   .btn-gold {
     color: #1d1603;
     background: linear-gradient(180deg, #eccf78 0%, var(--color-gold) 100%);
-    border: 1px solid rgba(168, 134, 31, 0.5);
+    border: 1px solid rgba(176, 137, 48, 0.5);
     box-shadow:
       inset 0 1px 0 rgba(255, 255, 255, 0.55),
       inset 0 -1px 0 rgba(0, 0, 0, 0.12),
-      0 10px 26px rgba(201, 162, 39, 0.26);
+      0 10px 26px rgba(212, 165, 74, 0.26);
   }
   .btn-gold:hover:not(:disabled) {
     filter: brightness(1.05);
@@ -236,14 +236,14 @@
     box-shadow:
       inset 0 1px 0 rgba(255, 255, 255, 0.55),
       inset 0 -1px 0 rgba(0, 0, 0, 0.12),
-      0 14px 32px rgba(201, 162, 39, 0.32);
+      0 14px 32px rgba(212, 165, 74, 0.32);
   }
 
   /* Secondary CTA — outline / petrol. Distinct from the primary. */
   .btn-teal {
     color: #ffffff;
     background: linear-gradient(180deg, #1d5663 0%, #123b46 100%);
-    border: 1px solid rgba(140, 195, 202, 0.35);
+    border: 1px solid rgba(138, 188, 200, 0.35);
     box-shadow:
       inset 0 1px 0 rgba(255, 255, 255, 0.14),
       inset 0 -1px 0 rgba(0, 0, 0, 0.2),
@@ -252,7 +252,7 @@
   .btn-teal:hover:not(:disabled) {
     filter: brightness(1.1);
     transform: translateY(-2px);
-    border-color: rgba(140, 195, 202, 0.55);
+    border-color: rgba(138, 188, 200, 0.55);
     box-shadow:
       inset 0 1px 0 rgba(255, 255, 255, 0.14),
       inset 0 -1px 0 rgba(0, 0, 0, 0.2),
@@ -331,7 +331,7 @@
     box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.22);
   }
   .hdr-ctl:focus-visible {
-    outline: 2px solid rgba(201, 162, 39, 0.8);
+    outline: 2px solid rgba(212, 165, 74, 0.8);
     outline-offset: 2px;
   }
 
@@ -359,7 +359,7 @@
   }
   .hdr-ctl-dark:hover {
     color: var(--color-cream);
-    border-color: rgba(140, 195, 202, 0.5);
+    border-color: rgba(138, 188, 200, 0.5);
     background: rgba(255, 255, 255, 0.14);
     transform: translateY(-1px);
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 5px 12px rgba(0, 0, 0, 0.25);
@@ -463,9 +463,9 @@
   }
   .chip-gold {
     color: var(--color-gold-ink);
-    border-color: rgba(201, 162, 39, 0.45);
-    background: rgba(201, 162, 39, 0.1);
-    box-shadow: 0 8px 20px rgba(201, 162, 39, 0.16);
+    border-color: rgba(212, 165, 74, 0.45);
+    background: rgba(212, 165, 74, 0.1);
+    box-shadow: 0 8px 20px rgba(212, 165, 74, 0.16);
   }
 
   /* =========================================================
@@ -536,8 +536,8 @@
     transition: border-color 200ms ease, box-shadow 250ms ease;
   }
   .cat-card:hover {
-    border-color: rgba(201, 162, 39, 0.6);
-    box-shadow: 0 0 24px rgba(201, 162, 39, 0.15);
+    border-color: rgba(212, 165, 74, 0.6);
+    box-shadow: 0 0 24px rgba(212, 165, 74, 0.15);
   }
 
   /* =========================================================
@@ -549,52 +549,52 @@
      ========================================================= */
   .stage-dark {
     background:
-      radial-gradient(90% 62% at 50% 0%, rgba(47, 125, 126, 0.1), transparent 62%),
-      radial-gradient(68% 46% at 88% 100%, rgba(201, 162, 39, 0.04), transparent 60%),
-      linear-gradient(180deg, #0a1823 0%, #08121d 55%, #060f17 100%);
+      radial-gradient(90% 62% at 50% 0%, rgba(61, 112, 128, 0.08), transparent 62%),
+      radial-gradient(68% 46% at 88% 100%, rgba(198, 156, 70, 0.03), transparent 60%),
+      linear-gradient(180deg, #0e1622 0%, #0c131d 55%, #0b1017 100%);
   }
 
-  /* Petroleum panel — the dark equivalent of glass-panel-strong */
+  /* Dark slate panel — the dark equivalent of glass-panel-strong */
   .glass-dark {
     position: relative;
-    background: linear-gradient(160deg, rgba(18, 39, 53, 0.94) 0%, rgba(12, 27, 38, 0.96) 100%);
+    background: linear-gradient(160deg, rgba(24, 34, 48, 0.96) 0%, rgba(14, 22, 34, 0.98) 100%);
     backdrop-filter: blur(14px);
     -webkit-backdrop-filter: blur(14px);
     border: 1px solid var(--color-petro-line);
     border-radius: var(--radius-panel);
     box-shadow:
       inset 0 1px 0 rgba(255, 255, 255, 0.04),
-      0 18px 48px rgba(0, 0, 0, 0.32);
+      0 18px 48px rgba(0, 0, 0, 0.35);
   }
 
-  /* Petroleum raised tile — inside dark panels */
+  /* Dark slate raised tile — inside dark panels */
   .dark-card {
     border: 1px solid var(--color-petro-line);
-    background: linear-gradient(160deg, #17324a 0%, #102433 100%);
+    background: linear-gradient(160deg, #222f42 0%, #182230 100%);
     border-radius: var(--radius-cell);
   }
 
-  /* Dark chips — lobby options / filters on the petroleum stage */
+  /* Dark chips — lobby options / filters on the navy stage */
   .chip-dark {
-    color: rgba(242, 238, 228, 0.72);
-    background: rgba(16, 36, 51, 0.85);
+    color: rgba(226, 232, 240, 0.75);
+    background: rgba(14, 22, 34, 0.85);
     border: 1px solid var(--color-petro-line);
   }
   .chip-dark:hover:not(:disabled):not(.chip-active) {
-    color: var(--color-cream);
-    border-color: rgba(108, 178, 192, 0.5);
-    background: rgba(23, 50, 74, 0.95);
+    color: #f1f5f9;
+    border-color: rgba(148, 163, 184, 0.4);
+    background: rgba(34, 47, 66, 0.95);
   }
   .chip-dark-active {
     color: #fff;
-    border-color: rgba(108, 178, 192, 0.55);
-    background: linear-gradient(180deg, #20616c 0%, #123b46 100%);
+    border-color: rgba(148, 163, 184, 0.45);
+    background: linear-gradient(180deg, #222f42 0%, #182230 100%);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
   }
   .chip-dark-gold {
     color: var(--color-gold-bright);
-    border-color: rgba(201, 162, 39, 0.5);
-    background: rgba(201, 162, 39, 0.12);
+    border-color: rgba(198, 156, 70, 0.4);
+    background: rgba(198, 156, 70, 0.12);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
   }
 
@@ -612,10 +612,10 @@
   .frame-cinematic {
     position: relative;
     border-radius: 1.75rem;
-    border: 1px solid rgba(244, 241, 232, 0.12);
+    border: 1px solid rgba(241, 245, 249, 0.12);
     background:
-      radial-gradient(110% 90% at 50% 0%, rgba(47, 125, 126, 0.14), transparent 55%),
-      linear-gradient(180deg, rgba(13, 27, 42, 0.92) 0%, rgba(8, 17, 28, 0.96) 100%);
+      radial-gradient(110% 90% at 50% 0%, rgba(61, 112, 128, 0.14), transparent 55%),
+      linear-gradient(180deg, rgba(14, 22, 34, 0.94) 0%, rgba(11, 16, 23, 0.98) 100%);
     box-shadow:
       inset 0 1px 0 rgba(255, 255, 255, 0.06),
       0 40px 90px rgba(0, 0, 0, 0.55),
@@ -630,7 +630,7 @@
     top: 0;
     height: 1px;
     border-radius: 999px;
-    background: linear-gradient(90deg, transparent, rgba(201, 162, 39, 0.55), transparent);
+    background: linear-gradient(90deg, transparent, rgba(198, 156, 70, 0.55), transparent);
     pointer-events: none;
   }
 
@@ -650,21 +650,21 @@
     position: absolute;
     inset: 0;
     pointer-events: none;
-    background: radial-gradient(120% 100% at 50% 50%, transparent 55%, rgba(5, 10, 16, 0.5) 100%);
+    background: radial-gradient(120% 100% at 50% 50%, transparent 55%, rgba(11, 16, 23, 0.5) 100%);
   }
 
   /* Dark input — used by GlassInput dark variant on the navy stage */
   .input-dark {
-    background: rgba(11, 21, 38, 0.7);
-    border: 1px solid rgba(244, 241, 232, 0.14);
-    color: var(--color-cream);
+    background: rgba(14, 22, 34, 0.8);
+    border: 1px solid rgba(241, 245, 249, 0.14);
+    color: #f1f5f9;
   }
   .input-dark::placeholder {
-    color: rgba(244, 241, 232, 0.4);
+    color: rgba(148, 163, 184, 0.5);
   }
   .input-dark:focus {
-    border-color: rgba(140, 195, 202, 0.7);
-    box-shadow: 0 0 0 3px rgba(47, 125, 126, 0.18);
+    border-color: rgba(198, 156, 70, 0.7);
+    box-shadow: 0 0 0 3px rgba(198, 156, 70, 0.18);
   }
 }
 
@@ -800,8 +800,8 @@
 
   .party-btn-primary {
     color: #fff;
-    background: #c9a227;
-    border: 1px solid rgba(168, 134, 31, 0.5);
+    background: #c69c46;
+    border: 1px solid rgba(166, 126, 42, 0.5);
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15);
   }
   .party-btn-primary:hover:not(:disabled) {
@@ -811,8 +811,8 @@
 
   .party-btn-secondary {
     color: #fff;
-    background: #2f6f7e;
-    border: 1px solid rgba(140, 195, 202, 0.3);
+    background: #3a7a8a;
+    border: 1px solid rgba(138, 188, 200, 0.3);
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
   }
   .party-btn-secondary:hover:not(:disabled) {
@@ -872,9 +872,9 @@
     background: var(--party-surface-hover);
   }
   .party-chip-active {
-    border-color: #c9a227;
-    background: rgba(201, 162, 39, 0.12);
-    color: #e3c76a;
+    border-color: #c69c46;
+    background: rgba(198, 156, 70, 0.12);
+    color: #e4c478;
   }
 
   /* --- Party avatar ring --- */
@@ -933,6 +933,49 @@
 }
 
 
+
+/* =========================================================
+   GAME BOARD — CENTRALIZED COLOR OVERRIDES
+   Changes only colors + typography without touching layout.
+   ========================================================= */
+
+.game-board-shell {
+  /* Background — deep navy charcoal */
+  --gb-bg: #0e1622;
+  --gb-bg-deep: #0b1017;
+  --gb-bg-card: #182230;
+  --gb-bg-card-hover: #222f42;
+  --gb-bg-input: #0b1017;
+
+  /* Team colors */
+  --gb-team1: #4d79a7;
+  --gb-team1-light: #8eaecf;
+  --gb-team1-bg: rgba(77, 121, 167, 0.15);
+  --gb-team2: #b04d49;
+  --gb-team2-light: #d48c88;
+  --gb-team2-bg: rgba(176, 77, 73, 0.15);
+
+  /* Accent — warm gold */
+  --gb-gold: #c69c46;
+  --gb-gold-light: #e4c478;
+  --gb-gold-bg: rgba(198, 156, 70, 0.15);
+  --gb-gold-border: rgba(198, 156, 70, 0.35);
+
+  /* Text — off-white and light gray */
+  --gb-text: #f1f5f9;
+  --gb-text-muted: #94a3b8;
+  --gb-text-dim: #64748b;
+
+  /* Borders */
+  --gb-border: rgba(148, 163, 184, 0.16);
+  --gb-border-strong: rgba(148, 163, 184, 0.32);
+
+  /* Semantic */
+  --gb-correct: #468a5e;
+  --gb-correct-light: #7ec498;
+  --gb-wrong: #b04d49;
+  --gb-wrong-light: #d48c88;
+}
 
 /* =========================================================
    SAFE AREA FOR PHONES (portrait)
@@ -1186,140 +1229,14 @@
    The homepage cinematic hero and the board's dark game-show tiles
    keep their own designed surfaces.
    ========================================================= */
+/* Light theme stage tokens */
 .theme-light .stage-dark,
 .theme-light .glass-dark {
-  --color-cream: #16303f; /* warm dark ink on the light stage */
-  --color-gold-bright: #8a6d12;
-  --color-teal-bright: #0e7490;
-  --color-green-bright: #15803d;
-  --color-blue-bright: #1d5f8a;
-  --color-red-bright: #b91c1c;
-}
-
-/* Light arena shell (replaces the dark petroleum gradient) */
-.theme-light .stage-dark {
-  background:
-    radial-gradient(90% 62% at 50% 0%, rgba(47, 125, 126, 0.07), transparent 62%),
-    radial-gradient(68% 46% at 88% 100%, rgba(201, 162, 39, 0.05), transparent 60%),
-    linear-gradient(180deg, #fbfcfd 0%, #eef2f6 100%);
-  border-color: rgba(100, 116, 139, 0.3);
-  box-shadow: 0 24px 64px rgba(15, 23, 42, 0.1);
-}
-
-.theme-light .glass-dark {
-  background: linear-gradient(160deg, rgba(255, 255, 255, 0.94) 0%, rgba(240, 244, 248, 0.97) 100%);
-  border-color: rgba(100, 116, 139, 0.3);
-  box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.85),
-    0 18px 48px rgba(15, 23, 42, 0.08);
-}
-
-/* Inner dark navy panels become white/light surfaces.
-   Attribute selectors avoid escaping arbitrary-value class names. */
-.theme-light .stage-dark [class~='bg-[#101D2E]'],
-.theme-light .glass-dark [class~='bg-[#101D2E]'] {
-  background-color: #ffffff;
-}
-.theme-light .stage-dark [class~='bg-[#101D2E]/90'] {
-  background-color: rgba(255, 255, 255, 0.92);
-}
-.theme-light .stage-dark [class~='bg-[#0B1526]/70'] {
-  background-color: rgba(255, 255, 255, 0.72);
-}
-.theme-light .stage-dark [class~='bg-[#0B1526]/60'] {
-  background-color: rgba(255, 255, 255, 0.62);
-}
-.theme-light .stage-dark [class~='bg-[#0B1526]/50'] {
-  background-color: rgba(255, 255, 255, 0.56);
-}
-
-/* Petroleum tiles inside the light arena become light surfaces */
-.theme-light .stage-dark .dark-card,
-.theme-light .glass-dark .dark-card {
-  background: linear-gradient(160deg, #ffffff 0%, #f1f5f9 100%);
-  border-color: rgba(100, 116, 139, 0.28);
-}
-
-/* Dark chips become light chips (stage-dark and glass-dark arenas) */
-.theme-light .stage-dark .chip-dark,
-.theme-light .glass-dark .chip-dark {
-  color: #33464d;
-  background: rgba(255, 255, 255, 0.85);
-  border-color: rgba(100, 116, 139, 0.28);
-}
-.theme-light .stage-dark .chip-dark:hover:not(:disabled):not(.chip-active),
-.theme-light .glass-dark .chip-dark:hover:not(:disabled):not(.chip-active) {
-  color: #12232b;
-  border-color: rgba(100, 116, 139, 0.5);
-  background: #ffffff;
-}
-
-/* Dark inputs become light inputs */
-.theme-light .stage-dark .input-dark,
-.theme-light .glass-dark .input-dark {
-  background: rgba(255, 255, 255, 0.88);
-  border-color: rgba(100, 116, 139, 0.3);
-}
-.theme-light .stage-dark .input-dark::placeholder,
-.theme-light .glass-dark .input-dark::placeholder {
-  color: rgba(51, 70, 77, 0.5);
-}
-
-/* Glass buttons on the light stage */
-.theme-light .stage-dark .glass-button,
-.theme-light .glass-dark .glass-button {
-  color: #16303f;
-  background: rgba(100, 116, 139, 0.08);
-  border-color: rgba(100, 116, 139, 0.25);
-}
-.theme-light .stage-dark .glass-button:hover:not(:disabled),
-.theme-light .glass-dark .glass-button:hover:not(:disabled) {
-  background: rgba(100, 116, 139, 0.14);
-  border-color: rgba(100, 116, 139, 0.4);
-}
-
-/* White borders become muted slate on the light stage */
-.theme-light .stage-dark [class~='border-white/8'],
-.theme-light .glass-dark [class~='border-white/8'] {
-  border-color: rgba(100, 116, 139, 0.22);
-}
-.theme-light .stage-dark [class~='border-white/10'],
-.theme-light .glass-dark [class~='border-white/10'] {
-  border-color: rgba(100, 116, 139, 0.28);
-}
-.theme-light .stage-dark [class~='border-white/12'],
-.theme-light .glass-dark [class~='border-white/12'] {
-  border-color: rgba(100, 116, 139, 0.32);
-}
-.theme-light .stage-dark [class~='border-white/15'],
-.theme-light .glass-dark [class~='border-white/15'] {
-  border-color: rgba(100, 116, 139, 0.38);
-}
-.theme-light .stage-dark [class~='border-white/18'],
-.theme-light .glass-dark [class~='border-white/18'] {
-  border-color: rgba(100, 116, 139, 0.42);
-}
-.theme-light .stage-dark [class~='border-white/25'],
-.theme-light .glass-dark [class~='border-white/25'] {
-  border-color: rgba(100, 116, 139, 0.45);
-}
-
-/* Quiet white fills stay subtle against the light arena */
-.theme-light .stage-dark [class~='bg-white/5'],
-.theme-light .glass-dark [class~='bg-white/5'] {
-  background-color: rgba(100, 116, 139, 0.06);
-}
-.theme-light .stage-dark [class~='bg-white/8'],
-.theme-light .glass-dark [class~='bg-white/8'] {
-  background-color: rgba(100, 116, 139, 0.09);
-}
-.theme-light .stage-dark [class~='bg-white/10'],
-.theme-light .glass-dark [class~='bg-white/10'] {
-  background-color: rgba(100, 116, 139, 0.12);
-}
-.theme-light .stage-dark [class~='bg-white/15'],
-.theme-light .glass-dark [class~='bg-white/15'] {
-  background-color: rgba(100, 116, 139, 0.16);
+  --color-gold-bright: #e4c478;
+  --color-teal-bright: #82adb8;
+  --color-green-bright: #7ec498;
+  --color-blue-bright: #8eaecf;
+  --color-red-bright: #d48c88;
 }
 
 /* ---------------------------------------------------------------------------
@@ -1350,7 +1267,7 @@
   border-radius: 9999px;
   background: linear-gradient(180deg, #e8c54f, var(--color-gold));
   border: 3px solid var(--color-navy);
-  box-shadow: 0 0 0 1px rgba(201, 162, 39, 0.5), 0 6px 16px rgba(201, 162, 39, 0.45);
+  box-shadow: 0 0 0 1px rgba(212, 165, 74, 0.5), 0 6px 16px rgba(212, 165, 74, 0.45);
   transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 .fahloy-range::-webkit-slider-thumb:hover {
@@ -1360,7 +1277,7 @@
   transform: scale(0.94);
 }
 .fahloy-range:focus-visible {
-  box-shadow: 0 0 0 3px rgba(201, 162, 39, 0.35);
+  box-shadow: 0 0 0 3px rgba(212, 165, 74, 0.35);
 }
 .fahloy-range::-moz-range-track {
   height: 10px;
@@ -1379,7 +1296,7 @@
   border-radius: 9999px;
   background: linear-gradient(180deg, #e8c54f, var(--color-gold));
   border: 3px solid var(--color-navy);
-  box-shadow: 0 0 0 1px rgba(201, 162, 39, 0.5), 0 6px 16px rgba(201, 162, 39, 0.45);
+  box-shadow: 0 0 0 1px rgba(212, 165, 74, 0.5), 0 6px 16px rgba(212, 165, 74, 0.45);
 }
 [dir='rtl'] .fahloy-range {
   background: linear-gradient(
