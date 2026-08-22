@@ -162,6 +162,8 @@ export interface OnlineEventMap {
     answered?: { selectedAnswer: string | null; answerCorrect: boolean | null; answerPoints: number }
     /** Free-for-all (3+ players): full per-player state after any change. */
     ffaPlayers?: FfaPlayerState[]
+    currentTurn?: TeamId
+    turnPlayerId?: string
   }
   LIFELINE_USED: {
     team: TeamId

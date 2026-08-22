@@ -99,19 +99,13 @@ export function GameBoardHeader({
           </div>
           <div className="flex min-w-0 flex-col leading-none">
             <span
-              className={cn(
-                'max-w-[60px] truncate text-[8px] font-bold sm:max-w-[90px] sm:text-[10px] lg:max-w-[140px] lg:text-xs',
-                currentTurn === 1 ? 'text-white' : 'text-white/40',
-              )}
+              className="max-w-[60px] truncate text-[8px] font-bold text-white sm:max-w-[90px] sm:text-[10px] lg:max-w-[140px] lg:text-xs"
             >
               {team1Name}
             </span>
             <AnimatedNumber
               value={team1Score}
-              className={cn(
-                'score-number tabular-nums text-base font-black sm:text-2xl lg:text-3xl',
-                currentTurn === 1 ? 'text-white' : 'text-white/35',
-              )}
+              className="score-number tabular-nums text-base font-black text-white sm:text-2xl lg:text-3xl"
             />
           </div>
         </div>
@@ -148,19 +142,13 @@ export function GameBoardHeader({
         <div className="flex flex-1 items-center justify-end gap-1.5 px-2 py-1.5 sm:px-4 sm:py-2">
           <div className="flex min-w-0 flex-col items-end leading-none">
             <span
-              className={cn(
-                'max-w-[60px] truncate text-[8px] font-bold sm:max-w-[90px] sm:text-[10px] lg:max-w-[140px] lg:text-xs',
-                currentTurn === 2 ? 'text-white' : 'text-white/40',
-              )}
+              className="max-w-[60px] truncate text-[8px] font-bold text-white sm:max-w-[90px] sm:text-[10px] lg:max-w-[140px] lg:text-xs"
             >
               {team2Name}
             </span>
             <AnimatedNumber
               value={team2Score}
-              className={cn(
-                'score-number tabular-nums text-base font-black sm:text-2xl lg:text-3xl',
-                currentTurn === 2 ? 'text-white' : 'text-white/35',
-              )}
+              className="score-number tabular-nums text-base font-black text-white sm:text-2xl lg:text-3xl"
             />
           </div>
           <div

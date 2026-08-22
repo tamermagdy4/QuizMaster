@@ -712,6 +712,7 @@ export const useGameBoardStore = create<GameBoardState>()(
             team2Score: state.team2Score,
             questionClosed: true,
             ffaPlayers: nextFfaPlayers,
+            turnPlayerId: nextTurnId,
           })
           notifyOnlineGameEvent('TURN_CHANGED', {
             currentTurn: 1,
@@ -799,6 +800,7 @@ export const useGameBoardStore = create<GameBoardState>()(
             team2Score,
             cells: nextCells,
             questionClosed: true,
+            currentTurn: nextTurn,
           })
           notifyOnlineGameEvent('TURN_CHANGED', { currentTurn: nextTurn })
 
@@ -949,6 +951,7 @@ export const useGameBoardStore = create<GameBoardState>()(
             team2Score: state.team2Score,
             questionClosed: true,
             ffaPlayers: state.ffaPlayers,
+            turnPlayerId: nextTurnId,
           })
           notifyOnlineGameEvent('TURN_CHANGED', {
             currentTurn: 1,
@@ -999,6 +1002,7 @@ export const useGameBoardStore = create<GameBoardState>()(
             team2Score: state.team2Score,
             cells: nextCells,
             questionClosed: true,
+            currentTurn: nextTurn,
           })
           notifyOnlineGameEvent('TURN_CHANGED', { currentTurn: nextTurn })
 

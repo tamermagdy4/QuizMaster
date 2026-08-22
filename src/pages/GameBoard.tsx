@@ -169,7 +169,6 @@ export function GameBoard() {
     teamAnswers,
     teamSubmitted,
     submitTeamAnswer,
-    resetTeamAnswers,
     isCellPlayable,
     selectQuestion,
     switchTurn,
@@ -181,7 +180,6 @@ export function GameBoard() {
     isRevealed,
     revealAnswer,
     hideAnswer,
-    resetReveal,
   } = useGameBoardStore()
 
   const onlineStore = useOnlineStore()
@@ -197,6 +195,10 @@ export function GameBoard() {
 
   /** Local text input state for typing answers */
   const [typedAnswer, setTypedAnswer] = useState('')
+  const typedAnswerRef = useRef(typedAnswer)
+  useEffect(() => {
+    typedAnswerRef.current = typedAnswer
+  }, [typedAnswer])
 
   /** Which team is currently answering (turn-based on shared device in local mode) */
   const [answeringTeam, setAnsweringTeam] = useState<TeamId>(1)
@@ -416,27 +418,56 @@ export function GameBoard() {
    * ============================
    */
 
+  const activeQuestionKey = activeQuestion
+    ? `${activeQuestion.categoryId}-${activeQuestion.slotIndex}`
+    : null
+
   useEffect(() => {
-    if (!activeQuestion) {
-      resetReveal()
+    if (!activeQuestionKey) {
+      useGameBoardStore.getState().resetReveal()
       setCountdown(questionDuration)
       setResolveTone(null)
       return
     }
 
-    resetReveal()
-    resetTeamAnswers()
+    useGameBoardStore.getState().resetReveal()
+    useGameBoardStore.getState().resetTeamAnswers()
     setCountdown(questionDuration)
     setResolveTone(null)
     setTypedAnswer('')
     setAnsweringTeam(1)
 
     const timer = window.setInterval(() => {
+      const state = useGameBoardStore.getState()
+      if (state.isRevealed) {
+        window.clearInterval(timer)
+        return
+      }
+
       setCountdown((current) => {
         if (current <= 1) {
           window.clearInterval(timer)
           playSound('timer')
-          revealAnswer()
+
+          // Auto-submit any unsubmitted typed answer before revealing
+          const currentTyped = typedAnswerRef.current.trim()
+          if (currentTyped) {
+            const state = useGameBoardStore.getState()
+            const online = useOnlineStore.getState()
+            if (state.gameMode === 'online') {
+              const myTeam: TeamId = online.isHost() ? 1 : 2
+              if (!state.teamSubmitted[myTeam]) {
+                state.submitTeamAnswer(myTeam, currentTyped)
+              }
+            } else {
+              if (!state.teamSubmitted[1] || !state.teamSubmitted[2]) {
+                const teamToSubmit: TeamId = !state.teamSubmitted[1] ? 1 : 2
+                state.submitTeamAnswer(teamToSubmit, currentTyped)
+              }
+            }
+          }
+
+          useGameBoardStore.getState().revealAnswer()
           return 0
         }
 
@@ -446,13 +477,30 @@ export function GameBoard() {
 
     return () => window.clearInterval(timer)
   }, [
-    activeQuestion,
+    activeQuestionKey,
     questionDuration,
-    resetReveal,
-    resetTeamAnswers,
-    revealAnswer,
     playSound,
   ])
+
+  // Stop countdown immediately when the answer is revealed
+  useEffect(() => {
+    if (isRevealed) {
+      setCountdown(0)
+    }
+  }, [isRevealed])
+
+  // Auto-reveal when both teams have submitted their answers in online mode
+  useEffect(() => {
+    if (
+      gameMode === 'online' &&
+      activeQuestionKey &&
+      !isRevealed &&
+      teamSubmitted[1] &&
+      teamSubmitted[2]
+    ) {
+      revealAnswer()
+    }
+  }, [gameMode, activeQuestionKey, isRevealed, teamSubmitted, revealAnswer])
 
 
   /*

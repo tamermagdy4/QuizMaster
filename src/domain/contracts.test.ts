@@ -257,6 +257,18 @@ describe('online event payload contracts', () => {
     expect(isValidOnlineEventPayload(forged)).toBe(false)
   })
 
+  it('validates TEAM_ANSWER_SUBMITTED payloads correctly', () => {
+    const valid = event('TEAM_ANSWER_SUBMITTED', {
+      payload: { team: 2, answer: 'Cairo', playerId: 'player-2' },
+    }) as OnlineGameEvent
+    expect(isValidOnlineEventPayload(valid)).toBe(true)
+
+    const badTeam = event('TEAM_ANSWER_SUBMITTED', {
+      payload: { team: 3, answer: 'Cairo' },
+    }) as OnlineGameEvent
+    expect(isValidOnlineEventPayload(badTeam)).toBe(false)
+  })
+
   it('rejects a score update with a non-finite score (no client-controlled 999999/Infinity)', () => {
     const valid = event('SCORE_UPDATED', {
       payload: { team1Score: 0, team2Score: -150, questionClosed: true },

@@ -6,6 +6,7 @@ import {
   useTransform,
   AnimatePresence,
 } from 'framer-motion'
+import { Play, Globe } from 'lucide-react'
 import { PHOTOS } from './homeContent'
 
 /* =========================================================
@@ -889,45 +890,19 @@ export function Join({
           {/* Primary CTA */}
           <Link
             to="/create"
-            className="group relative overflow-hidden rounded-2xl bg-gold px-10 py-5 text-lg font-black text-[#0D1B2A] transition-all duration-300 hover:brightness-110"
+            className="group inline-flex items-center justify-center gap-3 rounded-xl border border-[#f3cc62]/70 bg-gradient-to-b from-[#e8ba3c] via-[#cca028] to-[#b3881b] px-9 py-4 text-lg font-extrabold text-[#09121d] shadow-[0_4px_18px_rgba(204,160,40,0.3),inset_0_1px_0_rgba(255,255,255,0.45),inset_0_-2px_0_rgba(0,0,0,0.2)] transition-all duration-200 hover:from-[#f5c748] hover:to-[#be9320] hover:shadow-[0_6px_24px_rgba(204,160,40,0.45)] active:translate-y-[1px]"
           >
-            <span className="relative z-10 flex items-center gap-3">
-              {t('ctaPlay')}
-              <svg
-                className="h-5 w-5 transition-transform group-hover:translate-x-1"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                strokeWidth={2.5}
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
-                />
-              </svg>
-            </span>
+            <Play className="h-5 w-5 fill-current transition-transform duration-200 group-hover:scale-110" />
+            <span>{t('ctaPlay')}</span>
           </Link>
 
           {/* Secondary CTA */}
           <Link
             to="/online"
-            className="group flex items-center gap-3 rounded-2xl border border-teal/30 bg-teal/5 px-9 py-5 text-lg font-black text-teal-bright backdrop-blur-sm transition-all duration-300 hover:border-teal/50 hover:bg-teal/10"
+            className="group inline-flex items-center justify-center gap-3 rounded-xl border border-[#2b4468] bg-[#0c1929]/90 px-8 py-4 text-lg font-extrabold text-[#9ec4ed] shadow-[0_4px_18px_rgba(0,0,0,0.4),inset_0_1px_0_rgba(255,255,255,0.08)] transition-all duration-200 hover:border-[#4272aa] hover:bg-[#112238] hover:text-white active:translate-y-[1px]"
           >
-            <svg
-              className="h-5 w-5"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              strokeWidth={1.5}
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418"
-              />
-            </svg>
-            {t('ctaOnline')}
+            <Globe className="h-5 w-5 text-[#5fa4e6] transition-transform duration-200 group-hover:rotate-12 group-hover:text-[#7ec2ff]" />
+            <span>{t('ctaOnline')}</span>
           </Link>
         </motion.div>
 

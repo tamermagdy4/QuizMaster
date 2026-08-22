@@ -82,6 +82,15 @@ const lastRemoteSequenceBySender = new Map<string, number>()
 
 /** Drops stale/duplicate events from a sender whose counter is still moving. */
 function isStaleRemoteEvent(event: OnlineGameEvent): boolean {
+  // Authoritative snapshots and critical question-closing state transitions must never be dropped
+  if (
+    event.type === 'GAME_STATE_SYNC' ||
+    event.type === 'GAME_FINISHED' ||
+    (event.type === 'SCORE_UPDATED' && event.payload.questionClosed)
+  ) {
+    return false
+  }
+
   const previous = lastRemoteSequenceBySender.get(event.playerId)
   if (previous === undefined) return false
   const isOlderOrDuplicate = event.sequence <= previous
@@ -610,6 +619,13 @@ function applyRemoteScore(payload: OnlineEventMap['SCORE_UPDATED']): void {
       patch.selectedAnswer = payload.answered.selectedAnswer
       patch.answerCorrect = payload.answered.answerCorrect
       patch.answerPoints = payload.answered.answerPoints
+    }
+
+    if (payload.currentTurn !== undefined) {
+      patch.currentTurn = payload.currentTurn
+    }
+    if (payload.turnPlayerId !== undefined) {
+      patch.ffaTurnPlayerId = payload.turnPlayerId
     }
 
     return patch

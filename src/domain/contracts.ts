@@ -258,9 +258,20 @@ export function isValidOnlineEventPayload(event: OnlineGameEvent): boolean {
     case 'ANSWER_REVEALED':
       return typeof event.payload.revealed === 'boolean'
 
+    case 'TEAM_ANSWER_SUBMITTED': {
+      const payload = event.payload
+      return (
+        isTeamId(payload.team) &&
+        typeof payload.answer === 'string' &&
+        (payload.playerId === undefined || isNonEmptyString(payload.playerId))
+      )
+    }
+
     case 'SCORE_UPDATED': {
       const payload = event.payload
       if (!isScore(payload.team1Score) || !isScore(payload.team2Score)) return false
+      if (payload.currentTurn !== undefined && !isTeamId(payload.currentTurn)) return false
+      if (payload.turnPlayerId !== undefined && !isNonEmptyString(payload.turnPlayerId)) return false
       if (payload.answered !== undefined) {
         if (!isScore(payload.answered.answerPoints)) return false
         if (payload.answered.selectedAnswer !== null && typeof payload.answered.selectedAnswer !== 'string') return false
