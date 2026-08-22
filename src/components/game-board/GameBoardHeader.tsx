@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import { Crown, Shield, Volume2, VolumeX, ArrowLeftRight } from 'lucide-react'
 import { AnimatedNumber } from '../ui/AnimatedNumber'
 import { HelpMenu } from './HelpMenu'
 import type { FfaPlayerState, Lifeline } from '../../types/board'
@@ -29,30 +30,16 @@ interface GameBoardHeaderProps {
   onUseLifeline?: (lifelineId: string) => void
 }
 
-const teamTone = {
-  1: {
-    chip: 'bg-[#3b82f6]/15 text-[#93c5fd]',
-    name: 'text-[#93c5fd]',
-    icon: '🛡️',
-    ring: 'border-[#3b82f6]/40',
-    glow: 'shadow-[0_0_22px_rgba(59,130,246,0.3)]',
-  },
-  2: {
-    chip: 'bg-[#ef4444]/15 text-[#fca5a5]',
-    name: 'text-[#fca5a5]',
-    icon: '👑',
-    ring: 'border-[#ef4444]/40',
-    glow: 'shadow-[0_0_22px_rgba(239,68,68,0.3)]',
-  },
+const teamColor = {
+  1: { accent: '#3b82f6', text: '#93c5fd', bg: 'rgba(59,130,246,0.12)' },
+  2: { accent: '#ef4444', text: '#fca5a5', bg: 'rgba(239,68,68,0.12)' },
 } as const
 
 /**
- * The game-show header.
+ * Professional game-show HUD.
  *
- * RTL-aware: uses logical properties throughout so teams land on the
- * correct side in both Arabic (RTL) and English (LTR).
- *
- * Mobile-first responsive design: works on 360px → 412px → desktop.
+ * RTL-aware via logical properties.
+ * Mobile-first responsive: 360px → 412px → desktop.
  */
 export function GameBoardHeader({
   isFfa,
@@ -79,212 +66,207 @@ export function GameBoardHeader({
   const english = direction === 'ltr'
   const lowTime = hasActiveQuestion && countdown <= 5
   const turnName = currentTurn === 1 ? team1Name : team2Name
+  const t1 = teamColor[1]
+  const t2 = teamColor[2]
 
   return (
-    <div className="relative z-30 overflow-hidden rounded-xl border border-petro-line-strong bg-gradient-to-b from-[#0e2030]/95 to-[#0a1823] shadow-[inset_0_1px_0_rgba(255,255,255,0.05),0_10px_28px_rgba(0,0,0,0.35)] sm:rounded-2xl">
-      {/* Arena floor glow */}
-      <div aria-hidden className="pointer-events-none absolute inset-0 rounded-[inherit] bg-[radial-gradient(60%_120%_at_50%_0%,rgba(47,125,126,0.14),transparent_60%)]" />
+    <div className="relative z-30 overflow-visible">
+      {/* ─── Main scoreboard bar ─── */}
+      <div
+        className="relative flex items-stretch rounded-xl bg-[#0c1a28]/95 sm:rounded-2xl"
+        style={{ boxShadow: '0 4px 20px rgba(0,0,0,0.35)' }}
+      >
+        {/* Active team accent — thin top line */}
+        <motion.div
+          className="absolute inset-x-0 top-0 h-[2px] rounded-t-[inherit]"
+          animate={{
+            background:
+              currentTurn === 1
+                ? `linear-gradient(90deg, transparent 0%, ${t1.accent} 30%, ${t1.accent} 70%, transparent 100%)`
+                : `linear-gradient(90deg, transparent 0%, ${t2.accent} 30%, ${t2.accent} 70%, transparent 100%)`,
+            opacity: hasActiveQuestion ? 0.9 : 0.3,
+          }}
+          transition={{ duration: 0.4 }}
+        />
 
-      {/* Row 1: Teams + Identity + Timer + Controls */}
-      <div className="relative flex items-center gap-1 px-1.5 py-1 sm:gap-2 sm:px-3 sm:py-2 lg:gap-3 lg:px-4 lg:py-2.5">
-        {/* Teams + scores */}
-        <div className="flex min-w-0 flex-1 items-center gap-1 sm:gap-1.5 lg:gap-2">
-          {isFfa ? (
-            <div className="flex min-w-0 flex-1 flex-wrap items-center gap-1 sm:gap-1.5">
-              {ffaPlayers.map((player, index) => {
-                const isActive = ffaTurnPlayerId === player.playerId
-                const tones = index % 2 === 0 ? teamTone[1] : teamTone[2]
-                return (
-                  <div
-                    key={player.playerId}
-                    className={cn(
-                      'relative flex min-w-0 items-center gap-1 rounded-md border px-1.5 py-0.5 transition-all duration-300 sm:rounded-lg sm:px-2 sm:py-1',
-                      isActive
-                        ? cn('border-gold/60 bg-gradient-to-b from-[#123047] to-[#0c1d2e]', tones.glow)
-                        : cn(tones.ring, 'bg-gradient-to-b from-[#0e2030] to-[#0a1823]'),
-                    )}
-                  >
-                    {isActive && (
-                      <span className="absolute -top-1.5 start-1 rounded bg-gold px-1 py-[1px] text-[5px] font-black text-[#1d1603] sm:text-[6px]">
-                        {english ? '● TURN' : '🎯 الدور'}
-                      </span>
-                    )}
-                    <span className={cn('flex h-4 w-4 shrink-0 items-center justify-center rounded text-[8px] sm:h-5 sm:w-5 sm:rounded-md sm:text-[10px]', isActive ? 'bg-gold/15' : tones.chip)} aria-hidden>
-                      {tones.icon}
-                    </span>
-                    <div className="flex min-w-0 flex-col leading-none">
-                      <span className={cn('max-w-[50px] truncate text-[7px] font-bold sm:max-w-[70px] sm:text-[9px]', isActive ? 'text-gold-bright' : tones.name)}>
-                        {player.name}
-                      </span>
-                      <AnimatedNumber value={player.score} className={cn('score-number text-[10px] sm:text-sm', isActive ? 'text-gold-bright' : 'text-cream')} />
-                    </div>
-                  </div>
-                )
-              })}
-            </div>
-          ) : (
-            <>
-              <TeamChip
-                id={1}
-                name={team1Name}
-                score={team1Score}
-                isActive={currentTurn === 1}
-              />
-              <TeamChip
-                id={2}
-                name={team2Name}
-                score={team2Score}
-                isActive={currentTurn === 2}
-              />
-            </>
-          )}
+        {/* ─── TEAM 1 ─── */}
+        <div className="flex flex-1 items-center gap-1.5 px-2 py-1.5 sm:px-4 sm:py-2">
+          <div
+            className="flex h-5 w-5 shrink-0 items-center justify-center rounded sm:h-6 sm:w-6"
+            style={{ color: t1.text, background: t1.bg }}
+          >
+            <Shield className="h-3 w-3 sm:h-3.5 sm:w-3.5" />
+          </div>
+          <div className="flex min-w-0 flex-col leading-none">
+            <span
+              className={cn(
+                'max-w-[60px] truncate text-[8px] font-bold sm:max-w-[90px] sm:text-[10px] lg:max-w-[140px] lg:text-xs',
+                currentTurn === 1 ? 'text-white' : 'text-white/40',
+              )}
+            >
+              {team1Name}
+            </span>
+            <AnimatedNumber
+              value={team1Score}
+              className={cn(
+                'score-number tabular-nums text-base font-black sm:text-2xl lg:text-3xl',
+                currentTurn === 1 ? 'text-white' : 'text-white/35',
+              )}
+            />
+          </div>
         </div>
 
-        {/* Center: فهلوي identity + countdown */}
-        <div className="flex shrink-0 items-center gap-1 sm:flex-col sm:items-center sm:gap-0.5">
-          <div className="flex min-w-0 flex-col items-center leading-none">
-            <span className="font-display text-[11px] font-black tracking-wide text-[#F5D98B] drop-shadow-[0_2px_8px_rgba(212,168,67,0.35)] sm:text-sm lg:text-lg">
-              فهلوي
-            </span>
-            <span className="mt-0.5 max-w-[60px] truncate text-[7px] font-bold text-cream/55 sm:max-w-[110px] sm:text-[9px] lg:max-w-[160px] lg:text-[10px]">
-              {gameName}
-            </span>
-          </div>
-
-          {/* Countdown timer */}
+        {/* ─── CENTER: timer + game identity ─── */}
+        <div className="flex shrink-0 flex-col items-center justify-center px-2 sm:px-6">
+          {/* Timer */}
           <motion.div
             key={countdown}
-            initial={{ scale: 0.9, opacity: 0.7 }}
-            animate={{ scale: lowTime ? [1, 1.15, 1] : 1, opacity: 1 }}
-            transition={{ duration: 0.25 }}
+            initial={lowTime ? { scale: 1.1 } : false}
+            animate={{ scale: lowTime ? [1, 1.12, 1] : 1 }}
+            transition={{ duration: 0.3 }}
             className={cn(
-              'flex h-6 w-6 shrink-0 items-center justify-center rounded-full border-2 text-[10px] font-black tabular-nums transition-colors duration-300 sm:h-8 sm:w-8 sm:text-xs lg:h-9 lg:w-9 lg:text-sm',
+              'flex h-8 w-8 items-center justify-center rounded-full tabular-nums sm:h-10 sm:w-10 lg:h-11 lg:w-11',
               lowTime
-                ? 'border-[#ef4444] bg-[#ef4444]/12 text-[#fca5a5] shadow-[0_0_18px_rgba(239,68,68,0.4)]'
+                ? 'bg-[#ef4444]/20 text-[#fca5a5]'
                 : hasActiveQuestion
-                  ? 'border-[#D4A843]/60 bg-[#D4A843]/12 text-[#F5D98B]'
-                  : 'border-petro-line bg-[#0f172a] text-gray-400',
+                  ? 'bg-[#D4A843]/15 text-[#F5D98B]'
+                  : 'bg-white/5 text-white/30',
             )}
           >
-            {hasActiveQuestion ? countdown.toString().padStart(2, '0') : questionDuration.toString()}
-          </motion.div>
-        </div>
-
-        {/* Right: turn badge + controls + help */}
-        <div className="flex shrink-0 items-center gap-1 sm:gap-1.5 lg:gap-2">
-          {/* Current turn badge — hidden on very small screens */}
-          <div
-            className={cn(
-              'hidden items-center gap-1 rounded-lg border px-1.5 py-1 sm:flex sm:gap-1.5 sm:px-2.5 sm:py-1.5',
-              currentTurn === 1
-                ? 'border-[#3b82f6]/45 bg-[#3b82f6]/10'
-                : 'border-[#ef4444]/45 bg-[#ef4444]/10',
-            )}
-          >
-            <span className={cn('flex h-5 w-5 items-center justify-center rounded-md text-[10px] sm:h-6 sm:w-6 sm:text-xs', currentTurn === 1 ? 'bg-[#3b82f6]/20 text-[#93c5fd]' : 'bg-[#ef4444]/20 text-[#fca5a5]')} aria-hidden>
-              🎯
+            <span className="text-sm font-black sm:text-lg lg:text-xl">
+              {hasActiveQuestion ? countdown.toString().padStart(2, '0') : questionDuration.toString().padStart(2, '0')}
             </span>
-            <div className="flex flex-col leading-none">
-              <span className="text-[7px] font-black text-cream/50 sm:text-[8px]">{english ? 'TURN' : 'الدور الحالي'}</span>
-              <span className={cn('mt-0.5 max-w-[70px] truncate text-[9px] font-black sm:max-w-[90px] sm:text-[11px]', currentTurn === 1 ? 'text-[#93c5fd]' : 'text-[#fca5a5]')}>
-                {turnName}
-              </span>
-            </div>
-          </div>
+          </motion.div>
 
-          <button
-            type="button"
-            onClick={onToggleSound}
-            title={english ? 'Sound' : 'الصوت'}
-            aria-label={english ? 'Sound' : 'الصوت'}
-            className="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg border border-petro-line bg-[#0f172a] text-xs text-gray-300 transition-all duration-200 hover:-translate-y-0.5 hover:border-teal/50 hover:text-teal-bright active:translate-y-0 active:scale-95 sm:h-8 sm:w-8 sm:text-sm lg:h-10 lg:w-10"
-          >
-            {soundEnabled ? '🔊' : '🔇'}
-          </button>
-
-          <button
-            type="button"
-            onClick={onSwitchTurn}
-            title={english ? 'Switch turn' : 'تبديل الدور'}
-            aria-label={english ? 'Switch turn' : 'تبديل الدور'}
-            className="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg border border-petro-line bg-[#0f172a] text-xs text-gray-300 transition-all duration-200 hover:-translate-y-0.5 hover:border-gold/50 hover:text-gold-bright active:translate-y-0 active:scale-95 sm:h-8 sm:w-8 sm:text-sm lg:h-10 lg:w-10"
-          >
-            ⇄
-          </button>
-
-          <HelpMenu
-            lifelines={lifelines}
-            accent={currentTurn === 1 ? 'royal' : 'gold'}
-            getDisabled={getLifelineDisabled}
-            activeLifelineId={activeLifelineId}
-            onSelect={onUseLifeline}
-            english={english}
-          />
-        </div>
-      </div>
-
-      {/* Row 2 (mobile only): Turn badge — shown below on very small screens */}
-      <div className="flex items-center justify-center border-t border-white/5 px-2 py-0.5 sm:hidden">
-        <div
-          className={cn(
-            'flex items-center gap-1 rounded-md border px-2 py-0.5',
-            currentTurn === 1
-              ? 'border-[#3b82f6]/30 bg-[#3b82f6]/8'
-              : 'border-[#ef4444]/30 bg-[#ef4444]/8',
-          )}
-        >
-          <span className="text-[9px]" aria-hidden>🎯</span>
-          <span className="text-[7px] font-bold text-cream/50">{english ? 'TURN' : 'الدور'}</span>
-          <span className={cn('text-[8px] font-black', currentTurn === 1 ? 'text-[#93c5fd]' : 'text-[#fca5a5]')}>
-            {turnName}
+          {/* Game name — small, below timer */}
+          <span className="mt-0.5 max-w-[50px] truncate text-[6px] font-bold text-white/25 sm:max-w-[80px] sm:text-[8px] lg:max-w-[120px] lg:text-[9px]">
+            {gameName}
           </span>
         </div>
-      </div>
-    </div>
-  )
-}
 
-function TeamChip({
-  id,
-  name,
-  score,
-  isActive,
-}: {
-  id: TeamId
-  name: string
-  score: number
-  isActive: boolean
-}) {
-  const tone = teamTone[id]
-  return (
-    <motion.div
-      animate={isActive ? { scale: [1, 1.02, 1] } : { scale: 1 }}
-      transition={{ duration: 0.6, times: [0, 0.5, 1], ease: 'easeOut' }}
-      className={cn(
-        'relative flex min-w-0 flex-1 items-center gap-0.5 rounded-lg border px-1 py-0.5 transition-all duration-300 sm:gap-1 sm:rounded-xl sm:px-1.5 sm:py-1 lg:gap-2 lg:px-3',
-        isActive
-          ? cn('border-gold/60 bg-gradient-to-b from-[#123047] to-[#0c1d2e]', tone.glow)
-          : cn(tone.ring, 'bg-gradient-to-b from-[#0e2030] to-[#0a1823]'),
-      )}
-    >
-      {isActive && (
-        <motion.span
-          initial={{ opacity: 0, y: -6 }}
-          animate={{ opacity: 1, y: 0 }}
-          className="absolute -top-2 start-1 rounded-full bg-gold px-1 py-[1px] text-[5px] font-black text-[#1d1603] shadow-[0_4px_10px_rgba(0,0,0,0.45)] sm:start-2 sm:px-1.5 sm:text-[7px]"
-        >
-          🎯 الدور
-        </motion.span>
-      )}
-      <span className={cn('flex h-5 w-5 shrink-0 items-center justify-center rounded-md text-[9px] sm:h-6 sm:w-6 sm:text-xs lg:h-9 lg:w-9 lg:text-base', isActive ? 'bg-gold/15' : tone.chip)} aria-hidden>
-        {tone.icon}
-      </span>
-      <div className="flex min-w-0 flex-col leading-none">
-        <span className={cn('font-display max-w-[50px] truncate text-[8px] font-bold sm:max-w-[80px] sm:text-[10px] lg:max-w-[120px] lg:text-xs', isActive ? 'text-gold-bright' : tone.name)}>
-          {name}
-        </span>
-        <AnimatedNumber value={score} className={cn('score-number mt-0.5 text-xs sm:text-lg lg:text-2xl', isActive ? 'text-gold-bright' : tone.name)} />
+        {/* ─── TEAM 2 ─── */}
+        <div className="flex flex-1 items-center justify-end gap-1.5 px-2 py-1.5 sm:px-4 sm:py-2">
+          <div className="flex min-w-0 flex-col items-end leading-none">
+            <span
+              className={cn(
+                'max-w-[60px] truncate text-[8px] font-bold sm:max-w-[90px] sm:text-[10px] lg:max-w-[140px] lg:text-xs',
+                currentTurn === 2 ? 'text-white' : 'text-white/40',
+              )}
+            >
+              {team2Name}
+            </span>
+            <AnimatedNumber
+              value={team2Score}
+              className={cn(
+                'score-number tabular-nums text-base font-black sm:text-2xl lg:text-3xl',
+                currentTurn === 2 ? 'text-white' : 'text-white/35',
+              )}
+            />
+          </div>
+          <div
+            className="flex h-5 w-5 shrink-0 items-center justify-center rounded sm:h-6 sm:w-6"
+            style={{ color: t2.text, background: t2.bg }}
+          >
+            <Crown className="h-3 w-3 sm:h-3.5 sm:w-3.5" />
+          </div>
+        </div>
       </div>
-    </motion.div>
+
+      {/* ─── Controls row ─── */}
+      <div className="mt-1 flex items-center justify-center gap-1 px-1 sm:mt-1.5 sm:gap-2">
+        {/* Active turn indicator — compact pill */}
+        <div
+          className={cn(
+            'hidden items-center gap-1 rounded-md px-2 py-0.5 text-[9px] font-bold sm:flex sm:px-2.5 sm:text-[10px]',
+            currentTurn === 1
+              ? 'bg-[#3b82f6]/10 text-[#93c5fd]'
+              : 'bg-[#ef4444]/10 text-[#fca5a5]',
+          )}
+        >
+          <span className="h-1.5 w-1.5 rounded-full" style={{ background: currentTurn === 1 ? t1.accent : t2.accent }} />
+          {english ? 'TURN' : 'الدور'}
+          <span className="opacity-60">·</span>
+          <span className="max-w-[60px] truncate lg:max-w-[100px]">{turnName}</span>
+        </div>
+
+        <div className="h-3 w-px bg-white/10 sm:hidden" />
+
+        {/* Lifelines */}
+        <HelpMenu
+          lifelines={lifelines}
+          accent={currentTurn === 1 ? 'royal' : 'gold'}
+          getDisabled={getLifelineDisabled}
+          activeLifelineId={activeLifelineId}
+          onSelect={onUseLifeline}
+          english={english}
+        />
+
+        {/* Sound */}
+        <button
+          type="button"
+          onClick={onToggleSound}
+          title={english ? 'Sound' : 'الصوت'}
+          aria-label={english ? 'Sound' : 'الصوت'}
+          className="flex h-7 w-7 items-center justify-center rounded-lg text-white/40 transition-colors hover:bg-white/5 hover:text-white/70 active:text-white/50 sm:h-8 sm:w-8"
+        >
+          {soundEnabled ? <Volume2 className="h-3.5 w-3.5 sm:h-4 sm:w-4" /> : <VolumeX className="h-3.5 w-3.5 sm:h-4 sm:w-4" />}
+        </button>
+
+        {/* Switch turn */}
+        <button
+          type="button"
+          onClick={onSwitchTurn}
+          title={english ? 'Switch turn' : 'تبديل الدور'}
+          aria-label={english ? 'Switch turn' : 'تبديل الدور'}
+          className="flex h-7 w-7 items-center justify-center rounded-lg text-white/40 transition-colors hover:bg-white/5 hover:text-white/70 active:text-white/50 sm:h-8 sm:w-8"
+        >
+          <ArrowLeftRight className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
+        </button>
+
+        {/* Mobile turn pill */}
+        <div
+          className={cn(
+            'flex items-center gap-1 rounded-md px-2 py-0.5 text-[8px] font-bold sm:hidden',
+            currentTurn === 1
+              ? 'bg-[#3b82f6]/10 text-[#93c5fd]'
+              : 'bg-[#ef4444]/10 text-[#fca5a5]',
+          )}
+        >
+          <span className="h-1 w-1 rounded-full" style={{ background: currentTurn === 1 ? t1.accent : t2.accent }} />
+          <span className="max-w-[40px] truncate">{turnName}</span>
+        </div>
+      </div>
+
+      {/* ─── FFA player chips (3+ players online) ─── */}
+      {isFfa && (
+        <div className="mt-1 flex items-center justify-center gap-1 overflow-x-auto px-2 sm:gap-1.5">
+          {ffaPlayers.map((player, index) => {
+            const isActive = ffaTurnPlayerId === player.playerId
+            const tone = index % 2 === 0 ? t1 : t2
+            return (
+              <div
+                key={player.playerId}
+                className={cn(
+                  'flex items-center gap-1 rounded-md px-1.5 py-0.5 text-[8px] sm:text-[9px]',
+                  isActive
+                    ? 'bg-white/10 text-white'
+                    : 'bg-white/[0.03] text-white/35',
+                )}
+              >
+                <span
+                  className="h-1 w-1 rounded-full"
+                  style={{ background: isActive ? '#D4A843' : tone.accent, opacity: isActive ? 1 : 0.5 }}
+                />
+                <span className="max-w-[40px] truncate font-bold sm:max-w-[60px]">{player.name}</span>
+                <AnimatedNumber
+                  value={player.score}
+                  className={cn('score-number tabular-nums font-black', isActive ? 'text-white' : 'text-white/25')}
+                />
+              </div>
+            )
+          })}
+        </div>
+      )}
+    </div>
   )
 }
